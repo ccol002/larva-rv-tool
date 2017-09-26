@@ -1,0 +1,14 @@
+node redirectMSG (_rt_clock:int; redirect:bool) returns (violated:bool);
+var
+ cnt  :int;
+ time :int;
+let
+  time = if (false -> pre redirect) then (0 -> pre _rt_clock)
+         else if ((0 -> pre cnt) == 0) then _rt_clock
+         else (0 -> pre time);
+  cnt = if (redirect and ((_rt_clock-time) < 2000)) then ((0 -> pre(cnt)) + 1)
+        else if (_rt_clock - time < 2000) then (0 -> pre cnt)
+        else if (redirect) then 1
+        else 0;
+  violated = if (cnt >= 3) then true else (false -> pre violated);
+tel

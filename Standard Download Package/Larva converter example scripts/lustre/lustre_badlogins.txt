@@ -1,0 +1,7 @@
+node badlogins(rt_clock:int; badlogin:bool) returns (output:bool);
+var
+   badloginstime:int;
+let
+   badloginstime = rt_clock when (badlogin); 
+   output = if (badloginstime - (0->pre(pre(pre(badloginstime))))<10) then true else false;
+tel

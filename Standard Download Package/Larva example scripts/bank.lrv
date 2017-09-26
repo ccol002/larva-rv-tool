@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% The following property has 3 levels: it monitors that in the bank
+%% system there are no more than 5 users, it checks that for every
+%% user there are no more than 5 accounts, and finally that for each
+%% account there are no more than 5 transactions.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+IMPORTS{
+import nesting.User;
+import nesting.Account;
+import nesting.Transaction;
+}
+
+GLOBAL{
+
+VARIABLES {
+int userCnt = 0;
+}%%VARIABLES
+
+
+EVENTS{
+
+addUser() = {*.addUser()}
+deleteUser() = {*.deleteUser()}
+allUsers() = {addUser|deleteUser}
+
+}%%EVENTS
+
+
+PROPERTY users{
+
+STATES {
+
+BAD{
+toomany {}
+baddelete{}
+}
+
+NORMAL{
+ok{}
+}
+
+STARTING{
+start {System.out.println("Started!!!");}
+}
+}%%STATES
+
+TRANSITIONS{
+
+ok -> toomany [addUser()\userCnt > 5]
+
+ok -> ok [addUser()\\userCnt++;]
+
+ok -> start [deleteUser()\userCnt == 1\userCnt--;]
+
+ok -> ok [deleteUser()\\userCnt--;]
+
+ok -> ok [allUsers()]
+
+start -> ok [addUser()\\userCnt++;]
+
+start -> baddelete [deleteUser()\\]
+
+start -> start [allUsers()]
+
+}
+}%%PROPERTY
+
+
+
+FOREACH (User u){
+
+VARIABLES {
+
+int accountCnt = 0;
+
+}%%VARIABLES
+
+
+EVENTS{
+
+addAccount(int id) = {User u1.addAccount()}
+where {u = u1;id = u1.id;}
+
+deleteAccount(u1) = {u1.deleteAccount()}
+where {u = u1;}
+
+allAccounts(u1) = {addAccount|deleteAccount}
+
+}%%EVENTS
+
+
+PROPERTY account{
+
+STATES {
+
+BAD{
+toomany {}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addAccount()\accountCnt > 5]
+
+start -> start [addAccount()\\accountCnt++;System.out.println("I have access to USER : " + u + " and to usercnt: " +userCnt);]
+
+start -> start [deleteAccount()\\accountCnt--;]
+
+start -> start [allAccounts()]
+
+}
+}%%PROPERTY
+
+
+
+
+FOREACH (Account a){
+
+VARIABLES {
+
+int transactionCnt = 0;
+
+}%%VARIABLES
+
+
+
+EVENTS{
+
+addTransaction(Account a1) = {a1.addTransaction()}
+where {a = a1;u=a1.owner;}
+
+deleteTransaction(Account a1) = {a1.deleteTransaction()}
+where {a = a1;u=a1.owner;}
+
+allTransactions(Account a1) = {addTransaction|deleteTransaction}
+
+}%%EVENTS
+
+
+PROPERTY transaction{
+
+STATES {
+
+BAD{
+toomany {System.out.println(u);}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addTransaction()\transactionCnt > 5]
+
+start -> start [addTransaction()\\transactionCnt++; 
+System.out.println("I still have access to USER : " + u + " and to usercnt: " +userCnt 
++ " and to accountcnt: " +accountCnt+ " and to transactioncnt: " +transactionCnt);]
+
+start -> start [deleteTransaction()\\transactionCnt --;]
+
+start -> start [allTransactions()]
+
+}
+}%%PROPERTY
+}%%FOREACH ACCOUNT
+}%%FOREACH USER
+}%%GLOBAL
+
+

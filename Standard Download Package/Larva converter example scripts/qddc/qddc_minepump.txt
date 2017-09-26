@@ -1,0 +1,1 @@
+age D<1000 then (([[Alarm] or (begin (Alarm) and len <= 0)) then ([[not D] or (begin(not D) and len <= 0)))

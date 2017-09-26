@@ -1,0 +1,36 @@
+node success(_rt_clock:int; receiveSYN,sendSYNACK,receiveACK:bool) returns (out:bool);
+var
+received:bool;
+replied:bool;
+acktime:int;
+let
+  received = if (receiveSYN) then true
+             else if (false->pre out) then false 
+             else (false -> pre received);
+  replied = if (received and sendSYNACK) then true
+            else if (false -> pre out) then false 
+  			else (false -> pre replied);
+  acktime = if (replied) then _rt_clock else (0-> pre acktime); 
+  out = if (received and replied and receiveACK and _rt_clock - acktime > 2000)
+   then true else false;  
+tel
+
+node retries (_rt_clock:int; fail,success:bool) returns (violated:bool);
+var
+ cnt  :int;
+ time :int;
+let
+  time = if (false -> pre fail) then (0 -> pre _rt_clock)
+         else if ((0 -> pre cnt) == 0) then _rt_clock
+         else (0 -> pre time);
+  cnt = if ((not success) and fail and ((_rt_clock-time) < 2000)) then ((0 -> pre(cnt)) + 1)
+        else if ((not success) and _rt_clock - time < 2000) then (0 -> pre cnt)
+        else if ((not success) and fail) then 1
+        else 0;
+  violated = if (cnt >= 3) then true else (false -> pre violated);
+tel
+
+node main (_rt_clock:int; fail,receiveSYN,sendSYNACK,receiveACK: bool) returns (violated:bool);
+let
+  violated = retries (_rt_clock, fail, success(_rt_clock,receiveSYN,sendSYNACK,receiveACK));
+tel
