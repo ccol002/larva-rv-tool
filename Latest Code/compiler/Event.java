@@ -10,7 +10,8 @@ public class Event extends Trigger{
 
 	public static int sid = -1;
 	
-	public enum EventType {clock, clockCycle, channel, uponEntry, uponThrowing, uponHandling, uponReturning};
+	public enum EventType {clock, //clockCycle
+		 clockDynamic, channel, uponEntry, uponThrowing, uponHandling, uponReturning};
 	
 	//public ArrayList<Token> methodCall = new ArrayList<Token>();
 
@@ -167,34 +168,41 @@ public class Event extends Trigger{
 					this.type = EventType.clock;
 					cnt++;
 				}
-				else if (tokens.get(cnt).is("@%"))
+//				else if (tokens.get(cnt).is("@%"))
+//				{
+//					throw new ParseException("Cyclic clocks are no longer supported in this version :(");
+//					this.type = EventType.clockCycle;
+//					cnt++;
+//				}
+				else if (tokens.get(cnt).is("@@"))
 				{
-					this.type = EventType.clockCycle;
+					this.type = EventType.clockDynamic;
 					cnt++;
 				}
 				else
 					throw new ParseException("@ Expected: " + Tokenizer.debugShow(tokens, cnt));
 				
-				double userAmount = tokens.get(cnt).getNumber();
-				
-				if (tokens.get(cnt-1).is("@") || tokens.get(cnt-1).is("@s"))
+				if (this.type.equals(EventType.clock)){
+
+					double userAmount = tokens.get(cnt).getNumber();
+
+					if (tokens.get(cnt-1).is("@") || tokens.get(cnt-1).is("@s"))
 						clockAmount = (long)(userAmount * 1000);
-				else if (tokens.get(cnt-1).is("@l"))
-					clockAmount = (long)(userAmount);
-				else if (tokens.get(cnt-1).is("@d"))
-					clockAmount = (long)(userAmount * 24 * 60 * 60 * 1000);
-				else if (tokens.get(cnt-1).is("@h"))
-					clockAmount = (long)(userAmount * 60 * 60 * 1000);
-				else if (tokens.get(cnt-1).is("@m"))
-					clockAmount = (long)(userAmount * 60 * 1000);
-					
-				
-				cnt++;
-				
-				if (this.type.equals(EventType.clock))
+					else if (tokens.get(cnt-1).is("@l"))
+						clockAmount = (long)(userAmount);
+					else if (tokens.get(cnt-1).is("@d"))
+						clockAmount = (long)(userAmount * 24 * 60 * 60 * 1000);
+					else if (tokens.get(cnt-1).is("@h"))
+						clockAmount = (long)(userAmount * 60 * 60 * 1000);
+					else if (tokens.get(cnt-1).is("@m"))
+						clockAmount = (long)(userAmount * 60 * 1000);
+
+					cnt++;
+
 					v.clockEvents.add(clockAmount);
-				else
-					v.clockCycleEvents.add(clockAmount);
+				}
+//				else
+//					v.clockCycleEvents.add(clockAmount);
 				
 				for (Variable v1:context.allParentsVars(new ArrayList<Variable>()))
 				{
@@ -641,15 +649,20 @@ public class Event extends Trigger{
 					" && args(millis) && target(_c) " +
 					" && (if (_c.name.equals(\""+this.clockName+"\")))"+
 					" && (if (millis == "+clockAmount+"))"+
-					" && !cflow(adviceexecution())"+
-					" && !cflow(within(larva.*))  && !(within(larva.*))");
+					" && !cflow(adviceexecution())");
 		}
-		else if (type == EventType.clockCycle)
+//		else if (type == EventType.clockCycle)
+//		{
+//			sb.append("Clock _c, long millis) : (call(* Clock.event(long))" +
+//					" && args(millis) && target(_c) && (if (millis % "+clockAmount+"==0))"+
+//					" && !cflow(adviceexecution())"+
+//					" && !cflow(within(larva.*))  && !(within(larva.*))");
+//		}
+		else if (type == EventType.clockDynamic)
 		{
 			sb.append("Clock _c, long millis) : (call(* Clock.event(long))" +
-					" && args(millis) && target(_c) && (if (millis % "+clockAmount+"==0))"+
-					" && !cflow(adviceexecution())"+
-					" && !cflow(within(larva.*))  && !(within(larva.*))");
+					" && args(millis) && target(_c)"+
+					" && !cflow(adviceexecution())");
 		}
 		else if (type == EventType.channel)
 		{
@@ -804,7 +817,7 @@ public class Event extends Trigger{
 			
 			
 			
-			if (!this.type.equals(EventType.clock) && !this.type.equals(EventType.clockCycle))
+			if (!this.type.equals(EventType.clock))
 			{
 
 				sb.append("\r\n_cls_"+g.name+g.id+" _cls_inst = _cls_"+g.name+g.id+"._get_cls_"+g.name+g.id+"_inst( ");
@@ -850,7 +863,7 @@ public class Event extends Trigger{
 //								"._call_all(thisJoinPoint.getSignature().toString()" + s.toString()+");");	
 //				}
 //				else 
-					if (this.type.equals(EventType.clock) || this.type.equals(EventType.clockCycle))
+					if (this.type.equals(EventType.clock))
 				{
 					sb.append("\r\nsynchronized(_c){" +
 							"\r\n if (_c != null && _c._inst != null) {");

@@ -87,6 +87,7 @@ public class Tokenizer {
 		putKeyWord("@");
 		//putKeyWord("@%");
 		putKeyWord("@d");
+		putKeyWord("@@");
 		putKeyWord("@h");
 		putKeyWord("@m");
 		putKeyWord("@s");
@@ -127,6 +128,7 @@ public class Tokenizer {
 		putKeyWord("@");
 		//putKeyWord("@%");
 		putKeyWord("@d");
+		putKeyWord("@@");
 		putKeyWord("@h");
 		putKeyWord("@m");
 		putKeyWord("@s");

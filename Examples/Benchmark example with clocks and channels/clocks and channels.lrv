@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% This script does nothing particularly useful except showcasing 
+%% the use of clocks and channels. Basically, an automaton triggers
+%% another identical automaton after a timeout of 1 second for 5 times.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+GLOBAL{
+
+Variables{
+Clock c = new Clock();          %%clocks need not be declared as events...can be used as such to declare as part of a collection
+Channel d = new Channel();%%channels are considered to be events (so the names must be unique throughout the events)
+int count = 0;
+}
+
+
+Events{
+clockC5() = {c@1}
+channeld(String from) = {d.receive(from)}
+}
+
+
+
+PROPERTY test1{
+STATES{
+NORMAL{normal}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> normal 
+[clockC5
+\count > 5
+\d.send("test1");
+System.out.println("Reached Normal State!! 1");
+System.out.println(System.currentTimeMillis());
+]
+starting -> starting 
+[clockC5
+\\c.reset();
+count++;
+System.out.println(System.currentTimeMillis());
+]
+}
+}
+
+PROPERTY test2{
+STATES{
+NORMAL{normal starting}
+STARTING{beforestarting}
+}
+
+TRANSITIONS{
+beforestarting -> starting 
+[channeld
+\from.equals("test1")
+\c.reset();
+System.out.println(System.currentTimeMillis());
+]
+starting -> normal 
+[clockC5
+\count > 5
+\System.out.println("Reached Normal State!! 2");
+System.out.println(System.currentTimeMillis());
+]
+starting -> starting 
+[clockC5
+\\c.reset();
+count++;
+System.out.println(System.currentTimeMillis());
+]
+}
+}
+
+
+}

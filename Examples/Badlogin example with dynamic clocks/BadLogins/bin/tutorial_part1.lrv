@@ -1,0 +1,25 @@
+GLOBAL{
+
+VARIABLES{
+int count = 0; 
+}
+  
+EVENTS{
+badlogin() = {*.badlogin()}
+goodlogin() = {*.goodlogin()}
+}
+
+PROPERTY badlogins{
+STATES{
+BAD{bad}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> bad [badlogin\count > 3 \System.out.println("More than 3 bad logins!!!");]
+starting -> starting [badlogin\\count++;]
+starting -> starting [goodlogin\\count=0;]
+}
+}
+
+}

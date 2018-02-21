@@ -1,0 +1,8 @@
+<aspectj>
+<aspects>
+<aspect name="aspects._asp_badlogins0"/>
+<aspect name="aspects._asp_tutorial_part10"/>
+<aspect name="aspects._asp_tutorial_part20"/>
+</aspects>
+</aspectj>
+

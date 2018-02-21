@@ -1,0 +1,11 @@
+[badlogins]AUTOMATON::> badlogins() STATE::>starting
+[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
+[badlogins]AUTOMATON::> badlogins() STATE::>starting
+[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
+[badlogins]AUTOMATON::> badlogins() STATE::>starting
+Seems to work :)
+[badlogins]MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+[badlogins]AUTOMATON::> badlogins() STATE::>starting
+[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
+[badlogins]AUTOMATON::> badlogins() STATE::>starting
+[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting

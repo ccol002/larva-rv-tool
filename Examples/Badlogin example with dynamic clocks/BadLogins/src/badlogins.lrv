@@ -1,0 +1,28 @@
+GLOBAL{
+
+VARIABLES{
+Clock c = new Clock();
+int count = 0; 
+}
+
+EVENTS{
+badlogin() = {*.badlogin()}
+cAT5() = {c@5}
+}
+
+PROPERTY badlogins{
+STATES{
+BAD{bad}
+STARTING{starting}
+}
+
+TRANSITIONS{%%if more than 3 badlogins are encountered in less than 10 seconds is reverts to a bad state
+%% note that it is not correct!!
+starting -> bad [badlogin\count > 3 && c.compareTo(10)<0\System.out.println("More than 3 bad logins within 10 seconds!!!");c.reset();]
+bad -> bad [badlogin]
+bad -> starting [cAT5\\count = 0;c.reset();]
+starting -> starting [badlogin\\count++;System.out.println("count="+count);]
+}
+}
+
+}

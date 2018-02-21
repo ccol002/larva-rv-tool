@@ -1,0 +1,50 @@
+package larva;
+
+import java.util.ArrayList;
+
+public abstract class Clock {
+
+protected String name;
+protected boolean thison = true;
+protected _callable _inst;
+
+ArrayList<Long> registered = new ArrayList<Long>();
+	//ArrayList<Long> cycles = new ArrayList<Long>();
+
+
+long starting;
+boolean enabled = false;
+boolean paused = false;
+long durationPaused = 0;
+long whenPaused;
+	
+
+
+
+public  Clock(_callable _inst, String name)
+{
+this._inst = _inst;
+this.name = name;
+}
+
+public String toString() {
+  return name;
+}
+
+public void off(){
+synchronized (this){
+thison = false;
+}}
+
+public abstract boolean verified(long starting);
+
+//use this method to add events dynamically
+//use only with dynamic clocks!!
+public void registerGlobally(Long millis, Long current)
+{
+	RunningClock.register(millis,current, this);
+}
+
+public void event(long millis){}
+
+}

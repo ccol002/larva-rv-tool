@@ -1,0 +1,9 @@
+digraph _logic_badlogins {
+rankdir=LR;
+node [shape = circle]; starting;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> starting;
+starting -> starting [ label = "(1) cAT5\\\\System . out . println ( \" Seems to work :) \" ) ; "];
+starting -> starting [ label = "(2) badlogin\\\\c . registerDynamically ( 1000l , System . currentTimeMillis ( ) ) ; "];
+}

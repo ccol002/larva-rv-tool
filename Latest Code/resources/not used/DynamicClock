@@ -1,0 +1,19 @@
+package larva;
+
+
+public class DynamicClock extends Clock{	
+
+
+//note that this clock does not support pausing
+public DynamicClock(_callable _inst, String name)
+{
+	super(_inst,name);
+}
+
+public boolean verified(long starting)
+{
+return enabled && thison;
+}
+
+
+}

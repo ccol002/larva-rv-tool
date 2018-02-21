@@ -1,0 +1,26 @@
+GLOBAL{
+
+VARIABLES{
+Clock c = new DynamicClock();
+int count = 0; 
+}
+
+EVENTS{
+badlogin() = {*.badlogin()}
+cAT5() = {c@@}
+}
+
+PROPERTY badlogins{
+STATES{
+BAD{bad}
+STARTING{starting}
+}
+
+TRANSITIONS{%%if more than 3 badlogins are encountered in less than 10 seconds is reverts to a bad state
+%% note that it is not correct!!
+starting -> starting [cAT5\\System.out.println("Seems to work :)");]
+starting -> starting [badlogin\\c.registerDynamically(1000l,System.currentTimeMillis());]
+}
+}
+
+}
