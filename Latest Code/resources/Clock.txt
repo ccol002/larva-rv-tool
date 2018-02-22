@@ -33,15 +33,8 @@ synchronized (this){
 thison = true;
 }}
 
-public void dropAllTimeouts(){
-	synchronized (this){
-		starting = -1;//drops any existing timeouts as "verified" method will fail
-	}
-}
-
 public void off(){
 synchronized (this){
-	dropAllTimeouts();
 	thison = false;
 }}
 
