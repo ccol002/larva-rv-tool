@@ -28,9 +28,21 @@ public String toString() {
   return name;
 }
 
+public void on(){
+synchronized (this){
+thison = true;
+}}
+
+public void dropAllTimeouts(){
+	synchronized (this){
+		starting = -1;//drops any existing timeouts as "verified" method will fail
+	}
+}
+
 public void off(){
 synchronized (this){
-thison = false;
+	dropAllTimeouts();
+	thison = false;
 }}
 
 
@@ -125,14 +137,21 @@ registered.add(millis);
 		RunningClock.register(millis,current, this);
 	}
 
-	//WARNING: THIS IS NOT COMPATIBLE WITH NON-DYNAMIC CLOCKS
-	//DO NOT USE WITH PAUSE AND RESUME
-	//DO NOT USE WITH FIXED TIMEOUTS
+	//WARNING: this CANCELS any timeouts already set in another "current" time
 	public void registerDynamically(Long millis, Long current)
 	{
 		starting = current;
+		
 		RunningClock.register(millis,current, this);
 	}
+	
+	//sets a timer without disrupting any which might already be there
+	public void registerDynamically(Long millis)
+	{
+		RunningClock.register(millis+(System.currentTimeMillis()-starting),starting, this);
+	}
+	
+	
 
 //	public void registerCycle(long millis) {
 //		cycles.add(millis);

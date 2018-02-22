@@ -427,8 +427,6 @@ public class Global extends Compiler{
 		{
 			cl.append("\r\nstatic{\r\ntry{");
 
-			cl.append("\r\nRunningClock.start();");
-			
 			if (!Compiler.console)//just output to console instead of file
 				cl.append("\r\npw = new PrintWriter(\""+Compiler.outputDir.replace("\\", "\\\\")
 					+"/output_"+name+".txt\");\r\n");
