@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>AnomicFTPD: Configuration</title>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<!-- <meta name="Content-Language" content="German, Deutsch, de, at, ch"> -->
+<meta name="Content-Language" content="English, Englisch">
+<META NAME="keywords" CONTENT="Anomic java free freeware shareware ftp ftpd daemon server easy simple small fast mac macintosh 68040 68k classic os osx dos windows unix linux compatible connection connectivity network download 959 rfc959">
+<meta name="description" content="AnomicFTPD ftp server documentation">
+<meta name="copyright" content="Michael Christen">
+<script src="navigation.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" href="style.css">
+<!-- Realisation: Michael Christen; Contact: mc<at>anomic.de-->
+</head>
+<body background="grafics/background.gif" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalheader();
+//--></SCRIPT>
+<!-- ----- HERE STARTS CONTENT PART ----- -->
+
+<H2>Configuration:</H2>
+<P>Many different properties of the server and the user accounts can be defined
+in configuration files, which are:
+<table border="0" cellspacing="5">
+<tr><td>ftpd.init</td><td>- general parameters of the ftpd application</td><tr>
+<tr><td>ftpd.groups</td>  <td>- access right configuration for groups</td><tr>
+<tr><td>ftpd.accounts</td><td>- group and password file for users</td><tr>
+</table></P>
+
+<BR><H3>file ftpd.init</H3>
+<p><table border="0" cellspacing="5">
+<tr><td><tt>welcome=&#60;string&#62;</tt></td><td valign="top">- the welcome message broadcasted to the clients</td></tr>
+<tr><td><tt>port=&#60;integer&#62;</tt></td><td valign="top">- the port number of the ftp daemon, usually 21 or 2121</td></tr>
+<tr><td><tt>clients=&#60;ip-list&#62;</tt></td><td valign="top">- comma-separated list of ip's or '*' for all</td></tr>
+<tr><td><tt>unixfilemask=&#60;mask&#62;</tt></td><td valign="top">- a unix mask for file access rights, like '666'</td></tr>
+<tr><td><tt>unixfoldermask=&#60;mask&#62;</tt></td><td valign="top">- a unix mask for folder access rights, like '777'</td></tr>
+<tr><td><tt>unixuser=&#60;string&#62;</tt></td><td valign="top">- the unix user account for newly created files</td></tr>
+<tr><td><tt>unixgroup=&#60;string&#62;</tt></td><td valign="top">- the unix group account for newly created files</td></tr>
+<tr><td><tt>loglevel=[0&brvbar;1&brvbar;2]</tt></td><td valign="top">- level of output of the daemon</td></tr>
+<tr><td><tt>caching=[true&brvbar;false]</tt></td><td valign="top">- switches file caching in the ftp server</td></tr>
+<tr><td><tt>createindex=[true&brvbar;false]</tt></td><td valign="top">- switches an on-the-fly 'index.html' file creation</td></tr>
+<tr><td><tt>currYearFormat=&#60;format&#62;</tt></td><td valign="top">- defines the date format for the dir command</td></tr>
+<tr><td><tt>prevYearFormat=&#60;format&#62;</tt></td><td valign="top">- the format is according to SimpleTextFormat</td></tr>
+<tr><td><tt>charcoding=&#60;coding&#62;</tt></td><td valign="top">- the default character coding</td></tr>
+</table></p>
+<p>Example:
+<pre>
+welcome=WELCOME TO THE ANOMIC FTP SERVER
+port=2121
+clients=*
+loglevel=2
+unixfilemask=666
+unixfoldermask=777
+unixuser=admin
+unixgroup=admin
+caching=false
+createindex=true
+currYearFormat=MMM dd HH:mm
+prevYearFormat=MMM dd  yyyy
+charcoding=UTF-8
+</pre></p>
+
+
+<BR><H3>file ftpd.groups</H3>
+<p>
+<tt>&#60;group_name&#62;=&#60;'r'|'-'&#62;&#60;'w'|'-'&#62;&#60;'x'|'-'&#62;','&#60;UU&#62;':'&#60;DD&#62;','&#60;root_path&#62;</tt><br><br>
+this defines read (r), write(x) or execution (x) rights under the condition of
+a specific upload (UU) / download (DD) ratio (ratio not yet implemented).
+The root path as given here appears then as '/' to the client
+</p>
+<p>Example:
+<pre>
+usergroup=rw-,00:01,/
+guestgroup=r--,00:01,/pub
+admingroup=rwx,00:01,/
+dosusergroup=rw-,00:01,C:\\
+dosguestgroup=r--,00:01,C:\\pub
+dosadmingroup=rwx,00:01,C:\\
+</pre></p>
+<p>
+On a DOS or WinNT (W2K/XP) System, the backslash '\' must occur double
+since this symbol acts as an escape character.
+</p>
+
+
+<BR><H3>file ftpd.accounts</H3>
+<p>
+<tt>&#60;user_name&#62;=&#60;group_name&#62;','&#60;password&#62;</tt><br><br>
+this assigns a specific user to a group and defines the password of that user.
+</p>
+<p>Example:
+<pre>
+bob=usergroup,123password
+jim=dosusergroup,456password
+anonymous=dosguestgroup,*
+admin=dosadmingroup,789password
+</pre></p>
+<p>
+If the password is a '*', then any word is accepted as password. Browsers use the word 'anonymous' as
+the user name to authentify anonymously at a ftp server (in all cases when the used omits an user name).
+It is therefore necessary and sound to define a user group with no-write access that is used as group
+for anonymous accounts and to specify that this account shall be accepted without any password (like
+in this example here).
+</p>
+
+<!-- ----- HERE ENDS CONTENT PART ----- -->
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalfooter();
+//--></SCRIPT>
+</body>
+</html>

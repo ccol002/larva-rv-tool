@@ -1,0 +1,142 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d887254, pid=5268, tid=488
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0_03-b05 mixed mode)
+# Problematic frame:
+# V  [jvm.dll+0xc7254]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00317000):  JavaThread "main" [_thread_in_vm, id=488]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000000
+
+Registers:
+EAX=0x00000000, EBX=0x002ef5f8, ECX=0x00000006, EDX=0x6d887220
+ESP=0x002ef57c, EBP=0x002ef620, ESI=0x00317000, EDI=0x002efc84
+EIP=0x6d887254, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x002ef57c)
+0x002ef57c:   00317000 00000006 002efc84 003170ec
+0x002ef58c:   10004d2d 003170ec 00000000 002ef620
+0x002ef59c:   003170ec 0000003c 002ef5f8 003170ec
+0x002ef5ac:   10003100 002ef620 00000000 002ef5f8
+0x002ef5bc:   00000000 003170ec 002efc84 002efc88
+0x002ef5cc:   00000000 00000000 002ef5f8 002ef5f8
+0x002ef5dc:   10002e47 002efc84 00000000 00317000
+0x002ef5ec:   07404740 002efc74 07404740 00000060 
+
+Instructions: (pc=0x6d887254)
+0x6d887244:   eb 02 8b f1 6a 06 56 e8 d0 f2 f8 ff 8b 44 24 18
+0x6d887254:   8b 08 8b 79 08 6a 04 6a 06 56 e8 bd 0e f5 ff 83 
+
+
+Stack: [0x002a0000,0x002f0000),  sp=0x002ef57c,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0xc7254]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  jpcap.JpcapSender.nativeSendPacket(Ljpcap/packet/Packet;)V+0
+j  jpcap.JpcapSender.sendPacket(Ljpcap/packet/Packet;)V+19
+j  Main.main([Ljava/lang/String;)V+99
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x01167400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=6112]
+  0x01151c00 JavaThread "CompilerThread0" daemon [_thread_blocked, id=4348]
+  0x01150c00 JavaThread "Attach Listener" daemon [_thread_blocked, id=5432]
+  0x01150400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=840]
+  0x01140400 JavaThread "Finalizer" daemon [_thread_blocked, id=3220]
+  0x01137800 JavaThread "Reference Handler" daemon [_thread_blocked, id=6080]
+=>0x00317000 JavaThread "main" [_thread_in_vm, id=488]
+
+Other Threads:
+  0x01133000 VMThread [id=3260]
+  0x01168000 WatcherThread [id=4888]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 405K [0x03200000, 0x03300000, 0x036e0000)
+  eden space 896K,  45% used [0x03200000, 0x03265490, 0x032e0000)
+  from space 64K,   0% used [0x032e0000, 0x032e0000, 0x032f0000)
+  to   space 64K,   0% used [0x032f0000, 0x032f0000, 0x03300000)
+ tenured generation   total 4096K, used 0K [0x036e0000, 0x03ae0000, 0x07200000)
+   the space 4096K,   0% used [0x036e0000, 0x036e0000, 0x036e0200, 0x03ae0000)
+ compacting perm gen  total 12288K, used 2095K [0x07200000, 0x07e00000, 0x0b200000)
+   the space 12288K,  17% used [0x07200000, 0x0740bd40, 0x0740be00, 0x07e00000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files\Java\jre1.6.0_03\bin\javaw.exe
+0x77220000 - 0x7733e000 	C:\Windows\system32\ntdll.dll
+0x75eb0000 - 0x75f88000 	C:\Windows\system32\kernel32.dll
+0x75ae0000 - 0x75b9f000 	C:\Windows\system32\ADVAPI32.dll
+0x75fe0000 - 0x760a3000 	C:\Windows\system32\RPCRT4.dll
+0x76270000 - 0x7630e000 	C:\Windows\system32\USER32.dll
+0x75f90000 - 0x75fdb000 	C:\Windows\system32\GDI32.dll
+0x77010000 - 0x7702e000 	C:\Windows\system32\IMM32.DLL
+0x75ba0000 - 0x75c67000 	C:\Windows\system32\MSCTF.dll
+0x76e30000 - 0x76eda000 	C:\Windows\system32\msvcrt.dll
+0x77340000 - 0x77349000 	C:\Windows\system32\LPK.DLL
+0x760b0000 - 0x7612d000 	C:\Windows\system32\USP10.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre1.6.0_03\bin\msvcr71.dll
+0x6d7c0000 - 0x6da0a000 	C:\Program Files\Java\jre1.6.0_03\bin\client\jvm.dll
+0x74500000 - 0x74533000 	C:\Windows\system32\WINMM.dll
+0x75cd0000 - 0x75e14000 	C:\Windows\system32\ole32.dll
+0x75e20000 - 0x75eac000 	C:\Windows\system32\OLEAUT32.dll
+0x742e0000 - 0x74318000 	C:\Windows\system32\OLEACC.dll
+0x75910000 - 0x7593c000 	C:\Windows\system32\apphelp.dll
+0x6d310000 - 0x6d318000 	C:\Program Files\Java\jre1.6.0_03\bin\hpi.dll
+0x75a40000 - 0x75a47000 	C:\Windows\system32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files\Java\jre1.6.0_03\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files\Java\jre1.6.0_03\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files\Java\jre1.6.0_03\bin\zip.dll
+0x10000000 - 0x10028000 	C:\Windows\System32\Jpcap.dll
+0x77060000 - 0x7708d000 	C:\Windows\system32\WS2_32.dll
+0x76130000 - 0x76136000 	C:\Windows\system32\NSI.dll
+0x0b680000 - 0x0b6c1000 	C:\Windows\system32\wpcap.dll
+0x00d00000 - 0x00d15000 	C:\Windows\system32\packet.dll
+0x753a0000 - 0x753b9000 	C:\Windows\system32\iphlpapi.dll
+0x75360000 - 0x75395000 	C:\Windows\system32\dhcpcsvc.DLL
+0x755d0000 - 0x755fb000 	C:\Windows\system32\DNSAPI.dll
+0x75970000 - 0x75984000 	C:\Windows\system32\Secur32.dll
+0x75350000 - 0x75357000 	C:\Windows\system32\WINNSI.DLL
+0x75330000 - 0x75350000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x751e0000 - 0x751e8000 	C:\Windows\system32\VERSION.dll
+0x6d570000 - 0x6d583000 	C:\Program Files\Java\jre1.6.0_03\bin\net.dll
+0x75170000 - 0x751ab000 	C:\Windows\system32\mswsock.dll
+0x751d0000 - 0x751d6000 	C:\Windows\System32\wship6.dll
+
+VM Arguments:
+java_command: Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Java\jre1.6.0_03\bin\client;C:\Program Files\Java\jre1.6.0_03\bin;C:\Program Files\MiKTeX 2.7\miktex\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;"C:\Program Files\Graphviz2.16\Bin";C:\MidpX\midp\win32;C:\aspectj1.6\bin;C:\j2sdk1.4.2_16\bin;C:\WTK2.5.1\bin;C:\Program Files\TortoiseSVN\bin
+USERNAME=University User
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 15 Stepping 13, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6000 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 15 stepping 13, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 980864k(93484k free), swap 2257544k(320740k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0_03-b05) for windows-x86, built on Sep 24 2007 22:24:33 by "java_re" with unknown MS VC++:1310
+

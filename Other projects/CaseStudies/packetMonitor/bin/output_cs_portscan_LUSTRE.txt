@@ -1,0 +1,53 @@
+AUTOMATON::> main() STATE::>initialization
+MOVED ON METHODCALL: void sniffer.Main.initialize() TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 23  receive: false  port: -1  output: false 
+MOVED ON METHODCALL: void sniffer.Main.initialize() TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 3314  receive: true  port: 54655  output: false 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 5964  receive: true  port: 54659  output: false 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 6307  receive: true  port: 20000  output: false 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 6310  receive: true  port: 20001  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 6317  receive: true  port: 20002  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 6319  receive: true  port: 20003  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 6321  receive: true  port: 20004  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 11076  receive: true  port: 58164  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 18322  receive: true  port: 54659  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 21797  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 21798  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 48420  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 48421  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 48589  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 48590  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> main() STATE::>lustre
+ _rt_clock: 48732  receive: true  port: 54655  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre

@@ -1,0 +1,800 @@
+AUTOMATON::> lessThan5(benchmark.User@1430b5c ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@c2a132 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@c2a132 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@c2a132 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@c2a132 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1e51060 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19616c7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19616c7 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19616c7 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19616c7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@b166b5 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@cdfc9c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@cdfc9c ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@cdfc9c ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@cdfc9c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@133796 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1a679b7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1a679b7 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1a679b7 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1a679b7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@80f4cb ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@4741d6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@4741d6 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@4741d6 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@4741d6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@337d0f ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@578ceb ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@578ceb ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@578ceb ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@578ceb ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1e4cbc4 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1fdc96c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1fdc96c ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1fdc96c ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1fdc96c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@b2fd8f ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@124bbbf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@124bbbf ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@124bbbf ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@124bbbf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@a20892 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e0bc08 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e0bc08 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e0bc08 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e0bc08 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@158b649 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@127734f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@127734f ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@127734f ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@127734f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1037c71 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1df073d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1df073d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1df073d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1df073d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1546e25 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b66cc ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b66cc ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b66cc ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b66cc ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@8a0d5d ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@173831b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@173831b ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@173831b ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@173831b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@a470b8 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e4457d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e4457d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e4457d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e4457d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@18e2b22 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b1c5fa ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b1c5fa ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b1c5fa ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b1c5fa ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@13caecd ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@f84386 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@f84386 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@f84386 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@f84386 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1194a4e ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15d56d5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15d56d5 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15d56d5 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15d56d5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@efd552 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19dfbff ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19dfbff ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19dfbff ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19dfbff ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@10b4b2f ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@750159 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@750159 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@750159 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@750159 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1abab88 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@18a7efd ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@18a7efd ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@18a7efd ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@18a7efd ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1971afc ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@16cd7d5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@16cd7d5 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@16cd7d5 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@16cd7d5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@cdedfd ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1c39a2d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1c39a2d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1c39a2d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1c39a2d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@bf2d5e ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@13bad12 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@13bad12 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@13bad12 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@13bad12 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@df8ff1 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1632c2d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1632c2d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1632c2d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1632c2d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1e97676 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@60420f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@60420f ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@60420f ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@60420f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@19106c7 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@540408 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@540408 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@540408 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@540408 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1d4c61c ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1a626f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1a626f ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1a626f ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1a626f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@34a1fc ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@176c74b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@176c74b ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@176c74b ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@176c74b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@116471f ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1975b59 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1975b59 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1975b59 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1975b59 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1ee3914 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@e5855a ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@e5855a ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@e5855a ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@e5855a ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@95fd19 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@11b9fb1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@11b9fb1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@11b9fb1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@11b9fb1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@913fe2 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1f934ad ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1f934ad ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1f934ad ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1f934ad ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1d05c81 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@691f36 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@691f36 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@691f36 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@691f36 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@18020cc ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@12a54f9 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@12a54f9 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@12a54f9 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@12a54f9 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@30e280 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@16672d6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@16672d6 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@16672d6 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@16672d6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@fd54d6 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ccb029 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ccb029 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ccb029 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ccb029 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1415de6 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@7bd9f2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@7bd9f2 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@7bd9f2 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@7bd9f2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@121cc40 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1386000 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1386000 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1386000 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1386000 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@26d4f1 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1662dc8 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1662dc8 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1662dc8 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1662dc8 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@147c5fc ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1174b07 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1174b07 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1174b07 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1174b07 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@3eca90 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@64dc11 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@64dc11 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@64dc11 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@64dc11 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1ac1fe4 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@161d36b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@161d36b ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@161d36b ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@161d36b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@17f1ba3 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ef8cf3 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ef8cf3 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ef8cf3 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ef8cf3 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@ecd7e ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1d520c4 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1d520c4 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1d520c4 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1d520c4 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@15a3d6b ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1764be1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1764be1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1764be1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1764be1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@16fd0b7 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ef9f1d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ef9f1d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ef9f1d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ef9f1d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@b753f8 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e9cb75 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e9cb75 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1e9cb75 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1e9cb75 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1b16e52 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1c1ea29 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1c1ea29 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1c1ea29 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1c1ea29 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1f436f5 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@4413ee ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@4413ee ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@4413ee ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@4413ee ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1786e64 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@197a37c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@197a37c ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@197a37c ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@197a37c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@6e3d60 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@17fa65e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@17fa65e ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@17fa65e ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@17fa65e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@18385e3 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1cb25f1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1cb25f1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1cb25f1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1cb25f1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@2808b3 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@535b58 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@535b58 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@535b58 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@535b58 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@922804 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1815859 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1815859 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1815859 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1815859 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@cf40f5 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b1c260 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b1c260 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b1c260 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b1c260 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@503429 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1908ca1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1908ca1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1908ca1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1908ca1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@100ab23 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@e3b895 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@e3b895 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@e3b895 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@e3b895 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@6b7920 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1dd46f7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1dd46f7 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1dd46f7 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1dd46f7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@5e3974 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@df503 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@df503 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@df503 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@df503 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@50d89c ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1bd0dd4 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1bd0dd4 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1bd0dd4 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1bd0dd4 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@d70d7a ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b5f53a ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b5f53a ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b5f53a ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b5f53a ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1f6f0bf ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@137c60d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@137c60d ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@137c60d ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@137c60d ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@ab853b ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b82368 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b82368 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b82368 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b82368 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@11c8a71 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@c53dce ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@c53dce ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@c53dce ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@c53dce ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@15cda3f ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@fc9944 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@fc9944 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@fc9944 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@fc9944 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1b26af3 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@8b819f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@8b819f ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@8b819f ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@8b819f ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@eb017e ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@aeffdf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@aeffdf ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@aeffdf ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@aeffdf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@120a47e ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@f73c1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@f73c1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@f73c1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@f73c1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@789144 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1893efe ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1893efe ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1893efe ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1893efe ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@186c6b2 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15ee671 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15ee671 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15ee671 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15ee671 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@16b13c7 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@df8f5e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@df8f5e ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@df8f5e ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@df8f5e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@13d93f4 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1bca5f1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1bca5f1 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1bca5f1 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1bca5f1 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@329f3d ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1749757 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1749757 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1749757 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1749757 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@17bd6a1 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@147ee05 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@147ee05 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@147ee05 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@147ee05 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@15b9e68 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1fcf0ce ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1fcf0ce ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1fcf0ce ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1fcf0ce ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1256ea2 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@82701e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@82701e ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@82701e ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@82701e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@18ee9d6 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19a0c7c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19a0c7c ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@19a0c7c ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@19a0c7c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@a9ae05 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1dff3a2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1dff3a2 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1dff3a2 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1dff3a2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1f42b49 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@145e044 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@145e044 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@145e044 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@145e044 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@17e6a96 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@87a5cc ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@87a5cc ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@87a5cc ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@87a5cc ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1960f05 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b42cbf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b42cbf ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@b42cbf ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@b42cbf ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@e5b723 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15a8767 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15a8767 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@15a8767 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@15a8767 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@6f7ce9 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@171bbc9 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@171bbc9 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@171bbc9 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@171bbc9 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1dfafd1 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@8fce95 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@8fce95 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@8fce95 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@8fce95 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@143c8b3 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@12d7a10 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@12d7a10 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@12d7a10 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@12d7a10 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@a8c488 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1feca64 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1feca64 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1feca64 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1feca64 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@998b08 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@76cbf7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@76cbf7 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@76cbf7 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@76cbf7 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@148cc8c ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@6d084b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@6d084b ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@6d084b ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@6d084b ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@3bb2b8 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@152544e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@152544e ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@152544e ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@152544e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1cdeff ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@17471e0 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@17471e0 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@17471e0 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@17471e0 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1e04cbf ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@cec0c5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@cec0c5 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@cec0c5 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@cec0c5 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1d2068d ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ac2f9c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ac2f9c ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@1ac2f9c ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@1ac2f9c ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@169ca65 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@66e815 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@66e815 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@66e815 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@66e815 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@ece65 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@106082 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@106082 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@106082 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@106082 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1301ed8 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@3901c6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@3901c6 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@3901c6 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@3901c6 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@a37368 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@edc3a2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@edc3a2 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@edc3a2 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@edc3a2 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@1c6f579 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@11ddcde ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@11ddcde ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@11ddcde ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@11ddcde ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@18fb1f7 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@ed0338 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@ed0338 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@ed0338 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@ed0338 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@6e70c7 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@ae506e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@ae506e ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@ae506e ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@ae506e ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok
+AUTOMATON::> lessThan5(benchmark.User@228a02 ) STATE::>starting
+MOVED ON METHODCALL: Transaction benchmark.User.addTransaction() TO STATE::> starting
+AUTOMATON::> settingAmount(benchmark.Transaction@192b996 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@192b996 ) STATE::>starting
+AUTOMATON::> settingAmount(benchmark.Transaction@192b996 ) STATE::>starting
+AUTOMATON::> retryTimeoutandExceptionRetry(benchmark.Transaction@192b996 ) STATE::>starting
+MOVED ON METHODCALL: boolean benchmark.Transaction.execute() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  ok

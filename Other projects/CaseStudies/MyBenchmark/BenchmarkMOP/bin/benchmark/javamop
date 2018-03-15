@@ -1,0 +1,29 @@
+    <Specification> ::= /*@ <Header> <Body> <Handlers> @*/
+           <Header> ::= <Attribute>*[scope =<Scope>][logic =<Logic>]
+        <Attribute> ::= static | outline | offline | centralized | partial
+            <Scope> ::= global | class [(<Name>)] | interface | method
+             <Name> ::= <Identifier>
+            <Logic> ::= <Identifier>
+             <Body> ::= [<Name>][(<Parameters>)]{<LogicSpecificContent>}
+       <Parameters> ::= ( <Type> <Identifier>)+
+         <Handlers> ::= [<ViolationHandler>] [<ValidationHandler>]
+ <ViolationHandler> ::= validation handler {<Statement>}
+<ValidationHandler> ::= validation handler {<Statement>}
+
+
+
+/*@
+scope = class{benchmark.User}
+logic = ERE
+Transcount{
+[int count = 0;]
+event add : end(call(* *.addTransaction())){count++;}
+formula : add add *
+}
+Validation handler{
+if (@MONITOR.count < 5)
+   System.out.println("ok!")
+else
+   System.out.println("qbadtek!");
+}
+@*/

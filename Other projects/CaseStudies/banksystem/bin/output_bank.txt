@@ -1,0 +1,44 @@
+Started!!!
+[users]AUTOMATON::> users() STATE::>start
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+[users]AUTOMATON::> users() STATE::>ok
+[users]MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! toomany 
+aspects._asp_bank0.ajc$before$aspects__asp_bank0$3$5274165d(_asp_bank0.aj:34)
+nesting.Bank.menu(Bank.java:71)
+nesting.Bank.main(Bank.java:86) 
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+I have access to USER : User 0 and to usercnt: 6
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> start
+[account]AUTOMATON::> account(User 0 ) STATE::>start
+[account]MOVED ON METHODCALL: void nesting.User.addAccount() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! toomany 
+aspects._asp_bank1.ajc$before$aspects__asp_bank1$3$3c1fc601(_asp_bank1.aj:41)
+nesting.User.menu(User.java:88)
+nesting.Bank.userMenu(Bank.java:46)
+nesting.Bank.menu(Bank.java:74)
+nesting.Bank.main(Bank.java:86) 
+[account]AUTOMATON::> account(User 0 ) STATE::>toomany

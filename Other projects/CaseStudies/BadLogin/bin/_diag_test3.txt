@@ -1,0 +1,7 @@
+digraph _logic_test3 {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) e_at_1\\\\e . reset ( ) ; e . reset ( ) ; e . reset ( ) ; e . reset ( ) ; System . out . println ( \" clock e  \" + System . currentTimeMillis ( ) ) ; "];
+}

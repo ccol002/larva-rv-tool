@@ -1,0 +1,81 @@
+AUTOMATON::> ceform() STATE::>start
+AUTOMATON::> ceform() STATE::>start
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> loc0i1i
+AUTOMATON::> ceform() STATE::>loc0i1i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> loc0i1i2i
+AUTOMATON::> ceform() STATE::>loc0i1i2i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i1i2i
+AUTOMATON::> ceform() STATE::>loc0i1i2i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> loc0i1i2i3i3l
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i4i 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$3$271f25a4(_asp_ceform80.aj:22)
+larva.ClockEvent.run(ClockEvent.java:13)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i4i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i4i 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$3$271f25a4(_asp_ceform80.aj:22)
+larva.ClockEvent.run(ClockEvent.java:13)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i4i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i4i 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$3$271f25a4(_asp_ceform80.aj:22)
+larva.ClockEvent.run(ClockEvent.java:13)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i4i
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform() STATE::>loc0i1i2i3i4i3l
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i4i3l 
+aspects._asp_ceform80.ajc$before$aspects__asp_ceform80$4$2d0f210d(_asp_ceform80.aj:30)
+main.Main.run(Main.java:18)
+java.lang.Thread.run(Unknown Source) 

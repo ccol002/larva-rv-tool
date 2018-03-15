@@ -1,0 +1,2964 @@
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690832833
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690832833
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690832834
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833335
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833335
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833337
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833337
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833342
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833343
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833344
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833345
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833346
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833346
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833346
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833347
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833845
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833846
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833847
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690833847
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690833848
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690833848
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834347
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834349
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834349
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834349
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834349
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834350
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834350
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834350
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834351
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834351
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834351
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834351
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834851
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834851
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690834851
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834853
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834853
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834853
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834853
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834854
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834854
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690834854
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690834854
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835352
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835353
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835353
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835353
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835355
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835356
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835357
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835357
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835357
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835358
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835358
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835358
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835359
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835360
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835360
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835361
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835361
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835361
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835361
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835361
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835362
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835362
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835362
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835363
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835363
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835862
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690835871
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835871
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690835872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690835872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836371
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836371
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836372
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836372
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690836372
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690836372
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690836373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690836373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690836872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690836873
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690836896
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690836896
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690836896
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690836897
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690837301
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690837372
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690837373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690837396
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690837396
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690837397
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690837398
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690837872
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690837873
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690837873
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690837896
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690837896
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690837898
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690837898
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690838373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690838373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838397
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838397
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838397
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838399
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838399
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690838403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690838403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690838873
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690838874
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838899
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690838899
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690838903
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690838903
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690839373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690839373
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839399
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839400
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839400
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839404
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839404
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839404
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690839873
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690839874
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839905
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839905
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690839906
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839906
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839907
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690839907
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840374
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840374
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690840408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690840408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840410
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840874
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840875
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840875
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690840875
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690840908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690840908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840911
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840911
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690840912
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690841375
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690841375
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690841376
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690841408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690841408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690841412
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690841412
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690841876
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690841876
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690841908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690841908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690841912
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690841912
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690841913
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690842302
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690842302
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690842303
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690842303
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842376
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842377
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842377
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842377
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842415
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842416
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842416
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842417
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842418
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842418
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842418
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842419
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842877
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842880
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690842881
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842917
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842918
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690842918
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842919
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842919
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842922
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690842922
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843381
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843382
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843382
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843382
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843419
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843419
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843420
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843420
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843420
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843421
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843421
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843421
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843422
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843423
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843423
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843423
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843423
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843882
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843882
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690843883
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843922
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843924
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843925
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843925
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843925
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843926
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843926
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843927
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843927
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843927
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843927
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843928
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843928
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690843928
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843929
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843929
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843929
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843929
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843930
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843930
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843930
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843930
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843931
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843931
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843931
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690843931
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844384
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844384
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844430
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844431
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844432
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844434
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844435
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844435
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844435
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844436
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844436
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844436
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844438
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844438
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844439
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844440
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844885
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844885
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844886
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844886
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844887
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844887
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844887
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690844887
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844936
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844936
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844937
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690844937
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690844940
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845387
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845387
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845388
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845437
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845440
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845440
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845888
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845889
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690845889
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845938
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845938
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845938
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845939
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845939
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845939
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845939
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845940
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845940
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845941
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845941
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845941
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845941
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690845942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690845943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690846389
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690846389
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690846390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690846442
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690846442
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846443
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846443
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690846890
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690846890
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690846942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690846942
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690846943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846943
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846944
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690846944
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690847303
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690847304
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690847304
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690847304
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847391
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690847444
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690847444
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690847445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690847445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690847446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847891
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847891
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690847891
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690847944
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690847944
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690847944
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690847946
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690847946
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690848391
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690848391
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848445
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690848446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690848447
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690848447
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690848891
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690848891
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690848892
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848946
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690848946
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690848947
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690848947
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849392
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849392
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849393
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849446
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849447
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690849447
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849448
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690849448
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690849448
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849893
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849894
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690849894
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849948
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690849948
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690849949
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690849949
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850401
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850401
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850401
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850401
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850448
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850449
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850450
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850450
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850450
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850450
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850451
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850451
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850456
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850901
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850901
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690850901
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850956
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690850956
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690850957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690851402
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690851403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690851457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690851457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690851457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690851458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690851458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690851903
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690851957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690851957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690851957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690851959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690851959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690852304
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+clock e 1238690852304
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852403
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852404
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690852457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690852457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690852459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690852459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852904
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852904
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690852904
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690852957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690852957
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690852959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690852959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853405
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853406
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853406
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853406
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853407
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853457
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690853459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690853459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690853908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853958
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690853958
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690853959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690853959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690854408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690854408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690854458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690854458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690854459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690854459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690854908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690854908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690854908
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690854958
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690854958
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690854958
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690854959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690854959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855408
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855458
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855459
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855909
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855909
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690855909
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855959
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855960
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690855960
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690855961
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690856409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690856409
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+clock c 1238690856410
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690856461
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+clock b 1238690856461
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690856461
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start
+AUTOMATON::> test0() STATE::>start
+AUTOMATON::> test1() STATE::>start
+AUTOMATON::> test2() STATE::>start
+clock d 1238690856461
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> start
+AUTOMATON::> test3() STATE::>start

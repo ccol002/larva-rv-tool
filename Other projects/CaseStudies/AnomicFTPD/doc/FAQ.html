@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>AnomicFTPD: FAQ</title>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<!-- <meta name="Content-Language" content="German, Deutsch, de, at, ch"> -->
+<meta name="Content-Language" content="English, Englisch">
+<META NAME="keywords" CONTENT="Anomic java free freeware shareware ftp ftpd daemon server easy simple small fast mac macintosh 68040 68k classic os osx dos windows unix linux compatible connection connectivity network download 959 rfc959">
+<meta name="description" content="AnomicFTPD ftp server documentation">
+<meta name="copyright" content="Michael Christen">
+<script src="navigation.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" href="style.css">
+<!-- Realisation: Michael Christen; Contact: mc<at>anomic.de-->
+</head>
+<body background="grafics/background.gif" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalheader();
+//--></SCRIPT>
+<!-- ----- HERE STARTS CONTENT PART ----- -->
+
+<H2>Problems and Solutions:</H2>
+<p>
+ The FTPD server has been tested on many environments, machine types,
+ operation systems and java versions and has proven it's functionality.
+ If you encounter any problems then they are mostly related to network,
+ routing or firewall configurations. The following checklist will guide you
+ through the most common difficulties in installaton of the server.
+</p>
+<p><b>basis for testings:</b>
+ Basis for testings: the server must be running. If the AnomicFTPD starts,
+ it prints messages to the console about the server and the system
+ configuration and is idle waiting for connections. If this fails, your
+ system or the used java version is not supported. Try to dis-able
+ a just-in-time - compiler, for example by using the -nojit option.
+</p>
+<p><b>1st step - check your IP connection:</b> from the client, ping your server: open a command shell at the client and type:
+<pre>ping &lt;your_server_ip&gt;</pre>
+Also, ping your client from the server. If both tasks succeed, follow the next step. If ping-ing does not work,
+check your network configuration: IP-address and netmask must support network connectivity.</p>
+<p><b>2nd step - check for server response:</b> try to access the server on the server using the loopback connection.
+At the server: open a command shell and type
+<pre>telnet 127.0.0.1 &lt;port_on_server&gt;</pre>
+If you are using the standard configuration, the port number is 2121. The server should respond with a welcome message and
+that process must be reflected in output of the server log. If this does not work, some internet connectivity
+software on the server does not work properly. This can happen if i.e. the inetd service tries to start another ftp server
+application on your system. Check inetd configuration or any other service on the server that handles TCP/IP connectivity.
+If you do not find anything, try to use a different port.</p>
+<p><b>3rd step - check for firewall blockings:</b> on the client, try to access the server also using a telnet session.
+At the client: open a command shell and type:
+<pre>telnet &lt;ip_of_server&gt; &lt;port_on_server&gt;</pre>
+If you get no answer, then probably a firewall either on the client or the server, or maybe on both systems are blocking
+the connection on that specific port or route. Check your connection details on both systems, the client and server, and
+disable (for that test only, don't make me responsible for any harm of that action, it's your own faoult if you get a
+hacker attack during that time) firewalls on both systems. Repeat the test. If the test then succeeds, configure the
+firewalls to not-filter the IP addresses and the port you are using. If the test does not succeed, I would suspect the
+operating system or another system service to block unwanted applications to use the IP connections. (Don't forget to activate
+your firewalls afterwards)</p>
+<p><b>4th step - use a standard ftp application to connect to your server:</b>
+At the client: open a shell and type
+<pre>ftp</pre>
+Then, the ftp client application starts. At the ftp client prompt, type:
+<pre>open &lt;ip_of_server&gt; &lt;port_on_server&gt;</pre>
+The connection to the server should be established which you can verify when you watch at the server log. The ftp client
+will ask you for a, user name and a password. If the connection is established, but the log-in fails, check you account details
+(configured group, user and password) in ftpd.groups and ftp.accounts.
+</p>
+<p><b>5th step - use another ftp client application to connect:</b> At step 4 the connection was established and therefore
+connectivity has been proved to exist. The only problem that still can remain is a configuration of the ftp client application
+that you used to access the server. In case that client is the MS Internet Explorer or any other application that understands
+standard URL strings for ftp access, use the string
+<pre>ftp://&lt;account&gt;:&lt;password&gt;@&lt;ip_of_server&gt;:&lt;port_on_server&gt;</pre>
+</p>
+<p><b>6th step - check your path declarations:</b>
+ If you still can't get access ('530 home directory does not exist') to files
+ through the server, or you don't get even a directory listing from the server then
+ probably the path definitions in ftpd.groups or the user you use from ftp.accounts
+ are not correct. The default values that are used for the example configuration
+ may not fit to all systems where you can run AnomicFTPD on. The path declaration
+ is system-dependent and must be consistent with the standard path syntax of your
+ system. As you can see in the examples inside of ftpd.groups, the paths for the
+ users 'jim' and 'bob' use different syntax'. If the backslash sign is part of the
+ path syntax (as for MS-DOS - like path syntax) then the backslash must appear
+ double in ftpd.groups wherever in a path of your system the backslash appears
+ once, since the backslash character is used as an escape character.</p>
+</p>
+<p><b>7th step - get in contact:</b> If you reach this point then either there may be a bug in the 'problems and solutions' text
+or inside the code of the server. Please send me an email describing your system configuration
+(operating system and java version) and a copy of the console output that had been printed out so far until the problem arised.
+Please see my contact information below. If your ftp server is finally running, please see also the donation section at the bottom of this page.</p>
+
+<!-- ----- HERE ENDS CONTENT PART ----- -->
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalfooter();
+//--></SCRIPT>
+</body>
+</html>

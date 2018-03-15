@@ -1,0 +1,9 @@
+digraph _logic_ports {
+rankdir=LR;
+node [shape = circle]; normal1 normal2 start;
+node [shape = point]; _s_s;
+_s_s -> start;
+normal1 -> normal2 [ label = "(1) receive\\port1 ! = port && port2 ! = port && port3 ! = port \\port2 = port ; distinctPort . send ( ip ) ; "];
+normal2 -> start [ label = "(1) receive\\port1 ! = port && port2 ! = port && port3 ! = port \\port3 = port ; distinctPort . send ( ip ) ; "];
+start -> normal1 [ label = "(1) receive\\port1 ! = port && port2 ! = port && port3 ! = port \\port1 = port ; distinctPort . send ( ip ) ; "];
+}

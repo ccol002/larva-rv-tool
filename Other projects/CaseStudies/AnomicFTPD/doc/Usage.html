@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>AnomicFTPD: Usage</title>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<!-- <meta name="Content-Language" content="German, Deutsch, de, at, ch"> -->
+<meta name="Content-Language" content="English, Englisch">
+<META NAME="keywords" CONTENT="Anomic java free freeware shareware ftp ftpd daemon server easy simple small fast mac macintosh 68040 68k classic os osx dos windows unix linux compatible connection connectivity network download 959 rfc959">
+<meta name="description" content="AnomicFTPD ftp server documentation">
+<meta name="copyright" content="Michael Christen">
+<script src="navigation.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" href="style.css">
+<!-- Realisation: Michael Christen; Contact: mc<at>anomic.de-->
+</head>
+<body background="grafics/background.gif" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalheader();
+//--></SCRIPT>
+<!-- ----- HERE STARTS CONTENT PART ----- -->
+
+<H2>Remote access to the running server:<br><br>example using the default configuration</H2>
+<p>Having not changed the default configuration of the server, the following applies:</p>
+<p>If AnomicFTPD is running on a Macintosh or on a Unix system on IP 192.168.0.4 port 2121
+and you want to access the server from a MS Windows system,
+enter the following line as URL in the MS Internet Explorer to
+access the non-public account 'bob':<BR>
+<tt>ftp://bob:123password@192.168.0.4:2121/</tt><BR>
+If the server has enabled write access, you can use the file window in the
+Internet Explorer in the same way as the local (file-) Explorer: drag and drop
+files in/out the window to copy files to/from the remote (the Mac) file system.</p>
+
+<p>If AnomicFTPD is running on a MS Windows system on IP 192.168.0.1 port 2121
+and you want to access the windows machine from a Mac,
+start the Internet Explorer on the mac and enter the following URL
+to access the non-public account 'jim':<BR>
+<tt>ftp://jim:456password@192.168.0.1:2121/</tt><BR>
+Unlike the Internet Explorer on Windows, the Macintosh Internet Explorer does
+not support copying files to the remote ftp server. You can use a shareware tool
+like RBrowser for Mac OS X to access the ftp server in write mode.</p>
+
+<p>Anonymous accounts can also be accessed by omitting the account name and the password:<BR>
+<tt>ftp://192.168.0.1:2121/</tt><BR>or<BR>
+<tt>ftp://192.168.0.4:2121/</tt><BR>...and so on.<BR>
+In that case the client accesses the 'anonymous' account and
+has (according to configuration) no write access.
+
+<!-- ----- HERE ENDS CONTENT PART ----- -->
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalfooter();
+//--></SCRIPT>
+</body>
+</html>

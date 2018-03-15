@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>AnomicFTPD: Installation</title>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<!-- <meta name="Content-Language" content="German, Deutsch, de, at, ch"> -->
+<meta name="Content-Language" content="English, Englisch">
+<META NAME="keywords" CONTENT="Anomic java free freeware shareware ftp ftpd daemon server easy simple small fast mac macintosh 68040 68k classic os osx dos windows unix linux compatible connection connectivity network download 959 rfc959">
+<meta name="description" content="AnomicFTPD ftp server documentation">
+<meta name="copyright" content="Michael Christen">
+<script src="navigation.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" href="style.css">
+<!-- Realisation: Michael Christen; Contact: mc<at>anomic.de-->
+</head>
+<body background="grafics/background.gif" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalheader();
+//--></SCRIPT>
+<!-- ----- HERE STARTS CONTENT PART ----- -->
+
+<H2>Installation and Start-up of the server:</H2>
+
+<p>The single download file contains all software for the different supported platforms.
+For the different architectures and operation systems, the installation and start-up
+procedure is slightly different. In some cases it is necessary to download additional
+software for decompression or to provide the mandatory system requirements.</p>
+
+<p>All persons installing this software should know about the TCP/IP environment of their
+machines and other machines in the network they are running in. The host-IP and the network mask
+on all machines must be configured in such a way that they can access each other in the network.
+If this is the first time that you establish an IP-connection between two computers, use the
+<a href="FAQ.html">Problems and Solutions</a> to get a guide through all
+possible problems.
+</p>
+
+<p>After the installation is complete, it is highly reasonable to perform additional
+configurations as described in one of the next sections to define the ftp user account and access rights.</p>
+
+<BR><H3>MS Windows 95/98/NT4/W2K/XP:</H3>
+<p>Installation:<ul>
+<li>make shure the JRE is installed. If not, download the latest version from
+<A HREF="http://java.sun.com/">http://java.sun.com/</A>.</li>
+<li>decompress the file AnomicFTPD_(version).tar.gz using
+<A HREF="http://www.winzip.com">WinZip from http://www.winzip.com</A> or
+<A HREF="http://www.rarlab.com">WinRAR from http://www.rarlab.com</A>.</li>
+</ul></p>
+<p>Start-up:<ul>
+<li>double-click the file 'ftpd.bat'.</li>
+<li>
+    If you have problems starting the server then you are probably
+    using an old version of java (1.1.6 or below). Try to disable
+    a just-in-time - compiler by using the wrapper 'ftpd_nojit.bat'
+    instead.
+</li>
+</ul></p>
+
+<BR><H3>any Unix system that supports JavaVM 1.1 and later:</H3>
+<p>Installation:<ul>
+<li>make shure the JRE is installed. If not, download the latest version from
+<A HREF="http://java.sun.com/">http://java.sun.com/</A>.</li>
+<li>decompress the file AnomicFTPD_(version).tar.gz using the commands
+'gunzip AnomicFTPD_(version).tar.gz' and
+'tar xf AnomicFTPD_(version).tar'.</li>
+</ul></p>
+<p>Start-up:<ul>
+<li>in the folder 'AnomicFTPD_(version)' enter the command './ftpd.sh'.</li>
+</ul></p>
+
+<BR><H3>G3/G4/G5 Macintosh with any Mac OS X:</H3>
+you can either use the installation instructions as for
+"any Unix system that supports JavaVM 1.1 and later" (see below)
+or the more simple instructions here:
+<p>Installation:<ul>
+<li>decompress the file AnomicFTPD_(version).tar.gz using <A HREF="http://www.aladdinsys.com/">StuffitExpander</A></li>
+</ul>
+<p>Start-up:<ul>
+<li>double-click the file 'ftpd.command'</li>
+</ul></p>
+hint:<ul>
+<li>you can also create an alias of the file 'ftpd.command' and place it on the desktop or in the startup folder</li>
+</ul></p>
+
+<BR><H3>PowerPC Macintosh with Mac OS 8.1 or later:</H3>
+<p>Installation:<ul>
+<li>make shure the <A HREF="http://developer.apple.com/java/download.html">MRJ</A> is
+installed. If not, download the latest version for PowerPC/Mac OS 8.1 and later from
+<A HREF="ftp://ftp.apple.com/developer/Java/MRJ_2.2.5_Install.bin">http://developer.apple.com/java/download.html</A>.</li>
+<li>decompress the file AnomicFTPD_(version).tar.gz using the tools
+<A HREF="http://mirror.apple.com/Mirrors/info-mac/cmp/mac-gzip-111.hqx">MacGzip from http://mirror.apple.com/Mirrors/info-mac/cmp/</A>
+(latest version <A HREF="http://persephone.cps.unizar.es/general/gente/spd/gzip/">http://persephone.cps.unizar.es/general/gente/spd/gzip/</A>)
+and <A HREF="http://mirror.apple.com/Mirrors/info-mac/cmp/suntar-223.hqx">sunTAR from http://mirror.apple.com/Mirrors/info-mac/cmp/</A>.</li>
+<li>decompress the file 'ftpd.os89app.sit' in the subdirectory 'Specials' using
+<A HREF="http://www.aladdinsys.com/">StuffitExpander from http://www.aladdinsys.com/</A>.</li>
+<li>move 'ftpd.os89app' from 'Specials' to 'Classes'. Move also the files ftpd.init, ftpd.accounts and ftpd.groups to 'Classes'</li>
+<li>If you want to use also the remote-shutdown - feature for your Mac, decompress 'shutdown.os89script.sit' ind Specials and move 'shutdown.os89script' into the 'Classes' folder</li>
+</ul></p>
+<p>Start-up:<ul>
+<li>in 'Classes', double-click the file 'ftpd.os89app'.</li>
+</ul></p>
+
+<BR><H3>68040 Macintosh with Mac OS 7.6.1:</H3>
+
+<p>Installation:<ul>
+<li>make shure the <A HREF="http://developer.apple.com/java/download.html">MRJ</A> is
+installed. If not, download the latest version for 68040/Mac OS 7.6.1
+<A HREF="ftp://ftp.apple.com/developer/Java/MRJ_2.0.sit.hqx">http://developer.apple.com/java/download.html</A>.</li>
+<li>decompress the file AnomicFTPD_(version).tar.gz using the tools
+<A HREF="http://mirror.apple.com/Mirrors/info-mac/cmp/mac-gzip-111.hqx">MacGzip from http://mirror.apple.com/Mirrors/info-mac/cmp/</A>
+(latest version <A HREF="http://persephone.cps.unizar.es/general/gente/spd/gzip/">http://persephone.cps.unizar.es/general/gente/spd/gzip/</A>)
+and <A HREF="http://mirror.apple.com/Mirrors/info-mac/cmp/suntar-223.hqx">sunTAR from http://mirror.apple.com/Mirrors/info-mac/cmp/</A>.</li>
+<li>decompress the file 'ftpd.os89app.sit' in the subdirectory 'Specials' using
+<A HREF="http://www.aladdinsys.com/">StuffitExpander from http://www.aladdinsys.com/</A>.</li>
+<li>move 'ftpd.os89app' from 'Specials' to 'Classes'. Move also the files ftpd.init, ftpd.accounts and ftpd.groups to 'Classes'</li>
+<li>If you want to use also the remote-shutdown - feature for your Mac, decompress 'shutdown.os89script.sit' ind Specials and move 'shutdown.os89script' into the 'Classes' folder</li>
+</ul></p>
+<p>Start-up:<ul>
+<li>in 'Classes', double-click the file 'ftpd.os89app'.</li>
+</ul></p>
+
+
+<BR><H3>Psion:</H3>
+<p>These are the installation notes for Psion that hat been contributed by Chris S Handley:<ul>
+<li>You need some additional files from a package that Chris S Handley created. You find them as 'PsionRunAnomicFTPD' in the directory 'Specials'.</li>
+<li>The supplied files just need to be put in the same folder as the Java class files.  Tapping (opening) the RunAnomicFTPD.opo file will start it up in Console mode.  The other file is the source code which allows users to customise the launcher (using Psion's built-in OPL language), and contains brief instructions on how to do so.</li>
+<li>It would be possible to make AnomicFTP appear as a normal Psion app on the Extras bar, but this would require installing all of the files in a System subdirectory - not desirable for beginners.  This difficulty could be avoided by using a standard Psion SIS installation file, but it would require someone with a Psion to compile the SIS each time you updated the Java files...  And the SIS would be large since it would contain all the Java files.  So in the end I conclude it is best to use the simple method I give in the previous paragraph.</li>
+</ul></p>
+<p>Start-up:<ul>
+<li>Tapping (opening) the RunAnomicFTPD.opo file will start it up in Console mode.</li>
+</ul></p>
+
+<!-- ----- HERE ENDS CONTENT PART ----- -->
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalfooter();
+//--></SCRIPT>
+</body>
+</html>

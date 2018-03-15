@@ -1,0 +1,1624 @@
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 25.542911 milliseconds 
+Test used 185.024 Kb 
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+Test took 91.715847 milliseconds 
+Test used 195.712 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 51.94934 milliseconds 
+Test used 185.024 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 64.130776 milliseconds 
+Test used 185.024 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 60.979258 milliseconds 
+Test used 185.024 Kb 
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+Test took 95.684508 milliseconds 
+Test used 195.712 Kb 
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+Test took 87.430665 milliseconds 
+Test used 195.712 Kb 
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+ok!
+Cannot change thisObject.amount!!!
+Test took 98.363618 milliseconds 
+Test used 195.712 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 70.526282 milliseconds 
+Test used 322.416 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 30.560309 milliseconds 
+Test used 322.416 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 27.635915 milliseconds 
+Test used 322.416 Kb 
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+ok!
+Test took 65.516986 milliseconds 
+Test used 322.416 Kb 

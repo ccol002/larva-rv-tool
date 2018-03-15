@@ -1,0 +1,53 @@
+AUTOMATON::> then_32() STATE::>initialization
+MOVED ON METHODCALL: void sniffer.Main.initialize() TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: true  _rt_clock: 21  redirect: true  output: false 
+MOVED ON METHODCALL: void sniffer.Main.initialize() TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 3313  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 5962  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 6306  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 6308  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 6315  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 6317  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 6319  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 11074  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 18320  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 21795  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 21796  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 48418  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 48420  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 48587  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 48588  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre
+AUTOMATON::> then_32() STATE::>lustre
+ _b: false  _rt_clock: 48730  redirect: false  output: true 
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> lustre

@@ -1,0 +1,11 @@
+digraph _logic_transaction {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; toomany;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> toomany [ label = "(1) addTransaction\\transactionCnt > 5 "];
+start -> start [ label = "(2) addTransaction\\\\transactionCnt ++ ; System.out.println ( \" I still have access to USER :  \" + u + \"  and to usercnt:  \" + userCnt + \"  and to accountcnt:  \" + u : accountCnt + \"  and to transactioncnt:  \" + u : a : transactionCnt ) ; "];
+start -> start [ label = "(3) deleteTransaction\\\\transactionCnt -- ; "];
+start -> start [ label = "(4) allTransactions"];
+}

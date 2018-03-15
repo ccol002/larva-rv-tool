@@ -1,0 +1,18 @@
+AUTOMATON::> users() STATE::>start
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! toomany 
+larva._asp_bank0.ajc$before$larva__asp_bank0$3$5274165d(_asp_bank0.aj:28)
+nesting.Bank.menu(Bank.java:71)
+nesting.Bank.main(Bank.java:86) 
+AUTOMATON::> users() STATE::>toomany

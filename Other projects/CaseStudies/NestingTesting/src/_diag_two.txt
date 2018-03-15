@@ -1,0 +1,9 @@
+digraph _logic_two {
+rankdir=LR;
+node [shape = circle]; promptPW goodlogin loadsite;
+node [shape = point]; _s_s;
+_s_s -> loadsite;
+promptPW -> goodlogin [ label = "(1) pressOK\\checkPassword ( ) \\gl.send ( u ) ; "];
+promptPW -> loadsite [ label = "(2) pressOK"];
+loadsite -> promptPW [ label = "(1) pressOK\\checkUserName ( ) "];
+}

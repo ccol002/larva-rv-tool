@@ -1,0 +1,25 @@
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting
+AUTOMATON::> badlogins() STATE::>starting
+MOVED ON METHODCALL: void main.Main.badlogin() TO STATE::> starting

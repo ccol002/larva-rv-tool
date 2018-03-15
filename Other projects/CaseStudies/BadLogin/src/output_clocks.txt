@@ -1,0 +1,38 @@
+AUTOMATON::> test1() STATE::>starting
+1241422901390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+1241422902390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+1241422903390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+1241422904390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+1241422905390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+1241422906390
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+AUTOMATON::> test1() STATE::>starting
+AUTOMATON::> test2() STATE::>beforestarting
+1241422907391
+MOVED ON METHODCALL: void larva.Channel.receive(String) TO STATE::> starting
+Reached Normal State!! 1
+1241422907391
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> normal
+AUTOMATON::> test2() STATE::>starting
+Reached Normal State!! 2
+1241422907391
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> normal
+AUTOMATON::> test1() STATE::>normal
+AUTOMATON::> test2() STATE::>normal
