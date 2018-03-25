@@ -817,7 +817,7 @@ public class Event extends Trigger{
 			
 			
 			
-			if (!this.type.equals(EventType.clock))
+			if (!this.type.equals(EventType.clock) && !this.type.equals(EventType.clockDynamic))
 			{
 
 				sb.append("\r\n_cls_"+g.name+g.id+" _cls_inst = _cls_"+g.name+g.id+"._get_cls_"+g.name+g.id+"_inst( ");
@@ -863,7 +863,7 @@ public class Event extends Trigger{
 //								"._call_all(thisJoinPoint.getSignature().toString()" + s.toString()+");");	
 //				}
 //				else 
-					if (this.type.equals(EventType.clock))
+					if (this.type.equals(EventType.clock) || this.type.equals(EventType.clockDynamic))
 				{
 					sb.append("\r\nsynchronized(_c){" +
 							"\r\n if (_c != null && _c._inst != null) {");
