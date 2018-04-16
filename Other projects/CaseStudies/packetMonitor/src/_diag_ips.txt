@@ -1,0 +1,9 @@
+digraph _logic_ips {
+rankdir=LR;
+node [shape = doublecircle]; ready;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) attackEvent\\conns > ( ( open + pending ) /ips ) \\System.out.println ( \" Probably Problematic IP: \" + ip ) ; "];
+start -> ready [ label = "(2) ipEvent\\conns == 0 "];
+}

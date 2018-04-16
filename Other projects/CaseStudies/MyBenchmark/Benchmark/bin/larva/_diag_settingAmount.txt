@@ -1,0 +1,9 @@
+digraph _logic_settingAmount {
+rankdir=LR;
+node [shape = circle]; starting;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> starting;
+starting -> starting [ label = "(1) setAmount"];
+starting -> starting [ label = "(2) transaction"];
+}

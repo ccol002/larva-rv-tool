@@ -1,0 +1,19 @@
+digraph _logic_generaltransaction {
+rankdir=LR;
+size="15,12"
+node [shape = doublecircle]; ready;
+node [shape = circle]; process_trans set_chain set_state process start;
+node [shape = octagon]; bad_state;
+node [shape = point]; _s_s;
+_s_s -> start;
+process -> ready [ label = "setid/state==TSM.getInstance().getStateChainCollection().getChain(t.getCurrentChainID()).size()"];
+process -> set_state [ label = "setid/sid==state+1/state=sid;"];
+process -> bad_state [ label = "any"];
+process_trans -> set_chain [ label = "setchain"];
+process_trans -> bad_state [ label = "all"];
+set_chain -> set_state [ label = "setid/sid==state+1/state=sid;"];
+set_chain -> bad_state [ label = "all"];
+start -> process_trans [ label = "proc//state=tsm.getTransaction().getCurrentStateID();"];
+set_state -> process [ label = "procState/tsm.getTransaction().equals(t)&&t.getCurrentStateID()==state"];
+set_state -> bad_state [ label = "all"];
+}

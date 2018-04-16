@@ -1,0 +1,31 @@
+Imports {
+	
+	import transactionsystem.UserInfo;
+	
+}  
+
+
+Global{
+
+	
+	Foreach (UserInfo u) {
+	
+	Events{
+		makeGold() = { UserInfo u1.makeGoldUser() } where { u = u1; } 
+  
+	} 
+	
+	Property Only_users_based_in_Argentina_can_be_Gold_users {
+		
+		States {
+			Bad{ bad }
+			Starting{ start }
+		}
+		
+		Transitions {
+			start -> bad [makeGold\ !(u.getCountry().equals("Argentina")) \ System.out.println("P1 violated"); ]
+		}
+	}
+}
+
+}

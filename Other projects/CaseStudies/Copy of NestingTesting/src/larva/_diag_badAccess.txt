@@ -1,0 +1,12 @@
+digraph _logic_badAccess {
+rankdir=LR;
+size="11,8"
+node [shape = circle]; start;
+node [shape = octagon]; bad_write bad_read;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "i\\\\logged = true ; "];
+start -> start [ label = "o\\\\logged = false ; "];
+start -> bad_write [ label = "w\\! logged "];
+start -> bad_read [ label = "r\\! logged "];
+}

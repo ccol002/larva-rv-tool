@@ -1,0 +1,9 @@
+digraph _logic_test2 {
+rankdir=LR;
+node [shape = circle]; normal starting beforestarting;
+node [shape = point]; _s_s;
+_s_s -> beforestarting;
+starting -> normal [ label = "clockC5\\count > 5 \\d.send ( ) ; System.out.println ( \" Reached Normal State!! 2 \" ) ; "];
+starting -> starting [ label = "clockC5\\\\c.reset ( ) ; count ++ ; "];
+beforestarting -> starting [ label = "channeld\\from.equals ( \" test1 \" ) "];
+}

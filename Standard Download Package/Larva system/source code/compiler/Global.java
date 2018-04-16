@@ -222,7 +222,7 @@ public class Global extends Compiler{
 		else 
 		{
 			if (!g.equals(root) && serachVariableInOneContext(root,t))//this search does not include context variables...these can never be ambiguous!!
-				System.out.println("Warning: ambigious reference to variable: \""+ t + "\" (matching the innermost context...use \":"+t+"\" to refer to the variable in global)");
+				System.out.println("Warning: ambigious reference to variable: \""+ t + "\" (matching the innermost context...use \"::"+t+"\" to refer to the variable in global)");
 			return t.text;
 		}
 		//else check if it is a method!!!!

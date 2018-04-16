@@ -1,0 +1,18 @@
+digraph _logic_retryTimeoutandExceptionRetry {
+rankdir=LR;
+node [shape = doublecircle]; ok exception;
+node [shape = circle]; normal starting;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> starting;
+exception -> bad [ label = "(1) execute"];
+exception -> bad [ label = "(2) executeExc"];
+starting -> normal [ label = "(1) execute\\! result \\retries ++ ; c.reset ( ) ; "];
+starting -> ok [ label = "(2) execute\\result "];
+starting -> exception [ label = "(3) executeExc"];
+normal -> ok [ label = "(1) execute\\result "];
+normal -> ok [ label = "(2) execute\\retries == 4 "];
+normal -> normal [ label = "(3) execute\\! result \\retries ++ ; "];
+normal -> bad [ label = "(4) clock\\c.compareTo ( ( retries ) * 2 ) >= 0 && retries < 5 "];
+normal -> exception [ label = "(5) executeExc"];
+}

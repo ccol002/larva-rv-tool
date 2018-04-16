@@ -1,0 +1,10 @@
+digraph _logic_check {
+rankdir=LR;
+node [shape = circle]; needcheck docheck start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> needcheck [ label = "(1) newRequest\\pending > open + 10 \\clock . reset ( ) ; System . out . println ( \" pending:  \" + pending + \"  open:  \" + open ) ; "];
+start -> start [ label = "(2) newRequest\\\\System . out . println ( \" pending:  \" + pending + \"  open:  \" + open ) ; "];
+needcheck -> start [ label = "(1) clockAT5\\pending > open + 10 \\System . out . println ( \" pending:  \" + pending + \"  open:  \" + open ) ; System . out . println ( \" Possible Attack! \" ) ; attackchannel . send ( ) ; "];
+needcheck -> start [ label = "(2) clockAT5"];
+}

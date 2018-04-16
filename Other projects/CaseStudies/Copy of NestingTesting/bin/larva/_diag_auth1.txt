@@ -1,0 +1,22 @@
+digraph _logic_auth1 {
+rankdir=LR;
+size="20,17"
+node [shape = doublecircle]; ready_one;
+node [shape = circle]; startAuth auth_key_ver process_loader merchant_loader trans_inserter backlog pass_through mi_send resp_inserter start;
+node [shape = octagon]; bad_state;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> startAuth [ label = "proc\\tsm.getTransaction ( ) .getType ( ) == TransactionType.CCAuth && tsm.getTransaction ( ) .getCurrentStateID ( ) == 0 "];
+trans_inserter -> pass_through [ label = "passThrough"];
+trans_inserter -> bad_state [ label = "all"];
+auth_key_ver -> process_loader [ label = "procLoader"];
+auth_key_ver -> bad_state [ label = "all"];
+merchant_loader -> trans_inserter [ label = "transIns"];
+merchant_loader -> bad_state [ label = "all"];
+pass_through -> ready_one [ label = "pmSender"];
+pass_through -> bad_state [ label = "all"];
+startAuth -> auth_key_ver [ label = "verify"];
+startAuth -> bad_state [ label = "all"];
+process_loader -> merchant_loader [ label = "merLoader"];
+process_loader -> bad_state [ label = "all"];
+}

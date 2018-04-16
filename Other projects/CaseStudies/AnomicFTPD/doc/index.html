@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>AnomicFTPD: a full-featured open-source/freeware FTP Server in Java</title>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<!-- <meta name="Content-Language" content="German, Deutsch, de, at, ch"> -->
+<meta name="Content-Language" content="English, Englisch">
+<META NAME="keywords" CONTENT="Anomic java free freeware shareware ftp ftpd daemon server easy simple small fast mac macintosh 68040 68k classic os osx dos windows unix linux compatible connection connectivity network download 959 rfc959">
+<meta name="description" content="AnomicFTPD ftp server documentation">
+<meta name="copyright" content="Michael Christen">
+<script src="navigation.js" type="text/javascript"></script>
+<link rel="stylesheet" media="all" href="style.css">
+<!-- Realisation: Michael Christen; Contact: mc<at>anomic.de-->
+</head>
+<body background="grafics/background.gif" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalheader();
+//--></SCRIPT>
+<!-- ----- HERE STARTS CONTENT PART ----- -->
+
+<H1>AnomicFTPD:<br><br>A freeware FTP Server in Java</H1>
+<p>
+This is an enterprise-suited, RFC959 compliant terminal-based ftpd server in Java.<br>
+It is a 'full' server that implements it's own user and group management for operation systems
+that do not support such and is also the ideal solution to exchange files between systems with different OS.
+
+<h2>Your Business Advantages</h2>
+<ul>
+<li>extend your enterprise application with remote administration</li>
+<li>integration solution for distributed applications</li>
+<li>minimalistic synchronisation solution for personal and mobile devices</li>
+</ul><br>
+
+<h2>Main features</h2>
+<table border="0" cellspacing="1" cellpadding="3" width="100%">
+
+<tr><td width="30%" valign="top"><b>Licence Model</b></td><td width="70%">
+This is GPL-based freeware/open-source software! The release comes with complete source code. See <a href="License.html">the license</a> for details.
+If you like the software, you <a href="Contact.html">may like to hire me<a> for professional consultancy, customizations or integrations.
+
+</td></tr><tr><td valign="top"><b>Supported Platforms</b></td><td>
+Any operation system that runs a Java/1.1 implementation is supported.
+The implementation on purpose limits it's Java use to the 1.1er version of Java to widen the range of supported systems.<br>
+The release comes with ready-made application wrappers for
+<b>Linux/Unix</b>, <b>Windows 95/98/NT/2K/XP</b>, <b>MacOS X</b> and even for
+<b>MacOS 7.6.1/8.x/9.x (68k and PPC)</b> and <b>Psion</b>!
+
+</td></tr><tr><td valign="top"><b>Easy Installation</b></td><td>
+You just need to decompress the release containter with your favourite decompressor (zip, rar, sit, tar etc. will do)
+and double-click the application wrapper for your OS. No restart necessary. No ftp-user set-up necessary;
+just double-click the application wrapper: the server will start up, analyse your IP environment and presents
+an URL that you just need to type in
+your browser to instantly access your ftp server.
+
+</td></tr><tr><td valign="top"><b>Seamless Integration and Connection of Different Operation Systems</b></td><td>
+The server supports UTF-8 - coding of file names, so this is the ideal integration solution to transfer
+Files between different Systems (like Macintosh <-> Windows).<br>
+In most cases you do not need special client software to access the server: on Windows systems, use the
+Internet Explorer in FTP mode (just type in the URL of the ftp server) or on Macintoshes: use the
+'Connect to Server' function. The AnomicFTPD provides a directory listing format that supports these named
+clients. Compare yourself: many other ftp servers do not provide directory listings in such a way that the
+Internet Explorer works properly in ftp mode.
+
+</td></tr><tr><td valign="top"><b>Independency from Grafical User Interfaces</b></td><td>
+While AnomicFTPD is a command-line tool, it still is a simple double-clickable application on Windwos and Macintosh
+(both, Classic and OSX). In Unix environments the lack of a graphical interface is a feature because it becomes usable
+in telnet/ssh-administrated environments. The server is easy manageable by configuration files. A ready-to-use example is included
+in the release. Many other ftp servers are unusuable on GUI-less servers, since must be administrated using a GUI.
+
+</td></tr><tr><td valign="top"><b>Own User-Management</b></td><td>
+To have properly organized account management on machines that do not provide such (like in Windows98/DOS and Mac OS8/OS9
+operation systems), AnomicFTPD comes with its own account organization that arranges users into user groups
+that have their own configuratble home directory path and access rights (read, write and execute).<br>
+One important benefit from the system-independent account management is, that every user in a multi-user
+operation system can define his/her own ftpd service on an arbitrary port. Another benefit is the easy definition
+of an anonymous access to the ftp server; an example is included in the release.
+
+</td></tr><tr><td valign="top"><b>Built-In Firewall</b></td><td>
+We increased security of the FTP Server by the ability to define the complete finite
+or infinite set of IP numbers from where clients are allowed to connect to the FTP Server.
+Access from IP ranges outsite the granted range are not responded in any way to prevent port-scans.
+Therefore, AnomicFTPD can be seen as a ftp server with built-in firewall functionality.
+
+</td></tr><tr><td valign="top"><b>Standard-Compliance</b></td><td>
+AnomicFTPD supports almost all <A HREF="http://www.ietf.org/rfc/rfc959.txt">RFC959</A> commands
+including full active and passive mode and
+additionally Internet Explorer -used protocoll commands from the FTP extension as documented in
+<A HREF="http://www.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-16.txt">'Extensions to FTP'</A>
+from the
+<A HREF="http://www.ietf.org/html.charters/ftpext-charter.html">'FTPEXT Working Group'</A>.<br>
+
+</td></tr><tr><td valign="top"><b>Integration Solution for Remote Administration</b></td><td>
+The server provides special commands to execute java and native applications on the server;
+while this feature is very usefull in secure and home networks to administrate the FTPD server machine,
+it can be fully deactivated in an in-secure open internet connection environment.<br>
+One benefit from the feature of executing native or java applications on the remote machine is the ability
+to remotely shut down Macintosh computers that act as file servers and have no keybord/mouse/monitor attached.
+This makes AnomicFTPD the only solution that provides both, a file server
+and a remote control system for Macintosh computers combined in one single and easy-to-use application.
+
+</td></tr><tr><td valign="top"><b>Ease of Extensibility</b></td><td>
+The server has a well-engineered system architecture: the implementation strongly seperates
+the ereas of network layer, protocol layer, file system layer and autorisation/authentification.
+For any protocol function there exists dedicated 'hooks' for the extension.
+The server can be customized by coding functions into these hooks.
+
+</td></tr><table>
+
+<!-- ----- HERE ENDS CONTENT PART ----- -->
+<SCRIPT LANGUAGE="JavaScript1.1"><!--
+globalfooter();
+//--></SCRIPT>
+</body>
+</html>

@@ -1,0 +1,12 @@
+digraph _logic_account {
+rankdir=LR;
+size="10,7"
+node [shape = circle]; start;
+node [shape = octagon]; toomany;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> toomany [ label = "addAccount\\accountCnt > 5 "];
+start -> start [ label = "addAccount\\\\accountCnt ++ ; System.out.println ( \" I have access to USER :  \" + u + \"  and to usercnt:  \" + userCnt ) ; "];
+start -> start [ label = "deleteAccount\\\\accountCnt -- ; "];
+start -> start [ label = "allAccounts"];
+}

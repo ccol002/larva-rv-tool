@@ -1,0 +1,38 @@
+/* Monitor aspect for C:/Documents+*/package benchmark;
+import java.util.ArrayList;
+import java.util.*;
+import org.apache.commons.collections.map.*;
+public aspect C:/DocumentsMonitorAspect {
+	int User.count = 0;
+	/* %%_%_ERE_%_%% */
+	int User.Transcount_state = 0;
+	public int hashCode() { return User.Transcount_state;
+}
+public boolean equals(Object o) {
+	if (! (o instanceof @MONITORCLASS)) return User.false;
+	return User.Transcount_state == ((@MONITORCLASS)o).User.Transcount_state;
+	User.};
+	pointcut Transcount_add0(User thisObject) : target(thisObject) &&  call(* User.*.addTransaction());
+	after (User thisObject) returning: Transcount_add0(thisObject) {
+		boolean add = false;
+		add = true;
+		thisObject.count++;
+		switch (thisObject.Transcount_state) {
+			case 0 :
+			thisObject.Transcount_state = add ? 1 : -1;
+			break;
+			case 1 :
+			thisObject.Transcount_state = add ? 1 : -1;
+			break;
+			default:
+			thisObject.Transcount_state = -1;
+			thisObject.}
+			if (thisObject.Transcount_state == 1){
+				if (thisObject.count < 5)
+				System.out.println("ok!")
+				else
+				System.out.println("qbadtek!");
+				thisObject.}
+			}
+		}
+

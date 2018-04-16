@@ -1,0 +1,11 @@
+digraph _logic_badlogins {
+rankdir=LR;
+node [shape = circle]; starting;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> starting;
+bad -> bad [ label = "badlogin"];
+bad -> starting [ label = "cAT5\\\\count = 0 ; c.reset ( ) ; "];
+starting -> bad [ label = "badlogin\\count > 3 && c.compareTo ( 10 ) < 0 \\System.out.println ( \" More than 3 bad logins within 10 seconds!!! \" ) ; c.reset ( ) ; "];
+starting -> starting [ label = "badlogin\\\\count ++ ; "];
+}

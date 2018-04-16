@@ -1,0 +1,17 @@
+digraph _logic_auth2 {
+rankdir=LR;
+node [shape = doublecircle]; ready_two;
+node [shape = circle]; after_pm backlog pass_through resp_inserter exc_checker start;
+node [shape = octagon]; bad_state;
+node [shape = point]; _s_s;
+_s_s -> start;
+after_pm -> backlog [ label = "(1) backlog"];
+after_pm -> bad_state [ label = "(2) all"];
+backlog -> exc_checker [ label = "(1) excCheck"];
+backlog -> bad_state [ label = "(2) all"];
+start -> after_pm [ label = "(1) proc\\tsm.getTransaction ( ) .getType ( ) == TransactionType.CCAuth && tsm.getTransaction ( ) .getCurrentStateID ( ) > 0 "];
+exc_checker -> resp_inserter [ label = "(1) respIns"];
+exc_checker -> bad_state [ label = "(2) all"];
+resp_inserter -> ready_two [ label = "(1) MISend"];
+resp_inserter -> bad_state [ label = "(2) all"];
+}

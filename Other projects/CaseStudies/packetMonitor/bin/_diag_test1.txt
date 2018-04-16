@@ -1,0 +1,8 @@
+digraph _logic_test1 {
+rankdir=LR;
+node [shape = doublecircle]; logged_in;
+node [shape = circle]; logged_out;
+node [shape = point]; _s_s;
+_s_s -> logged_out;
+logged_out -> logged_in [ label = "(1) loginAttempt\\\\System . out . println ( \" Login Attempted \" ) ; "];
+}

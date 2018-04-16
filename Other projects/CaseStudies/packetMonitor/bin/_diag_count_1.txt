@@ -1,0 +1,8 @@
+digraph _logic_count_1 {
+rankdir=LR;
+node [shape = circle]; lustre initialization;
+node [shape = point]; _s_s;
+_s_s -> initialization;
+initialization -> lustre [ label = "(1) initializationEvent\\\\pre_6_27 = 0 ; pre_7_26 = 0 ; pre_0_29 = false ; pre_0_31 = false ; "];
+lustre -> lustre [ label = "(1) periodicEvent\\\\after_28 = ( _b ) ? ( true ) : ( pre_0_29 ) ; p_0_24 = redirect ; after_30 = ( _b ) ? ( true ) : ( pre_0_31 ) ; count_25 = ( _b && p_0_24 ) ? ( 1 ) : ( ( _b ) ? ( 0 ) : ( ( after_28 && p_0_24 ) ? ( pre_6_27 + 1 ) : ( ( after_30 ) ? ( pre_7_26 ) : ( 0 ) ) ) ) ; count_p = count_25 < 3.0 ; pre_6_27 = count_25 ; pre_7_26 = count_25 ; pre_0_29 = after_28 ; pre_0_31 = after_30 ; System . out . println ( \"  _b:  \" + _b + \"   \" + \"  redirect:  \" + redirect + \"   \" + \"  output:  \" + count_p + \"   \" ) ; "];
+}

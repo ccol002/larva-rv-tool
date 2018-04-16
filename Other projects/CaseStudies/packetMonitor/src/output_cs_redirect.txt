@@ -1,0 +1,16 @@
+AUTOMATON::> ceform() STATE::>start
+AUTOMATON::> ceform() STATE::>start
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ceform() STATE::>loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i

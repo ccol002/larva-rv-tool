@@ -1,0 +1,274 @@
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>start
+MOVED ON METHODCALL: event on creation TO STATE::> loc0i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>start
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i1l
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>start
+MOVED ON METHODCALL: event on creation TO STATE::> loc0i
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>start
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i1l
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i2i1l2l
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>start
+MOVED ON METHODCALL: event on creation TO STATE::> loc0i
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>start
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal1
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal1
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i1l
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i2i1l2l
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i1l2l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal1
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i2i1l2l
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> start
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i1l2l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>start
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>start
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal1
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal1
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal1
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>start
+MOVED ON METHODCALL: event on creation TO STATE::> loc0i
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>start
+MOVED ON METHODCALL: void sniffer.PacketPrinter.packetReceived(InetAddress, int) TO STATE::> normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> loc0i1i1l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Channel.receive(Object) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i1i2i3i1l2l 
+larva._cls_cs_portscan1._call_all(_cls_cs_portscan1.java:79)
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$5$9259debb(_asp_cs_portscan1.aj:61)
+larva.ChannelEvent.run(ChannelEvent.java:18)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i1i1l
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i1i1l
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i1i1l
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i1i1l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i
+AUTOMATON::> ports(/10.254.64.1 ) STATE::>normal1
+AUTOMATON::> ceform(/10.254.64.1 ) STATE::>loc0i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> loc0i
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i1i2i3i1l2l
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i1i2i3i1l2l
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i3i
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i1i2i3i1l2l
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i3i
+AUTOMATON::> ports(/192.168.17.96 ) STATE::>normal2
+AUTOMATON::> ceform(/192.168.17.96 ) STATE::>loc0i3i
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$3$271f25a4(_asp_cs_portscan1.aj:35)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+MOVED ON METHODCALL: void larva.Clock.event(long) TO STATE::> !!!SYSTEM REACHED BAD STATE!!! loc0i3i 
+aspects._asp_cs_portscan1.ajc$before$aspects__asp_cs_portscan1$4$271f25a4(_asp_cs_portscan1.aj:48)
+larva.ClockEvent.run(ClockEvent.java:14)
+java.lang.Thread.run(Unknown Source) 
+AUTOMATON::> ports(/207.46.109.34 ) STATE::>normal1
+AUTOMATON::> ceform(/207.46.109.34 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i
+AUTOMATON::> ports(/66.249.93.189 ) STATE::>normal1
+AUTOMATON::> ceform(/66.249.93.189 ) STATE::>loc0i3i

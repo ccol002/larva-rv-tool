@@ -1,0 +1,29 @@
+digraph _logic_ceform {
+rankdir=LR;
+node [shape = circle]; loc loc0i loc0i0w start;
+node [shape = octagon]; unhandled loc1i loc0i1i;
+node [shape = point]; _s_s;
+_s_s -> start;
+loc0i1i -> loc [ label = "(1) all\\( ! ( A ) && ! ( B ) ) "];
+loc0i1i -> loc1i [ label = "(2) all\\( ( ! ( A ) && B ) && B ) "];
+loc0i1i -> loc0i [ label = "(3) all\\( A && ! ( B ) ) "];
+loc0i1i -> loc0i1i [ label = "(4) all\\( A && B ) "];
+loc0i1i -> unhandled [ label = "(5) all"];
+loc0i -> loc [ label = "(1) all\\( ! ( A ) && ! ( B ) ) "];
+loc0i -> loc1i [ label = "(2) all\\( ( ! ( A ) && B ) && B ) "];
+loc0i -> loc0i [ label = "(3) all\\( A && ! ( B ) ) "];
+loc0i -> loc0i1i [ label = "(4) all\\( A && B ) "];
+loc0i -> unhandled [ label = "(5) all"];
+loc1i -> loc [ label = "(1) all\\! ( B ) "];
+loc1i -> loc1i [ label = "(2) all\\B "];
+loc1i -> unhandled [ label = "(3) all"];
+start -> loc [ label = "(1) all\\! ( A ) "];
+start -> loc0i0w [ label = "(2) all\\( A && ( A && c1.compareToMillis ( ( long ) 1.0 ) <= 0 ) ) "];
+loc -> loc [ label = "(1) all\\true "];
+loc -> unhandled [ label = "(2) all"];
+loc0i0w -> loc [ label = "(1) all\\! ( A ) "];
+loc0i0w -> loc0i [ label = "(2) all\\( ( A && ! ( c1.compareToMillis ( ( long ) 1.0 ) < 0 ) && ! ( B ) ) && ( A && ! ( B ) ) ) "];
+loc0i0w -> loc0i0w [ label = "(3) all\\( ( A && c1.compareToMillis ( ( long ) 1.0 ) < 0 ) && ( A && c1.compareToMillis ( ( long ) 1.0 ) <= 0 ) ) "];
+loc0i0w -> loc0i1i [ label = "(4) all\\( ( A && ! ( c1.compareToMillis ( ( long ) 1.0 ) < 0 ) && B ) && ( A && B ) ) "];
+loc0i0w -> unhandled [ label = "(5) all"];
+}

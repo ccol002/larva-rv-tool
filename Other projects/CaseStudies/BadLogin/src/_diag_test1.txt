@@ -1,0 +1,8 @@
+digraph _logic_test1 {
+rankdir=LR;
+node [shape = circle]; normal starting;
+node [shape = point]; _s_s;
+_s_s -> starting;
+starting -> normal [ label = "(1) clockC5\\count > 5 \\d . send ( \" test1 \" ) ; System . out . println ( \" Reached Normal State!! 1 \" ) ; System . out . println ( System . currentTimeMillis ( ) ) ; "];
+starting -> starting [ label = "(2) clockC5\\\\c . reset ( ) ; count ++ ; System . out . println ( System . currentTimeMillis ( ) ) ; "];
+}

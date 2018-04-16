@@ -1,0 +1,16 @@
+digraph _logic_users {
+rankdir=LR;
+size="12,9"
+node [shape = circle]; ok start;
+node [shape = octagon]; toomany baddelete;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> ok [ label = "addUser\\\\userCnt ++ ; "];
+start -> baddelete [ label = "deleteUser"];
+start -> start [ label = "allUsers"];
+ok -> toomany [ label = "addUser\\userCnt > 5 "];
+ok -> ok [ label = "addUser\\\\userCnt ++ ; "];
+ok -> start [ label = "deleteUser\\userCnt == 1 \\userCnt -- ; "];
+ok -> ok [ label = "deleteUser\\\\userCnt -- ; "];
+ok -> ok [ label = "allUsers"];
+}

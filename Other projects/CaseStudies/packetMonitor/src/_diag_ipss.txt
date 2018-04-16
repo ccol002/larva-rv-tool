@@ -1,0 +1,10 @@
+digraph _logic_ipss {
+rankdir=LR;
+node [shape = doublecircle]; ready;
+node [shape = circle]; normal start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> normal [ label = "(1) ipEvent\\\\ips ++ ; "];
+normal -> ready [ label = "(1) attackEvent\\pendingConns >= ( pending / ( double ) ips ) \\pending -= pendingConns ; open -= openConns ; System . out . println ( \" Problematic IP: \" + ip + \"  pendingConns:  \" + pendingConns ) ; Main . blocker . blockIP ( ip ) ; resetAll . send ( ip ) ; "];
+normal -> ready [ label = "(2) ipEvent\\( openConns + pendingConns ) == 0 "];
+}

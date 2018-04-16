@@ -1,0 +1,69 @@
+Imports {
+	import java.util.Iterator;
+	import java.util.Collection;
+}
+ 
+ 
+Global{
+	 
+	Events{
+		access(Iterator i2) = {i2.*()}
+	} 
+	
+	Foreach (Collection c) { 
+	 
+		Events{
+			sync()        = {Collection+ c1.synchr*()} 
+							where {c=c1;}
+			asyncAccess() = {Collection+ c1.iterator()} 
+							filter {!Thread.holdsLock(c)}
+							where {c=c1;}
+		}
+	
+	
+%% The SafeSyncCollection property is designed 
+%% to match a case where either a collection 
+%% is synchronized and an non-synchronized
+%% iterator is created for the collection, or 
+%% a synchronized iterator is created, but 
+%% accessed in an unsynchronized manner.
+	
+		Property sync {
+			
+		States {
+			Bad      { bad }
+			Normal { sync }
+			Starting { start }
+		}
+		
+		Transitions {
+			start -> sync [sync]
+	        sync  -> bad  [asyncAccess]
+		}		
+		}
+	
+	
+	Foreach (Iterator i) {
+	
+	Events{
+		syncAccess() = {Collection+ c1.iterator() uponReturning (Iterator i1)} 
+							filter {Thread.holdsLock(c)}
+							where {c=c1;i=i1;}
+	} 
+	
+	Property access {
+		
+		States {
+			Bad      { bad }
+			Normal   { sync }
+			Starting { start }
+		}
+		
+		Transitions {
+			start -> sync [syncAccess]
+	        sync -> bad   [access\i2.equals(i)]
+		}
+	}
+}
+}
+}

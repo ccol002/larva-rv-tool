@@ -1,0 +1,16 @@
+digraph _logic_connections {
+rankdir=LR;
+node [shape = doublecircle]; failed ended;
+node [shape = circle]; pending answered connected start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> pending [ label = "(1) receiveSYN\\\\pending ++ ; pendingConns ++ ; checkchannel . send ( ) ; ipchannel . send ( ip ) ; c . reset ( ) ; "];
+connected -> ended [ label = "(1) fin\\\\open -- ; openConns -- ; "];
+connected -> ended [ label = "(2) cAT0_150\\\\System . out . println ( \" connection considered closed automatically \" ) ; open -- ; openConns -- ; "];
+pending -> failed [ label = "(1) cAT0_1\\\\pending -- ; pendingConns -- ; Main . blocker . reset ( ip , port , port2 ) ; "];
+pending -> failed [ label = "(2) resetEvent\\\\pending -- ; pendingConns -- ; Main . blocker . reset ( ip , port , port2 ) ; "];
+pending -> answered [ label = "(3) sendSYNACK\\\\c . reset ( ) ; "];
+answered -> connected [ label = "(1) receiveACK\\\\open ++ ; pending -- ; openConns ++ ; pendingConns -- ; "];
+answered -> failed [ label = "(2) cAT0_1\\\\open -- ; openConns -- ; Main . blocker . reset ( ip , port , port2 ) ; "];
+answered -> failed [ label = "(3) resetEvent\\\\open -- ; openConns -- ; Main . blocker . reset ( ip , port , port2 ) ; "];
+}

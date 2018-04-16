@@ -1,0 +1,4 @@
+AUTOMATON::> users() STATE::>start
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok
+AUTOMATON::> users() STATE::>ok
+MOVED ON METHODCALL: void nesting.Bank.addUser() TO STATE::> ok

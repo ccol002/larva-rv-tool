@@ -1,0 +1,8 @@
+digraph _logic_redirectMSG {
+rankdir=LR;
+node [shape = circle]; lustre initialization;
+node [shape = point]; _s_s;
+_s_s -> initialization;
+initialization -> lustre [ label = "(1) initializationEvent\\\\pre_0 = false ; pre_1 = 0 ; pre_2 = 0 ; pre_3 = 0 ; pre_4 = 0 ; pre_5 = 0 ; pre_6 = false ; "];
+lustre -> lustre [ label = "(1) periodicEvent\\\\_rt_clock = _clock . current_long ( ) ; time = ( pre_0 ) ? ( pre_1 ) : ( ( pre_2 == 0 ) ? ( _rt_clock ) : ( pre_3 ) ) ; cnt = ( redirect && _rt_clock - time < 2000 ) ? ( pre_4 + 1 ) : ( ( _rt_clock - time < 2000 ) ? ( pre_5 ) : ( ( redirect ) ? ( 1 ) : ( 0 ) ) ) ; violated = ( cnt >= 3 ) ? ( true ) : ( pre_6 ) ; pre_0 = redirect ; pre_1 = _rt_clock ; pre_2 = cnt ; pre_3 = time ; pre_4 = cnt ; pre_5 = cnt ; pre_6 = violated ; System . out . println ( \"  _rt_clock:  \" + _rt_clock + \"   \" + \"  redirect:  \" + redirect + \"   \" + \"  output:  \" + violated + \"   \" ) ; "];
+}

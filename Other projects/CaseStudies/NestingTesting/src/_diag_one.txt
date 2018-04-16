@@ -1,0 +1,13 @@
+digraph _logic_one {
+rankdir=LR;
+node [shape = circle]; loggedout2 loggedout3 loggedin loggedout1;
+node [shape = octagon]; badlogins;
+node [shape = point]; _s_s;
+_s_s -> loggedout1;
+loggedout1 -> loggedin [ label = "(1) goodlogin"];
+loggedout1 -> loggedout2 [ label = "(2) badlogin"];
+loggedout2 -> loggedin [ label = "(1) goodlogin"];
+loggedout2 -> loggedout3 [ label = "(2) badlogin"];
+loggedout3 -> loggedin [ label = "(1) goodlogin"];
+loggedout3 -> badlogins [ label = "(2) badlogin"];
+}

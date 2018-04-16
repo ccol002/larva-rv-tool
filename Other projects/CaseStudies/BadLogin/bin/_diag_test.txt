@@ -1,0 +1,8 @@
+digraph _logic_test {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) c_at_1\\\\c . reset ( ) ; System . out . println ( \" clock c \" ) ; "];
+start -> start [ label = "(2) d_at_1\\\\d . reset ( ) ; System . out . println ( \" clock d \" ) ; "];
+}

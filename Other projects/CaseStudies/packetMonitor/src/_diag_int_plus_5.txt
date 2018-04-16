@@ -1,0 +1,8 @@
+digraph _logic_int_plus_5 {
+rankdir=LR;
+node [shape = circle]; lustre initialization;
+node [shape = point]; _s_s;
+_s_s -> initialization;
+initialization -> lustre [ label = "(1) initializationEvent\\\\pre_1_22 = false ; pre_2_23 = false ; pre_0_28 = false ; pre_15_31 = false ; pre_10_39 = false ; pre_11_38 = 0 ; pre_12_37 = 0 ; pre_13_36 = 0 ; pre_1_41 = false ; pre_2_42 = false ; "];
+lustre -> lustre [ label = "(1) periodicEvent\\\\_rt_clock = _clock . current_long ( ) ; strict_after_21 = ( _b ) ? ( false ) : ( ( pre_1_22 ) ? ( true ) : ( pre_2_23 ) ) ; after_27 = ( _b ) ? ( true ) : ( pre_0_28 ) ; strict_after_40 = ( _b ) ? ( false ) : ( ( pre_1_41 ) ? ( true ) : ( pre_2_42 ) ) ; p_0_24 = redirect ; p_0_33 = redirect ; p_0_32 = redirect ; interval_1_19 = strict_after_21 && pre_14_20 ; since_35 = ( _b ) ? ( 0 ) : ( ( strict_after_40 && pre_10_39 ) ? ( pre_11_38 + _rt_clock - pre_12_37 ) : ( pre_13_36 ) ) ; always_since_25 = ( _b ) ? ( p_0_24 ) : ( ( after_27 ) ? ( p_0_24 && pre_3_26 ) : ( true ) ) ; begin_3_30 = ( _b && ! ( p_0_32 ) ) ? ( false ) : ( ( _b && p_0_33 ) ? ( true ) : ( pre_15_31 ) ) ; len_2_34 = since_35 <= 0 ; point_4_29 = begin_3_30 && len_2_34 ; _p = interval_1_19 || point_4_29 ; pre_14_20 = always_since_25 ; pre_1_22 = _b ; pre_2_23 = strict_after_21 ; pre_3_26 = always_since_25 ; pre_0_28 = after_27 ; pre_15_31 = begin_3_30 ; pre_10_39 = true ; pre_11_38 = since_35 ; pre_12_37 = _rt_clock ; pre_13_36 = since_35 ; pre_1_41 = _b ; pre_2_42 = strict_after_40 ; System . out . println ( \"  _b:  \" + _b + \"   \" + \"  _rt_clock:  \" + _rt_clock + \"   \" + \"  redirect:  \" + redirect + \"   \" + \"  output:  \" + _p + \"   \" ) ; "];
+}

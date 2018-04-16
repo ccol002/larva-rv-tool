@@ -1,0 +1,9 @@
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+MOVED ON METHODCALL: void larva.ClockEvent.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+MOVED ON METHODCALL: void larva.ClockEvent.event(long) TO STATE::> starting
+AUTOMATON::> test2() STATE::>beforestarting
+AUTOMATON::> test1() STATE::>starting
+MOVED ON METHODCALL: void larva.ClockEvent.event(long) TO STATE::> starting

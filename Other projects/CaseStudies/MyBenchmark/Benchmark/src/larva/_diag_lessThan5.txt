@@ -1,0 +1,9 @@
+digraph _logic_lessThan5 {
+rankdir=LR;
+node [shape = circle]; starting;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> starting;
+starting -> bad [ label = "(1) addTransaction\\count > 5 \\System.out.println ( \" More than 5 transactions added to User:  \" + u ) ; "];
+starting -> starting [ label = "(2) addTransaction\\\\count ++ ; "];
+}

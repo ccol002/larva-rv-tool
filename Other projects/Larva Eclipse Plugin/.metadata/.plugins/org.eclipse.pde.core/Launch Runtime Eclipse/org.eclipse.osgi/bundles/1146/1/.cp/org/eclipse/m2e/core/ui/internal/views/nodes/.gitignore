@@ -1,0 +1,15 @@
+/AbstractIndexedRepositoryNode.class
+/AbstractRepositoriesNode.class
+/CustomRepositoriesNode.class
+/GlobalRepositoriesNode.class
+/IArtifactNode.class
+/IMavenRepositoryNode.class
+/IndexedArtifactFileNode$AdapterFactory.class
+/IndexedArtifactFileNode.class
+/IndexedArtifactGroupNode.class
+/IndexedArtifactNode.class
+/LocalRepositoryNode.class
+/LocalRepositoryRootNode.class
+/ProjectRepositoriesNode.class
+/RepositoryNode.class
+/WorkspaceRepositoryNode.class
