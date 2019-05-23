@@ -1,0 +1,36 @@
+Starting State
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>P
+State
+[purchase]MOVED ON METHODCALL: void larva.Channel.receive() TO STATE::> S
+Starting State
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+State
+[purchase]MOVED ON METHODCALL: void code.Store.decreaseStock() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+State
+[purchase]MOVED ON METHODCALL: void code.Order.stockReceivedFromStore() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+State
+[purchase]MOVED ON METHODCALL: void code.Bank.receiveMoney() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+State
+[purchase]MOVED ON METHODCALL: void code.Order.run() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+State
+[purchase]MOVED ON METHODCALL: void code.User.run() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>S
+Error State
+[transaction]AUTOMATON::> transaction() STATE::>S
+[transaction]MOVED ON METHODCALL: void larva.Channel.receive() TO STATE::> SPrime
+[purchase]AUTOMATON::> purchase() STATE::>E
+[purchase]MOVED ON METHODCALL: void code.User.cancelOrder() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! E 
+aspects._asp_parcomps0.ajc$afterReturning$aspects__asp_parcomps0$4$e9b6bb45(_asp_parcomps0.aj:44)
+code.Transaction.doTx3(Transaction.java:56)
+code.main.main(main.java:10) 

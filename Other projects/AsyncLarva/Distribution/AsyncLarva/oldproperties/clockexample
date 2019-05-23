@@ -1,0 +1,26 @@
+GLOBAL {
+
+  VARIABLES {
+    Clock c = new Clock();          
+    Clock d = new Clock();
+  }
+
+  EVENTS {
+    clockCat1() = {c@1}
+    clockDat5() = {d@5}
+  }
+
+  PROPERTY timedAutomata {
+		
+    STATES {		
+      NORMAL { normal }
+			
+      STARTING { starting }
+    }
+
+    TRANSITIONS {
+      starting -> normal [clockCat1\c.compareTo(1)>= 0\d.reset();]
+      normal -> starting [clockDat5\\c.reset();]
+    }
+  }
+}

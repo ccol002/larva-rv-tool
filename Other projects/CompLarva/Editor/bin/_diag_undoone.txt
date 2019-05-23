@@ -1,0 +1,12 @@
+digraph _logic_undoone {
+rankdir=LR;
+node [shape = circle]; S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+S -> S [ label = "(1) insert2\\\\ed.get(_dat) . delete ( ) ; "];
+S -> S [ label = "(2) delete2\\\\ed.get(_dat) . insert ( s.get(_dat) ) ; "];
+S -> S [ label = "(3) insert"];
+S -> S [ label = "(4) delete"];
+S -> E [ label = "(5) undoone"];
+}

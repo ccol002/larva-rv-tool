@@ -1,0 +1,10 @@
+digraph _logic_transfer {
+rankdir=LR;
+node [shape = circle]; W D S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+D -> E [ label = "(1) cancel"];
+W -> D [ label = "(1) deposit\\\\a.get(_dat) . withdraw ( amount.get(_dat) ) ; "];
+S -> W [ label = "(1) withdraw\\\\a.get(_dat) . deposit ( amount.get(_dat) ) ; "];
+}

@@ -1,0 +1,99 @@
+IMPORTS{
+import code.*;
+}
+
+GLOBAL{
+
+Variables{
+Channel c_purchase_start;
+Channel c_purchase_done;
+
+}
+
+EVENTS{
+
+c_purchase_start() = {c_purchase_start.receive() uponReturning ()}
+
+c_purchase_done() = {c_purchase_done.receive() uponReturning ()}
+
+decStock() =  {Store.decreaseStock() uponReturning ()}
+
+recStock(Order o) = {o.stockReceivedFromStore() uponReturning ()}
+
+pay(User u) = {u.payMoney() uponReturning ()}
+
+recPay() = {Bank.receiveMoney() uponReturning ()}
+		
+pack(Order o) = {o.packOrder() uponReturning ()}
+
+cancel() = {*.cancelOrder() uponReturning ()}
+}%%EVENTS
+
+
+
+PROPERTY transaction {
+STATES {
+ ACCEPTING { 
+  A {System.out.println("Accepting State");} }
+ Bad { 
+  E {System.out.println("Error State");} }
+ 
+ Normal{
+  SPrime
+ }
+ 
+ STARTING {
+ S {System.out.println("Starting State");
+    c_purchase_start.send();
+    _comps.push(-2);_comps.push(-2);}
+ }
+}%%STATES
+
+TRANSITIONS {
+
+S -> SPrime [c_purchase_done\\]
+SPrime -> E [cancel\\Store.notifyOperator();]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+
+
+PROPERTY purchase {
+STATES {
+ ACCEPTING { 
+  A {System.out.println("Accepting State");
+     c_purchase_done.send();} }
+ Bad { 
+  E {System.out.println("Error State");
+     c_purchase_done.send();
+      } 
+     }
+ NORMAL {
+  S {System.out.println("State");}
+ }
+ STARTING {
+  P {System.out.println("Starting State");}
+ }
+}%%STATES
+
+TRANSITIONS {
+
+P -> S [c_purchase_start()]
+
+S -> S [decStock\\
+        Store.increaseStock();]
+S -> S [recStock\\
+        o.stockSentBackToStore();]
+S -> S [pay\\
+        u.receiveMoney();]
+S -> S [recPay\\
+        Bank.refundMoney();]
+S -> A [pack\\
+        o.unpackOrder();]        
+S -> E [cancel\\]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+}%%global

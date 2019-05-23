@@ -1,0 +1,72 @@
+GLOBAL{
+
+VARIABLES{
+Clock c = new Clock();    %%clocks need not be declared as events...can be used as such to declare as part of a collection
+Channel d = new Channel();%%channels are considered to be events (so the names must be unique throughout the events)
+int count1 = 0;
+int count2 = 0;
+int count3 = 0;
+}
+
+%%both automata test2 and test3 are triggered by the same d.send() from automaton 1
+EVENTS{
+clockC5() = {c@%1}
+channeld(String from) = {d.receive(from)}
+}
+
+
+
+PROPERTY test1{
+STATES{
+NORMAL{normal}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> normal [clockC5\count1 > 5
+\d.send();System.out.println("Reached Normal State!! 1");
+count1 = 0;System.out.println(System.currentTimeMillis());]
+
+starting -> starting [clockC5\\count1++;System.out.println(System.currentTimeMillis());]
+
+normal -> starting [channeld\from.equals("test2")
+\System.out.println(System.currentTimeMillis());]
+}
+}
+
+PROPERTY test2{
+STATES{
+NORMAL{starting}
+STARTING{beforestarting}
+}
+
+TRANSITIONS{
+beforestarting -> starting [channeld\from.equals("test1")
+\System.out.println(System.currentTimeMillis());]
+
+starting -> beforestarting [clockC5\count2 > 5\count2 = 0;d.send();
+System.out.println("Reached Normal State!! 2");System.out.println(System.currentTimeMillis());]
+
+starting -> starting [clockC5\\count2++;System.out.println(System.currentTimeMillis());]
+}
+}
+
+PROPERTY test3{
+STATES{
+NORMAL{starting}
+STARTING{beforestarting}
+}
+
+TRANSITIONS{
+beforestarting -> starting [channeld\from.equals("test1")
+\System.out.println(System.currentTimeMillis());]
+
+starting -> beforestarting [clockC5\count3 > 5\count3 = 0;d.send();
+System.out.println("Reached Normal State!! 3");System.out.println(System.currentTimeMillis());]
+
+starting -> starting [clockC5\\count3++;System.out.println(System.currentTimeMillis());]
+}
+}
+
+
+}

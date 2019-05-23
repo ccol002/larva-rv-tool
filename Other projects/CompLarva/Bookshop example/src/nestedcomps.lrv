@@ -1,0 +1,64 @@
+IMPORTS{
+import code.*;
+}
+
+GLOBAL{
+
+EVENTS{
+
+decStock() =  {Store.decreaseStock() uponReturning ()}
+
+recStock(Order o) = {o.stockReceivedFromStore() uponReturning ()}
+
+pay(User u) = {u.payMoney() uponReturning ()}
+
+recPay() = {Bank.receiveMoney() uponReturning ()}
+		
+pack(Order o) = {o.packOrder() uponReturning ()}
+
+cancel() = {*.cancelOrder() uponReturning ()}
+}%%EVENTS
+
+
+
+PROPERTY transaction {
+STATES {
+ ACCEPTING { A } 
+ Bad { E } 
+ STARTING { S = purchase }
+}%%STATES
+
+TRANSITIONS {
+
+S -> E [cancel\\Store.notifyOperator();]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+
+
+PROPERTY purchase {
+STATES {
+ ACCEPTING { A }
+ Bad { E }
+ STARTING { S }
+}%%STATES
+
+TRANSITIONS {
+
+S -> S [decStock\\
+        Store.increaseStock();]
+S -> S [recStock\\
+        o.stockSentBackToStore();]
+S -> S [pay\\
+        u.receiveMoney();]
+S -> S [recPay\\
+        Bank.refundMoney();]
+S -> A [pack\\
+        o.unpackOrder();]        
+S -> E [cancel\\]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+}%%global

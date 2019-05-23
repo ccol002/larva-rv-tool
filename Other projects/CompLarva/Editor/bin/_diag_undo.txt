@@ -1,0 +1,11 @@
+digraph _logic_undo {
+rankdir=LR;
+node [shape = circle]; S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+S -> S [ label = "(1) insert\\\\ed.get(_dat) . delete ( ) ; "];
+S -> S [ label = "(2) delete\\\\ed.get(_dat) . insert ( s.get(_dat) ) ; "];
+S -> S [ label = "(3) save"];
+S -> E [ label = "(4) undo"];
+}

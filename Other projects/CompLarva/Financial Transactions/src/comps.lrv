@@ -1,0 +1,58 @@
+IMPORTS{
+import code.Account;
+import java.util.Stack;
+}
+
+GLOBAL{
+
+VARIABLES {
+Stack<Integer> compensations = new Stack<Integer>();
+double deposit_amount, withdraw_amount;
+Account deposit_account, withdraw_account;
+}%%VARIABLES
+
+EVENTS{
+deposit(Account a, double amount) = {a.deposit(amount)}
+withdraw(Account a, double amount) = {a.withdraw(amount)}
+cancel() = {*.cancel()}
+}%%EVENTS
+
+
+PROPERTY transfer {
+STATES {
+ BAD { 
+  E {System.out.println("Error State"); 
+  
+     System.out.println("Starting Compensation"); 
+          while (compensations.size()>0){
+			    Integer i = compensations.pop();
+			    switch (i) {
+			     case 1 : deposit_account.withdraw(deposit_amount);break;
+			     case 2 : withdraw_account.deposit(withdraw_amount);	
+			    }}
+		 }
+		 }
+ NORMAL {
+  W {System.out.println("Withdraw State");}
+  D {System.out.println("Deposit State");}
+ }
+ STARTING {
+ S {System.out.println("Starting State");}
+ }
+}%%STATES
+
+TRANSITIONS {
+S -> W [withdraw\\
+        compensations.push(2);
+        withdraw_account=a;
+        withdraw_amount=amount;]
+W -> D [deposit\\
+        compensations.push(1);
+        deposit_account=a;
+        deposit_amount=amount;]
+D -> E [cancel\\]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+}%%global

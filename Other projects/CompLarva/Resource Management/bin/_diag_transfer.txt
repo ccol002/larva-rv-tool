@@ -1,0 +1,12 @@
+digraph _logic_transfer {
+rankdir=LR;
+node [shape = circle]; S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+S -> S [ label = "(1) newfile"];
+S -> S [ label = "(2) newfr\\\\try { fr.get(_dat) . close ( ) ; System . out . println ( fr.get(_dat) + \"  has been closed automatically \" ) ; } catch ( Exception e ) { e . printStackTrace ( ) ; } "];
+S -> S [ label = "(3) newbr\\\\try { br.get(_dat) . close ( ) ; System . out . println ( br.get(_dat) + \"  has been closed automatically \" ) ; } catch ( Exception e ) { e . printStackTrace ( ) ; } "];
+S -> S [ label = "(4) methodentry"];
+S -> E [ label = "(5) methodexit"];
+}

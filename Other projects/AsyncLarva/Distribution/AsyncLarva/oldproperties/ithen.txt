@@ -1,0 +1,108 @@
+IMPORTS {import main.*;} 
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+boolean boolg_7_61;
+boolean point_4_72;
+boolean always_since_68;
+boolean lhs_18;
+boolean pre_1_65;
+boolean pre_11_91;
+boolean never_p_26;
+boolean pre_2_66;
+boolean pre_3_69;
+long pre_12_90;
+boolean pre_2_60;
+boolean pre_10_25;
+boolean p_0_42;
+boolean p_0_41;
+boolean strict_after_83;
+boolean pre_1_59;
+boolean pre_11_82;
+long since_53;
+long pre_13_89;
+boolean pre_1_50;
+long pre_12_81;
+long pre_14_88;
+boolean pre_2_51;
+boolean len_6_52;
+long pre_13_80;
+boolean rhsstart_20;
+boolean len_2_43;
+boolean p_0_33;
+boolean then_8_17;
+long since_44;
+boolean int_closed_plus_5_62;
+boolean int_closed_1_29;
+long pre_14_79;
+boolean pre_16_19;
+boolean pre_15_74;
+boolean strict_after_64;
+boolean pre_0_37;
+boolean first_95;
+boolean always_since_34;
+boolean begin_3_39;
+boolean pre_1_31;
+boolean pre_1_93;
+boolean pre_2_32;
+boolean after_36;
+boolean pre_3_35;
+boolean pre_2_94;
+boolean strict_after_58;
+boolean boolg_7_27;
+boolean p_0_76;
+boolean point_4_38;
+boolean p_0_75;
+boolean pre_11_57;
+boolean first_23;
+long pre_12_56;
+long since_87;
+boolean pre_1_84;
+long pre_13_55;
+boolean pre_2_85;
+boolean len_6_86;
+boolean pre_9_96;
+long pre_14_54;
+boolean int_closed_1_63;
+boolean strict_after_49;
+boolean len_2_77;
+boolean p_0_67;
+boolean pre_11_48;
+boolean rhs_22;
+long pre_12_47;
+long since_78;
+boolean pre_0_71;
+long pre_13_46;
+boolean pre_9_24;
+boolean lhsstart_21;
+boolean never_p_98;
+long pre_14_45;
+boolean begin_3_73;
+long _rt_clock;
+boolean after_70;
+boolean pre_15_40;
+boolean int_closed_plus_5_28;
+boolean pre_10_97;
+boolean strict_after_30;
+boolean _p;
+boolean strict_after_92;
+}
+
+ EVENTS {_b_event(boolean _b,boolean D,boolean Alarm) = {Main *.start()} where { _b = true; D = true; Alarm = false;} D_event(boolean _b,boolean D,boolean Alarm) = {DH2O *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} Alarm_event(boolean _b,boolean D,boolean Alarm) = {ALARM *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} initializationEvent() = {Main *.initialize()} periodicEvent(boolean _b,boolean D,boolean Alarm) = {_b_event|D_event|Alarm_event} }
+
+PROPERTY ithen_9 {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_16_19 = false;pre_9_24 = false;pre_10_25 = false;pre_1_31 = false;pre_2_32 = false;pre_0_37 = false;pre_15_40 = false;pre_11_48 = false;pre_12_47 = 0;pre_13_46 = 0;pre_14_45 = 0;pre_1_50 = false;pre_2_51 = false;pre_11_57 = false;pre_12_56 = 0;pre_13_55 = 0;pre_14_54 = 0;pre_1_59 = false;pre_2_60 = false;pre_1_65 = false;pre_2_66 = false;pre_0_71 = false;pre_15_74 = false;pre_11_82 = false;pre_12_81 = 0;pre_13_80 = 0;pre_14_79 = 0;pre_1_84 = false;pre_2_85 = false;pre_11_91 = false;pre_12_90 = 0;pre_13_89 = 0;pre_14_88 = 0;pre_1_93 = false;pre_2_94 = false;pre_9_96 = false;pre_10_97 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();p_0_67 = D;p_0_76 = D;p_0_75 = D;p_0_42 = D;p_0_33 = D;lhsstart_21 = _b || pre_16_19;p_0_41 = D;after_36 = (lhsstart_21)?(true):(pre_0_37);never_p_26 = (lhsstart_21)?(true):((pre_9_24)?(false):(pre_10_25));strict_after_30 = (lhsstart_21)?(false):((pre_1_31)?(true):(pre_2_32));strict_after_49 = (lhsstart_21)?(false):((pre_1_50)?(true):(pre_2_51));begin_3_39 = (lhsstart_21 && !(p_0_41))?(false):((lhsstart_21 && p_0_42)?(true):(pre_15_40));strict_after_58 = (lhsstart_21)?(false):((pre_1_59)?(true):(pre_2_60));since_53 = (lhsstart_21)?(0):((strict_after_58 && pre_11_57)?(pre_12_56 + _rt_clock - pre_13_55):(pre_14_54));since_44 = (lhsstart_21)?(0):((strict_after_49 && pre_11_48)?(pre_12_47 + _rt_clock - pre_13_46):(pre_14_45));always_since_34 = (lhsstart_21)?(p_0_33):((after_36)?(p_0_33 && pre_3_35):(true));len_2_43 = since_44 <= 0;int_closed_1_29 = strict_after_30 && always_since_34;len_6_52 = since_53 < 400.0;point_4_38 = begin_3_39 && len_2_43;int_closed_plus_5_28 = int_closed_1_29 || point_4_38;boolg_7_27 = int_closed_plus_5_28 && len_6_52;lhs_18 = boolg_7_27;first_23 = !(lhs_18) && never_p_26;rhsstart_20 = first_23;strict_after_83 = (rhsstart_20)?(false):((pre_1_84)?(true):(pre_2_85));strict_after_64 = (rhsstart_20)?(false):((pre_1_65)?(true):(pre_2_66));strict_after_92 = (rhsstart_20)?(false):((pre_1_93)?(true):(pre_2_94));begin_3_73 = (rhsstart_20 && !(p_0_75))?(false):((rhsstart_20 && p_0_76)?(true):(pre_15_74));after_70 = (rhsstart_20)?(true):(pre_0_71);never_p_98 = (rhsstart_20)?(true):((pre_9_96)?(false):(pre_10_97));since_87 = (rhsstart_20)?(0):((strict_after_92 && pre_11_91)?(pre_12_90 + _rt_clock - pre_13_89):(pre_14_88));always_since_68 = (rhsstart_20)?(p_0_67):((after_70)?(p_0_67 && pre_3_69):(true));since_78 = (rhsstart_20)?(0):((strict_after_83 && pre_11_82)?(pre_12_81 + _rt_clock - pre_13_80):(pre_14_79));int_closed_1_63 = strict_after_64 && always_since_68;len_2_77 = since_78 <= 0;len_6_86 = since_87 < 400.0;point_4_72 = begin_3_73 && len_2_77;int_closed_plus_5_62 = int_closed_1_63 || point_4_72;boolg_7_61 = int_closed_plus_5_62 && len_6_86;rhs_22 = boolg_7_61;first_95 = !(rhs_22) && never_p_98;then_8_17 = rhs_22 || lhs_18;_p = then_8_17;pre_16_19 = first_95;pre_9_24 = !(lhs_18);pre_10_25 = never_p_26;pre_1_31 = lhsstart_21;pre_2_32 = strict_after_30;pre_3_35 = always_since_34;pre_0_37 = after_36;pre_15_40 = begin_3_39;pre_11_48 = true;pre_12_47 = since_44;pre_13_46 = _rt_clock;pre_14_45 = since_44;pre_1_50 = lhsstart_21;pre_2_51 = strict_after_49;pre_11_57 = true;pre_12_56 = since_53;pre_13_55 = _rt_clock;pre_14_54 = since_53;pre_1_59 = lhsstart_21;pre_2_60 = strict_after_58;pre_1_65 = rhsstart_20;pre_2_66 = strict_after_64;pre_3_69 = always_since_68;pre_0_71 = after_70;pre_15_74 = begin_3_73;pre_11_82 = true;pre_12_81 = since_78;pre_13_80 = _rt_clock;pre_14_79 = since_78;pre_1_84 = rhsstart_20;pre_2_85 = strict_after_83;pre_11_91 = true;pre_12_90 = since_87;pre_13_89 = _rt_clock;pre_14_88 = since_87;pre_1_93 = rhsstart_20;pre_2_94 = strict_after_92;pre_9_96 = !(rhs_22);pre_10_97 = never_p_98;System.out.println(" _b: " + _b + " " + " D: " + D + " " + " _rt_clock: " + _rt_clock + " " + " output: " + _p + " ");]
+}
+}
+}
+

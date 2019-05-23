@@ -1,0 +1,13 @@
+digraph _logic_badlogins {
+rankdir=LR;
+node [shape = circle]; loggedin loggedout;
+node [shape = octagon]; bad;
+node [shape = point]; _s_s;
+_s_s -> loggedout;
+loggedin -> loggedin [ label = "(1) actionevent"];
+loggedin -> loggedout [ label = "(2) logout"];
+loggedin -> loggedout [ label = "(3) cAT30"];
+loggedout -> loggedin [ label = "(1) login"];
+loggedout -> loggedout [ label = "(2) badpassword"];
+loggedout -> bad [ label = "(3) badpassword"];
+}

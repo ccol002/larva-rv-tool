@@ -1,0 +1,61 @@
+GLOBAL{
+
+EVENTS{
+
+w() = {*.writeToDb()}
+r() = {*.readFromDb()}
+i() = {*.loginToDb()}
+o() = {*.logoutFromDb()}
+any() = {w|r|i|o}
+
+}%%EVENTS
+
+VARIABLES{
+boolean logged = false;
+}
+
+
+PROPERTY badAccess{
+
+STATES{
+
+ACCEPTING{}
+
+BAD{
+
+bad_write {}
+bad_read  {}
+
+}
+
+
+NORMAL {}
+
+
+STARTING{
+
+start     {}
+
+}
+
+}%%STATES
+
+
+TRANSITIONS
+{
+
+start -> start[i\\logged=true;]
+
+start -> start [o\\logged = false;]
+
+start -> bad_write [ w\!logged]
+
+start -> bad_read [ r\!logged]
+
+
+}
+
+
+}
+
+}%%GLOBAL

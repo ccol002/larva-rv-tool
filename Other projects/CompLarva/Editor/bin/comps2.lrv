@@ -1,0 +1,44 @@
+IMPORTS{
+import main.*;
+}
+
+GLOBAL{
+
+EVENTS{
+
+insert() = {ed.insert(t)}
+
+delete() = {ed.delete()}
+
+insert2(Editor ed, String s) = {ed.insert(s) uponReturning()}
+
+delete2(Editor ed, String s) = {ed.delete() uponReturning()}where {s=ed.get(ed.length()-1,ed.length());}
+
+
+save(Editor ed) = {ed.save()}
+
+undo(Editor ed) = {ed.undo()}
+
+undoone(Editor ed) = {ed.undoOne()}
+
+}%%EVENTS
+
+
+PROPERTY undoone {
+STATES {
+ Bad { E } 
+ STARTING { S }
+}%%STATES
+
+TRANSITIONS {
+S-> S [insert2\\ed.delete();]
+S-> S [delete2\\ed.insert(s);]
+S-> S-> S [insert]
+S-> S-> S [delete]
+S -> E [undoone]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+
+}%%global

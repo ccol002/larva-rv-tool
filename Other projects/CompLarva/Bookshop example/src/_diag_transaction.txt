@@ -1,0 +1,10 @@
+digraph _logic_transaction {
+rankdir=LR;
+node [shape = doublecircle]; A;
+node [shape = circle]; _S S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+S -> E [ label = "(1) cancel\\\\Store . notifyOperator ( ) ; "];
+_S -> S [ label = "(1) c_purchase_done"];
+}

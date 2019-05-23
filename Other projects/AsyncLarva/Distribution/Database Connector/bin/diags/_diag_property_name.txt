@@ -1,0 +1,8 @@
+digraph _logic_property_name {
+rankdir=LR;
+node [shape = circle]; its_working , login_detected start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> its_working [label = "(1) event_name\\\\..."];
+its_working -> login_detected [label = "(1) login\\\\..."];
+}

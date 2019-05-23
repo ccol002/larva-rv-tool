@@ -1,0 +1,27 @@
+Open detected
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: void larva.RunningClock.run() TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: Long larva.IterableList.getNext() TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Error State
+[transfer]MOVED ON METHODCALL: Long larva.IterableList.getNext() TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: void code.main.main(String[]) TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: java.io.File(String) TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: java.io.FileReader(File) TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Open detected
+[transfer]MOVED ON METHODCALL: java.io.BufferedReader(Reader) TO STATE::> S
+[transfer]AUTOMATON::> transfer() STATE::>S
+Error State
+java.io.BufferedReader@5740bb has been closed automatically
+java.io.FileReader@5ac072 has been closed automatically
+[transfer]MOVED ON METHODCALL: void code.main.main(String[]) TO STATE::> S

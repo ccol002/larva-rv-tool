@@ -1,0 +1,12 @@
+Starting State
+[transfer]AUTOMATON::> transfer() STATE::>S
+Withdraw State
+[transfer]MOVED ON METHODCALL: void code.Account.withdraw(double) TO STATE::> W
+[transfer]AUTOMATON::> transfer() STATE::>W
+Deposit State
+[transfer]MOVED ON METHODCALL: void code.Account.deposit(double) TO STATE::> D
+[transfer]AUTOMATON::> transfer() STATE::>D
+Error State
+[transfer]MOVED ON METHODCALL: void code.Account.cancel() TO STATE::> !!!SYSTEM REACHED BAD STATE!!! E 
+aspects._asp_comps20.ajc$before$aspects__asp_comps20$3$ea7d1f83(_asp_comps20.aj:40)
+code.main.main(main.java:22) 

@@ -1,0 +1,46 @@
+IMPORTS{
+import code.main;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+}
+
+GLOBAL{
+
+EVENTS{
+newfile(File f) = {File.new(*) uponReturning (f)}
+newfr(FileReader fr) = {FileReader.new(*) uponReturning (fr)}
+newbr(BufferedReader br) = {BufferedReader.new(*) uponReturning (br)}
+
+methodentry() = {execution *.*()}
+methodexit() = {{execution *.*() uponReturning ()} | {*.*() uponThrowing()}}
+
+}%%EVENTS
+
+
+PROPERTY transfer {
+STATES {
+ BAD { 
+  E {System.out.println("Error State");} 
+  }
+
+ STARTING {
+ S {System.out.println("Open detected");}
+ }
+}%%STATES
+
+TRANSITIONS {
+S -> S [newfile\\]
+S -> S [newfr\\try{fr.close();
+               System.out.println(fr+" has been closed automatically");
+               }catch(Exception e){e.printStackTrace();}]
+S -> S [newbr\\try{br.close();
+               System.out.println(br+" has been closed automatically");
+               }catch(Exception e){e.printStackTrace();}]
+S -> S -> S [methodentry\\] %%--> S
+S -> E [methodexit\\] 
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+}%%global

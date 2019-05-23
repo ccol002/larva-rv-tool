@@ -1,0 +1,99 @@
+IMPORTS {
+import larva.*;
+import sniffer.*;
+}
+
+GLOBAL {
+VARIABLES {
+Clock c2;
+Clock c3;
+}
+EVENTS {
+redirect(boolean redirectMSG) = {*.receiveRedirectICMP(*)} where { redirectMSG = true; }
+c3AT1_0(boolean redirectMSG) = {c3@1.0} where { redirectMSG = false; }
+c2AT1_0(boolean redirectMSG) = {c2@1.0} where { redirectMSG = false; }
+all(boolean redirectMSG) = {redirect|c3AT1_0|c2AT1_0}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i3i
+ loc0i2i3i2l
+ loc0i1i3i1l
+ loc0i1i2i3i1l2l }
+NORMAL {
+ loc0i
+ loc0i2i2l
+ loc0i1i1l
+ loc0i1i2i1l2l
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(redirectMSG)\]
+loc0i -> loc0i1i1l [all\redirectMSG\c2.reset();]
+loc0i -> unhandled [all]
+loc0i3i -> loc0i3i [all\!(redirectMSG)\]
+loc0i3i -> loc0i1i3i1l [all\redirectMSG\c2.reset();]
+loc0i3i -> unhandled [all]
+loc0i2i2l -> loc0i [all\(!(redirectMSG) && !(c3.compareToMillis((long)1000.0)<0) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i2i2l -> loc0i3i [all\(!(redirectMSG) && !(c3.compareToMillis((long)1000.0)<0) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i2i2l -> loc0i2i2l [all\(!(redirectMSG) && c3.compareToMillis((long)1000.0)<0 && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i2i2l -> loc0i2i3i2l [all\(!(redirectMSG) && c3.compareToMillis((long)1000.0)<0 && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i2i2l -> loc0i1i1l [all\(redirectMSG && !(c3.compareToMillis((long)1000.0)<0) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i2i2l -> loc0i1i3i1l [all\(redirectMSG && !(c3.compareToMillis((long)1000.0)<0) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();]
+loc0i2i2l -> loc0i1i2i1l2l [all\(redirectMSG && c3.compareToMillis((long)1000.0)<0 && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i2i2l -> loc0i1i2i3i1l2l [all\(redirectMSG && c3.compareToMillis((long)1000.0)<0 && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();]
+loc0i2i2l -> unhandled [all]
+loc0i2i3i2l -> loc0i3i [all\(!(redirectMSG) && !(c3.compareToMillis((long)1000.0)<0))\]
+loc0i2i3i2l -> loc0i2i3i2l [all\(!(redirectMSG) && c3.compareToMillis((long)1000.0)<0)\]
+loc0i2i3i2l -> loc0i1i3i1l [all\(redirectMSG && !(c3.compareToMillis((long)1000.0)<0))\c2.reset();]
+loc0i2i3i2l -> loc0i1i2i3i1l2l [all\(redirectMSG && c3.compareToMillis((long)1000.0)<0)\c2.reset();]
+loc0i2i3i2l -> unhandled [all]
+loc0i1i1l -> loc0i [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i1l -> loc0i2i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i1l -> loc0i1i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i1l -> loc0i1i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();c3.reset();]
+loc0i1i1l -> unhandled [all]
+loc0i1i3i1l -> loc0i3i [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i3i1l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i3i1l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i3i1l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();c3.reset();]
+loc0i1i3i1l -> unhandled [all]
+loc0i1i2i1l2l -> loc0i [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i1l2l -> loc0i3i [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i1l2l -> loc0i1i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG) && (c3.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> unhandled [all]
+loc0i1i2i3i1l2l -> loc0i3i [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)1000.0)<0 || redirectMSG)) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))))\]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && !((c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG))))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && !(redirectMSG) && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && !((c2.compareToMillis((long)1000.0)<0 && redirectMSG)))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)1000.0)<0 || redirectMSG) && redirectMSG && (c3.compareToMillis((long)1000.0)<0 || (c2.compareToMillis((long)1000.0)<0 && redirectMSG)) && (c2.compareToMillis((long)1000.0)<0 && redirectMSG))\c2.reset();c3.reset();]
+loc0i1i2i3i1l2l -> unhandled [all]
+}
+}
+}%%GLOBAL

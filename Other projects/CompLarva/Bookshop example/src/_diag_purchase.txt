@@ -1,0 +1,14 @@
+digraph _logic_purchase {
+rankdir=LR;
+node [shape = doublecircle]; A;
+node [shape = circle]; S;
+node [shape = octagon]; E;
+node [shape = point]; _s_s;
+_s_s -> S;
+S -> S [ label = "(1) decStock\\\\Store . increaseStock ( ) ; "];
+S -> S [ label = "(2) recStock\\\\o.get(_dat) . stockSentBackToStore ( ) ; "];
+S -> S [ label = "(3) pay\\\\u.get(_dat) . receiveMoney ( ) ; "];
+S -> S [ label = "(4) recPay\\\\Bank . refundMoney ( ) ; "];
+S -> A [ label = "(5) pack\\\\o.get(_dat) . unpackOrder ( ) ; "];
+S -> E [ label = "(6) cancel"];
+}

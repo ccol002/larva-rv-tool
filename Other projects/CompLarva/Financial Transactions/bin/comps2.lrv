@@ -1,0 +1,37 @@
+IMPORTS{
+import code.Account;
+}
+
+GLOBAL{
+
+EVENTS{
+deposit(Account a, Double amount) = {a.deposit(amount)}
+withdraw(Account a, Double amount) = {a.withdraw(amount)}
+cancel() = {*.cancel()}
+}%%EVENTS
+
+
+PROPERTY transfer {
+STATES {
+ BAD { 
+  E {System.out.println("Error State");} }
+ NORMAL {
+  W {System.out.println("Withdraw State");}
+  D {System.out.println("Deposit State");}
+ }
+ STARTING {
+ S {System.out.println("Starting State");}
+ }
+}%%STATES
+
+TRANSITIONS {
+S -> W [withdraw\\
+        a.deposit(amount);]
+W -> D [deposit\\
+        a.withdraw(amount);]
+D -> E [cancel\\]
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+}%%global

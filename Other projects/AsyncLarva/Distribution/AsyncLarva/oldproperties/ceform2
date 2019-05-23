@@ -1,0 +1,50 @@
+IMPORTS {import main.*;}
+GLOBAL {
+VARIABLES {
+Clock c1;
+}
+EVENTS {
+changeOfA(boolean A ,boolean B) = {A *.on()} where { B = B.status; A = A.status; }
+changeOfB(boolean B, boolean A) = {B *.on()} where { B = B.status; A = A.status; }
+initialize() = {Main *.initialize()}
+c1AT0_0010() = {c1@0.0010}
+all(B,A) = {changeOfB|changeOfA|c1AT0_0010}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc1i
+ loc0i1i }
+NORMAL {
+ loc
+ loc0i
+ loc0i0w
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc [all\!(A)]
+loc -> loc [all\true\]
+loc -> unhandled [all]
+loc1i -> loc [all\!(B)\]
+loc1i -> loc1i [all\B\]
+loc1i -> unhandled [all]
+loc0i -> loc [all\(!(A) && !(B))\]
+loc0i -> loc1i [all\((!(A) && B) && B)\]
+loc0i -> loc0i [all\(A && !(B))\]
+loc0i -> loc0i1i [all\(A && B)\]
+loc0i -> unhandled [all]
+start -> loc0i0w [all\(A && (A && c1.compareToMillis((long)1.0)<=0))]
+loc0i0w -> loc [all\!(A)\]
+loc0i0w -> loc0i [all\((A && !(c1.compareToMillis((long)1.0)<0) && !(B)) && (A && !(B)))\]
+loc0i0w -> loc0i0w [all\((A && c1.compareToMillis((long)1.0)<0) && (A && c1.compareToMillis((long)1.0)<=0))\]
+loc0i0w -> loc0i1i [all\((A && !(c1.compareToMillis((long)1.0)<0) && B) && (A && B))\]
+loc0i0w -> unhandled [all]
+loc0i1i -> loc [all\(!(A) && !(B))\]
+loc0i1i -> loc1i [all\((!(A) && B) && B)\]
+loc0i1i -> loc0i [all\(A && !(B))\]
+loc0i1i -> loc0i1i [all\(A && B)\]
+loc0i1i -> unhandled [all]
+}
+}
+}%%GLOBAL

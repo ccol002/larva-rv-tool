@@ -1,0 +1,44 @@
+IMPORTS {import sniffer.*;} 
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+long pre_6_23;
+boolean pre_2_15;
+long time_26;
+boolean retries_21;
+boolean received_19;
+long _rt_clock;
+long pre_7_22;
+boolean pre_3_14;
+long pre_9_29;
+long pre_4_13;
+long acktime_20;
+long pre_10_28;
+long cnt_25;
+boolean pre_0_18;
+long pre_8_30;
+boolean pre_11_27;
+boolean violated;
+boolean replied_16;
+boolean pre_5_24;
+boolean pre_1_17;
+boolean success_12;
+}
+
+
+PROPERTY main {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_0_18 = false;pre_1_17 = false;pre_2_15 = false;pre_3_14 = false;pre_4_13 = 0;pre_5_24 = false;pre_6_23 = 0;pre_7_22 = 0;pre_8_30 = 0;pre_9_29 = 0;pre_10_28 = 0;pre_11_27 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();received_19 = (receiveSYN)?(true):((pre_0_18)?(false):(pre_1_17));time_26 = (pre_5_24)?(pre_6_23):((pre_7_22 == 0)?(_rt_clock):(pre_8_30));replied_16 = (received_19 && sendSYNACK)?(true):((pre_2_15)?(false):(pre_3_14));acktime_20 = (replied_16)?(_rt_clock):(pre_4_13);success_12 = (received_19 && replied_16 && receiveACK && _rt_clock - acktime_20 > 2000)?(true):(false);cnt_25 = (!(success_12) && fail && _rt_clock - time_26 < 2000)?(pre_9_29 + 1):((!(success_12) && _rt_clock - time_26 < 2000)?(pre_10_28):((!(success_12) && fail)?(1):(0)));retries_21 = (cnt_25 >= 3)?(true):(pre_11_27);violated = retries_21;pre_0_18 = success_12;pre_1_17 = received_19;pre_2_15 = success_12;pre_3_14 = replied_16;pre_4_13 = acktime_20;pre_5_24 = fail;pre_6_23 = _rt_clock;pre_7_22 = cnt_25;pre_8_30 = time_26;pre_9_29 = cnt_25;pre_10_28 = cnt_25;pre_11_27 = retries_21;System.out.println(" _rt_clock: " + _rt_clock + " " + " fail: " + fail + " " + " receiveSYN: " + receiveSYN + " " + " sendSYNACK: " + sendSYNACK + " " + " receiveACK: " + receiveACK + " " + " output: " + violated + " ");]
+}
+}
+}
+

@@ -1,0 +1,22 @@
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S
+[undoone]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undoone]AUTOMATON::> undoone() STATE::>S

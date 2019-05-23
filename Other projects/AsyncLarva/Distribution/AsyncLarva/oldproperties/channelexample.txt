@@ -1,0 +1,70 @@
+GLOBAL {
+
+FOREACH (User u){
+
+VARIABLES {
+Channel gl;
+}
+
+EVENTS {
+goodlogin() = {gl.receive(User u1)} where {u = u1;}
+pressOK() = {*.pressedOK(u1)} where {u = u1;}
+badlogin() = {*.loginTry(u1)} where {u = u1;}
+}
+
+PROPERTY one {
+
+STATES {
+
+BAD { badlogins }
+
+NORMAL {
+loggedout2 loggedout3 loggedin
+}
+
+STARTING {
+loggedout1
+}
+
+}
+
+TRANSITIONS {
+
+loggedout1 -> loggedin   [goodlogin]
+loggedout2 -> loggedin   [goodlogin]
+loggedout3 -> loggedin   [goodlogin]
+loggedout1 -> loggedout2 [badlogin]
+loggedout2 -> loggedout3 [badlogin]
+loggedout3 -> badlogins  [badlogin]
+}
+
+}
+
+PROPERTY two {
+
+STATES {
+
+NORMAL { promptPW goodlogin }
+
+STARTING { loadsite }
+
+}
+
+TRANSITIONS {
+
+loadsite   -> promptPW   [pressOK\checkUserName()]
+promptPW   -> goodlogin  [pressOK\checkPassword()\gl.send(u);]
+promptPW   -> loadsite   [pressOK]
+
+}
+
+}
+}
+}
+
+METHODS {
+
+boolean checkUserName(){return true;}
+
+boolean checkPassword(){return true;}
+}

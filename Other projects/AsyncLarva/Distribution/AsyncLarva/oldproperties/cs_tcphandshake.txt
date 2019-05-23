@@ -1,0 +1,54 @@
+IMPORTS {
+import larva.*;
+import sniffer.*;
+import java.net.*;
+}
+
+GLOBAL {
+
+FOREACH(InetAddress ip,InetAddress ip2, Integer port1, Integer port2) {
+
+VARIABLES {
+Clock c4;
+}
+EVENTS {
+receiveSYN(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.receiveSYN(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = true; sSYNACK = false; rACK = false; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+sendSYNACK(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.sendSYNACK(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = false; sSYNACK = true; rACK = false; ip2 = src; ip = dst; port2 = src_port; port1 = dst_port;}
+receiveACK(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.receiveACK(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = false; sSYNACK = false; rACK = true; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+
+c4AT1(boolean rSYN, boolean sSYNACK, boolean rACK) = {c4@1.0}where { rSYN = false; sSYNACK = false; rACK = false;}
+
+all() = {receiveSYN|sendSYNACK|receiveACK|c4AT1}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i1i2i3i4i {_cls_cs_retries1.chSuccess.send(ip); _killThis();}
+ }
+NORMAL {
+ loc0i
+ loc0i1i
+ loc0i1i2i3i
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(rSYN)\]
+loc0i -> loc0i1i [all\rSYN\]
+loc0i -> unhandled [all]
+loc0i1i -> loc0i1i [all\!(sSYNACK)\]
+loc0i1i -> loc0i1i2i3i [all\sSYNACK\]
+loc0i1i -> unhandled [all]
+loc0i1i2i3i -> loc0i1i2i3i [all\!(rACK)\]
+loc0i1i2i3i -> loc0i1i2i3i4i [all\rACK\]
+loc0i1i2i3i -> unhandled [all]
+loc0i1i2i3i4i -> loc0i1i2i3i4i [all\true\]
+loc0i1i2i3i4i -> unhandled [all]
+}
+}
+}
+}%%GLOBAL

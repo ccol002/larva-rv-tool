@@ -1,0 +1,96 @@
+
+%%%%%%%%%%%%%%%%%%%% Properties being monitored %%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% any comments about the declared properties go here
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Imports
+{
+	import Events.Template;
+	import java.sql.*;
+	import java.util.ArrayList;
+	import java.util.HashMap;
+	import java.lang.reflect.Field;
+	import java.math.BigDecimal;
+}
+
+Global
+{
+	Initializeif (SC.init) { SC.initializeifMain } %%use this function to startup database etc
+	%% the function should return a hashmap with <String, Object> pairs which are used to initialise the variables below
+
+	Variables
+	{
+		%% any variables for monitoring purposes
+	}
+
+	Events
+	{ 
+		event_name(long timestamp, t) = {Template t.call(String name, long timestamp)}
+			filter {name.equals("event_name")}
+			
+		login(long timestamp, t) = {Template t.call(String name, long timestamp)}
+			filter {name.equals("login")}
+		%% note that params is a hashmap containing all the event parameters
+		%% these can be used to initialise variables in a "where" clause
+		%% or to distinguish between events using the "filter" clause as shown above
+	}
+  
+	Property property_name
+	{
+		%% this is as in usual Larva code
+	       
+	       States { 
+	       
+	       Normal   {its_working, login_detected}
+	       Starting {start}}
+		
+		   Transitions {
+		   
+		   start -> its_working [event_name\\System.out.println("Login for user " + t.params.get("user_id") + " has been intercepted!");]
+		   its_working -> login_detected [login\\System.out.println("Login for user " + t.params.get("user_id") + " has been intercepted!");]
+		   
+		   }
+	}
+
+
+	%%for each user...distinguished by user's id
+	%%Foreach (String s)
+	%%{
+	%%	Initializeif (SC.init) {SC.initializeifUser} %%see above
+ 
+	%%	Variables
+	%%	{ }
+
+
+	%%	Events
+	%%	{ }
+
+
+	%%	Property property_name
+	%%	{ 
+		
+	%%	   States { Starting{start}}
+		
+	%%	   Transitions {}
+		
+	%%	}
+		 
+		
+	%%	Initially { SC.initiallyUsers(); } 
+		%%this provides a list of existing users to initialise monitors for
+		%%note that foreach of these users, the initialiseIfUser method is called (see above, near the Foreach declaration) 
+		 
+	%%} %%Foreach User
+
+} %%Global
+
+
+Methods
+{
+  %%provide path to sc.java
+	import "/Users/christiancolombo/Dropbox/My Docs/Code/Our tools/AsyncLarva/Distribution/Database Connector/sample script/SC.java";
+	
+}

@@ -1,0 +1,14 @@
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.save() TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.insert(String) TO STATE::> S
+[undo]AUTOMATON::> undo() STATE::>S
+[undo]MOVED ON METHODCALL: String main.Editor.undo() TO STATE::> S

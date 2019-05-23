@@ -1,0 +1,40 @@
+IMPORTS {import sniffer.*;} 
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+boolean pre_6;
+long pre_5;
+long pre_4;
+long pre_3;
+long cnt;
+long pre_2;
+long time;
+long pre_1;
+boolean pre_0;
+boolean violated;
+long _rt_clock;
+}
+
+ EVENTS {
+ 
+ initializationEvent(boolean _b, boolean redirect) = {*.initialize()} where { _b = true; redirect = true;}
+ event(boolean _b, boolean redirect) = {*.packetReceived(*,*)} where { _b = false; redirect = false;}
+ periodicEvent(boolean _b, boolean redirect) = {{*.receiveRedirectICMP(*)} where { _b = false; redirect = true;}|initializationEvent|event}
+ }
+ 
+PROPERTY redirectMSG {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_0 = false;pre_1 = 0;pre_2 = 0;pre_3 = 0;pre_4 = 0;pre_5 = 0;pre_6 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();time = (pre_0)?(pre_1):((pre_2 == 0)?(_rt_clock):(pre_3));cnt = (redirect && _rt_clock - time < 2000)?(pre_4 + 1):((_rt_clock - time < 2000)?(pre_5):((redirect)?(1):(0)));violated = (cnt >= 3)?(true):(pre_6);pre_0 = redirect;pre_1 = _rt_clock;pre_2 = cnt;pre_3 = time;pre_4 = cnt;pre_5 = cnt;pre_6 = violated;System.out.println(" _rt_clock: " + _rt_clock + " " + " redirect: " + redirect + " " + " output: " + violated + " ");]
+}
+}
+}
+

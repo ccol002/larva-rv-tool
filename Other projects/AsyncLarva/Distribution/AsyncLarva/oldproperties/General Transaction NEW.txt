@@ -1,0 +1,190 @@
+IMPORTS
+{
+import com.ccbill.tgs.transactions.structure.Transaction;
+import com.ccbill.tgs.tsm.TSMRunnableObject;
+import com.ccbill.tgs.tsm.states.Tier1.TGSBaseState;
+import com.ccbill.tgs.tsm.TSM;
+}
+
+%%the global level, a sort of "static"...all the properties will be visible in the sub-levels
+
+GLOBAL {
+
+%% a list of events, globally visible
+%% "*" wildcards can be used to specify more general events
+
+EVENTS {
+
+	any() = {*.*()}
+}
+
+%% a list of global variables
+
+%%VARIABLES {}
+
+%% the logic on a global level
+
+%%LOGIC{}
+
+
+
+
+
+%%going into a sub-level... this will be defined for each Transaction
+
+FOREACH (Transaction t equateUsing equateT stringUsing toStringT){%%must be objects!!!but can insert any length of list separating by a comma
+
+%%a list of events...for each event, we have to specify what "t" is
+%% this is done using the where clause
+%% if you need more than one statement, just use curly brackets
+
+EVENTS {
+
+afterproc(TSMRunnableObject tsm)        = {{tsm.processTransaction() uponReturning()}|{tsm.processTransaction() uponThrowing()}}
+	where
+		{t=tsm.getTransaction();}
+
+proc(TSMRunnableObject tsm)        = {tsm.processTransaction()}
+	where
+		{t=tsm.getTransaction();}
+
+setchain(Transaction t1)           = {t1.setCurrentChainID()}
+	where 
+		{t=t1;}
+
+setid(Transaction t1,int sid)      = {t1.setCurrentStateID(sid)}
+	where
+		{t=t1;}
+
+procState(TSMRunnableObject tsm)   = {TGSBaseState.process(tsm)}
+	where 
+		{t=tsm.getTransaction();}
+
+%%in collection one can define a set of events, which can then be referred to as if it was a single event
+%%now it is allowed for a collection event to have parameters...it also has access to the FOREACH context
+%%but no where clause is defined!! because this is handled independently by the individual events
+
+%%for now the where clause is not being checked!! but we should check that every variable which makes up the context
+%%including the context of the parent, are set to some value from the method call 
+
+all() = {proc(tsm)| setchain(t1)| setid(t1,sid)| procState(tsm)}
+
+
+}%%EVENTS
+
+
+%% these are variables which are particular to a Transaction
+
+VARIABLES {
+
+int state = -1; 
+}
+
+
+%% This is the logic for each transaction
+
+PROPERTY generaltransaction{
+
+STATES{
+
+%% a list of accepting states i.e. at which the automaton ends successfully
+
+ACCEPTING {
+
+ready     {System.out.println("All the states were completed!!");}
+
+complete     {System.out.println("Transaction Approved!!");}
+}
+
+
+%% a list of non-accepting states i.e. at which the automaton ends unsuccessfully
+%% maybe, later on we can add a possibility of inserting java code which will be executed upon reaching the bad state
+%% although this can be done on the transition which leads to here
+
+BAD {
+
+bad_state {System.out.println("A bad state has been reached!!");}
+
+}
+
+%% a list of normal states... on which the automaton will not stop
+
+NORMAL {
+
+process_trans {}     
+set_chain     {}     
+set_state     {}     
+process       {}     
+
+}
+
+
+%% one should specify EXACTLY one starting state...which is neither normal, accepting nor BAD
+
+STARTING {
+
+start    {}
+
+}
+}%%STATES
+
+%% this is the actual automaton which performs the logic
+
+TRANSITIONS{
+
+start                 -> process_trans      [proc(tsm)
+                                            \\if (state==-1) state=tsm.getTransaction().getCurrentStateID();]
+
+process_trans			-> set_state          [setid(t,sid)
+                                            \sid == state + 1
+                                            \state = sid;]
+                                            
+process_trans			-> bad_state          [setid(t,sid)]
+
+set_state             -> process            [procState(tsm)
+                                            \tsm.getTransaction().equals(t) && t.getCurrentStateID()==state]
+
+set_state             -> bad_state          [all()]
+
+
+process               -> ready              [setid(t,sid)
+                                            \state==TSM.getInstance().getStateChainCollection().getChain(t.getCurrentChainID()).size()-1]
+
+process               -> set_state          [setid(t,sid)
+                                            \sid == state + 1
+                                            \state = sid;]
+
+process               -> complete			[afterproc\t.getResponse().getApproved().equals("Y")]
+
+ready                 -> complete			[afterproc\t.getResponse().getApproved().equals("Y")]
+
+process               -> bad_state          [setid(t,sid)]
+
+
+
+
+}%%TRANSITIONS
+}%%PROPERTY
+}%%FOREACH t
+}%%GLOBAL
+
+METHODS{
+
+static boolean equateT(Transaction t, Transaction t2)
+{
+ if (t.getGeneratedTransactionId() == 0)
+ 	return t.equals(t2);
+ else {
+ 	if (t.getGeneratedTransactionId()
+ 		== t2.getGeneratedTransactionId())
+ 		return true;
+ 	else
+ 		return false;
+	}
+}
+
+static String toStringT(Transaction t)
+{
+return new Long(t.getGeneratedTransactionId()).toString();
+}
+}

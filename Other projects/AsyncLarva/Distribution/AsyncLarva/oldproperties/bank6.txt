@@ -1,0 +1,146 @@
+IMPORTS{
+import nesting.User;
+import nesting.Account;
+import nesting.Transaction;
+}
+
+GLOBAL{
+
+EVENTS{
+
+addUser() = *.addUser();
+deleteUser() = *.deleteUser();
+allUsers() = User.*();
+
+}%%EVENTS
+
+VARIABLES {
+int cnt = 0;
+}%%VARIABLES
+
+PROPERTY users{
+
+STATES {
+
+BAD{
+toomany {}
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addUser()\:cnt > 5]
+
+start -> start [addUser()\\cnt++;]
+
+start -> start [deleteUser()\\cnt--;]
+
+start -> start [allUsers()]
+
+}
+}%%PROPERTY
+
+FOREACH (User u){
+
+EVENTS{
+
+addAccount(User u1) = u1.addAccount();
+where {u = u1;}
+
+deleteAccount(User u1) = u1.deleteAccount();
+where {u = u1;}
+
+allAccounts(User u1) = u1.*();
+where {u = u1;}
+
+}%%EVENTS
+
+VARIABLES {
+
+int cnt = 0;
+
+}%%VARIABLES
+
+PROPERTY account{
+
+STATES {
+
+BAD{
+toomany {}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addAccount()\u:cnt > 5]
+
+start -> start [addAccount()\\u:cnt++;System.out.println("I have access to USER :) " + :u + " and to usercnt: " +cnt);]
+
+start -> start [deleteAccount()\\u:cnt--;]
+
+start -> start [allAccounts()]
+
+}
+}%%PROPERTY
+
+FOREACH (Account a){
+
+EVENTS{
+
+addTransaction(Account a1) = a1.addTransaction();
+where {a = a1;u=a1.owner;}
+
+deleteTransaction(Account a1) = a1.deleteTransaction();
+where {a = a1;u=a1.owner;}
+
+allTransactions(Account a1) = a1.*();
+where {a = a1;u=a1.owner;}
+
+}%%EVENTS
+
+VARIABLES {
+
+int cnt = 0;
+
+}%%VARIABLES
+
+PROPERTY transaction{
+
+STATES {
+
+BAD{
+toomany {}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addTransaction()\u:a:cnt > 5]
+
+start -> start [addTransaction()\\u:a:cnt++; 
+System.out.println("I still have access to ACCount :) " + u:a + " and to usercnt: " +:cnt 
++ " and to accountcnt: " +:u:cnt+ " and to transactioncnt: " +u:a:cnt + " and to account: " + u:a:a1);]
+
+start -> start [deleteTransaction()\\u:a:cnt --;]
+
+start -> start [allTransactions()]
+
+}
+}%%PROPERTY
+}%%FOREACH ACCOUNT
+}%%FOREACH USER
+}%%GLOBAL

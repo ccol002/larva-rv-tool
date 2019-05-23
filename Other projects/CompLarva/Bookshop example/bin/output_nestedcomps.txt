@@ -1,0 +1,22 @@
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>S
+[purchase]MOVED ON METHODCALL: void code.Store.decreaseStock() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>S
+[purchase]MOVED ON METHODCALL: void code.Order.stockReceivedFromStore() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>S
+[purchase]MOVED ON METHODCALL: void code.Bank.receiveMoney() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>S
+[purchase]MOVED ON METHODCALL: void code.User.payMoney() TO STATE::> S
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>S
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[transaction]AUTOMATON::> transaction() STATE::>S
+[purchase]AUTOMATON::> purchase() STATE::>A
+[transaction]MOVED ON METHODCALL: void larva.Channel.receive() TO STATE::> _S
+[purchase]AUTOMATON::> purchase() STATE::>A
+[purchase]MOVED ON METHODCALL: void code.Order.packOrder() TO STATE::> (((SYSTEM REACHED AN ACCEPTED STATE)))  A
+[transaction]AUTOMATON::> transaction() STATE::>_S
+[purchase]AUTOMATON::> purchase() STATE::>A

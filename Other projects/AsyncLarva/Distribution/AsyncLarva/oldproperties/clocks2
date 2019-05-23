@@ -1,0 +1,53 @@
+GLOBAL{
+
+VARIABLES{
+Clock c = new Clock();    %%clocks need not be declared as events...can be used as such to declare as part of a collection
+Channel d = new Channel();%%channels are considered to be events (so the names must be unique throughout the events)
+int count = 0;
+}
+
+
+EVENTS{
+clockC5() = {c@%1}
+channeld(String from) = {d.receive(from)}
+}
+
+
+
+PROPERTY test1{
+STATES{
+NORMAL{normal}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> normal [clockC5\count > 5
+\d.send();System.out.println("Reached Normal State!! 1");
+count = 0;System.out.println(System.currentTimeMillis());]
+
+starting -> starting [clockC5\\count++;System.out.println(System.currentTimeMillis());]
+
+normal -> starting [channeld\from.equals("test2")
+\System.out.println(System.currentTimeMillis());]
+}
+}
+
+PROPERTY test2{
+STATES{
+NORMAL{starting}
+STARTING{beforestarting}
+}
+
+TRANSITIONS{
+beforestarting -> starting [channeld\from.equals("test1")
+\System.out.println(System.currentTimeMillis());]
+
+starting -> beforestarting [clockC5\count > 5\count = 0;d.send();
+System.out.println("Reached Normal State!! 2");System.out.println(System.currentTimeMillis());]
+
+starting -> starting [clockC5\\count++;System.out.println(System.currentTimeMillis());]
+}
+}
+
+
+}

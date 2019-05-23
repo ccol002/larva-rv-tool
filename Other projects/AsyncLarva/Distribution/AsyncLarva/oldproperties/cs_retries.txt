@@ -1,0 +1,110 @@
+IMPORTS {
+import sniffer.*;
+import larva.*;
+import java.net.*;
+}
+
+GLOBAL {
+
+FOREACH (InetAddress ip){
+
+VARIABLES {
+Channel chFailed;
+Channel chSuccess;
+Clock c2;
+Clock c3;
+}
+
+EVENTS {
+failed(boolean failedConn, boolean succConn) = {chFailed.receive(Object ip1)} where { failedConn = true; succConn = false; ip = (InetAddress)ip1; }
+success(boolean failedConn, boolean succConn) = {chSuccess.receive(Object ip1)} where { failedConn = false; succConn = true; ip = (InetAddress)ip1; }
+c3AT0_01(boolean failedConn, boolean succConn) = {c3@100} where { failedConn = false; succConn = false; }
+c2AT0_01(boolean failedConn, boolean succConn) = {c2@100}  where { failedConn = false; succConn = false; }
+all() = {failed|success|c3AT0_01|c2AT0_01}
+}
+
+PROPERTY ceform {
+STATES {
+BAD {
+ unhandled
+ loc0i3i
+ loc0i2i3i2l
+ loc0i1i3i1l
+ loc0i1i2i3i1l2l }
+NORMAL {
+ loc0i
+ loc0i2i2l
+ loc0i1i1l
+ loc0i1i2i1l2l
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(failedConn)\]
+loc0i -> loc0i1i1l [all\failedConn\c2.reset();]
+loc0i -> unhandled [all]
+loc0i3i -> loc0i3i [all\!(failedConn)\]
+loc0i3i -> loc0i1i3i1l [all\failedConn\c2.reset();]
+loc0i3i -> unhandled [all]
+loc0i2i2l -> loc0i [all\(!(failedConn) && !((!succConn && c3.compareToMillis((long)100000.0)<0)) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i2i2l -> loc0i3i [all\(!(failedConn) && !((!succConn && c3.compareToMillis((long)100000.0)<0)) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i2i2l -> loc0i2i2l [all\(!(failedConn) && (!succConn && c3.compareToMillis((long)100000.0)<0) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i2i2l -> loc0i2i3i2l [all\(!(failedConn) && (!succConn && c3.compareToMillis((long)100000.0)<0) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i2i2l -> loc0i1i1l [all\(failedConn && !((!succConn && c3.compareToMillis((long)100000.0)<0)) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i2i2l -> loc0i1i3i1l [all\(failedConn && !((!succConn && c3.compareToMillis((long)100000.0)<0)) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();]
+loc0i2i2l -> loc0i1i2i1l2l [all\(failedConn && (!succConn && c3.compareToMillis((long)100000.0)<0) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i2i2l -> loc0i1i2i3i1l2l [all\(failedConn && (!succConn && c3.compareToMillis((long)100000.0)<0) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();]
+loc0i2i2l -> unhandled [all]
+loc0i2i3i2l -> loc0i3i [all\(!(failedConn) && !((!succConn && c3.compareToMillis((long)100000.0)<0)))\]
+loc0i2i3i2l -> loc0i2i3i2l [all\(!(failedConn) && (!succConn && c3.compareToMillis((long)100000.0)<0))\]
+loc0i2i3i2l -> loc0i1i3i1l [all\(failedConn && !((!succConn && c3.compareToMillis((long)100000.0)<0)))\c2.reset();]
+loc0i2i3i2l -> loc0i1i2i3i1l2l [all\(failedConn && (!succConn && c3.compareToMillis((long)100000.0)<0))\c2.reset();]
+loc0i2i3i2l -> unhandled [all]
+loc0i1i1l -> loc0i [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i1l -> loc0i2i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i1l -> loc0i1i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i1l -> loc0i1i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();c3.reset();]
+loc0i1i1l -> unhandled [all]
+loc0i1i3i1l -> loc0i3i [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i3i1l -> loc0i2i3i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i3i1l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i3i1l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();c3.reset();]
+loc0i1i3i1l -> unhandled [all]
+loc0i1i2i1l2l -> loc0i [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i1l2l -> loc0i3i [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i1l2l -> loc0i1i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && !((c3.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn) && (c3.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> unhandled [all]
+loc0i1i2i3i1l2l -> loc0i3i [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn)) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))))\]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && !(((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn))))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && !(failedConn) && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && !((c2.compareToMillis((long)100000.0)<0 && failedConn)))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\(((!succConn && c2.compareToMillis((long)100000.0)<0) || failedConn) && failedConn && ((!succConn && c3.compareToMillis((long)100000.0)<0) || (c2.compareToMillis((long)100000.0)<0 && failedConn)) && (c2.compareToMillis((long)100000.0)<0 && failedConn))\c2.reset();c3.reset();]
+loc0i1i2i3i1l2l -> unhandled [all]
+}
+}
+}
+}%%GLOBAL

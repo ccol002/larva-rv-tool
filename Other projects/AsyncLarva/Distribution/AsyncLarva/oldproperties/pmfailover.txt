@@ -1,0 +1,109 @@
+IMPORTS
+{
+import com.ccbill.tgs.transactions.structure.Transaction;
+import com.ccbill.tgs.tsm.TSMRunnableObject;
+import com.ccbill.tgs.tsm.states.Tier1.TGSBaseState;
+import com.ccbill.tgs.tsm.TSM;
+
+
+import com.ccbill.tgs.tsm.states.BacklogInserter;
+import com.ccbill.tgs.transactions.enumerations.ChainID;
+
+}
+
+%%the global level, a sort of "static"...all the properties will be visible in the sub-levels
+
+GLOBAL {
+
+FOREACH (Transaction t equateUsing equateT){
+
+EVENTS {
+
+proc(TSMRunnableObject tsm)        = {tsm.processTransaction()}
+	where
+		{t=tsm.getTransaction();}
+
+setchain(Transaction t1, ChainID cid)           = {t1.setCurrentChainID(cid)}
+	where 
+		{t=t1;}
+
+setid(Transaction t1,int sid)      = {t1.setCurrentStateID(sid)}
+	where
+		{t=t1;}
+
+procState(TSMRunnableObject tsm)   = {TGSBaseState.process(tsm)}
+	where 
+		{t=tsm.getTransaction();}
+
+backlog(tsm)         = {BacklogInserter *.backlogProcessor(tsm)uponReturning()}where t=tsm.getTransaction();
+
+
+all() = {proc(tsm)| setchain(t1)| setid(t1,sid)| procState(tsm)}
+
+
+}%%EVENTS
+
+
+%% these are variables which are particular to a Transaction
+
+VARIABLES {
+
+int state = 0;
+
+int backlog; 
+}
+
+
+PROPERTY backlog{
+
+STATES{
+
+BAD {bad_state}
+
+NORMAL {
+
+process_trans     
+set_chain          
+backlog           
+a_retry
+}
+
+STARTING {start}
+
+}%%STATES
+
+
+TRANSITIONS{
+
+start                 -> process_trans      [proc(tsm)
+                                            \\backlog = tsm.getTransaction().getBacklogRetries();]
+
+process_trans         -> backlog			[backlog\\backlog = tsm.getTransaction().getBacklogRetries();System.out.println("Backlog: "+backlog);]
+
+backlog               -> set_chain			[setchain\\System.out.println("The chain is being set to : " + cid);]
+
+set_chain		      -> a_retry		    [procState\t.getCurrentChainID().equals(ChainID.SYSTEMERRORCHAIN)\System.out.println("A retry is taking place!! Backlog: "+t.getBacklogRetries());]
+
+a_retry		      -> a_retry		    [procState\\System.out.println("A retry is taking place!! Backlog: "+t.getBacklogRetries());]
+
+
+}%%TRANSITIONS
+}%%PROPERTY
+}%%FOREACH t
+}%%GLOBAL
+
+METHODS{
+
+static boolean equateT(Transaction t, Transaction t2)
+{
+ if (t.getGeneratedTransactionId() == 0)
+ 	return t.equals(t2);
+ else {
+ 	if (t.getGeneratedTransactionId()
+ 		== t2.getGeneratedTransactionId())
+ 		return true;
+ 	else
+ 		return false;
+	}
+}
+}
