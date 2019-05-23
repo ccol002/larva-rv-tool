@@ -1,0 +1,13 @@
+digraph _logic_instrument_lc {
+rankdir=LR;
+node [shape = circle]; assigned restricted fallow_assigned unassigned;
+node [shape = octagon]; noright;
+node [shape = point]; _s_s;
+_s_s -> unassigned;
+unassigned -> assigned [label = "(1) all2\\t . is ( \" Assign \" ) &...\\..."];
+unassigned -> noright [label = "(2) all2\\t . is ( \" Assign \" ) \\..."];
+restricted -> assigned [label = "(1) all2\\t . is ( \" Unrestrict \"...\\..."];
+restricted -> fallow_assigned [label = "(2) all2\\t . is ( \" Fallow \" ) |...\\..."];
+assigned -> restricted [label = "(1) all2\\t . is ( \" Restrict \" )...\\..."];
+assigned -> fallow_assigned [label = "(2) all2\\t . is ( \" Fallow \" ) |..."];
+}

@@ -1,0 +1,116 @@
+IMPORTS{
+import com.ccbill.tgs.tsm.TSMRunnableObject;
+import com.ccbill.tgs.tsm.states.AuthKeyVerifier;
+import com.ccbill.tgs.tsm.states.ProcessorLoader;
+import com.ccbill.tgs.tsm.states.MerchantInfoDefaultLoader;
+import com.ccbill.tgs.tsm.states.TransactionInserter;
+import com.ccbill.tgs.tsm.states.PassThroughInserter;
+import com.ccbill.tgs.tsm.states.PMSender;
+import com.ccbill.tgs.tsm.states.BacklogInserter;
+import com.ccbill.tgs.tsm.states.ExceptionChecker;
+import com.ccbill.tgs.tsm.states.ResponseInserter;
+import com.ccbill.tgs.tsm.states.AuthCapturer;
+import com.ccbill.tgs.tsm.states.MISender;
+import com.ccbill.tgs.transactions.structure.Transaction.TransactionType;
+}
+GLOBAL{
+
+FOREACH (TSMRunnableObject tsm){
+
+EVENTS{
+
+proc(TSMRunnableObject tsm1)         = {tsm1.processTransaction()}where tsm=tsm1;
+verify(tsm1)          = {AuthKeyVerifier *.verifyAuthKey(tsm1)}where tsm=tsm1;
+procLoader(tsm1)      = {ProcessorLoader *.load(tsm1)}where tsm=tsm1;
+merLoader(tsm1)       = {MerchantInfoDefaultLoader *.load(tsm1)}where tsm=tsm1;
+transIns(tsm1)        = {TransactionInserter *.save(tsm1)}where tsm=tsm1;
+passThrough(tsm1)     = {PassThroughInserter *.save(tsm1)}where tsm=tsm1;
+pmSender(tsm1)        = {PMSender *.send(tsm1)}where tsm=tsm1;
+backlog(tsm1)         = {BacklogInserter *.process(tsm1)}where tsm=tsm1;
+excCheck(tsm1)        = {ExceptionChecker *.check(tsm1)} where tsm=tsm1;
+respIns(tsm1)         = {ResponseInserter *.save(tsm1)}where tsm=tsm1;
+authCapt(tsm1)        = {AuthCapturer *.process(tsm1)}where tsm=tsm1;
+MISend(tsm1)          = {MISender *.send(tsm1)}where tsm=tsm1;
+all(tsm1)			  = {proc|verify|procLoader|merLoader|transIns|passThrough|pmSender|backlog|excCheck|respIns|authCapt|MISend}
+}
+
+
+
+
+PROPERTY auth{
+
+STATES{
+
+BAD{bad_state}
+
+NORMAL{
+startAuth auth_key_ver process_loader merchant_loader trans_inserter pm_sender backlog pass_through mi_send auth_capt resp_inserter exc_checker
+}
+
+STARTING {start}
+
+}%%STATES
+
+
+TRANSITIONS{
+
+start           -> startAuth           [proc(tsm)\tsm.getTransaction().getType()==TransactionType.CCAuth]
+
+
+startAuth       -> auth_key_ver        [verify()]
+
+startAuth       -> bad_state           [all]
+
+
+auth_key_ver    -> process_loader      [procLoader()]
+
+auth_key_ver    -> bad_state           [all]
+
+
+process_loader  -> merchant_loader     [merLoader()]
+
+process_loader  -> bad_state           [all]
+
+
+merchant_loader -> trans_inserter      [transIns()]
+
+merchant_loader -> bad_state           [all]
+
+
+trans_inserter  -> pass_through        [passThrough()]
+
+trans_inserter  -> bad_state           [all]
+
+
+pass_through    -> pm_sender           [pmSender()]
+
+pass_through    -> bad_state           [all]
+
+
+pm_sender       -> backlog             [backlog()]
+
+pm_sender       -> bad_state           [all]
+
+
+backlog         -> exc_checker         [excCheck()]
+
+backlog         -> bad_state           [all]
+
+
+exc_checker     -> resp_inserter       [respIns()]
+
+exc_checker     -> bad_state           [all]
+
+
+resp_inserter   -> auth_capt           [authCapt()]
+
+resp_inserter   -> bad_state           [all]
+
+
+auth_capt       -> mi_send             [MISend()]
+
+auth_capt       -> bad_state           [all]
+}%%TRANSITIONS
+}%%PROPERTY
+}%%FOREACH
+}%%GLOBAL

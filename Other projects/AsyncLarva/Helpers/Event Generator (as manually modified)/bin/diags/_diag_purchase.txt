@@ -1,0 +1,13 @@
+digraph _logic_purchase {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; unexpected;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [label = "(1) all1\\t . is ( \" PurchaseTX \"...\\..."];
+start -> start [label = "(2) all1\\t . is ( \" PurchaseVoidT...\\..."];
+start -> unexpected [label = "(3) all1\\t . is ( \" PurchaseVoidT...\\..."];
+start -> start [label = "(4) all1\\t . is ( \" PurchaseCancT...\\..."];
+start -> unexpected [label = "(5) all1\\t . is ( \" PurchaseCancT...\\..."];
+start -> start [label = "(6) all1\\t . is ( \" PurchaseSettl...\\..."];
+}

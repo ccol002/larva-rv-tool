@@ -1,0 +1,77 @@
+IMPORTS {import main.*;}
+GLOBAL {
+VARIABLES {
+Clock c2;
+}
+EVENTS {
+changeOfAlarm(boolean Alarm ,boolean D) = {ALARM *.on()} where { D = DH2O.status; Alarm = ALARM.status; }
+changeOfD(boolean D, boolean Alarm) = {DH2O *.on()} where { D = DH2O.status; Alarm = ALARM.status; }
+initialize() = {Main *.initialize()}
+c2AT1_0() = {c2@1.0}
+all(Alarm,D) = {changeOfAlarm|changeOfD|c2AT1_0}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i3i
+ loc0i2i3i
+ loc0i1i3i
+ loc0i1i3i1w
+ loc0i1i2i3i
+ loc0i1i2i3i1w }
+NORMAL {
+ loc0i
+ loc0i1i
+ loc0i1i1w
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [initialize\!(D) && !(D)]
+loc0i -> loc0i [all\!(D) && !(D)\]
+loc0i -> loc0i1i1w [all\D && (D && c2.compareToMillis((long)1000.0)<=0)\c2.reset();]
+loc0i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i3i -> loc0i3i [all\!(D) && !(D)\]
+loc0i3i -> loc0i1i3i1w [all\D && (D && c2.compareToMillis((long)1000.0)<=0)\c2.reset();]
+loc0i3i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i2i3i -> loc0i3i [all\(!(D) && Alarm) && !(D)\]
+loc0i2i3i -> loc0i2i3i [all\(!(D) && !(Alarm)) && (!(Alarm) && !(D))\]
+loc0i2i3i -> loc0i1i3i1w [all\(D && Alarm) && (D && c2.compareToMillis((long)1000.0)<=0)\c2.reset();]
+loc0i2i3i -> loc0i1i2i3i1w [all\(D && !(Alarm)) && ((D && !(Alarm)) && c2.compareToMillis((long)1000.0)<=0)\c2.reset();]
+loc0i2i3i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i1i -> loc0i [all\(!(D) && Alarm) && !(D)\]
+loc0i1i -> loc0i2i3i [all\(!(D) && !(Alarm)) && (!(Alarm) && !(D))\]
+loc0i1i -> loc0i1i [all\(D && Alarm) && (D && Alarm)\]
+loc0i1i -> loc0i1i2i3i [all\(D && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+start -> loc0i1i1w [initialize\D && (D && c2.compareToMillis((long)1000.0)<=0)]
+loc0i1i1w -> loc0i [all\!(D) && !(D)\]
+loc0i1i1w -> loc0i1i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && Alarm) && (D && Alarm)\]
+loc0i1i1w -> loc0i1i1w [all\(D && c2.compareToMillis((long)1000.0)<0) && (D && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i1w -> loc0i1i2i3i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i1w -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i1i3i -> loc0i3i [all\(!(D) && Alarm) && !(D)\]
+loc0i1i3i -> loc0i2i3i [all\(!(D) && !(Alarm)) && (!(Alarm) && !(D))\]
+loc0i1i3i -> loc0i1i3i [all\(D && Alarm) && (D && Alarm)\]
+loc0i1i3i -> loc0i1i2i3i [all\(D && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i3i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i1i3i1w -> loc0i3i [all\!(D) && !(D)\]
+loc0i1i3i1w -> loc0i1i3i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && Alarm) && (D && Alarm)\]
+loc0i1i3i1w -> loc0i1i3i1w [all\(D && c2.compareToMillis((long)1000.0)<0) && (D && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i3i1w -> loc0i1i2i3i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i3i1w -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i1i2i3i -> loc0i3i [all\(!(D) && Alarm) && !(D)\]
+loc0i1i2i3i -> loc0i2i3i [all\(!(D) && !(Alarm)) && (!(Alarm) && !(D))\]
+loc0i1i2i3i -> loc0i1i3i [all\(D && Alarm) && (D && Alarm)\]
+loc0i1i2i3i -> loc0i1i2i3i [all\(D && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i2i3i -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+loc0i1i2i3i1w -> loc0i3i [all\(!(D) && Alarm) && !(D)\]
+loc0i1i2i3i1w -> loc0i2i3i [all\(!(D) && !(Alarm)) && (!(Alarm) && !(D))\]
+loc0i1i2i3i1w -> loc0i1i3i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && Alarm) && (D && Alarm)\]
+loc0i1i2i3i1w -> loc0i1i3i1w [all\(D && c2.compareToMillis((long)1000.0)<0 && Alarm) && (D && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i2i3i1w -> loc0i1i2i3i [all\(D && !(c2.compareToMillis((long)1000.0)<0) && !(Alarm)) && (D && !(Alarm))\]
+loc0i1i2i3i1w -> loc0i1i2i3i1w [all\(D && c2.compareToMillis((long)1000.0)<0 && !(Alarm)) && ((D && !(Alarm)) && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i2i3i1w -> unhandled [all\\System.out.println("D:"+D+" A:" +Alarm);]
+}
+}
+}%%GLOBAL

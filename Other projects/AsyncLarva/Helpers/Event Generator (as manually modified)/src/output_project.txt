@@ -1,0 +1,9 @@
+Expired Dormancy! user :user500 1217117336410->1232755736410
+Dormancy done!! user: user500 88.40552777777778 hours late
+Expected balance: 23565.45 found: 1.0 user:user500 allocation 2008072249bef27aa003ae3b
+Expired Dormancy! user :user4500 1217671088335->1233309488335
+Dormancy done!! user: user4500 78.56392083333333 hours late
+Expected balance: 586498.97 found: 0.99 user:user5750 allocation 20070605fcc75c6ee972363b
+Expected balance: 2897107.79 found: 2.25 user:user1000 allocation 20070523b8803471660ba330
+Expected balance: 7.16110161E7 found: 50.0 user:user1000 allocation 20070523b88038d2b6edc277
+Expected balance: 1.470087594E7 found: 10.0 user:user5750 allocation 20070605fcc75fb322e72724

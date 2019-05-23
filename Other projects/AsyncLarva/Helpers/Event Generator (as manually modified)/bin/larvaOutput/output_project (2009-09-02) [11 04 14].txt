@@ -1,0 +1,9 @@
+[LARVA] Monitoring started at  2009-09-02 11:04:14
+[balance_check]Expected balance: 1.34 found(at monitor): 8.83
+ user: user145250 allocation: 11f71399326020e at 1235054006978 TX ID: 11f8ef492c2090e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+[balance_check]Expected balance: 30.01 found(at monitor): 40.0
+ user: user32750 allocation: 11e99554b89000e at 1235153008054 TX ID: 11f94db35b6020e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false

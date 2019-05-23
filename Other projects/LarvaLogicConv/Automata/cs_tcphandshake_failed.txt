@@ -1,0 +1,1 @@
+not(true;change(rSYN);[true];change(sSYNACK);true and len > 15 and nochange(rACK);true)

@@ -1,0 +1,108 @@
+IMPORTS {
+import main.*;
+}
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+boolean always_since_65;
+boolean never_p_26;
+boolean pre_1_61;
+boolean point_11_39;
+boolean after_67;
+boolean pre_2_62;
+boolean pre_3_66;
+long temptime_19;
+boolean pre_15_30;
+long age_18;
+boolean interval_8_29;
+boolean then_13_27;
+boolean point_5_69;
+boolean strict_after_81;
+boolean pre_10_80;
+boolean first_53;
+boolean pre_1_51;
+boolean pre_2_52;
+long pre_11_79;
+boolean age_15_16;
+boolean interval0_6_57;
+boolean p_7_41;
+boolean pre_0_43;
+long since_45;
+long pre_12_78;
+boolean pre_8_55;
+long pre_13_77;
+boolean pre_9_54;
+boolean after_42;
+boolean pre_0_38;
+boolean len_9_44;
+boolean p_7_34;
+boolean strict_after_60;
+boolean interval_2_58;
+boolean always_since_35;
+boolean pre_1_32;
+boolean pre_2_33;
+boolean after_37;
+boolean never_p_56;
+boolean pre_3_36;
+boolean interval0_12_28;
+boolean p_0_72;
+boolean strict_after_50;
+boolean pre_0_22;
+boolean first_23;
+boolean p_1_71;
+boolean pre_1_82;
+boolean pre_14_59;
+boolean pre_2_83;
+boolean p_14_17;
+boolean after_21;
+boolean pre_10_49;
+long pre_4_20;
+boolean p_0_64;
+long pre_11_48;
+boolean len_3_75;
+boolean p_1_63;
+long pre_12_47;
+boolean pre_0_74;
+long since_76;
+boolean pre_8_25;
+long pre_13_46;
+boolean begin_10_40;
+boolean pre_9_24;
+boolean after_73;
+long _rt_clock;
+boolean begin_4_70;
+boolean strict_after_31;
+boolean pre_0_68;
+boolean _p;
+}
+
+EVENTS {
+_b_event(boolean _b,boolean D,boolean Alarm) = {Main *.start()} 
+where { _b = true; D = false; Alarm = false;}
+
+D_event(boolean _b,boolean D,boolean Alarm) = {DH2O *.on()} 
+where { _b = false; D = DH2O.status; Alarm = ALARM.status;}
+
+Alarm_event(boolean _b,boolean D,boolean Alarm) = {ALARM *.on()} 
+where { _b = false; D = DH2O.status; Alarm = ALARM.status;}
+
+initializationEvent() = {Main *.initialize()}
+
+periodicEvent(boolean _b,boolean D,boolean Alarm) = {_b_event|D_event|Alarm_event}
+}
+
+PROPERTY then_8 {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_4_20 = 0;pre_0_22 = false;pre_8_25 = false;pre_9_24 = false;pre_1_32 = false;pre_2_33 = false;pre_0_38 = false;pre_0_43 = false;pre_10_49 = false;pre_11_48 = 0;pre_12_47 = 0;pre_13_46 = 0;pre_1_51 = false;pre_2_52 = false;pre_8_55 = false;pre_9_54 = false;pre_1_61 = false;pre_2_62 = false;pre_0_68 = false;pre_0_74 = false;pre_10_80 = false;pre_11_79 = 0;pre_12_78 = 0;pre_13_77 = 0;pre_1_82 = false;pre_2_83 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();strict_after_81 = (pre_1_82)?(true):(pre_2_83);strict_after_60 = (pre_1_61)?(true):(pre_2_62);after_21 = (_b)?(true):(pre_0_22);never_p_26 = (_b)?(true):((pre_8_25)?(false):(pre_9_24));p_0_64 = D;strict_after_50 = (pre_1_51)?(true):(pre_2_52);p_0_72 = D;p_7_41 = Alarm;strict_after_31 = (pre_1_32)?(true):(pre_2_33);p_7_34 = Alarm;p_14_17 = D;p_1_71 = !(p_0_72);interval_2_58 = strict_after_60 && pre_14_59;since_76 = (strict_after_81 && pre_10_80)?(pre_11_79 + _rt_clock - pre_12_78):(pre_13_77);p_1_63 = !(p_0_64);temptime_19 = (!(after_21 && p_14_17))?(_rt_clock):(pre_4_20);interval_8_29 = strict_after_31 && pre_15_30;since_45 = (strict_after_50 && pre_10_49)?(pre_11_48 + _rt_clock - pre_12_47):(pre_13_46);len_9_44 = since_45 <= 0;len_3_75 = since_76 <= 0;age_18 = _rt_clock - temptime_19;age_15_16 = age_18 < 1000.0;first_23 = !(age_15_16) && never_p_26;after_37 = (first_23)?(true):(pre_0_38);after_42 = (first_23 && p_7_41)?(true):(pre_0_43);never_p_56 = (first_23)?(true):((pre_8_55)?(false):(pre_9_54));begin_10_40 = after_42;always_since_35 = (first_23)?(p_7_34):((after_37)?(p_7_34 && pre_3_36):(true));point_11_39 = begin_10_40 && len_9_44;interval0_12_28 = interval_8_29 || point_11_39;first_53 = !(interval0_12_28) && never_p_56;after_67 = (first_53)?(true):(pre_0_68);after_73 = (first_53 && p_1_71)?(true):(pre_0_74);always_since_65 = (first_53)?(p_1_63):((after_67)?(p_1_63 && pre_3_66):(true));begin_4_70 = after_73;point_5_69 = begin_4_70 && len_3_75;interval0_6_57 = interval_2_58 || point_5_69;then_13_27 = interval0_6_57;_p = then_13_27;pre_4_20 = temptime_19;pre_0_22 = after_21;pre_8_25 = !(age_15_16);pre_9_24 = never_p_26;pre_15_30 = always_since_35;pre_1_32 = first_23;pre_2_33 = strict_after_31;pre_3_36 = always_since_35;pre_0_38 = after_37;pre_0_43 = after_42;pre_10_49 = true;pre_11_48 = since_45;pre_12_47 = _rt_clock;pre_13_46 = since_45;pre_1_51 = first_23;pre_2_52 = strict_after_50;pre_8_55 = !(interval0_12_28);pre_9_54 = never_p_56;pre_14_59 = always_since_65;pre_1_61 = first_53;pre_2_62 = strict_after_60;pre_3_66 = always_since_65;pre_0_68 = after_67;pre_0_74 = after_73;pre_10_80 = true;pre_11_79 = since_76;pre_12_78 = _rt_clock;pre_13_77 = since_76;pre_1_82 = first_53;pre_2_83 = strict_after_81;System.out.println(" _b: " + _b + " " + " _rt_clock: " + _rt_clock + " " + " D: " + D + " " + " Alarm: " + Alarm + " " + " output: " + _p + " ");]
+}
+}
+}

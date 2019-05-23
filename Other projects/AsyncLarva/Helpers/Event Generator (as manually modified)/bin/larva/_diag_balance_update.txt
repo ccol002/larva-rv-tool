@@ -1,0 +1,7 @@
+digraph _logic_balance_update {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) balUpdate\\\\..."];
+}

@@ -1,0 +1,8 @@
+digraph _logic_fund_transfers {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [label = "(1) all1\\t . is ( \" MoneyToUserTX...\\..."];
+start -> start [label = "(2) all1\\t . is ( \" MoneyFromUser...\\..."];
+}

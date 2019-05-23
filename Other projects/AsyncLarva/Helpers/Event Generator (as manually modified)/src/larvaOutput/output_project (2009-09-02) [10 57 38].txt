@@ -1,0 +1,5 @@
+[LARVA] Monitoring started at  2009-09-02 10:57:38
+[balance_check]Expected balance: -440.79 found(at monitor): -419.8
+ user: user199250 allocation: 2008033000d271c1fd763710 at 1232065365628 TX ID: 11edcd1867c0c0e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false

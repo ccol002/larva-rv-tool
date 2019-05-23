@@ -1,0 +1,88 @@
+
+<html>
+<body bgcolor="white">
+<h2>Load</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main2');" id=xmain2>[-]</a>
+
+Loading without necessary rights!! WEB user  user105750 1230121159418
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main24');" id=xmain24>[-]</a>
+
+LOAD amount exceeded user :user106500 loaded EUR 1700.0 in 1 day(s)
+
+<div id=main24 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+Unexpected Breakage at 1230653355792 user user110250
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main32');" id=xmain32>[-]</a>
+
+ LOAD amount exceeded user :user238250 loaded EUR 1650.0 in 1 day(s)
+
+<div id=main32 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+Unexpected Breakage at 1231431084791 user user116750
+ <br> 
+
+
+Dormancy done!! user  user131250 at 1231431835839 101.04444305555556 hours late
+ <br> 
+</div></div>
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

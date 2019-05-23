@@ -1,0 +1,1 @@
+not ( true ; [D] and len > 1000 ; [not Alarm] ; true)

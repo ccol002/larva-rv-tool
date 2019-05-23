@@ -1,0 +1,56 @@
+Loading without necessary rights!! WEB user: user105750 1230121159418
+user86500 Expired Dormancy!1 1214493449557->1230131849557 load true
+user234750 Early Dormancy at 1230221892100
+Loading without necessary rights!! WEB user: user80000 1230251208489
+user45250 Expired Dormancy!1 1214637497528->1230275897528 load true
+user86500 Dormancy done!! 49.399745555555555 hours late
+Transferring without necessary rights!! user: user105750 1230389055774
+user9750 Expired Dormancy!1 1214810010221->1230448410221 load true
+user148500 Expired Dormancy!1 1214870530673->1230508930673 load true
+user45250 Dormancy done!! 81.05466194444445 hours late
+user106500 LOAD amount exceeded: EUR 1700.0 in 1 day(s)
+user9750 Dormancy done!! 57.091274166666665 hours late
+user148500 Dormancy done!! 88.12444527777778 hours late
+user131250 Expired Dormancy!1 1215516075844->1231154475844 load true
+user45750 LOAD amount exceeded: USD 6330.0 in 1 day(s)
+user13000 Expired Dormancy!1 1215550465737->1231188865737 load true
+Transferring... 
+user100000 Expired Dormancy!1 1215743996012->1231382396012 load true
+user238250 LOAD amount exceeded: EUR 1650.0 in 1 day(s)
+user131250 Dormancy done!! 77.04444305555556 hours late
+user91000 Expired Dormancy!1 1215794200737->1231432600737 load true
+Transferring... 
+user155500 Expired Dormancy!1 1215848689085->1231487089085 load true
+user13000 Dormancy done!! 91.65341277777777 hours late
+user50500 Expired Dormancy!1 1215907326097->1231545726097 load true
+user228000 Early Dormancy at 1231604478004
+user100000 Dormancy done!! 85.83790944444445 hours late
+user169000 Early Dormancy at 1231691456723
+user91000 Dormancy done!! 95.76261166666667 hours late
+user155500 Dormancy done!! 80.70496138888889 hours late
+user202750 Expired Dormancy!1 1216211316021->1231849716021 load true
+out
+out
+user120750 Expired Dormancy!1 1216218068474->1231856468474 load true
+user50500 Dormancy done!! 88.31253055555555 hours late
+user57750 Expired Dormancy!1 1216384450034->1232022850034 load true
+Transferring... 
+user77250 LOAD amount exceeded: USD 2050.0 in 1 day(s)
+Transferring... 
+user240500 Expired Dormancy!1 1216468798357->1232107198357 load true
+user120750 Dormancy done!! 73.8678825 hours late
+user202750 Dormancy done!! 76.01115555555556 hours late
+user240500 Dormancy done!! 4.53119 hours late
+user198250 Expired Dormancy!1 1216497746463->1232136146463 load true
+user76500 Expired Dormancy!1 1216651572935->1232289972935 load true
+user57750 Dormancy done!! 75.65749666666666 hours late
+Transferring... 
+user245000 Expired Dormancy!1 1216799757096->1232438157096 load true
+in
+user198250 Dormancy done!! 92.67019833333333 hours late
+user74500 Expired Dormancy!1 1216900602810->1232539002810 load true
+user76500 Dormancy done!! 75.29208833333334 hours late
+user245000 Dormancy done!! 80.67883444444445 hours late
+user500 Expired Dormancy!1 1217117336410->1232755736410 load true
+in
+out

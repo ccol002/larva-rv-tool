@@ -1,0 +1,63 @@
+
+GLOBAL{
+
+VARIABLES{
+boolean logged = false;
+}
+
+FOREACH(Integer i)
+{
+EVENTS{
+
+w(i2,int rrt) = {DB *.writeToDb(rrt, int *)uponReturning()}where{i2=0; i = new Integer(i2);}
+r() = {*.readFromDb()uponHandling(Exception+ ex)}where {i=8;}
+i(id,i2) = {*.loginToDb()}where {int id=5;  i2 = 2; i=9;}
+o(int i2) = {*.logoutFromDb()}where {i = 13; i2 = 6;}
+any(int rrt,i2) = {*.writeToDb()|r|{i(i2)}|{o|r|w|*.readFromDb(int i2)}where int i2 = 111;}where {int j = 2; int i2=0; i = new Integer(i2);rrt=0;}%%not (int i2)
+%%the i2 attached to readFromDb in the previous line is not known to the event (it is not another variable!!)
+%%{r} is listed as a member of any and as a member of a member of any and therefore the final where is added twice...therefore more warnings...but no trouble
+%%these are the reasons for the error in the generated code
+}%%EVENTS
+
+VARIABLES{
+boolean logged = false;
+}
+
+
+PROPERTY badAccess{
+
+STATES{
+
+ACCEPTING{}
+
+BAD{
+bad_write {System.out.println("Ktibt meta mhux suppost!!");}
+bad_read  {System.out.println("Qrajt meta mhux suppost!!");}
+}
+
+NORMAL {}
+
+STARTING{
+start     {System.out.println("Bdejna!!");}
+}
+}%%STATES
+
+
+TRANSITIONS
+{
+
+start -> start[i\\logged=true;]
+
+start -> start [o\\logged = false;]
+
+start -> bad_write [ w()\!logged\]
+
+start -> bad_read [ r()\!logged\]
+
+
+}
+
+
+}
+}
+}%%GLOBAL

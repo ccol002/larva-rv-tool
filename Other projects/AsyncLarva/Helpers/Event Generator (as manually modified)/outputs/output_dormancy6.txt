@@ -1,0 +1,8 @@
+user5500 Expired Dormancy!1 1215981636089->1233073987783
+user4750 Expired Dormancy!2 1229877458001->1233073987783
+user500 Early Freeze at 1233073996310
+user4500 Early Freeze at 1233592318450
+Expected balance: 586498.97 found: 0.99
+Expected balance: 2897107.79 found: 2.25
+Expected balance: 7.16110161E7 found: 50.0
+Expected balance: 1.470087594E7 found: 10.0

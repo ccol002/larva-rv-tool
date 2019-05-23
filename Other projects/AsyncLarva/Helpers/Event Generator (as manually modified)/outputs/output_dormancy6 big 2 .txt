@@ -1,0 +1,1300 @@
+user223250 Expired Dormancy!2 1217532316686->1220392146000
+user111250 Expired Dormancy!2 1217609506375->1220478952000
+user24000 Expired Dormancy!2 1217621188809->1220478952000
+user29000 Expired Dormancy!2 1217621306287->1220478952000
+user143500 Expired Dormancy!2 1217635708164->1220496313000
+user21250 Expired Dormancy!2 1217636086576->1220496313000
+user241750 Expired Dormancy!2 1217636392084->1220496313000
+user107500 Expired Dormancy!2 1217637673808->1220496313000
+user211750 Expired Dormancy!2 1217650442202->1220531324000
+user105000 Expired Dormancy!2 1217665234789->1220531324000
+user88250 Expired Dormancy!2 1217708198343->1220565651000
+user66250 Expired Dormancy!2 1217723726545->1220610262000
+user58750 Expired Dormancy!2 1217724857491->1220610262000
+user54250 Expired Dormancy!2 1217725114140->1220610262000
+user185750 Expired Dormancy!2 1217767374929->1220620671000
+user187250 Expired Dormancy!2 1217767777997->1220620671000
+user52750 Expired Dormancy!2 1217767812861->1220620671000
+user215500 Expired Dormancy!2 1217783533134->1220642885000
+user110750 Expired Dormancy!2 1217794904672->1220658050000
+user39250 Expired Dormancy!2 1217799975675->1220658050000
+user32000 Expired Dormancy!2 1217812537688->1220709838000
+user219500 Expired Dormancy!2 1217814756665->1220709838000
+user135250 Expired Dormancy!2 1217823296373->1220709838000
+user153000 Expired Dormancy!2 1217827025780->1220709838000
+user247500 Expired Dormancy!2 1217840224963->1220709838000
+user148000 Expired Dormancy!2 1217841592204->1220709838000
+user170500 Expired Dormancy!2 1217856100005->1220709838000
+user131000 Expired Dormancy!2 1217869218691->1220743413000
+user81250 Expired Dormancy!2 1217882261052->1220743413000
+user241000 Expired Dormancy!2 1217882357404->1220743413000
+user37500 Expired Dormancy!2 1217910101888->1220789338000
+user215750 Expired Dormancy!2 1217924695679->1220789338000
+user101750 Expired Dormancy!2 1217927861331->1220789338000
+user151750 Expired Dormancy!2 1217930920874->1220789338000
+user17250 Expired Dormancy!2 1217931353272->1220789338000
+user123000 Expired Dormancy!2 1217938589321->1220790168000
+user170750 Expired Dormancy!2 1217944052306->1220801568000
+user122750 Expired Dormancy!2 1217944107367->1220801568000
+user157000 Expired Dormancy!2 1217956165864->1220818079000
+user65000 Expired Dormancy!2 1217960214795->1220818079000
+user102000 Expired Dormancy!2 1217968404997->1220864206000
+user39750 Expired Dormancy!2 1217969582275->1220864206000
+user222250 Expired Dormancy!2 1217970789411->1220864206000
+user146750 Expired Dormancy!2 1217973368307->1220864206000
+user158500 Expired Dormancy!2 1217973880210->1220864206000
+user197750 Expired Dormancy!2 1217983679874->1220864206000
+user217000 Expired Dormancy!2 1217986710894->1220864206000
+user48750 Expired Dormancy!2 1217999325453->1220864206000
+user102750 Expired Dormancy!2 1218803183986->1221655035000
+user9500 Expired Dormancy!2 1218803299558->1221655035000
+user85250 Expired Dormancy!2 1218821443079->1221677015000
+user196750 Expired Dormancy!2 1218829477785->1221706610000
+user34250 Expired Dormancy!2 1218837336235->1221706610000
+user160500 Expired Dormancy!2 1218838974111->1221706610000
+user96000 Expired Dormancy!2 1218850120372->1221706610000
+user7250 Expired Dormancy!2 1218852415814->1221706610000
+user109000 Expired Dormancy!2 1218902617338->1221798572000
+user47500 Expired Dormancy!2 1219161737931->1222022956000
+user166750 Expired Dormancy!2 1219161838336->1222022956000
+user106250 Expired Dormancy!2 1219248152274->1222138621000
+user30750 Expired Dormancy!2 1219924912662->1222792227000
+user214000 Expired Dormancy!2 1219939271032->1222792227000
+user7500 Expired Dormancy!2 1219939273386->1222792227000
+user137500 Expired Dormancy!2 1220241697492->1223096905000
+user242750 Expired Dormancy!2 1220241699833->1223096905000
+user64750 Expired Dormancy!2 1220270582269->1223153688000
+user102250 Expired Dormancy!2 1221163477427->1224065050000
+user73750 Expired Dormancy!2 1221494445334->1224400835000
+user159500 Expired Dormancy!2 1221609650515->1224505246000
+user185500 Expired Dormancy!2 1223294575820->1226215231000
+user214750 Expired Dormancy!2 1223381002537->1226249757000
+user93000 Expired Dormancy!2 1223553986616->1226408324000
+user138750 Expired Dormancy!2 1223611417166->1226475550000
+user79000 Expired Dormancy!2 1223683386455->1226568110000
+user88500 Expired Dormancy!2 1223756550991->1226614652000
+user11250 Expired Dormancy!2 1223784661254->1226689477000
+user10750 Expired Dormancy!2 1223785785490->1226689477000
+user53250 Expired Dormancy!2 1223799078301->1226689477000
+user97500 Expired Dormancy!2 1223813427434->1226689477000
+user170000 Expired Dormancy!2 1223814036073->1226689477000
+user218500 Expired Dormancy!2 1223814969147->1226689477000
+user98500 Expired Dormancy!2 1223828671371->1226689477000
+user212750 Expired Dormancy!2 1223828944842->1226689477000
+user222750 Expired Dormancy!2 1223842493958->1226697128000
+user214250 Expired Dormancy!2 1223844240236->1226697128000
+user105250 Expired Dormancy!2 1223856066733->1226768922000
+user27500 Expired Dormancy!2 1223856412874->1226768922000
+user243500 Expired Dormancy!2 1223887229478->1226768922000
+user88750 Expired Dormancy!2 1224014621490->1226881085000
+user212500 Expired Dormancy!2 1224100883974->1226967762000
+user118500 Expired Dormancy!2 1224158778744->1227069936000
+user245250 Expired Dormancy!2 1224374480646->1227245194000
+user88000 Expired Dormancy!2 1224504111136->1227378169000
+user31250 Expired Dormancy!2 1224518541332->1227378169000
+user29500 Expired Dormancy!2 1225555495388->1228412365000
+user228250 Expired Dormancy!2 1225685002163->1228578175000
+user4000 Expired Dormancy!2 1225771499398->1228671751000
+user134250 Expired Dormancy!2 1226145855162->1229018236000
+user236500 Expired Dormancy!2 1226146589954->1229018236000
+user87000 Expired Dormancy!2 1226347509956->1229212405000
+user40750 Expired Dormancy!2 1226578062772->1229431449000
+user228000 Expired Dormancy!2 1226578393276->1229431449000
+user233500 Expired Dormancy!2 1226664609067->1229535972000
+user216250 Expired Dormancy!2 1226664726721->1229535972000
+user68000 Expired Dormancy!2 1226851461160->1229708984000
+user204750 Expired Dormancy!2 1226923338555->1229779400000
+user195500 Expired Dormancy!2 1227009684486->1229862572000
+Purchase Notification user user15500
+Purchase Notification user user15500
+Purchase Notification user user15500
+Purchase Notification user user162500
+Purchase Notification user user162500
+Purchase Notification user user83500
+Purchase Notification user user231000
+Purchase Notification user user172250
+Purchase Notification user user113000
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user45750
+Purchase Notification user user238000
+Purchase Notification user user45750
+Purchase Notification user user105750
+Purchase Notification user user45750
+Purchase Notification user user36000
+Purchase Notification user user178250
+Purchase Notification user user36000
+Purchase Notification user user45750
+Purchase Notification user user238000
+Purchase Notification user user168750
+Purchase Settlement Not EXPECTED!! user user77250 amount 169.28
+Purchase Settlement Not EXPECTED!! user user168750 amount 30.00
+Purchase Settlement Not EXPECTED!! user user146000 amount 50.00
+Purchase Settlement Not EXPECTED!! user user34500 amount 20.00
+Loading without necessary rights!! user: user113000
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Not EXPECTED!! user user150000 amount 5.97
+Purchase Settlement Notification user user105750
+Purchase Settlement Notification user user231000
+Purchase Settlement Notification user user231000
+Purchase Settlement Not EXPECTED!! user user231000 amount 200.00
+Purchase Settlement Not EXPECTED!! user user181500 amount 468.16
+Purchase Settlement Not EXPECTED!! user user180500 amount 105.34
+Adding VCC without necessary rights!! user: user183500 instrument: 11e640e6b2f080e 1230039313000
+Expected balance: -199.39 found: -31.48
+Expected balance: 90.0 found: 30.0
+Expected balance: 2425060.95 found: 1.48
+Loading without necessary rights!! user: user168750
+Expected balance: 193.0 found: 50.0
+user160000 Expired Dormancy!1 1214246885106->1230058819316
+Loading without necessary rights!! user: user77250
+Purchase Settlement Not EXPECTED!! user user121750 amount 80.00
+Purchase Settlement Not EXPECTED!! user user80000 amount 200.00
+Purchase Notification user user113000
+Purchase Notification user user183500
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user71250
+Purchase Settlement Not EXPECTED!! user user84000 amount 2.17
+Purchase Settlement Notification user user113000
+user155250 Expired Dormancy!2 1227269399580->1230120691345
+Loading without necessary rights!! user: user105750
+Purchase Settlement Notification user user113000
+Purchase Settlement Not EXPECTED!! user user94500 amount 30.00
+Purchase Settlement Notification user user45750
+Purchase Settlement Notification user user45750
+Purchase Settlement Notification user user45750
+Purchase Settlement Not EXPECTED!! user user45750 amount 30.05
+Purchase Settlement Notification user user71250
+Purchase Settlement Not EXPECTED!! user user163000 amount 60.00
+Purchase Settlement Notification user user36000
+user161750 Expired Breakage! 1198762863843->1230126497797
+user36750 Expired Dormancy!1 1214315131330->1230126497797
+Purchase Settlement Notification user user83500
+Purchase Settlement Not EXPECTED!! user user231250 amount 50.00
+Purchase Settlement Not EXPECTED!! user user105750 amount 20.18
+Expected balance: 463191.42 found: 9.9
+Adding VCC without necessary rights!! user: user172250 instrument: 11e69a270aa0c0e 1230132900000
+user119500 Closed at 1230134493699
+user23500 Closed at 1230134702106
+Loading without necessary rights!! user: user163000
+Loading without necessary rights!! user: user121750
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user183500
+Purchase Notification user user238250
+Purchase Notification user user172250
+Purchase Notification user user166500
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Not EXPECTED!! user user113000 amount 20.00
+user116500 Expired Breakage! 1198835431133->1230202095585
+Purchase Settlement Not EXPECTED!! user user36000 amount 40.00
+Purchase Settlement Not EXPECTED!! user user176000 amount 100.00
+Purchase Settlement Not EXPECTED!! user user71250 amount 30.00
+user47000 Expired Dormancy!1 1214395627127->1230207303507
+Purchase Settlement Notification user user162500
+Purchase Settlement Not EXPECTED!! user user83500 amount 100.00
+user211750 Expired Breakage! 1198844728697->1230209295201
+Purchase Settlement Notification user user15500
+Purchase Settlement Notification user user15500
+Purchase Settlement Notification user user15500
+user191500 Closed at 1230221050279
+user234750 Frozen at 1230221892100
+user234750 Fee taken at 1230221892436
+Loading without necessary rights!! user: user199250
+user28750 Expired Dormancy!1 1214422621167->1230234686000
+Adding VCC without necessary rights!! user: user172250 instrument: 11e703e03d50c0e 1230243759000
+user187500 Expired Dormancy!2 1227398776044->1230251208489
+Loading without necessary rights!! user: user80000
+user154500 Expired Dormancy!2 1227412907546->1230264806617
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71eb1ecb050e 1230271880000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ecbdbc010e 1230271987000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ee0da30f0e 1230272073000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71efaf9e0b0e 1230272180000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71f17e12040e 1230272298000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71f31f1f100e 1230272405000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71fc724d010e 1230273016000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71fd48590a0e 1230273071000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ff1be4010e 1230273190000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e7200a67e060e 1230273291000
+Purchase Settlement Notification user user178250
+Purchase Settlement Not EXPECTED!! user user82500 amount 40.00
+Purchase Settlement Notification user user172250
+Adding VCC without necessary rights!! user: user183500 instrument: 11e72d7349f0b0e 1230287353000
+user160750 Expired Dormancy!2 1227442071728->1230293345845
+Adding VCC without necessary rights!! user: user180750 instrument: 11e7346dc20050e 1230294670000
+Purchase Notification user user199250
+Purchase Notification user user172250
+user86500 Expired Dormancy!1 1214493449557->1230304958221
+user29000 Closed at 1230307256660
+Adding VCC without necessary rights!! user: user180750 instrument: 11e740b89f4080e 1230307559000
+user188500 Expired Dormancy!1 1214498023414->1230309685449
+Loading without necessary rights!! user: user149250
+Loading without necessary rights!! user: user166500
+user110250 Expired Breakage! 1199002231323->1230384090000
+user44000 Expired Dormancy!2 1227528542008->1230384090000
+Purchase Notification user user183500
+Purchase Notification user user180750
+Purchase Notification user user180750
+Purchase Notification user user149250
+Transferring without necessary rights!! user: user105750
+Purchase Settlement Notification user user166500
+user52750 Expired Breakage! 1199041154444->1230406088116
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8930810d0e 1230416457000
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8a0c2e040e 1230416514000
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8b3945090e 1230416591000
+user203250 Expired Dormancy!1 1214605539030->1230440331000
+user185750 Expired Breakage! 1199063392732->1230440331000
+Adding VCC without necessary rights!! user: user183500 instrument: 11e7bf578460a0e 1230440331000
+user45250 Expired Dormancy!1 1214637497528->1230459565000
+Adding VCC without necessary rights!! user: user180500 instrument: 11e7d1af4b80c0e 1230459565000
+user84750 Expired Dormancy!2 1227614940025->1230469268590
+Purchase Notification user user197500
+Purchase Notification user user166500
+Purchase Notification user user183500
+Purchase Settlement Notification user user199250
+Purchase Settlement Notification user user238250
+user69250 Expired Dormancy!2 1227672177621->1230523497726
+Purchase Notification user user166500
+Purchase Notification user user106500
+Purchase Notification user user147750
+Purchase Notification user user147750
+Purchase Notification user user147750
+Purchase Notification user user198000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user180750
+Loading without necessary rights!! user: user38750
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user149250
+Adding VCC without necessary rights!! user: user113000 instrument: 11e82fdf4580a0e 1230558327000
+Loading without necessary rights!! user: user73500
+user8500 Expired Dormancy!1 1214786592921->1230605674778
+user226250 Expired Dormancy!1 1214792661095->1230605674778
+Expected balance: -52.24 found: -26.12
+Expected balance: 35.52 found: 35.0
+user9750 Expired Dormancy!1 1214810010221->1230624368418
+user87500 Expired Dormancy!2 1227772874606->1230624368418
+Expected balance: -844.5 found: -80.0
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user73500
+Purchase Notification user user201500
+Purchase Notification user user106500
+Purchase Notification user user38750
+Purchase Notification user user38750
+Purchase Notification user user35000
+Purchase Notification user user20500
+Purchase Notification user user20500
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+user186750 Expired Breakage! 1199270126668->1230636232069
+Purchase Settlement Notification user user166500
+Adding VCC without necessary rights!! user: user182500 instrument: 11e87a962c1060e 1230636671000
+Expected balance: 1600.0 found: 1700.0
+Purchase Settlement Notification user user166500
+Purchase Cancellation Not EXPECTED!! user user39500 amount 1.00
+Expected balance: -6075.62 found: -20.99
+user140250 Expired Dormancy!1 1214871093260->1230700295000
+Adding VCC without necessary rights!! user: user183500 instrument: 11e8b7434cd060e 1230700295000
+Purchase Notification user user161250
+Purchase Notification user user106500
+Purchase Notification user user161250
+Purchase Notification user user182500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user183500
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c524cb5010e 1230714850000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c536eca050e 1230714924000
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c54ad86050e 1230715006000
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user198000
+Purchase Settlement Notification user user147750
+Purchase Settlement Notification user user147750
+Purchase Settlement Not EXPECTED!! user user201500 amount 4.92
+user203500 Expired Breakage! 1199386493295->1230754198065
+user73000 Expired Dormancy!2 1227903026897->1230755744000
+Purchase Settlement Not EXPECTED!! user user182500 amount 206.50
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user210000
+Purchase Settlement Notification user user161250
+Purchase Settlement Not EXPECTED!! user user161250 amount 60.10
+Purchase Settlement Notification user user35000
+Loading without necessary rights!! user: user201500
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user20500
+user148500 Frozen at 1230826178676
+user148500 Fee taken at 1230826179267
+Expected balance: -194.16 found: -20.99
+Expected balance: 22.85 found: 20.0
+Expected balance: -225.15 found: -20.99
+Expected balance: -41.98 found: -20.99
+Expected balance: 21.95 found: 20.0
+Expected balance: 100.0 found: 240.0
+Purchase Notification user user199250
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user61250
+Purchase Notification user user61250
+Purchase Settlement Not EXPECTED!! user user73500 amount 24.35
+Purchase Settlement Notification user user210000
+Expected balance: 15.95 found: 15.0
+user14250 Expired Dormancy!1 1215124474605->1230938535826
+user131250 Expired Dormancy!1 1215126510539->1230938535826
+Loading without necessary rights!! user: user224750
+Purchase Cancellation Notification user user147750
+Adding VCC without necessary rights!! user: user182500 instrument: 11e9ab5ba89040e 1230956247000
+Expected balance: 240.0 found: 365.0
+Adding VCC without necessary rights!! user: user180500 instrument: 11e9b6bbdb7070e 1230968176000
+user236000 Expired Breakage! 1199615894306->1230980775000
+Adding VCC without necessary rights!! user: user180750 instrument: 11e9c2bfc780d0e 1230980775000
+user206000 Expired Dormancy!2 1228133052485->1230989094036
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user106500
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user92500
+Purchase Notification user user224750
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+user33000 Expired Breakage! 1199640541421->1231003952576
+Adding VCC without necessary rights!! user: user172250 instrument: 11e9dc7c773100e 1231007762000
+Adding VCC without necessary rights!! user: user172250 instrument: 11e9dc9b9ac0e0e 1231007889000
+Loading without necessary rights!! user: user78500
+Adding VCC without necessary rights!! user: user183500 instrument: 11ea0029cdc050e 1231045172000
+Purchase Notification user user180750
+Purchase Notification user user198000
+Purchase Notification user user78500
+Purchase Notification user user183500
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Adding VCC without necessary rights!! user: user180750 instrument: 11ea17da1a50f0e 1231070011000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ea1862212040e 1231070569000
+Purchase Settlement Notification user user199250
+Purchase Settlement Notification user user61250
+Purchase Settlement Notification user user61250
+user158750 Expired Breakage! 1199719750795->1231085143654
+user50500 Expired Dormancy!1 1215284250226->1231095458375
+Expected balance: -30090.0 found: -300.0
+user235750 Expired Dormancy!1 1215286981646->1231111669000
+Adding VCC without necessary rights!! user: user175750 instrument: 11ea3f9468b0f0e 1231111669000
+Purchase Cancellation Notification user user20500
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51778d9070e 1231130425000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea5191dce060e 1231130533000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea519b704080e 1231130572000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51a9965080e 1231130630000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51b42380d0e 1231130673000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51c0d000d0e 1231130725000
+user116750 Expired Breakage! 1199778367836->1231142531024
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user180750
+Purchase Notification user user180750
+Purchase Notification user user183500
+Purchase Notification user user92500
+Purchase Notification user user72000
+Purchase Notification user user39000
+Purchase Notification user user224750
+Purchase Notification user user175750
+user130250 Expired Dormancy!2 1228307170731->1231159179990
+Expected balance: -5900.0 found: -1000.0
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea81b9d540e0e 1231181028000
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea81d0ba3070e 1231181122000
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea820eb130f0e 1231181376000
+Expected balance: 35.0 found: 65.0
+Adding VCC without necessary rights!! user: user175750 instrument: 11ea89526d3090e 1231188993000
+Loading without necessary rights!! user: user113750
+Loading without necessary rights!! user: user95250
+Adding VCC without necessary rights!! user: user177000 instrument: 11ea959e69a050e 1231201887000
+user205250 Expired Breakage! 1199846861178->1231228783226
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user183500
+Expected balance: -1385.35 found: -262.38
+Expected balance: 330.0 found: 250.0
+Purchase Notification user user72000
+Purchase Notification user user172250
+Purchase Notification user user113750
+Purchase Notification user user197500
+Purchase Notification user user175750
+Purchase Notification user user61000
+Purchase Notification user user197500
+Purchase Notification user user95250
+Purchase Notification user user177000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eac942338060e 1231256036000
+user215500 Expired Breakage! 1199910301424->1231274404176
+Expected balance: -54.05 found: -17.32
+user214500 Expired Dormancy!1 1215470955763->1231284825153
+Transferring without necessary rights!! user: user39500
+user240750 Expired Breakage! 1199931001840->1231302509000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eaf5944a30d0e 1231302509000
+Adding VCC without necessary rights!! user: user181000 instrument: 11eafad5cc3060e 1231308020000
+user4250 Expired Dormancy!1 1215500153123->1231319496890
+Purchase Notification user user113750
+Purchase Notification user user224750
+Purchase Notification user user92500
+Purchase Notification user user209500
+user65000 Expired Breakage! 1199958810441->1231322202088
+Expected balance: 500.0 found: 700.0
+user219500 Expired Breakage! 1199960933492->1231324353294
+Purchase Settlement Notification user user113750
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user224750
+Purchase Settlement Notification user user198000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eb1a824c4060e 1231341233000
+user101750 Expired Breakage! 1199978955892->1231342635692
+user13000 Expired Dormancy!1 1215550465737->1231363398000
+Adding VCC without necessary rights!! user: user121750 instrument: 11eb2fa5bca0a0e 1231363398000
+Loading without necessary rights!! user: user154750
+user27000 Expired Dormancy!1 1215555395440->1231400726536
+user127750 Expired Dormancy!1 1215566057455->1231400726536
+user124750 Expired Breakage! 1200033842437->1231400726536
+Purchase Notification user user181000
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user92500
+Purchase Notification user user154750
+Purchase Notification user user197500
+Purchase Settlement Notification user user224750
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user78500
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user39000
+Purchase Settlement Notification user user72000
+Purchase Settlement Notification user user113750
+Expected balance: 1000.0 found: 8000.0
+user21250 Expired Breakage! 1200062413822->1231426443748
+user247500 Expired Breakage! 1200069135679->1231433355542
+Adding VCC without necessary rights!! user: user84000 instrument: 11eb7969e18040e 1231440748000
+Transferring... 
+Expected balance: 0.0 found: -8.83
+Expected balance: 7277.42 found: 0.2
+user38500 Expired Breakage! 1200100514789->1231478302581
+user101500 Expired Dormancy!1 1215664661483->1231478302581
+Expected balance: -619.5 found: -31.0
+Purchase Settlement Notification user user197500
+Adding VCC without necessary rights!! user: user183500 instrument: 11ebac029420a0e 1231493802000
+Purchase Settlement Notification user user154750
+Purchase Settlement Notification user user95250
+Purchase Notification user user238250
+Purchase Notification user user166500
+Purchase Notification user user92500
+Purchase Notification user user166500
+Purchase Notification user user112750
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user72000
+Purchase Settlement Notification user user181000
+Purchase Cancellation Notification user user92500
+Purchase Cancellation Notification user user92500
+Purchase Cancellation Notification user user92500
+Purchase Cancellation Notification user user92500
+user100000 Expired Dormancy!1 1215743996012->1231585018828
+Adding VCC without necessary rights!! user: user180500 instrument: 11ec03f4b87020e 1231586020000
+Adding VCC without necessary rights!! user: user182500 instrument: 11ec0d2c28f0f0e 1231595684000
+Adding VCC without necessary rights!! user: user180750 instrument: 11ec0d537110b0e 1231595845000
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0dc8dad000e 1231596326000
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0dee66b040e 1231596480000
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0e02a2a010e 1231596563000
+Purchase Notification user user112750
+Purchase Notification user user112750
+Purchase Notification user user238250
+Purchase Notification user user112750
+Purchase Notification user user183500
+Purchase Notification user user98250
+Purchase Notification user user149250
+Purchase Notification user user92500
+Purchase Notification user user154750
+Purchase Notification user user112750
+Purchase Notification user user112750
+Purchase Notification user user112750
+Expected balance: -488.02 found: -20.99
+user91000 Expired Dormancy!1 1215794200737->1231605773134
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Not EXPECTED!! user user224750 amount 14.86
+Expected balance: 15.0 found: 130.0
+user120750 Expired Dormancy!1 1215836550056->1231649474000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec40789990a0e 1231649474000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec41bbff3010e 1231650799000
+user155500 Expired Dormancy!1 1215848689085->1231667363000
+user55500 Expired Breakage! 1200312267931->1231682922000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec605e812070e 1231682922000
+Purchase Notification user user101000
+Purchase Notification user user180750
+Purchase Notification user user101000
+Purchase Notification user user172250
+Purchase Notification user user112750
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user183500
+Purchase Settlement Notification user user238250
+user169000 Early Freeze at 1231691456723
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user154750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user98250
+Purchase Settlement Not EXPECTED!! user user112750 amount 20.50
+Purchase Settlement Notification user user149250
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user92500
+user215750 Closed at 1231776753912
+user41750 Expired Dormancy!1 1215966378644->1231777623083
+Expected balance: 278085.36 found: 0.5
+Adding VCC without necessary rights!! user: user182500 instrument: 11ecc198cad0f0e 1231784873000
+user242000 Expired Dormancy!1 1215977786631->1231795636000
+user5500 Expired Dormancy!1 1215981636089->1231795636000
+Adding VCC without necessary rights!! user: user175750 instrument: 11eccbdc8ff0a0e 1231795636000
+Expected balance: 30.0 found: 266.5
+Adding VCC without necessary rights!! user: user183500 instrument: 11ece44fdb30a0e 1231821274000
+Purchase Notification user user129000
+Purchase Notification user user175750
+Purchase Notification user user198500
+Purchase Notification user user61250
+Purchase Notification user user183500
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Loading without necessary rights!! user: user250000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user177000
+user24000 Expired Breakage! 1200498988657->1231862559827
+Adding VCC without necessary rights!! user: user183500 instrument: 11ed0cbad0f0b0e 1231863655000
+Loading without necessary rights!! user: user146000
+user137000 Expired Dormancy!1 1216076211452->1231887513000
+Purchase Notification user user250000
+Purchase Notification user user250000
+Purchase Notification user user183500
+Purchase Notification user user118250
+Purchase Settlement Not EXPECTED!! user user92500 amount 15.44
+Adding VCC without necessary rights!! user: user177000 instrument: 11ed57859710a0e 1231942081000
+Purchase Settlement Notification user user101000
+user49500 Expired Dormancy!1 1216155687594->1231969525495
+Expected balance: 514.0 found: 583.0
+user58750 Expired Breakage! 1200612655045->1231976241000
+Purchase Cancellation Notification user user209500
+user57750 Expired Dormancy!1 1216174689810->1231993638629
+user66250 Expired Breakage! 1200631154728->1232006892880
+Purchase Notification user user177000
+Purchase Notification user user61000
+Purchase Notification user user118250
+Purchase Notification user user133000
+Purchase Notification user user237250
+Purchase Notification user user237250
+Purchase Notification user user237250
+Purchase Settlement Notification user user101000
+user193250 Expired Dormancy!1 1216207384906->1232020271291
+Purchase Settlement Notification user user172250
+user202750 Expired Dormancy!1 1216211316021->1232024063000
+Adding VCC without necessary rights!! user: user180750 instrument: 11eda5b4c090f0e 1232024063000
+Purchase Settlement Notification user user61250
+Purchase Settlement Notification user user250000
+Purchase Settlement Notification user user250000
+Transferring without necessary rights!! user: user113000
+Purchase Settlement Not EXPECTED!! user user129000 amount 4.68
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user183500
+user46000 Expired Dormancy!1 1216229716944->1232044508000
+Adding VCC without necessary rights!! user: user172250 instrument: 11edb9346a7050e 1232044508000
+Adding VCC without necessary rights!! user: user172250 instrument: 11edb96ba7f0b0e 1232044735000
+Adding VCC without necessary rights!! user: user183500 instrument: 11eddaef3190d0e 1232079876000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede7fc0e1010e 1232093561000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede82583f070e 1232093730000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede84a9fa050e 1232093882000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede86409f010e 1232093987000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8837c1030e 1232094115000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede899692040e 1232094205000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8ae4d9090e 1232094291000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8c521a0e0e 1232094384000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8dda6d060e 1232094485000
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8fa440020e 1232094602000
+Purchase Notification user user180750
+Purchase Notification user user133000
+Purchase Notification user user172250
+Purchase Notification user user126000
+Purchase Notification user user133000
+Purchase Notification user user133000
+Purchase Notification user user199250
+Purchase Notification user user183500
+Transferring... 
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+user211500 Expired Breakage! 1200744392004->1232108992090
+Purchase Settlement Notification user user175750
+user240500 Frozen at 1232123510641
+Purchase Settlement Not EXPECTED!! user user198500 amount 9.33
+user196250 Expired Dormancy!1 1216314273035->1232125482000
+user72250 Expired Breakage! 1200769541041->1232141415445
+Loading without necessary rights!! user: user68250
+user136500 Expired Dormancy!1 1216334148629->1232145978000
+user208000 Expired Breakage! 1200792125444->1232156548177
+Adding VCC without necessary rights!! user: user183500 instrument: 11ee2cfb8900d0e 1232165910000
+user94750 Expired Dormancy!1 1216370749148->1232182523370
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user208500
+Purchase Notification user user118250
+Purchase Notification user user68250
+Purchase Notification user user68250
+Purchase Notification user user68250
+Purchase Notification user user215000
+Purchase Notification user user183500
+user23250 Expired Breakage! 1200825802921->1232189348938
+Adding VCC without necessary rights!! user: user180500 instrument: 11ee459a268090e 1232191726000
+Purchase Settlement Notification user user180750
+Adding VCC without necessary rights!! user: user183000 instrument: 11ee5099aae060e 1232203258000
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user133000
+user216750 Expired Dormancy!1 1216408684077->1232223061098
+user40000 Expired Breakage! 1200857347813->1232223061098
+user116000 Expired Breakage! 1200860232902->1232225958000
+user92250 Expired Dormancy!1 1216437482123->1232253459000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ee8079d86000e 1232253459000
+Purchase Notification user user20500
+Purchase Notification user user20500
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user183000
+Purchase Notification user user197500
+Purchase Notification user user183500
+user500 Expired Dormancy!1 1216473071282->1232286601350
+Loading without necessary rights!! user: user34500
+user155250 Expired Breakage! 1200927508259->1232290875819
+Purchase Settlement Notification user user126000
+Purchase Settlement Notification user user118250
+Adding VCC without necessary rights!! user: user182500 instrument: 11eead3ebcf060e 1232300403000
+Expected balance: 20.0 found: 150.0
+user198250 Expired Dormancy!1 1216497746463->1232350172468
+Expected balance: -493.27 found: -104.95
+Transferring without necessary rights!! user: user48250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user183000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user199250
+Adding VCC without necessary rights!! user: user180750 instrument: 11eee99b8f2060e 1232363698000
+Purchase Settlement Notification user user68250
+Purchase Settlement Notification user user68250
+Adding VCC without necessary rights!! user: user175750 instrument: 11ef091ff71020e 1232396746000
+user10250 Expired Dormancy!1 1216588381911->1232409812382
+Purchase Notification user user48250
+Purchase Notification user user180750
+Purchase Notification user user11500
+Purchase Notification user user175750
+Purchase Settlement Notification user user20500
+Purchase Settlement Notification user user172250
+user92000 Expired Breakage! 1201089585211->1232454658430
+user245000 Expired Dormancy!1 1216643063806->1232454658430
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+Purchase Cancellation Notification user user237250
+user76500 Expired Dormancy!1 1216651572935->1232467623278
+Adding VCC without necessary rights!! user: user183500 instrument: 11ef4e445bc090e 1232469247000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ef4f647d0060e 1232470427000
+Expected balance: 19.67 found: 29.0
+Purchase Notification user user166500
+Purchase Notification user user183500
+Purchase Notification user user60750
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user197500
+Adding VCC without necessary rights!! user: user73500 instrument: 11efaf419850f0e 1232570948000
+Purchase Cancellation Notification user user162500
+Purchase Cancellation Notification user user68250
+user229000 Expired Breakage! 1201229440789->1232598739000
+Purchase Notification user user20500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user109250
+Purchase Notification user user109250
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user48250
+Purchase Settlement Notification user user166500
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7b5784090e 1232630142000
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7da95a0b0e 1232630294000
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7f0aeb010e 1232630385000
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe807dda070e 1232630480000
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe81c5e00d0e 1232630564000
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe82e228040e 1232630637000
+Paying Fee... 
+Expected balance: -9800.0 found: -350.0
+Adding VCC without necessary rights!! user: user175750 instrument: 11f007d697e020e 1232663832000
+Loading without necessary rights!! user: user102500
+Adding VCC without necessary rights!! user: user175750 instrument: 11f00d03cf70b0e 1232669261000
+user104250 Expired Dormancy!1 1216868294226->1232680431563
+Adding VCC without necessary rights!! user: user181000 instrument: 11f01fd8393030e 1232689005000
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user61000
+Purchase Notification user user102500
+Purchase Notification user user175750
+Purchase Notification user user175750
+Purchase Notification user user102500
+Purchase Notification user user102500
+Purchase Settlement Notification user user118250
+user40500 Expired Dormancy!2 1229853912159->1232705535000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f02f9bc5e030e 1232705535000
+user64000 Expired Dormancy!2 1229855184711->1232706761057
+Purchase Settlement Notification user user11500
+Adding VCC without necessary rights!! user: user180750 instrument: 11f03117244070e 1232707088000
+user118000 Expired Dormancy!2 1229860366230->1232712599000
+user74500 Expired Dormancy!1 1216900602810->1232712599000
+Adding VCC without necessary rights!! user: user175750 instrument: 11f0365869c030e 1232712599000
+Adding VCC without necessary rights!! user: user175750 instrument: 11f037f6ecc0d0e 1232714297000
+user86750 Expired Dormancy!2 1229863695391->1232715023103
+Purchase Settlement Notification user user175750
+user246000 Expired Dormancy!2 1229865311613->1232718814342
+user187750 Expired Dormancy!2 1229866004843->1232718814342
+user142750 Expired Dormancy!2 1229866668469->1232718814342
+user230250 Expired Dormancy!2 1229868890159->1232721284413
+user195750 Expired Dormancy!2 1229871471110->1232727353476
+user43000 Expired Dormancy!2 1229872489066->1232727353476
+user225500 Expired Dormancy!2 1229872563066->1232727353476
+user114250 Expired Dormancy!2 1229875857637->1232727353476
+user118750 Expired Dormancy!2 1229876844894->1232728105746
+user4750 Expired Dormancy!2 1229877458001->1232732365821
+user184500 Expired Dormancy!2 1229880090212->1232732365821
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0495becb020e 1232732536000
+user124000 Expired Dormancy!2 1229882182903->1232733704000
+user163250 Expired Dormancy!1 1216923675681->1232739293780
+Loading without necessary rights!! user: user48000
+Adding VCC without necessary rights!! user: user182500 instrument: 11f07041238030e 1232773321000
+Adding VCC without necessary rights!! user: user180750 instrument: 11f0811ea130f0e 1232791005000
+Purchase Notification user user181000
+Purchase Notification user user183500
+Purchase Notification user user238250
+Purchase Notification user user180750
+Purchase Notification user user171500
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user175750
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user175750
+Purchase Notification user user166500
+Purchase Notification user user183500
+Purchase Notification user user48000
+Purchase Notification user user61250
+Purchase Notification user user31000
+Purchase Notification user user31000
+Purchase Settlement Notification user user20500
+Adding VCC without necessary rights!! user: user180500 instrument: 11f088f40e6090e 1232799219000
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user109250
+Purchase Settlement Not EXPECTED!! user user109250 amount 50.38
+Adding VCC without necessary rights!! user: user175750 instrument: 11f08ee3522020e 1232805442000
+Adding VCC without necessary rights!! user: user175750 instrument: 11f08efa615010e 1232805537000
+Adding VCC without necessary rights!! user: user172250 instrument: 11f096c699f040e 1232813713000
+Adding VCC without necessary rights!! user: user172250 instrument: 11f096e1499000e 1232813823000
+user187250 Expired Breakage! 1201458138868->1232821476000
+Adding VCC without necessary rights!! user: user175750 instrument: 11f0a3ef4d1000e 1232827512000
+Purchase Cancellation Not EXPECTED!! user user20500 amount 1.00
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0c46f9fb040e 1232861592000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0c85d5800e0e 1232865711000
+Loading without necessary rights!! user: user201750
+user59250 Expired Dormancy!1 1217068516747->1232881643000
+Adding VCC without necessary rights!! user: user180750 instrument: 11f0d9e69390a0e 1232884099000
+Purchase Notification user user199250
+Purchase Notification user user180750
+Purchase Notification user user191000
+Purchase Notification user user191000
+Purchase Notification user user38250
+Purchase Notification user user175750
+Purchase Notification user user172250
+Purchase Notification user user197500
+Purchase Notification user user115750
+Purchase Notification user user175750
+Adding VCC without necessary rights!! user: user36000 instrument: 11f0dd2e5a4050e 1232887539000
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user166500
+user37500 Expired Breakage! 1201540125016->1232909106211
+user39750 Expired Breakage! 1201568470781->1232957206448
+Purchase Settlement Notification user user60750
+Purchase Settlement Notification user user181000
+Purchase Settlement Notification user user183500
+Purchase Notification user user183500
+Purchase Notification user user183500
+Purchase Notification user user201750
+Purchase Notification user user201750
+Purchase Notification user user180750
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+user114500 Expired Dormancy!1 1217152719621->1232967722604
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+user128000 Expired Dormancy!1 1217158836515->1232970689805
+Purchase Settlement Notification user user61250
+user155750 Expired Breakage! 1201610290972->1232984927000
+Transferring... 
+Expected balance: 1341.08 found: 0.1
+user137250 Expired Breakage! 1201672065052->1233042462766
+Purchase Notification user user238250
+Purchase Notification user user61000
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user183500
+Purchase Settlement Not EXPECTED!! user user183500 amount 452.63
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user199250
+Transferring... 
+Expected balance: 0.0 found: -60.19
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user201750
+Purchase Settlement Notification user user201750
+Purchase Settlement Notification user user191000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f187826e90d0e 1233066141000
+user216500 Expired Dormancy!1 1217259620233->1233072608445
+user234750 Expired Dormancy!2 1230221892100->1233073987783
+user43500 Expired Dormancy!1 1217284061019->1233100957397
+user207250 Expired Breakage! 1201746956755->1233129979079
+Purchase Settlement Notification user user102500
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user171500
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user38250
+Adding VCC without necessary rights!! user: user180750 instrument: 11f1d041ca20f0e 1233142422000
+Adding VCC without necessary rights!! user: user172250 instrument: 11f1d36807d040e 1233145725000
+Expected balance: -20.99 found: -125.94
+Expected balance: 24.95 found: 120.0
+user4500 Expired Dormancy!1 1217339007603->1233150240000
+user160500 Expired Breakage! 1201799404687->1233166598000
+user7000 Expired Dormancy!1 1217352123037->1233166598000
+Transferring... 
+Loading without necessary rights!! user: user41500
+user96500 Expired Dormancy!1 1217394794952->1233215614807
+Purchase Notification user user180750
+Purchase Notification user user191000
+Purchase Notification user user191000
+Purchase Notification user user171500
+Purchase Notification user user118250
+Purchase Notification user user41500
+Purchase Settlement Notification user user48000
+Purchase Settlement Notification user user238250
+Expected balance: -83.96 found: -41.98
+user70000 Expired Dormancy!1 1217424079608->1233239187104
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user115750
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user31000
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user31000
+Transferring... 
+Expected balance: 0.63 found: -199.2
+user47500 Expired Breakage! 1201882041207->1233245531064
+user104500 Expired Dormancy!1 1217434480930->1233246546036
+Adding VCC without necessary rights!! user: user177000 instrument: 11f23636457020e 1233249330000
+user79500 Expired Dormancy!1 1217446458915->1233259815283
+Transferring... 
+Expected balance: 1134.57 found: 0.2
+user232500 Expired Dormancy!1 1217476890485->1233290720414
+Purchase Notification user user171500
+Purchase Notification user user231500
+Purchase Notification user user231500
+Purchase Notification user user48000
+Purchase Notification user user43750
+Purchase Notification user user61000
+Purchase Notification user user177000
+Purchase Notification user user231500
+Purchase Settlement Notification user user61000
+user133750 Expired Dormancy!1 1217503306273->1233314648537
+Purchase Settlement Notification user user208500
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user180750
+user95000 Expired Breakage! 1201960629006->1233324198520
+user60750 Expired Dormancy!1 1217518659862->1233331698655
+user123000 Expired Breakage! 1201985294837->1233352556094
+Adding VCC without necessary rights!! user: user183500 instrument: 11f2bdae1c5060e 1233391378000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f2c30c8640c0e 1233397008000
+Adding VCC without necessary rights!! user: user180750 instrument: 11f2c53d463100e 1233399305000
+user219250 Expired Breakage! 1202038952610->1233403669622
+user249000 Expired Breakage! 1202054952786->1233418283564
+Adding VCC without necessary rights!! user: user172250 instrument: 11f2d77f138040e 1233418449000
+Expected balance: 160.0 found: 260.0
+Purchase Notification user user166500
+Purchase Notification user user171500
+Purchase Notification user user57500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user210250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user57500
+Purchase Notification user user77000
+Purchase Settlement Notification user user231500
+user112500 Expired Breakage! 1202069510625->1233433878654
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user41500
+Purchase Settlement Notification user user191000
+Purchase Cancellation Notification user user191000
+Adding VCC without necessary rights!! user: user182500 instrument: 11f3040f759070e 1233465177000
+user146250 Expired Dormancy!1 1217667091165->1233480432264
+user9500 Expired Breakage! 1202118338448->1233486026000
+Adding VCC without necessary rights!! user: user181750 instrument: 11f317f29520e0e 1233486031000
+Purchase Notification user user87250
+Purchase Notification user user87250
+Purchase Notification user user87250
+Purchase Notification user user180750
+Purchase Notification user user197500
+Purchase Notification user user26250
+Purchase Notification user user208500
+Purchase Notification user user26250
+Purchase Notification user user172250
+Adding VCC without necessary rights!! user: user180750 instrument: 11f3292cfcd010e 1233504096000
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user43750
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Expected balance: -522.5 found: -418.0
+Purchase Notification user user181750
+Purchase Notification user user180750
+Purchase Notification user user241500
+Purchase Notification user user87250
+Purchase Notification user user87250
+Adding VCC without necessary rights!! user: user172250 instrument: 11f3632bfb70c0e 1233564909000
+Purchase Settlement Notification user user208500
+Purchase Settlement Notification user user57500
+Purchase Settlement Notification user user180750
+user69750 Expired Dormancy!1 1217764533832->1233576775296
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Adding VCC without necessary rights!! user: user180500 instrument: 11f3730c83c040e 1233581557000
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+Adding VCC without necessary rights!! user: user175750 instrument: 11f38093fa70a0e 1233595744000
+user126500 Expired Breakage! 1202251199444->1233619569867
+user122250 Expired Breakage! 1202274603506->1233651960344
+Purchase Notification user user87250
+Purchase Notification user user172250
+Purchase Notification user user171500
+Purchase Notification user user34750
+Purchase Notification user user175750
+Purchase Notification user user189000
+Purchase Settlement Not EXPECTED!! user user57500 amount 23.27
+Purchase Settlement Notification user user181750
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user26250
+user148500 Expired Dormancy!2 1230826178676->1233677454653
+Adding VCC without necessary rights!! user: user113000 instrument: 11f3d1873440c0e 1233680626000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f3d1ad25b030e 1233680781000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f3d37336e090e 1233682641000
+user1750 Expired Dormancy!1 1217894489398->1233710910777
+Expected balance: 20.0 found: 75.43
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user189000
+Purchase Notification user user203000
+Purchase Notification user user203000
+Purchase Notification user user171500
+Purchase Notification user user107750
+Purchase Notification user user68250
+Purchase Notification user user171500
+Purchase Settlement Notification user user48000
+Purchase Settlement Notification user user118250
+user41000 Expired Dormancy!1 1217972707261->1233784854788
+Expected balance: 50.0 found: 150.0
+Purchase Cancellation Not EXPECTED!! user user191000 amount 1.00
+user137750 Expired Dormancy!1 1217982929544->1233818778711
+Purchase Notification user user11500
+Purchase Settlement Notification user user197500
+Adding VCC without necessary rights!! user: user180500 instrument: 11f462d188e070e 1233832974000
+Purchase Settlement Notification user user77000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f465ae4a20a0e 1233835975000
+Purchase Settlement Notification user user172250
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46614b900c0e 1233836395000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46637163050e 1233836536000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f4665cc24040e 1233836690000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46682923030e 1233836845000
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user210250
+Purchase Settlement Notification user user231500
+Loading without necessary rights!! user: user203000
+Purchase Settlement Notification user user203000
+Expected balance: 347.69 found: 350.0
+user85250 Expired Breakage! 1202493796400->1233858863000
+user201000 Expired Breakage! 1202498239595->1233871679000
+user102750 Expired Breakage! 1202513901065->1233877295555
+Purchase Cancellation Not EXPECTED!! user user231500 amount 1.00
+Purchase Cancellation Notification user user26250
+user91500 Expired Dormancy!1 1218069644691->1233886266216
+user156750 Expired Dormancy!1 1218073010161->1233886266216
+Expected balance: 25.0 found: 50.0
+user120250 Expired Dormancy!1 1218078428160->1233901049000
+Adding VCC without necessary rights!! user: user182500 instrument: 11f4a3bd7d00c0e 1233901049000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f4a67ae8f020e 1233903922000
+Purchase Notification user user241500
+Purchase Notification user user22500
+Purchase Notification user user241500
+Purchase Notification user user203000
+Purchase Notification user user41500
+Purchase Notification user user22500
+Purchase Notification user user61000
+Purchase Notification user user199250
+Purchase Notification user user34750
+Adding VCC without necessary rights!! user: user182500 instrument: 11f4b3a32ea000e 1233917719000
+Adding VCC without necessary rights!! user: user177000 instrument: 11f4c1b0d4c0c0e 1233932455000
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user68250
+Adding VCC without necessary rights!! user: user183500 instrument: 11f4cc6fa69020e 1233943722000
+user80500 Expired Dormancy!1 1218148939593->1233976184156
+user94000 Expired Breakage! 1202618524581->1234001351334
+user132250 Expired Dormancy!1 1218196354320->1234012217949
+Purchase Notification user user98000
+Purchase Notification user user98000
+Purchase Notification user user177000
+Purchase Notification user user118250
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user22500
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user61000
+Purchase Notification user user197500
+Purchase Settlement Notification user user41500
+Adding VCC without necessary rights!! user: user177000 instrument: 11f5158e8e20d0e 1234020395000
+user123500 Closed at 1234023382603
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user107750
+Purchase Settlement Notification user user171500
+Adding VCC without necessary rights!! user: user183500 instrument: 11f541f02f7010e 1234066932000
+user204250 Expired Dormancy!1 1218258940632->1234074086000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f548c2d940f0e 1234074086000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f548f17cd000e 1234074277000
+user126250 Expired Breakage! 1202715703122->1234084065000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f55247294040e 1234084065000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f5525aba0060e 1234084146000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552727c90f0e 1234084243000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f5528a5c70d0e 1234084341000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552a9b37070e 1234084469000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552c4abd0e0e 1234084580000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552dd969070e 1234084682000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552efbc0000e 1234084756000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f553006030c0e 1234084824000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f55318ac7020e 1234084924000
+Expected balance: 130.0 found: 209.0
+user112250 Expired Breakage! 1202744734321->1234108466684
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user177000
+Purchase Notification user user107750
+user233000 Closed at 1234109576724
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user11500
+user199750 Expired Dormancy!1 1218321653002->1234147552565
+user239250 Expired Breakage! 1202776605087->1234147552565
+Purchase Notification user user98250
+Purchase Notification user user22500
+Purchase Notification user user34750
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user199250
+user143250 Closed at 1234195380849
+Adding VCC without necessary rights!! user: user172250 instrument: 11f5c14e4b9030e 1234200487000
+user30500 Expired Dormancy!1 1218398869296->1234214096993
+Loading without necessary rights!! user: user78250
+Adding VCC without necessary rights!! user: user181000 instrument: 11f5f167869010e 1234250922000
+Purchase Cancellation Notification user user203000
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+user132000 Expired Dormancy!1 1218471076341->1234282474148
+Purchase Settlement Not EXPECTED!! user user203000 amount 12.07
+user234500 Expired Breakage! 1202919986846->1234283211531
+Purchase Settlement Notification user user22500
+user115500 Expired Dormancy!1 1218480425586->1234295961429
+user110500 Expired Dormancy!1 1218483274221->1234295961429
+Purchase Notification user user118250
+Purchase Notification user user241500
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user172250
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user15500
+user20750 Expired Dormancy!1 1218488086590->1234312864675
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user98250
+Purchase Settlement Notification user user98000
+Purchase Settlement Notification user user98000
+Purchase Settlement Notification user user118250
+Purchase Notification user user181000
+Purchase Notification user user118250
+Purchase Notification user user114750
+Purchase Notification user user34750
+Purchase Notification user user22500
+Purchase Notification user user22500
+Purchase Notification user user102500
+Purchase Notification user user78250
+Purchase Notification user user197500
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user241500
+user31500 Expired Dormancy!1 1218567682259->1234379378998
+user239000 Expired Dormancy!1 1218569076340->1234381287188
+Adding VCC without necessary rights!! user: user177000 instrument: 11f67d296460e0e 1234397468000
+user244000 Expired Breakage! 1203066001377->1234429993000
+Purchase Notification user user98750
+Purchase Notification user user61000
+Purchase Notification user user118250
+Purchase Notification user user78500
+Purchase Notification user user177000
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user181000
+Purchase Settlement Not EXPECTED!! user user15500 amount 9.10
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user22500
+Paying Fee... 
+user140750 Expired Dormancy!1 1218666394473->1234482943084
+user229500 Expired Dormancy!1 1218672934476->1234489938028
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user197500
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user107750
+user53000 Expired Dormancy!1 1218719891886->1234531846677
+Purchase Settlement Notification user user197500
+user109000 Expired Breakage! 1203174797224->1234538200142
+Paying Fee... 
+user106250 Expired Breakage! 1203195996113->1234570843657
+Adding VCC without necessary rights!! user: user180500 instrument: 11f734d36c90b0e 1234590054000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f734e74aa0b0e 1234590135000
+Purchase Notification user user171500
+Purchase Notification user user56250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user114750
+Purchase Settlement Notification user user78250
+Purchase Settlement Notification user user172250
+user158250 Expired Dormancy!1 1218812856041->1234624840149
+user36500 Frozen at 1234627570445
+Purchase Cancellation Notification user user133000
+user133500 Expired Dormancy!1 1218846107246->1234674315000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f7882269b010e 1234677409000
+Paying Fee... 
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user66000
+user104000 Expired Breakage! 1203369112695->1234732390034
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user66000
+Purchase Cancellation Notification user user133000
+Purchase Cancellation Not EXPECTED!! user user133000 amount 1.00
+user166750 Expired Breakage! 1203404521225->1234771705832
+Purchase Notification user user149250
+Purchase Notification user user149250
+Purchase Notification user user116250
+Purchase Notification user user145250
+Purchase Notification user user61250
+Purchase Notification user user34750
+Purchase Settlement Notification user user61000

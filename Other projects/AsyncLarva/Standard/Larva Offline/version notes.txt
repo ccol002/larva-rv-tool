@@ -1,0 +1,50 @@
+[Feb 2009]
+Clocks register with a master clock and the master clock is triggered by timestamps from the events. When the time of an expected event elapses, the master clock gives control to the expectant clock. This performs the expected action and thus execution can continue. 
+
+[Feb 2009]
+added filter
+[Example:] event() = {event tas-soltu}
+filter{java condition} where { tas-soltu }
+
+[Feb 2009]
+added new shortcut clock events
+@d to specify the event in number of days
+@h to specify the event in number of hours
+@m to specify the event in number of minutes
+@s to specify the event in number of seconds
+@l to specify the event in number of milliseconds
+@ to specify the event in number of seconds
+
+[Mar 2009]
+synchronized entry into aspects, the monitor cannot have more than one thread simultaneosly active in its code
+
+[23 Mar 2009]
+all events are broadcast to their subcontexts
+
+[23 Mar 2009]
+added the option of specifying call/execution in an event declaration
+[Examples:] event()={call *.*(..)} event()={execution *.*(..)} event()={*.*(..)}
+
+[24 Mar 2009]
+added the possibility of matching constructor
+[Example:] creation() = {execution Session s1.new()} where {s = s1;}
+[Note:] for some reason aspectJ doesnt match target if call is used instead of execution
+
+[24 Mar 2009]
+initially and initialize for each context
+[Example 1:] GLOBAL { INITIALIZEIF{methodname1} ... } 
+[Example 2:] FOREACH { PROPERTY {} INITIALLY{methodname2}} 
+[Condition 1:] methodname1 returns a hashmap <String, Object> and takes context variables as input (if applicable)
+[Condition 2:] methodname2 returns an arraylist of the context type (one variable context supported) and takes any user specified input.
+
+[25 Mar 2009]
+forced the extra methods to be the text in a class called SC.java.
+
+[28 Mar 2009]
+clocks are identifiable by name
+
+[4 Apr 2009]
+the code in the initial states is execution upon construction of a context
+
+[6 May 2009]
+removed ChannelEvent and ClockEvent objects. Now neither channels nor clocks use any threads

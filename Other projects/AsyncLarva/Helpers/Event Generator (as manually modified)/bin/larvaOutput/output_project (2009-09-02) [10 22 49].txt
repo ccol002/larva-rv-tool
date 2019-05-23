@@ -1,0 +1,16 @@
+[LARVA] Monitoring started at  2009-09-02 10:22:49
+[balance_check]Expected balance: -7109.4 found(at monitor): -7088.41
+ user: user36000 allocation: 20080201d2504176d6ab4e8b at 1237452035034 TX ID: 1201de393da040e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1237394288381, user=user89750, instrument=20080918739b037e1f77b107, freezeOrigin=DORMANCY_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 186.84 found(at monitor): 265.54
+ user: user191000 allocation: 11f16308cd10d0e at 1237519272614 TX ID: 12021e58aa70f0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1237491290304, user=user93250, transactionAmount=30.00, transactionCurrency=USD, transactionEntryId=120203a90c00b0e, instrument=120203a7d9d030e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 32.51 found(at monitor): 135.44
+ user: user66000 allocation: 11f5c24cf77070e at 1237633992940 TX ID: 12028bc08ed050e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1237612517966, user=user183500, transactionAmount=3000.00, transactionCurrency=THB, transactionEntryId=12027745a4f090e, instrument=11e3fd326ce0e0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}

@@ -1,0 +1,55 @@
+IMPORTS{
+import Events.Template;
+}
+
+GLOBAL {
+
+VARIABLES {
+  int period = 1;%%day
+  int limit = 20;%%events
+  int day = 24*60*60*1000;
+}
+
+ FOREACH (String s) {
+
+ VARIABLES {  
+ long dayTimestamp = -1;
+ int count = 0;
+  }
+  
+ EVENTS {
+   all(timestamp,t) = {Template t.call(String name, long timestamp)} 
+     where s = t.params.get("userId").toString();
+  
+ }
+ 
+ PROPERTY count {
+ 
+  STATES {
+   BAD { countExceeded {System.out.println(s + " LOAD count exceeded: more than " + limit + " in " + period + " day(s)");} }
+   STARTING {start} 
+  }
+  
+  TRANSITIONS {
+   start -> countExceeded 
+     [ all
+     \ t.is("LoadTX")
+      && (count+1) >= limit
+      && timestamp/day == dayTimestamp/day
+     \
+     ]
+   start -> start 
+     [ all
+     \ t.is("LoadTX")
+     \ if (dayTimestamp == -1 || timestamp/day != dayTimestamp/day){
+         count = 1;
+          dayTimestamp = timestamp;
+          } else
+          {
+          count++;
+          }
+     ]
+   }
+ }
+ }
+}

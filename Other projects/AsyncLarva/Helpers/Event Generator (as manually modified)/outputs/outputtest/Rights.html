@@ -1,0 +1,76 @@
+
+<html>
+<body bgcolor="white">
+<h2>Rights</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main1');" id=xmain1>[-]</a>
+
+Loading without necessary rights!! WEB user  user105750 1230121159418
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main10');" id=xmain10>[-]</a>
+
+Loading without necessary rights!! WEB user  user80000 1230251208489
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main14');" id=xmain14>[-]</a>
+
+Transferring without necessary rights!! user  user105750 1230389055774
+
+
+
+ </div> 
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

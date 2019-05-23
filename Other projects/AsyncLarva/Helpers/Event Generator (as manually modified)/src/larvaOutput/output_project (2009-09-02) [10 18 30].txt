@@ -1,0 +1,16 @@
+[LARVA] Monitoring started at  2009-09-02 10:18:30
+[load_amount]LOAD amount exceeded user: user106500 tx id: 11fae13609a0d0e
+ loaded EUR 2000.0 in a day... limit: 1500.0
+ loaded EUR 6560.0 in a month... limit: 15000.0
+ origin: WEB scheme: BASIC time: 1235576119449
+[dormancy]Early Dormancy at 1235664596759 user user187750
+[balance_check]Expected balance: 111.41 found(at monitor): 205.31
+ user: user84000 allocation: 11e5a67411c0c0e at 1235673797339 TX ID: 11fb3e5d2db0b0e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: true defaultInstr: false
+ tx: {creationTimestamp=1235664589440, user=user187750, instrument=200806065e83ccc189773c1b, freezeOrigin=DORMANCY_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 0.0 found(at monitor): 2.12
+ user: user84000 allocation: 11eb7969e2c0c0e at 1235673797339 TX ID: 11fb3e5d2db0b0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1235664589440, user=user187750, instrument=200806065e83ccc189773c1b, freezeOrigin=DORMANCY_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}

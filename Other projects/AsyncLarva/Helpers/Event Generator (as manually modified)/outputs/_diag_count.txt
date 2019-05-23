@@ -1,0 +1,9 @@
+digraph _logic_count {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; countExceeded;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> countExceeded [ label = "(1) all\\t . is ( \" LoadTX \" ) && ( dayTimestamp == - 1 || timestamp / day == dayTimestamp / day ) && ( currency . equals ( \" USD \" ) && ( total + amount ) >= USDlimit || currency . equals ( \" GBP \" ) && ( total + amount ) >= GBPlimit || currency . equals ( \" EUR \" ) && ( total + amount ) >= EURlimit ) \\total += amount ; "];
+start -> start [ label = "(2) all\\t . is ( \" LoadTX \" ) \\if ( dayTimestamp == - 1 || timestamp / day ! = dayTimestamp / day ) { dayTimestamp = timestamp ; total = amount ; } else { total += amount ; } "];
+}

@@ -1,0 +1,127 @@
+IMPORTS {
+import larva.*;
+import java.net.InetAddress;
+}
+
+
+GLOBAL {
+
+FOREACH (InetAddress ip) {
+
+VARIABLES {
+Clock c2;
+Clock c3;
+int port1 = -1;
+int port2 = -1;
+int port3 = -1;
+Channel distinctPort;
+}
+
+EVENTS {
+receive(port) = {*.packetReceived(InetAddress ip1, int port)} where { ip = ip1; }
+distinct(boolean rPckt) = {distinctPort.receive(Object ip2)} where { rPckt = true; ip = (InetAddress)ip2; }
+c3AT0_01(boolean rPckt) = {c3@5} where { rPckt = false; }
+c2AT0_01(boolean rPckt) = {c2@5} where { rPckt = false; }
+all() = {distinct|c3AT0_01|c2AT0_01}
+}
+
+
+PROPERTY ports {
+
+STATES {
+NORMAL { normal1 normal2 }
+STARTING { start }
+}
+
+TRANSITIONS {
+start -> normal1   [receive\port1 != port && port2 != port && port3 != port\port1 = port;distinctPort.send(ip);]
+normal1 -> normal2 [receive\port1 != port && port2 != port && port3 != port\port2 = port;distinctPort.send(ip);]
+normal2 -> start   [receive\port1 != port && port2 != port && port3 != port\port3 = port;distinctPort.send(ip);]
+}
+}
+
+
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i3i
+ loc0i2i3i2l
+ loc0i1i3i1l
+ loc0i1i2i3i1l2l }
+NORMAL {
+ loc0i
+ loc0i2i2l
+ loc0i1i1l
+ loc0i1i2i1l2l
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(rPckt)\]
+loc0i -> loc0i1i1l [all\rPckt\c2.reset();]
+loc0i -> unhandled [all]
+loc0i3i -> loc0i3i [all\!(rPckt)\]
+loc0i3i -> loc0i1i3i1l [all\rPckt\c2.reset();]
+loc0i3i -> unhandled [all]
+loc0i2i2l -> loc0i [all\(!(rPckt) && !(c3.compareToMillis((long)5000)<0) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i2i2l -> loc0i3i [all\(!(rPckt) && !(c3.compareToMillis((long)5000)<0) && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i2i2l -> loc0i2i2l [all\(!(rPckt) && c3.compareToMillis((long)5000)<0 && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i2i2l -> loc0i2i3i2l [all\(!(rPckt) && c3.compareToMillis((long)5000)<0 && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i2i2l -> loc0i1i1l [all\(rPckt && !(c3.compareToMillis((long)5000)<0) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i2i2l -> loc0i1i3i1l [all\(rPckt && !(c3.compareToMillis((long)5000)<0) && (c3.compareToMillis((long)5000)<0 && rPckt))\c2.reset();]
+loc0i2i2l -> loc0i1i2i1l2l [all\(rPckt && c3.compareToMillis((long)5000)<0 && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i2i2l -> loc0i1i2i3i1l2l [all\(rPckt && c3.compareToMillis((long)5000)<0 && (c3.compareToMillis((long)5000)<0 && rPckt))\c2.reset();]
+loc0i2i2l -> unhandled [all]
+loc0i2i3i2l -> loc0i3i [all\(!(rPckt) && !(c3.compareToMillis((long)5000)<0))\]
+loc0i2i3i2l -> loc0i2i3i2l [all\(!(rPckt) && c3.compareToMillis((long)5000)<0)\]
+loc0i2i3i2l -> loc0i1i3i1l [all\(rPckt && !(c3.compareToMillis((long)5000)<0))\c2.reset();]
+loc0i2i3i2l -> loc0i1i2i3i1l2l [all\(rPckt && c3.compareToMillis((long)5000)<0)\c2.reset();]
+loc0i2i3i2l -> unhandled [all]
+loc0i1i1l -> loc0i [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i1l -> loc0i2i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i1l -> loc0i1i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i1l -> loc0i1i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && !((c2.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i1l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c2.compareToMillis((long)5000)<0 && rPckt))\c2.reset();c3.reset();]
+loc0i1i1l -> unhandled [all]
+loc0i1i3i1l -> loc0i3i [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i3i1l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i3i1l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i3i1l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && !((c2.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i3i1l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c2.compareToMillis((long)5000)<0 && rPckt))\c2.reset();c3.reset();]
+loc0i1i3i1l -> unhandled [all]
+loc0i1i2i1l2l -> loc0i [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i1l2l -> loc0i3i [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i1l2l -> loc0i2i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i1i2i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && (c3.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i1l2l -> loc0i1i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i1i2i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))) && (c3.compareToMillis((long)5000)<0 && rPckt))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && !((c3.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && (c3.compareToMillis((long)5000)<0 && rPckt))\]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && (c3.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)) && (c3.compareToMillis((long)5000)<0 && rPckt))\c2.reset();]
+loc0i1i2i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt) && (c3.compareToMillis((long)5000)<0 && rPckt))\c2.reset();c3.reset();]
+loc0i1i2i1l2l -> unhandled [all]
+loc0i1i2i3i1l2l -> loc0i3i [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i3i1l2l -> loc0i2i3i2l [all\(!((c2.compareToMillis((long)5000)<0 || rPckt)) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))))\]
+loc0i1i2i3i1l2l -> loc0i1i3i1l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && !((c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt))))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && !(rPckt) && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt))\c3.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && !((c2.compareToMillis((long)5000)<0 && rPckt)))\c2.reset();]
+loc0i1i2i3i1l2l -> loc0i1i2i3i1l2l [all\((c2.compareToMillis((long)5000)<0 || rPckt) && rPckt && (c3.compareToMillis((long)5000)<0 || (c2.compareToMillis((long)5000)<0 && rPckt)) && (c2.compareToMillis((long)5000)<0 && rPckt))\c2.reset();c3.reset();]
+loc0i1i2i3i1l2l -> unhandled [all]
+}
+}
+}
+}%%GLOBAL

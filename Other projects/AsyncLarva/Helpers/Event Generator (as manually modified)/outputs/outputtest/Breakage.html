@@ -1,0 +1,96 @@
+
+<html>
+<body bgcolor="white">
+<h2>Breakage</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main4');" id=xmain4>[-]</a>
+
+Unexpected Breakage at 1230134493699 user user119500
+
+<div id=main4 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+Unexpected Breakage at 1230134702106 user user23500
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main8');" id=xmain8>[-]</a>
+
+Early Breakage at 1230221050279 user user191500
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main12');" id=xmain12>[-]</a>
+
+Unexpected Breakage at 1230307256660 user user29000
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main16');" id=xmain16>[-]</a>
+
+Unexpected Breakage at 1230394278774 user user161750
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main29');" id=xmain29>[-]</a>
+
+Unexpected Breakage at 1231344222151 user user33000
+
+
+
+ </div> 
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

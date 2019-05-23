@@ -1,0 +1,9 @@
+digraph _logic_load_count {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; countExceeded;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> countExceeded [label = "(1) loadevent\\( ( ( SC . loadLimits ( l...\\..."];
+start -> start [label = "(2) loadevent\\\\..."];
+}

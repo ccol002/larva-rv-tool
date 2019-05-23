@@ -1,0 +1,147 @@
+IMPORTS {
+import Events.Template;
+}
+
+GLOBAL {
+
+ FOREACH (String s) {
+ 
+ 
+ VARIABLES {
+  
+  
+  %%int idp = 180;%%86400 seconds in a day
+  %%int drp = 30;
+  %%int bwp = 330;
+  %%int bp = 360;
+  
+ %% int active = 0;
+ %% int suspended = 1;
+ %% int dormant = 2;
+ %% int suspended_dormant = 3;
+ %% int closed = 4;  
+  
+  long passStart = System.currentTimeMillis();
+  long lastFreeze;
+  boolean feeExpected = false;
+  
+ %% int currentState = closed;
+ 
+  Clock idp;
+  Clock drp;
+  Clock bp;
+  
+  %%int anycall = runInitialization(); 
+  %%either run initialization here...
+  %%or even better do it in the interface application (which bridges the database with LARVA)
+  
+  %%how can obtain an exhaustive list of all the users? is the log sufficient? i dont think so...
+  }
+  
+    
+ EVENTS {
+  cATidp(timestamp) = {idp @d 185} where {timestamp = RunningClock.now;}
+  cATdrp(timestamp) = {drp @d 35} where {timestamp = RunningClock.now;}
+  cATbp(timestamp) = {bp @d 360} where {timestamp = RunningClock.now;}
+  
+  all(timestamp,t) = {Template t.call(String name, long timestamp)} where s = t.params.get("userId").toString();
+
+ }
+ 
+ %%how can I query the user balance before and after the transaction?
+ %%
+ 
+ 
+ PROPERTY count {
+  STATES {
+   BAD { bad 
+   expiredDorm
+   expiredBreak }
+   NORMAL { frozen closed }
+   STARTING {start} 
+  }
+  TRANSITIONS {
+   
+   start -> frozen 
+     [ all 
+     \ t.is("DormTX") 
+     \ drp.reset(timestamp);
+       feeExpected = true; 
+       lastFreeze = timestamp; 
+       System.out.println(s + " Frozen at " + timestamp);
+     ]  
+   start -> expiredDorm 
+     [ cATidp
+     \ %%passedDays(passStart,timestamp,idp)
+     \ System.out.println(s + " Expired Dormancy! " + passStart + "->" + timestamp);
+     ]   
+   start -> expiredBreak 
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]      
+   start -> start 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+     ]   
+   frozen -> start
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+         feeExpected = false;
+       }
+     ]
+   frozen -> closed  
+     [ all
+     \ t.is("BreakTX")
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]        
+   frozen -> frozen
+     [ all 
+     \ t.is("DormFeeTX") 
+     \ 
+       feeExpected = false; 
+       System.out.println(s + " Fee taken at " + timestamp);
+     ]      
+   frozen -> frozen
+     [ all 
+     \ t.is("DormTX") 
+     \ drp.reset(timestamp);
+       lastFreeze = timestamp;
+       System.out.println(s + " Frozen again at " + timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+       }
+       feeExpected = true;
+     ]   
+   frozen -> expiredDorm
+     [ cATdrp
+     \ %%passedDays(lastFreeze,timestamp,drp)
+     \ 
+       System.out.println(s + " Expired Dormancy! " + lastFreeze + "->" + timestamp);
+     ]
+   frozen -> expiredBreak
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]   
+   }
+ }
+ }
+}
+
+METHODS {
+
+boolean passedDays(long start,long now,int days)
+{//an allowance of 5 days
+return (((now-start)/(1000*60*60*24))>(days + 5));
+}
+
+}

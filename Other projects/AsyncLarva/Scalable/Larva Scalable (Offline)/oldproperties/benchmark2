@@ -1,0 +1,71 @@
+IMPORTS{
+
+import benchmark.*;
+
+}
+
+GLOBAL{
+
+FOREACH(User u)
+{
+VARIABLES{
+int count = 0;
+}
+
+EVENTS{
+
+addTransaction() = {User u1.addTransaction()} where u = u1;
+}
+
+PROPERTY lessThan5{
+
+STATES{
+BAD{bad {_killThis();}}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> bad [addTransaction\count > 5\System.out.println("More than 5 transactions added to User: " + u);]
+starting -> starting [addTransaction\\count++;]
+}
+}
+
+FOREACH(Transaction t)
+{
+
+INVARIANTS{
+
+Double amountInv = t.getAmount();
+}
+
+VARIABLES{
+int retries = 0;
+double ourAmount = -1;
+}
+
+EVENTS{
+
+setAmount(double amount) = {Transaction t1.setAmount(amount)}
+where {t = t1;u=t.getOwner();}
+
+transaction() = {t1.*() uponReturning()} where {t = t1;u=t.getOwner();}
+
+}
+
+PROPERTY settingAmount{
+STATES{
+BAD {bad {_killThis();}}
+STARTING {starting}
+}
+TRANSITIONS{
+starting -> starting [setAmount\ourAmount == -1\ourAmount = amount;]
+[enable amountInv]
+
+starting -> starting [transaction]
+}
+}
+
+
+}
+}
+}

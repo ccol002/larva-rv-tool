@@ -1,0 +1,132 @@
+
+<html>
+<body bgcolor="white">
+<h2>Load_amount</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main0');" id=xmain0>[-]</a>
+
+LOAD amount exceeded user :user183500
+
+<div id=main0 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ loaded THB 0.0 in a day... limit: 0.0
+ <br> 
+
+
+ loaded THB 0.0 in a month... limit: 0.0
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main12');" id=xmain12>[-]</a>
+
+LOAD amount exceeded user :user181500
+
+<div id=main12 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ loaded HKD 0.0 in a day... limit: 0.0
+ <br> 
+
+
+ loaded HKD 0.0 in a month... limit: 0.0
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main13');" id=xmain13>[-]</a>
+
+LOAD amount exceeded user :user180750
+
+<div id=main13 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ loaded THB 0.0 in a day... limit: 0.0
+ <br> 
+
+
+ loaded THB 0.0 in a month... limit: 0.0
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main21');" id=xmain21>[-]</a>
+
+LOAD amount exceeded user :user180500
+
+<div id=main21 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ loaded THB 0.0 in a day... limit: 0.0
+ <br> 
+
+
+ loaded THB 0.0 in a month... limit: 0.0
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main28');" id=xmain28>[-]</a>
+
+LOAD amount exceeded user :user182500
+
+<div id=main28 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ loaded THB 0.0 in a day... limit: 0.0
+ <br> 
+
+
+ loaded THB 0.0 in a month... limit: 0.0
+ <br> 
+</div></div>
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

@@ -1,0 +1,45 @@
+IMPORTS {
+import sniffer.*;
+import java.net.InetAddress;
+}
+
+GLOBAL {
+FOREACH(InetAddress ip,InetAddress ip2, Integer port1, Integer port2) {
+
+VARIABLES {}
+
+EVENTS {
+
+receiveSYN(boolean rSYN, boolean sSYN) = {*.receiveSYN(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+										 where { rSYN = true; sSYN = false; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+sendSYN(boolean rSYN, boolean sSYN) = {*.sendSYN(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+										 where { rSYN = false; sSYN = true; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+
+all() = {receiveSYN | sendSYN}
+}
+
+PROPERTY ceform {
+STATES {
+BAD { unhandled  loc1i  loc0i1i }
+NORMAL {  loc  loc0i }
+STARTING { start }
+}
+
+TRANSITIONS {
+loc -> loc [all\true\]
+loc -> unhandled [all]
+loc1i -> loc1i [all\true\]
+loc1i -> unhandled [all]
+start -> loc0i [all\true]
+loc0i -> loc [all\(sSYN && !(rSYN))\]
+loc0i -> loc1i [all\(sSYN && rSYN)\]
+loc0i -> loc0i [all\(!sSYN && !(rSYN))\]
+loc0i -> loc0i1i [all\(!sSYN && rSYN)\]
+loc0i -> unhandled [all]
+loc0i1i -> loc1i [all\sSYN\]
+loc0i1i -> loc0i1i [all\!sSYN\]
+loc0i1i -> unhandled [all]
+}
+}
+}
+}%%GLOBAL

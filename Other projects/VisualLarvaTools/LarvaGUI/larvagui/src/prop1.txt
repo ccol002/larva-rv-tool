@@ -1,0 +1,7 @@
+compilerAddress = "C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\Larva\\bin"
+applicAddress = "C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\DBConnection\\bin"
+propertiesAddress = "C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\properties"
+mainClass = "Events.EventGenerator"
+aspectj_home = "C:\\Program Files (x86)\\Java\\aspectj1.6"
+graphviz = "C:\\Program Files (x86)\\Graphviz 2.21"
+arguments = ""

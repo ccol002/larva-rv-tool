@@ -1,0 +1,8 @@
+[LARVA] Monitoring started at  2009-06-16 08:22:20
+[dormancy]Expired Dormancy! User: user4250 1215500153123->1231052153123
+[dormancy]Expired Dormancy! User: user5500 1215981636089->1231533636089
+[dormancy]Expired Dormancy! User: user500 1217117336410->1232669336410
+[dormancy]Dormancy done!! User user500 at 1233073996310 112.40552777777778 hours late
+[dormancy]Expired Dormancy! User: user7000 1217545560011->1233097560011
+[dormancy]Expired Dormancy! User: user4500 1217671088335->1233223088335
+[dormancy]Dormancy done!! User user4500 at 1233592318450 102.56392083333333 hours late

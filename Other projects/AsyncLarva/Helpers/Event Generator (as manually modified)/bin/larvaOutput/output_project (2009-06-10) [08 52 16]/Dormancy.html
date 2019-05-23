@@ -1,0 +1,58 @@
+
+<html>
+<body bgcolor="white">
+<h2>Dormancy</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main0');" id=xmain0>[-]</a>
+
+Expired Dormancy! User: user160000 1214246885106->1229798885106
+
+<div id=main0 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+ <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+   </requires>
+
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Larva Editor"
+            extensions="lrv"
+            icon="icons/sample.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="larvaplugin.editors.LarvaEditor"
+            id="larvaplugin.editors.LarvaEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Larva Script Wizard"
+            id="LarvaPlugin">
+      </category>
+      <wizard
+            name="Larva Scriprt File"
+            icon="icons/sample.gif"
+            category="LarvaPlugin"
+            class="larvaplugin.wizards.SampleNewWizard"
+            id="larvaplugin.wizards.SampleNewWizard">
+      </wizard>
+   </extension>
+
+</plugin>

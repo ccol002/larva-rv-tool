@@ -1,0 +1,1 @@
+not ( true ; invchange(D);[D] and len > 1000 and nochange(Alarm); [not Alarm] ; true)

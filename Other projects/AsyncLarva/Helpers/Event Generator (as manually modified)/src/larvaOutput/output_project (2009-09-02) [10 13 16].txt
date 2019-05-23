@@ -1,0 +1,21 @@
+[LARVA] Monitoring started at  2009-09-02 10:13:16
+[balance_check]Expected balance: -83.96 found(at monitor): -41.98
+ user: user57500 allocation: 11f0f57d658030e at 1233230030043 TX ID: 11f223ce4db0e0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233218096908, user=user171500, transactionAmount=261.00, transactionCurrency=USD, transactionEntryId=11f2186cf0d0f0e, instrument=11ef8b90d77090e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: -1128.1 found(at monitor): -1108.16
+ user: user105750 allocation: 11e78f415730c0e at 1233231553033 TX ID: 11f225422090d0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233218096908, user=user171500, transactionAmount=261.00, transactionCurrency=USD, transactionEntryId=11f2186cf0d0f0e, instrument=11ef8b90d77090e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: -522.5 found(at monitor): -418.0
+ user: user87250 allocation: 11f2b61071e0a0e at 1233548491157 TX ID: 11f35383995040e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233532270995, user=user231000, instrument=11e5f30c9e40b0e, freezeOrigin=OPS_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 112.33 found(at monitor): 117.21
+ user: user39500 allocation: 20080814c31e660645566a78 at 1233575698623 TX ID: 11f36d760c0050e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233564910882, user=user172250, transactionAmount=150.00, transactionCurrency=USD, transactionEntryId=11f3632c523030e, instrument=11ea820d58c0a0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}

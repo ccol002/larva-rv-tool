@@ -1,0 +1,19 @@
+digraph _logic_dormancy {
+rankdir=LR;
+node [shape = circle]; dorm nondorm;
+node [shape = octagon]; unexpectedTX expiredDorm earlyDorm unexpectedDorm;
+node [shape = point]; _s_s;
+_s_s -> nondorm;
+nondorm -> nondorm [ label = "(1) all1\\t . is ( \" NormTX \" ) \\..."];
+nondorm -> nondorm [ label = "(2) validTX\\\\..."];
+nondorm -> dorm [ label = "(3) all1\\t . is ( \" DormTX \" ) &...\\..."];
+nondorm -> earlyDorm [ label = "(4) all1\\t . is ( \" DormTX \" ) &...\\..."];
+nondorm -> unexpectedDorm [ label = "(5) all1\\t . is ( \" DormTX \" ) \\..."];
+nondorm -> expiredDorm [ label = "(6) cATidp\\( ! suspended || ! ignore...\\..."];
+dorm -> nondorm [ label = "(1) all1\\t . is ( \" UnDormTX \" )...\\..."];
+dorm -> dorm [ label = "(2) all1\\t . is ( \" DormFeeTX \" ...\\..."];
+dorm -> earlyDorm [ label = "(3) all1\\t . is ( \" DormTX \" ) \\..."];
+dorm -> expiredDorm [ label = "(4) cATdrp\\timestamp > SC . initialT...\\..."];
+dorm -> unexpectedTX [ label = "(5) all1\\t . is ( \" NormTX \" ) \\..."];
+expiredDorm -> dorm [ label = "(1) all1\\t . is ( \" DormTX \" ) &...\\..."];
+}

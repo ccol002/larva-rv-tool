@@ -1,0 +1,9 @@
+digraph _logic_transfer_tx {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; norights;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) all1\\t . is ( \" NormTX \" ) &...\\..."];
+start -> norights [ label = "(2) all1\\t . is ( \" NormTX \" ) &...\\..."];
+}

@@ -1,0 +1,102 @@
+IMPORTS{
+
+import benchmark.*;
+
+}
+
+GLOBAL{
+
+FOREACH(User u)
+{
+VARIABLES{
+int count = 0;
+}
+
+EVENTS{
+
+addTransaction() = {User u1.addTransaction()} where u = u1;
+}
+
+PROPERTY lessThan5{
+
+STATES{
+BAD{bad {_killThis();}}
+STARTING{starting}
+}
+
+TRANSITIONS{
+starting -> bad [addTransaction\count > 5\System.out.println("More than 5 transactions added to User: " + u);]
+starting -> starting [addTransaction\\count++;]
+}
+}
+
+FOREACH(Transaction t)
+{
+
+INVARIANTS{
+
+Double amountInv = t.getAmount();
+}
+
+VARIABLES{
+Clock c;
+int retries = 0;
+}
+
+EVENTS{
+clock() = {c@%2}
+
+setAmount(double amount) = {Transaction t1.setAmount(amount)}
+where {t = t1;u=t.getOwner();}
+
+transaction() = {t1.*() uponReturning()} where {t = t1;u=t.getOwner();}
+
+execute(boolean result) = {t1.execute() uponReturning (result)}
+where {t = t1;u=t.getOwner();}
+
+executeExc() = {t1.execute() uponThrowing (*)}where {t = t1;u=t.getOwner();}
+}
+
+PROPERTY settingAmount{
+STATES{
+BAD {bad{_killThis();}}
+STARTING {starting}
+}
+TRANSITIONS{
+starting -> starting [setAmount]
+[enable amountInv]
+
+starting -> starting [transaction]
+}
+}
+
+PROPERTY retryTimeoutandExceptionRetry{
+STATES{
+ACCEPTING{ok{_killThis();} exception}
+BAD{bad{_killThis();}}
+NORMAL{normal}
+STARTING{starting}
+}
+
+%%the first retry is the actual execution
+%%when retry is 1 (expecting 2) the timer should not exceed 2
+%%when retry is 2 (expecting 3) the timer should not exceed 4 
+
+TRANSITIONS{
+starting -> normal [execute\!result\retries++;c.reset();]
+normal -> ok [execute\result]
+starting -> ok [execute\result]
+normal -> ok [execute\retries == 4]
+normal -> normal [execute\!result\retries++;]
+normal -> bad [clock\c.compareTo((retries)*2)>=0 && retries < 5]
+normal -> exception [executeExc]
+starting -> exception [executeExc]
+exception -> bad [execute]
+exception -> bad [executeExc]
+}
+}
+
+
+}
+}
+}

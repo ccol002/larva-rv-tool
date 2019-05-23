@@ -1,0 +1,1 @@
+not(true;change(failedConn);[true] and len < 10 and nochange(succConn);change(failedConn);[true] and len < 10 and nochange(succConn);change(failedConn);true)

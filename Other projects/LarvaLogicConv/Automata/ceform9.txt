@@ -1,0 +1,1 @@
+not (true;change(badlogin);[true] and len < 500;change(badlogin);[true] and len < 700;change(badlogin);[true] and len < 1000;change(badlogin);true)

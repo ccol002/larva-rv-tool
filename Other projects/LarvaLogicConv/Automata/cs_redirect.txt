@@ -1,0 +1,1 @@
+not(true;change(redirectMSG);[true] and len < 1000;change(redirectMSG);[true] and len < 1000;change(redirectMSG);true)

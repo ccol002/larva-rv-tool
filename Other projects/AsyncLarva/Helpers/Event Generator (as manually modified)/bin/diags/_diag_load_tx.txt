@@ -1,0 +1,10 @@
+digraph _logic_load_tx {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; norights mismatch;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [label = "(1) all1\\( t . is ( \" NormTX \" )...\\..."];
+start -> mismatch [label = "(2) all1\\( t . is ( \" CallCentreL...\\..."];
+start -> norights [label = "(3) all1\\( t . is ( \" NormTX \" )...\\..."];
+}

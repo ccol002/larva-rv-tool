@@ -1,0 +1,40 @@
+IMPORTS {import main.*;} 
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+long pre_4_37;
+boolean p_1_28;
+boolean age_2_32;
+boolean after_38;
+long age_35;
+long _rt_clock;
+boolean pre_15;
+boolean pre_14;
+long temptime_36;
+boolean p_0_34;
+boolean pre_0_39;
+boolean p_0_31;
+boolean p_1_33;
+boolean p_1_30;
+boolean p_0_29;
+boolean _p;
+}
+
+ EVENTS {_b_event(boolean _b,boolean D,boolean Alarm) = {Main *.start()} where { _b = true; D = true; Alarm = false;} D_event(boolean _b,boolean D,boolean Alarm) = {DH2O *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} Alarm_event(boolean _b,boolean D,boolean Alarm) = {ALARM *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} initializationEvent() = {Main *.initialize()} periodicEvent(boolean _b,boolean D,boolean Alarm) = {_b_event|D_event|Alarm_event} }
+
+PROPERTY stable_3 {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_14 = false;pre_15 = false;pre_4_37 = 0;pre_0_39 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();p_0_34 = D;after_38 = (_b)?(true):(pre_0_39);p_0_31 = D;p_0_29 = D;p_1_33 = !(p_0_34);p_1_28 = !(p_0_29);p_1_30 = !(p_0_31);_p = !(pre_14 && !(p_1_28) && pre_15);temptime_36 = (!(after_38 && p_1_33))?(_rt_clock):(pre_4_37);age_35 = _rt_clock - temptime_36;age_2_32 = age_35 < 2000.0;pre_14 = p_1_30;pre_15 = age_2_32;pre_4_37 = temptime_36;pre_0_39 = after_38;System.out.println(" _b: " + _b + " " + " _rt_clock: " + _rt_clock + " " + " D: " + D + " " + " output: " + _p + " ");]
+}
+}
+}
+

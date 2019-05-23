@@ -1,0 +1,13 @@
+<aspectj>
+<aspects>
+<aspect name="aspects._asp_dormancy31"/>
+<aspect name="aspects._asp_loadcountSOA0"/>
+<aspect name="aspects._asp_dormancy0"/>
+<aspect name="aspects._asp_dormancy30"/>
+<aspect name="aspects._asp_dormancy1"/>
+<aspect name="aspects._asp_loadamountSOA0"/>
+<aspect name="aspects._asp_loadamountSOA1"/>
+<aspect name="aspects._asp_loadcountSOA1"/>
+</aspects>
+</aspectj>
+

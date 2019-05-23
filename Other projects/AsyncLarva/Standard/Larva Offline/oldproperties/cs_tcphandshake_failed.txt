@@ -1,0 +1,68 @@
+IMPORTS {
+import larva.*;
+import sniffer.*;
+import java.net.*;
+}
+
+GLOBAL {
+
+FOREACH(InetAddress ip,InetAddress ip2, Integer port1, Integer port2) {
+
+VARIABLES {
+Clock c3;
+}
+EVENTS {
+receiveSYN(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.receiveSYN(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = true; sSYNACK = false; rACK = false; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+sendSYNACK(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.sendSYNACK(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = false; sSYNACK = true; rACK = false; ip2 = src; ip = dst; port2 = src_port; port1 = dst_port;}
+receiveACK(boolean rSYN, boolean sSYNACK, boolean rACK) = {*.receiveACK(InetAddress src, InetAddress dst, int src_port, int dst_port)}
+				 where { rSYN = false; sSYNACK = false; rACK = true; ip = src; ip2 = dst; port1 = src_port; port2 = dst_port;}
+
+c3AT1(boolean rSYN, boolean sSYNACK, boolean rACK) = {c3@1.0}where { rSYN = false; sSYNACK = false; rACK = false; }
+all() = {receiveSYN|sendSYNACK|receiveACK|c3AT1}
+
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i1i3i {_cls_cs_retries1.chFailed.send(ip); _killThis();}
+ loc0i1i2i3i {_cls_cs_retries1.chFailed.send(ip); _killThis();}
+ loc0i1i2i3i2w {_cls_cs_retries1.chFailed.send(ip); _killThis();} 
+ }
+NORMAL {
+ loc0i
+ loc0i1i
+ loc0i1i2i2w
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(rSYN)\]
+loc0i -> loc0i1i [all\rSYN\]
+loc0i -> unhandled [all]
+loc0i1i -> loc0i1i [all\!(sSYNACK)\]
+loc0i1i -> loc0i1i2i2w [all\sSYNACK\c3.reset();]
+loc0i1i -> unhandled [all]
+loc0i1i3i -> loc0i1i3i [all\!(sSYNACK)\]
+loc0i1i3i -> loc0i1i2i3i2w [all\sSYNACK\c3.reset();]
+loc0i1i3i -> unhandled [all]
+loc0i1i2i2w -> loc0i1i [all\!((!rACK || sSYNACK))\]
+loc0i1i2i2w -> loc0i1i2i2w [all\((!rACK || sSYNACK) && !(rACK) && c3.compareToMillis((long)15.0)<0)\]
+loc0i1i2i2w -> loc0i1i2i2w [all\((!rACK || sSYNACK) && rACK)\c3.reset();]
+loc0i1i2i2w -> loc0i1i2i3i [all\((!rACK || sSYNACK) && !(rACK) && !(c3.compareToMillis((long)15.0)<0))\]
+loc0i1i2i2w -> unhandled [all]
+loc0i1i2i3i -> loc0i1i3i [all\!((!rACK || sSYNACK))\]
+loc0i1i2i3i -> loc0i1i2i3i [all\((!rACK || sSYNACK) && !(rACK))\]
+loc0i1i2i3i -> loc0i1i2i3i2w [all\((!rACK || sSYNACK) && rACK)\c3.reset();]
+loc0i1i2i3i -> unhandled [all]
+loc0i1i2i3i2w -> loc0i1i3i [all\!((!rACK || sSYNACK))\]
+loc0i1i2i3i2w -> loc0i1i2i3i [all\((!rACK || sSYNACK) && !(rACK) && !(c3.compareToMillis((long)15.0)<0))\]
+loc0i1i2i3i2w -> loc0i1i2i3i2w [all\((!rACK || sSYNACK) && !(rACK) && c3.compareToMillis((long)15.0)<0)\]
+loc0i1i2i3i2w -> loc0i1i2i3i2w [all\((!rACK || sSYNACK) && rACK)\c3.reset();]
+loc0i1i2i3i2w -> unhandled [all]
+}
+}
+}
+}%%GLOBAL

@@ -1,0 +1,1 @@
+(age(D)<=1000) or age(Alarm)>0 %%no longer works because the definition of age in realtime will become greater than zero upon the second occurrence

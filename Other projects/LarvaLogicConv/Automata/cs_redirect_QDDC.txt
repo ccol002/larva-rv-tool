@@ -1,0 +1,1 @@
+([true]0 or [[not redirect]) then ([redirect]0 then (([true]0 or ([[not redirect] and len<2000)) then  ([redirect]0 then (([true]0 or ([[not redirect] and len<2000)) then ([redirect]0 then [[true]+) ) )  ))              %% or [[not redirect]+)  then ([redirect]0)))%% then (([true]0 or [[not redirect]+) and len<2000 then ([redirect]0 then [[true]]+)))))

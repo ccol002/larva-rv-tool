@@ -1,0 +1,69 @@
+IMPORTS{
+import Events.Template;
+import java.math.BigDecimal;
+}
+
+GLOBAL {
+
+ FOREACH (String s) {
+
+ VARIABLES {
+
+  int period = 1;%%day
+  int USDlimit = 2000;
+  int GBPlimit = USDlimit/2;
+  int EURlimit = GBPlimit + GBPlimit/2;
+  
+  int day = 24*60*60*1000;
+  
+  long dayTimestamp = -1;
+  double total = 0;
+  }
+  
+ EVENTS {
+   all(timestamp,t,String currency, double amount) = {Template t.call(String name, long timestamp)} 
+     filter {t.is("LoadTX")}
+     where {s = t.params.get("userId").toString();
+             amount =  ((BigDecimal)t.params.get("transactionAmount")).doubleValue();
+              currency = (String)t.params.get("transactionCurrency");
+              
+            }
+ }
+ 
+ PROPERTY count {
+ 
+  STATES {
+   BAD { 
+     countExceeded {
+       System.out.println(s + " LOAD amount exceeded: " + currency + " " + total + " in " + period + " day(s)");
+       }  
+     }
+   STARTING {start} 
+  }
+  
+  TRANSITIONS {
+   start -> countExceeded 
+     [ all
+     \ t.is("LoadTX")
+      && (dayTimestamp == -1 
+        || timestamp/day == dayTimestamp/day)
+      && (currency.equals("USD") && (total + amount) >= USDlimit
+        || currency.equals("GBP") && (total + amount) >= GBPlimit
+        || currency.equals("EUR") && (total + amount) >= EURlimit)
+     \total += amount;
+     ]
+   start -> start 
+     [ all
+     \ t.is("LoadTX")
+     \ if (dayTimestamp == -1 || timestamp/day != dayTimestamp/day){
+         dayTimestamp = timestamp;
+         total = amount;
+       }
+       else {
+        total += amount; 
+        } 
+     ]
+   }
+ }
+ }
+}

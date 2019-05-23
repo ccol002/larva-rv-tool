@@ -1,0 +1,138 @@
+
+<html>
+<body bgcolor="white">
+<h2>Load_amount</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main24');" id=xmain24>[-]</a>
+
+LOAD amount exceeded user :user106500 loaded EUR 1700.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main39');" id=xmain39>[-]</a>
+
+LOAD amount exceeded user :user45750 loaded USD 6330.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main53');" id=xmain53>[-]</a>
+
+LOAD amount exceeded user :user238250 loaded EUR 1650.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main103');" id=xmain103>[-]</a>
+
+LOAD amount exceeded user :user77250 loaded USD 2050.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main154');" id=xmain154>[-]</a>
+
+LOAD amount exceeded user :user105750 loaded GBP 1030.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main208');" id=xmain208>[-]</a>
+
+LOAD amount exceeded user :user36000 loaded USD 2018.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main246');" id=xmain246>[-]</a>
+
+LOAD amount exceeded user :user171500 loaded USD 2074.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main291');" id=xmain291>[-]</a>
+
+LOAD amount exceeded user :user116250 loaded EUR 1550.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main378');" id=xmain378>[-]</a>
+
+LOAD amount exceeded user :user103000 loaded USD 2064.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main401');" id=xmain401>[-]</a>
+
+LOAD amount exceeded user :user238000 loaded EUR 1550.0 in 1 day(s)
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main484');" id=xmain484>[-]</a>
+
+LOAD amount exceeded user :user195250 loaded EUR 1600.0 in 1 day(s)
+
+<div id=main484 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

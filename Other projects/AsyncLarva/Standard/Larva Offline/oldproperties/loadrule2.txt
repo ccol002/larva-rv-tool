@@ -1,0 +1,31 @@
+GLOBAL {
+ FOREACH (String s) {
+ VARIABLES {
+  Clock c0;
+  Clock c1;
+  Clock c2;
+  int count = 0;
+  }
+ EVENTS {
+  LOAD(long timestamp) = { *.methodLOAD(timestamp, String user)} where s = user;
+  clock0() = {c0@3600.0}
+  clock1() = {c1@3600.0}
+  clock2() = {c2@3600.0}
+ }
+ PROPERTY count {
+  STATES {
+   BAD { action {System.out.println("Action Recommended: restrict_load_right");} }
+   STARTING {start} 
+  }
+  TRANSITIONS {
+   start -> start [LOAD\count==0\count++;c0.reset();]
+   start -> start [clock0\\count--;]
+   start -> start [LOAD\count==1\count++;c1.reset();]
+   start -> start [clock1\\count--;]
+   start -> start [LOAD\count==2\count++;c2.reset();]
+   start -> start [clock2\\count--;]
+   start -> action [LOAD\count == 3 ]
+   }
+ }
+ }
+}

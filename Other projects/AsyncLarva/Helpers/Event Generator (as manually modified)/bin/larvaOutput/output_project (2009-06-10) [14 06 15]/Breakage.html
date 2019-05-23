@@ -1,0 +1,178 @@
+
+<html>
+<body bgcolor="white">
+<h2>Breakage</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main3');" id=xmain3>[-]</a>
+
+Expired Breakage! user user161750 1198762863843->1230126063843
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main7');" id=xmain7>[-]</a>
+
+Expired Breakage! user user116500 1198835431133->1230198631133
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main9');" id=xmain9>[-]</a>
+
+Expired Breakage! user user211750 1198844728697->1230207928697
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main17');" id=xmain17>[-]</a>
+
+Expired Breakage! user user110250 1199002231323->1230365431323
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main18');" id=xmain18>[-]</a>
+
+Breakage done!! user user161750 at 146.5041475 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main19');" id=xmain19>[-]</a>
+
+Expired Breakage! user user185750 1199063392732->1230426592732
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main22');" id=xmain22>[-]</a>
+
+Breakage done!! user user211750 at 147.59850305555557 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main23');" id=xmain23>[-]</a>
+
+Breakage done!! user user116500 at 150.34526666666667 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main27');" id=xmain27>[-]</a>
+
+Expired Breakage! user user186750 1199270126668->1230633326668
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main29');" id=xmain29>[-]</a>
+
+Breakage done!! user user110250 at 151.97901916666666 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main33');" id=xmain33>[-]</a>
+
+Breakage done!! user user185750 at 158.88048583333332 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main34');" id=xmain34>[-]</a>
+
+Expired Breakage! user user203500 1199386493295->1230749693295
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main36');" id=xmain36>[-]</a>
+
+Breakage done!! user user186750 at 149.44207972222222 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main39');" id=xmain39>[-]</a>
+
+Expired Breakage! user user236000 1199615894306->1230979094306
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main40');" id=xmain40>[-]</a>
+
+Expired Breakage! user user33000 1199640541421->1231003741421
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main41');" id=xmain41>[-]</a>
+
+Breakage done!! user user203500 at 165.1806552777778 hours late
+
+<div id=main41 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

@@ -1,0 +1,7 @@
+compilerAddress = C:\\Users\\University User\\Desktop\\projects\\Larva\\bin
+applicAddress = C:\\Users\\University User\\Desktop\\projects\\Testing\\bin
+propertiesAddress = C:\\Users\\University User\\Desktop\\projects\\Larva\\bin
+mainClass = Events.EventGenerator
+aspectjAddress = C:\\Program Files (x86)\\Java\\aspectj1.6
+graphvizAddress = C:\\Program Files (x86)\\Graphviz 2.21
+arguments = 

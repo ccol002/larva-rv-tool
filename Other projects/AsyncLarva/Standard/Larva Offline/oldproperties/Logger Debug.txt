@@ -1,0 +1,100 @@
+IMPORTS{
+
+import org.apache.log4j.Logger;
+}
+
+GLOBAL{
+
+EVENTS{
+
+log(String ccn)               =  {Logger l.*(ccn)}
+}
+
+
+
+PROPERTY logging{
+
+
+STATES{
+
+BAD{
+bad_state
+}
+
+STARTING {
+
+start
+}
+
+}
+
+TRANSITIONS{
+
+start               -> start     [log(ccn)\NotCCN(ccn)]
+
+start               -> bad_state [log(ccn)\\System.out.println("This Log may contain a CC No: " + ccn);]
+
+bad_state           -> start     [log(ccn)\NotCCN(ccn)]
+
+bad_state           -> bad_state [log(ccn)\\System.out.println("This Log may contain a CC No: " + ccn);]
+
+}
+}
+}%%GLOBAL
+
+METHODS{
+
+private static boolean NotCCN(String ccn)
+	{
+	int cnt = 0;
+	int last = 0;
+	boolean found = false;
+	for (int i = 0; i < ccn.length(); i++)
+	{
+		if (Character.isDigit(ccn.charAt(i)) && last == i-1)
+		{
+			cnt++;
+		    last = i;
+		}
+		else if (Character.isDigit(ccn.charAt(i)))
+		{
+			cnt = 1;
+		    last = i;
+		}
+		else if (last == i-1)
+		{
+			if (cnt > 6 && cnt < 20)
+			{
+				if (checkCCN(ccn.substring(last-cnt+1, last+1))) 
+					found = true;
+			}
+			cnt = 0;
+		}
+	}
+	if (cnt > 6 && cnt < 20)
+	{
+		if (checkCCN(ccn.substring(last-cnt+1, last+1))) 
+			found = true;
+	}
+
+	return !found;
+	}
+
+	private static boolean checkCCN(String ccn)
+	{
+		if (ccn.length() > 19 || ccn.length() < 8)
+			return false;
+		int cnt = 0;
+		for (int j = 0; j < ccn.length(); j++)
+		{
+			int temp = Integer.valueOf(ccn.substring(j,j+1));
+			if (j%2==0 && j != ccn.length()-1)
+			{
+				temp *= 2;
+				if (temp >= 10) temp-=9;
+			}
+			cnt += temp;
+		}	
+		return (cnt % 10 == 0);
+	}
+}

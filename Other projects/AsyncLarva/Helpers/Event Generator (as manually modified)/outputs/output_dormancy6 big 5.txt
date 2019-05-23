@@ -1,0 +1,532 @@
+Loading without necessary rights!! WEB user: user113000 1230026986061
+Expected balance: 173.0 found: 23049.0
+Expected balance: 5.725376148E7 found: 41.0
+Expected balance: 19.86 found: 5033.19
+Expected balance: 5409116.81 found: 19.05
+Expected balance: 33818.98 found: 0.14
+Expected balance: -33824.01 found: -0.14
+Expected balance: 499.0 found: -100.0
+Expected balance: 9484796.5 found: 100.0
+Expected balance: -199.39 found: -230.87
+Expected balance: 90.0 found: 30.0
+Expected balance: 2425060.95 found: 1.48
+Loading without necessary rights!! WEB user: user168750 1230049713962
+user160000 Expired Dormancy!1 1214246885106->1230058819316
+Expected balance: -13984.69 found: -18445.08
+Expected balance: 1218.95 found: 500.0
+Expected balance: 60.05 found: 0.0
+user155250 Expired Dormancy!2 1227269399580->1230120691345
+Expected balance: 163107.68 found: 2.18
+Expected balance: -163108.12 found: -2.18
+Loading without necessary rights!! WEB user: user105750 1230121159418
+Expected balance: 370.26 found: 1350.24
+user161750 Expired Breakage! 1198762863843->1230126497797
+user36750 Expired Dormancy!1 1214315131330->1230126497797
+Expected balance: 350.0 found: -15.86
+Expected balance: 463191.42 found: 9.9
+Loading without necessary rights!! WEB user: user163000 1230139077697
+Loading without necessary rights!! WEB user: user121750 1230151582236
+Expected balance: 100.0 found: -150.0
+Expected balance: 0.0 found: -94.93
+Expected balance: 33136.76 found: 10.88
+user116500 Expired Breakage! 1198835431133->1230202095585
+user47000 Expired Dormancy!1 1214395627127->1230207303507
+Expected balance: 2.0 found: -76.0
+user211750 Expired Breakage! 1198844728697->1230209295201
+Expected balance: 16.22 found: 6.8
+Expected adjustment (1.0) does NOT match actual (-1.0)!
+Expected balance: 0.0 found: -1.0
+Expected balance: 19973.16 found: 1.0
+Loading without necessary rights!! WEB user: user199250 1230223322263
+user28750 Expired Dormancy!1 1214422621167->1230234686000
+user187500 Expired Dormancy!2 1227398776044->1230251208489
+Loading without necessary rights!! WEB user: user80000 1230251208489
+user154500 Expired Dormancy!2 1227412907546->1230264806617
+Expected balance: 20.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -500.0
+user160750 Expired Dormancy!2 1227442071728->1230293345845
+user86500 Expired Dormancy!1 1214493449557->1230304958221
+user188500 Expired Dormancy!1 1214498023414->1230309685449
+Loading without necessary rights!! WEB user: user149250 1230336122091
+Loading without necessary rights!! WEB user: user166500 1230347625825
+user110250 Expired Breakage! 1199002231323->1230384090000
+user44000 Expired Dormancy!2 1227528542008->1230384090000
+Transferring without necessary rights!! user: user105750 1230389055774
+Expected balance: 79.16 found: -3.0
+user52750 Expired Breakage! 1199041154444->1230406088116
+user203250 Expired Dormancy!1 1214605539030->1230440331000
+user185750 Expired Breakage! 1199063392732->1230440331000
+user45250 Expired Dormancy!1 1214637497528->1230459565000
+user84750 Expired Dormancy!2 1227614940025->1230469268590
+Expected balance: 0.0 found: -20.0
+Expected balance: 350.0 found: -20.0
+user69250 Expired Dormancy!2 1227672177621->1230523497726
+Expected balance: 65.0 found: -20.0
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -385.85
+Expected balance: 0.0 found: -22.69
+Expected balance: 0.0 found: -22.69
+Loading without necessary rights!! WEB user: user38750 1230554157170
+Expected balance: 0.0 found: -300.0
+Expected balance: 0.0 found: -500.0
+Expected balance: 17.42 found: 1.46
+Adding VCC without necessary rights!! user: user113000 instrument: 11e82fdf46c0f0e 1230558327000
+Loading without necessary rights!! WEB user: user73500 1230562201123
+user8500 Expired Dormancy!1 1214786592921->1230605674778
+user226250 Expired Dormancy!1 1214792661095->1230605674778
+Expected balance: -52.24 found: -104.48
+Expected balance: 35.52 found: 110.74
+user9750 Expired Dormancy!1 1214810010221->1230624368418
+user87500 Expired Dormancy!2 1227772874606->1230624368418
+Expected balance: -844.5 found: -1859.5
+Expected balance: 80.0 found: 1846.24
+Expected balance: 0.0 found: -72.2
+Expected balance: 0.0 found: -136.18
+Expected balance: 0.0 found: -567.42
+user186750 Expired Breakage! 1199270126668->1230636232069
+Expected balance: -6075.62 found: -7691.91
+user140250 Expired Dormancy!1 1214871093260->1230700295000
+Expected balance: 216.79 found: -100.0
+user203500 Expired Breakage! 1199386493295->1230754198065
+user73000 Expired Dormancy!2 1227903026897->1230755744000
+Loading without necessary rights!! WEB user: user201500 1230810612570
+Expected balance: 12.03 found: -8.97
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 5.0 found: 0.0
+Expected balance: -194.16 found: -257.13
+Expected balance: 22.85 found: 481.87
+Expected balance: -225.15 found: -267.13
+Expected balance: -41.98 found: -117.54
+Expected balance: 21.95 found: 21.27
+Expected balance: 15.95 found: 310.26
+user14250 Expired Dormancy!1 1215124474605->1230938535826
+user131250 Expired Dormancy!1 1215126510539->1230938535826
+Loading without necessary rights!! WEB user: user224750 1230938535826
+user236000 Expired Breakage! 1199615894306->1230980775000
+user206000 Expired Dormancy!2 1228133052485->1230989094036
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -45.39
+user33000 Expired Breakage! 1199640541421->1231003952576
+Loading without necessary rights!! WEB user: user78500 1231038999062
+Expected balance: 3.42 found: -17.79
+user158750 Expired Breakage! 1199719750795->1231085143654
+user50500 Expired Dormancy!1 1215284250226->1231095458375
+Expected balance: -30090.0 found: -65746.6
+user235750 Expired Dormancy!1 1215286981646->1231111669000
+user116750 Expired Breakage! 1199778367836->1231142531024
+Expected balance: 0.0 found: -148.07
+Expected balance: 0.0 found: -341.71
+Expected balance: 0.0 found: -45.56
+user130250 Expired Dormancy!2 1228307170731->1231159179990
+Expected balance: -5900.0 found: -13128.0
+Loading without necessary rights!! WEB user: user113750 1231189693416
+Loading without necessary rights!! WEB user: user95250 1231196830607
+user205250 Expired Breakage! 1199846861178->1231228783226
+Expected balance: 0.0 found: -45.56
+Expected balance: 0.0 found: -34.17
+Expected balance: 0.0 found: -22.78
+Expected balance: -1385.35 found: -1857.63
+user215500 Expired Breakage! 1199910301424->1231274404176
+Expected balance: -54.05 found: -235.66
+Expected balance: 16.5 found: 17.0
+user214500 Expired Dormancy!1 1215470955763->1231284825153
+Transferring without necessary rights!! user: user39500 1231285425985
+user240750 Expired Breakage! 1199931001840->1231302509000
+user4250 Expired Dormancy!1 1215500153123->1231319496890
+user65000 Expired Breakage! 1199958810441->1231322202088
+user219500 Expired Breakage! 1199960933492->1231324353294
+Expected balance: 15.0 found: -15.0
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -509.93
+Expected balance: 41738.21 found: 0.17
+Expected balance: -41738.21 found: -0.17
+Expected balance: 29.33 found: -15.67
+user101750 Expired Breakage! 1199978955892->1231342635692
+user13000 Expired Dormancy!1 1215550465737->1231363398000
+Adding VCC without necessary rights!! user: user121750 instrument: 11eb2fa5be10f0e 1231363398000
+Loading without necessary rights!! WEB user: user154750 1231364951527
+user27000 Expired Dormancy!1 1215555395440->1231400726536
+user127750 Expired Dormancy!1 1215566057455->1231400726536
+user124750 Expired Breakage! 1200033842437->1231400726536
+Expected balance: 0.0 found: -30.2
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -235.27
+user21250 Expired Breakage! 1200062413822->1231426443748
+user247500 Expired Breakage! 1200069135679->1231433355542
+Transferring... 
+Expected balance: 0.0 found: -8.03
+Expected balance: 7277.42 found: 0.2
+user38500 Expired Breakage! 1200100514789->1231478302581
+user101500 Expired Dormancy!1 1215664661483->1231478302581
+Expected balance: -619.5 found: -1539.88
+Expected balance: 0.0 found: -20.0
+Expected balance: 10.0 found: 197.86
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -125.0
+Expected balance: 0.0 found: -48.01
+Expected balance: 0.0 found: -74.31
+user100000 Expired Dormancy!1 1215743996012->1231585018828
+user228000 Early Freeze at 1231604478004
+Expected balance: -488.02 found: -645.44
+user91000 Expired Dormancy!1 1215794200737->1231605773134
+Expected balance: 15.78 found: -14.99
+user120750 Expired Dormancy!1 1215836550056->1231649474000
+user155500 Expired Dormancy!1 1215848689085->1231667363000
+user55500 Expired Breakage! 1200312267931->1231682922000
+user169000 Early Freeze at 1231691456723
+Expected balance: 820.27 found: 204.44
+Expected balance: 8.4 found: 50.81
+Expected balance: 0.0 found: -115.63
+Expected balance: 0.0 found: -693.79
+Expected balance: 0.0 found: -231.26
+Expected balance: 0.0 found: -23.12
+user41750 Expired Dormancy!1 1215966378644->1231777623083
+Expected balance: 278085.36 found: 0.5
+user242000 Expired Dormancy!1 1215977786631->1231795636000
+user5500 Expired Dormancy!1 1215981636089->1231795636000
+Loading without necessary rights!! WEB user: user250000 1231838480505
+Expected balance: 0.0 found: -34.68
+Expected balance: 0.0 found: -50.0
+out
+out
+user24000 Expired Breakage! 1200498988657->1231862559827
+Loading without necessary rights!! WEB user: user146000 1231870890221
+user137000 Expired Dormancy!1 1216076211452->1231887513000
+Expected balance: -20.99 found: -749.34
+Expected balance: 0.0 found: -297.0
+user49500 Expired Dormancy!1 1216155687594->1231969525495
+user58750 Expired Breakage! 1200612655045->1231976241000
+user57750 Expired Dormancy!1 1216174689810->1231993638629
+user66250 Expired Breakage! 1200631154728->1232006892880
+user193250 Expired Dormancy!1 1216207384906->1232020271291
+Expected balance: 0.0 found: -200.0
+user202750 Expired Dormancy!1 1216211316021->1232024063000
+Expected balance: 25.0 found: -5.0
+Transferring without necessary rights!! user: user113000 1232027238061
+Expected balance: 0.0 found: -234.94
+Expected balance: 0.0 found: -71.27
+user46000 Expired Dormancy!1 1216229716944->1232044508000
+Transferring... 
+user211500 Expired Breakage! 1200744392004->1232108992090
+Expected balance: 0.0 found: -30.0
+user196250 Expired Dormancy!1 1216314273035->1232125482000
+user72250 Expired Breakage! 1200769541041->1232141415445
+Loading without necessary rights!! WEB user: user68250 1232141690126
+user136500 Expired Dormancy!1 1216334148629->1232145978000
+user208000 Expired Breakage! 1200792125444->1232156548177
+user94750 Expired Dormancy!1 1216370749148->1232182523370
+user23250 Expired Breakage! 1200825802921->1232189348938
+Expected balance: 0.0 found: -47.84
+Expected balance: 25.0 found: -50.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 9.91 found: 2.91
+user216750 Expired Dormancy!1 1216408684077->1232223061098
+user40000 Expired Breakage! 1200857347813->1232223061098
+user116000 Expired Breakage! 1200860232902->1232225958000
+user92250 Expired Dormancy!1 1216437482123->1232253459000
+user500 Expired Dormancy!1 1216473071282->1232286601350
+Loading without necessary rights!! WEB user: user34500 1232286601350
+user155250 Expired Breakage! 1200927508259->1232290875819
+Expected balance: 12.0 found: 7.0
+user198250 Expired Dormancy!1 1216497746463->1232350172468
+Expected balance: -493.27 found: -598.22
+Expected balance: 100.0 found: 370.0
+Transferring without necessary rights!! user: user48250 1232350464264
+Expected balance: 0.0 found: -167.33
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -48.18
+Expected balance: 0.0 found: -142.6
+Expected balance: 0.0 found: -475.38
+Expected balance: 10.0 found: -10.0
+user10250 Expired Dormancy!1 1216588381911->1232409812382
+Expected balance: 0.0 found: -200.0
+in
+user92000 Expired Breakage! 1201089585211->1232454658430
+user245000 Expired Dormancy!1 1216643063806->1232454658430
+Expected balance: 0.0 found: -47.53
+Expected balance: 0.0 found: -154.49
+user76500 Expired Dormancy!1 1216651572935->1232467623278
+Expected balance: 19.67 found: 29.0
+Expected balance: 0.0 found: -23.76
+Expected balance: 0.15 found: -19.85
+Adding VCC without necessary rights!! user: user73500 instrument: 11efaf419a8040e 1232570948000
+Expected balance: 50.0 found: 5771.07
+user229000 Expired Breakage! 1201229440789->1232598739000
+Expected balance: 0.0 found: -36.49
+Expected balance: 0.0 found: -99.8
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 50.2 found: -9.99
+Expected balance: 339.66 found: 9.99
+Expected balance: -9800.0 found: -19830.16
+Loading without necessary rights!! WEB user: user102500 1232668433483
+user104250 Expired Dormancy!1 1216868294226->1232680431563
+user40500 Expired Dormancy!2 1229853912159->1232705535000
+user64000 Expired Dormancy!2 1229855184711->1232706761057
+user118000 Expired Dormancy!2 1229860366230->1232712599000
+user74500 Expired Dormancy!1 1216900602810->1232712599000
+user86750 Expired Dormancy!2 1229863695391->1232715023103
+Expected balance: 0.0 found: -30.0
+user246000 Expired Dormancy!2 1229865311613->1232718814342
+user187750 Expired Dormancy!2 1229866004843->1232718814342
+user142750 Expired Dormancy!2 1229866668469->1232718814342
+user230250 Expired Dormancy!2 1229868890159->1232721284413
+user195750 Expired Dormancy!2 1229871471110->1232727353476
+user43000 Expired Dormancy!2 1229872489066->1232727353476
+user225500 Expired Dormancy!2 1229872563066->1232727353476
+user114250 Expired Dormancy!2 1229875857637->1232727353476
+user118750 Expired Dormancy!2 1229876844894->1232728105746
+user4750 Expired Dormancy!2 1229877458001->1232732365821
+user184500 Expired Dormancy!2 1229880090212->1232732365821
+user124000 Expired Dormancy!2 1229882182903->1232733704000
+user163250 Expired Dormancy!1 1216923675681->1232739293780
+Loading without necessary rights!! WEB user: user48000 1232752580059
+in
+out
+Expected balance: 150.0 found: 4555.0
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+user187250 Expired Breakage! 1201458138868->1232821476000
+Loading without necessary rights!! WEB user: user201750 1232867065171
+user59250 Expired Dormancy!1 1217068516747->1232881643000
+Adding VCC without necessary rights!! user: user36000 instrument: 11f0dd2e5b80a0e 1232887539000
+user37500 Expired Breakage! 1201540125016->1232909106211
+user39750 Expired Breakage! 1201568470781->1232957206448
+Expected balance: 24.34 found: 14.34
+Expected balance: 0.0 found: -24.25
+Expected balance: 0.0 found: -485.28
+Expected balance: 0.0 found: -24.25
+Expected balance: 0.0 found: -246.22
+Expected balance: 0.0 found: -160.04
+Expected balance: 0.0 found: -49.24
+Expected balance: 0.0 found: -123.11
+user114500 Expired Dormancy!1 1217152719621->1232967722604
+Expected balance: 0.0 found: -129.0
+Expected balance: 0.0 found: -200.0
+user128000 Expired Dormancy!1 1217158836515->1232970689805
+user155750 Expired Breakage! 1201610290972->1232984927000
+Transferring... 
+Expected balance: 1341.08 found: 0.1
+user137250 Expired Breakage! 1201672065052->1233042462766
+Expected balance: 0.0 found: -492.45
+Expected balance: 0.0 found: -19.69
+out
+Transferring... 
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 10.55 found: -9.45
+Expected balance: 5.87 found: 4.39
+user216500 Expired Dormancy!1 1217259620233->1233072608445
+user234750 Expired Dormancy!2 1230221892100->1233073987783
+user43500 Expired Dormancy!1 1217284061019->1233100957397
+user207250 Expired Breakage! 1201746956755->1233129979079
+Expected balance: -20.99 found: -125.94
+Expected balance: 24.95 found: 120.0
+user4500 Expired Dormancy!1 1217339007603->1233150240000
+user160500 Expired Breakage! 1201799404687->1233166598000
+user7000 Expired Dormancy!1 1217352123037->1233166598000
+Transferring without necessary rights!! user: user36000 1233167119806
+Loading without necessary rights!! WEB user: user41500 1233201527801
+user96500 Expired Dormancy!1 1217394794952->1233215614807
+Expected balance: 0.36 found: -23.64
+Expected balance: 0.0 found: -239.27
+in
+Expected balance: -83.96 found: -41.98
+user70000 Expired Dormancy!1 1217424079608->1233239187104
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -45.0
+Expected balance: 0.0 found: -160.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -200.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Transferring... 
+Expected balance: 0.63 found: -195.93
+user47500 Expired Breakage! 1201882041207->1233245531064
+user104500 Expired Dormancy!1 1217434480930->1233246546036
+user79500 Expired Dormancy!1 1217446458915->1233259815283
+Transferring... 
+Expected balance: 1134.57 found: 0.2
+user232500 Expired Dormancy!1 1217476890485->1233290720414
+Expected balance: 0.0 found: -50.0
+user133750 Expired Dormancy!1 1217503306273->1233314648537
+Expected balance: 0.0 found: -23.93
+user95000 Expired Breakage! 1201960629006->1233324198520
+user60750 Expired Dormancy!1 1217518659862->1233331698655
+user123000 Expired Breakage! 1201985294837->1233352556094
+user219250 Expired Breakage! 1202038952610->1233403669622
+user249000 Expired Breakage! 1202054952786->1233418283564
+in
+Expected balance: 49.89 found: 21.6
+user112500 Expired Breakage! 1202069510625->1233433878654
+Expected balance: 0.0 found: -380.0
+Expected balance: 0.0 found: -15.0
+Expected balance: 3.97 found: 2.54
+user146250 Expired Dormancy!1 1217667091165->1233480432264
+out
+out
+out
+out
+user9500 Expired Breakage! 1202118338448->1233486026000
+Expected balance: 0.8 found: 20.0
+Expected balance: -522.5 found: -418.0
+Expected balance: 58.9 found: 26.74
+Expected balance: 0.0 found: -171.83
+Expected balance: 0.0 found: -122.73
+Expected balance: 0.0 found: -49.09
+in
+user69750 Expired Dormancy!1 1217764533832->1233576775296
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -261.0
+user126500 Expired Breakage! 1202251199444->1233619569867
+user122250 Expired Breakage! 1202274603506->1233651960344
+Expected balance: 19.3 found: -226.17
+Expected balance: 3.85 found: -45.24
+Expected balance: 0.96 found: -11.31
+user148500 Expired Dormancy!2 1230826178676->1233677454653
+Adding VCC without necessary rights!! user: user113000 instrument: 11f3d187356010e 1233680626000
+user1750 Expired Dormancy!1 1217894489398->1233710910777
+in
+out
+Expected balance: 0.95 found: -9.05
+user41000 Expired Dormancy!1 1217972707261->1233784854788
+user137750 Expired Dormancy!1 1217982929544->1233818778711
+Expected balance: 39.49 found: -20.51
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -257.0
+Expected balance: 0.0 found: -75.0
+Loading without necessary rights!! WEB user: user203000 1233842763295
+Expected balance: 16.08 found: 148.08
+Expected balance: 3.95 found: -45.01
+user85250 Expired Breakage! 1202493796400->1233858863000
+user201000 Expired Breakage! 1202498239595->1233871679000
+user102750 Expired Breakage! 1202513901065->1233877295555
+user91500 Expired Dormancy!1 1218069644691->1233886266216
+user156750 Expired Dormancy!1 1218073010161->1233886266216
+user120250 Expired Dormancy!1 1218078428160->1233901049000
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -89.0
+user80500 Expired Dormancy!1 1218148939593->1233976184156
+user94000 Expired Breakage! 1202618524581->1234001351334
+user132250 Expired Dormancy!1 1218196354320->1234012217949
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 38.48 found: -452.82
+in
+Expected balance: 0.0 found: -160.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -160.0
+user204250 Expired Dormancy!1 1218258940632->1234074086000
+user126250 Expired Breakage! 1202715703122->1234084065000
+user112250 Expired Breakage! 1202744734321->1234108466684
+user199750 Expired Dormancy!1 1218321653002->1234147552565
+user239250 Expired Breakage! 1202776605087->1234147552565
+Expected balance: 16.8 found: -191.69
+Expected balance: 3.94 found: -45.11
+Expected balance: 12.85 found: -146.58
+Expected balance: 7.96 found: -90.2
+user30500 Expired Dormancy!1 1218398869296->1234214096993
+Loading without necessary rights!! WEB user: user78250 1234231685851
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 3.97 found: -45.11
+Expected balance: 39.83 found: -451.03
+Expected balance: 39.83 found: -451.03
+user132000 Expired Dormancy!1 1218471076341->1234282474148
+user234500 Expired Breakage! 1202919986846->1234283211531
+user115500 Expired Dormancy!1 1218480425586->1234295961429
+user110500 Expired Dormancy!1 1218483274221->1234295961429
+user20750 Expired Dormancy!1 1218488086590->1234312864675
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -20.02
+Expected balance: 488.51 found: 349.41
+user31500 Expired Dormancy!1 1218567682259->1234379378998
+user239000 Expired Dormancy!1 1218569076340->1234381287188
+user244000 Expired Breakage! 1203066001377->1234429993000
+Expected balance: 1.94 found: -24.63
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 25.0 found: 118.26
+user140750 Expired Dormancy!1 1218666394473->1234482943084
+user229500 Expired Dormancy!1 1218672934476->1234489938028
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+user53000 Expired Dormancy!1 1218719891886->1234531846677
+user109000 Expired Breakage! 1203174797224->1234538200142
+Expected adjustment (7.49) does NOT match actual (-7.49)!
+Expected balance: 434.42 found: 7.49
+user106250 Expired Breakage! 1203195996113->1234570843657
+Expected balance: 0.0 found: -10.0
+Expected balance: 73.5 found: -400.0
+Expected balance: 0.0 found: -150.0
+user158250 Expired Dormancy!1 1218812856041->1234624840149
+user133500 Expired Dormancy!1 1218846107246->1234674315000
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+in
+user104000 Expired Breakage! 1203369112695->1234732390034
+user166750 Expired Breakage! 1203404521225->1234771705832
+out
+Expected balance: 41.19 found: -447.95
+Expected balance: 41.19 found: -447.95
+Expected balance: 0.0 found: -100.0
+Expected balance: -41.98 found: -83.96
+user144000 Expired Dormancy!1 1219013057770->1234829293041
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 798.62 found: 600.53
+Expected balance: 41.19 found: -447.95
+Expected balance: 5997.63 found: 4996.09
+Expected balance: 42.0 found: -150.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -128.0
+Expected balance: 0.0 found: -128.0
+out
+user23750 Expired Dormancy!1 1219113393447->1234937218396
+user244750 Expired Breakage! 1203600366074->1234966378502

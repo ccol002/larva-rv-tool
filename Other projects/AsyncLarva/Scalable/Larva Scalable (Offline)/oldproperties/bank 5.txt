@@ -1,0 +1,144 @@
+IMPORTS{
+import nesting.User;
+import nesting.Account;
+import nesting.Transaction;
+}
+
+GLOBAL{
+
+VARIABLES {
+int userCnt = 0;
+}%%VARIABLES
+
+FOREACH (User u, Account a){
+
+EVENTS{
+
+addUser() = *.addUser();
+where {u = null;a=null;}
+
+deleteUser(int id) = *.deleteUser(id);
+where {u = new User(id);a=null;}
+
+allUsers(User u1) = u1.*();
+where {u = u1;a=null;}
+
+addAccount(User u1) = u1.addAccount();
+where {u = u1;a=null;}
+
+deleteAccount(User u1) = u1.deleteAccount();
+where {u = u1;a=null;}
+
+allAccounts(User u1) = u1.*();
+where {u = u1;a=null;}
+
+
+addTransaction(Account a1) = a1.addTransaction();
+where {a = a1;u=a1.owner;}
+
+deleteTransaction(Account a1) = a1.deleteTransaction();
+where {a = a1;u=a1.owner;}
+
+allTransactions(Account a1) = a1.*();
+where {a = a1;u=a1.owner;}
+
+
+}%%EVENTS
+
+VARIABLES {
+
+int accountCnt = 0;
+int transactionCnt = 0;
+boolean deleted = false;
+
+}%%VARIABLES
+
+
+PROPERTY users{
+
+STATES {
+
+BAD{
+toomany []
+}
+
+STARTING{
+start []
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addUser()\userCnt > 5]
+
+start -> start [addUser()\\userCnt++;]
+
+start -> start [deleteUser()\\userCnt--;deleted = true;]
+
+start -> start [allUsers()]
+
+}
+}%%PROPERTY
+
+
+
+
+PROPERTY account{
+
+STATES {
+
+BAD{
+toomany []
+user_was_deleted []
+}
+
+STARTING{
+start []
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addAccount()\accountCnt > 5]
+
+start -> user_was_deleted [allAccounts()\deleted]
+
+start -> start [addAccount()\\accountCnt++;]
+
+start -> start [deleteAccount()\\accountCnt--;]
+
+start -> start [allAccounts()]
+
+}
+}%%PROPERTY
+
+
+PROPERTY transaction{
+
+STATES {
+
+BAD{
+toomany []
+}
+
+STARTING{
+start []
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addTransaction()\transactionCnt > 5]
+
+start -> start [addTransaction()\\transactionCnt++;]
+
+start -> start [deleteTransaction()\\transactionCnt --;]
+
+start -> start [allTransactions()]
+
+}
+}%%PROPERTY
+}%%FOREACH USER ACCOUNT
+}%%GLOBAL

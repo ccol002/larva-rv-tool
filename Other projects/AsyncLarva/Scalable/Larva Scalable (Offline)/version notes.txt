@@ -1,0 +1,92 @@
+[Feb 2009]
+Clocks register with a master clock and the master clock is triggered by timestamps from the events. When the time of an expected event elapses, the master clock gives control to the expectant clock. This performs the expected action and thus execution can continue. 
+
+[Feb 2009]
+added filter
+[Example:] event() = {event tas-soltu}
+filter{java condition} where { tas-soltu }
+
+[Feb 2009]
+added new shortcut clock events
+@d to specify the event in number of days
+@h to specify the event in number of hours
+@m to specify the event in number of minutes
+@s to specify the event in number of seconds
+@l to specify the event in number of milliseconds
+@ to specify the event in number of seconds
+
+[Mar 2009]
+synchronized entry into aspects, the monitor cannot have more than one thread simultaneosly active in its code
+
+[Mar 2009]
+All the state and clocks are stored in a database. 
+[Limits:]A limitation exists because not all types of variables are supported. Only the String, Long, Integer, Boolean, Double are supported. However note that the global state is not stored in the database (because this does not grow with time) so there is no restriction on structures which can be saved in the global level. Also, call_all and call_all_filtered are not supported yet.
+
+[23 Mar 2009]
+all events are broadcast to their subcontexts
+
+[23 Mar 2009]
+added the option of specifying call/execution in an event declaration
+[Examples:] event()={call *.*(..)} event()={execution *.*(..)} event()={*.*(..)}
+
+[24 Mar 2009]
+added the possibility of matching constructor
+[Example:] creation() = {execution Session s1.new()} where {s = s1;}
+[Note:] for some reason aspectJ doesnt match target if call is used instead of execution
+
+[24 Mar 2009]
+initially and initialize for each context
+[Example 1:] GLOBAL { INITIALIZEIF{methodname1} ... } 
+[Example 2:] FOREACH { PROPERTY {} INITIALLY{methodname2}} 
+[Condition 1:] methodname1 returns a hashmap <String, Object> and takes context variables as input (if applicable)
+[Condition 2:] methodname2 returns an arraylist of the context type (one variable context supported) and takes any user specified input.
+
+[25 Mar 2009]
+forced the extra methods to be the text in a class called SC.java
+
+[28 Mar 2009]
+clocks are identifiable by name
+
+[4 Apr 2009]
+the code in the initial states is execution upon construction of a context
+
+[6 May 2009]
+all the events are called on the instance in the respective context; i.e. an event is not called on the instances of the subcontext. This also applies for channels and events
+
+[6 May 2009]
+removed ChannelEvent and ClockEvent objects. Now neither channels nor clocks use any threads
+
+[12 May 2009] {FOUND ISSUE - SOLVED}
+Since from a clock object, we have to deduce the class type (table) where the related instance is to be found, with the current implementation we cannot have more than one input file with clocks (because the clock class refers to the property file name). The quick solution is to compile the only property file with clock the last one so that the clock class is the right one (overwriting previous clock classes). The solution would probably be to store the class name in the clock class.
+SOLUTION - now the class name of the clock is stored in the database
+
+[15 May 2009]
+The keywords of Larva which were previously expected to be UPPERCASE can now be lowercase except for the first letter.
+
+[18 May 2009]
+added limit to foreach construct. This limits the number of possible objects being monitored concurrently.
+The number of objects being monitored concurrently is incremented when an object's automaton is created.
+We still need to decrease the number of objects being monitored concurrently when the object is terminated.  
+
+[19 May 2009]
+the global context is also persisted in the database
+
+[20 May 2009]
+a condition is allowed to decide whether the monitoring state is computed again from the database
+
+[25 May 2009]
+It was previously possible to succeed the event on a transition by the event parameters in brackets. This is not allowed now. An event name can now only be succeeded by a "\" or a "]". 
+
+[29 May 2009]
+Added -t switch. Used to hide the text on the transitions in the automaton diagrams.  
+
+[1 June 2009]
+Added -p switch. Used to hide the priority values on the transitions in the automaton diagrams. 
+
+KNOWN ISSUES
+The SC class and Clock table are initialized and shared by all the scripts being monitored... 
+this means that it is important to ensure that all the code is consistent
+and that the code in the respective scripts does not conflict 
+
+
+

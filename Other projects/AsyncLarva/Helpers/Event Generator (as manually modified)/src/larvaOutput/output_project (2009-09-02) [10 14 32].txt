@@ -1,0 +1,6 @@
+[LARVA] Monitoring started at  2009-09-02 10:14:32
+[balance_check]Expected balance: 0.95 found(at monitor): -10.0
+ user: user189000 allocation: 20080704ef14799de3336502 at 1233744216203 TX ID: 11f40e2c08b020e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: true defaultInstr: false
+ tx: {creationTimestamp=1233741921371, user=user241500, instrument=11f33131406020e, freezeOrigin=OPS_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}

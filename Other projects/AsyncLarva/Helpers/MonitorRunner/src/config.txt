@@ -1,0 +1,17 @@
+period = 604800000
+
+starting = true
+	
+monitor = C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\Event Generator\\bin
+
+monitorDB = test
+
+startingTime = 1230000000000
+	
+dataDB = new1000
+
+sqlStats = C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\MonitorRunner\\bin\\sql_stats.sql
+
+output = C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\Event Generator\\outputs
+
+beautifier = C:\\Documents and Settings\\ixaris\\Desktop\\projects3\\LarvaOutput\\bin

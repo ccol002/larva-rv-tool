@@ -1,0 +1,76 @@
+
+<html>
+<body bgcolor="white">
+<h2>Balance_check</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main2');" id=xmain2>[-]</a>
+
+Expected balance: -818.63 found(at monitor): -766.15
+
+<div id=main2 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user user168750 allocation 200804206d3630895f685284 at 1230049718339 TX ID 11e64ad1f2b020e
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main13');" id=xmain13>[-]</a>
+
+Expected balance: -7755.74 found(at monitor): -7860.69
+
+<div id=main13 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user user163000 allocation 200805200620f414ad69a71e at 1230139081488 TX ID 11e6a00b441070e
+ <br> 
+</div></div>
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

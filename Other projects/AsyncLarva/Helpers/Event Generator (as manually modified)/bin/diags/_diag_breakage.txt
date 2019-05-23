@@ -1,0 +1,16 @@
+digraph _logic_breakage {
+rankdir=LR;
+node [shape = circle]; break nonbreak;
+node [shape = octagon]; unexpectedTX expiredBreak earlyBreak unexpectedBreak;
+node [shape = point]; _s_s;
+_s_s -> nonbreak;
+break -> break [label = "(1) all1\\t . is ( \" ReclaimFeeTX ...\\..."];
+break -> unexpectedTX [label = "(2) all1\\t . is ( \" NormTX \" ) "];
+nonbreak -> nonbreak [label = "(1) all1\\t . is ( \" NormTX \" ) \\..."];
+nonbreak -> nonbreak [label = "(2) validTX\\\\..."];
+nonbreak -> expiredBreak [label = "(3) cATbp\\! origin . equals ( \" CA...\\..."];
+nonbreak -> break [label = "(4) all1\\t . is ( \" BreakTX \" ) ..."];
+nonbreak -> earlyBreak [label = "(5) all1\\t . is ( \" BreakTX \" ) ...\\..."];
+nonbreak -> unexpectedBreak [label = "(6) all1\\t . is ( \" BreakTX \" ) \\..."];
+expiredBreak -> break [label = "(1) all1\\t . is ( \" BreakTX \" ) ...\\..."];
+}

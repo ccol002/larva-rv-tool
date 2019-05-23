@@ -1,0 +1,293 @@
+
+%%%%%%%%%%%%%%%%%%%% Properties being monitored %%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% 1> Any user which should be dormant or closed and is not, is detected
+%% 2> Any user which is frozen by dormancy or broken by breakage prematurely, is detected
+%% 3> Any user transaction while the user is dormant or closed is detected 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+IMPORTS {
+import Events.Template;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+}
+
+GLOBAL {
+
+ INITIALIZEIF{SC.initializeifMain}
+
+ VARIABLES {   
+  int idp_limit = 180*24*60*60; %%seconds
+  int drp_limit = 30*24*60*60;
+  int bwp_limit = 330*24*60*60;
+  int bp_limit = 360*24*60*60;
+  }
+
+
+ FOREACH (String s) {
+ 
+ INITIALIZEIF{SC.initializeif}
+ 
+ V
+S {
+
+ %% int active = 0;
+ %% int suspended = 1;
+ %% int dormant = 2;
+ %% int suspended_dormant = 3;
+ %% int closed = 4;  
+  
+  long passStart = RunningClock.now;
+  long lastFreeze;
+  boolean feeExpected = false;
+  
+ %% int currentState = closed;
+ 
+  Clock idp;
+  Clock drp;
+  Clock bp;
+  
+  }
+  
+    
+ EVENTS {
+  cATidp(timestamp) = {idp @d 185} where {timestamp = RunningClock.now;}
+  cATdrp(timestamp) = {drp @d 35} where {timestamp = RunningClock.now;}
+  cATbp(timestamp) = {bp @d 360} where {timestamp = RunningClock.now;}
+  
+  all(timestamp,t) = {Template t.call(String name, long timestamp)} where s = t.params.get("user").toString();
+
+ }
+ 
+  
+ PROPERTY dormancy {
+  STATES {
+   BAD { unexpectedTX expiredDorm expiredBreak earlyDorm earlyBreak }
+   NORMAL { frozen closed }
+   STARTING {start} 
+  }
+  TRANSITIONS {
+   
+   start -> frozen 
+     [ all 
+     \ t.is("DormTX") && idp.current(timestamp) >= idp_limit
+     \ drp.reset(timestamp);
+       feeExpected = true; 
+       lastFreeze = timestamp; 
+       System.out.println(s + " Frozen at " + timestamp);
+     ]  
+   start -> earlyDorm 
+     [ all 
+     \ t.is("DormTX") 
+     \ System.out.println(s + " Frozen at " + timestamp);
+     ] 
+   start -> earlyBreak 
+     [ all 
+     \ t.is("BreakTX") 
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]     
+   start -> expiredDorm 
+     [ cATidp
+     \ %%passedDays(passStart,timestamp,idp)
+     \ System.out.println(s + " Expired Dormancy! " + passStart + "->" + timestamp);
+     ]   
+   start -> expiredBreak 
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]      
+   start -> start 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+     ]   
+   frozen -> start
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+         feeExpected = false;
+       }
+     ]
+   frozen -> closed  
+     [ all
+     \ t.is("BreakTX") && bp.current(timestamp) >= bp_limit
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]      
+   frozen -> earlyBreak  
+     [ all
+     \ t.is("BreakTX")
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]        
+   frozen -> frozen
+     [ all 
+     \ t.is("DormFeeTX") 
+     \ feeExpected = false; 
+       System.out.println(s + " Fee taken at " + timestamp);
+     ]      
+   frozen -> frozen
+     [ all 
+     \ t.is("DormTX") && drp.current(timestamp) >= drp_limit
+     \ drp.reset(timestamp);
+       lastFreeze = timestamp;
+       System.out.println(s + " Frozen again at " + timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+       }
+       feeExpected = true;
+     ]  
+   frozen -> earlyDorm
+     [ all 
+     \ t.is("DormTX") 
+     \ System.out.println(s + " Frozen again at " + timestamp);
+     ]     
+   frozen -> expiredDorm
+     [ cATdrp
+     \ %%passedDays(lastFreeze,timestamp,drp)
+     \ System.out.println(s + " Expired Dormancy! " + lastFreeze + "->" + timestamp);
+     ]
+   frozen -> expiredBreak
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]   
+   frozen -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]
+   closed -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+   }
+ }INITIALLY{SC.initially();}
+ }
+}
+
+METHODS {
+
+public class SC {
+
+  static long initialTime = 0l;%%1230000000000l;
+
+  static String url;
+  static Connection conn; 
+
+
+  static HashMap<String, Object> initializeifMain(){
+    try { 
+	  Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");  
+	  url = "jdbc:odbc:dormancy";
+	  conn = DriverManager.getConnection(url);//,"root","root");
+    } 
+    catch (Exception ex) 
+    { ex.printStackTrace(); }  
+    return null;
+  }
+
+  static ArrayList initially(){
+    try{
+      long starting = initialTime;  
+      Statement s = conn.createStatement();
+      ResultSet rs = s.executeQuery("select distinct targetUser from log_audit as logg where auditableEvent=\"USER_ACCT_CREATION\""+
+        " and not exists(select targetUser from log_audit as loggg where logg.targetUser=loggg.targetUser" + 
+        " and auditableEvent=\"USER_ACCT_BREAKAGE\" and timestamp < " + starting + ");");
+    
+      ArrayList al = new ArrayList();
+      while (rs.next())
+      al.add(rs.getString("targetUser"));
+    
+      return al;
+    
+    }catch(Exception ex)
+      {ex.printStackTrace();}
+    return null;
+  }
+
+  static HashMap<String, Object> initializeif(String s)
+  {
+    HashMap<String, Object> list = new HashMap<String, Object>();
+
+	try {
+
+	//check for breakage
+	//Statement st = conn.createStatement();
+    //ResultSet rs = st.executeQuery("select timestamp from log_audit where userId = \""+s+"\"" + 
+    //    " and auditableEvent=\"USER_ACCT_BREAKAGE\" and timestamp < "
+    //    + initialTime + " order by creationTimestamp desc limit 1;");
+    //
+	//long lastBR = -1;
+	//if (rs.next())
+    //   	lastBR = rs.getLong("timestamp");
+
+    //last successful user transaction
+    Statement st = conn.createStatement();
+    ResultSet rs = st.executeQuery("select creationTimestamp from tl_transactionentry" 
+      + " where userId=\""+s+"\" and authorGroup=\"USER\" and transactionEntryStatus=\"SUCCESSFUL\"" 
+      + " and creationTimestamp < " + initialTime + " order by creationTimestamp desc limit 1;");
+
+    long lastTX = 0;
+
+    if (rs.next()) {
+      lastTX = rs.getLong("creationTimestamp");
+    } else {
+      //user creation
+      rs = st.executeQuery("select timestamp from log_audit where targetUser = \"" + s + "\" and"
+      + " auditableEvent=\"USER_ACCT_CREATION\" order by timestamp desc limit 1;");
+      
+      if (rs.next()) 
+      	lastTX = rs.getLong("timestamp");
+    }
+    
+    long lastDM = -1;
+    //last dormancy
+     rs = st.executeQuery("select creationTimestamp from tl_transactionentry where userId=\""+s+"\"" 
+       + " and freezeOrigin=\"DORMANCY_FREEZE\" and transactionEntryStatus=\"SUCCESSFUL\"" 
+       + " order by creationTimestamp desc limit 1;");
+     
+     if (rs.next()) {
+      lastDM = rs.getLong("creationTimestamp");
+     }
+    
+    list.put("passStart", lastTX);
+    list.put("idp", lastTX);
+    list.put("bp", lastTX);
+
+	if (lastDM > lastTX)
+	//dormant
+		list.put("STATE>dormancy", "frozen");
+	else
+		list.put("STATE>dormancy", "start");
+
+	list.put("lastFreeze", lastDM);
+	
+	//for now assume that feeExpected is false... 
+	//we cannot correctly check it anyway because of the issue of remote balance (actual and available)
+	list.put("feeExpected", false);
+	
+	} catch (Exception ex)
+	{ex.printStackTrace();}
+
+    return list;
+
+  }
+
+%%static HashMap<String, Object> initializeifg(){return null;}
+
+
+boolean passedDays(long start,long now,int days)
+{//an allowance of 5 days
+return (((now-start)/(1000*60*60*24))>(days + 5));
+}
+}
+}

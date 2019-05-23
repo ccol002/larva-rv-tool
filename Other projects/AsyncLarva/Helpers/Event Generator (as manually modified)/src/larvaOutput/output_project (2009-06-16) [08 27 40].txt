@@ -1,0 +1,114 @@
+[LARVA] Monitoring started at  2009-06-16 08:27:40
+[balance_check]Expected balance: -818.63 found(at monitor): -766.15
+ user user168750 allocation 200804206d3630895f685284 at 1230049718339 TX ID 11e64ad1f2b020e
+[dormancy]Expired Dormancy! User: user160000 1214246885106->1229798885106
+[breakage]Expired Breakage! user user161750 1198762863843->1230126063843
+[dormancy]Expired Dormancy! User: user36750 1214315131330->1229867131330
+[balance_check]Expected balance: -7755.74 found(at monitor): -7860.69
+ user user163000 allocation 200805200620f414ad69a71e at 1230139081488 TX ID 11e6a00b441070e
+[dormancy]Expired Dormancy! User: user234750 1214330659288->1229882659288
+[breakage]Expired Breakage! user user116500 1198835431133->1230198631133
+[dormancy]Expired Dormancy! User: user47000 1214395627127->1229947627127
+[breakage]Expired Breakage! user user211750 1198844728697->1230207928697
+[dormancy]Dormancy done!! User user234750 at 1230221892100 94.23133666666666 hours late
+[dormancy]Expired Dormancy! User: user28750 1214422621167->1229974621167
+[load_amount]LOAD amount exceeded user: user80000 tx id: 11e70afaf2a080e
+ loaded GBP 100.0 in a day... limit: 5000.0
+ loaded GBP 100.0 in a month... limit: 0.0
+[load_amount]LOAD amount exceeded user: user181500 tx id: 11e71ee0fdc0a0e
+ loaded EUR 1520.1299999999999 in a day... limit: 1500.0
+ loaded EUR 1520.1299999999999 in a month... limit: 15000.0
+[dormancy]Expired Dormancy! User: user86500 1214493449557->1230045449557
+[dormancy]Dormancy done!! User user86500 at 1230309688641 73.39974555555555 hours late
+[dormancy]Expired Dormancy! User: user149000 1214539769016->1230091769016
+[breakage]Expired Breakage! user user110250 1199002231323->1230365431323
+[breakage]Breakage done!! user user161750 at 146.5041475 hours late
+[breakage]Expired Breakage! user user185750 1199063392732->1230426592732
+[dormancy]Expired Dormancy! User: user45250 1214637497528->1230189497528
+[breakage]Breakage done!! user user211750 at 147.59850305555557 hours late
+[breakage]Breakage done!! user user116500 at 150.34526666666667 hours late
+[dormancy]Dormancy done!! User user45250 at 1230567694311 105.05466194444445 hours late
+[dormancy]Expired Dormancy! User: user226250 1214788911956->1230340911956
+[dormancy]Expired Dormancy! User: user9750 1214810010221->1230362010221
+[breakage]Expired Breakage! user user186750 1199270126668->1230633326668
+[load_amount]LOAD amount exceeded user: user106500 tx id: 11e87abed89050e
+ loaded EUR 1700.0 in a day... limit: 1500.0
+ loaded EUR 1700.0 in a month... limit: 15000.0
+[breakage]Breakage done!! user user110250 at 151.97901916666666 hours late
+[dormancy]Dormancy done!! User user9750 at 1230653938808 81.09127416666666 hours late
+[dormancy]Expired Dormancy! User: user148500 1214870530673->1230422530673
+[dormancy]Expired Dormancy! User: user140250 1214871093260->1230423093260
+[breakage]Breakage done!! user user185750 at 158.88048583333332 hours late
+[breakage]Expired Breakage! user user203500 1199386493295->1230749693295
+[dormancy]Dormancy done!! User user148500 at 1230826178676 112.12444527777778 hours late
+[breakage]Breakage done!! user user186750 at 149.44207972222222 hours late
+[dormancy]Expired Dormancy! User: user235750 1215105534400->1230657534400
+[dormancy]Expired Dormancy! User: user14250 1215124474605->1230676474605
+[breakage]Expired Breakage! user user236000 1199615894306->1230979094306
+[breakage]Expired Breakage! user user33000 1199640541421->1231003741421
+[breakage]Breakage done!! user user203500 at 165.1806552777778 hours late
+[breakage]Expired Breakage! user user116750 1199778367836->1231141567836
+[load_amount]LOAD amount exceeded user: user45750 tx id: 11ea853fcc3090e
+ loaded USD 6330.0 in a day... limit: 6000.0
+ loaded USD 6330.0 in a month... limit: 60000.0
+[breakage]Expired Breakage! user user205250 1199846861178->1231210061178
+[breakage]Breakage done!! user user236000 at 149.50806333333333 hours late
+[breakage]Expired Breakage! user user215500 1199910301424->1231273501424
+[dormancy]Expired Dormancy! User: user214500 1215470955763->1231022955763
+[breakage]Expired Breakage! user user240750 1199931001840->1231294201840
+[dormancy]Expired Dormancy! User: user4250 1215500153123->1231052153123
+[breakage]Expired Breakage! user user219500 1199960933492->1231324133492
+[dormancy]Expired Dormancy! User: user131250 1215516075844->1231068075844
+[breakage]Breakage done!! user user33000 at 166.57798055555557 hours late
+[dormancy]Expired Dormancy! User: user13000 1215550465737->1231102465737
+[dormancy]Expired Dormancy! User: user27000 1215555395440->1231107395440
+[dormancy]Expired Dormancy! User: user127750 1215566057455->1231118057455
+[breakage]Expired Breakage! user user124750 1200033842437->1231397042437
+[load_amount]LOAD amount exceeded user: user238250 tx id: 11eb6a23a3d000e
+ loaded EUR 1650.0 in a day... limit: 1500.0
+ loaded EUR 1650.0 in a month... limit: 15000.0
+[breakage]Expired Breakage! user user21250 1200062413822->1231425613822
+[breakage]Breakage done!! user user116750 at 152.4213763888889 hours late
+[dormancy]Dormancy done!! User user131250 at 1231431835839 101.04444305555556 hours late
+[breakage]Expired Breakage! user user247500 1200069135679->1231432335679
+[breakage]Expired Breakage! user user38500 1200100514789->1231463714789
+[dormancy]Expired Dormancy! User: user101500 1215664661483->1231216661483
+[breakage]Expired Breakage! user user101750 1200132093645->1231495293645
+[breakage]Expired Breakage! user user215750 1200152579117->1231515779117
+[breakage]Breakage done!! user user205250 at 157.23292555555557 hours late
+[dormancy]Dormancy done!! User user13000 at 1231518818023 115.65341277777777 hours late
+[dormancy]Expired Dormancy! User: user100000 1215743996012->1231295996012
+[dormancy]Expired Dormancy! User: user169000 1215749447932->1231301447932
+[breakage]Expired Breakage! user user52750 1200215297307->1231578497307
+[load_amount]LOAD amount exceeded user: user180500 tx id: 11ec03f4f210a0e
+ loaded EUR 1602.92 in a day... limit: 1500.0
+ loaded EUR 1602.92 in a month... limit: 15000.0
+[breakage]Breakage done!! user user215500 at 163.66520222222223 hours late
+[breakage]Breakage done!! user user219500 at 149.6193147222222 hours late
+[breakage]Breakage done!! user user240750 at 157.94716194444445 hours late
+[dormancy]Early Dormancy at 1231604478004 user user228000
+[dormancy]Expired Dormancy! User: user91000 1215794200737->1231346200737
+[dormancy]Expired Dormancy! User: user155500 1215848689085->1231400689085
+[breakage]Expired Breakage! user user55500 1200312041836->1231675241836
+[breakage]Breakage done!! user user21250 at 145.36226638888888 hours late
+[breakage]Breakage done!! user user124750 at 153.5819375 hours late
+[dormancy]Dormancy done!! User user100000 at 1231691412486 109.83790944444445 hours late
+[dormancy]Dormancy done!! User user169000 at 1231691456723 108.33577527777778 hours late
+[dormancy]Expired Dormancy! User: user50500 1215907326097->1231459326097
+[breakage]Breakage done!! user user247500 at 167.59398444444443 hours late
+[breakage]Breakage done!! user user215750 at 144.49299861111112 hours late
+[breakage]Breakage done!! user user101750 at 150.19699555555556 hours late
+[breakage]Breakage done!! user user38500 at 159.01920194444443 hours late
+[dormancy]Dormancy done!! User user91000 at 1231777346139 119.76261166666667 hours late
+[dormancy]Expired Dormancy! User: user41750 1215966378644->1231518378644
+[dormancy]Dormancy done!! User user155500 at 1231777626946 104.70496138888889 hours late
+[dormancy]Expired Dormancy! User: user242000 1215977786631->1231529786631
+[dormancy]Expired Dormancy! User: user5500 1215981636089->1231533636089
+[breakage]Expired Breakage! user user24000 1200498988657->1231862188657
+[breakage]Breakage done!! user user52750 at 150.90740333333332 hours late
+[dormancy]Dormancy done!! User user50500 at 1231863651207 112.31253055555555 hours late
+[dormancy]Expired Dormancy! User: user137000 1216076211452->1231628211452
+[breakage]Breakage done!! user user55500 at 148.1120527777778 hours late
+[dormancy]Expired Dormancy! User: user49500 1216155687594->1231707687594
+[breakage]Expired Breakage! user user58750 1200612655045->1231975855045
+[breakage]Expired Breakage! user user66250 1200627633309->1231990833309

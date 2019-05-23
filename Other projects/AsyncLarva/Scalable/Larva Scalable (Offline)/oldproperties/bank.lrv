@@ -1,0 +1,178 @@
+IMPORTS{
+import nesting.User;
+import nesting.Account;
+import nesting.Transaction;
+}
+
+GLOBAL{
+
+Initializeif(true){}
+
+VARIABLES {
+int userCnt = 0;
+}%%VARIABLES
+
+
+EVENTS{
+
+addUser() = {*.addUser()}
+deleteUser() = {*.deleteUser()}
+allUsers() = {addUser|deleteUser}
+
+}%%EVENTS
+
+
+PROPERTY users{
+
+STATES {
+
+BAD{
+toomany {}
+baddelete{}
+}
+
+NORMAL{
+ok{}
+}
+
+STARTING{
+start {System.out.println("Started!!!");}
+}
+}%%STATES
+
+TRANSITIONS{
+
+ok -> toomany [addUser()\userCnt > 5]
+
+ok -> ok [addUser()\\userCnt++;]
+
+ok -> start [deleteUser()\userCnt == 1\userCnt--;]
+
+ok -> ok [deleteUser()\\userCnt--;]
+
+ok -> ok [allUsers()]
+
+start -> ok [addUser()\\userCnt++;]
+
+start -> baddelete [deleteUser()\\]
+
+start -> start [allUsers()]
+
+}
+
+}%%PROPERTY
+
+
+
+FOREACH (String u) limit 2 {
+
+Initializeif(true){}
+
+VARIABLES {
+
+int accountCnt = 0;
+
+}%%VARIABLES
+
+
+EVENTS{
+
+addAccount(int id) = {User u1.addAccount()}
+where {u = u1.toString();id = u1.id;}
+
+deleteAccount(u1) = {u1.deleteAccount()}
+where {u = u1.toString();}
+
+allAccounts(u1) = {addAccount|deleteAccount}
+
+}%%EVENTS
+
+
+PROPERTY account{
+
+STATES {
+
+ACCEPTING {
+final
+}
+
+BAD{
+toomany {}
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addAccount()\accountCnt > 5]
+
+start -> start [addAccount()\\accountCnt++;System.out.println("I have access to USER : " + u + " and to usercnt: " +userCnt);]
+
+start -> start [deleteAccount()\\accountCnt--;]
+
+start -> start [allAccounts()]
+
+start -> final [allAccounts()]
+}
+}%%PROPERTY
+
+
+
+FOREACH (String a) limit 1 {
+
+Initializeif(true){}
+
+VARIABLES {
+int transactionCnt = 0;
+}%%VARIABLES
+
+
+EVENTS{
+
+addTransaction(Account a1) = {a1.addTransaction()}
+where {a = a1.toString();u=a1.owner.toString();}
+
+deleteTransaction(Account a1) = {a1.deleteTransaction()}
+where {a = a1.toString();u=a1.owner.toString();}
+
+allTransactions(Account a1) = {addTransaction|deleteTransaction}
+
+}%%EVENTS
+
+
+PROPERTY transaction{
+
+STATES {
+
+BAD{
+toomany {System.out.println(u);}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addTransaction()\transactionCnt > 5]
+
+start -> start [addTransaction()\\transactionCnt++; 
+System.out.println("I still have access to USER : " + u + " and to usercnt: " +userCnt 
++ " and to accountcnt: " +u::accountCnt+ " and to transactioncnt: " +u::a::transactionCnt);]
+
+start -> start [deleteTransaction()\\transactionCnt --;]
+
+start -> start [allTransactions()]
+
+}
+}%%PROPERTY
+}%%FOREACH ACCOUNT
+}%%FOREACH USER
+}%%GLOBAL
+
+

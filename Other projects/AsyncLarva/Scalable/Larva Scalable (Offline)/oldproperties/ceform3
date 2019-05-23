@@ -1,0 +1,48 @@
+IMPORTS {import main.*;}
+GLOBAL {
+VARIABLES {
+Clock c2;
+int cnt_B = 0;
+}
+EVENTS {
+changeOfB(boolean B) = {BClass *.set(boolean _b)} where { B = _b; }
+c2AT1_0() = {c2@1.0}
+all(B) = {changeOfB|c2AT1_0}
+}
+PROPERTY cnt_B{
+STATES {
+STARTING { start }
+}
+TRANSITIONS {
+start -> start [changeOfB\B\cnt_B++;]
+}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i1i2i }
+NORMAL {
+ loc0i1i1ww
+ loc0i1i1w
+ loc0i1i1w1ww
+}
+STARTING { start }
+}
+TRANSITIONS {
+loc0i1i1ww -> loc0i1i1ww [all\(cnt_n2(B))<3.0 && cnt_n2(B))<=3.0)\]
+loc0i1i1ww -> loc0i1i2i [all\!(cnt_n2(B))<3.0)\]
+loc0i1i1ww -> unhandled [all]
+loc0i1i1w -> loc0i1i1w [all\(c2.compareToMillis((long)1000.0)<0 && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i1w -> loc0i1i2i [all\!(c2.compareToMillis((long)1000.0)<0)\]
+loc0i1i1w -> unhandled [all]
+start -> loc0i1i1w1ww [all\(c2.compareToMillis((long)1000.0)<=0 && cnt_n2(B))<=3.0)]
+loc0i1i1w1ww -> loc0i1i1ww [all\((!(c2.compareToMillis((long)1000.0)<0) && cnt_n2(B))<3.0) && cnt_n2(B))<=3.0)\]
+loc0i1i1w1ww -> loc0i1i1w [all\((c2.compareToMillis((long)1000.0)<0 && !(cnt_n2(B))<3.0)) && c2.compareToMillis((long)1000.0)<=0)\]
+loc0i1i1w1ww -> loc0i1i1w1ww [all\((c2.compareToMillis((long)1000.0)<0 && cnt_n2(B))<3.0) && (c2.compareToMillis((long)1000.0)<=0 && cnt_n2(B))<=3.0))\]
+loc0i1i1w1ww -> loc0i1i2i [all\(!(c2.compareToMillis((long)1000.0)<0) && !(cnt_n2(B))<3.0))\]
+loc0i1i1w1ww -> unhandled [all]
+loc0i1i2i -> loc0i1i2i [all\true\]
+loc0i1i2i -> unhandled [all]
+}
+}
+}%%GLOBAL

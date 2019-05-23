@@ -1,0 +1,7 @@
+compilerAddress = 
+applicAddress = 
+propertiesAddress = 
+aspectjAddress = 
+graphvizAddress = 
+mainClass = 
+arguments = 

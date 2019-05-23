@@ -1,0 +1,43 @@
+IMPORTS {import main.*;}
+GLOBAL {
+VARIABLES {
+Clock c2;
+}
+EVENTS {
+changeOfA(boolean A ,boolean B) = {A *.on()} where { B = B.status; A = A.status; }
+changeOfB(boolean B, boolean A) = {B *.on()} where { B = B.status; A = A.status; }
+initialize() = {Main *.initialize()}
+c2AT1_0() = {c2@1.0}
+all() = {|c2AT1_0}
+}
+PROPERTY ceform {
+STATES {
+BAD { unhandled
+ loc0i2i
+ loc0i1i2i }
+NORMAL {
+ loc0i
+ loc0i1i
+}
+STARTING { start }
+}
+TRANSITIONS {
+start -> loc0i [all\true]
+loc0i -> loc0i [all\!(badlogin)\]
+loc0i -> loc0i1i [all\badlogin\c2.reset();]
+loc0i -> unhandled [all]
+loc0i2i -> loc0i2i [all\!(badlogin)\]
+loc0i2i -> loc0i1i2i [all\badlogin\c2.reset();]
+loc0i2i -> unhandled [all]
+loc0i1i -> loc0i [all\(!((c2.compareToMillis((long)1000.0)<0 || badlogin)) && !(badlogin))\]
+loc0i1i -> loc0i2i [all\(!((c2.compareToMillis((long)1000.0)<0 || badlogin)) && badlogin)\]
+loc0i1i -> loc0i1i [all\((c2.compareToMillis((long)1000.0)<0 || badlogin) && !(badlogin))\]
+loc0i1i -> loc0i1i2i [all\((c2.compareToMillis((long)1000.0)<0 || badlogin) && badlogin)\c2.reset();]
+loc0i1i -> unhandled [all]
+loc0i1i2i -> loc0i2i [all\!((c2.compareToMillis((long)1000.0)<0 || badlogin))\]
+loc0i1i2i -> loc0i1i2i [all\((c2.compareToMillis((long)1000.0)<0 || badlogin) && !(badlogin))\]
+loc0i1i2i -> loc0i1i2i [all\((c2.compareToMillis((long)1000.0)<0 || badlogin) && badlogin)\c2.reset();]
+loc0i1i2i -> unhandled [all]
+}
+}
+}%%GLOBAL

@@ -1,0 +1,212 @@
+IMPORTS{
+import com.ccbill.tgs.tsm.TSMRunnableObject;
+import com.ccbill.tgs.tsm.states.AuthKeyVerifier;
+import com.ccbill.tgs.tsm.states.ProcessorLoader;
+import com.ccbill.tgs.tsm.states.MerchantInfoDefaultLoader;
+import com.ccbill.tgs.tsm.states.TransactionInserter;
+import com.ccbill.tgs.tsm.states.PassThroughInserter;
+import com.ccbill.tgs.tsm.states.PMSender;
+import com.ccbill.tgs.tsm.states.BacklogInserter;
+import com.ccbill.tgs.tsm.states.ExceptionChecker;
+import com.ccbill.tgs.tsm.states.ResponseInserter;
+import com.ccbill.tgs.tsm.states.AuthCapturer;
+import com.ccbill.tgs.tsm.states.MISender;
+import com.ccbill.tgs.transactions.structure.Transaction;
+import com.ccbill.tgs.transactions.structure.Transaction.TransactionType;
+
+
+import com.ccbill.tgs.transactions.structure.ACHTransaction;
+import com.ccbill.tgs.transactions.structure.CCTransaction;
+
+
+}
+GLOBAL{
+
+FOREACH (TSMRunnableObject tsm equateUsing equateTSM stringUsing toStringTSM){
+
+EVENTS{
+
+proc(TSMRunnableObject tsm1) = {tsm1.processTransaction()}where tsm=tsm1;
+verify(tsm1)          = {AuthKeyVerifier *.verifyAuthKey(tsm1)}where tsm=tsm1;
+procLoader(tsm1)      = {ProcessorLoader *.load(tsm1)}where tsm=tsm1;
+merLoader(tsm1)       = {MerchantInfoDefaultLoader *.load(tsm1)}where tsm=tsm1;
+transIns(tsm1)        = {TransactionInserter *.save(tsm1)}where tsm=tsm1;
+passThrough(tsm1)     = {PassThroughInserter *.save(tsm1)} where tsm=tsm1;
+pmSender(tsm1)        = {PMSender *.send(tsm1)}where tsm=tsm1;
+backlog(tsm1)         = {BacklogInserter *.backlogProcessor(tsm1)}where tsm=tsm1;
+excCheck(tsm1)        = {ExceptionChecker *.check(tsm1)} where tsm=tsm1;
+respIns(tsm1)         = {ResponseInserter *.save(tsm1)}where tsm=tsm1;
+%%authCapt(tsm1)      = {AuthCapturer *.process(tsm1)}where tsm=tsm1;
+MISend(tsm1)          = {MISender *.send(tsm1)}where tsm=tsm1;
+all(tsm1)	= {proc|verify|procLoader|merLoader|transIns|passThrough|pmSender|backlog|excCheck|respIns|MISend}
+}
+
+
+
+
+PROPERTY auth1{
+
+STATES{
+
+ACCEPTING {
+
+ready_one {System.out.println("TSM with transaction id: "+tsm.getTransaction().getGeneratedTransactionId()+" Ready sending to PM!");}
+}
+
+
+BAD{bad_state}
+
+NORMAL{
+startAuth auth_key_ver process_loader merchant_loader trans_inserter backlog pass_through mi_send resp_inserter
+}
+
+STARTING {start}
+
+}%%STATES
+
+
+TRANSITIONS{
+
+start           -> startAuth           [proc\tsm.getTransaction().getType()==TransactionType.CCAuth && tsm.getTransaction().getCurrentStateID()==0]
+
+
+startAuth       -> auth_key_ver        [verify()]
+
+startAuth       -> bad_state           [all]
+
+
+auth_key_ver    -> process_loader      [procLoader()]
+
+auth_key_ver    -> bad_state           [all]
+
+
+process_loader  -> merchant_loader     [merLoader()]
+
+process_loader  -> bad_state           [all]
+
+
+merchant_loader -> trans_inserter      [transIns()][enableCheck checkAssets on tsm]
+
+merchant_loader -> bad_state           [all]
+
+
+trans_inserter  -> pass_through        [passThrough()]
+
+trans_inserter  -> bad_state           [all]
+
+
+pass_through    -> ready_one           [pmSender()]
+
+pass_through    -> bad_state           [all]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+PROPERTY auth2{
+
+STATES{
+
+ACCEPTING {
+
+ready_two {System.out.println("TSM with transaction id: "+tsm.getTransaction().getGeneratedTransactionId()+" Ready from second part as well!");}
+}
+
+BAD{bad_state}
+
+NORMAL{
+after_pm backlog pass_through resp_inserter exc_checker
+}
+
+STARTING {start}
+
+}%%STATES
+
+
+TRANSITIONS{
+
+start           -> after_pm            [proc\tsm.getTransaction().getType()==TransactionType.CCAuth && tsm.getTransaction().getCurrentStateID()>0]
+
+after_pm        -> backlog             [backlog()]
+
+after_pm        -> bad_state           [all]
+
+backlog         -> exc_checker         [excCheck()]
+
+backlog         -> bad_state           [all]
+
+exc_checker     -> resp_inserter       [respIns()]
+
+exc_checker     -> bad_state           [all]
+
+resp_inserter   -> ready_two           [MISend()]
+
+resp_inserter   -> bad_state           [all]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+
+
+}%%FOREACH
+}%%GLOBAL
+
+METHODS {
+
+%%this method need not be static but it makes sense to be so since it takes two instances and compares them
+%% if such a method is not provided, the default equals method of the object will be used
+%% to force the verification program to use this methods, simply put [equateUsing] when declaring the context
+ 
+ %%this method should specify what it means for two object to be the same object (hence returning true
+ %% if it returns false, it means that the two objects are considered to be distinct from each other
+ 
+ %% the input parameters MUST be either of the specific type or of a superclass EG object
+ 
+static boolean equateTSM(TSMRunnableObject tsm, TSMRunnableObject tsm2)
+{
+ if (tsm.getTransaction().getGeneratedTransactionId() == 0)
+ 	return tsm.equals(tsm2);
+ else {
+ 	if (tsm.getTransaction().getGeneratedTransactionId()
+ 		== tsm2.getTransaction().getGeneratedTransactionId())
+ 		return true;
+ 	else
+ 		return false;
+	}
+}
+
+%% this method should also be static BUT also works all the same if it is not...
+%%BUT is MUST have two parameters...
+%% the input parameters MUST be either of the specific type or of a superclass EG object
+
+%% this method can perform any check on the objects
+%% the first object represents the object as it was in the last transition
+%% while the second object represents the object as it became after the transition
+
+%% this is ideal to check that certain fields of the object remained unchanged (if they are meant to remain so)
+
+%% such a method check can be enabled/disabled by putting [enableCheck MethodName on VariableName]
+
+static boolean checkAssets(TSMRunnableObject tsm, TSMRunnableObject tsm2)
+{
+if (tsm.getTransaction() instanceof CCTransaction)
+{ 
+	System.out.println("Amount being compared: " + ((CCTransaction)tsm.getTransaction()).getCurrency().getAmount());
+	return ((CCTransaction)tsm.getTransaction()).getCurrency().getAmount() == ((CCTransaction)tsm2.getTransaction()).getCurrency().getAmount(); 
+}	
+else if (tsm.getTransaction() instanceof ACHTransaction)
+{
+	System.out.println("Amount being compared: " + ((ACHTransaction)tsm.getTransaction()).getCurrency().getAmount());
+	return ((ACHTransaction)tsm.getTransaction()).getCurrency().getAmount() == ((ACHTransaction)tsm2.getTransaction()).getCurrency().getAmount(); 
+
+}
+return true;
+}
+
+static String toStringTSM(TSMRunnableObject tsm)
+{
+return new Long(tsm.getTransaction().getGeneratedTransactionId()).toString();
+}
+
+
+}

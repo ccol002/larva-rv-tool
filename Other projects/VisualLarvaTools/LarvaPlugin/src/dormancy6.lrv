@@ -1,0 +1,478 @@
+
+%%%%%%%%%%%%%%%%%%%% Properties being monitored %%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% 1> Any user which should be dormant or closed and is not, is detected
+%% 2> Any user which is frozen by dormancy or broken by breakage prematurely, is detected
+%% 3> Any user transaction while the user is dormant or closed is detected 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+IMPORTS {
+import Events.Template;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.lang.reflect.Field;
+}
+
+GLOBAL {
+
+ INITIALIZEIF{SC.initializeMain}
+
+ VARIABLES {   
+  int idp_limit = 180*24*60*60; %%6 months in seconds (dormant)
+  int drp_limit = 30*24*60*60;  %%1 month (put to dormant again)
+  int bwp_limit = 330*24*60*60; %%11 months (give warning)
+  int bp_limit = 360*24*60*60;  %%12 months (breakage)
+  boolean ignore_blocked_dorm = true;
+  boolean ignore_frozen_dorm = true;
+  boolean ignore_suspended_dorm = true;
+  boolean ignore_blocked_break = true;
+  boolean ignore_frozen_break = true;
+  boolean ignore_suspended_break = true;
+  boolean ignore_blocked_warn = true;
+  boolean ignore_frozen_warn = true;
+  boolean ignore_suspended_warn = true;
+  double dormancy_fee = 10;
+  }
+
+  EVENTS { 
+    all(timestamp,t) = {Template t.call(String name, long timestamp)}
+  				        filter {!t.params.containsKey("user")}
+         }
+  
+  PROPERTY properties {
+  
+  STATES {
+    STARTING {start}
+  }
+  TRANSITIONS {
+    start -> start
+    [ all
+     \ t.is("PropChange")
+     \ String message = (String)t.params.get("message");
+       if (message.contains("ignore") && message.contains("blocked") && message.contains("dormancy")) 
+       		ignore_blocked_dorm = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("suspended") && message.contains("dormancy")) 
+       		ignore_suspended_dorm = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("frozen") && message.contains("dormancy"))
+       		ignore_frozen_dorm = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("blocked") && message.contains("breakage")) 
+       		ignore_blocked_break = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("suspended") && message.contains("breakage")) 
+       		ignore_suspended_break = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("frozen") && message.contains("breakage")) 
+       		ignore_frozen_warn = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("blocked") && message.contains("warning")) 
+       		ignore_blocked_warn = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("suspended") && message.contains("warning")) 
+       		ignore_suspended_warn = (message.contains("true"));
+       else if (message.contains("ignore") && message.contains("frozen") && message.contains("warning")) 
+       		ignore_frozen_warn = (message.contains("true"));
+       else System.out.println("Warning!! A property changed could not be understood!!");
+       %%note that changing the limits of dormancy will cause problems with the implementation
+       %% because this requires changing the configured timer events (so far these are fixed from the start)
+    ]
+  }
+  }
+
+
+ FOREACH (String s) {
+ 
+ INITIALIZEIF{SC.initializeUser}
+ 
+ VARIABLES {
+   
+  boolean USER_DEPOSIT_OCT = false;
+  boolean USER_LOGIN = false;
+  boolean USER_CHANGE_LOST_PASSWORD = false;
+  boolean USER_ADD_BANK_CARD = false;
+  boolean USER_ADD_BANK_PAYOUT_ACCOUNT = false;
+  boolean USER_CREATE_VCC = false;
+  boolean USER_VIEW_VCC = false;
+  boolean USER_LOAD_VCC = false;   %% USER_LOAD_SPEND_INSTRUMENT = false;
+  boolean USER_DELETE_VCC = false; %% USER_DELETE_SPEND_INSTRUMENT = false;
+  boolean USER_VIEW_TRANSACTION_HISTORY = false;
+  boolean USER_LOCK_ACCOUNT = false;
+  boolean USER_TRANSFER = false;
+  boolean USER_TRANSFER_TO_VCC = false;
+  boolean USER_TRANSFER_TO_PLASTIC = false;
+  boolean USER_BANK_PAYOUT = false;
+  boolean USER_BANK_PAYIN = false;
+  boolean USER_VIRTUAL_PAYOUT = false;
+  boolean USER_PAYOUT_TO_BANKCARD = false;
+  boolean USER_APPLY_FOR_PLASTIC = false;
+  boolean USER_APPLY_FOR_PLASTIC_MASTERCARD = false;
+  boolean USER_APPLY_FOR_PLASTIC_VISA = false;
+ 
+  Clock idp;
+  Clock drp;
+  Clock bp;
+  
+  long passStart = RunningClock.now;
+  long lastFreeze;
+  boolean feeExpected = false;
+  
+  boolean aFrozenInstrument = false;
+  boolean suspended = false;
+  boolean closed = false;
+  boolean locked = false;
+  boolean frozen = false;
+  
+  }
+  
+    
+ EVENTS {
+  cATidp(timestamp) = {idp @d 181} where {timestamp = RunningClock.now;}
+  cATdrp(timestamp) = {drp @d 31} where {timestamp = RunningClock.now;}
+  cATbp(timestamp)  = {bp @d 361} where {timestamp = RunningClock.now;}
+  
+  all(timestamp,t) = {Template t.call(String name, long timestamp)}
+  					  filter {t.params.containsKey("user")}
+                      where {s = t.params.get("user").toString();}
+
+ }
+  
+ PROPERTY right_management {
+   STATES {
+     STARTING {start}
+   }
+   TRANSITIONS {
+     start -> start 
+       [ all
+       \ t.is("ChangeRights")
+       \ try{
+         String message = (String)t.params.get("message");
+         Class c = this.getClass();
+         if (message.contains("grant") && message.contains("right"))
+			for (String s : SC.rightsList(message))
+			{
+			   Field f = c.getField(s);
+			   f.set(this, true);
+			}
+		 else if (message.contains("set") && message.contains("right"))
+		{
+	    	USER_DEPOSIT_OCT = false;
+			USER_LOGIN = false; 
+			USER_CHANGE_LOST_PASSWORD = false;
+  	 		USER_ADD_BANK_CARD = false;
+  	 		USER_ADD_BANK_PAYOUT_ACCOUNT = false;
+  			USER_CREATE_VCC = false;
+  			USER_VIEW_VCC = false;
+  			USER_LOAD_VCC = false;
+  	 		USER_DELETE_VCC = false;
+  	 		USER_VIEW_TRANSACTION_HISTORY = false;
+  	 		USER_LOCK_ACCOUNT = false;
+  	 		USER_TRANSFER = false;
+  			USER_TRANSFER_TO_VCC = false;
+            USER_TRANSFER_TO_PLASTIC = false;
+  	 		USER_BANK_PAYOUT = false;
+  	 		USER_BANK_PAYIN = false;
+  	 		USER_VIRTUAL_PAYOUT = false;
+  	 		USER_PAYOUT_TO_BANKCARD = false;
+  	 		USER_APPLY_FOR_PLASTIC = false;
+  	 		USER_APPLY_FOR_PLASTIC_MASTERCARD = false;
+  	 		USER_APPLY_FOR_PLASTIC_VISA = false;
+  	 		for (String s : SC.rightsList(message))
+			{
+			   Field f = c.getField(s);
+			   f.set(this, true);
+			}
+		}
+		 else if (message.contains("revoke") && message.contains("right"))
+			for (String s : SC.rightsList(message))
+			{
+			   Field f = c.getField(s);
+			   f.set(this, false);
+			}
+		}catch(Exception ex)
+		{ex.printStackTrace();}
+       ]
+   }
+ 
+ }  
+ 
+ PROPERTY dormancy {
+ 
+   STATES {
+     BAD { unexpectedTX expiredDorm earlyDorm }
+     NORMAL { dorm }
+     STARTING { nondorm }
+   }
+ 
+   TRANSITIONS {
+   
+    nondorm -> nondorm 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+     ]   
+   
+    nondorm -> dorm 
+     [ all 
+     \ t.is("DormTX") && idp.current(timestamp) >= idp_limit
+       && (!suspended || ignore_suspended_dorm) && (!locked || ignore_blocked_dorm)
+       && (!aFrozenInstrument || ignore_frozen_dorm)
+     \ drp.reset(timestamp);
+       feeExpected = true; 
+       lastFreeze = timestamp; 
+       System.out.println(s + " Frozen at " + timestamp);
+     ]  
+     
+   nondorm -> earlyDorm 
+     [ all 
+     \ t.is("DormTX") 
+     \ System.out.println(s + " Frozen at " + timestamp);
+     ] 
+  
+   nondorm -> expiredDorm 
+     [ cATidp
+     \ (!suspended || ignore_suspended_dorm) && (!locked || ignore_blocked_dorm)
+       && (!aFrozenInstrument || ignore_frozen_dorm)
+     \ System.out.println(s + " Expired Dormancy!1 " + passStart + "->" + timestamp);
+     ]
+   
+   dorm -> nondorm
+     [ all
+     \ t.is("UnDormTX") %%askkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+         feeExpected = false;
+       }
+     ]
+             
+   dorm -> dorm
+     [ all 
+     \ t.is("DormFeeTX") 
+     \ feeExpected = false; 
+       System.out.println(s + " Fee taken at " + timestamp);
+     ]  
+         
+   dorm -> dorm
+     [ all 
+     \ t.is("DormTX") && drp.current(timestamp) >= drp_limit
+     \ drp.reset(timestamp);
+       lastFreeze = timestamp;
+       %%System.out.println(s + " Frozen again at " + timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+       }
+       feeExpected = true;
+     ]  
+     
+   dorm -> earlyDorm
+     [ all 
+     \ t.is("DormTX") 
+     \ %%System.out.println(s + " Frozen again at " + timestamp);
+     ]    
+      
+   dorm -> expiredDorm
+     [ cATdrp
+     \ %%passedDays(lastFreeze,timestamp,drp)
+     \ System.out.println(s + " Expired Dormancy!2 " + lastFreeze + "->" + timestamp);
+     ]
+ 
+   dorm -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ] 
+   }
+ }
+ 
+  PROPERTY breakage {
+ 
+   STATES {
+     BAD { unexpectedTX expiredBreak earlyBreak }
+     NORMAL { break }
+     STARTING { nonbreak }
+   }
+ 
+   TRANSITIONS {
+   
+     nonbreak -> nonbreak 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       bp.reset(timestamp);
+     ]   
+   
+   nonbreak -> expiredBreak 
+     [ cATbp
+     \ (!suspended || ignore_suspended_break) && (!locked || ignore_blocked_break)
+       && (!aFrozenInstrument || ignore_frozen_break)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ] 
+     
+   nonbreak -> earlyBreak 
+     [ all 
+     \ t.is("BreakTX") 
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]    
+     
+    nonbreak -> break  
+     [ all
+     \ t.is("BreakTX") && bp.current(timestamp) >= bp_limit
+       && (!suspended || ignore_suspended_break) && (!locked || ignore_blocked_break)
+       && (!aFrozenInstrument || ignore_frozen_break)
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]  
+     
+     break -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+   }
+ }
+ 
+  
+ PROPERTY user_lc {
+  STATES {
+   BAD { unexpectedTX }
+   NORMAL { created active suspended locked closed }
+   STARTING { start } 
+  }
+  
+  TRANSITIONS {
+   
+   start -> created
+     [ all
+     \ t.is("Creation")
+     \
+     ]
+     
+   start -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+     
+   created -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+     
+   created -> active
+     [ all
+     \ t.is("Activation")
+     \
+     ]
+          
+   active -> locked
+     [ all
+     \ t.is("AcctLock")
+     \
+     ]  
+    
+   locked -> active
+     [ all
+     \ t.is("AcctUnSuspend") 
+     %%checked and yes unlock can only be done by an operator
+     %% in the same way that an unsuspend takes place
+     \
+     ]   
+     
+   active -> suspended
+     [ all
+     \ t.is("AcctSuspend")
+     \
+     ]    
+   
+   suspended -> active
+     [ all
+     \ t.is("AcctUnSuspend")
+     \
+     ]  
+          
+   }  
+ }
+ 
+ FOREACH (String i)
+ {
+ INITIALIZEIF { SC.initializeInstrument }
+
+ VARIABLES {
+ 
+ double balance = 0;
+ String currency = null;
+ String type = null; %%vcc/bankcard/namedbalance
+ }
+ 
+ EVENTS {
+ 
+ %%for now assume that the higher level events will not be broadcast to the
+ %%lower levels... this creates some complexities to obtain the context...
+ 
+   all(timestamp,t) = {Template t.call(String name, long timestamp)}
+   					  filter {t.params.containsKey("user") && t.params.containsKey("instrument")}
+                      where {s = t.params.get("user").toString();
+                     	     i = t.params.get("instrument").toString();}
+ 
+ }
+ 
+ 
+ 
+ 
+ PROPERTY instrument_lc {
+ 
+ STATES{
+   BAD { unexpected }
+   NORMAL {assigned restricted fallow_assigned fallow_unassigned closed}
+   STARTING {unassigned}
+ 
+ }
+ 
+ TRANSITIONS {
+ 
+ unassigned -> assigned 
+   [ all 
+   \ t.is("Assign")
+   \ type = t.params.get("type").toString();
+     currency = t.params.get("currency").toString();
+   ]
+   
+ assigned -> restricted
+   [ all
+   \ t.is("Restrict")
+   \
+   ]
+   
+ restricted -> assigned
+   [ all
+   \ t.is("Unrestrict")  
+   \
+   ]
+ 
+  assigned -> fallow_assigned
+   [ all
+   \ t.is("Fallow")
+   \
+   ] 
+   
+ 
+  }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ INITIALLY { SC.initiallyInstruments(); } 
+ }
+ 
+ INITIALLY { SC.initiallyUsers(); } 
+ }
+}
+
+METHODS {
+  import C:\Documents and Settings\ixaris\Desktop\projects3\Larva Scalable (Offline)\properties\sc.java;
+
+}

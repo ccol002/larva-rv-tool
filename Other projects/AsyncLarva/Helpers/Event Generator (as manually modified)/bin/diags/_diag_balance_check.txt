@@ -1,0 +1,9 @@
+digraph _logic_balance_check {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = octagon]; unexpectedBalance;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [label = "(1) balCheck\\expBalance == balance "];
+start -> unexpectedBalance [label = "(2) balCheck\\\\..."];
+}

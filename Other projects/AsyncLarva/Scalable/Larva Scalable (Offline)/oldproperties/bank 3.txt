@@ -1,0 +1,151 @@
+IMPORTS{
+import nesting.User;
+import nesting.Account;
+import nesting.Transaction;
+}
+
+GLOBAL{
+
+EVENTS{
+
+addUser() = *.addUser();
+deleteUser() = *.deleteUser();
+allUsers() = addUser()|deleteUser();
+
+}%%EVENTS
+
+VARIABLES {
+int userCnt = 0;
+}%%VARIABLES
+
+PROPERTY users{
+
+STATES {
+
+BAD{
+toomany []
+}
+
+STARTING{
+start []
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addUser()\userCnt > 5]
+
+start -> start [addUser()\\userCnt++;]
+
+start -> start [deleteUser()\\userCnt--;]
+
+start -> start [allUsers()]
+
+}
+}%%PROPERTY
+
+FOREACH (User u){
+
+EVENTS{
+
+addAccount(User u1) = u1.addAccount();
+where {u = u1;}
+
+deleteAccount(User u1) = u1.deleteAccount();
+where {u = u1;}
+
+processUser(User u1) = u1.process();
+where {u = u1;}
+
+allAccounts(User u1) = addAccount| deleteAccount| processUser;
+
+}%%EVENTS
+
+VARIABLES {
+
+int accountCnt = 0;
+
+}%%VARIABLES
+
+PROPERTY account{
+
+STATES {
+
+BAD{
+toomany []
+}
+
+STARTING{
+start []
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addAccount()\accountCnt > 5]
+
+start -> start [addAccount()\\accountCnt++;System.out.println("I have access to USER :) " + u + " and to usercnt: " +userCnt);]
+
+start -> start [deleteAccount()\\accountCnt--;]
+
+start -> start [allAccounts()]
+
+}
+}%%LOGIC
+
+FOREACH (Account a){
+
+EVENTS{
+
+addTransaction(Account a1) = a1.addTransaction();
+where {a = a1;u=a1.owner;}
+
+deleteTransaction(Account a1) = a1.deleteTransaction();
+where {a = a1;u=a1.owner;}
+
+processAccount(Account a1) = a1.process();
+where {a = a1;u=a1.owner;}
+
+allTransactions(Account a1) = addTransaction(a1)| deleteTransaction(a1)| processAccount(a1);
+
+}%%EVENTS
+
+VARIABLES {
+
+int transactionCnt = 0;
+
+}%%VARIABLES
+
+PROPERTY transaction{
+
+STATES {
+
+BAD{
+toomany []
+}
+
+STARTING{
+start []
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> toomany [addTransaction()\transactionCnt > 5]
+
+start -> start [addTransaction()\\transactionCnt++; 
+
+System.out.println("I still have access to USER :) " + u + " and to usercnt: " 
++userCnt + " and to accountcnt: "+accountCnt);]
+
+start -> start [deleteTransaction()\\transactionCnt --;]
+
+start -> start [allTransactions()]
+
+}
+}%%PROPERTY
+}%%FOREACH ACCOUNT
+}%%FOREACH USER
+}%%GLOBAL

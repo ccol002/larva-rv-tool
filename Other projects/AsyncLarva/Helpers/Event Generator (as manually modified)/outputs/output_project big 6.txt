@@ -1,0 +1,577 @@
+Expected balance: -818.63 found(at monitor): -766.15 user user168750 allocation 200804206d3630895f685284 at 1230039314833
+Loading without necessary rights!! WEB user  user105750 1230121159418
+Expected balance: 29.68 found(at monitor): -0.32 user user105750 allocation 2008110467f035b6f05842bc at 1230086093966
+Unexpected Breakage at 1230134493699 user user119500
+Unexpected Breakage at 1230134702106 user user23500
+Expected balance: -7755.74 found(at monitor): -7860.69 user user163000 allocation 200805200620f414ad69a71e at 1230132900809
+Expected balance: 0.0 found(at monitor): -94.93 user user183500 allocation 11e640e6b470e0e at 1230132900809
+Early Breakage at 1230221050279 user user191500
+Unexpected Dormancy at 1230221892100 user  user234750
+Loading without necessary rights!! WEB user  user80000 1230251208489
+Unexpected Breakage at 1230307256660 user user29000
+Unexpected Dormancy at 1230309688641 user  user86500
+Transferring without necessary rights!! user  user105750 1230389055774
+Unexpected Breakage at 1230394278774 user user161750
+Unexpected Breakage at 1230480083308 user user211750
+Unexpected Breakage at 1230480674093 user user116500
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71eb1ee20a0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71ecbdd3060e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71ee0dbc040e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71efafb6000e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71f17e29090e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71f31f39060e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71fc72650b0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71fd48730f0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e71ff1c01060e at 1230459566959
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e7200a6950b0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -385.85 user user183500 allocation 11e72d734b6000e at 1230459566959
+Expected balance: 0.0 found(at monitor): -22.69 user user180750 allocation 11e7346dc3a0a0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -22.69 user user180750 allocation 11e740b8a0c0f0e at 1230459566959
+Expected balance: 0.0 found(at monitor): -300.0 user user172250 allocation 11e703e03e8010e at 1230459566959
+Expected balance: 0.0 found(at monitor): -500.0 user user172250 allocation 11e69a270be010e at 1230459566959
+Unexpected Dormancy at 1230567694311 user  user45250
+Expected balance: 0.0 found(at monitor): -136.18 user user183500 allocation 11e7bf5785e0f0e at 1230577335443
+Expected balance: 0.0 found(at monitor): -567.42 user user180500 allocation 11e7d1af4cf010e at 1230577335443
+LOAD amount exceeded user :user106500 loaded EUR 1700.0 in 1 day(s)
+Unexpected Breakage at 1230653355792 user user110250
+Unexpected Dormancy at 1230653938808 user  user9750
+Expected balance: 216.79 found(at monitor): -83.21 user user80000 allocation 2008090222a7bfd04c1a53b4 at 1230715006885
+Unexpected Breakage at 1230739362481 user user185750
+Expected balance: 0.0 found(at monitor): -226.96 user user182500 allocation 11e87a962d90b0e at 1230739358478
+Unexpected Dormancy at 1230826178676 user  user148500
+Unexpected Breakage at 1230912118155 user user186750
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e8c524ccd060e at 1230980777567
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e8c536ee20f0e at 1230980777567
+Expected balance: 0.0 found(at monitor): -506.71 user user181500 allocation 11e8c54ad9d0a0e at 1230980777567
+Expected balance: 0.0 found(at monitor): -45.39 user user183500 allocation 11e8b7434ec0b0e at 1230980777567
+Unexpected Breakage at 1231085143654 user user203500
+Expected balance: 0.0 found(at monitor): -148.07 user user182500 allocation 11e9ab5bac7090e at 1231130726337
+Expected balance: 0.0 found(at monitor): -341.71 user user180500 allocation 11e9b6bbdd90c0e at 1231130726337
+Expected balance: 0.0 found(at monitor): -45.56 user user180750 allocation 11e9c2bfc90020e at 1231130726337
+LOAD amount exceeded user :user45750 loaded USD 6330.0 in 1 day(s)
+Expected balance: 0.0 found(at monitor): -45.56 user user183500 allocation 11ea0029cf30a0e at 1231201888570
+Expected balance: 0.0 found(at monitor): -34.17 user user180750 allocation 11ea17da1bd040e at 1231201888570
+Expected balance: 0.0 found(at monitor): -22.78 user user183500 allocation 11ea186222b090e at 1231201888570
+Unexpected Breakage at 1231258123334 user user236000
+Expected balance: 0.0 found(at monitor): -637.41 user user181500 allocation 11ea51778f60c0e at 1231308022326
+Expected balance: 0.0 found(at monitor): -637.41 user user181500 allocation 11ea5191de70b0e at 1231308022326
+Expected balance: 0.0 found(at monitor): -637.41 user user181500 allocation 11ea519b71d0d0e at 1231308022326
+Expected balance: 0.0 found(at monitor): -637.41 user user181500 allocation 11ea51a997e0d0e at 1231308022326
+Expected balance: 0.0 found(at monitor): -509.93 user user181500 allocation 11ea51b4251020e at 1231308022326
+Expected balance: 0.0 found(at monitor): -509.93 user user181500 allocation 11ea51c0d17020e at 1231308022326
+Unexpected Breakage at 1231344222151 user user33000
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11ea3f9469f040e at 1231341234615
+Expected balance: 0.0 found(at monitor): -100.0 user user72000 allocation 11ea2b2c56b020e at 1231341234615
+Expected balance: 0.0 found(at monitor): -235.27 user user182500 allocation 11eac9423530b0e at 1231341234615
+LOAD amount exceeded user :user238250 loaded EUR 1650.0 in 1 day(s)
+Unexpected Breakage at 1231431084791 user user116750
+Unexpected Dormancy at 1231431835839 user  user131250
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11ea8a228810b0e at 1231493808802
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11ea89526ef0e0e at 1231493808802
+Expected balance: 0.0 found(at monitor): -100.0 user user172250 allocation 11ea820eb27040e at 1231493808802
+Expected balance: 0.0 found(at monitor): -125.0 user user72000 allocation 11ea80579ac0d0e at 1231493808802
+Expected balance: 0.0 found(at monitor): -48.01 user user181000 allocation 11eafad5ce60b0e at 1231493808802
+Expected balance: 0.0 found(at monitor): -74.31 user user182500 allocation 11eb1a824e20b0e at 1231493808802
+Unexpected Breakage at 1231516899710 user user205250
+Unexpected Dormancy at 1231518818023 user  user13000
+Unexpected Breakage at 1231603496152 user user215500
+Unexpected Breakage at 1231603563025 user user219500
+Unexpected Breakage at 1231603611623 user user240750
+Early Dormancy at 1231604478004 user  user228000
+Unexpected Breakage at 1231689717981 user user21250
+Unexpected Breakage at 1231690737412 user user124750
+Unexpected Dormancy at 1231691412486 user  user100000
+Early Dormancy at 1231691456723 user  user169000
+Expected balance: 0.0 found(at monitor): -115.63 user user183500 allocation 11ebac029640f0e at 1231691451029
+Expected balance: 0.0 found(at monitor): -693.79 user user180500 allocation 11ec03f4ba30e0e at 1231691451029
+Expected balance: 0.0 found(at monitor): -231.26 user user182500 allocation 11ec0d2c2a7040e at 1231691451029
+Expected balance: 0.0 found(at monitor): -23.12 user user180750 allocation 11ec0d53728000e at 1231691451029
+Unexpected Breakage at 1231776474023 user user247500
+Early Breakage at 1231776753912 user user215750
+Unexpected Breakage at 1231776802829 user user101750
+Unexpected Breakage at 1231776983916 user user38500
+Unexpected Dormancy at 1231777346139 user  user91000
+Unexpected Dormancy at 1231777626946 user  user155500
+Expected balance: 0.0 found(at monitor): -34.68 user user183500 allocation 11ec40789b00f0e at 1231821275758
+Expected balance: 0.0 found(at monitor): -50.0 user user177000 allocation 11ea959e6ae0a0e at 1231821275758
+Unexpected Breakage at 1231862563959 user user52750
+Unexpected Dormancy at 1231863651207 user  user50500
+Expected balance: 0.0 found(at monitor): -297.0 user user182500 allocation 11ecc198cd1040e at 1231863659400
+Unexpected Breakage at 1231949245226 user user55500
+Expected balance: 0.0 found(at monitor): -200.0 user user172250 allocation 11ec0e02a48060e at 1231944341591
+Expected balance: 0.21 found(at monitor): -31.2 user user113000 allocation 11e82fdf46c0f0e at 1232024063931
+Expected balance: 0.0 found(at monitor): -234.94 user user183500 allocation 11ece44fdeb0f0e at 1232024063931
+Expected balance: 0.0 found(at monitor): -71.27 user user183500 allocation 11ed0cbad2f000e at 1232024063931
+Expected balance: -440.79 found(at monitor): -419.8 user user199250 allocation 2008033000d271c1fd763710 at 1232044735851
+LOAD amount exceeded user :user77250 loaded USD 2050.0 in 1 day(s)
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11eccbdc9130f0e at 1232094603473
+Unexpected Breakage at 1232122205036 user user24000
+Unexpected Dormancy at 1232122392851 user  user120750
+Unexpected Dormancy at 1232123356181 user  user202750
+Unexpected Dormancy at 1232123510641 user  user240500
+Expected balance: 0.0 found(at monitor): -47.84 user user180750 allocation 11eda5b4c23040e at 1232191728398
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11ed59ab8ba0f0e at 1232203272562
+Expected balance: 0.0 found(at monitor): -100.0 user user177000 allocation 11ed5785a9f0f0e at 1232203272562
+Unexpected Breakage at 1232294507473 user user66250
+Unexpected Breakage at 1232294507915 user user58750
+Unexpected Dormancy at 1232295217022 user  user57750
+Expected balance: 0.0 found(at monitor): -167.33 user user183000 allocation 11ee5099ac80b0e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede7fc0fd060e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8258670c0e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede84aa200a0e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8640b8060e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8837d9080e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede899765090e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8ae4f10e0e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8c5233040e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8dda860b0e at 1232300404392
+Expected balance: 0.0 found(at monitor): -541.59 user user181500 allocation 11ede8fa459070e at 1232300404392
+Expected balance: 0.0 found(at monitor): -48.18 user user183500 allocation 11eddaef331020e at 1232300404392
+Expected balance: 0.0 found(at monitor): -142.6 user user183500 allocation 11ee2cfb8a8020e at 1232300404392
+Expected balance: 0.0 found(at monitor): -475.38 user user180500 allocation 11ee459a2810e0e at 1232300404392
+Unexpected Breakage at 1232381150699 user user211500
+Expected balance: 0.0 found(at monitor): -200.0 user user172250 allocation 11edb96ba96010e at 1232396747157
+Expected balance: 0.0 found(at monitor): -47.53 user user183500 allocation 11ee8079d9e050e at 1232396747157
+Expected balance: 0.0 found(at monitor): -154.49 user user182500 allocation 11eead3ebff0e0e at 1232396747157
+Unexpected Breakage at 1232467623278 user user208000
+Unexpected Breakage at 1232467710973 user user158750
+Unexpected Breakage at 1232468680502 user user23250
+Unexpected Breakage at 1232468745116 user user72250
+Unexpected Dormancy at 1232469759177 user  user198250
+Expected balance: 0.0 found(at monitor): -23.76 user user180750 allocation 11eee99b9190b0e at 1232469756061
+Unexpected Breakage at 1232554362895 user user116000
+Unexpected Breakage at 1232555153057 user user40000
+Unexpected Dormancy at 1232561024453 user  user76500
+Expected balance: 0.0 found(at monitor): -36.49 user user183500 allocation 11ef4e445e90e0e at 1232570423303
+Expected balance: 50.2 found(at monitor): -9.99 user user58000 allocation 11ef3e67171000e at 1232644092262
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11ef091ff86070e at 1232714297668
+Unexpected Breakage at 1232727396176 user user92000
+Unexpected Dormancy at 1232728600900 user  user245000
+Expected balance: -703.16 found(at monitor): -682.17 user user48000 allocation 200805303b823ebacf21642f at 1232732537374
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe7b57ab0f0e at 1232805537931
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe7da975000e at 1232805537931
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe7f0b09060e at 1232805537931
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe807df50c0e at 1232805537931
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe81c604050e at 1232805537931
+Expected balance: 0.0 found(at monitor): -549.08 user user181500 allocation 11efe82e2a90b0e at 1232805537931
+Unexpected Dormancy at 1232814944882 user  user74500
+Unexpected Breakage at 1232899599999 user user229000
+Expected balance: 0.0 found(at monitor): -24.25 user user181000 allocation 11f01fd83ad0a0e at 1232958272252
+Expected balance: 0.0 found(at monitor): -485.28 user user183500 allocation 11f02f9bc77080e at 1232958272252
+Expected balance: 0.0 found(at monitor): -24.25 user user180750 allocation 11f0311725d0c0e at 1232958272252
+Expected balance: 0.0 found(at monitor): -246.22 user user183500 allocation 11f0495bee4070e at 1232958272252
+Expected balance: 0.0 found(at monitor): -160.04 user user182500 allocation 11f07041251080e at 1232958272252
+Expected balance: 0.0 found(at monitor): -49.24 user user180750 allocation 11f0811ea2b040e at 1232958272252
+Expected balance: 0.0 found(at monitor): -123.11 user user180500 allocation 11f088f41010e0e at 1232958272252
+Expected balance: 0.0 found(at monitor): -129.0 user user171500 allocation 11ef8b9276b030e at 1232958272252
+Expected balance: 0.0 found(at monitor): -200.0 user user171500 allocation 11ef9480b1d050e at 1232958272252
+Expected balance: 0.0 found(at monitor): -492.45 user user183500 allocation 11f0c46fa14090e at 1233001611004
+Expected balance: 0.0 found(at monitor): -492.45 user user183500 allocation 11f0c85d599030e at 1233001611004
+Expected balance: 0.0 found(at monitor): -19.69 user user180750 allocation 11f0d9e69830f0e at 1233001611004
+Expired re-Dormancy! user :user14750 1230033083429->1232625083429
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11eff502bce010e at 1233001611004
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f007d6991070e at 1233001611004
+Expired re-Dormancy! user :user226750 1230042299094->1232634299094
+Unexpected Breakage at 1233072614015 user user65000
+Unexpected Dormancy at 1233073996310 user  user500
+Expired re-Dormancy! user :user128250 1230109544381->1232701544381
+Expired re-Dormancy! user :user28250 1230121280511->1232712173379
+Expected balance: 24.95 found(at monitor): 120.0 user user222000 allocation 11f05a1dd9e0a0e at 1233143286604
+Expected balance: -20.99 found(at monitor): -125.94 user user222000 allocation 11f05a1cf5a080e at 1233143286604
+Expired re-Dormancy! user :user238250 1232960422052->1232722652329
+Unexpected Breakage at 1233158580772 user user187250
+Expected balance: 0.0 found(at monitor): -239.27 user user183500 allocation 11f18782703020e at 1233218096908
+Expected balance: -83.96 found(at monitor): -41.98 user user57500 allocation 11f0f57d658030e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f00d03d0d000e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f0a3ef4e5050e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f036586b5080e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f08efa62b070e at 1233218096908
+Expected balance: 0.0 found(at monitor): -45.0 user user115750 allocation 11f0a003eb50f0e at 1233218096908
+Expected balance: 0.0 found(at monitor): -160.0 user user171500 allocation 11f034f8415060e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user31000 allocation 11f064dde530f0e at 1233218096908
+Expected balance: 0.0 found(at monitor): -200.0 user user172250 allocation 11f096e14b3060e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f037f6ee0020e at 1233218096908
+Expected balance: 0.0 found(at monitor): -30.0 user user31000 allocation 11f05cc5016090e at 1233218096908
+Expected balance: 0.63 found(at monitor): -198.27 user user84000 allocation 11e2200f272010e at 1233218096908
+Unexpected Breakage at 1233244924637 user user155750
+Unexpected Breakage at 1233245534860 user user37500
+Unexpected Dormancy at 1233246549814 user  user43500
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11f149f785a040e at 1233308408375
+Expected balance: 0.0 found(at monitor): -23.93 user user180750 allocation 11f1d041ccf070e at 1233308408375
+Unexpected Breakage at 1233331709277 user user137250
+Expired re-Dormancy! user :user197500 1232146201661->1232976092338
+Unexpected Breakage at 1233418443167 user user207250
+Expected balance: 0.0 found(at monitor): -380.0 user user171500 allocation 11f18182205010e at 1233418450543
+Expired re-Dormancy! user :user147750 1230479824587->1233068952409
+Expired re-Dormancy! user :user233750 1233260579367->1233070602859
+Unexpected Breakage at 1233505442605 user user160500
+Unexpected Dormancy at 1233506981208 user  user114500
+Expired re-Dormancy! user :user27750 1230522359173->1233114359173
+Expired re-Dormancy! user :user198000 1230963950400->1233114654135
+Expected balance: -522.5 found(at monitor): -418.0 user user87250 allocation 11f2b61071e0a0e at 1233532270995
+Expected balance: 0.0 found(at monitor): -171.83 user user183500 allocation 11f2bdae1de0b0e at 1233564910882
+Expected balance: 0.0 found(at monitor): -122.73 user user180500 allocation 11f2c30c87c010e at 1233564910882
+Expected balance: 0.0 found(at monitor): -49.09 user user180750 allocation 11f2c53d47b070e at 1233564910882
+Expected balance: 107.13 found(at monitor): 0.16 user user39500 allocation 20080814c31e660645566a78 at 1233564910882
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11f234366630e0e at 1233581558716
+Expected balance: 0.0 found(at monitor): -100.0 user user177000 allocation 11f2363646e070e at 1233581558716
+Expected balance: 0.0 found(at monitor): -150.0 user user171500 allocation 11f1d112e7c010e at 1233581558716
+Expected balance: 0.0 found(at monitor): -261.0 user user171500 allocation 11f2186cadf000e at 1233581558716
+Unexpected Breakage at 1233591807862 user user95000
+Unexpected Dormancy at 1233592318450 user  user4500
+Unexpected Dormancy at 1233593721620 user  user232500
+Expected balance: 19.3 found(at monitor): -226.17 user user182500 allocation 11f3040f7700c0e at 1233597152090
+Expected balance: 3.85 found(at monitor): -45.24 user user181750 allocation 11f317f296a030e at 1233597152090
+Expected balance: 0.96 found(at monitor): -11.31 user user180750 allocation 11f3292cfee060e at 1233597152090
+Unexpected Dormancy at 1233677458434 user  user133750
+Unexpected Breakage at 1233677525504 user user219250
+Unexpected Dormancy at 1233678238968 user  user104500
+Expired re-Dormancy! user :user11000 1230715253085->1233307253085
+Expected balance: 0.95 found(at monitor): -10.0 user user189000 allocation 20080704ef14799de3336502 at 1233741921371
+Expected balance: 47.98 found(at monitor): -565.7 user user180500 allocation 11f3730c86a090e at 1233741921371
+Unexpected Breakage at 1233763704193 user user112500
+Unexpected Breakage at 1233764206074 user user249000
+Expired re-Dormancy! user :user210000 1230760247289->1233347745194
+Expected balance: 0.0 found(at monitor): -150.0 user user172250 allocation 11f2d77f14b090e at 1233832976261
+Expected balance: 0.0 found(at monitor): -257.0 user user171500 allocation 11f26e8d83c090e at 1233836845911
+Expected balance: 0.0 found(at monitor): -75.0 user user210250 allocation 11f28fe29f0000e at 1233836845911
+Expected balance: 3.95 found(at monitor): -45.01 user user183500 allocation 11f3d3733850e0e at 1233836845911
+LOAD amount exceeded user :user36000 loaded USD 2018.0 in 1 day(s)
+Unexpected Breakage at 1233850243927 user user123000
+Unexpected Dormancy at 1233850863298 user  user216500
+Expired re-Dormancy! user :user86250 1230849550221->1233441550221
+Expected balance: 0.0 found(at monitor): -150.0 user user172250 allocation 11f3632bfca010e at 1233932456669
+Expected balance: 0.0 found(at monitor): -30.0 user user175750 allocation 11f38093fc40f0e at 1233932456669
+Expected balance: 0.0 found(at monitor): -89.0 user user171500 allocation 11f3790caa5090e at 1233932456669
+Unexpected Breakage at 1233940503306 user user122250
+Expired re-Dormancy! user :user32750 1230932912616->1233524912616
+Expected balance: 44.25 found(at monitor): -509.09 user user181500 allocation 11f46614baf020e at 1233950513481
+Expected balance: 44.25 found(at monitor): -509.09 user user181500 allocation 11f4663717a0a0e at 1233950513481
+Expected balance: 44.25 found(at monitor): -509.09 user user181500 allocation 11f4665cc3d090e at 1233950513481
+Expected balance: 44.25 found(at monitor): -509.09 user user181500 allocation 11f4668293a0b0e at 1233950513481
+Expected balance: 38.48 found(at monitor): -452.82 user user180500 allocation 11f462d18a40c0e at 1233950513481
+Early Breakage at 1234023382603 user user123500
+Unexpected Breakage at 1234023530853 user user126500
+Expected balance: 0.0 found(at monitor): -160.0 user user171500 allocation 11f3db6b4500c0e at 1234030925201
+Expected balance: 0.0 found(at monitor): -100.0 user user107750 allocation 11f3ca6edba000e at 1234030925201
+Expected balance: 0.0 found(at monitor): -160.0 user user171500 allocation 11f3bd7581f060e at 1234030925201
+Early Breakage at 1234109576724 user user233000
+Unexpected Dormancy at 1234111258513 user  user69750
+Expired re-Dormancy! user :user39000 1231095458375->1233686163895
+Expected balance: 16.8 found(at monitor): -191.69 user user182500 allocation 11f4a3bd82d010e at 1234111250713
+Expected balance: 3.94 found(at monitor): -45.11 user user183500 allocation 11f4a67aea5070e at 1234111250713
+Expected balance: 12.85 found(at monitor): -146.58 user user182500 allocation 11f4b3a3300050e at 1234111250713
+Expected balance: 7.96 found(at monitor): -90.2 user user183500 allocation 11f4cc6fa97070e at 1234111250713
+Early Breakage at 1234195380849 user user143250
+Unexpected Breakage at 1234195472388 user user102750
+Unexpected Breakage at 1234195500668 user user9500
+Unexpected Breakage at 1234196174219 user user201000
+Unexpected Breakage at 1234196177233 user user85250
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552472ab090e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f5525abba0b0e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552727e0040e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f5528a5dc020e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552a9b570c0e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552c4ad7030e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552dd9810f0e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f552efbd7050e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f5530061c010e at 1234250922685
+Expected balance: 46.04 found(at monitor): -508.24 user user181500 allocation 11f55318adf070e at 1234250922685
+Expected balance: 3.97 found(at monitor): -45.11 user user183500 allocation 11f541f030e060e at 1234250922685
+Expected balance: 39.83 found(at monitor): -451.03 user user180500 allocation 11f548c2daa040e at 1234250922685
+Expected balance: 39.83 found(at monitor): -451.03 user user180500 allocation 11f548f17e4050e at 1234250922685
+Unexpected Dormancy at 1234283216431 user  user199750
+Expected balance: 0.0 found(at monitor): -50.0 user user61000 allocation 11f47b821960a0e at 1234283211531
+Unexpected Dormancy at 1234368669773 user  user136500
+Unexpected Breakage at 1234368725190 user user126250
+Unexpected Dormancy at 1234369151577 user  user41000
+Expected balance: -245.16 found(at monitor): -337.21 user user78500 allocation 2008022037e8d57b40dd42ba at 1234397468947
+LOAD amount exceeded user :user171500 loaded USD 2074.0 in 1 day(s)
+Expected balance: 1.94 found(at monitor): -24.63 user user181000 allocation 11f5f167880060e at 1234429994818
+Expired Dormancy! user :user132000 1218471076341->1234023076341
+Unexpected Dormancy at 1234455866353 user  user80500
+Dormancy done!! user  user132000 at 1234455955950 120.24433583333334 hours late
+Unexpected Dormancy at 1234456119110 user  user110500
+Expected balance: 0.0 found(at monitor): -100.0 user user61000 allocation 11f4d2e9624060e at 1234522291012
+Expected balance: 0.0 found(at monitor): -50.0 user user177000 allocation 11f5158e8f7020e at 1234522291012
+Expected balance: 0.0 found(at monitor): -50.0 user user177000 allocation 11f4c1b0d64010e at 1234522291012
+Expected balance: 0.0 found(at monitor): -100.0 user user107750 allocation 11f5292cb19040e at 1234522291012
+Expected balance: 0.0 found(at monitor): -150.0 user user172250 allocation 11f5c14e4dd080e at 1234590136788
+Unexpected Breakage at 1234627362924 user user234500
+Unexpected Dormancy at 1234627570445 user  user36500
+Unexpected Dormancy at 1234628402974 user  user30500
+Unexpected Dormancy at 1234628780903 user  user229500
+Unexpected Dormancy at 1234714987918 user  user132250
+Expected balance: 41.19 found(at monitor): -447.95 user user180500 allocation 11f734d36e1000e at 1234772227005
+Expected balance: 41.19 found(at monitor): -447.95 user user180500 allocation 11f734e74c0000e at 1234772227005
+Expected balance: 0.0 found(at monitor): -100.0 user user61000 allocation 11f6566868c0d0e at 1234791155299
+Unexpected Breakage at 1234802134359 user user109000
+Unexpected Dormancy at 1234807781728 user  user239000
+Expired re-Dormancy! user :user198500 1234810386630->1234405088498
+Expected balance: 41.19 found(at monitor): -447.95 user user180500 allocation 11f788226b2060e at 1234807769621
+Expected balance: 42.0 found(at monitor): -150.0 user user171500 allocation 11f6bb2004a020e at 1234877158798
+Expected balance: 0.0 found(at monitor): -50.0 user user177000 allocation 11f67d29659030e at 1234877158798
+Expected balance: 0.0 found(at monitor): -128.0 user user171500 allocation 11f6a56de7d0f0e at 1234877158798
+Expected balance: 0.0 found(at monitor): -128.0 user user171500 allocation 11f69c2e3f90e0e at 1234877158798
+Expired re-Dormancy! user :user133000 1231979558891->1234525360134
+Unexpected Dormancy at 1234975435416 user  user144000
+Expired re-Dormancy! user :user237250 1231976640200->1234568242678
+Expected balance: 0.0 found(at monitor): -125.0 user user171500 allocation 11f6f4335cc070e at 1234975429474
+Early Breakage at 1235059342154 user user47500
+Unexpected Breakage at 1235059386798 user user166750
+Unexpected Breakage at 1235059531041 user user104000
+Early Dormancy at 1235061452522 user  user69000
+Expected balance: 0.0 found(at monitor): -14.41 user user41500 allocation 20080504b4387f205ad42a16 at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88d385ef0e0e at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88d52f5a090e at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88d6b5dd010e at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88d88b9a000e at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88d9b87d030e at 1235091415690
+Expected balance: 41.91 found(at monitor): -519.51 user user181500 allocation 11f88db80110b0e at 1235091415690
+Expected balance: 0.0 found(at monitor): -127.0 user user171500 allocation 11f7eb9559d0e0e at 1235091415690
+Expected balance: 0.0 found(at monitor): -70.0 user user171500 allocation 11f7fad19a70f0e at 1235091415690
+Expected balance: 0.0 found(at monitor): -128.0 user user171500 allocation 11f7e28dda1090e at 1235091415690
+Expected balance: 0.0 found(at monitor): -64.0 user user171500 allocation 11f7f49aa410a0e at 1235091415690
+Expired re-Dormancy! user :user82000 1232113476203->1234704637964
+Unexpected Breakage at 1235145826944 user user106250
+Unexpected Dormancy at 1235148508935 user  user11750
+Expired re-Dormancy! user :user125000 1232125381378->1234717381378
+Expired re-Dormancy! user :user208500 1233421788640->1234720541614
+Expired re-Dormancy! user :user215000 1232609546089->1234746652214
+Unexpected Breakage at 1235232385097 user user244750
+Unexpected Dormancy at 1235234110586 user  user75750
+LOAD amount exceeded user :user116250 loaded EUR 1550.0 in 1 day(s)
+Expected balance: 21.13 found(at monitor): -225.8 user user180500 allocation 11f8ea0de22080e at 1235234101026
+Expected balance: 0.0 found(at monitor): -126.0 user user171500 allocation 11f846a0d30020e at 1235234101026
+Expected balance: 47.16 found(at monitor): -516.18 user user181500 allocation 11f975482aa020e at 1235234101026
+Expected balance: 47.16 found(at monitor): -516.18 user user181500 allocation 11f975598ea0e0e at 1235234101026
+Expected balance: 47.16 found(at monitor): -516.18 user user181500 allocation 11f97564d3e020e at 1235234101026
+Expected balance: 47.16 found(at monitor): -516.18 user user181500 allocation 11f9757003a020e at 1235234101026
+Expected balance: 19.31 found(at monitor): -225.16 user user180500 allocation 11f940c4e540d0e at 1235234101026
+Expected balance: 9.65 found(at monitor): -112.58 user user183500 allocation 11f972c0b2a0b0e at 1235234101026
+Expected balance: 2.88 found(at monitor): -33.78 user user183500 allocation 11f9862635c0a0e at 1235234101026
+Expected balance: 9.65 found(at monitor): -112.58 user user180500 allocation 11f98c100fd080e at 1235234101026
+Unexpected Dormancy at 1235405551543 user  user111500
+Unexpected Breakage at 1235405597227 user user186500
+Expired re-Dormancy! user :user11500 1232383847751->1234974363401
+Expired re-Dormancy! user :user58000 1233055321004->1235044608588
+Expected balance: 0.0 found(at monitor): -100.0 user user107250 allocation 11f8fa129ea0a0e at 1235467566920
+Expected balance: 0.0 found(at monitor): -82.0 user user171500 allocation 11f88d0b3dc000e at 1235467566920
+Expected balance: 0.0 found(at monitor): -100.0 user user37250 allocation 11f89dec1b2070e at 1235467566920
+Early Breakage at 1235491975873 user user197000
+Early Breakage at 1235492336804 user user227250
+Unexpected Dormancy at 1235493889871 user  user46750
+Unexpected Dormancy at 1235494063662 user  user10500
+Unexpected Dormancy at 1235577967679 user  user108250
+Unexpected Breakage at 1235577969975 user user141500
+Unexpected Breakage at 1235578097309 user user161000
+Expired re-Dormancy! user :user37750 1232592239873->1235184239873
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6bc46b20f0e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6bd698f090e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6beb0ac050e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6bfeb33080e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6c16d420a0e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6c2e5ea0a0e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6ce3014080e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6cf6880080e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa6d09702010e at 1235604047247
+Expected balance: 42.25 found(at monitor): -512.04 user user181500 allocation 11fa79afceb020e at 1235604047247
+Early Dormancy at 1235664596759 user  user187750
+Expected balance: 111.41 found(at monitor): 205.31 user user84000 allocation 11e5a67411c0c0e at 1235664589440
+Expected balance: 0.0 found(at monitor): 2.12 user user84000 allocation 11eb7969e2c0c0e at 1235664589440
+Expected balance: 1.96 found(at monitor): -22.17 user user180750 allocation 11fad9b7b02050e at 1235674179939
+Expired re-Dormancy! user :user164750 1232704496443->1235296496443
+Early Breakage at 1235750691633 user user111000
+Unexpected Breakage at 1235750799058 user user62500
+Expired re-Dormancy! user :user149500 1232733704672->1235325704672
+Expired re-Dormancy! user :user222000 1233597479685->1235342009210
+Expired re-Dormancy! user :user26250 1233419606028->1235391639345
+Expired re-Dormancy! user :user38250 1232800706240->1235392494929
+Unexpected Dormancy at 1235837989266 user  user110000
+Expected balance: 2.84 found(at monitor): -33.2 user user180750 allocation 11fb24f5cb9010e at 1235837982999
+Expired re-Dormancy! user :user221500 1232822937000->1235414937000
+Expected balance: 0.0 found(at monitor): -30.0 user user26750 allocation 11fa4c21698070e at 1235837982999
+Expected balance: 0.0 found(at monitor): -150.0 user user107250 allocation 11fa9d61089090e at 1235837982999
+Expected balance: 0.0 found(at monitor): -30.0 user user61000 allocation 11fa960c144040e at 1235837982999
+Unexpected Dormancy at 1235923579391 user  user208250
+Unexpected Breakage at 1235923914676 user user30000
+Unexpected Breakage at 1235923970518 user user13500
+Expired re-Dormancy! user :user57500 1234263062326->1235504490474
+Expected balance: 1.72 found(at monitor): -22.22 user user180750 allocation 11fb7bdc2db090e at 1235943024863
+Expected balance: 27.51 found(at monitor): -333.42 user user183500 allocation 11fbb50e30b000e at 1235943024863
+Expected balance: 1.84 found(at monitor): -22.22 user user180750 allocation 11fbc6d8658090e at 1235943024863
+Unexpected Breakage at 1236010262803 user user47250
+Unexpected Breakage at 1236010472083 user user42500
+Expected balance: 0.0 found(at monitor): -150.0 user user107250 allocation 11fafbd8183020e at 1236011673569
+Expired re-Dormancy! user :user209750 1233026954306->1235618954306
+Expected balance: 1.84 found(at monitor): -22.22 user user180750 allocation 11fc1f6bd64050e at 1236011673569
+Expired re-Dormancy! user :user195250 1235402732688->1235647257713
+Unexpected Dormancy at 1236097603697 user  user55750
+Unexpected Dormancy at 1236098013254 user  user162000
+Unexpected Dormancy at 1236098451345 user  user65500
+Expected balance: 103.24 found(at monitor): 150.21 user user39500 allocation 20081107784e455a7ffc52b9 at 1236124424758
+Expired re-Dormancy! user :user231500 1233150637544->1235742189706
+Unexpected Breakage at 1236182967924 user user244000
+Unexpected Breakage at 1236182980605 user user94000
+Unexpected Breakage at 1236183730485 user user33500
+Unexpected Dormancy at 1236184834233 user  user169750
+Expired re-Dormancy! user :user34750 1234755705793->1235788582572
+Unexpected Breakage at 1236269831483 user user153750
+Unexpected Breakage at 1236269976947 user user166250
+Unexpected Dormancy at 1236271094595 user  user120000
+Expired re-Dormancy! user :user43750 1233251959248->1235843756850
+Expected balance: 0.0 found(at monitor): -50.0 user user168500 allocation 11fc2b7625f060e at 1236341323225
+Expected balance: 0.0 found(at monitor): -30.0 user user31000 allocation 11fc3f1e0e50f0e at 1236341323225
+Expected balance: 0.0 found(at monitor): -100.0 user user107250 allocation 11fc809637e020e at 1236341323225
+Unexpected Breakage at 1236355591596 user user53500
+Unexpected Breakage at 1236355677102 user user144250
+Unexpected Breakage at 1236355701857 user user221000
+Expired re-Dormancy! user :user223500 1233337301409->1235929301409
+Expired re-Dormancy! user :user77000 1233372795573->1235964402432
+Expired re-Dormancy! user :user87250 1233554046570->1235975357127
+Expected balance: 0.0 found(at monitor): -100.0 user user177000 allocation 11fcec1d30b0e0e at 1236424122965
+Unexpected Breakage at 1236441944979 user user184250
+Unexpected Breakage at 1236442027217 user user75500
+Expired re-Dormancy! user :user106750 1233418048087->1236010048087
+Expected balance: 0.0 found(at monitor): -30.0 user user61000 allocation 11fce0de4c0030e at 1236424122965
+Unexpected Dormancy at 1236443316715 user  user247250
+Unexpected Dormancy at 1236443346508 user  user238750
+Unexpected Breakage at 1236528324619 user user79750
+Unexpected Dormancy at 1236530312692 user  user247750
+Unexpected Dormancy at 1236530559444 user  user36250
+Expired re-Dormancy! user :user241500 1234784628456->1236104282330
+Expired re-Dormancy! user :user60250 1233555243109->1236147243109
+Expected balance: 20.58 found(at monitor): -221.34 user user180500 allocation 11fdbaf7143090e at 1236531311423
+Expected balance: 3.89 found(at monitor): -44.27 user user183500 allocation 11fdc823258070e at 1236531311423
+Expected balance: 19.48 found(at monitor): -221.34 user user183500 allocation 11fe0374272030e at 1236531311423
+Expected balance: 38.96 found(at monitor): -442.7 user user182500 allocation 11fe09d0279060e at 1236531311423
+Expected balance: 48.72 found(at monitor): -553.47 user user182500 allocation 11fe09ede54070e at 1236531311423
+Expected balance: -472.22 found(at monitor): -125.94 user user243000 allocation 11fdc5ae03c0f0e at 1236596601079
+LOAD amount exceeded user :user103000 loaded USD 2064.0 in 1 day(s)
+Early Breakage at 1236701496792 user user57000
+Unexpected Dormancy at 1236703105408 user  user184000
+Expected balance: 0.59 found(at monitor): -6.67 user user183500 allocation 11fec0a9492040e at 1236703098570
+Early Breakage at 1236787867876 user user139000
+Expired re-Dormancy! user :user233250 1233789422465->1236381422465
+Expected balance: 51.75 found(at monitor): -512.6 user user181500 allocation 11fef0291a0050e at 1236703098570
+Expected balance: 51.75 found(at monitor): -512.6 user user181500 allocation 11fef0489130a0e at 1236703098570
+Expected balance: 42.16 found(at monitor): -442.04 user user180500 allocation 11ff053e3030e0e at 1236703098570
+Expected balance: 42.16 found(at monitor): -442.04 user user180500 allocation 11ff054c6f3020e at 1236703098570
+Expired re-Dormancy! user :user22500 1236784569458->1236427683415
+Unexpected Breakage at 1236874256744 user user9000
+Unexpected Breakage at 1236874278412 user user138750
+Unexpected Breakage at 1236875299790 user user5000
+Unexpected Dormancy at 1236876545134 user  user225000
+Expected balance: 0.0 found(at monitor): -40.0 user user141250 allocation 11fe7026aa10c0e at 1236897322639
+Expected balance: 0.0 found(at monitor): -100.0 user user107250 allocation 11fdc8252cc090e at 1236897322639
+Expected balance: 0.0 found(at monitor): -50.0 user user176250 allocation 11fdb102a1e070e at 1236897322639
+Expired re-Dormancy! user :user98000 1233936117846->1236522964069
+Expected balance: 27.86 found(at monitor): -70.19 user user95250 allocation 2008071528a49b2711d30b3f at 1236897322639
+Unexpected Dormancy at 1236961714282 user  user217750
+Unexpected Dormancy at 1236961808671 user  user97000
+Expired re-Dormancy! user :user128750 1233955524812->1236540563119
+Expired re-Dormancy! user :user240250 1233979205763->1236571205763
+Expired re-Dormancy! user :user66000 1236894314750->1236622532647
+Unexpected Dormancy at 1237134524794 user  user16500
+Expired re-Dormancy! user :user218250 1234869642427->1236721606340
+Expected balance: 8.71 found(at monitor): -101.84 user user183000 allocation 120057f3d340c0e at 1237134511706
+Expected balance: 5.44 found(at monitor): -65.65 user user181750 allocation 12003429bb5050e at 1237134511706
+Expected balance: 7.27 found(at monitor): -87.53 user user183500 allocation 12003a556640d0e at 1237134511706
+Expected balance: 3.63 found(at monitor): -43.77 user user180750 allocation 120047bec35090e at 1237134511706
+Expected balance: 1.81 found(at monitor): -21.88 user user180750 allocation 12005689f8f000e at 1237134511706
+Expected balance: 1.44 found(at monitor): -17.51 user user183500 allocation 120057f1ec30a0e at 1237134511706
+Unexpected Breakage at 1237220254269 user user214250
+Unexpected Dormancy at 1237221250393 user  user48500
+LOAD amount exceeded user :user238000 loaded EUR 1550.0 in 1 day(s)
+Expired re-Dormancy! user :user248250 1234253687098->1236845687098
+Expected balance: 0.0 found(at monitor): -30.0 user user141250 allocation 11ffcd353910e0e at 1237221243140
+Expected balance: 45.41 found(at monitor): -547.09 user user182500 allocation 12008933bf4040e at 1237221243140
+Expected balance: 36.33 found(at monitor): -437.67 user user182500 allocation 1200894a063090e at 1237221243140
+Expected balance: 2.71 found(at monitor): -32.83 user user180750 allocation 12009d02d710a0e at 1237221243140
+Unexpected Breakage at 1237305806431 user user93000
+Unexpected Breakage at 1237305938904 user user218500
+Unexpected Breakage at 1237305968178 user user212750
+Expected balance: 71.56 found(at monitor): -55.75 user user84000 allocation 200811025dcd52ea9eb88fa6 at 1237351554059
+Unexpected Breakage at 1237392307026 user user88500
+Unexpected Breakage at 1237392377135 user user11250
+Unexpected Breakage at 1237392510691 user user121000
+Early Breakage at 1237392562159 user user239250
+Unexpected Dormancy at 1237393123655 user  user42000
+Unexpected Dormancy at 1237394290511 user  user89750
+Expected balance: -7109.4 found(at monitor): -7088.41 user user36000 allocation 20080201d2504176d6ab4e8b at 1237394288381
+Expected balance: 0.0 found(at monitor): -30.0 user user141250 allocation 1200156b5a90b0e at 1237394288381
+Unexpected Breakage at 1237478548764 user user112000
+Expected balance: 186.84 found(at monitor): -82.53 user user191000 allocation 11f16308cd10d0e at 1237491290304
+Expected balance: 50.4 found(at monitor): -499.3 user user181500 allocation 12017e22d730f0e at 1237519376586
+Expected balance: 50.4 found(at monitor): -499.3 user user181500 allocation 12017e375d3040e at 1237519376586
+Expected balance: 50.4 found(at monitor): -499.3 user user181500 allocation 12017e482f4020e at 1237519376586
+Expected balance: 50.4 found(at monitor): -499.3 user user181500 allocation 12017e558910b0e at 1237519376586
+Expected balance: 50.4 found(at monitor): -499.3 user user181500 allocation 12017e65ac90b0e at 1237519376586
+Expected balance: 2.09 found(at monitor): -21.63 user user180750 allocation 1201960e6a8050e at 1237519376586
+Expired re-Dormancy! user :user55000 1236356910011->1237113932222
+Unexpected Breakage at 1237565423490 user user170000
+Unexpected Breakage at 1237565563535 user user220750
+Unexpected Dormancy at 1237566033303 user  user115500
+Expired re-Dormancy! user :user145250 1235699353289->1237147171819
+Expected balance: 32.51 found(at monitor): 135.44 user user66000 allocation 11f5c24cf77070e at 1237612517966
+Expired re-Dormancy! user :user116250 1237644886874->1237219282516
+Unexpected Breakage at 1237651369255 user user73750
+Unexpected Breakage at 1237651884420 user user63750
+Unexpected Breakage at 1237652071783 user user222750
+Unexpected Breakage at 1237652201381 user user156000
+Expired re-Dormancy! user :user109750 1234653587470->1237245308521
+Expired re-Dormancy! user :user23000 1234674597568->1237266316240
+Unexpected Dormancy at 1237737848486 user  user165250
+Unexpected Dormancy at 1237738383577 user  user55250
+Early Breakage at 1237739026155 user user127250
+Expired Dormancy! user :user63000 1221783961879->1237335961879
+Expired re-Dormancy! user :user65750 1237287478341->1237392080087
+Expected balance: -787.11 found(at monitor): -944.53 user user224250 allocation 200811025f24aa86f6565428 at 1237812805088
+Expected balance: 0.0 found(at monitor): -30.0 user user93250 allocation 120203a8d25010e at 1237812805088
+Expected balance: 100.0 found(at monitor): 700.0 user user238000 allocation 11e605f27b2050e at 1237812805088
+Unexpected Breakage at 1237910619948 user user159500
+Unexpected Breakage at 1237912121421 user user30750
+Unexpected Breakage at 1237912687679 user user214000
+Unexpected Breakage at 1237913011488 user user7500
+Unexpected Breakage at 1237914698373 user user35250
+Expired re-Dormancy! user :user46250 1234890983849->1237482983849
+Unexpected Dormancy at 1237918953809 user  user160250
+Unexpected Breakage at 1237920165066 user user102250
+Unexpected Breakage at 1237920404172 user user26000
+Unexpected Breakage at 1237921241712 user user137500
+Unexpected Breakage at 1237921622442 user user242750
+Unexpected Breakage at 1237922839510 user user64750
+Expected balance: 67.32 found(at monitor): -480.89 user user181500 allocation 12029e83e13000e at 1237961033964
+Expected balance: 67.32 found(at monitor): -480.89 user user181500 allocation 12029eaa1b00f0e at 1237961033964
+Expected balance: 67.32 found(at monitor): -480.89 user user181500 allocation 12029ebddbb050e at 1237961033964
+Expected balance: 67.32 found(at monitor): -480.89 user user181500 allocation 12029ed3bb5020e at 1237961033964
+Expected balance: 67.32 found(at monitor): -480.89 user user181500 allocation 12029ef0ae10c0e at 1237961033964
+Expected balance: 7.67 found(at monitor): -63.5 user user183500 allocation 12027745910040e at 1237961033964
+Expired re-Dormancy! user :user35750 1234947434922->1237539434922
+Expected balance: 3.07 found(at monitor): -25.4 user user180750 allocation 12028fe4728000e at 1237961033964
+Unexpected Dormancy at 1237997286531 user  user135750
+Unexpected Dormancy at 1237997833482 user  user188250
+Unexpected Breakage at 1237998347437 user user94250
+Unexpected Breakage at 1237998463511 user user242250
+Expired re-Dormancy! user :user58250 1235021425603->1237613425603
+Expected balance: 0.0 found(at monitor): -30.0 user user177500 allocation 1202932b08c080e at 1238000196601
+Expired re-Dormancy! user :user103000 1237908892530->1237636217911
+Expected balance: 0.0 found(at monitor): -69.0 user user78000 allocation 1203c3a47aa040e at 1238095349881
+Unexpected Breakage at 1238170093807 user user135000
+Unexpected Breakage at 1238170247683 user user194500
+Unexpected Breakage at 1238170482095 user user197250
+Unexpected Dormancy at 1238171047243 user  user212000
+Unexpected Dormancy at 1238171141414 user  user57250
+Early Breakage at 1238256310241 user user79000
+Expired re-Dormancy! user :user51000 1235244991742->1237836991742
+Unexpected Breakage at 1238342559112 user user14500
+Unexpected Breakage at 1238342879974 user user223750
+Unexpected Breakage at 1238342997638 user user189500
+Unexpected Breakage at 1238343068059 user user209000
+Expired re-Dormancy! user :user190000 1235734160199->1237953070488
+Early Breakage at 1238429543244 user user50750
+Expired re-Dormancy! user :user186250 1237368012956->1238077246399
+Expected balance: 0.0 found(at monitor): -100.0 user user131750 allocation 120443bc48f030e at 1238474664614
+Expected balance: 0.0 found(at monitor): -300.0 user user176750 allocation 1203e8fd838040e at 1238474664614
+Expected balance: 0.0 found(at monitor): -300.0 user user176750 allocation 12042cadcb1070e at 1238474664614
+LOAD amount exceeded user :user195250 loaded EUR 1600.0 in 1 day(s)

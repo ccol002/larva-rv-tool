@@ -1,0 +1,1 @@
+not (true;true and  len > 1000 and cnt(B)>3;true)

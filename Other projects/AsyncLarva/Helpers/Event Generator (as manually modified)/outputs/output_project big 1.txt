@@ -1,0 +1,763 @@
+Expected balance: 4013.5 found: -169.28
+Expected balance: 5.715688412E7 found: 169.28
+Expected balance: 161901.23 found: 1.37
+Expected balance: -161901.67 found: -1.37
+Expected balance: 20.0 found: -30.0
+Expected balance: 30.0 found: -50.0
+Expected balance: 0.15 found: -19.85
+Expected balance: -430.3 found: -1129.25
+Expected balance: 80.05 found: 40.0
+Expected balance: 2422736.58 found: 0.99
+Expected balance: 173.0 found: 23049.0
+Expected balance: 14.03 found: 3.06
+Expected balance: 19.86 found: 5033.19
+Expected balance: 5409116.81 found: 19.05
+Expected balance: 33818.98 found: 0.14
+Expected balance: -33824.01 found: -0.14
+Expected balance: 499.0 found: -100.0
+Expected balance: 9484796.5 found: 100.0
+Expected balance: 800.0 found: -200.0
+Expected balance: 0.0 found: -68.86
+Expected balance: 24059.93 found: 68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -68.86
+Expected balance: 0.0 found: -13.33
+Expected balance: -199.39 found: -230.87
+Expected balance: 90.0 found: 30.0
+Expected balance: -818.63 found: -1595.25
+Expected balance: -13984.69 found: -18445.08
+Expected balance: 0.0 found: -80.0
+Expected balance: 0.0 found: -700.0
+Expected balance: 16.79 found: -200.0
+Expected balance: 8.83 found: -1.37
+Loading without necessary rights!! WEB user: user105750 1230121159418
+Expected balance: 25.0 found: -30.0
+Expected balance: 370.26 found: 1350.24
+Expected balance: 380.0 found: -40.0
+Expected balance: 350.0 found: -15.86
+Expected balance: 100.0 found: -49.87
+Expected balance: 463191.42 found: 9.9
+user86500 Expired Dormancy!1 1214493449557->1230131849557 load true
+Expected balance: -7755.74 found: -8186.04
+Expected balance: -546.78 found: -599.26
+Expected balance: 100.0 found: -150.0
+Expected balance: 0.0 found: -94.93
+Expected balance: 0.0 found: -100.0
+Expected balance: 2.0 found: -76.0
+Expected balance: 16.22 found: 6.8
+user234750 Early Freeze at 1230221892100
+Expected balance: -377.82 found: -503.76
+Loading without necessary rights!! WEB user: user80000 1230251208489
+user45250 Expired Dormancy!1 1214637497528->1230275897528 load true
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -40.0
+Expected balance: 0.0 found: -500.0
+user86500 Dormancy done!! 49.399745555555555 hours late
+Expected balance: -41.98 found: -62.97
+Expected balance: 23.38 found: 27.42
+Expected balance: -917.27 found: -1339.15
+Expected balance: 82.16 found: 66.0
+Transferring without necessary rights!! user: user105750 1230389055774
+Expected balance: -20.99 found: -416.63
+user9750 Expired Dormancy!1 1214810010221->1230448410221 load true
+user148500 Expired Dormancy!1 1214870530673->1230508930673 load true
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -385.85
+Expected balance: 0.0 found: -22.69
+Expected balance: 0.0 found: -22.69
+Expected balance: -234.06 found: -343.2
+Expected balance: 22.03 found: 21.03
+Expected balance: 0.0 found: -300.0
+Expected balance: 0.0 found: -500.0
+Expected balance: -200.97 found: -273.38
+Expected balance: 25.13 found: 24.01
+user45250 Dormancy done!! 81.05466194444445 hours late
+Expected balance: -52.24 found: -104.48
+Expected balance: 35.52 found: 110.74
+Expected balance: -844.5 found: -1859.5
+Expected balance: 80.0 found: 1846.24
+Expected balance: 0.0 found: -72.2
+Expected balance: 0.0 found: -136.18
+Expected balance: 0.0 found: -567.42
+user106500 LOAD amount exceeded: EUR 1700.0 in 1 day(s)
+Expected balance: -6075.62 found: -7691.91
+user9750 Dormancy done!! 57.091274166666665 hours late
+Expected balance: 1.21 found: -4.92
+Expected balance: 0.0 found: -226.96
+Expected balance: -304.32 found: -482.73
+Expected balance: 270635.82 found: 0.99
+user148500 Dormancy done!! 88.12444527777778 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 5.0 found: 0.0
+Expected balance: 20546.87 found: 5.0
+Expected balance: -194.16 found: -257.13
+Expected balance: 22.85 found: 481.87
+Expected balance: -225.15 found: -267.13
+Expected balance: -41.98 found: -117.54
+Expected balance: 21.95 found: 21.27
+Expected balance: 41379.85 found: 0.48
+Expected balance: -41379.85 found: -0.48
+Expected balance: 15.95 found: 310.26
+Expected balance: -1371.65 found: -1418.87
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -506.71
+Expected balance: 0.0 found: -45.39
+Expected balance: -294.18 found: -323.87
+Expected balance: 30.2 found: 30.0
+Expected balance: -30090.0 found: -65746.6
+Expected balance: 0.0 found: -148.07
+Expected balance: 0.0 found: -341.71
+Expected balance: 0.0 found: -45.56
+user131250 Expired Dormancy!1 1215516075844->1231154475844 load true
+Expected balance: -5900.0 found: -13128.0
+user45750 LOAD amount exceeded: USD 6330.0 in 1 day(s)
+user13000 Expired Dormancy!1 1215550465737->1231188865737 load true
+Expected balance: -110.19 found: -141.67
+Expected balance: -199.42 found: -220.41
+Expected balance: 20.0 found: 227.86
+Expected balance: 0.0 found: -45.56
+Expected balance: 0.0 found: -34.17
+Expected balance: 0.0 found: -22.78
+Expected balance: -1385.35 found: -1857.63
+Expected balance: -54.05 found: -235.66
+Expected balance: 16.5 found: 17.0
+Transferring... 
+Expected balance: 0.0 found: 2.07
+Expected balance: 5.36 found: 130.05
+Expected balance: 7221.61 found: 0.2
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -637.41
+Expected balance: 0.0 found: -509.93
+Expected balance: 0.0 found: -509.93
+Expected balance: 88.67 found: 28.95
+Expected balance: -3217.0 found: -3257.0
+user100000 Expired Dormancy!1 1215743996012->1231382396012 load true
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -235.27
+user238250 LOAD amount exceeded: EUR 1650.0 in 1 day(s)
+user131250 Dormancy done!! 77.04444305555556 hours late
+user91000 Expired Dormancy!1 1215794200737->1231432600737 load true
+Transferring... 
+Expected balance: -619.5 found: -1539.88
+user155500 Expired Dormancy!1 1215848689085->1231487089085 load true
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -125.0
+Expected balance: 0.0 found: -48.01
+Expected balance: 0.0 found: -74.31
+user13000 Dormancy done!! 91.65341277777777 hours late
+user50500 Expired Dormancy!1 1215907326097->1231545726097 load true
+user228000 Early Freeze at 1231604478004
+Expected balance: -488.02 found: -645.44
+user100000 Dormancy done!! 85.83790944444445 hours late
+user169000 Early Freeze at 1231691456723
+Expected balance: 19.61 found: -0.37
+Expected balance: 820.27 found: 204.44
+Expected balance: 8.4 found: 50.81
+Expected balance: 0.0 found: -115.63
+Expected balance: 0.0 found: -693.79
+Expected balance: 0.0 found: -231.26
+Expected balance: 0.0 found: -23.12
+user91000 Dormancy done!! 95.76261166666667 hours late
+user155500 Dormancy done!! 80.70496138888889 hours late
+Expected balance: -131.19 found: -188.91
+Expected balance: 0.0 found: -34.68
+user202750 Expired Dormancy!1 1216211316021->1231849716021 load true
+Expected balance: 0.0 found: -50.0
+out
+out
+user120750 Expired Dormancy!1 1216218068474->1231856468474 load true
+user50500 Dormancy done!! 88.31253055555555 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 2.0 found: -3.0
+Expected balance: -1133.48 found: -1558.49
+Expected balance: -20.99 found: -749.34
+Expected balance: 0.0 found: -297.0
+Expected balance: 0.0 found: -200.0
+user57750 Expired Dormancy!1 1216384450034->1232022850034 load true
+Transferring... 
+Expected balance: 0.21 found: -31.2
+Expected balance: 85.85 found: 5.17
+Expected balance: 0.0 found: -234.94
+Expected balance: 0.0 found: -71.27
+user77250 LOAD amount exceeded: USD 2050.0 in 1 day(s)
+Transferring... 
+user240500 Expired Dormancy!1 1216468798357->1232107198357 load true
+Expected balance: 0.0 found: -30.0
+user120750 Dormancy done!! 73.8678825 hours late
+user202750 Dormancy done!! 76.01115555555556 hours late
+user240500 Dormancy done!! 4.53119 hours late
+Expected balance: 9.78 found: 0.45
+user198250 Expired Dormancy!1 1216497746463->1232136146463 load true
+Expected balance: -41.98 found: -62.97
+Expected balance: 0.0 found: -47.84
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 9.91 found: 2.91
+Expected balance: -877.63 found: -1045.55
+user76500 Expired Dormancy!1 1216651572935->1232289972935 load true
+Expected balance: 12.0 found: 7.0
+user57750 Dormancy done!! 75.65749666666666 hours late
+Expected balance: -493.27 found: -598.22
+Expected balance: 100.0 found: 370.0
+Transferring... 
+Expected balance: 0.0 found: -167.33
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -541.59
+Expected balance: 0.0 found: -48.18
+Expected balance: 0.0 found: -142.6
+Expected balance: 0.0 found: -475.38
+user245000 Expired Dormancy!1 1216799757096->1232438157096 load true
+Expected balance: 0.0 found: -200.0
+in
+Expected balance: 0.0 found: -47.53
+Expected balance: 0.0 found: -154.49
+user198250 Dormancy done!! 92.67019833333333 hours late
+Expected balance: 0.0 found: -23.76
+user74500 Expired Dormancy!1 1216900602810->1232539002810 load true
+user76500 Dormancy done!! 75.29208833333334 hours late
+Expected balance: 50.0 found: 5771.07
+Expected balance: 0.0 found: -36.49
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 50.2 found: -9.99
+Expected balance: 339.66 found: 9.99
+Expected balance: -9800.0 found: -19830.16
+Expected balance: -1776.5 found: -2894.65
+Expected balance: 150.0 found: 4805.0
+Expected balance: 0.0 found: -30.0
+user245000 Dormancy done!! 80.67883444444445 hours late
+Expected balance: -703.16 found: -1070.49
+Expected balance: 24.36 found: 20.36
+user500 Expired Dormancy!1 1217117336410->1232755736410 load true
+in
+out
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+Expected balance: 0.0 found: -549.08
+user74500 Dormancy done!! 76.65057555555556 hours late
+Expected balance: -47.23 found: -94.46
+user43500 Expired Dormancy!1 1217284061019->1232922461019 load true
+Expected balance: 24.34 found: 14.34
+Expected balance: 0.0 found: -24.25
+Expected balance: 0.0 found: -485.28
+Expected balance: 0.0 found: -24.25
+Expected balance: 0.0 found: -246.22
+Expected balance: 0.0 found: -160.04
+Expected balance: 0.0 found: -49.24
+Expected balance: 0.0 found: -123.11
+Expected balance: 0.0 found: -129.0
+Expected balance: 0.0 found: -200.0
+Transferring... 
+Expected balance: 1341.08 found: 0.1
+Expected balance: 0.0 found: -492.45
+Expected balance: 0.0 found: -492.45
+Expected balance: 0.0 found: -19.69
+out
+Transferring... 
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 5.87 found: 4.39
+user500 Dormancy done!! 88.40552777777778 hours late
+Expected adjustment (1.0) does NOT match actual (-1.0)!
+Expected balance: 0.0 found: -1.0
+Expected balance: -20.99 found: -125.94
+Expected balance: 24.95 found: 120.0
+Transferring... 
+user114500 Expired Dormancy!1 1217559049634->1233197449634 load true
+Expected balance: -47.22 found: -62.96
+Expected balance: 0.0 found: -239.27
+in
+Expected balance: -83.96 found: -41.98
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -45.0
+Expected balance: 0.0 found: -160.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -200.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -30.0
+Transferring... 
+Expected balance: 0.63 found: -195.93
+user43500 Dormancy done!! 90.02466527777777 hours late
+Transferring... 
+Expected balance: 1134.57 found: 0.2
+user232500 Expired Dormancy!1 1217667810188->1233306210188 load true
+user4500 Expired Dormancy!1 1217671088335->1233309488335 load true
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -23.93
+user104500 Expired Dormancy!1 1217749273445->1233387673445 load true
+user133750 Expired Dormancy!1 1217764205387->1233402605387 load true
+in
+Expected balance: 49.89 found: 21.6
+Expected balance: 0.0 found: -380.0
+Expected balance: 3.97 found: 2.54
+out
+out
+out
+out
+user114500 Dormancy done!! 85.98099277777777 hours late
+Expected adjustment (0.01) does NOT match actual (-0.01)!
+Expected balance: 0.0 found: -0.01
+Expected balance: 4913.35 found: 0.01
+user216500 Expired Dormancy!1 1217896679158->1233535079158 load true
+Expected balance: -522.5 found: -418.0
+Expected balance: 58.9 found: 26.74
+Expected balance: 0.0 found: -171.83
+Expected balance: 0.0 found: -122.73
+Expected balance: 0.0 found: -49.09
+in
+Transferring... 
+Expected balance: 5.0 found: 6.16
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -261.0
+user4500 Dormancy done!! 78.56392083333333 hours late
+user232500 Dormancy done!! 79.86428666666667 hours late
+Expected balance: 19.3 found: -226.17
+Expected balance: 3.85 found: -45.24
+Expected balance: 0.96 found: -11.31
+user133750 Dormancy done!! 76.34806861111112 hours late
+user104500 Dormancy done!! 80.71264527777778 hours late
+in
+out
+Expected balance: 0.95 found: -9.05
+Expected balance: 47.98 found: -565.7
+Transferring... 
+user69750 Expired Dormancy!1 1218156011125->1233794411125 load true
+Expected balance: 59.57 found: 39.06
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -257.0
+Expected balance: 0.0 found: -75.0
+Expected balance: -142.33 found: -178.01
+Expected balance: 22.85 found: 169.85
+Expected balance: 3.95 found: -45.01
+user36000 LOAD amount exceeded: USD 2018.0 in 1 day(s)
+user216500 Dormancy done!! 87.71781666666666 hours late
+Expected adjustment (2.5) does NOT match actual (-2.5)!
+Expected balance: 0.85 found: -1.65
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -89.0
+user199750 Expired Dormancy!1 1218321653002->1233960053002 load true
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 44.25 found: -509.09
+Expected balance: 38.48 found: -452.82
+in
+Expected balance: 0.0 found: -160.0
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -160.0
+user136500 Expired Dormancy!1 1218446504910->1234084904910 load true
+user41000 Expired Dormancy!1 1218446854322->1234085254322 load true
+user132000 Expired Dormancy!1 1218471076341->1234109476341 load true
+user69750 Dormancy done!! 88.01316333333334 hours late
+Expected adjustment (1.94) does NOT match actual (-1.94)!
+Expected balance: 0.0 found: -1.94
+user110500 Expired Dormancy!1 1218483274221->1234121674221 load true
+Expected balance: 16.8 found: -191.69
+Expected balance: 3.94 found: -45.11
+Expected balance: 12.85 found: -146.58
+Expected balance: 7.96 found: -90.2
+user80500 Expired Dormancy!1 1218551246302->1234189646302 load true
+Expected balance: -918.31 found: -1338.11
+Expected balance: 473.5 found: 400.0
+user156750 Expired Dormancy!1 1218629288987->1234267688987 load true
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 46.04 found: -508.24
+Expected balance: 3.97 found: -45.11
+Expected balance: 39.83 found: -451.03
+Expected balance: 39.83 found: -451.03
+user199750 Dormancy done!! 89.76761916666666 hours late
+user36500 Expired Dormancy!1 1218654933934->1234293333934 load true
+user229500 Expired Dormancy!1 1218672934476->1234311334476 load true
+Expected balance: 0.0 found: -50.0
+Expected balance: 488.51 found: 349.41
+user30500 Expired Dormancy!1 1218720894320->1234359294320 load true
+user136500 Dormancy done!! 78.82357305555556 hours late
+Expected adjustment (1.2) does NOT match actual (-1.2)!
+Expected balance: 0.0 found: -1.2
+user41000 Dormancy done!! 78.8603486111111 hours late
+Expected adjustment (3.75) does NOT match actual (-3.75)!
+Expected balance: 1.25 found: -2.5
+Expected balance: 4514.74 found: 3.75
+user132250 Expired Dormancy!1 1218759059092->1234397459092 load true
+Expected balance: 1.94 found: -24.63
+user80500 Dormancy done!! 73.95001416666666 hours late
+Expected adjustment (0.05) does NOT match actual (-0.05)!
+Expected balance: 0.0 found: -0.05
+user132000 Dormancy done!! 96.24433583333334 hours late
+user110500 Dormancy done!! 92.90135805555556 hours late
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -100.0
+user239000 Expired Dormancy!1 1218895481550->1234533881550 load true
+Expected adjustment (7.49) does NOT match actual (-7.49)!
+Expected balance: 434.42 found: 7.49
+Expected balance: 0.0 found: -10.0
+Expected balance: 0.0 found: -150.0
+user36500 Dormancy done!! 92.84347527777778 hours late
+user30500 Dormancy done!! 74.75240388888889 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 1.0 found: -4.0
+user229500 Dormancy done!! 88.17956305555556 hours late
+user144000 Expired Dormancy!1 1219013057770->1234651457770 load true
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+in
+user132250 Dormancy done!! 88.20245166666666 hours late
+Expected adjustment (2.5) does NOT match actual (-2.5)!
+Expected balance: 1.61 found: -0.89
+out
+Expected balance: 41.19 found: -447.95
+Expected balance: 41.19 found: -447.95
+Expected balance: 0.0 found: -100.0
+user11750 Expired Dormancy!1 1219166646576->1234805046576 load true
+user239000 Dormancy done!! 76.08338277777777 hours late
+Expected balance: -41.98 found: -83.96
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Expected balance: 798.62 found: 600.53
+Expected balance: 41.19 found: -447.95
+Expected balance: 5997.63 found: 4996.09
+Expected balance: 42.0 found: -150.0
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -128.0
+Expected balance: 0.0 found: -128.0
+out
+user75750 Expired Dormancy!1 1219334190835->1234972590835 load true
+Expected balance: 9.86 found: 9.84
+user144000 Dormancy done!! 89.99379055555555 hours late
+Expected balance: -20.99 found: -89.21
+Expected balance: 0.0 found: -125.0
+user230750 Expired Dormancy!1 1219415215745->1235053615745 load true
+Expected balance: 17.19 found: 1.02
+user69000 Early Freeze at 1235061452522
+user111500 Expired Dormancy!1 1219477735322->1235116135322 load true
+Expected balance: 0.0 found: -14.41
+Expected balance: 41.91 found: -519.51
+Expected balance: 41.91 found: -519.51
+Expected balance: 41.91 found: -519.51
+Expected balance: 41.91 found: -519.51
+Expected balance: 41.91 found: -519.51
+Expected balance: 41.91 found: -519.51
+Expected balance: 0.0 found: -127.0
+Expected balance: 0.0 found: -70.0
+Expected balance: 0.0 found: -128.0
+Expected balance: 0.0 found: -64.0
+Expected balance: 4.03 found: -20.97
+user11750 Dormancy done!! 95.40621083333333 hours late
+user46750 Expired Dormancy!1 1219522806334->1235161206334 load true
+user10500 Expired Dormancy!1 1219558961971->1235197361971 load true
+Transferring... 
+Transferring... 
+user75750 Dormancy done!! 72.64437527777778 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 5.0 found: 0.0
+user116250 LOAD amount exceeded: EUR 1550.0 in 1 day(s)
+Expected balance: 21.13 found: -225.8
+in
+Expected balance: 0.0 found: -126.0
+user108250 Expired Dormancy!1 1219660479867->1235298879867 load true
+Transferring... 
+Expected balance: 47.16 found: -516.18
+Expected balance: 47.16 found: -516.18
+Expected balance: 47.16 found: -516.18
+Expected balance: 47.16 found: -516.18
+Expected balance: 19.31 found: -225.16
+Expected balance: 9.65 found: -112.58
+Expected balance: 2.88 found: -33.78
+Expected balance: 9.65 found: -112.58
+Transferring... 
+user111500 Dormancy done!! 80.39339472222223 hours late
+Expected adjustment (0.26) does NOT match actual (-0.26)!
+Expected balance: 0.0 found: -0.26
+Expected balance: -314.85 found: -5163.61
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -82.0
+Expected balance: 0.0 found: -100.0
+user46750 Dormancy done!! 92.41209361111112 hours late
+user10500 Dormancy done!! 82.41713638888889 hours late
+Expected balance: 50.0 found: 1166.63
+Expected balance: 99.83 found: 91.15
+user110000 Expired Dormancy!1 1219935001230->1235573401230 load true
+user108250 Dormancy done!! 77.52439222222222 hours late
+Expected balance: -20.99 found: -41.98
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+Expected balance: 42.25 found: -512.04
+user187750 Dormancy done!! 343240.1657663889 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 0.0 found: -5.0
+Transferring... 
+Expected balance: 0.0 found: 2.12
+Transferring... 
+Expected balance: 1.96 found: -22.17
+user208250 Expired Dormancy!1 1220173036069->1235811436069 load true
+user110000 Dormancy done!! 73.49667666666667 hours late
+Expected adjustment (0.6) does NOT match actual (-0.6)!
+Expected balance: 0.0 found: -0.6
+Expected balance: 2.84 found: -33.2
+Expected balance: -78.7 found: -115.43
+Expected balance: 15.29 found: 108.32
+in
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -150.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -5.0
+user208250 Dormancy done!! 31.15092277777778 hours late
+Expected adjustment (4.02) does NOT match actual (-4.02)!
+Expected balance: 0.0 found: -4.02
+Expected balance: -73.46 found: -115.44
+Expected balance: 40.0 found: 43.83
+Expected balance: 1.72 found: -22.22
+Expected balance: 27.51 found: -333.42
+Expected balance: 1.84 found: -22.22
+in
+Expected balance: 0.0 found: -150.0
+user65500 Expired Dormancy!1 1220395747391->1236034147391 load true
+Expected balance: 10648.11 found: 20.0
+Expected balance: -10.9 found: -0.57
+Expected balance: 1.84 found: -22.22
+user162000 Expired Dormancy!1 1220435132972->1236073532972 load true
+user55750 Expired Dormancy!1 1220443971593->1236082371593 load true
+in
+user55750 Dormancy done!! 4.23114 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 5.01 found: -5.0
+user162000 Dormancy done!! 6.8000783333333334 hours late
+Expected adjustment (1.3) does NOT match actual (-1.3)!
+Expected balance: 0.0 found: -1.3
+user65500 Dormancy done!! 17.862209444444446 hours late
+user169750 Expired Dormancy!1 1220482552743->1236120952743 load true
+Transferring... 
+user12750 Expired Dormancy!1 1220534925073->1236173325073 load true
+user169750 Dormancy done!! 17.744858333333333 hours late
+in
+user120000 Expired Dormancy!1 1220610946438->1236249346438 load true
+user120000 Dormancy done!! 6.041154722222222 hours late
+Transferring... 
+Transferring... 
+Expected balance: 0.0 found: -50.0
+Expected balance: 0.0 found: -30.0
+Expected balance: 0.0 found: -100.0
+user247250 Expired Dormancy!1 1220777880698->1236416280698 load true
+user238750 Expired Dormancy!1 1220778673447->1236417073447 load true
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -30.0
+user247250 Dormancy done!! 7.510004722222222 hours late
+user238750 Dormancy done!! 7.2980725 hours late
+Expected adjustment (3.75) does NOT match actual (-3.75)!
+Expected balance: 2.02 found: -1.73
+user36250 Expired Dormancy!1 1220821681409->1236460081409 load true
+Transferring... 
+user247750 Expired Dormancy!1 1220868832089->1236507232089 load true
+Expected balance: -78.72 found: -131.2
+user247750 Dormancy done!! 6.411278611111111 hours late
+Expected adjustment (0.55) does NOT match actual (-0.55)!
+Expected balance: 0.0 found: -0.55
+user36250 Dormancy done!! 19.577231944444446 hours late
+Expected balance: 20.58 found: -221.34
+Expected balance: 3.89 found: -44.27
+Expected balance: 19.48 found: -221.34
+Expected balance: 38.96 found: -442.7
+Expected balance: 48.72 found: -553.47
+Expected balance: -472.22 found: -125.94
+out
+out
+out
+out
+out
+out
+out
+user184000 Expired Dormancy!1 1221040136557->1236678536557 load true
+Expected balance: 29.49 found: 3.52
+user103000 LOAD amount exceeded: USD 2064.0 in 1 day(s)
+user184000 Dormancy done!! 6.824680833333334 hours late
+Expected balance: 0.59 found: -6.67
+user225000 Expired Dormancy!1 1221167724696->1236806124696 load true
+Expected balance: 51.75 found: -512.6
+Expected balance: 51.75 found: -512.6
+Expected balance: 42.16 found: -442.04
+Expected balance: 42.16 found: -442.04
+Transferring... 
+user225000 Dormancy done!! 19.56123277777778 hours late
+out
+user217750 Expired Dormancy!1 1221296205423->1236934605423 load true
+in
+Expected balance: 0.0 found: -40.0
+user97000 Expired Dormancy!1 1221307651010->1236946051010 load true
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -50.0
+in
+in
+Transferring... 
+user217750 Dormancy done!! 7.530238611111111 hours late
+user97000 Dormancy done!! 4.377128055555556 hours late
+Expected adjustment (5.0) does NOT match actual (-5.0)!
+Expected balance: 5.0 found: 0.0
+Expected balance: 23.05 found: 33.05
+user16500 Early Freeze at 1237134524794
+user48500 Expired Dormancy!1 1221524629942->1237163029942 load true
+Expected balance: 8.71 found: -101.84
+Expected balance: 5.44 found: -65.65
+Expected balance: 7.27 found: -87.53
+Expected balance: 3.63 found: -43.77
+Expected balance: 1.81 found: -21.88
+Expected balance: 1.44 found: -17.51
+Transferring... 
+Expected balance: 54.79 found: 49.54
+user48500 Dormancy done!! 16.1723475 hours late
+Expected adjustment (3.05) does NOT match actual (-1.0)!
+Expected balance: 0.0 found: -1.0
+Expected adjustment (3.05) does NOT match actual (-1.05)!
+Expected balance: 0.0 found: -1.05
+Expected adjustment (3.05) does NOT match actual (-1.0)!
+Expected balance: 0.0 found: -1.0
+user238000 LOAD amount exceeded: EUR 1550.0 in 1 day(s)
+Expected balance: 74841.67 found: 5.23
+Expected balance: 0.0 found: -30.0
+Expected balance: 45.41 found: -547.09
+Expected balance: 36.33 found: -437.67
+Expected balance: 2.71 found: -32.83
+user89750 Expired Dormancy!1 1221710212802->1237348612802 load true
+Expected adjustment (9.99) does NOT match actual (-9.99)!
+Transferring... 
+Expected balance: 71.56 found: -65.69
+Expected balance: 9.95 found: 7.94
+user42000 Expired Dormancy!1 1221732560746->1237370960746 load true
+user42000 Dormancy done!! 6.156363611111111 hours late
+user89750 Dormancy done!! 12.6882525 hours late
+user63000 Expired Dormancy!1 1221783961879->1237422361879 load true
+in
+Expected balance: 29.97 found: 2.97
+Expected balance: 0.0 found: -30.0
+user55250 Expired Dormancy!1 1221863018026->1237501418026 load true
+Transferring... 
+Expected balance: 93.76 found: 148.8
+Transferring... 
+Expected balance: 48.9 found: 1.51
+Expected balance: 50.4 found: -499.3
+Expected balance: 50.4 found: -499.3
+Expected balance: 50.4 found: -499.3
+Expected balance: 50.4 found: -499.3
+Expected balance: 50.4 found: -499.3
+Expected balance: 2.09 found: -21.63
+user115500 Expired Dormancy!1 1221912152355->1237550552355 load true
+user115500 Dormancy done!! 4.3002633333333335 hours late
+in
+in
+user80500 Dormancy done!! 961.6603941666667 hours late
+user165250 Expired Dormancy!1 1222070594126->1237708994126 load true
+user165250 Dormancy done!! 8.0151 hours late
+user55250 Dormancy done!! 65.82376416666666 hours late
+user160250 Expired Dormancy!1 1222142223480->1237780623480 load true
+in
+Transferring... 
+Expected balance: 49.84 found: 42.25
+Expected balance: -53.52 found: -74.51
+Expected balance: -787.11 found: -997.01
+Expected balance: 0.0 found: -30.0
+user160250 Dormancy done!! 38.42509138888889 hours late
+Expected balance: 67.32 found: -480.89
+Expected balance: 67.32 found: -480.89
+Expected balance: 67.32 found: -480.89
+Expected balance: 67.32 found: -480.89
+Expected balance: 67.32 found: -480.89
+Expected balance: 7.67 found: -63.5
+Expected balance: 3.07 found: -25.4
+user135750 Expired Dormancy!1 1222346647472->1237985047472 load true
+user188250 Expired Dormancy!1 1222358367806->1237996767806 load true
+user135750 Dormancy done!! 3.399738611111111 hours late
+user188250 Dormancy done!! 0.2960211111111111 hours late
+user57250 Expired Dormancy!1 1222364339919->1238002739919 load true
+Expected balance: -619.21 found: -671.69
+Transferring... 
+Expected balance: 0.0 found: -30.0
+user212000 Expired Dormancy!1 1222502399310->1238140799310 load true
+Expected balance: 0.0 found: -69.0
+Expected adjustment (7.49) does NOT match actual (-7.49)!
+user212000 Dormancy done!! 8.40220361111111 hours late
+Expected adjustment (3.75) does NOT match actual (-3.75)!
+Expected balance: 11.95 found: 8.2
+user57250 Dormancy done!! 46.778193055555555 hours late
+Transferring... 
+Expected balance: 76.33 found: 329.24
+Transferring... 
+Transferring... 
+Expected balance: -1284.07 found: -1756.35
+Transferring... 
+Transferring... 
+user238500 Expired Dormancy!1 1222646760318->1238285160318 load true
+in
+out
+Expected balance: 98.15 found: 3.91
+Adding VCC without necessary rights!! user: user101250 instrument: 120530ae612030e 1238340204000
+Expected balance: -330.98 found: -360.37
+Expected balance: 31.8 found: 159.8
+Expected balance: -106.01 found: -127.0
+Adding VCC without necessary rights!! user: user169500 instrument: 12055b20241090e 1238384710000
+in
+user96750 Expired Dormancy!1 1222805462070->1238443862070 load true
+Adding VCC without necessary rights!! user: user148750 instrument: 12059884a9d0c0e 1238449085000
+user56250 Expired Dormancy!1 1222852546960->1238490946960 load true
+Adding VCC without necessary rights!! user: user187000 instrument: 1205cf5c2510a0e 1238506591000
+Expected balance: 0.0 found: -100.0
+Expected balance: 0.0 found: -300.0
+Expected balance: 0.0 found: -300.0
+Adding VCC without necessary rights!! user: user164250 instrument: 1205ed143dd090e 1238537753000
+Adding VCC without necessary rights!! user: user99250 instrument: 1205f8215bc050e 1238549342000
+Adding VCC without necessary rights!! user: user51500 instrument: 120601d4afe030e 1238559513000
+Expected balance: 99.53 found: 75.42
+in
+user195250 LOAD amount exceeded: EUR 1600.0 in 1 day(s)

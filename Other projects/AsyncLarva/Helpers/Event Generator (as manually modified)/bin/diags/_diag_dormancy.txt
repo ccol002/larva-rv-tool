@@ -1,0 +1,23 @@
+digraph _logic_dormancy {
+rankdir=LR;
+node [shape = circle]; dorm thawed nondorm;
+node [shape = octagon]; unexpectedTX expiredDorm earlyDorm unexpectedDorm;
+node [shape = point]; _s_s;
+_s_s -> nondorm;
+nondorm -> nondorm [label = "(1) all1\\t . is ( \" NormTX \" ) \\..."];
+nondorm -> nondorm [label = "(2) validTX\\\\..."];
+nondorm -> dorm [label = "(3) all1\\t . is ( \" DormTX \" ) &...\\..."];
+nondorm -> earlyDorm [label = "(4) all1\\t . is ( \" DormTX \" ) &...\\..."];
+nondorm -> unexpectedDorm [label = "(5) all1\\t . is ( \" DormTX \" ) \\..."];
+nondorm -> expiredDorm [label = "(6) cATidp\\! origin . equals ( \" CA...\\..."];
+dorm -> dorm [label = "(1) all1\\t . is ( \" DormFeeTX \" ...\\..."];
+dorm -> unexpectedTX [label = "(2) all1\\t . is ( \" NormTX \" ) \\..."];
+dorm -> thawed [label = "(3) all1\\t . is ( \" UnDormTX \" )...\\..."];
+expiredDorm -> dorm [label = "(1) all1\\t . is ( \" DormTX \" ) &...\\..."];
+thawed -> dorm [label = "(1) all1\\t . is ( \" DormTX \" ) &...\\..."];
+thawed -> nondorm [label = "(2) all1\\t . is ( \" NormTX \" ) \\..."];
+thawed -> nondorm [label = "(3) validTX\\\\..."];
+thawed -> expiredDorm [label = "(4) cATdrp\\! origin . equals ( \" CA...\\..."];
+thawed -> earlyDorm [label = "(5) all1\\t . is ( \" DormTX \" ) &...\\..."];
+thawed -> unexpectedDorm [label = "(6) all1\\t . is ( \" DormTX \" ) \\..."];
+}

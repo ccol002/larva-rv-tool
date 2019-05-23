@@ -1,0 +1,15 @@
+digraph _logic_user_lc {
+rankdir=LR;
+node [shape = circle]; created active suspended locked closed start;
+node [shape = octagon]; unexpectedTX;
+node [shape = point]; _s_s;
+_s_s -> start;
+created -> unexpectedTX [ label = "(1) all1\\t . is ( \" NormTX \" ) "];
+created -> active [ label = "(2) all1\\t . is ( \" Activation \"..."];
+start -> created [ label = "(1) all1\\t . is ( \" Creation \" )...\\..."];
+start -> unexpectedTX [ label = "(2) all1\\t . is ( \" NormTX \" ) "];
+active -> locked [ label = "(1) all1\\t . is ( \" AcctLock \" )...\\..."];
+active -> suspended [ label = "(2) all1\\t . is ( \" AcctSuspend \...\\..."];
+locked -> active [ label = "(1) all1\\t . is ( \" AcctUnSuspend...\\..."];
+suspended -> active [ label = "(1) all1\\t . is ( \" AcctUnSuspend...\\..."];
+}

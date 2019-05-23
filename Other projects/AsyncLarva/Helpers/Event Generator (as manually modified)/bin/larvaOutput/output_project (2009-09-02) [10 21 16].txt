@@ -1,0 +1,11 @@
+[LARVA] Monitoring started at  2009-09-02 10:21:16
+[balance_check]Expected balance: 137.25 found(at monitor): 145.31
+ user: user84000 allocation: 200811025dcd52ea9eb88fa6 at 1236935421549 TX ID: 11fff18ae6d090e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: true defaultInstr: false
+ tx: {creationTimestamp=1236897322639, user=user141250, transactionAmount=30.00, transactionCurrency=USD, transactionEntryId=11ffcd3568f0c0e, instrument=11fe7024e36080e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 98.06 found(at monitor): 108.05
+ user: user95250 allocation: 2008071528a49b2711d30b3f at 1236951196438 TX ID: 120000963160d0e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1236897322639, user=user141250, transactionAmount=30.00, transactionCurrency=USD, transactionEntryId=11ffcd3568f0c0e, instrument=11fe7024e36080e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}

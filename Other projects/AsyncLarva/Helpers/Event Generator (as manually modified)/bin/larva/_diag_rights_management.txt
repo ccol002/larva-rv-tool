@@ -1,0 +1,7 @@
+digraph _logic_rights_management {
+rankdir=LR;
+node [shape = circle]; start;
+node [shape = point]; _s_s;
+_s_s -> start;
+start -> start [ label = "(1) all1\\t . is ( \" ChangeRights ...\\..."];
+}

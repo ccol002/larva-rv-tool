@@ -1,0 +1,180 @@
+IMPORTS {
+import Events.Template;
+}
+
+GLOBAL {
+
+ EVENTS {
+   broadcast(long timestamp2) = {*.call(*,timestamp2)}
+ }
+
+ PROPERTY abc {
+   
+   STATES {STARTING {start}}
+   
+   TRANSITIONS {start -> start [broadcast\\_call_all_filtered("broadcast", 0/*broadcast*/);]}
+ }
+ 
+
+ FOREACH (String s) {
+ 
+ 
+ VARIABLES {
+    
+  int idp = 185;
+  int drp = 35;
+  int bwp = 335;
+  int bp = 376;
+  
+  int active = 0;
+  int suspended = 1;
+  int dormant = 2;
+  int suspended_dormant = 3;
+  int closed = 4;  
+  
+  long passStart = System.currentTimeMillis();
+  long lastFreeze;
+  boolean feeExpected = false;
+  boolean thawed = true;
+  
+  int currentState = closed;
+ 
+  
+  %%int anycall = runInitialization(); 
+  %%either run initialization here...
+  %%or even better do it in the interface application (which bridges the database with LARVA)
+  
+  %%how can obtain an exhaustive list of all the users? is the log sufficient? i dont think so...
+  }
+  
+    
+ EVENTS {
+   all(timestamp,t) = {Template t.call(String name, long timestamp)} 
+     where s = t.params.get("userId").toString();
+   %%any(timestamp) = {ch.receive(long timestamp)}
+ }
+ 
+ %%how can I query the user balance before and after the transaction?
+ %%
+ 
+ 
+ PROPERTY count {
+  STATES {
+   BAD { bad 
+   expiredDorm
+   expiredBreak }
+   NORMAL { frozen closed }
+   STARTING {start} 
+  }
+  TRANSITIONS {
+   
+   start -> frozen 
+     [ all 
+     \ t.is("DormTX") 
+     \ feeExpected = true; 
+       thawed = false;
+       lastFreeze = timestamp; 
+       int now = millisToDays(timestamp);
+       int exp = millisToDays(passStart + idp);
+       System.out.println(s + " Frozen on day " + now
+        + " Expected on day " + exp + " (" + (now-exp) + ")");
+     ]  
+   start -> expiredDorm 
+     [ broadcast
+     \ passedDays(passStart,timestamp2,idp)
+     \ int str = millisToDays(passStart);
+       int now = millisToDays(::timestamp2);
+       System.out.println(s + " Expired Dormancy! " + str + "->" + now + " (" + (now-str) + ")");
+     ]   
+   start -> expiredBreak 
+     [ broadcast
+     \ passedDays(passStart,timestamp2,bp)
+     \ int str = millisToDays(passStart);
+       int now = millisToDays(::timestamp2);
+       System.out.println(s + " Expired Breakage! " + str + "->" + now + " (" + (now-str) + ")");
+     ]      
+   start -> start 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+     ]   
+   frozen -> bad
+     [ all
+     \ t.is("NormTX") && thawed == false
+     \ System.out.println(s + " Unexpected Transaction!! User still frozen!!");
+     ]
+   frozen -> start
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+         feeExpected = false;
+       }
+     ]
+   frozen -> closed  
+     [ all
+     \ t.is("BreakTX")
+     \ int now = millisToDays(timestamp);
+       int exp = millisToDays(passStart + bp);
+       System.out.println(s + " Closed on day " + now
+       + " Expected on day " + exp + " (" + (now-exp) + ")");   
+     ]        
+   frozen -> frozen
+     [ all 
+     \ t.is("DormFeeTX") 
+     \ feeExpected = false; 
+       System.out.println(s + " Fee taken at " + timestamp);
+     ]      
+   frozen -> frozen
+     [ all 
+     \ t.is("ThawTX") 
+     \ thawed = true; 
+       System.out.println(s + " Thawed at " + timestamp);
+     ]            
+   frozen -> frozen
+     [ all 
+     \ t.is("DormTX") 
+     \ lastFreeze = timestamp;
+       thawed = false; 
+       int now = millisToDays(timestamp);
+       int exp = millisToDays(lastFreeze + drp);
+       System.out.println(s + " Frozen again on day " + now
+        + " Expected on day " + exp + " (" + (now-exp) + ")");
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+       }
+       feeExpected = true;
+     ]   
+   frozen -> expiredDorm
+     [ broadcast
+     \ passedDays(lastFreeze,timestamp2,drp)
+     \ int str = millisToDays(lastFreeze);
+       int now = millisToDays(::timestamp2);
+       System.out.println(s + " Expired Dormancy! " + str + "->" + now + " (" + (now-str) + ")");
+     ]
+   frozen -> expiredBreak
+     [ broadcast
+     \ passedDays(passStart,timestamp2,bp)
+     \ int str = millisToDays(passStart);
+       int now = millisToDays(::timestamp2);     
+       System.out.println(s + " Expired Breakage! " + str + "->" + now + " (" + (now-str) + ")");
+     ]   
+   }
+ }
+ }
+}
+
+METHODS {
+
+int millisToDays(long millis)
+{
+return (int)(millis/(1000*60*60*24));
+}
+
+boolean passedDays(long start,long now,int days)
+{
+return (millisToDays(now-start)>days);
+}
+
+}

@@ -1,0 +1,150 @@
+
+<html>
+<body bgcolor="white">
+<h2>Balance_check</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main0');" id=xmain0>[-]</a>
+
+Expected balance: 0.0 found(at monitor): 9.99
+
+<div id=main0 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user: user58000 allocation: 11ef3e67171000e at 1233055321004 TX ID: 11f17d30bac040e
+ <br> 
+
+
+ origin: WEB scheme: BASIC type: null
+ <br> 
+
+
+ dormancy_freeze: false defaultInstr: false
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main1');" id=xmain1>[-]</a>
+
+Expected balance: -83.96 found(at monitor): -41.98
+
+<div id=main1 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user: user57500 allocation: 11f0f57d658030e at 1233230030043 TX ID: 11f223ce4db0e0e
+ <br> 
+
+
+ origin: WEB scheme: BASIC type: null
+ <br> 
+
+
+ dormancy_freeze: false defaultInstr: false
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main2');" id=xmain2>[-]</a>
+
+Expected balance: -1128.1 found(at monitor): -1108.16
+
+<div id=main2 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user: user105750 allocation: 11e78f415730c0e at 1233231553033 TX ID: 11f225422090d0e
+ <br> 
+
+
+ origin: WEB scheme: BASIC type: null
+ <br> 
+
+
+ dormancy_freeze: false defaultInstr: false
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main3');" id=xmain3>[-]</a>
+
+Expected balance: -522.5 found(at monitor): -418.0
+
+<div id=main3 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user: user87250 allocation: 11f2b61071e0a0e at 1233548491157 TX ID: 11f35383995040e
+ <br> 
+
+
+ origin: WEB scheme: BASIC type: null
+ <br> 
+
+
+ dormancy_freeze: false defaultInstr: false
+ <br> 
+</div></div>
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main4');" id=xmain4>[-]</a>
+
+Expected balance: 112.33 found(at monitor): 117.21
+
+<div id=main4 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+
+ user: user39500 allocation: 20080814c31e660645566a78 at 1233575698623 TX ID: 11f36d760c0050e
+ <br> 
+
+
+ origin: WEB scheme: BASIC type: VCC
+ <br> 
+
+
+ dormancy_freeze: false defaultInstr: false
+ <br> 
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

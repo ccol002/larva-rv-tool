@@ -1,0 +1,79 @@
+IMPORTS{
+import Events.Template;
+import java.math.BigDecimal;
+}
+
+GLOBAL {
+
+Initializeif(SC.init){}
+
+VARIABLES {
+
+  int period = 1;%%day
+  int USDlimit = 2000;
+  int GBPlimit = USDlimit/2;
+  int EURlimit = GBPlimit + GBPlimit/2;
+  
+  int day = 24*60*60*1000;
+  }
+
+ FOREACH (String s) {
+ 
+ Initializeif(SC.init){}
+
+ VARIABLES {
+  
+  long dayTimestamp = -1;
+  double total = 0;
+  }
+  
+ EVENTS {
+   all(timestamp,t,String currency, double amount) = {Template t.call(String name, long timestamp)} 
+     filter {t.is("NormTX") && t.params.get("DTYPE").equals("LoadTXEntry")}
+     where {s = t.params.get("user").toString();
+             amount =  ((BigDecimal)t.params.get("transactionAmount")).doubleValue();
+              currency = (String)t.params.get("transactionCurrency");
+              
+            }
+ }
+ 
+ PROPERTY count {
+ 
+  STATES {
+   BAD { 
+     countExceeded {
+       System.out.println(s + " LOAD amount exceeded: " + currency + " " + total + " in " + period + " day(s)");
+       }  
+     }
+   STARTING {start} 
+  }
+  
+  TRANSITIONS {
+   start -> countExceeded 
+     [ all
+     \ (dayTimestamp == -1 
+        || timestamp/day - dayTimestamp/day < period)
+      && (currency.equals("USD") && (total + amount) > USDlimit
+        || currency.equals("GBP") && (total + amount) > GBPlimit
+        || currency.equals("EUR") && (total + amount) > EURlimit)
+     \total += amount;
+     ]
+   start -> start 
+     [ all
+     \ 
+     \ if (dayTimestamp == -1 || timestamp/day - dayTimestamp/day >= period){
+         dayTimestamp = timestamp;
+         total = amount;
+       }
+       else {
+        total += amount; 
+        } 
+     ]
+   }
+ }
+ }
+}
+
+METHODS {
+  import C:\Documents and Settings\ixaris\Desktop\projects3\Larva Scalable (Offline)\properties\sc.java;
+}

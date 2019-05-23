@@ -1,0 +1,29 @@
+GLOBAL{
+
+VARIABLES{
+Clock c = new Clock();
+int count = 0; 
+}
+
+EVENTS{
+retry() = {*.retry()}
+cAT5() = {c@2}
+cAT10() = {c@4}
+cAT15() = {c@6}
+}
+
+PROPERTY retiries{
+STATES{
+BAD{bad}
+STARTING{starting}
+}
+
+TRANSITIONS{%%3 retries are expected which can take a maximum of 6 seconds and each retry can take a multiple of 2 seconds
+starting -> bad [cAT5\c.compareTo((count + 1)*2)>0\System.out.println("Time expired!! " + "2 seconds!!! and " + count +" retries");]
+starting -> bad [cAT10\c.compareTo((count + 1)*2)>0\System.out.println("Time expired!! " + "4 seconds!!! and " + count +" retries");]
+starting -> bad [cAT15\c.compareTo((count + 1)*2)>0\System.out.println("Time expired!! " + "6 seconds!!! and " + count +" retries");]
+starting -> starting [retry\\count++;]
+}
+}
+
+}

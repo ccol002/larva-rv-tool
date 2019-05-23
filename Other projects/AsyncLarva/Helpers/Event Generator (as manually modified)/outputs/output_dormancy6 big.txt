@@ -1,0 +1,5115 @@
+user223250 Expired Dormancy!2 1217532316686->1220392146000
+user111250 Expired Dormancy!2 1217609506375->1220478952000
+user24000 Expired Dormancy!2 1217621188809->1220478952000
+user29000 Expired Dormancy!2 1217621306287->1220478952000
+user143500 Expired Dormancy!2 1217635708164->1220496313000
+user21250 Expired Dormancy!2 1217636086576->1220496313000
+user241750 Expired Dormancy!2 1217636392084->1220496313000
+user107500 Expired Dormancy!2 1217637673808->1220496313000
+user211750 Expired Dormancy!2 1217650442202->1220531324000
+user105000 Expired Dormancy!2 1217665234789->1220531324000
+user88250 Expired Dormancy!2 1217708198343->1220565651000
+user66250 Expired Dormancy!2 1217723726545->1220610262000
+user58750 Expired Dormancy!2 1217724857491->1220610262000
+user54250 Expired Dormancy!2 1217725114140->1220610262000
+user185750 Expired Dormancy!2 1217767374929->1220620671000
+user187250 Expired Dormancy!2 1217767777997->1220620671000
+user52750 Expired Dormancy!2 1217767812861->1220620671000
+user215500 Expired Dormancy!2 1217783533134->1220642885000
+user110750 Expired Dormancy!2 1217794904672->1220658050000
+user39250 Expired Dormancy!2 1217799975675->1220658050000
+user32000 Expired Dormancy!2 1217812537688->1220709838000
+user219500 Expired Dormancy!2 1217814756665->1220709838000
+user135250 Expired Dormancy!2 1217823296373->1220709838000
+user153000 Expired Dormancy!2 1217827025780->1220709838000
+user247500 Expired Dormancy!2 1217840224963->1220709838000
+user148000 Expired Dormancy!2 1217841592204->1220709838000
+user170500 Expired Dormancy!2 1217856100005->1220709838000
+user131000 Expired Dormancy!2 1217869218691->1220743413000
+user81250 Expired Dormancy!2 1217882261052->1220743413000
+user241000 Expired Dormancy!2 1217882357404->1220743413000
+user37500 Expired Dormancy!2 1217910101888->1220789338000
+user215750 Expired Dormancy!2 1217924695679->1220789338000
+user101750 Expired Dormancy!2 1217927861331->1220789338000
+user151750 Expired Dormancy!2 1217930920874->1220789338000
+user17250 Expired Dormancy!2 1217931353272->1220789338000
+user123000 Expired Dormancy!2 1217938589321->1220790168000
+user170750 Expired Dormancy!2 1217944052306->1220801568000
+user122750 Expired Dormancy!2 1217944107367->1220801568000
+user157000 Expired Dormancy!2 1217956165864->1220818079000
+user65000 Expired Dormancy!2 1217960214795->1220818079000
+user102000 Expired Dormancy!2 1217968404997->1220864206000
+user39750 Expired Dormancy!2 1217969582275->1220864206000
+user222250 Expired Dormancy!2 1217970789411->1220864206000
+user146750 Expired Dormancy!2 1217973368307->1220864206000
+user158500 Expired Dormancy!2 1217973880210->1220864206000
+user197750 Expired Dormancy!2 1217983679874->1220864206000
+user217000 Expired Dormancy!2 1217986710894->1220864206000
+user48750 Expired Dormancy!2 1217999325453->1220864206000
+user102750 Expired Dormancy!2 1218803183986->1221655035000
+user9500 Expired Dormancy!2 1218803299558->1221655035000
+user85250 Expired Dormancy!2 1218821443079->1221677015000
+user196750 Expired Dormancy!2 1218829477785->1221706610000
+user34250 Expired Dormancy!2 1218837336235->1221706610000
+user160500 Expired Dormancy!2 1218838974111->1221706610000
+user96000 Expired Dormancy!2 1218850120372->1221706610000
+user7250 Expired Dormancy!2 1218852415814->1221706610000
+user109000 Expired Dormancy!2 1218902617338->1221798572000
+user47500 Expired Dormancy!2 1219161737931->1222022956000
+user166750 Expired Dormancy!2 1219161838336->1222022956000
+user106250 Expired Dormancy!2 1219248152274->1222138621000
+user30750 Expired Dormancy!2 1219924912662->1222792227000
+user214000 Expired Dormancy!2 1219939271032->1222792227000
+user7500 Expired Dormancy!2 1219939273386->1222792227000
+user137500 Expired Dormancy!2 1220241697492->1223096905000
+user242750 Expired Dormancy!2 1220241699833->1223096905000
+user64750 Expired Dormancy!2 1220270582269->1223153688000
+user102250 Expired Dormancy!2 1221163477427->1224065050000
+user73750 Expired Dormancy!2 1221494445334->1224400835000
+user159500 Expired Dormancy!2 1221609650515->1224505246000
+user185500 Expired Dormancy!2 1223294575820->1226215231000
+user214750 Expired Dormancy!2 1223381002537->1226249757000
+user93000 Expired Dormancy!2 1223553986616->1226408324000
+user138750 Expired Dormancy!2 1223611417166->1226475550000
+user79000 Expired Dormancy!2 1223683386455->1226568110000
+user88500 Expired Dormancy!2 1223756550991->1226614652000
+user11250 Expired Dormancy!2 1223784661254->1226689477000
+user10750 Expired Dormancy!2 1223785785490->1226689477000
+user53250 Expired Dormancy!2 1223799078301->1226689477000
+user97500 Expired Dormancy!2 1223813427434->1226689477000
+user170000 Expired Dormancy!2 1223814036073->1226689477000
+user218500 Expired Dormancy!2 1223814969147->1226689477000
+user98500 Expired Dormancy!2 1223828671371->1226689477000
+user212750 Expired Dormancy!2 1223828944842->1226689477000
+user222750 Expired Dormancy!2 1223842493958->1226697128000
+user214250 Expired Dormancy!2 1223844240236->1226697128000
+user105250 Expired Dormancy!2 1223856066733->1226768922000
+user27500 Expired Dormancy!2 1223856412874->1226768922000
+user243500 Expired Dormancy!2 1223887229478->1226768922000
+user88750 Expired Dormancy!2 1224014621490->1226881085000
+user212500 Expired Dormancy!2 1224100883974->1226967762000
+user118500 Expired Dormancy!2 1224158778744->1227069936000
+user245250 Expired Dormancy!2 1224374480646->1227245194000
+user88000 Expired Dormancy!2 1224504111136->1227378169000
+user31250 Expired Dormancy!2 1224518541332->1227378169000
+user29500 Expired Dormancy!2 1225555495388->1228412365000
+user228250 Expired Dormancy!2 1225685002163->1228578175000
+user4000 Expired Dormancy!2 1225771499398->1228671751000
+user134250 Expired Dormancy!2 1226145855162->1229018236000
+user236500 Expired Dormancy!2 1226146589954->1229018236000
+user87000 Expired Dormancy!2 1226347509956->1229212405000
+user40750 Expired Dormancy!2 1226578062772->1229431449000
+user228000 Expired Dormancy!2 1226578393276->1229431449000
+user233500 Expired Dormancy!2 1226664609067->1229535972000
+user216250 Expired Dormancy!2 1226664726721->1229535972000
+user68000 Expired Dormancy!2 1226851461160->1229708984000
+user204750 Expired Dormancy!2 1226923338555->1229779400000
+user195500 Expired Dormancy!2 1227009684486->1229862572000
+Purchase Notification user user15500
+Purchase Notification user user15500
+Purchase Notification user user15500
+Purchase Notification user user162500
+Purchase Notification user user162500
+Purchase Notification user user83500
+Purchase Notification user user231000
+Purchase Notification user user172250
+Purchase Notification user user113000
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user45750
+Purchase Notification user user238000
+Purchase Notification user user45750
+Purchase Notification user user105750
+Purchase Notification user user45750
+Purchase Notification user user36000
+Purchase Notification user user178250
+Purchase Notification user user36000
+Purchase Notification user user45750
+Purchase Notification user user238000
+Purchase Notification user user168750
+Purchase Settlement Not EXPECTED!! user user77250 amount 169.28
+Purchase Settlement Not EXPECTED!! user user168750 amount 30.00
+Purchase Settlement Not EXPECTED!! user user146000 amount 50.00
+Purchase Settlement Not EXPECTED!! user user34500 amount 20.00
+Loading without necessary rights!! user: user113000
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Not EXPECTED!! user user150000 amount 5.97
+Purchase Settlement Notification user user105750
+Purchase Settlement Notification user user231000
+Purchase Settlement Notification user user231000
+Purchase Settlement Not EXPECTED!! user user231000 amount 200.00
+Purchase Settlement Not EXPECTED!! user user181500 amount 468.16
+Purchase Settlement Not EXPECTED!! user user180500 amount 105.34
+Adding VCC without necessary rights!! user: user183500 instrument: 11e640e6b2f080e
+balance adjusted: -31.48
+Expected balance: -199.39 found: -31.48
+balance adjusted: 30.0
+Expected balance: 90.0 found: 30.0
+balance adjusted: 1.48
+Expected balance: 2425060.95 found: 1.48
+Loading without necessary rights!! user: user168750
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+Expected balance: 193.0 found: 50.0
+balance adjusted: 3.96
+balance adjusted: -83.96
+balance ok: -83.96
+balance adjusted: 80.0
+balance adjusted: 5.4399999999999995
+balance adjusted: -114.39999999999999
+balance ok: -114.4
+balance adjusted: 109.0
+balance adjusted: 6.880000000000001
+user160000 Expired Dormancy!1 1214246885106->1230058819316
+Loading without necessary rights!! user: user77250
+Purchase Settlement Not EXPECTED!! user user121750 amount 80.00
+Purchase Settlement Not EXPECTED!! user user80000 amount 200.00
+Purchase Notification user user113000
+Purchase Notification user user183500
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user36000
+Purchase Notification user user71250
+Purchase Settlement Not EXPECTED!! user user84000 amount 2.17
+Purchase Settlement Notification user user113000
+user155250 Expired Dormancy!2 1227269399580->1230120691345
+Loading without necessary rights!! user: user105750
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 7.87
+Purchase Settlement Notification user user113000
+Purchase Settlement Not EXPECTED!! user user94500 amount 30.00
+Purchase Settlement Notification user user45750
+Purchase Settlement Notification user user45750
+Purchase Settlement Notification user user45750
+Purchase Settlement Not EXPECTED!! user user45750 amount 30.05
+Purchase Settlement Notification user user71250
+Purchase Settlement Not EXPECTED!! user user163000 amount 60.00
+Purchase Settlement Notification user user36000
+user161750 Expired Breakage! 1198762863843->1230126497797
+user36750 Expired Dormancy!1 1214315131330->1230126497797
+Purchase Settlement Notification user user83500
+Purchase Settlement Not EXPECTED!! user user231250 amount 50.00
+Purchase Settlement Not EXPECTED!! user user105750 amount 20.18
+balance adjusted: -209.9
+balance ok: -209.9
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 9.9
+Expected balance: 463191.42 found: 9.9
+Adding VCC without necessary rights!! user: user172250 instrument: 11e69a270aa0c0e
+user119500 Closed at 1230134493699
+user23500 Closed at 1230134702106
+Loading without necessary rights!! user: user163000
+Loading without necessary rights!! user: user121750
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user183500
+Purchase Notification user user238250
+Purchase Notification user user172250
+Purchase Notification user user166500
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Notification user user36000
+Purchase Settlement Not EXPECTED!! user user113000 amount 20.00
+user116500 Expired Breakage! 1198835431133->1230202095585
+Purchase Settlement Not EXPECTED!! user user36000 amount 40.00
+Purchase Settlement Not EXPECTED!! user user176000 amount 100.00
+Purchase Settlement Not EXPECTED!! user user71250 amount 30.00
+user47000 Expired Dormancy!1 1214395627127->1230207303507
+Purchase Settlement Notification user user162500
+Purchase Settlement Not EXPECTED!! user user83500 amount 100.00
+user211750 Expired Breakage! 1198844728697->1230209295201
+Purchase Settlement Notification user user15500
+Purchase Settlement Notification user user15500
+Purchase Settlement Notification user user15500
+user191500 Closed at 1230221050279
+user234750 Frozen at 1230221892100
+user234750 Fee taken at 1230221892436
+Loading without necessary rights!! user: user199250
+user28750 Expired Dormancy!1 1214422621167->1230234686000
+Adding VCC without necessary rights!! user: user172250 instrument: 11e703e03d50c0e
+user187500 Expired Dormancy!2 1227398776044->1230251208489
+Loading without necessary rights!! user: user80000
+user154500 Expired Dormancy!2 1227412907546->1230264806617
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71eb1ecb050e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ecbdbc010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ee0da30f0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71efaf9e0b0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71f17e12040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71f31f1f100e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71fc724d010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71fd48590a0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e71ff1be4010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e7200a67e060e
+Purchase Settlement Notification user user178250
+Purchase Settlement Not EXPECTED!! user user82500 amount 40.00
+Purchase Settlement Notification user user172250
+Adding VCC without necessary rights!! user: user183500 instrument: 11e72d7349f0b0e
+user160750 Expired Dormancy!2 1227442071728->1230293345845
+Adding VCC without necessary rights!! user: user180750 instrument: 11e7346dc20050e
+Purchase Notification user user199250
+Purchase Notification user user172250
+user86500 Expired Dormancy!1 1214493449557->1230304958221
+user29000 Closed at 1230307256660
+Adding VCC without necessary rights!! user: user180750 instrument: 11e740b89f4080e
+user188500 Expired Dormancy!1 1214498023414->1230309685449
+Loading without necessary rights!! user: user149250
+Loading without necessary rights!! user: user166500
+user110250 Expired Breakage! 1199002231323->1230384090000
+user44000 Expired Dormancy!2 1227528542008->1230384090000
+balance adjusted: -36.73
+balance ok: -36.73
+balance adjusted: 35.0
+balance ok: 35.0
+balance adjusted: 9.6
+Purchase Notification user user183500
+Purchase Notification user user180750
+Purchase Notification user user180750
+Purchase Notification user user149250
+Transferring without necessary rights!! user: user105750
+Purchase Settlement Notification user user166500
+user52750 Expired Breakage! 1199041154444->1230406088116
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8930810d0e
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8a0c2e040e
+Adding VCC without necessary rights!! user: user178250 instrument: 11e7a8b3945090e
+user203250 Expired Dormancy!1 1214605539030->1230440331000
+user185750 Expired Breakage! 1199063392732->1230440331000
+Adding VCC without necessary rights!! user: user183500 instrument: 11e7bf578460a0e
+user45250 Expired Dormancy!1 1214637497528->1230459565000
+Adding VCC without necessary rights!! user: user180500 instrument: 11e7d1af4b80c0e
+user84750 Expired Dormancy!2 1227614940025->1230469268590
+Purchase Notification user user197500
+Purchase Notification user user166500
+Purchase Notification user user183500
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 14.850000000000001
+Purchase Settlement Notification user user199250
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 15.84
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 10.59
+Purchase Settlement Notification user user238250
+balance adjusted: -131.19
+balance ok: -131.19
+balance adjusted: 125.0
+balance ok: 125.0
+balance adjusted: 16.78
+user69250 Expired Dormancy!2 1227672177621->1230523497726
+balance adjusted: -314.85
+balance ok: -314.85
+balance adjusted: 300.0
+balance ok: 300.0
+balance adjusted: 25.740000000000002
+Purchase Notification user user166500
+Purchase Notification user user106500
+Purchase Notification user user147750
+Purchase Notification user user147750
+Purchase Notification user user147750
+Purchase Notification user user198000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user180750
+balance adjusted: -839.6
+balance ok: -839.6
+balance adjusted: 800.0
+balance ok: 800.0
+balance adjusted: 50.489999999999995
+Loading without necessary rights!! user: user38750
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user149250
+Adding VCC without necessary rights!! user: user113000 instrument: 11e82fdf4580a0e
+Loading without necessary rights!! user: user73500
+balance adjusted: -1364.35
+balance ok: -1364.35
+balance adjusted: 1300.0
+balance ok: 1300.0
+balance adjusted: 75.24000000000001
+user8500 Expired Dormancy!1 1214786592921->1230605674778
+user226250 Expired Dormancy!1 1214792661095->1230605674778
+balance adjusted: -26.12
+Expected balance: -52.24 found: -26.12
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 17.900000000000002
+balance adjusted: -52.24
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 19.02
+balance adjusted: -36.73
+balance ok: -36.73
+balance adjusted: 35.0
+Expected balance: 35.52 found: 35.0
+balance adjusted: 20.75
+user9750 Expired Dormancy!1 1214810010221->1230624368418
+user87500 Expired Dormancy!2 1227772874606->1230624368418
+balance adjusted: -80.0
+Expected balance: -844.5 found: -80.0
+balance adjusted: 80.0
+balance ok: 80.0
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user73500
+balance adjusted: -1574.25
+balance ok: -1574.25
+balance adjusted: 1500.0
+balance ok: 1500.0
+balance adjusted: 85.14
+Purchase Notification user user201500
+Purchase Notification user user106500
+Purchase Notification user user38750
+Purchase Notification user user38750
+Purchase Notification user user35000
+Purchase Notification user user20500
+Purchase Notification user user20500
+balance adjusted: -140.0
+balance adjusted: 140.0
+balance ok: 140.0
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+user186750 Expired Breakage! 1199270126668->1230636232069
+Purchase Settlement Notification user user166500
+Adding VCC without necessary rights!! user: user182500 instrument: 11e87a962c1060e
+balance adjusted: -1784.15
+balance ok: -1784.15
+balance adjusted: 1700.0
+Expected balance: 1600.0 found: 1700.0
+balance adjusted: 95.04
+Purchase Settlement Notification user user166500
+Purchase Cancellation Not EXPECTED!! user user39500 amount 1.00
+balance adjusted: -2308.9
+balance ok: -2308.9
+balance adjusted: 2200.0
+balance adjusted: 119.79
+balance adjusted: -20.99
+Expected balance: -6075.62 found: -20.99
+balance adjusted: 129.0
+balance adjusted: 21.74
+balance adjusted: -68.22
+balance adjusted: 174.0
+balance adjusted: 23.97
+user140250 Expired Dormancy!1 1214871093260->1230700295000
+Adding VCC without necessary rights!! user: user183500 instrument: 11e8b7434cd060e
+Purchase Notification user user161250
+Purchase Notification user user106500
+Purchase Notification user user161250
+Purchase Notification user user182500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user183500
+balance adjusted: -2518.8
+balance ok: -2518.8
+balance adjusted: 2400.0
+balance adjusted: 129.69
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c524cb5010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c536eca050e
+Adding VCC without necessary rights!! user: user181500 instrument: 11e8c54ad86050e
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user198000
+Purchase Settlement Notification user user147750
+Purchase Settlement Notification user user147750
+Purchase Settlement Not EXPECTED!! user user201500 amount 4.92
+user203500 Expired Breakage! 1199386493295->1230754198065
+user73000 Expired Dormancy!2 1227903026897->1230755744000
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 24.959999999999997
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 25.95
+Purchase Settlement Not EXPECTED!! user user182500 amount 206.50
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user210000
+Purchase Settlement Notification user user161250
+Purchase Settlement Not EXPECTED!! user user161250 amount 60.10
+Purchase Settlement Notification user user35000
+Loading without necessary rights!! user: user201500
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user20500
+user148500 Frozen at 1230826178676
+user148500 Fee taken at 1230826179267
+balance adjusted: -2833.65
+balance ok: -2833.65
+balance adjusted: 2700.0
+balance adjusted: 144.54
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 145.78
+balance adjusted: -20.99
+Expected balance: -194.16 found: -20.99
+balance adjusted: 20.0
+Expected balance: 22.85 found: 20.0
+balance adjusted: 26.939999999999998
+balance adjusted: -20.99
+Expected balance: -225.15 found: -20.99
+balance adjusted: 40.0
+balance adjusted: 27.93
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 45.0
+balance ok: 45.0
+balance adjusted: 146.77
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 65.0
+balance ok: 65.0
+balance adjusted: 147.76000000000002
+balance adjusted: -20.99
+Expected balance: -41.98 found: -20.99
+balance adjusted: 20.0
+Expected balance: 21.95 found: 20.0
+balance adjusted: 28.919999999999998
+balance adjusted: -240.0
+balance adjusted: 240.0
+Expected balance: 100.0 found: 240.0
+balance adjusted: -340.0
+balance adjusted: 340.0
+Purchase Notification user user199250
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user61250
+Purchase Notification user user61250
+Purchase Settlement Not EXPECTED!! user user73500 amount 24.35
+Purchase Settlement Notification user user210000
+balance adjusted: -3043.55
+balance ok: -3043.55
+balance adjusted: 2900.0
+balance adjusted: 157.66
+balance adjusted: -3358.4
+balance ok: -3358.4
+balance adjusted: 3200.0
+balance adjusted: 172.51
+balance adjusted: -3673.25
+balance ok: -3673.25
+balance adjusted: 3500.0
+balance adjusted: 187.35999999999999
+balance adjusted: -3988.1
+balance ok: -3988.1
+balance adjusted: 3800.0
+balance adjusted: 202.21
+balance adjusted: -4407.9
+balance ok: -4407.9
+balance adjusted: 4200.0
+balance adjusted: 222.01000000000002
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 115.0
+balance ok: 115.0
+balance adjusted: 224.48999999999998
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 15.0
+Expected balance: 15.95 found: 15.0
+balance adjusted: 225.23000000000002
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 30.0
+balance adjusted: 225.97
+user14250 Expired Dormancy!1 1215124474605->1230938535826
+user131250 Expired Dormancy!1 1215126510539->1230938535826
+Loading without necessary rights!! user: user224750
+Purchase Cancellation Notification user user147750
+Adding VCC without necessary rights!! user: user182500 instrument: 11e9ab5ba89040e
+balance adjusted: -383.07
+balance ok: -383.07
+balance adjusted: 365.0
+Expected balance: 240.0 found: 365.0
+balance adjusted: 40.800000000000004
+Adding VCC without necessary rights!! user: user180500 instrument: 11e9b6bbdb7070e
+user236000 Expired Breakage! 1199615894306->1230980775000
+Adding VCC without necessary rights!! user: user180750 instrument: 11e9c2bfc780d0e
+user206000 Expired Dormancy!2 1228133052485->1230989094036
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user106500
+Purchase Notification user user92500
+Purchase Notification user user92500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user92500
+Purchase Notification user user224750
+balance adjusted: -41.98
+balance adjusted: 60.0
+balance adjusted: 41.79
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+user33000 Expired Breakage! 1199640541421->1231003952576
+Adding VCC without necessary rights!! user: user172250 instrument: 11e9dc7c773100e
+Adding VCC without necessary rights!! user: user172250 instrument: 11e9dc9b9ac0e0e
+Loading without necessary rights!! user: user78500
+Adding VCC without necessary rights!! user: user183500 instrument: 11ea0029cdc050e
+Purchase Notification user user180750
+Purchase Notification user user198000
+Purchase Notification user user78500
+Purchase Notification user user183500
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Adding VCC without necessary rights!! user: user180750 instrument: 11ea17da1a50f0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11ea1862212040e
+Purchase Settlement Notification user user199250
+Purchase Settlement Notification user user61250
+Purchase Settlement Notification user user61250
+user158750 Expired Breakage! 1199719750795->1231085143654
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 42.78
+user50500 Expired Dormancy!1 1215284250226->1231095458375
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 43.77
+balance adjusted: -300.0
+Expected balance: -30090.0 found: -300.0
+balance adjusted: 300.0
+balance ok: 300.0
+balance adjusted: -330.0
+balance adjusted: 330.0
+balance ok: 330.0
+user235750 Expired Dormancy!1 1215286981646->1231111669000
+Adding VCC without necessary rights!! user: user175750 instrument: 11ea3f9468b0f0e
+Purchase Cancellation Notification user user20500
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51778d9070e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea5191dce060e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea519b704080e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51a9965080e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51b42380d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ea51c0d000d0e
+user116750 Expired Breakage! 1199778367836->1231142531024
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user180750
+Purchase Notification user user180750
+Purchase Notification user user183500
+Purchase Notification user user92500
+Purchase Notification user user72000
+Purchase Notification user user39000
+Purchase Notification user user224750
+Purchase Notification user user175750
+user130250 Expired Dormancy!2 1228307170731->1231159179990
+balance adjusted: -1000.0
+Expected balance: -5900.0 found: -1000.0
+balance adjusted: 1330.0
+balance ok: 1330.0
+balance adjusted: -2000.0
+balance adjusted: 2330.0
+balance ok: 2330.0
+balance adjusted: -2750.0
+balance adjusted: 3080.0
+balance ok: 3080.0
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea81b9d540e0e
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea81d0ba3070e
+Adding VCC without necessary rights!! user: user172250 instrument: 11ea820eb130f0e
+balance adjusted: -1330.0
+balance adjusted: 4080.0
+balance ok: 4080.0
+balance adjusted: -2330.0
+balance adjusted: 5080.0
+balance ok: 5080.0
+balance adjusted: -3580.0
+balance adjusted: 6330.0
+balance ok: 6330.0
+balance adjusted: -68.21
+balance ok: -68.21
+balance adjusted: 65.0
+Expected balance: 35.0 found: 65.0
+balance adjusted: 45.25
+Adding VCC without necessary rights!! user: user175750 instrument: 11ea89526d3090e
+Loading without necessary rights!! user: user113750
+Loading without necessary rights!! user: user95250
+balance adjusted: -89.19999999999999
+balance ok: -89.2
+balance adjusted: 85.0
+balance adjusted: 46.24
+Adding VCC without necessary rights!! user: user177000 instrument: 11ea959e69a050e
+user205250 Expired Breakage! 1199846861178->1231228783226
+balance adjusted: -4250.0
+balance adjusted: 7000.0
+balance ok: 7000.0
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user183500
+balance adjusted: -262.38
+Expected balance: -1385.35 found: -262.38
+balance adjusted: 250.0
+Expected balance: 330.0 found: 250.0
+balance adjusted: 58.620000000000005
+Purchase Notification user user72000
+Purchase Notification user user172250
+Purchase Notification user user113750
+Purchase Notification user user197500
+Purchase Notification user user175750
+Purchase Notification user user61000
+Purchase Notification user user197500
+Purchase Notification user user95250
+Purchase Notification user user177000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eac942338060e
+user215500 Expired Breakage! 1199910301424->1231274404176
+balance adjusted: -17.32
+Expected balance: -54.05 found: -17.32
+balance adjusted: 16.5
+balance ok: 16.5
+balance adjusted: 226.79
+user214500 Expired Dormancy!1 1215470955763->1231284825153
+Transferring without necessary rights!! user: user39500
+user240750 Expired Breakage! 1199931001840->1231302509000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eaf5944a30d0e
+Adding VCC without necessary rights!! user: user181000 instrument: 11eafad5cc3060e
+user4250 Expired Dormancy!1 1215500153123->1231319496890
+Purchase Notification user user113750
+balance adjusted: -4423.639999999999
+balance ok: -4423.64
+balance adjusted: 4215.0
+balance adjusted: 227.53
+Purchase Notification user user224750
+balance adjusted: -4439.38
+balance ok: -4439.38
+balance adjusted: 4230.0
+balance adjusted: 228.27
+Purchase Notification user user92500
+balance adjusted: -4455.12
+balance ok: -4455.12
+balance adjusted: 4245.0
+balance adjusted: 229.01000000000002
+balance adjusted: -4470.86
+balance ok: -4470.86
+balance adjusted: 4260.0
+balance adjusted: 229.75
+Purchase Notification user user209500
+user65000 Expired Breakage! 1199958810441->1231322202088
+balance adjusted: -734.65
+balance ok: -734.65
+balance adjusted: 700.0
+Expected balance: 500.0 found: 700.0
+balance adjusted: 254.5
+user219500 Expired Breakage! 1199960933492->1231324353294
+Purchase Settlement Notification user user113750
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user224750
+Purchase Settlement Notification user user198000
+Adding VCC without necessary rights!! user: user182500 instrument: 11eb1a824c4060e
+user101750 Expired Breakage! 1199978955892->1231342635692
+balance adjusted: -997.03
+balance ok: -997.03
+balance adjusted: 950.0
+balance adjusted: 266.88
+balance adjusted: -1311.88
+balance ok: -1311.88
+balance adjusted: 1250.0
+balance adjusted: 281.73
+user13000 Expired Dormancy!1 1215550465737->1231363398000
+Adding VCC without necessary rights!! user: user121750 instrument: 11eb2fa5bca0a0e
+balance adjusted: -33.06
+balance adjusted: 45.0
+balance adjusted: 282.47
+Loading without necessary rights!! user: user154750
+user27000 Expired Dormancy!1 1215555395440->1231400726536
+user127750 Expired Dormancy!1 1215566057455->1231400726536
+user124750 Expired Breakage! 1200033842437->1231400726536
+Purchase Notification user user181000
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user92500
+Purchase Notification user user154750
+Purchase Notification user user197500
+Purchase Settlement Notification user user224750
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user78500
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user39000
+Purchase Settlement Notification user user72000
+Purchase Settlement Notification user user113750
+balance adjusted: -5250.0
+balance adjusted: 8000.0
+Expected balance: 1000.0 found: 8000.0
+balance adjusted: -6250.0
+balance adjusted: 9000.0
+balance adjusted: -1731.68
+balance ok: -1731.68
+balance adjusted: 1650.0
+balance adjusted: 302.27000000000004
+user21250 Expired Breakage! 1200062413822->1231426443748
+balance adjusted: -7250.0
+balance adjusted: 10000.0
+balance adjusted: -2790.0
+balance adjusted: 10040.0
+balance adjusted: -7288.0
+balance adjusted: 10078.0
+user247500 Expired Breakage! 1200069135679->1231433355542
+Adding VCC without necessary rights!! user: user84000 instrument: 11eb7969e18040e
+Transferring... 
+balance adjusted: -8.83
+Expected balance: 0.0 found: -8.83
+balance adjusted: 8.63
+balance ok: 8.63
+balance adjusted: 0.2
+Expected balance: 7277.42 found: 0.2
+balance adjusted: -48.800000000000004
+balance adjusted: 60.0
+balance adjusted: 303.01
+user38500 Expired Breakage! 1200100514789->1231478302581
+user101500 Expired Dormancy!1 1215664661483->1231478302581
+balance adjusted: -31.0
+Expected balance: -619.5 found: -31.0
+balance adjusted: 31.0
+balance ok: 31.0
+balance adjusted: -63.0
+balance adjusted: 63.0
+balance ok: 63.0
+balance adjusted: -130.0
+balance adjusted: 130.0
+balance ok: 130.0
+Purchase Settlement Notification user user197500
+balance adjusted: -1784.16
+balance ok: -1784.16
+balance adjusted: 1700.0
+balance adjusted: 305.49
+balance adjusted: -152.0
+balance adjusted: 152.0
+balance ok: 152.0
+Adding VCC without necessary rights!! user: user183500 instrument: 11ebac029420a0e
+Purchase Settlement Notification user user154750
+Purchase Settlement Notification user user95250
+Purchase Notification user user238250
+Purchase Notification user user166500
+Purchase Notification user user92500
+Purchase Notification user user166500
+Purchase Notification user user112750
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user72000
+Purchase Settlement Notification user user181000
+balance adjusted: -7910.0
+balance adjusted: 10700.0
+balance adjusted: -7960.0
+balance adjusted: 10750.0
+balance adjusted: -64.53999999999999
+balance adjusted: 75.0
+balance adjusted: 306.23
+Purchase Cancellation Notification user user92500
+Purchase Cancellation Notification user user92500
+Purchase Cancellation Notification user user92500
+balance adjusted: -174.0
+balance adjusted: 174.0
+balance ok: 174.0
+Purchase Cancellation Notification user user92500
+balance adjusted: -195.0
+balance adjusted: 195.0
+balance ok: 195.0
+balance adjusted: -216.0
+balance adjusted: 216.0
+balance ok: 216.0
+user100000 Expired Dormancy!1 1215743996012->1231585018828
+Adding VCC without necessary rights!! user: user180500 instrument: 11ec03f4b87020e
+Adding VCC without necessary rights!! user: user182500 instrument: 11ec0d2c28f0f0e
+Adding VCC without necessary rights!! user: user180750 instrument: 11ec0d537110b0e
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0dc8dad000e
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0dee66b040e
+Adding VCC without necessary rights!! user: user172250 instrument: 11ec0e02a2a010e
+Purchase Notification user user112750
+Purchase Notification user user112750
+Purchase Notification user user238250
+Purchase Notification user user112750
+Purchase Notification user user183500
+Purchase Notification user user98250
+Purchase Notification user user149250
+Purchase Notification user user92500
+Purchase Notification user user154750
+Purchase Notification user user112750
+Purchase Notification user user112750
+Purchase Notification user user112750
+balance adjusted: -20.99
+Expected balance: -488.02 found: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 59.61
+user91000 Expired Dormancy!1 1215794200737->1231605773134
+Purchase Settlement Notification user user197500
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 60.85
+balance adjusted: -72.42
+balance ok: -72.42
+balance adjusted: 69.0
+balance ok: 69.0
+balance adjusted: 63.03
+Purchase Settlement Notification user user166500
+balance adjusted: -236.5
+balance adjusted: 236.5
+balance ok: 236.5
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+balance adjusted: -8960.0
+balance adjusted: 11750.0
+Purchase Settlement Not EXPECTED!! user user224750 amount 14.86
+balance adjusted: -9960.0
+balance adjusted: 12750.0
+balance adjusted: -10960.0
+balance adjusted: 13750.0
+balance adjusted: -11660.0
+balance adjusted: 14450.0
+balance adjusted: -11710.0
+balance adjusted: 14500.0
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 130.0
+Expected balance: 15.0 found: 130.0
+balance adjusted: 306.97
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 145.0
+balance adjusted: 307.71000000000004
+balance adjusted: -62.96
+balance ok: -62.96
+balance adjusted: 175.0
+balance adjusted: 309.19
+balance adjusted: -115.44
+balance ok: -115.44
+balance adjusted: 225.0
+balance adjusted: 311.67
+user120750 Expired Dormancy!1 1215836550056->1231649474000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec40789990a0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec41bbff3010e
+user155500 Expired Dormancy!1 1215848689085->1231667363000
+balance adjusted: -36.73
+balance ok: -36.73
+balance adjusted: 104.0
+balance ok: 104.0
+balance adjusted: 64.76
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 139.0
+balance ok: 139.0
+balance adjusted: 66.49000000000001
+user55500 Expired Breakage! 1200312267931->1231682922000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ec605e812070e
+balance adjusted: -136.43
+balance adjusted: 130.0
+balance ok: 130.0
+balance adjusted: 71.92999999999999
+Purchase Notification user user101000
+Purchase Notification user user180750
+Purchase Notification user user101000
+Purchase Notification user user172250
+Purchase Notification user user112750
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user183500
+Purchase Settlement Notification user user238250
+user169000 Early Freeze at 1231691456723
+Purchase Settlement Notification user user92500
+Purchase Settlement Notification user user154750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user112750
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user98250
+Purchase Settlement Not EXPECTED!! user user112750 amount 20.50
+Purchase Settlement Notification user user149250
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user92500
+user215750 Closed at 1231776753912
+user41750 Expired Dormancy!1 1215966378644->1231777623083
+balance adjusted: -10.5
+balance ok: -10.5
+balance adjusted: 10.0
+balance ok: 10.0
+balance adjusted: 0.5
+Expected balance: 278085.36 found: 0.5
+Adding VCC without necessary rights!! user: user182500 instrument: 11ecc198cad0f0e
+user242000 Expired Dormancy!1 1215977786631->1231795636000
+user5500 Expired Dormancy!1 1215981636089->1231795636000
+Adding VCC without necessary rights!! user: user175750 instrument: 11eccbdc8ff0a0e
+balance adjusted: -266.5
+balance adjusted: 266.5
+Expected balance: 30.0 found: 266.5
+balance adjusted: -10.5
+balance ok: -10.5
+balance adjusted: 10.0
+balance ok: 10.0
+balance adjusted: 1.0
+Adding VCC without necessary rights!! user: user183500 instrument: 11ece44fdb30a0e
+Purchase Notification user user129000
+Purchase Notification user user175750
+Purchase Notification user user198500
+Purchase Notification user user61250
+Purchase Notification user user183500
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Loading without necessary rights!! user: user250000
+Purchase Settlement Notification user user183500
+balance adjusted: -298.5
+balance adjusted: 298.5
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+balance adjusted: -330.5
+balance adjusted: 330.5
+balance adjusted: -49.33
+balance ok: -49.33
+balance adjusted: 186.0
+balance ok: 186.0
+balance adjusted: 74.26
+balance adjusted: -49.33
+balance ok: -49.33
+balance adjusted: 233.0
+balance ok: 233.0
+balance adjusted: 76.59
+Purchase Settlement Notification user user177000
+user24000 Expired Breakage! 1200498988657->1231862559827
+Adding VCC without necessary rights!! user: user183500 instrument: 11ed0cbad0f0b0e
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 273.0
+balance ok: 273.0
+balance adjusted: 78.57000000000001
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 303.0
+balance ok: 303.0
+balance adjusted: 80.05
+Loading without necessary rights!! user: user146000
+user137000 Expired Dormancy!1 1216076211452->1231887513000
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 343.0
+balance ok: 343.0
+balance adjusted: 82.03
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 373.0
+balance ok: 373.0
+balance adjusted: 83.51
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 413.0
+balance ok: 413.0
+balance adjusted: 85.49000000000001
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 443.0
+balance ok: 443.0
+balance adjusted: 86.97
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 245.0
+balance adjusted: 312.66
+balance adjusted: -362.5
+balance adjusted: 362.5
+balance adjusted: -428.5
+balance adjusted: 428.5
+Purchase Notification user user250000
+Purchase Notification user user250000
+Purchase Notification user user183500
+Purchase Notification user user118250
+balance adjusted: -36.73
+balance ok: -36.73
+balance adjusted: 478.0
+balance ok: 478.0
+balance adjusted: 88.7
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 513.0
+balance ok: 513.0
+balance adjusted: 90.43
+Purchase Settlement Not EXPECTED!! user user92500 amount 15.44
+Adding VCC without necessary rights!! user: user177000 instrument: 11ed57859710a0e
+Purchase Settlement Notification user user101000
+balance adjusted: -125.94
+balance ok: -125.94
+balance adjusted: 345.0
+balance adjusted: 317.61
+balance adjusted: -1000.0
+balance ok: -1000.0
+balance adjusted: 15500.0
+balance adjusted: -2000.0
+balance ok: -2000.0
+balance adjusted: 16500.0
+balance adjusted: -3000.0
+balance ok: -3000.0
+balance adjusted: 17500.0
+balance adjusted: -4000.0
+balance ok: -4000.0
+balance adjusted: 18500.0
+balance adjusted: -4500.0
+balance ok: -4500.0
+balance adjusted: 19000.0
+balance adjusted: -13210.0
+balance adjusted: 20500.0
+user49500 Expired Dormancy!1 1216155687594->1231969525495
+balance adjusted: -80.28
+balance adjusted: 90.0
+balance adjusted: 318.35
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 583.0
+Expected balance: 514.0 found: 583.0
+balance adjusted: 93.89
+user58750 Expired Breakage! 1200612655045->1231976241000
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 94.88
+Purchase Cancellation Notification user user209500
+balance adjusted: -10.5
+balance ok: -10.5
+balance adjusted: 10.0
+balance ok: 10.0
+balance adjusted: 1.5
+user57750 Expired Dormancy!1 1216174689810->1231993638629
+balance adjusted: -493.5
+balance adjusted: 493.5
+balance adjusted: -591.5
+balance adjusted: 591.5
+user66250 Expired Breakage! 1200631154728->1232006892880
+Purchase Notification user user177000
+Purchase Notification user user61000
+Purchase Notification user user118250
+Purchase Notification user user133000
+Purchase Notification user user237250
+Purchase Notification user user237250
+Purchase Notification user user237250
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 653.0
+balance adjusted: 98.33999999999999
+Purchase Settlement Notification user user101000
+user193250 Expired Dormancy!1 1216207384906->1232020271291
+Purchase Settlement Notification user user172250
+user202750 Expired Dormancy!1 1216211316021->1232024063000
+Adding VCC without necessary rights!! user: user180750 instrument: 11eda5b4c090f0e
+balance adjusted: -689.5
+balance adjusted: 689.5
+Purchase Settlement Notification user user61250
+Purchase Settlement Notification user user250000
+Purchase Settlement Notification user user250000
+Transferring without necessary rights!! user: user113000
+Purchase Settlement Not EXPECTED!! user user129000 amount 4.68
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user183500
+user46000 Expired Dormancy!1 1216229716944->1232044508000
+Adding VCC without necessary rights!! user: user172250 instrument: 11edb9346a7050e
+Adding VCC without necessary rights!! user: user172250 instrument: 11edb96ba7f0b0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11eddaef3190d0e
+balance adjusted: -756.38
+balance adjusted: 64.0
+balance ok: 64.0
+balance adjusted: 101.22
+balance adjusted: -820.38
+balance adjusted: 753.5
+balance adjusted: -390.0
+balance adjusted: 390.0
+balance adjusted: -430.0
+balance adjusted: 430.0
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede7fc0e1010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede82583f070e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede84a9fa050e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede86409f010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8837c1030e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede899692040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8ae4d9090e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8c521a0e0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8dda6d060e
+Adding VCC without necessary rights!! user: user181500 instrument: 11ede8fa440020e
+Purchase Notification user user180750
+Purchase Notification user user133000
+Purchase Notification user user172250
+Purchase Notification user user126000
+Purchase Notification user user133000
+Purchase Notification user user133000
+Purchase Notification user user199250
+Purchase Notification user user183500
+Transferring... 
+balance adjusted: 0.0
+balance ok: 0.0
+balance adjusted: 817.3
+balance adjusted: 0.4
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+user211500 Expired Breakage! 1200744392004->1232108992090
+balance adjusted: -899.38
+balance adjusted: 896.3
+balance adjusted: -23.09
+balance ok: -23.09
+balance adjusted: 22.0
+balance ok: 22.0
+balance adjusted: 2.59
+balance adjusted: -1815.64
+balance ok: -1815.64
+balance adjusted: 1730.0
+balance adjusted: 319.83000000000004
+balance adjusted: -1847.1200000000001
+balance ok: -1847.12
+balance adjusted: 1760.0
+balance adjusted: 321.31
+balance adjusted: -1862.86
+balance ok: -1862.86
+balance adjusted: 1775.0
+balance adjusted: 322.05
+Purchase Settlement Notification user user175750
+user240500 Frozen at 1232123510641
+Purchase Settlement Not EXPECTED!! user user198500 amount 9.33
+user196250 Expired Dormancy!1 1216314273035->1232125482000
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 327.0
+user72250 Expired Breakage! 1200769541041->1232141415445
+balance adjusted: -230.89
+balance ok: -230.89
+balance adjusted: 445.0
+balance adjusted: 331.95
+Loading without necessary rights!! user: user68250
+user136500 Expired Dormancy!1 1216334148629->1232145978000
+balance adjusted: -194.15
+balance ok: -194.15
+balance adjusted: 185.0
+balance adjusted: 106.17
+balance adjusted: -209.9
+balance ok: -209.9
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 116.07000000000001
+user208000 Expired Breakage! 1200792125444->1232156548177
+balance adjusted: -920.38
+balance adjusted: 917.3
+Adding VCC without necessary rights!! user: user183500 instrument: 11ee2cfb8900d0e
+balance adjusted: -314.85
+balance ok: -314.85
+balance adjusted: 500.0
+balance ok: 500.0
+balance adjusted: 130.92
+user94750 Expired Dormancy!1 1216370749148->1232182523370
+balance adjusted: -4680.759999999999
+balance ok: -4680.76
+balance adjusted: 4460.0
+balance adjusted: 341.84999999999997
+balance adjusted: -4785.71
+balance ok: -4785.71
+balance adjusted: 4560.0
+balance adjusted: 346.8
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user208500
+Purchase Notification user user118250
+Purchase Notification user user68250
+Purchase Notification user user68250
+Purchase Notification user user68250
+Purchase Notification user user215000
+Purchase Notification user user183500
+user23250 Expired Breakage! 1200825802921->1232189348938
+balance adjusted: -246.63
+balance ok: -246.63
+balance adjusted: 460.0
+balance adjusted: 347.54
+Adding VCC without necessary rights!! user: user180500 instrument: 11ee459a268090e
+Purchase Settlement Notification user user180750
+balance adjusted: -262.37
+balance ok: -262.37
+balance adjusted: 475.0
+balance adjusted: 348.28000000000003
+Adding VCC without necessary rights!! user: user183000 instrument: 11ee5099aae060e
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user237250
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 244.0
+balance adjusted: 134.38
+Purchase Settlement Notification user user133000
+user216750 Expired Dormancy!1 1216408684077->1232223061098
+user40000 Expired Breakage! 1200857347813->1232223061098
+user116000 Expired Breakage! 1200860232902->1232225958000
+user92250 Expired Dormancy!1 1216437482123->1232253459000
+Adding VCC without necessary rights!! user: user183500 instrument: 11ee8079d86000e
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 314.0
+balance adjusted: 137.84
+balance adjusted: -50.38
+balance ok: -50.38
+balance adjusted: 362.0
+balance adjusted: 140.22
+Purchase Notification user user20500
+Purchase Notification user user20500
+Purchase Notification user user106500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user183000
+Purchase Notification user user197500
+Purchase Notification user user183500
+user500 Expired Dormancy!1 1216473071282->1232286601350
+Loading without necessary rights!! user: user34500
+user155250 Expired Breakage! 1200927508259->1232290875819
+Purchase Settlement Notification user user126000
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 412.0
+balance adjusted: 142.7
+balance adjusted: -100.75999999999999
+balance ok: -100.76
+balance adjusted: 458.0
+balance adjusted: 144.98
+Purchase Settlement Notification user user118250
+Adding VCC without necessary rights!! user: user182500 instrument: 11eead3ebcf060e
+balance adjusted: -157.42000000000002
+balance adjusted: 150.0
+Expected balance: 20.0 found: 150.0
+balance adjusted: 145.97
+user198250 Expired Dormancy!1 1216497746463->1232350172468
+balance adjusted: -104.95
+Expected balance: -493.27 found: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 150.92
+Transferring without necessary rights!! user: user48250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user183000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user183500
+balance adjusted: -94.46
+balance adjusted: 483.0
+balance adjusted: 152.16
+balance adjusted: -120.69999999999999
+balance adjusted: 508.0
+balance adjusted: 153.4
+Purchase Settlement Notification user user199250
+Adding VCC without necessary rights!! user: user180750 instrument: 11eee99b8f2060e
+Purchase Settlement Notification user user68250
+Purchase Settlement Notification user user68250
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 154.39000000000001
+Adding VCC without necessary rights!! user: user175750 instrument: 11ef091ff71020e
+user10250 Expired Dormancy!1 1216588381911->1232409812382
+balance adjusted: -62.97
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 155.38
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 578.0
+balance adjusted: 158.84
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 648.0
+balance adjusted: 162.3
+Purchase Notification user user48250
+Purchase Notification user user180750
+Purchase Notification user user11500
+Purchase Notification user user175750
+Purchase Settlement Notification user user20500
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 718.0
+balance adjusted: 165.76000000000002
+Purchase Settlement Notification user user172250
+user92000 Expired Breakage! 1201089585211->1232454658430
+user245000 Expired Dormancy!1 1216643063806->1232454658430
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user106500
+Purchase Cancellation Notification user user237250
+user76500 Expired Dormancy!1 1216651572935->1232467623278
+Adding VCC without necessary rights!! user: user183500 instrument: 11ef4e445bc090e
+Adding VCC without necessary rights!! user: user183500 instrument: 11ef4f647d0060e
+balance adjusted: -14210.0
+balance adjusted: 21500.0
+balance adjusted: -14460.0
+balance adjusted: 21750.0
+balance adjusted: -30.44
+balance ok: -30.44
+balance adjusted: 29.0
+Expected balance: 19.67 found: 29.0
+balance adjusted: 3.53
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 788.0
+balance adjusted: 169.22
+Purchase Notification user user166500
+Purchase Notification user user183500
+Purchase Notification user user60750
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 828.0
+balance adjusted: 171.2
+Purchase Settlement Notification user user180750
+balance adjusted: -98.65
+balance ok: -98.65
+balance adjusted: 882.0
+balance adjusted: 173.86999999999998
+Purchase Settlement Notification user user197500
+balance adjusted: -3090.0
+balance adjusted: 22050.0
+balance adjusted: -15360.0
+balance adjusted: 22950.0
+Adding VCC without necessary rights!! user: user73500 instrument: 11efaf419850f0e
+Purchase Cancellation Notification user user162500
+Purchase Cancellation Notification user user68250
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 176.35
+balance adjusted: -104.96
+balance ok: -104.96
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 178.82999999999998
+user229000 Expired Breakage! 1201229440789->1232598739000
+balance adjusted: -209.9
+balance ok: -209.9
+balance adjusted: 700.0
+balance ok: 700.0
+balance adjusted: 188.73000000000002
+balance adjusted: -419.8
+balance ok: -419.8
+balance adjusted: 900.0
+balance ok: 900.0
+balance adjusted: 198.63
+balance adjusted: -524.75
+balance ok: -524.75
+balance adjusted: 1000.0
+balance ok: 1000.0
+balance adjusted: 203.57999999999998
+balance adjusted: -577.23
+balance ok: -577.23
+balance adjusted: 1050.0
+balance ok: 1050.0
+balance adjusted: 206.06
+balance adjusted: -157.42
+balance ok: -157.42
+balance adjusted: 1200.0
+balance ok: 1200.0
+balance adjusted: 213.48
+Purchase Notification user user20500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user109250
+Purchase Notification user user109250
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user48250
+Purchase Settlement Notification user user166500
+balance adjusted: -49.33
+balance ok: -49.33
+balance adjusted: 929.0
+balance adjusted: 215.81
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7b5784090e
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7da95a0b0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe7f0aeb010e
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe807dda070e
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe81c5e00d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11efe82e228040e
+balance adjusted: -49.33
+balance ok: -49.33
+balance adjusted: 976.0
+balance adjusted: 218.14000000000001
+balance adjusted: -98.65
+balance ok: -98.65
+balance adjusted: 1070.0
+balance adjusted: 222.79
+balance adjusted: -4090.0
+balance adjusted: 23950.0
+Paying Fee... 
+balance adjusted: -9.99
+balance adjusted: -4290.0
+balance adjusted: 24150.0
+balance adjusted: -350.0
+Expected balance: -9800.0 found: -350.0
+balance adjusted: 24500.0
+Adding VCC without necessary rights!! user: user175750 instrument: 11f007d697e020e
+Loading without necessary rights!! user: user102500
+Adding VCC without necessary rights!! user: user175750 instrument: 11f00d03cf70b0e
+user104250 Expired Dormancy!1 1216868294226->1232680431563
+Adding VCC without necessary rights!! user: user181000 instrument: 11f01fd8393030e
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user215000
+Purchase Notification user user61000
+Purchase Notification user user102500
+Purchase Notification user user175750
+Purchase Notification user user175750
+Purchase Notification user user102500
+Purchase Notification user user102500
+Purchase Settlement Notification user user118250
+user40500 Expired Dormancy!2 1229853912159->1232705535000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f02f9bc5e030e
+balance adjusted: -2282.66
+balance ok: -2282.66
+balance adjusted: 2175.0
+balance adjusted: 368.08
+user64000 Expired Dormancy!2 1229855184711->1232706761057
+Purchase Settlement Notification user user11500
+Adding VCC without necessary rights!! user: user180750 instrument: 11f03117244070e
+user118000 Expired Dormancy!2 1229860366230->1232712599000
+user74500 Expired Dormancy!1 1216900602810->1232712599000
+Adding VCC without necessary rights!! user: user175750 instrument: 11f0365869c030e
+Adding VCC without necessary rights!! user: user175750 instrument: 11f037f6ecc0d0e
+user86750 Expired Dormancy!2 1229863695391->1232715023103
+Purchase Settlement Notification user user175750
+user246000 Expired Dormancy!2 1229865311613->1232718814342
+user187750 Expired Dormancy!2 1229866004843->1232718814342
+user142750 Expired Dormancy!2 1229866668469->1232718814342
+balance adjusted: -2807.41
+balance ok: -2807.41
+balance adjusted: 2675.0
+balance adjusted: 392.83
+user230250 Expired Dormancy!2 1229868890159->1232721284413
+balance adjusted: -3332.16
+balance ok: -3332.16
+balance adjusted: 3175.0
+balance adjusted: 417.58
+user195750 Expired Dormancy!2 1229871471110->1232727353476
+user43000 Expired Dormancy!2 1229872489066->1232727353476
+user225500 Expired Dormancy!2 1229872563066->1232727353476
+user114250 Expired Dormancy!2 1229875857637->1232727353476
+user118750 Expired Dormancy!2 1229876844894->1232728105746
+user4750 Expired Dormancy!2 1229877458001->1232732365821
+user184500 Expired Dormancy!2 1229880090212->1232732365821
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0495becb020e
+user124000 Expired Dormancy!2 1229882182903->1232733704000
+user163250 Expired Dormancy!1 1216923675681->1232739293780
+balance adjusted: -16360.0
+balance adjusted: 25500.0
+balance adjusted: -17360.0
+balance adjusted: 26500.0
+balance adjusted: -17611.03
+balance adjusted: 26751.03
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 422.53
+Loading without necessary rights!! user: user48000
+balance adjusted: -54.56999999999999
+balance adjusted: 52.0
+balance adjusted: 224.37
+Adding VCC without necessary rights!! user: user182500 instrument: 11f07041238030e
+Adding VCC without necessary rights!! user: user180750 instrument: 11f0811ea130f0e
+Purchase Notification user user181000
+Purchase Notification user user183500
+Purchase Notification user user238250
+Purchase Notification user user180750
+Purchase Notification user user171500
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user175750
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user175750
+Purchase Notification user user166500
+Purchase Notification user user183500
+Purchase Notification user user48000
+Purchase Notification user user61250
+Purchase Notification user user31000
+Purchase Notification user user31000
+Purchase Settlement Notification user user20500
+Adding VCC without necessary rights!! user: user180500 instrument: 11f088f40e6090e
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 225.36
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user109250
+Purchase Settlement Not EXPECTED!! user user109250 amount 50.38
+Adding VCC without necessary rights!! user: user175750 instrument: 11f08ee3522020e
+Adding VCC without necessary rights!! user: user175750 instrument: 11f08efa615010e
+Adding VCC without necessary rights!! user: user172250 instrument: 11f096c699f040e
+Adding VCC without necessary rights!! user: user172250 instrument: 11f096e1499000e
+user187250 Expired Breakage! 1201458138868->1232821476000
+balance adjusted: -47.23
+balance ok: -47.23
+balance adjusted: 1115.0
+balance adjusted: 227.59
+balance adjusted: -10.5
+balance ok: -10.5
+balance adjusted: 10.0
+balance ok: 10.0
+balance adjusted: 4.029999999999999
+Adding VCC without necessary rights!! user: user175750 instrument: 11f0a3ef4d1000e
+Purchase Cancellation Not EXPECTED!! user user20500 amount 1.00
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0c46f9fb040e
+Adding VCC without necessary rights!! user: user183500 instrument: 11f0c85d5800e0e
+Loading without necessary rights!! user: user201750
+balance adjusted: -36.73
+balance ok: -36.73
+balance adjusted: 1150.0
+balance adjusted: 229.32
+balance adjusted: -71.36
+balance ok: -71.36
+balance adjusted: 1183.0
+balance adjusted: 230.95
+user59250 Expired Dormancy!1 1217068516747->1232881643000
+Adding VCC without necessary rights!! user: user180750 instrument: 11f0d9e69390a0e
+Purchase Notification user user199250
+Purchase Notification user user180750
+Purchase Notification user user191000
+Purchase Notification user user191000
+Purchase Notification user user38250
+Purchase Notification user user175750
+Purchase Notification user user172250
+Purchase Notification user user197500
+Purchase Notification user user115750
+Purchase Notification user user175750
+Adding VCC without necessary rights!! user: user36000 instrument: 11f0dd2e5a4050e
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user166500
+user37500 Expired Breakage! 1201540125016->1232909106211
+user39750 Expired Breakage! 1201568470781->1232957206448
+Purchase Settlement Notification user user60750
+Purchase Settlement Notification user user181000
+Purchase Settlement Notification user user183500
+Purchase Notification user user183500
+Purchase Notification user user183500
+Purchase Notification user user201750
+Purchase Notification user user201750
+Purchase Notification user user180750
+Purchase Settlement Notification user user180750
+balance adjusted: -3437.1099999999997
+balance ok: -3437.11
+balance adjusted: 3275.0
+balance adjusted: 427.47999999999996
+Purchase Settlement Notification user user183500
+Purchase Settlement Notification user user180750
+user114500 Expired Dormancy!1 1217152719621->1232967722604
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+user128000 Expired Dormancy!1 1217158836515->1232970689805
+Purchase Settlement Notification user user61250
+user155750 Expired Breakage! 1201610290972->1232984927000
+balance adjusted: -1000.0
+balance ok: -1000.0
+balance adjusted: 27751.03
+balance adjusted: -1500.0
+balance ok: -1500.0
+balance adjusted: 28251.03
+balance adjusted: -2000.0
+balance ok: -2000.0
+balance adjusted: 28751.03
+balance adjusted: -2500.0
+balance ok: -2500.0
+balance adjusted: 29251.03
+Transferring... 
+balance adjusted: 5.9
+balance ok: 5.9
+balance adjusted: 4.0
+balance ok: 4.0
+balance adjusted: 0.1
+Expected balance: 1341.08 found: 0.1
+user137250 Expired Breakage! 1201672065052->1233042462766
+Purchase Notification user user238250
+Purchase Notification user user61000
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user183500
+Purchase Settlement Not EXPECTED!! user user183500 amount 452.63
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user199250
+Transferring... 
+balance adjusted: -60.190000000000005
+Expected balance: 0.0 found: -60.19
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 0.6000000000000001
+balance adjusted: -524.75
+balance ok: -524.75
+balance adjusted: 500.0
+balance ok: 500.0
+balance adjusted: 452.23
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user201750
+Purchase Settlement Notification user user201750
+Purchase Settlement Notification user user191000
+Adding VCC without necessary rights!! user: user183500 instrument: 11f187826e90d0e
+balance adjusted: -24.14
+balance ok: -24.14
+balance adjusted: 1206.0
+balance adjusted: 232.08999999999997
+user216500 Expired Dormancy!1 1217259620233->1233072608445
+user234750 Expired Dormancy!2 1230221892100->1233073987783
+balance adjusted: -48.28
+balance ok: -48.28
+balance adjusted: 1252.0
+balance adjusted: 234.37
+user43500 Expired Dormancy!1 1217284061019->1233100957397
+user207250 Expired Breakage! 1201746956755->1233129979079
+Purchase Settlement Notification user user102500
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user171500
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user38250
+Adding VCC without necessary rights!! user: user180750 instrument: 11f1d041ca20f0e
+Adding VCC without necessary rights!! user: user172250 instrument: 11f1d36807d040e
+balance adjusted: -125.94
+Expected balance: -20.99 found: -125.94
+balance adjusted: 120.0
+Expected balance: 24.95 found: 120.0
+balance adjusted: 453.22
+user4500 Expired Dormancy!1 1217339007603->1233150240000
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 236.85
+balance adjusted: -35.68
+balance ok: -35.68
+balance adjusted: 687.0
+balance adjusted: 238.53
+user160500 Expired Breakage! 1201799404687->1233166598000
+user7000 Expired Dormancy!1 1217352123037->1233166598000
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 707.0
+balance adjusted: 239.52
+balance adjusted: -48.28
+balance ok: -48.28
+balance adjusted: 1278.0
+balance adjusted: 240.81
+Transferring... 
+balance adjusted: 687.8
+balance adjusted: 1297.0
+balance adjusted: 0.8
+balance adjusted: -278.11
+balance ok: -278.11
+balance adjusted: 490.0
+balance adjusted: 453.96000000000004
+Loading without necessary rights!! user: user41500
+user96500 Expired Dormancy!1 1217394794952->1233215614807
+Purchase Notification user user180750
+Purchase Notification user user191000
+Purchase Notification user user191000
+Purchase Notification user user171500
+Purchase Notification user user118250
+Purchase Notification user user41500
+Purchase Settlement Notification user user48000
+Purchase Settlement Notification user user238250
+balance adjusted: -41.98
+Expected balance: -83.96 found: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 455.94
+user70000 Expired Dormancy!1 1217424079608->1233239187104
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user115750
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user31000
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user31000
+Transferring... 
+balance adjusted: -199.2
+Expected balance: 0.63 found: -199.2
+balance adjusted: 190.17
+balance adjusted: 1.0
+user47500 Expired Breakage! 1201882041207->1233245531064
+user104500 Expired Dormancy!1 1217434480930->1233246546036
+Adding VCC without necessary rights!! user: user177000 instrument: 11f23636457020e
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 15.0
+balance ok: 15.0
+balance adjusted: 456.68
+user79500 Expired Dormancy!1 1217446458915->1233259815283
+balance adjusted: -73.47
+balance ok: -73.47
+balance adjusted: 70.0
+balance ok: 70.0
+balance adjusted: 459.16
+Transferring... 
+balance adjusted: 9.799999999999997
+balance ok: 9.8
+balance adjusted: 60.0
+balance ok: 60.0
+balance adjusted: 0.2
+Expected balance: 1134.57 found: 0.2
+user232500 Expired Dormancy!1 1217476890485->1233290720414
+Purchase Notification user user171500
+Purchase Notification user user231500
+Purchase Notification user user231500
+Purchase Notification user user48000
+Purchase Notification user user43750
+Purchase Notification user user61000
+Purchase Notification user user177000
+Purchase Notification user user231500
+Purchase Settlement Notification user user61000
+user133750 Expired Dormancy!1 1217503306273->1233314648537
+Purchase Settlement Notification user user208500
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user180750
+user95000 Expired Breakage! 1201960629006->1233324198520
+user60750 Expired Dormancy!1 1217518659862->1233331698655
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 510.0
+balance adjusted: 460.15000000000003
+balance adjusted: -73.47
+balance ok: -73.47
+balance adjusted: 560.0
+balance adjusted: 462.63
+user123000 Expired Breakage! 1201985294837->1233352556094
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 590.0
+balance adjusted: 464.11
+balance adjusted: -157.43
+balance ok: -157.43
+balance adjusted: 640.0
+balance adjusted: 466.59000000000003
+balance adjusted: -209.91
+balance ok: -209.91
+balance adjusted: 690.0
+balance adjusted: 469.07
+balance adjusted: -262.39
+balance ok: -262.39
+balance adjusted: 740.0
+balance adjusted: 471.55
+balance adjusted: -62.97
+balance adjusted: 60.0
+balance ok: 60.0
+balance adjusted: 472.54
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 241.8
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 242.79000000000002
+balance adjusted: -209.0
+balance ok: -209.0
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 251.79
+balance adjusted: -313.5
+balance ok: -313.5
+balance adjusted: 300.0
+balance ok: 300.0
+balance adjusted: 256.28999999999996
+Adding VCC without necessary rights!! user: user183500 instrument: 11f2bdae1c5060e
+Adding VCC without necessary rights!! user: user180500 instrument: 11f2c30c8640c0e
+Adding VCC without necessary rights!! user: user180750 instrument: 11f2c53d463100e
+user219250 Expired Breakage! 1202038952610->1233403669622
+balance adjusted: -299.1
+balance ok: -299.1
+balance adjusted: 285.0
+balance adjusted: 261.24
+user249000 Expired Breakage! 1202054952786->1233418283564
+Adding VCC without necessary rights!! user: user172250 instrument: 11f2d77f138040e
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 262.23
+balance adjusted: -272.87
+balance ok: -272.87
+balance adjusted: 260.0
+Expected balance: 160.0 found: 260.0
+balance adjusted: 480.46000000000004
+Purchase Notification user user166500
+Purchase Notification user user171500
+Purchase Notification user user57500
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user210250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user57500
+Purchase Notification user user77000
+Purchase Settlement Notification user user231500
+user112500 Expired Breakage! 1202069510625->1233433878654
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user41500
+Purchase Settlement Notification user user191000
+Purchase Cancellation Notification user user191000
+Adding VCC without necessary rights!! user: user182500 instrument: 11f3040f759070e
+user146250 Expired Dormancy!1 1217667091165->1233480432264
+user9500 Expired Breakage! 1202118338448->1233486026000
+Adding VCC without necessary rights!! user: user181750 instrument: 11f317f29520e0e
+Purchase Notification user user87250
+Purchase Notification user user87250
+Purchase Notification user user87250
+Purchase Notification user user180750
+Purchase Notification user user197500
+Purchase Notification user user26250
+Purchase Notification user user208500
+Purchase Notification user user26250
+Purchase Notification user user172250
+Adding VCC without necessary rights!! user: user180750 instrument: 11f3292cfcd010e
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user43750
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 264.71000000000004
+balance adjusted: -418.0
+Expected balance: -522.5 found: -418.0
+balance adjusted: 400.0
+balance ok: 400.0
+balance adjusted: 269.21
+balance adjusted: -522.5
+balance adjusted: 500.0
+balance ok: 500.0
+balance adjusted: 273.71
+balance adjusted: -731.5
+balance adjusted: 700.0
+balance ok: 700.0
+balance adjusted: 282.71
+Purchase Notification user user181750
+Purchase Notification user user180750
+Purchase Notification user user241500
+Purchase Notification user user87250
+Purchase Notification user user87250
+Adding VCC without necessary rights!! user: user172250 instrument: 11f3632bfb70c0e
+Purchase Settlement Notification user user208500
+Purchase Settlement Notification user user57500
+Purchase Settlement Notification user user180750
+user69750 Expired Dormancy!1 1217764533832->1233576775296
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Adding VCC without necessary rights!! user: user180500 instrument: 11f3730c83c040e
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+Adding VCC without necessary rights!! user: user175750 instrument: 11f38093fa70a0e
+balance adjusted: -143.78
+balance adjusted: 137.0
+balance adjusted: 481.29999999999995
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 283.95
+user126500 Expired Breakage! 1202251199444->1233619569867
+user122250 Expired Breakage! 1202274603506->1233651960344
+Purchase Notification user user87250
+Purchase Notification user user172250
+Purchase Notification user user171500
+Purchase Notification user user34750
+Purchase Notification user user175750
+Purchase Notification user user189000
+Purchase Settlement Not EXPECTED!! user user57500 amount 23.27
+Purchase Settlement Notification user user181750
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user26250
+user148500 Expired Dormancy!2 1230826178676->1233677454653
+Adding VCC without necessary rights!! user: user113000 instrument: 11f3d1873440c0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11f3d1ad25b030e
+Adding VCC without necessary rights!! user: user183500 instrument: 11f3d37336e090e
+user1750 Expired Dormancy!1 1217894489398->1233710910777
+balance adjusted: -79.16
+balance adjusted: 75.43
+Expected balance: 20.0 found: 75.43
+balance adjusted: 482.06
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user87250
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user189000
+Purchase Notification user user203000
+Purchase Notification user user203000
+Purchase Notification user user171500
+Purchase Notification user user107750
+Purchase Notification user user68250
+Purchase Notification user user171500
+Purchase Settlement Notification user user48000
+Purchase Settlement Notification user user118250
+balance adjusted: -472.28
+balance adjusted: 450.0
+balance adjusted: 293.84999999999997
+user41000 Expired Dormancy!1 1217972707261->1233784854788
+balance adjusted: -157.44
+balance ok: -157.44
+balance adjusted: 150.0
+Expected balance: 50.0 found: 150.0
+balance adjusted: 296.33000000000004
+Purchase Cancellation Not EXPECTED!! user user191000 amount 1.00
+user137750 Expired Dormancy!1 1217982929544->1233818778711
+Purchase Notification user user11500
+Purchase Settlement Notification user user197500
+Adding VCC without necessary rights!! user: user180500 instrument: 11f462d188e070e
+Purchase Settlement Notification user user77000
+balance adjusted: -121.13999999999999
+balance adjusted: 115.43
+balance adjusted: 484.04
+Adding VCC without necessary rights!! user: user181500 instrument: 11f465ae4a20a0e
+balance adjusted: -27.0
+balance ok: -27.0
+balance adjusted: 27.0
+balance ok: 27.0
+Purchase Settlement Notification user user172250
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46614b900c0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46637163050e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f4665cc24040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f46682923030e
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user210250
+balance adjusted: -163.12
+balance adjusted: 155.43
+balance adjusted: 486.02000000000004
+Purchase Settlement Notification user user231500
+Loading without necessary rights!! user: user203000
+Purchase Settlement Notification user user203000
+balance adjusted: -367.33000000000004
+balance ok: -367.33
+balance adjusted: 350.0
+Expected balance: 347.69 found: 350.0
+balance adjusted: 311.18
+balance adjusted: -204.84
+balance adjusted: 195.18
+balance adjusted: 487.99
+balance adjusted: -155.33
+balance adjusted: 1330.0
+balance adjusted: 312.81
+balance adjusted: -79.0
+balance ok: -79.0
+balance adjusted: 79.0
+balance ok: 79.0
+user85250 Expired Breakage! 1202493796400->1233858863000
+user201000 Expired Breakage! 1202498239595->1233871679000
+user102750 Expired Breakage! 1202513901065->1233877295555
+Purchase Cancellation Not EXPECTED!! user user231500 amount 1.00
+Purchase Cancellation Notification user user26250
+user91500 Expired Dormancy!1 1218069644691->1233886266216
+user156750 Expired Dormancy!1 1218073010161->1233886266216
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+Expected balance: 25.0 found: 50.0
+balance adjusted: 314.05
+user120250 Expired Dormancy!1 1218078428160->1233901049000
+Adding VCC without necessary rights!! user: user182500 instrument: 11f4a3bd7d00c0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11f4a67ae8f020e
+Purchase Notification user user241500
+Purchase Notification user user22500
+Purchase Notification user user241500
+Purchase Notification user user203000
+Purchase Notification user user41500
+Purchase Notification user user22500
+Purchase Notification user user61000
+Purchase Notification user user199250
+Purchase Notification user user34750
+balance adjusted: -419.80999999999995
+balance ok: -419.81
+balance adjusted: 890.0
+balance adjusted: 495.41
+Adding VCC without necessary rights!! user: user182500 instrument: 11f4b3a32ea000e
+balance adjusted: -96.02
+balance adjusted: 105.0
+balance adjusted: 496.15000000000003
+balance adjusted: -27.29
+balance ok: -27.29
+balance adjusted: 26.0
+balance ok: 26.0
+balance adjusted: 497.44
+Adding VCC without necessary rights!! user: user177000 instrument: 11f4c1b0d4c0c0e
+balance adjusted: -54.58
+balance ok: -54.58
+balance adjusted: 52.0
+balance ok: 52.0
+balance adjusted: 498.73
+Purchase Settlement Notification user user172250
+Purchase Settlement Notification user user175750
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user68250
+Adding VCC without necessary rights!! user: user183500 instrument: 11f4cc6fa69020e
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 503.68
+balance adjusted: -144.0
+balance ok: -144.0
+balance adjusted: 144.0
+balance ok: 144.0
+balance adjusted: -314.85
+balance ok: -314.85
+balance adjusted: 300.0
+balance ok: 300.0
+balance adjusted: 513.58
+balance adjusted: -335.84000000000003
+balance ok: -335.84
+balance adjusted: 320.0
+balance ok: 320.0
+balance adjusted: 514.57
+user80500 Expired Dormancy!1 1218148939593->1233976184156
+balance adjusted: -330.58000000000004
+balance ok: -330.58
+balance adjusted: 315.0
+balance adjusted: 315.53000000000003
+user94000 Expired Breakage! 1202618524581->1234001351334
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 940.0
+balance adjusted: 517.0500000000001
+user132250 Expired Dormancy!1 1218196354320->1234012217949
+balance adjusted: -104.96
+balance ok: -104.96
+balance adjusted: 990.0
+balance adjusted: 519.53
+Purchase Notification user user98000
+Purchase Notification user user98000
+Purchase Notification user user177000
+Purchase Notification user user118250
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user22500
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user128750
+Purchase Notification user user61000
+Purchase Notification user user197500
+Purchase Settlement Notification user user41500
+Adding VCC without necessary rights!! user: user177000 instrument: 11f5158e8e20d0e
+user123500 Closed at 1234023382603
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user107750
+Purchase Settlement Notification user user171500
+Adding VCC without necessary rights!! user: user183500 instrument: 11f541f02f7010e
+user204250 Expired Dormancy!1 1218258940632->1234074086000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f548c2d940f0e
+Adding VCC without necessary rights!! user: user180500 instrument: 11f548f17cd000e
+user126250 Expired Breakage! 1202715703122->1234084065000
+Adding VCC without necessary rights!! user: user181500 instrument: 11f55247294040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f5525aba0060e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552727c90f0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f5528a5c70d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552a9b37070e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552c4abd0e0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552dd969070e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f552efbc0000e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f553006030c0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f55318ac7020e
+balance adjusted: -209.0
+balance ok: -209.0
+balance adjusted: 209.0
+Expected balance: 130.0 found: 209.0
+user112250 Expired Breakage! 1202744734321->1234108466684
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user177000
+Purchase Notification user user107750
+user233000 Closed at 1234109576724
+balance adjusted: -111.75999999999999
+balance adjusted: 120.0
+balance adjusted: 520.27
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user11500
+user199750 Expired Dormancy!1 1218321653002->1234147552565
+user239250 Expired Breakage! 1202776605087->1234147552565
+balance adjusted: -200.47
+balance ok: -200.47
+balance adjusted: 191.0
+balance adjusted: 317.55999999999995
+balance adjusted: -78.72
+balance ok: -78.72
+balance adjusted: 75.0
+balance adjusted: 318.8
+balance adjusted: -235.1
+balance ok: -235.1
+balance adjusted: 224.0
+balance adjusted: 320.43
+Purchase Notification user user98250
+Purchase Notification user user22500
+Purchase Notification user user34750
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user199250
+balance adjusted: -176.32000000000002
+balance adjusted: 1350.0
+balance adjusted: 321.42
+balance adjusted: -295.95
+balance ok: -295.95
+balance adjusted: 1007.0
+balance adjusted: 521.11
+balance adjusted: -682.1800000000001
+balance ok: -682.18
+balance adjusted: 650.0
+balance adjusted: 336.27000000000004
+user143250 Closed at 1234195380849
+Adding VCC without necessary rights!! user: user172250 instrument: 11f5c14e4b9030e
+balance adjusted: -314.85
+balance ok: -314.85
+balance adjusted: 300.0
+balance ok: 300.0
+balance adjusted: 18.88
+user30500 Expired Dormancy!1 1218398869296->1234214096993
+balance adjusted: -514.25
+balance ok: -514.25
+balance adjusted: 490.0
+balance ok: 490.0
+balance adjusted: 28.28
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 1450.0
+balance adjusted: 341.21999999999997
+balance adjusted: -239.29000000000002
+balance ok: -239.29
+balance adjusted: 1578.0
+balance adjusted: 347.56
+balance adjusted: -202.56
+balance adjusted: 1603.0
+balance adjusted: 348.8
+Loading without necessary rights!! user: user78250
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 1703.0
+balance adjusted: 353.75
+balance adjusted: -240.33999999999997
+balance ok: -240.34
+balance adjusted: 1832.0
+balance adjusted: 360.14
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 1882.0
+balance adjusted: 362.62
+balance adjusted: -109.15
+balance ok: -109.15
+balance adjusted: 1936.0
+balance adjusted: 365.29
+Adding VCC without necessary rights!! user: user181000 instrument: 11f5f167869010e
+balance adjusted: -316.94
+balance ok: -316.94
+balance adjusted: 1027.0
+balance adjusted: 522.1
+balance adjusted: -246.82
+balance adjusted: 235.18
+balance adjusted: 524.08
+Purchase Cancellation Notification user user203000
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+Purchase Settlement Notification user user128750
+user132000 Expired Dormancy!1 1218471076341->1234282474148
+Purchase Settlement Not EXPECTED!! user user203000 amount 12.07
+user234500 Expired Breakage! 1202919986846->1234283211531
+balance adjusted: -104.96
+balance ok: -104.96
+balance adjusted: 100.0
+balance adjusted: 366.53000000000003
+Purchase Settlement Notification user user22500
+user115500 Expired Dormancy!1 1218480425586->1234295961429
+user110500 Expired Dormancy!1 1218483274221->1234295961429
+balance adjusted: -409.0
+balance ok: -409.0
+balance adjusted: 409.0
+Purchase Notification user user118250
+Purchase Notification user user241500
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user172250
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user66000
+Purchase Notification user user15500
+balance adjusted: -509.0
+balance ok: -509.0
+balance adjusted: 509.0
+user20750 Expired Dormancy!1 1218488086590->1234312864675
+balance adjusted: -362.06
+balance ok: -362.06
+balance adjusted: 345.0
+balance adjusted: 368.01
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user98250
+Purchase Settlement Notification user user98000
+Purchase Settlement Notification user user98000
+Purchase Settlement Notification user user118250
+Purchase Notification user user181000
+Purchase Notification user user118250
+Purchase Notification user user114750
+Purchase Notification user user34750
+Purchase Notification user user22500
+Purchase Notification user user22500
+Purchase Notification user user102500
+Purchase Notification user user78250
+Purchase Notification user user197500
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user241500
+balance adjusted: -234.04
+balance adjusted: 1966.0
+balance adjusted: 369.49
+balance adjusted: -274.96999999999997
+balance adjusted: 2005.0
+balance adjusted: 371.42
+balance adjusted: -5500.0
+balance ok: -5500.0
+balance adjusted: 30251.03
+balance adjusted: -18611.03
+balance adjusted: 31251.03
+balance adjusted: -19611.03
+balance adjusted: 32251.03
+user31500 Expired Dormancy!1 1218567682259->1234379378998
+balance adjusted: -20611.03
+balance adjusted: 33251.03
+user239000 Expired Dormancy!1 1218569076340->1234381287188
+balance adjusted: -21611.03
+balance adjusted: 34251.03
+balance adjusted: -1350.0
+balance adjusted: 35251.03
+Adding VCC without necessary rights!! user: user177000 instrument: 11f67d296460e0e
+balance adjusted: -347.38
+balance ok: -347.38
+balance adjusted: 1056.0
+balance adjusted: 525.5200000000001
+user244000 Expired Breakage! 1203066001377->1234429993000
+Purchase Notification user user98750
+Purchase Notification user user61000
+Purchase Notification user user118250
+Purchase Notification user user78500
+Purchase Notification user user177000
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user181000
+Purchase Settlement Not EXPECTED!! user user15500 amount 9.10
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user22500
+balance adjusted: -128.24
+balance adjusted: 135.7
+balance adjusted: 526.3
+balance adjusted: -1950.0
+balance adjusted: 35851.03
+balance adjusted: -2350.0
+balance adjusted: 36251.03
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 2035.0
+balance adjusted: 372.90000000000003
+balance adjusted: -62.96
+balance ok: -62.96
+balance adjusted: 2065.0
+balance adjusted: 374.38
+balance adjusted: -94.44
+balance ok: -94.44
+balance adjusted: 2095.0
+balance adjusted: 375.86
+Paying Fee... 
+balance adjusted: -9.99
+user140750 Expired Dormancy!1 1218666394473->1234482943084
+user229500 Expired Dormancy!1 1218672934476->1234489938028
+balance adjusted: -571.96
+balance ok: -571.96
+balance adjusted: 545.0
+balance adjusted: 385.76
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 2125.0
+balance adjusted: 387.24
+balance adjusted: -71.36
+balance ok: -71.36
+balance adjusted: 2163.0
+balance adjusted: 389.12
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user197500
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user107750
+user53000 Expired Dormancy!1 1218719891886->1234531846677
+Purchase Settlement Notification user user197500
+balance adjusted: -22610.94
+balance adjusted: 37250.94
+user109000 Expired Breakage! 1203174797224->1234538200142
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 527.54
+Paying Fee... 
+balance adjusted: 17.509999999999998
+user106250 Expired Breakage! 1203195996113->1234570843657
+Adding VCC without necessary rights!! user: user180500 instrument: 11f734d36c90b0e
+Adding VCC without necessary rights!! user: user180500 instrument: 11f734e74aa0b0e
+Purchase Notification user user171500
+Purchase Notification user user56250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user114750
+Purchase Settlement Notification user user78250
+Purchase Settlement Notification user user172250
+balance adjusted: -23615.829999999998
+balance adjusted: 38255.83
+user158250 Expired Dormancy!1 1218812856041->1234624840149
+user36500 Frozen at 1234627570445
+balance adjusted: -209.9
+balance ok: -209.9
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 537.4399999999999
+balance adjusted: -419.8
+balance ok: -419.8
+balance adjusted: 400.0
+balance ok: 400.0
+balance adjusted: 547.34
+balance adjusted: -629.7
+balance ok: -629.7
+balance adjusted: 600.0
+balance ok: 600.0
+balance adjusted: 557.24
+balance adjusted: -839.6
+balance ok: -839.6
+balance adjusted: 800.0
+balance ok: 800.0
+balance adjusted: 567.14
+balance adjusted: -10.5
+balance ok: -10.5
+balance adjusted: 10.0
+balance ok: 10.0
+balance adjusted: 28.78
+Purchase Cancellation Notification user user133000
+user133500 Expired Dormancy!1 1218846107246->1234674315000
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 390.11
+balance adjusted: -45.129999999999995
+balance ok: -45.13
+balance adjusted: 2183.0
+balance adjusted: 391.1
+Adding VCC without necessary rights!! user: user180500 instrument: 11f7882269b010e
+Paying Fee... 
+balance adjusted: -9.99
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Notification user user116250
+Purchase Settlement Notification user user197500
+balance adjusted: -3500.0
+balance ok: -3500.0
+balance adjusted: 1000.0
+balance ok: 1000.0
+balance adjusted: -4500.0
+balance ok: -4500.0
+balance adjusted: 2000.0
+balance ok: 2000.0
+balance adjusted: -5500.0
+balance ok: -5500.0
+balance adjusted: 3000.0
+balance ok: 3000.0
+balance adjusted: -6500.0
+balance ok: -6500.0
+balance adjusted: 4000.0
+balance ok: 4000.0
+balance adjusted: -7500.0
+balance ok: -7500.0
+balance adjusted: 5000.0
+balance ok: 5000.0
+balance adjusted: -8500.0
+balance ok: -8500.0
+balance adjusted: 6000.0
+balance ok: 6000.0
+balance adjusted: -144.72
+balance adjusted: 151.39999999999998
+balance adjusted: 567.92
+Purchase Settlement Notification user user66000
+user104000 Expired Breakage! 1203369112695->1234732390034
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user66000
+Purchase Settlement Notification user user66000
+balance adjusted: -75.56
+balance adjusted: 72.0
+balance adjusted: 392.09000000000003
+Purchase Cancellation Notification user user133000
+Purchase Cancellation Not EXPECTED!! user user133000 amount 1.00
+balance adjusted: -131.2
+balance ok: -131.2
+balance adjusted: 125.0
+balance adjusted: 393.33
+user166750 Expired Breakage! 1203404521225->1234771705832
+Purchase Notification user user149250
+Purchase Notification user user149250
+Purchase Notification user user116250
+Purchase Notification user user145250
+Purchase Notification user user61250
+Purchase Notification user user34750
+balance adjusted: -1049.5
+balance ok: -1049.5
+balance adjusted: 1000.0
+balance adjusted: 410.65
+Purchase Settlement Notification user user61000
+balance adjusted: -300.16
+balance adjusted: 2207.0
+balance adjusted: 411.84
+balance adjusted: -325.77000000000004
+balance adjusted: 2231.4
+balance adjusted: 413.04999999999995
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 15.0
+balance ok: 15.0
+balance adjusted: 568.66
+balance adjusted: -9500.0
+balance ok: -9500.0
+balance adjusted: 39255.83
+balance adjusted: -10500.0
+balance ok: -10500.0
+balance adjusted: 40255.83
+balance adjusted: -50.38
+balance ok: -50.38
+balance adjusted: 48.0
+balance adjusted: 29.720000000000002
+balance adjusted: -11500.0
+balance ok: -11500.0
+balance adjusted: 41255.83
+balance adjusted: -12500.0
+balance ok: -12500.0
+balance adjusted: 42255.83
+balance adjusted: -13500.0
+balance ok: -13500.0
+balance adjusted: 43255.83
+balance adjusted: -14500.0
+balance ok: -14500.0
+balance adjusted: 44255.83
+balance adjusted: -20.99
+Expected balance: -41.98 found: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 414.04
+balance adjusted: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 415.03000000000003
+user144000 Expired Dormancy!1 1219013057770->1234829293041
+Purchase Cancellation Notification user user215000
+balance adjusted: -592.95
+balance ok: -592.95
+balance adjusted: 565.0
+balance adjusted: 416.02
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 417.01
+Paying Fee... 
+balance adjusted: 10.01
+Purchase Settlement Not EXPECTED!! user user78500 amount 41.00
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Settlement Notification user user116250
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user171500
+Purchase Notification user user241500
+Purchase Notification user user114750
+Purchase Notification user user114750
+Purchase Notification user user197500
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 30.0
+balance ok: 30.0
+balance adjusted: 418.49
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user149250
+user23750 Expired Dormancy!1 1219113393447->1234937218396
+Purchase Notification user user166500
+Purchase Notification user user166500
+Purchase Notification user user98750
+Purchase Notification user user171500
+Purchase Notification user user41500
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88d385d8090e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88d52f44040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88d6b5c60c0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88d88b4e0b0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88d9b8660e0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f88db7ff1060e
+balance adjusted: -639.0
+balance ok: -639.0
+balance adjusted: 639.0
+user244750 Expired Breakage! 1203600366074->1234966378502
+Purchase Settlement Notification user user241500
+balance adjusted: -600.0
+balance ok: -600.0
+balance adjusted: 44855.83
+Purchase Settlement Notification user user61250
+balance adjusted: -1200.0
+balance ok: -1200.0
+balance adjusted: 45455.83
+balance adjusted: -1400.0
+balance ok: -1400.0
+balance adjusted: 45655.83
+balance adjusted: -15000.0
+balance ok: -15000.0
+balance adjusted: 46155.83
+Purchase Settlement Notification user user56250
+user240500 Expired Dormancy!2 1232123510641->1234975429474
+balance adjusted: -3647.01
+balance ok: -3647.01
+balance adjusted: 3475.0
+balance adjusted: 578.56
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 419.48
+user11750 Expired Dormancy!1 1219166646576->1234980034594
+balance adjusted: -357.25
+balance adjusted: 2261.4
+balance adjusted: 420.96000000000004
+balance adjusted: -390.40999999999997
+balance adjusted: 2293.0
+balance adjusted: 422.52
+Purchase Cancellation Notification user user98750
+Purchase Notification user user22500
+Purchase Notification user user171500
+Purchase Notification user user37250
+Purchase Notification user user238250
+Purchase Notification user user207000
+Purchase Notification user user32750
+user61500 Expired Dormancy!1 1219220094777->1235032931607
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user114750
+Purchase Settlement Notification user user114750
+Purchase Settlement Notification user user197500
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user166500
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 424.5
+Purchase Settlement Notification user user171500
+balance adjusted: -94.46
+balance ok: -94.46
+balance adjusted: 90.0
+balance ok: 90.0
+balance adjusted: 426.98
+Adding VCC without necessary rights!! user: user180500 instrument: 11f8ea0ddaa030e
+balance adjusted: -115.44999999999999
+balance ok: -115.45
+balance adjusted: 110.0
+balance ok: 110.0
+balance adjusted: 427.97
+Purchase Settlement Not EXPECTED!! user user145250 amount 16.17
+Purchase Settlement Not EXPECTED!! user user116250 amount 15.73
+user111500 Expired Dormancy!1 1219250197384->1235061418242
+user69000 Early Freeze at 1235061452522
+balance adjusted: -363.12
+balance ok: -363.12
+balance adjusted: 1071.0
+balance adjusted: 579.3
+balance adjusted: -671.0
+balance ok: -671.0
+balance adjusted: 671.0
+balance adjusted: -47.22
+balance ok: -47.22
+balance adjusted: 166.4
+balance adjusted: 580.04
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 2393.0
+balance adjusted: 432.92
+balance adjusted: -235.08999999999997
+balance ok: -235.09
+balance adjusted: 2517.0
+balance adjusted: 439.06
+user186500 Expired Breakage! 1203725930069->1235089250251
+balance adjusted: -1049.5
+balance ok: -1049.5
+balance adjusted: 1000.0
+Expected balance: 200.0 found: 1000.0
+balance adjusted: 589.9399999999999
+balance adjusted: -1259.4
+balance ok: -1259.4
+balance adjusted: 1200.0
+balance adjusted: 599.84
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user118250
+Purchase Notification user user22500
+Purchase Notification user user107250
+Purchase Settlement Notification user user41500
+Purchase Settlement Notification user user22500
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 34.67
+user7500 Expired Breakage! 1203768485748->1235134023075
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user171500
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 2617.0
+balance adjusted: 444.01
+Purchase Settlement Notification user user171500
+balance adjusted: -209.9
+balance ok: -209.9
+balance adjusted: 2717.0
+balance adjusted: 448.96
+balance adjusted: -237.19
+balance ok: -237.19
+balance adjusted: 2743.0
+balance adjusted: 450.25
+Purchase Settlement Notification user user98750
+Adding VCC without necessary rights!! user: user180500 instrument: 11f940c4e39080e
+balance adjusted: -118.59
+balance ok: -118.59
+balance adjusted: 2856.0
+balance adjusted: 455.84
+user75750 Expired Dormancy!1 1219334190835->1235145823147
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 30.009999999999998
+balance ok: 30.01
+balance adjusted: 456.83
+user197000 Expired Breakage! 1203792184932->1235157556058
+user108250 Expired Dormancy!1 1219347569152->1235174913761
+user110000 Expired Dormancy!1 1219350973522->1235174913761
+Purchase Cancellation Notification user user149250
+Adding VCC without necessary rights!! user: user183500 instrument: 11f972c0b13060e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f9754828e0d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f975598d3090e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f97564d280d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11f975700230d0e
+Adding VCC without necessary rights!! user: user183500 instrument: 11f98626341050e
+balance adjusted: -1469.3000000000002
+balance ok: -1469.3
+balance adjusted: 1400.0
+balance adjusted: 609.74
+balance adjusted: -230.89
+balance ok: -230.89
+balance adjusted: 220.0
+balance ok: 220.0
+balance adjusted: 462.27
+Purchase Cancellation Notification user user215000
+Purchase Cancellation Notification user user215000
+Purchase Cancellation Notification user user215000
+Purchase Cancellation Notification user user215000
+Purchase Cancellation Notification user user215000
+Purchase Cancellation Notification user user215000
+Adding VCC without necessary rights!! user: user180500 instrument: 11f98c100e4030e
+balance adjusted: -356.83
+balance ok: -356.83
+balance adjusted: 340.0
+balance ok: 340.0
+balance adjusted: 468.21
+Transferring... 
+balance adjusted: 16.360000000000003
+Expected balance: 0.19 found: 16.36
+balance adjusted: 1.0
+balance ok: 1.0
+balance adjusted: 0.35
+user230750 Expired Dormancy!1 1219415215745->1235226501000
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 31.36
+balance adjusted: 610.48
+Transferring... 
+balance adjusted: 17.21
+balance adjusted: 15.0
+balance ok: 15.0
+balance adjusted: 0.5
+balance adjusted: -1626.72
+balance ok: -1626.72
+balance adjusted: 1550.0
+balance adjusted: 617.9
+user140500 Expired Dormancy!1 1219429568001->1235244991000
+user161000 Expired Breakage! 1203893147292->1235259345980
+Purchase Notification user user55000
+Purchase Notification user user55000
+Purchase Notification user user32750
+Purchase Notification user user218250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user238250
+balance adjusted: -116.49
+balance ok: -116.49
+balance adjusted: 2967.0
+balance adjusted: 473.7
+balance adjusted: -117.54
+balance ok: -117.54
+balance adjusted: 3079.0
+balance adjusted: 479.24
+user18750 Expired Dormancy!1 1219457998068->1235270811795
+Purchase Settlement Notification user user22500
+user141500 Expired Breakage! 1203909341133->1235273617946
+Purchase Settlement Notification user user171500
+balance adjusted: -1889.1
+balance ok: -1889.1
+balance adjusted: 1800.0
+balance adjusted: 630.28
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user218250
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Settlement Notification user user207000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+user46750 Expired Dormancy!1 1219522806334->1235357316205
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 3129.0
+balance adjusted: 481.72
+balance adjusted: -104.96
+balance ok: -104.96
+balance adjusted: 3179.0
+balance adjusted: 484.20000000000005
+balance adjusted: -141.69
+balance ok: -141.69
+balance adjusted: 3214.0
+balance adjusted: 485.93
+balance adjusted: -294.92
+balance ok: -294.92
+balance adjusted: 281.0
+balance adjusted: 488.75
+user10500 Expired Dormancy!1 1219558961971->1235376957826
+user30750 Expired Breakage! 1204013084143->1235376957826
+balance adjusted: -734.65
+balance ok: -734.65
+balance adjusted: 700.0
+Expected balance: 200.0 found: 700.0
+balance adjusted: 640.18
+balance adjusted: -944.55
+balance ok: -944.55
+balance adjusted: 900.0
+balance adjusted: 650.0799999999999
+Purchase Settlement Notification user user218250
+Purchase Notification user user102500
+balance adjusted: -1994.05
+balance ok: -1994.05
+balance adjusted: 1900.0
+balance adjusted: 655.0300000000001
+balance adjusted: -1049.5
+balance ok: -1049.5
+balance adjusted: 1000.0
+balance adjusted: 659.98
+balance adjusted: -1154.45
+balance ok: -1154.45
+balance adjusted: 1100.0
+balance adjusted: 664.9300000000001
+balance adjusted: -1364.3500000000001
+balance ok: -1364.35
+balance adjusted: 1300.0
+balance adjusted: 674.8299999999999
+Adding VCC without necessary rights!! user: user39500 instrument: 11fa3d985f60e0e
+balance adjusted: -52.48
+Expected balance: -314.85 found: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 677.3100000000001
+balance adjusted: -430.28999999999996
+balance ok: -430.29
+balance adjusted: 410.0
+Expected balance: 300.0 found: 410.0
+balance adjusted: 492.21
+balance adjusted: -104.96
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 679.79
+balance adjusted: -352.64
+balance ok: -352.64
+balance adjusted: 336.0
+balance adjusted: 494.93
+user43250 Expired Dormancy!1 1219612428150->1235430198998
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6bc469a0a0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6bd6975030e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6beb08e0f0e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6bfeb1c030e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6c16d21040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6c2e5ce040e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6ce2ffd030e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6cf6864020e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa6d096920c0e
+balance adjusted: -2099.0
+balance ok: -2099.0
+balance adjusted: 2000.0
+balance adjusted: 684.74
+Adding VCC without necessary rights!! user: user181500 instrument: 11fa79afcd30d0e
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user195250
+Purchase Notification user user238000
+Purchase Notification user user103000
+Purchase Notification user user238000
+Purchase Notification user user26750
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user107250
+Purchase Settlement Notification user user171500
+Purchase Settlement Notification user user37250
+user227250 Closed at 1235492336804
+Loading without necessary rights!! user: user164000
+balance adjusted: -412.46
+balance ok: -412.46
+balance adjusted: 393.0
+balance adjusted: 497.75
+user64750 Expired Breakage! 1204163708314->1235529584306
+user98750 Expired Dormancy!1 1219724671186->1235548578721
+Purchase Notification user user61000
+Purchase Notification user user164000
+Purchase Notification user user164000
+Purchase Notification user user107250
+Purchase Notification user user41500
+balance adjusted: -2203.95
+balance ok: -2203.95
+balance adjusted: 2100.0
+balance adjusted: 689.69
+balance adjusted: -4995.61
+balance ok: -4995.61
+balance adjusted: 4760.0
+balance adjusted: 699.59
+balance adjusted: -5257.99
+balance ok: -5257.99
+balance adjusted: 5010.0
+balance adjusted: 711.97
+balance adjusted: -5572.84
+balance ok: -5572.84
+balance adjusted: 5310.0
+balance adjusted: 726.82
+balance adjusted: -5887.6900000000005
+balance ok: -5887.69
+balance adjusted: 5610.0
+balance adjusted: 741.6700000000001
+Purchase Settlement Notification user user218250
+Purchase Settlement Notification user user32750
+Adding VCC without necessary rights!! user: user180750 instrument: 11fad9b7ae60f0e
+Purchase Settlement Notification user user55000
+Purchase Settlement Not EXPECTED!! user user55000 amount 6.84
+user214000 Expired Breakage! 1204208380703->1235572755994
+balance adjusted: -6359.969999999999
+balance ok: -6359.97
+balance adjusted: 6060.0
+balance adjusted: 763.9499999999999
+balance adjusted: -6884.72
+balance ok: -6884.72
+balance adjusted: 6560.0
+balance adjusted: 788.7
+user55750 Expired Dormancy!1 1219765823165->1235577960260
+balance adjusted: -773.0
+balance ok: -773.0
+balance adjusted: 773.0
+balance adjusted: -7409.47
+balance ok: -7409.47
+balance adjusted: 7060.0
+balance adjusted: 813.45
+balance adjusted: -7461.95
+balance ok: -7461.95
+balance adjusted: 7110.0
+balance adjusted: 815.9300000000001
+balance adjusted: -31.35
+balance ok: -31.35
+balance adjusted: 30.0
+balance ok: 30.0
+balance adjusted: 499.1
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+Expected balance: 20.02 found: 20.0
+balance adjusted: 500.09000000000003
+user149000 Expired Dormancy!1 1219801689639->1235627112000
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user164000
+Purchase Notification user user106500
+Purchase Notification user user180750
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user78250
+Purchase Notification user user22500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user22000
+Purchase Notification user user107250
+Purchase Notification user user72750
+Purchase Notification user user72750
+balance adjusted: -7986.7
+balance ok: -7986.7
+balance adjusted: 7610.0
+balance adjusted: 840.68
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+balance adjusted: -8511.45
+balance ok: -8511.45
+balance adjusted: 8110.0
+balance adjusted: 865.43
+Adding VCC without necessary rights!! user: user180750 instrument: 11fb24f5ca20b0e
+balance adjusted: -9036.2
+balance ok: -9036.2
+balance adjusted: 8610.0
+balance adjusted: 890.18
+Purchase Settlement Notification user user32750
+user30000 Expired Breakage! 1204287457649->1235652124137
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user164000
+Purchase Settlement Notification user user164000
+balance adjusted: -314.85
+balance ok: -314.85
+balance adjusted: 300.0
+Expected balance: 284.48 found: 300.0
+balance adjusted: 44.57
+balance adjusted: -903.0
+balance ok: -903.0
+balance adjusted: 903.0
+Transferring... 
+balance adjusted: 2.120000000000001
+Expected balance: 0.0 found: 2.12
+balance adjusted: 196.48
+balance adjusted: 1.2
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 32.21
+balance adjusted: 890.92
+Transferring... 
+balance adjusted: 22.060000000000002
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 0.65
+user242750 Expired Breakage! 1204339729307->1235718702000
+user137500 Expired Breakage! 1204342300065->1235718702000
+Purchase Notification user user209500
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user180750
+Purchase Notification user user106500
+Purchase Notification user user22500
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 501.08
+Purchase Notification user user41500
+Purchase Settlement Notification user user41500
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+user13500 Expired Breakage! 1204370755681->1235733959655
+Purchase Settlement Notification user user22500
+Purchase Settlement Not EXPECTED!! user user164000 amount 29.36
+Adding VCC without necessary rights!! user: user180750 instrument: 11fb7bdc2c3040e
+user102250 Expired Breakage! 1204387444868->1235750691633
+user111000 Closed at 1235750691633
+user62500 Closed at 1235750799058
+balance adjusted: -993.0
+balance ok: -993.0
+balance adjusted: 993.0
+user42500 Expired Breakage! 1204402578567->1235792954000
+user47250 Expired Breakage! 1204417949754->1235792954000
+user208250 Expired Dormancy!1 1219975550417->1235792954000
+Adding VCC without necessary rights!! user: user183500 instrument: 11fbb50e2f30b0e
+balance adjusted: -146.93
+balance ok: -146.93
+balance adjusted: 505.0
+balance adjusted: 508.01
+balance adjusted: -9560.95
+balance ok: -9560.95
+balance adjusted: 9110.0
+balance adjusted: 915.67
+balance adjusted: -10085.7
+balance ok: -10085.7
+balance adjusted: 9610.0
+balance adjusted: 940.42
+Adding VCC without necessary rights!! user: user180750 instrument: 11fbc6d8640040e
+balance adjusted: -484.86
+balance ok: -484.86
+balance adjusted: 462.0
+balance adjusted: 510.58
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 511.82
+balance adjusted: -539.4300000000001
+balance ok: -539.43
+balance adjusted: 514.0
+balance adjusted: 514.39
+balance adjusted: -47.23
+balance ok: -47.23
+balance adjusted: 45.0
+balance ok: 45.0
+balance adjusted: 515.38
+balance adjusted: -2413.85
+balance ok: -2413.85
+balance adjusted: 2300.0
+balance adjusted: 950.3199999999999
+Purchase Notification user user132750
+Purchase Notification user user132750
+Purchase Notification user user132750
+Purchase Notification user user180750
+Purchase Notification user user166500
+Purchase Notification user user22500
+balance adjusted: -648.5799999999999
+balance ok: -648.58
+balance adjusted: 618.0
+balance adjusted: 520.53
+Purchase Notification user user32750
+Purchase Settlement Notification user user180750
+balance adjusted: -15.74
+Expected balance: -78.7 found: -15.74
+balance adjusted: 15.0
+Expected balance: 15.29 found: 15.0
+balance adjusted: 951.0600000000001
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 952.05
+Purchase Settlement Notification user user78250
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user22000
+balance adjusted: -669.57
+balance ok: -669.57
+balance adjusted: 638.0
+balance adjusted: 521.52
+Purchase Settlement Notification user user26750
+Purchase Settlement Notification user user107250
+Purchase Settlement Notification user user61000
+Purchase Settlement Notification user user209500
+Purchase Settlement Notification user user72750
+Purchase Settlement Notification user user72750
+user56000 Expired Dormancy!1 1220053788074->1235869010232
+balance adjusted: -209.91
+balance adjusted: 200.0
+Expected balance: 100.0 found: 200.0
+balance adjusted: 957.0
+balance adjusted: -480.0
+balance adjusted: 480.0
+balance adjusted: -743.0300000000001
+balance ok: -743.03
+balance adjusted: 708.0
+balance adjusted: 524.98
+balance adjusted: -560.0
+balance adjusted: 560.0
+balance adjusted: -10610.45
+balance ok: -10610.45
+balance adjusted: 10110.0
+balance adjusted: 981.75
+balance adjusted: -10925.300000000001
+balance ok: -10925.3
+balance adjusted: 10410.0
+balance adjusted: 996.6
+Adding VCC without necessary rights!! user: user180750 instrument: 11fc1f6bd4c0f0e
+balance adjusted: -610.0
+balance adjusted: 610.0
+balance adjusted: -314.86
+balance adjusted: 300.0
+balance adjusted: 1001.5500000000001
+user191500 Expired Dormancy!1 1220107234183->1235922333000
+Purchase Notification user user198000
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user102500
+Purchase Notification user user180750
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user63500
+Purchase Notification user user103000
+Purchase Notification user user63500
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user145500
+Purchase Notification user user5750
+Purchase Notification user user5750
+Purchase Notification user user103000
+Purchase Notification user user238000
+balance adjusted: -851.13
+balance ok: -851.13
+balance adjusted: 811.0
+balance adjusted: 530.08
+balance adjusted: -419.81
+balance adjusted: 400.0
+balance adjusted: 1006.5
+balance adjusted: -41.98
+Expected balance: -73.46 found: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 532.0600000000001
+balance adjusted: -524.76
+balance adjusted: 500.0
+balance adjusted: 1011.45
+balance adjusted: -26.24
+balance ok: -26.24
+balance adjusted: 25.0
+balance ok: 25.0
+balance adjusted: 533.3
+user162000 Expired Dormancy!1 1220133314006->1235944886786
+balance adjusted: -629.71
+balance adjusted: 600.0
+balance adjusted: 1016.4000000000001
+user27250 Expired Dormancy!1 1220152692818->1235968779634
+balance adjusted: -471.22999999999996
+balance ok: -471.23
+balance adjusted: 449.0
+balance adjusted: 536.0699999999999
+Purchase Notification user user103000
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user180750
+Purchase Notification user user238000
+Purchase Notification user user168500
+Purchase Notification user user103000
+Purchase Notification user user238000
+Purchase Notification user user133500
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user166500
+Purchase Notification user user31000
+Purchase Notification user user119000
+Purchase Settlement Notification user user41500
+balance adjusted: -682.19
+balance adjusted: 650.0
+balance adjusted: 1018.88
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user180750
+user33500 Expired Breakage! 1204632557947->1235995946498
+balance adjusted: -52.25
+balance ok: -52.25
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 538.32
+balance adjusted: -956.08
+balance ok: -956.08
+balance adjusted: 911.0
+balance adjusted: 543.2700000000001
+balance adjusted: -1064.18
+balance ok: -1064.18
+balance adjusted: 1014.0
+balance adjusted: 548.37
+Purchase Settlement Notification user user132750
+Purchase Settlement Notification user user132750
+balance adjusted: -734.6700000000001
+balance adjusted: 700.0
+balance adjusted: 1021.36
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user102500
+balance adjusted: -165.87
+balance adjusted: 186.55
+balance adjusted: 1022.36
+Purchase Settlement Notification user user32750
+user166250 Expired Breakage! 1204655646194->1236019237055
+Purchase Settlement Notification user user107250
+balance adjusted: -787.15
+balance adjusted: 750.0
+balance adjusted: 1024.84
+balance adjusted: -892.1
+balance adjusted: 850.0
+balance adjusted: 1029.79
+balance adjusted: -670.0
+balance adjusted: 670.0
+Purchase Notification user user238000
+Purchase Notification user user1000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user238000
+Purchase Notification user user107250
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Settlement Notification user user180750
+Purchase Settlement Not EXPECTED!! user user145500 amount 15.29
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+balance adjusted: -997.0500000000001
+balance adjusted: 950.0
+balance adjusted: 1034.74
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user198000
+user153750 Expired Breakage! 1204720996613->1236085256771
+Purchase Settlement Notification user user166500
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 15.0
+balance ok: 15.0
+balance adjusted: 1035.48
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 30.0
+balance ok: 30.0
+balance adjusted: 1036.22
+balance adjusted: -104.5
+balance ok: -104.5
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 550.62
+balance adjusted: -181.61
+balance adjusted: 201.55
+balance adjusted: 1036.96
+user65500 Frozen at 1236098451345
+balance adjusted: -416.65000000000003
+balance adjusted: 3239.0
+balance adjusted: 551.86
+balance adjusted: -2518.7999999999997
+balance ok: -2518.8
+balance adjusted: 2400.0
+balance adjusted: 1041.91
+balance adjusted: -458.63
+balance adjusted: 3279.0
+balance adjusted: 553.84
+balance adjusted: -60.88
+balance ok: -60.88
+balance adjusted: 58.0
+balance adjusted: 45.07
+balance adjusted: -1049.53
+balance adjusted: 1000.0
+balance adjusted: 1044.39
+balance adjusted: -720.0
+balance adjusted: 720.0
+balance adjusted: -745.0
+balance adjusted: 745.0
+Adding VCC without necessary rights!! user: user177000 instrument: 11fcec1d2f8090e
+user109500 Expired Breakage! 1204764091592->1236153422241
+user221000 Expired Breakage! 1204765363190->1236153422241
+balance adjusted: -10977.779999999999
+balance ok: -10977.78
+balance adjusted: 10460.0
+balance adjusted: 1046.8700000000001
+Purchase Notification user user238000
+Purchase Notification user user21750
+Purchase Notification user user1000
+Purchase Notification user user238000
+Purchase Notification user user61000
+Purchase Notification user user177000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+balance adjusted: -3856.9100000000003
+balance ok: -3856.91
+balance adjusted: 3675.0
+balance adjusted: 1056.77
+balance adjusted: -4171.76
+balance ok: -4171.76
+balance adjusted: 3975.0
+balance adjusted: 1071.62
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user1000
+user144250 Expired Breakage! 1204809909642->1236173854578
+user53500 Expired Breakage! 1204814000329->1236177872427
+user138750 Expired Breakage! 1204818263188->1236182964856
+user169750 Frozen at 1236184834233
+user226500 Expired Dormancy!1 1220377709890->1236195912177
+balance adjusted: -499.56
+balance adjusted: 3318.0
+balance adjusted: 555.77
+balance adjusted: -1154.48
+balance adjusted: 1100.0
+balance adjusted: 1076.57
+balance adjusted: -1206.96
+balance adjusted: 1150.0
+balance adjusted: 1079.05
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 558.25
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 30.0
+balance ok: 30.0
+balance adjusted: 559.73
+Purchase Cancellation Notification user user132750
+user247250 Expired Dormancy!1 1220402926156->1236218731782
+user184250 Expired Breakage! 1204862471738->1236242901961
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user63500
+Purchase Settlement Notification user user63500
+Purchase Settlement Notification user user133500
+balance adjusted: -1259.44
+balance adjusted: 1200.0
+balance adjusted: 1081.53
+Purchase Settlement Notification user user5750
+Purchase Settlement Notification user user5750
+balance adjusted: -1095.66
+balance ok: -1095.66
+balance adjusted: 1044.0
+balance adjusted: 561.21
+balance adjusted: -1127.14
+balance ok: -1127.14
+balance adjusted: 1074.0
+balance adjusted: 562.69
+user238750 Expired Dormancy!1 1220450034980->1236261439810
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user106500
+Purchase Notification user user238250
+Purchase Notification user user238250
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user28500
+Purchase Notification user user41500
+Purchase Notification user user49750
+user75500 Expired Breakage! 1204900266210->1236265801615
+user164500 Expired Dormancy!1 1220452889165->1236265801615
+balance adjusted: -1169.1200000000001
+balance ok: -1169.12
+balance adjusted: 1114.0
+balance adjusted: 564.6700000000001
+balance adjusted: -1190.11
+balance ok: -1190.11
+balance adjusted: 1134.0
+balance adjusted: 565.66
+user120000 Frozen at 1236271094595
+balance adjusted: -1221.59
+balance ok: -1221.59
+balance adjusted: 1164.0
+balance adjusted: 567.14
+balance adjusted: -3350.0
+balance adjusted: 47155.83
+balance adjusted: -6500.0
+balance ok: -6500.0
+balance adjusted: 48155.83
+balance adjusted: -7500.0
+balance ok: -7500.0
+balance adjusted: 49155.83
+balance adjusted: -16000.0
+balance ok: -16000.0
+balance adjusted: 50155.83
+balance adjusted: -17000.0
+balance ok: -17000.0
+balance adjusted: 51155.83
+balance adjusted: -18000.0
+balance ok: -18000.0
+balance adjusted: 52155.83
+balance adjusted: -1311.92
+balance adjusted: 1250.0
+balance adjusted: 1084.01
+user79750 Expired Breakage! 1204936506701->1236326324549
+Purchase Settlement Notification user user21750
+Adding VCC without necessary rights!! user: user176250 instrument: 11fdb102a04020e
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user102500
+Purchase Notification user user238000
+Purchase Settlement Notification user user1000
+Adding VCC without necessary rights!! user: user180500 instrument: 11fdbaf712b040e
+Purchase Settlement Notification user user119000
+Purchase Settlement Notification user user168500
+user12750 Expired Dormancy!1 1220534925073->1236347436662
+Purchase Settlement Notification user user31000
+Purchase Settlement Notification user user107250
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 569.62
+Adding VCC without necessary rights!! user: user183500 instrument: 11fdc823240020e
+user217750 Expired Dormancy!1 1220545024076->1236356475657
+balance adjusted: -524.75
+balance ok: -524.75
+balance adjusted: 500.0
+balance adjusted: 54.97
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+Expected balance: 20.0 found: 40.0
+balance adjusted: 570.61
+balance adjusted: -85.23
+balance ok: -85.23
+balance adjusted: 81.2
+balance adjusted: 56.12
+balance adjusted: -795.0
+balance adjusted: 795.0
+balance adjusted: -845.0
+balance adjusted: 845.0
+balance adjusted: -73.47
+balance ok: -73.47
+balance adjusted: 70.0
+balance ok: 70.0
+balance adjusted: 571.6
+balance adjusted: -865.0
+balance adjusted: 865.0
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 573.08
+Adding VCC without necessary rights!! user: user183500 instrument: 11fe037425b0e0e
+Purchase Notification user user176250
+Purchase Notification user user243000
+Purchase Notification user user107250
+Purchase Notification user user207000
+Purchase Notification user user243000
+Purchase Notification user user243000
+Adding VCC without necessary rights!! user: user182500 instrument: 11fe09d0261010e
+Adding VCC without necessary rights!! user: user182500 instrument: 11fe09ede3c020e
+Purchase Settlement Notification user user238250
+Purchase Settlement Notification user user238250
+user10000 Expired Dormancy!1 1220614027358->1236425980990
+Purchase Settlement Notification user user41500
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user177000
+Purchase Settlement Notification user user61000
+user247750 Expired Dormancy!1 1220647232175->1236463110000
+user11250 Expired Breakage! 1205107247981->1236473826414
+balance adjusted: -522.65
+balance adjusted: 3340.0
+balance adjusted: 574.1700000000001
+balance adjusted: -543.64
+balance adjusted: 3360.0
+balance adjusted: 575.16
+balance adjusted: -567.78
+balance adjusted: 3383.0
+balance adjusted: 576.3
+balance adjusted: -1274.07
+balance ok: -1274.07
+balance adjusted: 1214.0
+balance adjusted: 578.78
+user92750 Expired Dormancy!1 1220699937563->1236514842039
+Purchase Notification user user201750
+balance adjusted: -1326.55
+balance ok: -1326.55
+balance adjusted: 1264.0
+balance adjusted: 581.26
+balance adjusted: -1379.03
+balance ok: -1379.03
+balance adjusted: 1314.0
+balance adjusted: 583.74
+balance adjusted: -52.48
+Expected balance: -78.72 found: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 586.22
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+balance adjusted: -5190.0
+balance adjusted: 53055.83
+user36250 Frozen at 1236530559444
+balance adjusted: -18500.0
+balance ok: -18500.0
+balance adjusted: 53555.83
+balance adjusted: -19400.0
+balance ok: -19400.0
+balance adjusted: 54455.83
+user168250 Expired Dormancy!1 1220749711050->1236586163483
+user97000 Expired Dormancy!1 1220758383583->1236586163483
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user166500
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user209500
+Purchase Notification user user48000
+Purchase Notification user user141250
+user13750 Expired Dormancy!1 1220786301637->1236598966693
+balance adjusted: -125.94
+Expected balance: -472.22 found: -125.94
+balance adjusted: 120.0
+balance ok: 120.0
+balance adjusted: 587.21
+balance adjusted: -609.76
+balance adjusted: 3423.0
+balance adjusted: 589.19
+balance adjusted: -682.18
+balance adjusted: 3492.0
+balance adjusted: 592.61
+user184000 Expired Dormancy!1 1220793843721->1236609260119
+balance adjusted: -1431.51
+balance ok: -1431.51
+balance adjusted: 1364.0
+balance adjusted: 595.09
+Adding VCC without necessary rights!! user: user183500 instrument: 11fec0a946e0f0e
+user82250 Expired Dormancy!1 1220805169565->1236617250053
+balance adjusted: -1483.99
+balance ok: -1483.99
+balance adjusted: 1414.0
+balance adjusted: 597.57
+balance adjusted: -724.16
+balance adjusted: 3532.0
+balance adjusted: 599.5500000000001
+balance adjusted: -766.14
+balance adjusted: 3572.0
+balance adjusted: 601.53
+balance adjusted: -2728.7000000000003
+balance ok: -2728.7
+balance adjusted: 2600.0
+balance adjusted: 1093.91
+balance adjusted: -802.87
+balance adjusted: 3607.0
+balance adjusted: 603.26
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 70.0
+balance ok: 70.0
+balance adjusted: 1097.3700000000001
+user189250 Expired Dormancy!1 1220810711455->1236623462903
+balance adjusted: -1536.47
+balance ok: -1536.47
+balance adjusted: 1464.0
+balance adjusted: 605.74
+balance adjusted: -1588.95
+balance ok: -1588.95
+balance adjusted: 1514.0
+balance adjusted: 608.22
+balance adjusted: -157.44
+balance ok: -157.44
+balance adjusted: 150.0
+balance adjusted: 609.46
+balance adjusted: -146.93
+balance adjusted: 140.0
+balance ok: 140.0
+balance adjusted: 610.45
+user159500 Expired Breakage! 1205269698924->1236633091060
+balance adjusted: -6090.0
+balance adjusted: 55355.83
+balance adjusted: -885.0
+balance adjusted: 885.0
+balance adjusted: -167.92000000000002
+balance adjusted: 160.0
+balance ok: 160.0
+balance adjusted: 611.44
+Adding VCC without necessary rights!! user: user181500 instrument: 11fef029188000e
+Adding VCC without necessary rights!! user: user181500 instrument: 11fef0488f4050e
+user5000 Expired Breakage! 1205305341742->1236672781982
+Purchase Settlement Notification user user48000
+balance adjusted: -1641.43
+balance ok: -1641.43
+balance adjusted: 1564.0
+balance adjusted: 613.9200000000001
+balance adjusted: -188.91
+balance adjusted: 180.0
+balance ok: 180.0
+balance adjusted: 614.91
+user9000 Expired Breakage! 1205316264978->1236679516009
+Purchase Settlement Not EXPECTED!! user user28500 amount 25.97
+balance adjusted: -1693.91
+balance ok: -1693.91
+balance adjusted: 1614.0
+balance adjusted: 617.39
+Adding VCC without necessary rights!! user: user180500 instrument: 11ff053e2e9090e
+Adding VCC without necessary rights!! user: user180500 instrument: 11ff054c6da0d0e
+Purchase Settlement Notification user user207000
+balance adjusted: -1851.3300000000002
+balance ok: -1851.33
+balance adjusted: 1764.0
+balance adjusted: 624.81
+balance adjusted: -1956.28
+balance ok: -1956.28
+balance adjusted: 1864.0
+balance adjusted: 629.76
+Purchase Settlement Notification user user201750
+balance adjusted: -209.9
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 630.75
+balance adjusted: -2166.18
+balance ok: -2166.18
+balance adjusted: 2064.0
+balance adjusted: 640.65
+balance adjusted: -24515.83
+balance adjusted: 56255.83
+balance adjusted: -25415.83
+balance adjusted: 57155.83
+balance adjusted: -20300.0
+balance ok: -20300.0
+balance adjusted: 58055.83
+balance adjusted: -2271.1299999999997
+balance ok: -2271.13
+balance adjusted: 2164.0
+balance adjusted: 645.6
+balance adjusted: -21200.0
+balance ok: -21200.0
+balance adjusted: 58955.83
+balance adjusted: -22100.0
+balance ok: -22100.0
+balance adjusted: 59855.83
+balance adjusted: -23000.0
+balance ok: -23000.0
+balance adjusted: 60755.83
+balance adjusted: -23600.0
+balance ok: -23600.0
+balance adjusted: 61355.83
+user57000 Closed at 1236701496792
+balance adjusted: -829.11
+balance adjusted: 3632.0
+balance adjusted: 646.84
+balance adjusted: -855.35
+balance adjusted: 3657.0
+balance adjusted: 648.08
+balance adjusted: -882.64
+balance adjusted: 3683.0
+balance adjusted: 649.37
+user48500 Expired Dormancy!1 1220902554209->1236719315228
+user156250 Expired Dormancy!1 1220904319539->1236719315228
+balance adjusted: -920.0
+balance adjusted: 920.0
+balance adjusted: -2991.08
+balance ok: -2991.08
+balance adjusted: 2850.0
+balance adjusted: 1109.75
+balance adjusted: -36.73
+balance adjusted: 35.0
+balance adjusted: 1110.74
+balance adjusted: -125.94
+balance ok: -125.94
+balance adjusted: 625.0
+balance adjusted: 655.3100000000001
+user250500 Expired Dormancy!1 1220937457958->1236757187389
+Purchase Notification user user103000
+Purchase Notification user user243000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user243000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user198000
+balance adjusted: -908.88
+balance adjusted: 3708.0
+balance adjusted: 656.55
+balance adjusted: -939.32
+balance adjusted: 3737.0
+balance adjusted: 657.99
+Purchase Notification user user243000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user243000
+Purchase Notification user user34750
+Purchase Notification user user243000
+user205500 Expired Dormancy!1 1220957055680->1236770073431
+user112000 Expired Breakage! 1205411836789->1236777982767
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user34750
+user185000 Expired Dormancy!1 1220969061544->1236781987825
+Purchase Settlement Notification user user209500
+Purchase Settlement Notification user user166500
+balance adjusted: -1183.0
+balance ok: -1183.0
+balance adjusted: 1183.0
+user139000 Closed at 1236787867876
+balance adjusted: -183.68
+balance ok: -183.68
+balance adjusted: 175.0
+balance adjusted: 659.23
+balance adjusted: -26433.820000000003
+balance adjusted: 62373.82
+balance adjusted: -3305.93
+balance ok: -3305.93
+balance adjusted: 3150.0
+balance adjusted: 1125.59
+Purchase Cancellation Not EXPECTED!! user user66000 amount 3.44
+Purchase Notification user user166500
+Purchase Notification user user22500
+Purchase Notification user user34750
+Purchase Notification user user38750
+Purchase Notification user user38750
+Purchase Notification user user38750
+Purchase Notification user user38750
+balance adjusted: -965.5600000000001
+balance adjusted: 3762.0
+balance adjusted: 660.47
+balance adjusted: -11030.26
+balance ok: -11030.26
+balance adjusted: 10510.0
+balance adjusted: 1128.07
+balance adjusted: -11082.74
+balance ok: -11082.74
+balance adjusted: 10560.0
+balance adjusted: 1130.55
+balance adjusted: -11135.22
+balance ok: -11135.22
+balance adjusted: 10610.0
+balance adjusted: 1133.03
+balance adjusted: -11187.699999999999
+balance ok: -11187.7
+balance adjusted: 10660.0
+balance adjusted: 1135.51
+balance adjusted: -1012.79
+balance adjusted: 3807.0
+balance adjusted: 662.7
+Transferring... 
+balance adjusted: 0.0
+balance ok: 0.0
+balance adjusted: 69.8
+balance ok: 69.8
+balance adjusted: 0.8500000000000001
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+balance adjusted: -83.96
+balance ok: -83.96
+balance adjusted: 80.0
+balance ok: 80.0
+balance adjusted: 666.6600000000001
+balance adjusted: -383.06
+balance ok: -383.06
+balance adjusted: 1090.0
+balance adjusted: 1136.45
+user225000 Frozen at 1236876545134
+balance adjusted: -412.45
+balance ok: -412.45
+balance adjusted: 1118.0
+balance adjusted: 1137.8400000000001
+user216250 Expired Breakage! 1205526534176->1236894314750
+balance adjusted: -619.2
+balance ok: -619.2
+balance adjusted: 590.0
+Expected balance: 103.44 found: 590.0
+balance adjusted: 61.07
+user218500 Expired Breakage! 1205547934823->1236918105561
+user117500 Expired Dormancy!1 1221106889133->1236918105561
+balance adjusted: -11203.44
+balance ok: -11203.44
+balance adjusted: 10675.0
+balance adjusted: 1138.58
+balance adjusted: -11219.18
+balance ok: -11219.18
+balance adjusted: 10690.0
+balance adjusted: 1139.32
+balance adjusted: -11234.92
+balance ok: -11234.92
+balance adjusted: 10705.0
+balance adjusted: 1140.06
+Purchase Notification user user106500
+Purchase Notification user user202250
+Purchase Notification user user118250
+Purchase Notification user user118250
+Purchase Notification user user141250
+Purchase Notification user user166500
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+user42000 Expired Dormancy!1 1221132010999->1236945031919
+Purchase Settlement Notification user user141250
+Purchase Settlement Notification user user107250
+Purchase Settlement Notification user user176250
+Purchase Settlement Notification user user166500
+Transferring without necessary rights!! user: user95250
+user73750 Expired Breakage! 1205595669000->1236961707531
+balance adjusted: -230.89000000000001
+balance adjusted: 220.0
+Expected balance: 60.0 found: 220.0
+balance adjusted: 667.65
+balance adjusted: -462.83
+balance ok: -462.83
+balance adjusted: 1166.0
+balance adjusted: 1142.44
+balance adjusted: -2428.55
+balance ok: -2428.55
+balance adjusted: 2314.0
+balance adjusted: 675.0699999999999
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 20.0
+Expected balance: 23.05 found: 20.0
+balance adjusted: 676.0600000000001
+balance adjusted: -272.87
+balance adjusted: 260.0
+balance adjusted: 678.04
+balance adjusted: -2585.9700000000003
+balance ok: -2585.97
+balance adjusted: 2464.0
+balance adjusted: 685.4599999999999
+balance adjusted: -314.85
+balance adjusted: 300.0
+balance adjusted: 687.44
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+Expected balance: 20.0 found: 40.0
+balance adjusted: 1143.43
+balance adjusted: -980.0
+balance adjusted: 980.0
+balance adjusted: -335.84000000000003
+balance adjusted: 320.0
+balance adjusted: 688.4300000000001
+user214250 Expired Breakage! 1205628150232->1236998902000
+user170000 Expired Breakage! 1205628577489->1236998902000
+Adding VCC without necessary rights!! user: user181750 instrument: 12003429b9d000e
+Adding VCC without necessary rights!! user: user183500 instrument: 12003a55649080e
+Adding VCC without necessary rights!! user: user180750 instrument: 120047bec1b040e
+Purchase Notification user user132750
+Purchase Notification user user106500
+Purchase Notification user user106500
+Purchase Notification user user243000
+Purchase Notification user user118250
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user243000
+Purchase Notification user user90500
+Purchase Notification user user103000
+Purchase Notification user user141250
+Purchase Notification user user243000
+Purchase Notification user user5750
+Purchase Notification user user243000
+Purchase Notification user user5750
+Purchase Notification user user181750
+balance adjusted: -356.83
+balance adjusted: 340.0
+balance adjusted: 689.42
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user118250
+Adding VCC without necessary rights!! user: user180750 instrument: 12005689f770b0e
+Adding VCC without necessary rights!! user: user183500 instrument: 120057f1ea6050e
+Adding VCC without necessary rights!! user: user183000 instrument: 120057f3cc4070e
+Purchase Settlement Notification user user106500
+balance adjusted: -24500.0
+balance ok: -24500.0
+balance adjusted: 63273.82
+balance adjusted: -25100.0
+balance ok: -25100.0
+balance adjusted: 63873.82
+balance adjusted: -7090.0
+balance adjusted: 64873.82
+user189000 Expired Dormancy!1 1221238213182->1237050372331
+Purchase Settlement Notification user user198000
+balance adjusted: -7599.83
+balance ok: -7599.83
+balance adjusted: 64973.65
+balance adjusted: -2743.39
+balance ok: -2743.39
+balance adjusted: 2614.0
+balance adjusted: 696.8399999999999
+Purchase Settlement Notification user user34750
+balance adjusted: -2848.3399999999997
+balance ok: -2848.34
+balance adjusted: 2714.0
+balance adjusted: 701.7900000000001
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+balance adjusted: -2953.29
+balance ok: -2953.29
+balance adjusted: 2814.0
+balance adjusted: 706.74
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user38750
+Purchase Settlement Notification user user38750
+Adding VCC without necessary rights!! user: user182500 instrument: 12008933bdd0f0e
+Adding VCC without necessary rights!! user: user182500 instrument: 1200894a04a040e
+Adding VCC without necessary rights!! user: user180750 instrument: 12009d02d58050e
+user212750 Expired Breakage! 1205752424924->1237119809461
+Purchase Notification user user180750
+Purchase Notification user user243000
+Purchase Notification user user180750
+Purchase Notification user user183000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user103000
+user63000 Expired Dormancy!1 1221311915846->1237124381718
+Purchase Settlement Notification user user118250
+user93000 Expired Breakage! 1205762692342->1237127096678
+Loading without necessary rights!! user: user122500
+Purchase Settlement Notification user user202250
+user16500 Frozen at 1237134524794
+user16500 Fee taken at 1237134525327
+user121000 Expired Breakage! 1205771881170->1237135916593
+balance adjusted: -7649.83
+balance ok: -7649.83
+balance adjusted: 65023.65
+balance adjusted: -377.82
+balance adjusted: 360.0
+balance adjusted: 707.73
+Purchase Settlement Notification user user166500
+Purchase Settlement Notification user user132750
+balance adjusted: -1218.0
+balance ok: -1218.0
+balance adjusted: 1218.0
+user88500 Expired Breakage! 1205794309723->1237158681842
+balance adjusted: -204.67000000000002
+balance ok: -204.67
+balance adjusted: 195.0
+balance adjusted: 708.72
+Purchase Notification user user180750
+Purchase Notification user user122500
+Purchase Notification user user243000
+Purchase Notification user user22500
+Purchase Notification user user122500
+Purchase Notification user user48000
+Purchase Notification user user34750
+Purchase Settlement Notification user user5750
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user106500
+Purchase Settlement Notification user user183000
+Purchase Settlement Notification user user181750
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user180750
+Adding VCC without necessary rights!! user: user193750 instrument: 1200eeebc11050e
+Transferring without necessary rights!! user: user193750
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user90500
+balance adjusted: -1364.4
+balance adjusted: 1300.0
+balance adjusted: 1145.91
+balance adjusted: -1469.3500000000001
+balance adjusted: 1400.0
+balance adjusted: 1150.8600000000001
+balance adjusted: -1015.0
+balance adjusted: 1015.0
+balance adjusted: -27333.82
+balance adjusted: 65923.65
+balance adjusted: -28233.82
+balance adjusted: 66823.65
+balance adjusted: -29133.82
+balance adjusted: 67723.65
+balance adjusted: -30033.82
+balance adjusted: 68623.65
+balance adjusted: -30733.82
+balance adjusted: 69323.65
+balance adjusted: -398.81
+balance adjusted: 380.0
+balance adjusted: 709.71
+balance adjusted: -25600.0
+balance ok: -25600.0
+balance adjusted: 69823.65
+balance adjusted: -1900.0
+balance ok: -1900.0
+balance adjusted: 70323.65
+balance adjusted: -588.77
+balance ok: -588.77
+balance adjusted: 1286.0
+balance adjusted: 1156.8
+balance adjusted: -1521.83
+balance adjusted: 1450.0
+balance adjusted: 1159.28
+balance adjusted: -2300.0
+balance ok: -2300.0
+balance adjusted: 70723.65
+balance adjusted: -2600.0
+balance ok: -2600.0
+balance adjusted: 71023.65
+balance adjusted: -1626.78
+balance adjusted: 1550.0
+balance adjusted: 1164.23
+balance adjusted: -1731.73
+balance adjusted: 1650.0
+balance adjusted: 1169.18
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user141250
+balance adjusted: -57.72
+balance ok: -57.72
+balance adjusted: 55.0
+balance ok: 55.0
+balance adjusted: 1171.16
+Purchase Settlement Notification user user48000
+Purchase Settlement Notification user user180750
+Purchase Notification user user193750
+Purchase Notification user user193750
+Purchase Notification user user32750
+Purchase Notification user user32750
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user243000
+Purchase Notification user user118250
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+balance adjusted: -1836.68
+balance adjusted: 1750.0
+balance adjusted: 1176.1100000000001
+balance adjusted: -3100.0
+balance ok: -3100.0
+balance adjusted: 71523.65
+balance adjusted: -3601.0
+balance ok: -3601.0
+balance adjusted: 72024.65
+balance adjusted: -1889.16
+balance adjusted: 1800.0
+balance adjusted: 1178.59
+balance adjusted: -3463.35
+balance ok: -3463.35
+balance adjusted: 3300.0
+balance adjusted: 1186.01
+balance adjusted: -451.29
+balance adjusted: 430.0
+balance adjusted: 712.19
+balance adjusted: -1941.64
+balance adjusted: 1850.0
+balance adjusted: 1188.49
+balance adjusted: -482.77000000000004
+balance adjusted: 460.0
+balance adjusted: 713.6700000000001
+balance adjusted: -3110.71
+balance ok: -3110.71
+balance adjusted: 2964.0
+balance adjusted: 721.0899999999999
+Adding VCC without necessary rights!! user: user181500 instrument: 12017e22d5e0a0e
+Adding VCC without necessary rights!! user: user181500 instrument: 12017e375be0f0e
+Adding VCC without necessary rights!! user: user181500 instrument: 12017e482de0d0e
+Adding VCC without necessary rights!! user: user181500 instrument: 12017e5587c060e
+Adding VCC without necessary rights!! user: user181500 instrument: 12017e65ab4060e
+Paying Fee... 
+balance adjusted: 186.48999999999998
+Transferring... 
+balance adjusted: -65.69
+Expected balance: 71.56 found: -65.69
+balance adjusted: 251.98000000000002
+balance adjusted: 1.4
+Purchase Settlement Notification user user193750
+balance adjusted: -1521.77
+balance ok: -1521.77
+balance adjusted: 1450.0
+balance adjusted: 1195.91
+balance adjusted: -50.0
+balance ok: -50.0
+balance adjusted: 50.0
+balance ok: 50.0
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user5750
+balance adjusted: -1263.0
+balance ok: -1263.0
+balance adjusted: 1263.0
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user243000
+Purchase Notification user user238000
+Purchase Notification user user243000
+Purchase Notification user user103000
+Adding VCC without necessary rights!! user: user180750 instrument: 1201960e694000e
+user220750 Expired Breakage! 1206023204969->1237387554591
+balance adjusted: -3673.25
+balance ok: -3673.25
+balance adjusted: 3500.0
+balance adjusted: 1205.8100000000002
+balance adjusted: -2046.5900000000001
+balance adjusted: 1950.0
+balance adjusted: 1210.76
+user89750 Frozen at 1237394290511
+balance adjusted: -2151.54
+balance adjusted: 2050.0
+balance adjusted: 1215.71
+user159750 Expired Dormancy!1 1221591915159->1237403395621
+balance adjusted: -3778.2
+balance ok: -3778.2
+balance adjusted: 3600.0
+balance adjusted: 1220.66
+balance adjusted: -2256.49
+balance adjusted: 2150.0
+balance adjusted: 1225.6100000000001
+user156500 Expired Dormancy!1 1221600762972->1237414073151
+balance adjusted: -2361.4399999999996
+balance adjusted: 2250.0
+balance adjusted: 1230.56
+balance adjusted: -3883.1499999999996
+balance ok: -3883.15
+balance adjusted: 3700.0
+balance adjusted: 1235.51
+user156000 Expired Breakage! 1206063187609->1237450846637
+balance adjusted: -2466.39
+balance adjusted: 2350.0
+balance adjusted: 1240.46
+balance adjusted: -1033.78
+balance adjusted: 3827.0
+balance adjusted: 722.08
+balance adjusted: -1057.92
+balance adjusted: 3850.0
+balance adjusted: 723.22
+user222750 Expired Breakage! 1206095475862->1237460000777
+Purchase Notification user user195250
+Purchase Notification user user186250
+Purchase Notification user user22500
+Purchase Notification user user180750
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user102500
+balance adjusted: -3373.09
+balance ok: -3373.09
+balance adjusted: 3214.0
+balance adjusted: 735.6
+user59500 Expired Dormancy!1 1221658638124->1237471192810
+user63750 Expired Breakage! 1206106835576->1237471192810
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user32750
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user34750
+Purchase Settlement Notification user user141250
+user36500 Expired Dormancy!2 1234627570445->1237481479876
+balance adjusted: -509.01
+balance adjusted: 485.0
+balance adjusted: 736.84
+user97750 Expired Dormancy!1 1221680617659->1237494038000
+balance adjusted: -530.0
+balance adjusted: 505.0
+balance adjusted: 737.83
+balance adjusted: -30786.6
+balance adjusted: 72077.43
+balance adjusted: -3751.0
+balance ok: -3751.0
+balance adjusted: 72227.43
+balance adjusted: -2571.3399999999997
+balance adjusted: 2450.0
+balance adjusted: 1245.41
+balance adjusted: -692.67
+balance ok: -692.67
+balance adjusted: 1385.0
+balance adjusted: 1250.3100000000002
+balance adjusted: -68.22
+balance ok: -68.22
+balance adjusted: 65.0
+balance adjusted: 739.07
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 3900.0
+balance adjusted: 741.5500000000001
+balance adjusted: -117.54999999999998
+balance ok: -117.55
+balance adjusted: 3962.0
+balance adjusted: 744.62
+balance adjusted: -2676.29
+balance adjusted: 2550.0
+balance adjusted: 1255.26
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 4012.0
+balance adjusted: 747.1
+balance adjusted: -120.69999999999999
+balance ok: -120.7
+balance adjusted: 4077.0
+balance adjusted: 750.32
+balance adjusted: -57.48
+balance ok: -57.48
+balance adjusted: 55.0
+balance ok: 55.0
+balance adjusted: 752.8000000000001
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 707.8
+balance adjusted: 753.79
+balance adjusted: -68.42999999999999
+balance ok: -68.43
+balance adjusted: 753.0
+balance adjusted: 756.03
+Transferring... 
+balance adjusted: -81.1
+Expected balance: 186.84 found: -81.1
+balance adjusted: 85.0
+balance ok: 85.0
+balance adjusted: 0.2
+balance adjusted: -120.91
+balance ok: -120.91
+balance adjusted: 803.0
+balance adjusted: 758.51
+balance adjusted: -26500.0
+balance ok: -26500.0
+balance adjusted: 73127.43
+balance adjusted: -550.99
+balance adjusted: 525.0
+balance adjusted: 759.5
+balance adjusted: -27300.0
+balance ok: -27300.0
+balance adjusted: 73927.43
+Purchase Settlement Notification user user22500
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user102500
+Purchase Settlement Notification user user243000
+Purchase Settlement Not EXPECTED!! user user186250 amount 47.39
+balance adjusted: -4093.05
+balance ok: -4093.05
+balance adjusted: 3900.0
+balance adjusted: 1265.16
+Purchase Settlement Notification user user180750
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user103000
+Purchase Notification user user243000
+Purchase Notification user user243000
+Purchase Notification user user93250
+Purchase Notification user user238000
+balance adjusted: -4198.0
+balance ok: -4198.0
+balance adjusted: 4000.0
+balance adjusted: 1270.1100000000001
+Purchase Notification user user118250
+Purchase Notification user user207000
+Purchase Notification user user238000
+Purchase Notification user user204500
+balance adjusted: -31.48
+balance ok: -31.48
+balance adjusted: 833.0
+balance adjusted: 760.98
+balance adjusted: -70.31
+balance ok: -70.31
+balance adjusted: 870.0
+balance adjusted: 762.8100000000001
+balance adjusted: -582.47
+balance adjusted: 555.0
+balance adjusted: 764.29
+balance adjusted: -4407.9
+balance ok: -4407.9
+balance adjusted: 4200.0
+balance adjusted: 1280.01
+balance adjusted: -4512.849999999999
+balance ok: -4512.85
+balance adjusted: 4300.0
+balance adjusted: 1284.96
+balance adjusted: -2781.24
+balance adjusted: 2650.0
+balance adjusted: 1289.91
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 1292.39
+user35250 Expired Breakage! 1206199336089->1237565421262
+balance adjusted: -4617.8
+balance ok: -4617.8
+balance adjusted: 4400.0
+balance adjusted: 1297.3400000000001
+balance adjusted: -2991.14
+balance adjusted: 2850.0
+balance adjusted: 1307.24
+balance adjusted: -3096.0899999999997
+balance adjusted: 2950.0
+balance adjusted: 1312.19
+balance adjusted: -3201.04
+balance adjusted: 3050.0
+balance adjusted: 1317.14
+balance adjusted: -62.96
+balance ok: -62.96
+balance adjusted: 60.0
+Expected balance: 34.03 found: 60.0
+balance adjusted: 765.77
+balance adjusted: -89.2
+balance ok: -89.2
+balance adjusted: 85.0
+balance adjusted: 767.01
+Adding VCC without necessary rights!! user: user183500 instrument: 120277458fc0f0e
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+balance adjusted: -652.7800000000001
+balance ok: -652.78
+balance adjusted: 622.0
+balance adjusted: 62.65
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+balance adjusted: -41.98
+balance adjusted: 80.0
+balance adjusted: 768.0
+Adding VCC without necessary rights!! user: user180750 instrument: 12028fe47140b0e
+Adding VCC without necessary rights!! user: user177500 instrument: 1202932b07b030e
+balance adjusted: -4722.75
+balance ok: -4722.75
+balance adjusted: 4500.0
+balance adjusted: 1322.0900000000001
+Adding VCC without necessary rights!! user: user181500 instrument: 12029e83dfd0b0e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029eaa199080e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029ebdda4000e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029ed3b95090e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029ef0acc070e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029f068e40c0e
+Adding VCC without necessary rights!! user: user181500 instrument: 12029f0be47030e
+balance adjusted: -4827.7
+balance ok: -4827.7
+balance adjusted: 4600.0
+balance adjusted: 1327.04
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 1331.99
+user26000 Expired Breakage! 1206295534682->1237659868000
+balance adjusted: -20.99
+balance ok: -20.99
+balance adjusted: 890.0
+balance adjusted: 768.99
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 910.0
+balance adjusted: 769.98
+balance adjusted: -82.91
+balance ok: -82.91
+balance adjusted: 949.0
+balance adjusted: 771.91
+balance adjusted: -3530.51
+balance ok: -3530.51
+balance adjusted: 3364.0
+balance adjusted: 779.3299999999999
+balance adjusted: -27503.95
+balance ok: -27503.95
+balance adjusted: 74131.37999999999
+Purchase Notification user user26250
+Purchase Notification user user243000
+Purchase Notification user user243000
+Purchase Notification user user238000
+Purchase Notification user user38000
+Purchase Notification user user38000
+Purchase Notification user user38000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user180750
+Purchase Notification user user101000
+Purchase Notification user user177500
+Purchase Notification user user108750
+Purchase Notification user user108750
+Purchase Notification user user103000
+Purchase Settlement Notification user user195250
+Purchase Settlement Notification user user103000
+balance adjusted: -1078.91
+balance adjusted: 4097.0
+balance adjusted: 780.32
+Purchase Settlement Notification user user26250
+balance adjusted: -4932.65
+balance ok: -4932.65
+balance adjusted: 4700.0
+balance adjusted: 1336.94
+balance adjusted: -1108.3000000000002
+balance adjusted: 4125.0
+balance adjusted: 781.71
+user165250 Frozen at 1237737848486
+user55250 Frozen at 1237738383577
+user127250 Closed at 1237739026155
+user242250 Expired Breakage! 1206382832551->1237747695511
+balance adjusted: -5037.599999999999
+balance ok: -5037.6
+balance adjusted: 4800.0
+balance adjusted: 1341.89
+balance adjusted: -734.65
+balance ok: -734.65
+balance adjusted: 700.0
+balance adjusted: 72.55
+balance adjusted: -944.55
+balance ok: -944.55
+balance adjusted: 900.0
+balance adjusted: 82.45
+user94250 Expired Breakage! 1206401447521->1237784775249
+user238500 Expired Dormancy!1 1221959200504->1237784775249
+Purchase Notification user user122500
+Purchase Notification user user122500
+Purchase Notification user user48000
+Purchase Notification user user122500
+user206750 Expired Dormancy!1 1221986771356->1237798563788
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user38000
+Purchase Settlement Notification user user38000
+Purchase Settlement Not EXPECTED!! user user38000 amount 22.78
+balance adjusted: -640.19
+balance adjusted: 610.0
+balance adjusted: 784.4300000000001
+Purchase Cancellation Not EXPECTED!! user user193750 amount 1.00
+balance adjusted: -20.99
+Expected balance: -53.52 found: -20.99
+balance adjusted: 20.0
+Expected balance: 23.4 found: 20.0
+balance adjusted: 785.42
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 200.0
+balance ok: 200.0
+balance adjusted: 1346.8400000000001
+balance adjusted: -5247.5
+balance ok: -5247.5
+balance adjusted: 5000.0
+balance adjusted: 1356.74
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 1100.0
+balance adjusted: 790.37
+balance adjusted: -5352.45
+balance ok: -5352.45
+balance adjusted: 5100.0
+balance adjusted: 1361.69
+balance adjusted: -110.2
+balance ok: -110.2
+balance adjusted: 305.0
+balance ok: 305.0
+balance adjusted: 1366.89
+balance adjusted: -30986.6
+balance adjusted: 74331.38
+user135750 Expired Dormancy!1 1222041566611->1237853037026
+Purchase Cancellation Not EXPECTED!! user user32750 amount 1.00
+user194500 Expired Breakage! 1206495650682->1237874620247
+user135000 Expired Breakage! 1206507142135->1237874620247
+balance adjusted: -661.1800000000001
+balance adjusted: 630.0
+balance adjusted: 791.36
+balance adjusted: -209.9
+Expected balance: -787.11 found: -209.9
+balance adjusted: 200.0
+Expected balance: 200.8 found: 200.0
+balance adjusted: 801.26
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+balance adjusted: -7170.0
+balance adjusted: 74411.38
+balance adjusted: -31186.6
+balance adjusted: 74611.38
+balance adjusted: -31286.6
+balance adjusted: 74711.38
+balance adjusted: -27903.95
+balance ok: -27903.95
+balance adjusted: 75111.38
+Purchase Settlement Notification user user93250
+balance adjusted: -3305.99
+balance adjusted: 3150.0
+balance adjusted: 1371.8400000000001
+Purchase Notification user user243000
+Purchase Notification user user197500
+Purchase Notification user user197500
+Purchase Notification user user98250
+Purchase Notification user user98250
+Purchase Notification user user98250
+Purchase Notification user user108750
+Purchase Notification user user241500
+Purchase Notification user user108750
+balance adjusted: -3515.89
+balance adjusted: 3350.0
+balance adjusted: 1381.74
+balance adjusted: -3740.4100000000003
+balance ok: -3740.41
+balance adjusted: 3564.0
+balance adjusted: 811.16
+balance adjusted: -7228.0
+balance adjusted: 75169.38
+balance adjusted: -1134.54
+balance adjusted: 4150.0
+balance adjusted: 812.4
+user160250 Frozen at 1237918953809
+balance adjusted: -225.66
+balance ok: -225.66
+balance adjusted: 20.0
+balance ok: 20.0
+balance adjusted: 813.39
+balance adjusted: -1160.78
+balance adjusted: 4175.0
+balance adjusted: 814.63
+balance adjusted: -32186.6
+balance adjusted: 76069.38
+balance adjusted: -3620.8399999999997
+balance adjusted: 3450.0
+balance adjusted: 1386.69
+balance adjusted: -33086.6
+balance adjusted: 76969.38
+balance adjusted: -3725.79
+balance adjusted: 3550.0
+balance adjusted: 1391.64
+balance adjusted: -3830.74
+balance adjusted: 3650.0
+balance adjusted: 1396.5900000000001
+user197250 Expired Breakage! 1206576361881->1237961005000
+Purchase Settlement Notification user user108750
+Purchase Settlement Notification user user108750
+balance adjusted: -682.17
+balance adjusted: 650.0
+balance adjusted: 815.62
+Purchase Settlement Notification user user180750
+Purchase Notification user user243000
+Purchase Notification user user224250
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user103000
+Purchase Notification user user103000
+Purchase Notification user user34750
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Settlement Notification user user204500
+Purchase Settlement Notification user user101000
+Purchase Settlement Notification user user241500
+Purchase Settlement Notification user user122500
+Purchase Settlement Notification user user122500
+balance adjusted: -3935.6899999999996
+balance adjusted: 3750.0
+balance adjusted: 1401.54
+balance adjusted: -33986.6
+balance adjusted: 77869.38
+user188250 Frozen at 1237997833482
+Adding VCC without necessary rights!! user: user176750 instrument: 1203e8fd8260f0e
+balance adjusted: -52.48
+Expected balance: -619.21 found: -52.48
+balance adjusted: 50.0
+balance ok: 50.0
+balance adjusted: 818.1
+balance adjusted: -4040.64
+balance adjusted: 3850.0
+balance adjusted: 1406.49
+balance adjusted: -4145.59
+balance adjusted: 3950.0
+balance adjusted: 1411.44
+user212000 Expired Dormancy!1 1222212971921->1238026178018
+balance adjusted: -4250.54
+balance adjusted: 4050.0
+balance adjusted: 1416.39
+user41250 Expired Dormancy!1 1222220563713->1238034730000
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 820.08
+balance adjusted: -712.61
+balance ok: -712.61
+balance adjusted: 1404.0
+balance adjusted: 1417.3300000000002
+Transferring... 
+balance adjusted: -171.2
+balance adjusted: 90.0
+balance ok: 90.0
+balance adjusted: 0.30000000000000004
+balance adjusted: -703.16
+balance adjusted: 670.0
+balance adjusted: 821.07
+balance adjusted: -724.15
+balance adjusted: 690.0
+balance adjusted: 822.0600000000001
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Notification user user103000
+Purchase Notification user user78000
+Purchase Notification user user243000
+Purchase Notification user user238000
+Purchase Notification user user78750
+Purchase Notification user user176750
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user21000
+Purchase Notification user user21000
+Purchase Notification user user21000
+Purchase Notification user user118250
+Purchase Settlement Notification user user177500
+balance adjusted: -5562.349999999999
+balance ok: -5562.35
+balance adjusted: 5300.0
+balance adjusted: 1427.23
+balance adjusted: -4303.0199999999995
+balance adjusted: 4100.0
+balance adjusted: 1429.71
+Adding VCC without necessary rights!! user: user176750 instrument: 12042cadca1020e
+balance adjusted: -5667.3
+balance ok: -5667.3
+balance adjusted: 5400.0
+balance adjusted: 1434.66
+user103750 Expired Dormancy!1 1222271559833->1238087346000
+balance adjusted: -1187.02
+balance adjusted: 4200.0
+balance adjusted: 823.3
+balance adjusted: -1213.26
+balance adjusted: 4225.0
+balance adjusted: 824.54
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 87.4
+balance adjusted: -1239.5
+balance adjusted: 4250.0
+balance adjusted: 825.78
+balance adjusted: -1265.74
+balance adjusted: 4275.0
+balance adjusted: 827.02
+balance adjusted: -1291.98
+balance adjusted: 4300.0
+balance adjusted: 828.26
+balance adjusted: -34886.6
+balance adjusted: 78769.38
+balance adjusted: -35486.6
+balance adjusted: 79369.38
+balance adjusted: -35586.6
+balance adjusted: 79469.38
+balance adjusted: -28153.95
+balance ok: -28153.95
+balance adjusted: 79719.38
+balance adjusted: -4324.01
+balance adjusted: 4120.0
+balance adjusted: 1435.65
+user189500 Expired Breakage! 1206734626345->1238102050067
+user209000 Expired Breakage! 1206740019207->1238104875000
+user56250 Expired Dormancy!1 1222293978143->1238105265259
+balance adjusted: -104.95
+balance ok: -104.95
+balance adjusted: 100.0
+balance ok: 100.0
+balance adjusted: 1440.6000000000001
+user14500 Expired Breakage! 1206742906884->1238108888102
+balance adjusted: -4428.96
+balance adjusted: 4220.0
+balance adjusted: 1445.55
+balance adjusted: -4638.86
+balance adjusted: 4420.0
+balance adjusted: 1455.45
+user223750 Expired Breakage! 1206758428947->1238132381392
+Purchase Notification user user243000
+Purchase Notification user user243000
+Purchase Notification user user238000
+Purchase Notification user user176750
+Purchase Notification user user41500
+Purchase Notification user user238000
+Purchase Notification user user199250
+Purchase Notification user user131750
+Purchase Notification user user54750
+Purchase Notification user user238000
+Purchase Notification user user238000
+Purchase Notification user user60500
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user34750
+user220250 Expired Dormancy!1 1222340871777->1238153730087
+Purchase Settlement Notification user user108750
+Purchase Settlement Notification user user108750
+balance adjusted: -52.48
+balance ok: -52.48
+balance adjusted: 355.0
+Expected balance: 50.0 found: 355.0
+balance adjusted: 1457.93
+Purchase Settlement Not EXPECTED!! user user78000 amount 63.62
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Paying Fee... 
+balance adjusted: -7.49
+balance adjusted: -49.47
+balance ok: -49.47
+balance adjusted: 40.0
+balance ok: 40.0
+balance adjusted: 1459.91
+user57250 Frozen at 1238171141414
+Transferring... 
+balance adjusted: 176.77999999999997
+balance adjusted: 75.0
+Expected balance: 76.33 found: 75.0
+balance adjusted: 1.5999999999999999
+Transferring... 
+balance adjusted: 158.58
+balance adjusted: -181.2
+balance adjusted: 1.8
+Transferring... 
+balance adjusted: -199.82999999999998
+balance adjusted: 93.43
+balance adjusted: 2.0
+Loading without necessary rights!! user: user121250
+balance adjusted: -4250.0
+balance adjusted: 80619.38
+balance adjusted: -4848.759999999999
+balance adjusted: 4620.0
+balance adjusted: 1469.8100000000002
+balance adjusted: -5150.0
+balance adjusted: 81519.38
+balance adjusted: -6050.0
+balance adjusted: 82419.38
+Transferring... 
+balance adjusted: -261.29999999999995
+balance adjusted: 90.0
+balance ok: 90.0
+balance adjusted: 0.4
+Adding VCC without necessary rights!! user: user180750 instrument: 1204c9c4c650a0e
+balance adjusted: -6500.0
+balance adjusted: 82869.38
+Adding VCC without necessary rights!! user: user180500 instrument: 1204cff4d45010e
+Adding VCC without necessary rights!! user: user183500 instrument: 1204d660f690d0e
+balance adjusted: -6600.0
+balance adjusted: 82969.38
+balance adjusted: -6630.16
+balance adjusted: 82999.54000000001
+balance adjusted: -35616.6
+balance adjusted: 83029.54
+balance adjusted: -35656.6
+balance adjusted: 83069.54
+balance adjusted: -5877.2
+balance ok: -5877.2
+balance adjusted: 5600.0
+balance adjusted: 1479.71
+Transferring... 
+balance adjusted: -0.6199999999999761
+balance adjusted: 252.43
+balance adjusted: 2.2
+user79000 Closed at 1238256310241
+user195000 Expired Dormancy!1 1222448367543->1238260924000
+balance adjusted: -5982.15
+balance ok: -5982.15
+balance adjusted: 5700.0
+balance adjusted: 1484.66
+balance adjusted: -41.98
+balance ok: -41.98
+balance adjusted: 40.0
+Expected balance: 25.0 found: 40.0
+balance adjusted: 829.25
+balance adjusted: -15.74
+balance ok: -15.74
+balance adjusted: 15.0
+balance ok: 15.0
+balance adjusted: 1485.4
+Purchase Notification user user108750
+Purchase Notification user user107000
+Purchase Notification user user121250
+Purchase Notification user user238000
+Purchase Notification user user78250
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user48000
+Purchase Settlement Not EXPECTED!! user user54750 amount 94.24
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user238000
+Purchase Settlement Notification user user78750
+Purchase Settlement Notification user user103000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user224250
+Purchase Settlement Notification user user21000
+Purchase Settlement Notification user user21000
+Adding VCC without necessary rights!! user: user101250 instrument: 120530ae6010e0e
+balance adjusted: -1330.81
+balance adjusted: 4337.0
+balance adjusted: 831.08
+user97500 Expired Breakage! 1206980831016->1238347842122
+Purchase Settlement Notification user user199250
+Purchase Settlement Notification user user121250
+Purchase Settlement Notification user user243000
+balance adjusted: -86.19999999999999
+balance ok: -86.2
+balance adjusted: 75.0
+balance ok: 75.0
+balance adjusted: 1487.13
+Loading without necessary rights!! user: user188750
+user93500 Expired Breakage! 1206998097462->1238363373715
+balance adjusted: -131.18
+balance ok: -131.18
+balance adjusted: 125.0
+balance adjusted: 833.0600000000001
+balance adjusted: -152.17000000000002
+balance ok: -152.17
+balance adjusted: 145.0
+balance adjusted: 834.05
+user159000 Expired Breakage! 1207003152001->1238376256813
+Adding VCC without necessary rights!! user: user169500 instrument: 12055b20231040e
+balance adjusted: -73.46
+balance ok: -73.46
+balance adjusted: 70.0
+balance ok: 70.0
+balance adjusted: 837.51
+Purchase Settlement Notification user user41500
+Purchase Notification user user166500
+Purchase Notification user user180750
+Purchase Notification user user250000
+Purchase Notification user user237250
+Purchase Notification user user237250
+Purchase Notification user user237250
+Purchase Notification user user107000
+Purchase Notification user user149250
+Purchase Notification user user149250
+Purchase Notification user user149250
+user222500 Expired Dormancy!1 1222591570335->1238403182503
+Purchase Settlement Notification user user122500
+Purchase Settlement Notification user user122500
+Purchase Settlement Notification user user122500
+Purchase Settlement Notification user user78250
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user243000
+Purchase Settlement Notification user user238000
+balance adjusted: -122.93
+balance ok: -122.93
+balance adjusted: 110.0
+balance ok: 110.0
+balance adjusted: 1488.8600000000001
+balance adjusted: -728.35
+balance ok: -728.35
+balance adjusted: 1419.0
+balance adjusted: 1489.6
+user50750 Closed at 1238429543244
+balance adjusted: -1351.8
+balance adjusted: 4357.0
+balance adjusted: 838.5
+balance adjusted: -1378.04
+balance adjusted: 4382.0
+balance adjusted: 839.74
+balance adjusted: -6730.16
+balance adjusted: 83169.54
+balance adjusted: -6980.16
+balance adjusted: 83419.54
+balance adjusted: -7330.16
+balance adjusted: 83769.54
+user248500 Expired Breakage! 1207079246059->1238446412164
+balance adjusted: -8230.16
+balance adjusted: 84669.54
+balance adjusted: -9130.16
+balance adjusted: 85569.54
+user185500 Expired Breakage! 1207085526367->1238448999000
+Adding VCC without necessary rights!! user: user148750 instrument: 12059884a8b070e
+Purchase Cancellation Notification user user98250
+Purchase Cancellation Notification user user98250
+Purchase Cancellation Notification user user98250
+Adding VCC without necessary rights!! user: user182500 instrument: 1205ad66bea070e
+Adding VCC without necessary rights!! user: user182500 instrument: 1205ad7a6a10b0e
+balance adjusted: -271.83
+balance ok: -271.83
+balance adjusted: 259.0
+Expected balance: 254.32 found: 259.0
+balance adjusted: 99.73
+balance adjusted: -143.92000000000002
+balance ok: -143.92
+balance adjusted: 130.0
+balance ok: 130.0
+balance adjusted: 1490.59
+user203750 Expired Breakage! 1207129891374->1238495717311
+balance adjusted: -1404.28
+balance adjusted: 4407.0
+balance adjusted: 840.98
+balance adjusted: -1430.52
+balance adjusted: 4432.0
+balance adjusted: 842.22
+balance adjusted: -1456.76
+balance adjusted: 4457.0
+balance adjusted: 843.46
+balance adjusted: -1497.69
+balance adjusted: 4496.0
+balance adjusted: 845.39
+Purchase Cancellation Notification user user21000
+Adding VCC without necessary rights!! user: user187000 instrument: 1205cf5c23f050e
+Purchase Notification user user169500
+Purchase Notification user user107000
+Purchase Notification user user118250
+Purchase Notification user user41500
+Purchase Settlement Notification user user131750
+Purchase Settlement Notification user user176750
+Purchase Settlement Notification user user176750
+Purchase Settlement Notification user user166500
+balance adjusted: -3801.0
+balance ok: -3801.0
+balance adjusted: 85619.54
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user237250
+Purchase Settlement Notification user user250000
+balance adjusted: -9530.16
+balance adjusted: 86019.54
+balance adjusted: -10030.16
+balance adjusted: 86519.54
+user29250 Expired Breakage! 1207161065702->1238530824000
+user34000 Expired Dormancy!1 1222716226871->1238530824000
+Adding VCC without necessary rights!! user: user164250 instrument: 1205ed143c4040e
+user214750 Expired Breakage! 1207179024080->1238549075000
+Adding VCC without necessary rights!! user: user99250 instrument: 1205f8215ab000e
+Adding VCC without necessary rights!! user: user51500 instrument: 120601d4aed0e0e
+Purchase Settlement Not EXPECTED!! user user60500 amount 24.11
+Adding VCC without necessary rights!! user: user180500 instrument: 12060c5c15f050e
+balance adjusted: -1523.93
+balance adjusted: 4521.0
+balance adjusted: 846.63
+Purchase Notification user user166500
+Purchase Settlement Notification user user108750
+Purchase Settlement Notification user user107000
+Purchase Settlement Notification user user107000
+Purchase Settlement Notification user user118250
+Purchase Settlement Notification user user207000
+balance adjusted: -1550.17
+balance adjusted: 4546.0
+balance adjusted: 847.87
+balance adjusted: -1571.16
+balance adjusted: 4566.0
+balance adjusted: 848.86
+Purchase Settlement Notification user user149250
+Purchase Settlement Notification user user149250
+balance adjusted: -1679.19
+balance ok: -1679.19
+balance adjusted: 1600.0
+balance adjusted: 1498.01
+balance adjusted: -1592.15
+balance adjusted: 4586.0
+balance adjusted: 849.85
+balance adjusted: -1616.2900000000002
+balance adjusted: 4609.0
+balance adjusted: 850.99
+balance adjusted: -745.14
+balance adjusted: 710.0
+balance adjusted: 851.98

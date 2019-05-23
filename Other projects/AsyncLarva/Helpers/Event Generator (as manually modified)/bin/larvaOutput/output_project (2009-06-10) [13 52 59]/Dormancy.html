@@ -1,0 +1,194 @@
+
+<html>
+<body bgcolor="white">
+<h2>Dormancy</h2>
+<a href="javascript:doHideAll('main');" >Hide All</a>
+<a href="javascript:doShowAll('main');" >Show All</a><div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main5');" id=xmain5>[-]</a>
+
+Expired Dormancy! User: user160000 1214246885106->1229798885106
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main10');" id=xmain10>[-]</a>
+
+Expired Dormancy! User: user36750 1214315131330->1229867131330
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main15');" id=xmain15>[-]</a>
+
+Expired Dormancy! User: user234750 1214330659288->1229882659288
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main18');" id=xmain18>[-]</a>
+
+Expired Dormancy! User: user47000 1214395627127->1229947627127
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main20');" id=xmain20>[-]</a>
+
+Dormancy done!! User user234750 at 1230221892100 94.23133666666666 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main22');" id=xmain22>[-]</a>
+
+Expired Dormancy! User: user28750 1214422621167->1229974621167
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main23');" id=xmain23>[-]</a>
+
+Expired Dormancy! User: user86500 1214493449557->1230045449557
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main24');" id=xmain24>[-]</a>
+
+Dormancy done!! User user86500 at 1230309688641 73.39974555555555 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main27');" id=xmain27>[-]</a>
+
+Expired Dormancy! User: user149000 1214539769016->1230091769016
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main32');" id=xmain32>[-]</a>
+
+Expired Dormancy! User: user45250 1214637497528->1230189497528
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main41');" id=xmain41>[-]</a>
+
+Dormancy done!! User user45250 at 1230567694311 105.05466194444445 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main42');" id=xmain42>[-]</a>
+
+Expired Dormancy! User: user226250 1214788911956->1230340911956
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main45');" id=xmain45>[-]</a>
+
+Expired Dormancy! User: user9750 1214810010221->1230362010221
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main49');" id=xmain49>[-]</a>
+
+Dormancy done!! User user9750 at 1230653938808 81.09127416666666 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main50');" id=xmain50>[-]</a>
+
+Expired Dormancy! User: user148500 1214870530673->1230422530673
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main51');" id=xmain51>[-]</a>
+
+Expired Dormancy! User: user140250 1214871093260->1230423093260
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main56');" id=xmain56>[-]</a>
+
+Dormancy done!! User user148500 at 1230826178676 112.12444527777778 hours late
+
+
+
+ </div> 
+
+<div style="background: PeachPuff; margin: 2px; padding: 1px;"><a href="javascript:doMenu('main61');" id=xmain61>[-]</a>
+
+Expired Dormancy! User: user235750 1215105534400->1230657534400
+
+<div id=main61 style="margin: 2px; margin-left:2em; background: Moccasin; padding: 1px; ">
+
+
+</body>
+</html>
+<script language="JavaScript"
+type="text/javascript">
+function doMenu(item)
+{
+	obj=document.getElementById(item);
+	col=document.getElementById ("x" + item);
+	if (obj.style.display=="none") {
+		obj.style.display="block";
+		col.innerHTML="[-]";
+	}
+	else {
+		obj.style.display="none";
+		col.innerHTML="[+]";
+	}
+}
+function doHideAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+	   		&& objs[i].style.display!="none")
+		{
+			objs[i].style.display="none";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[+]";
+		}
+	}
+}
+function doShowAll(item)
+{
+	objs=document.getElementsByTagName('div');
+	for (var i = 0; i < objs.length; i++)
+	{
+		if (objs[i].id.search("main")!=-1
+			&& objs[i].style.display!="block")
+		 {
+			objs[i].style.display="block";
+			col=document.getElementById ("x" + objs[i].id);
+			col.innerHTML="[-]";
+		}
+	}
+}
+</script>

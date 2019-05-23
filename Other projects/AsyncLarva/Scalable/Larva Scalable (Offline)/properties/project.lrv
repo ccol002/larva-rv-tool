@@ -1,0 +1,1159 @@
+
+%%%%%%%%%%%%%%%%%%%% Properties being monitored %%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% 1> Any user which should be dormant or closed and is not, is detected
+%% 2> Any user which is frozen by dormancy or broken by breakage prematurely, is detected
+%% 3> Any user transaction while the user is dormant or closed is detected 
+%%
+%% dormancy started on August 2008
+%% breakage started on December 2008
+%% logging of scheme changes 2009-02-05 09:32:01
+%% logging of rights from 8/11/2007
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Imports
+{
+	import Events.Template;
+	import java.sql.*;
+	import java.util.ArrayList;
+	import java.util.HashMap;
+	import java.lang.reflect.Field;
+	import java.math.BigDecimal;
+}
+
+Global
+{
+	Initializeif (SC.init) {SC.initializeifMain}
+
+	Variables
+	{
+		%%related to dormancy
+		int idp_limit = 180*24*60*60;		%% 6 months in seconds  (dormant)
+		int drp_limit = 30*24*60*60;		%% 1 month in seconds   (put to dormant again)
+		int bwp_limit = 330*24*60*60;		%% 11 months in seconds (give warning)
+		int bp_limit  = 360*24*60*60;		%% 12 months in seconds (breakage)
+		int leeway    = 3*24*60*60*1000;%% 3 days (ms)
+		boolean ignore_blocked_dorm     = true;
+		boolean ignore_frozen_dorm      = true;
+		boolean ignore_suspended_dorm   = true;
+		boolean ignore_blocked_break    = true;
+		boolean ignore_frozen_break     = true;
+		boolean ignore_suspended_break  = true;
+		boolean ignore_blocked_warn     = true;
+		boolean ignore_frozen_warn      = true;
+		boolean ignore_suspended_warn   = true;
+		double dormancy_fee             = 10;
+
+		int day   = 24*60*60*1000;
+		int month = 30*24*60*60*1000;
+		
+	  
+		Channel balCheckCH;
+		Channel balUpdateCH;
+		Channel validTXCH;
+	}
+
+	Events
+	{ 
+		all0(long timestamp, t) = {Template t.call(String name, long timestamp)}
+			filter {!t.params.containsKey("user")}
+	}
+  
+	Property properties
+	{
+		States
+		{
+			Starting { start }
+		}
+	  
+		Transitions
+		{
+			start -> start
+			[ all0
+				\ t.is("PropChange")
+				\ String message = (String)t.params.get("message");
+				if (message.contains("Ignore") && message.contains("Blocked") && message.contains("Dormancy")) 
+					ignore_blocked_dorm = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Suspended") && message.contains("Dormancy")) 
+					ignore_suspended_dorm = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Frozen") && message.contains("Dormancy"))
+					ignore_frozen_dorm = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Blocked") && message.contains("Breakage")) 
+					ignore_blocked_break = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Suspended") && message.contains("Breakage")) 
+					ignore_suspended_break = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Frozen") && message.contains("Breakage")) 
+					ignore_frozen_break = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Blocked") && message.contains("Warning")) 
+					ignore_blocked_warn = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Suspended") && message.contains("Warning")) 
+					ignore_suspended_warn = (message.contains("true"));
+				else if (message.contains("Ignore") && message.contains("Frozen") && message.contains("Warning")) 
+					ignore_frozen_warn = (message.contains("true"));
+				else System.out.println("Warning!! A property changed could not be understood!! " + message);
+			]
+			%%note that changing the limits of dormancy will cause problems with the implementation
+			%% because this requires changing the configured timer events (so far these are fixed from the start)
+	  }
+	}
+
+
+	%%for each user...represented as the name of the user
+	Foreach (String s)
+	{
+		Initializeif (SC.init) {SC.initializeifUser}
+ 
+		Variables
+		{
+			boolean USER_DEPOSIT_OCT              = false;
+			boolean USER_LOGIN                    = false;
+			boolean USER_CHANGE_LOST_PASSWORD     = false;
+			boolean USER_ADD_BANK_CARD            = false;
+			boolean USER_ADD_BANK_PAYOUT_ACCOUNT  = false;
+			boolean USER_CREATE_VCC               = false;
+			boolean USER_VIEW_VCC                 = false;
+			boolean USER_LOAD_VCC                 = false; %% USER_LOAD_SPEND_INSTRUMENT   = false;
+			boolean USER_DELETE_VCC               = false; %% USER_DELETE_SPEND_INSTRUMENT = false;
+			boolean USER_VIEW_TRANSACTION_HISTORY = false;
+			boolean USER_LOCK_ACCOUNT             = false;
+			boolean USER_TRANSFER                 = false;
+			boolean USER_TRANSFER_TO_VCC          = false;
+			boolean USER_TRANSFER_TO_PLASTIC      = false;
+			boolean USER_BANK_PAYOUT              = false;
+			boolean USER_BANK_PAYIN               = false;
+			boolean USER_VIRTUAL_PAYOUT           = false;
+			boolean USER_PAYOUT_TO_BANKCARD       = false;
+			boolean USER_APPLY_FOR_PLASTIC        = false;
+			boolean USER_APPLY_FOR_PLASTIC_MASTERCARD = false;
+			boolean USER_APPLY_FOR_PLASTIC_VISA   = false;
+			boolean USER_DEPOSIT_MERCHANT_INCOMING_FUNDS = false;
+
+			Clock idp;
+			Clock drp;
+			Clock bp;
+
+			long passStart						= RunningClock.now;
+			long lastFreeze						= -1;
+			boolean feeExpected				= false;
+
+			int nonDormfrozenInstruments 		= 0;
+			int frozenInstruments 		= 0;%%not initialized
+			boolean suspended     		= false;
+			boolean closed        		= false;
+			boolean locked        		= false;
+			boolean frozen        		= false; %%i.e. dormant
+	
+			String origin							= "WEB";
+			String scheme							= "BASIC";
+
+			double expectedSettlement	= 0; %%not being updated in initialization
+			double totalBalance				= 0; %%not being updated in initialization
+
+			long timeExpired					= 0;
+			long timeBreakageExpired	= 0;
+
+			int loadCountDay					= 0;
+			long loadTimestampDaya		= -1;
+			long loadTimestampDayc		= -1;
+			double loadAmountDay			= 0;
+			int loadCountMonth				= 0;
+			long loadTimestampMontha	= -1;
+			long loadTimestampMonthc	= -1;
+			double loadAmountMonth		= 0;
+		}
+
+
+		Events
+		{
+			cATidp(long timestamp)	= {idp @d 183} where {timestamp = RunningClock.eventTime;}%% limit + leeway
+			cATdrp(timestamp)				= {drp @d  33} where {timestamp = RunningClock.eventTime;}%% limit + leeway
+			cATbp(timestamp)				= {bp  @d 363} where {timestamp = RunningClock.eventTime;}%% limit + leeway
+	  
+			all1(long timestamp, Template t, String currency, double amount)
+			                                                   = {Template t.call(String name, long timestamp)}
+				filter {t.params.containsKey("user")}
+				where  {s					= t.params.get("user").toString();
+								
+								currency	= (t.params.containsKey("transactionCurrency"))
+								         		? (String)t.params.get("transactionCurrency")
+														: null;
+								amount		= (t.params.containsKey("transactionAmount"))
+								       			? ((BigDecimal)t.params.get("transactionAmount")).doubleValue()
+								       			: 0;								       		
+								}
+								
+			loadevent(long timestamp, Template t, String currency, double amount, HashMap limits, String loadtype)
+			                                = {Template t.call(String name, long timestamp)}
+				filter {(t.params.containsKey("user") && t.is("NormTX") && t.params.get("DTYPE").equals("LoadTXEntry"))
+				         || (t.is("CallCentreLoadTX"))}
+				where  {s					= t.params.get("user").toString();								
+								currency	= SC.getLoadCurrency((String)t.params.get("transactionEntryId"));
+								amount		= SC.getLoadAmount((String)t.params.get("transactionEntryId"));								       			
+								limits    = new HashMap();
+								loadtype  = (t.is("CallCentreLoadTX"))
+								       			? "CALLCENTRE_LOAD"
+								       			: "LOAD";	
+								
+								}
+	              
+			validTX() = {validTXCH.receive(String s1)}     
+				where {s = s1;}  
+		}
+
+
+		Property load_tx
+		{
+			States
+			{
+				Bad { norights mismatch }
+				Starting { start }
+			}
+ 
+			Transitions
+			{
+				start -> start 
+				%%note skipping one each time (taking actual balance entries)
+				[ all1 
+				\ (t.is("NormTX") && t.params.get("DTYPE").equals("LoadTXEntry") && USER_LOAD_VCC && origin.equals("WEB"))
+					|| (t.is("CallCentreLoadTX") && origin.equals("CALL_CENTRE"))%%no right required
+				\ %%System.out.println("entered... ");
+        ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+				for (int i = 0; i < list.size(); i++)
+				if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+				{				
+					balUpdateCH.send(list.get(i));
+					balCheckCH.send(list.get(i)); 
+					%%System.out.println("signals sent... ");
+				}
+				]
+							
+				start -> mismatch
+				[ all1
+				\ (t.is("CallCentreLoadTX") && !origin.equals("CALL_CENTRE"))
+				\ System.out.println("Mismatch in transaction type and user origin!! " + origin + " user  " + s + " " + timestamp);
+				]			
+	
+				start -> norights
+				[ all1 
+				\ (t.is("NormTX") && t.params.get("DTYPE").equals("LoadTXEntry") && !USER_LOAD_VCC && origin.equals("WEB"))
+					|| (t.is("CallCentreLoadTX") && !USER_LOAD_VCC && origin.equals("CALL_CENTRE"))
+				\ System.out.println("Loading without necessary rights!! " + origin + " user  " + s + " " + timestamp);
+				]
+			}
+		}
+	
+		Property load_count
+		{
+			States
+			{
+				Bad { countExceeded }
+				Starting { start } 
+			}
+
+			Transitions
+			{
+				start -> countExceeded 
+				[ loadevent
+					\		
+				 (((SC.loadLimits(limits, s, currency, scheme, origin, loadtype) &&
+					 loadCountDay + 1 > (Integer)limits.get("dayCount"))
+				   && (loadTimestampDayc == -1 || timestamp/day - loadTimestampDayc/day < 1))
+					
+				  || ((loadCountMonth + 1 > (Integer)limits.get("monthCount"))
+					   && (loadTimestampMonthc == -1 || timestamp/month - loadTimestampMonthc/month < 1)))
+					\
+					
+					System.out.println("LOAD count exceeded user: " + s + " tx id: " + t.params.get("transactionEntryId")
+				  + "\r\n loaded " + (loadCountDay + 1) + " times in a day... limit: " + limits.get("dayCount")
+					+ "\r\n loaded " + (loadCountMonth + 1) + " times in a month... limit: " + limits.get("monthCount")
+					+ "\r\n origin: " + origin + " scheme: " + scheme + " time: " + timestamp);
+				]
+
+				start -> start 
+				[ loadevent
+					\ 
+					\ 
+						if (loadTimestampDayc == -1 || timestamp/day - loadTimestampDayc/day >= 1){
+						   loadCountDay = 1;
+						   loadTimestampDayc = timestamp;
+					   } else
+								loadCountDay ++;
+					
+						if (loadTimestampMonthc == -1 || timestamp/month - loadTimestampMonthc/month >= 1){
+						   loadCountMonth = 1;
+						   loadTimestampMonthc = timestamp;
+					   } else
+								loadCountMonth ++;
+				]
+			}
+		}
+ 
+		Property load_amount
+		{
+			States
+			{
+				Bad { amountExceeded }
+				Starting {start} 
+			}
+
+			Transitions
+			{
+				start -> amountExceeded 
+				[ loadevent
+					\ 				
+					(((
+SC.loadLimits(limits, s, currency, scheme, origin, loadtype) && 
+					loadAmountDay + amount > (Double)limits.get("dayAmount"))
+					&& (loadTimestampDaya == -1 || timestamp/day - loadTimestampDaya/day < 1))
+
+				    	|| (loadAmountMonth + amount > (Double)limits.get("monthAmount")
+				       	&& (loadTimestampMontha == -1 || timestamp/month - loadTimestampMontha/month < 1)))
+
+					\
+						System.out.println("LOAD amount exceeded user: " + s + " tx id: " + t.params.get("transactionEntryId")
+						 + "\r\n loaded " + currency + " " + (loadAmountDay + amount) + " in a day... limit: " + limits.get("dayAmount")
+						 + "\r\n loaded " + currency + " " + (loadAmountMonth + amount) + " in a month... limit: " + limits.get("monthAmount")
+						 + "\r\n origin: " + origin + " scheme: " + scheme + " time: " + timestamp);
+				
+				]
+
+				start -> start 
+				[ loadevent
+					\ 
+					\ 
+						if (loadTimestampDaya == -1 || timestamp/day - loadTimestampDaya/day >= 1){
+							loadTimestampDaya = timestamp;
+							loadAmountDay = amount;
+						}
+						else 
+							loadAmountDay += amount; 
+
+						if (loadTimestampMontha == -1 || timestamp/month - loadTimestampMontha/month >= 1){
+							loadTimestampMontha = timestamp;
+							loadAmountMonth = amount;
+						}
+						else 
+							loadAmountMonth += amount; 
+					 
+				]
+			}
+		}
+ 
+		%%not tested in the example with 20 users
+		%% because there are no such transactions
+		Property transfer_tx
+		{
+			States
+			{
+				Bad { norights }
+				Starting { start }
+			}
+
+			Transitions
+			{
+				%% note that the correct currency is assumed!
+				start -> start 
+				%%note skipping one each time (taking actual balance entries)
+				[ all1 
+					\ t.is("NormTX") && t.params.get("DTYPE").equals("TransferTXEntry")
+						&& (USER_TRANSFER || USER_TRANSFER_TO_VCC || USER_TRANSFER_TO_PLASTIC)
+					\ %%System.out.println("Transferring... ");
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+					if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+					{				
+						balUpdateCH.send(list.get(i));
+						balCheckCH.send(list.get(i));
+						%%System.out.println("signals sent... ");
+					}
+				]
+
+				start -> norights
+				[ all1 
+					\ t.is("NormTX") && t.params.get("DTYPE").equals("TransferTXEntry")
+					\ System.out.println("Transferring without necessary rights!! user  " + s + " " + timestamp);
+				]
+			}
+		}
+
+		Property rights_management
+		{
+			States
+			{
+				Starting {start}
+			}
+			
+			Transitions
+			{
+				start -> start 
+				[ all1
+					\ t.is("ChangeRights")
+					\ try {
+						String message = (String)t.params.get("message");
+						Class c = this.getClass();
+						if (message.contains("grant") && message.contains("right"))
+							for (String s : SC.rightsList(message))
+							{
+								Field f = c.getField(s);
+								f.set(this, true);
+							}
+						else if (message.contains("Set") && message.contains("right"))
+						{
+							USER_DEPOSIT_OCT = false;
+							USER_LOGIN = false; 
+							USER_CHANGE_LOST_PASSWORD = false;
+							USER_ADD_BANK_CARD = false;
+							USER_ADD_BANK_PAYOUT_ACCOUNT = false;
+							USER_CREATE_VCC = false;
+							USER_VIEW_VCC = false;
+							USER_LOAD_VCC = false;
+							USER_DELETE_VCC = false;
+							USER_VIEW_TRANSACTION_HISTORY = false;
+							USER_LOCK_ACCOUNT = false;
+							USER_TRANSFER = false;
+							USER_TRANSFER_TO_VCC = false;
+							USER_TRANSFER_TO_PLASTIC = false;
+							USER_BANK_PAYOUT = false;
+							USER_BANK_PAYIN = false;
+							USER_VIRTUAL_PAYOUT = false;
+							USER_PAYOUT_TO_BANKCARD = false;
+							USER_APPLY_FOR_PLASTIC = false;
+							USER_APPLY_FOR_PLASTIC_MASTERCARD = false;
+							USER_APPLY_FOR_PLASTIC_VISA = false;
+							for (String s : SC.rightsList(message))
+							{
+								Field f = c.getField(s);
+								f.set(this, true);
+							}
+						}
+						else if (message.contains("revoke") && message.contains("right"))
+							for (String s : SC.rightsList(message))
+							{
+								Field f = c.getField(s);
+								f.set(this, false);
+							}
+					} catch(Exception ex)
+					{ex.printStackTrace();}
+				]
+			}
+		}
+
+		Property scheme_change
+		{
+		  States {
+		   Starting {start}
+		  }
+		  
+		  Transitions {
+		    start -> start 
+		    [ all1
+				\ t.is("ChangeScheme")
+				\
+				]
+		  
+		  }
+		}
+
+
+		Property dormancy
+		{
+ 			States
+ 			{
+				Bad { unexpectedTX expiredDorm earlyDorm unexpectedDorm }
+				Normal { dorm thawed }
+				Starting { nondorm }
+			}
+ 
+			Transitions
+			{
+				nondorm -> nondorm 
+				%%later on the condition should be extended to all financial transactions
+				%% currently it only considers transactions originating from the user
+				[ all1
+     			\ t.is("NormTX")
+					\ passStart = timestamp;
+					  idp.reset(timestamp);
+						drp.reset(timestamp);
+				]
+   
+				nondorm -> nondorm
+				[ validTX
+     			\
+					\ passStart = RunningClock.now;
+					  idp.reset(RunningClock.now);
+						drp.reset(RunningClock.now);
+				]
+   
+				nondorm -> dorm 
+				[ all1
+					\ t.is("DormTX")
+					&& (idp.current(timestamp) >= idp_limit
+						|| drp.current(timestamp) >= drp_limit)
+			 		&& !origin.equals("CALL_CENTRE")
+			 		&& (!suspended           || !ignore_suspended_dorm)
+			 		&& (!locked              || !ignore_blocked_dorm)
+			 		&& (nonDormfrozenInstruments ==0 || !ignore_frozen_dorm)
+			 		&& (USER_LOAD_VCC        || !ignore_blocked_dorm)
+			 		\ drp.reset(timestamp);
+			 		feeExpected = true;
+			 		lastFreeze = timestamp;
+			 		%%System.out.println(s + " Frozen at " + timestamp);
+			 	]
+
+				nondorm -> earlyDorm
+			 	[ all1
+			 		\ t.is("DormTX") && idp.current(timestamp) < idp_limit
+			 		\ System.out.println("Early Dormancy at " + timestamp + " user " + s);
+			 	]
+
+				nondorm -> unexpectedDorm
+			 	[ all1
+			 		\ t.is("DormTX")
+			 		\ System.out.println("Unexpected Dormancy at " + timestamp + " user " + s);
+			 	]
+
+				%%note the condition on the timestamp to cater for the initialization period of the 
+				%% dormancy process
+				nondorm -> expiredDorm 
+				[ cATidp
+			 		\ !origin.equals("CALL_CENTRE")
+			 		&& (!suspended           || !ignore_suspended_dorm)
+			 		&& (!locked              || !ignore_blocked_dorm)
+			 		&& (nonDormfrozenInstruments ==0 || !ignore_frozen_dorm)
+			 		&& (USER_LOAD_VCC        || !ignore_blocked_dorm) 
+			 		&& (timestamp > SC.initialTime) && !closed
+			 		\ timeExpired = timestamp - leeway;
+			 		System.out.println("Expired Dormancy! User: " + s + " " + passStart + "->" + timeExpired);
+			 	]
+
+				%%DORMANCY FEE       
+				%% note that the balance is not checked
+				%% and the correct currency is assumed!
+				dorm -> dorm
+				[ all1 
+					\ t.is("DormFeeTX") 
+					\ feeExpected = false; 
+					%%System.out.println(s + " Fee taken at " + timestamp);
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+					if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+					{				
+						Double actual = (Double)((HashMap)list.get(i)).get("adjustment");
+						if (-amount != actual)
+							System.out.println("Expected adjustment (" + amount + ") does NOT match actual (" + actual + ")! + user " + s + " at " + timestamp);
+						balUpdateCH.send(list.get(i));
+						balCheckCH.send(list.get(i)); 
+					}
+				]
+
+				%% note that the next dormancy can only be detected by the fee TX
+				%% it should be ensured that if there is money, the fee is taken       
+				%%        
+				%% dorm -> dorm
+				%%   [ all1 
+				%%   \ t.is("DormTX") && drp.current(timestamp) >= drp_limit
+				%%   \ drp.reset(timestamp);
+				%%     lastFreeze = timestamp;
+				%%     %%System.out.println(s + " Frozen again at " + timestamp);
+				%%     if (feeExpected) {
+				%%       System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+				%%     }
+				%%     feeExpected = true;
+				%%   ]  
+
+				%% dorm -> earlyDorm
+				%%   [ all1 
+				%%   \ t.is("DormTX") 
+				%%   \ System.out.println("Unexpected Dorm at " + timestamp + " user " + s);
+				%%   ]    
+
+				%% dorm -> expiredDorm
+				%%   [ cATdrp
+				%%   \ timestamp > SC.initialTime && !closed
+				%%   \ feeExpected = true;
+				%%     %%timeExpired = timestamp;
+				%%		 %%System.out.println(s + " Expired Dormancy!2 " + lastFreeze + "->" + timestamp);
+				%%   ]
+
+				expiredDorm -> dorm
+				[ all1 
+					\ t.is("DormTX") && drp.current(timestamp) >= drp_limit
+					\ drp.reset(timestamp);
+					lastFreeze = timestamp;
+					System.out.println("Dormancy done!! User " + s + " at " + timestamp
+					+ " " + ((timestamp - timeExpired)/(double)(1000*60*60)) + " hours late");
+					feeExpected = true;
+				]
+ 
+				dorm -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\ System.out.println("Unexpected transaction while dormant!! User " + s + " at " + timestamp);
+				]
+				
+				dorm -> thawed
+				[ all1
+					\ t.is("UnDormTX") 
+					\ passStart = timestamp; 
+					idp.reset(timestamp);
+					bp.reset(timestamp);
+					if (feeExpected) {
+						System.out.println("Fee Expected!! Not Found! Check Credit! User " + s);
+						feeExpected = false;
+					}
+				]
+
+				thawed -> dorm
+				[ all1
+					\ t.is("DormTX")
+					&& (drp.current(timestamp) >= drp_limit)
+					&& !origin.equals("CALL_CENTRE")
+					&& (!suspended           || !ignore_suspended_dorm)
+					&& (!locked              || !ignore_blocked_dorm)
+					&& (nonDormfrozenInstruments ==0 || !ignore_frozen_dorm)
+					&& (USER_LOAD_VCC        || !ignore_blocked_dorm)
+					\ drp.reset(timestamp);
+					feeExpected = true;
+					lastFreeze = timestamp;
+					%%System.out.println(s + " Frozen at " + timestamp);
+				]
+
+				thawed -> nondorm
+				[ all1
+					\ t.is("NormTX")
+					\ passStart = timestamp;
+					idp.reset(timestamp);
+					drp.reset(timestamp);
+				]
+
+				thawed -> nondorm
+				[ validTX
+					\
+					\ passStart = RunningClock.now;
+					idp.reset(RunningClock.now);
+					drp.reset(RunningClock.now);
+				]
+
+				%%user has been thawed but spent another month without activity
+				%% assuming drp event is occurs before idp event
+				thawed -> expiredDorm
+				[ cATdrp
+					\ !origin.equals("CALL_CENTRE")
+					&& (!suspended           || !ignore_suspended_dorm)
+					&& (!locked              || !ignore_blocked_dorm)
+					&& (nonDormfrozenInstruments ==0 || !ignore_frozen_dorm)
+					&& (USER_LOAD_VCC        || !ignore_blocked_dorm)
+					&& (timestamp > SC.initialTime) && !closed
+					\ timeExpired = timestamp - leeway;
+					System.out.println("Expired re-Dormancy! User: " + s + " " + passStart + "->" + timeExpired);
+				]
+
+				thawed -> earlyDorm
+				[ all1
+					\ t.is("DormTX") && idp.current(timestamp) < idp_limit
+					\ System.out.println("Early Dormancy at " + timestamp + " user " + s);
+				]
+
+				thawed -> unexpectedDorm
+				[ all1
+					\ t.is("DormTX")
+					\ System.out.println("Unexpected Dormancy at " + timestamp + " user " + s);
+						System.out.println("{}origin " + origin + " suspended " + suspended + " locked " + locked);     
+						System.out.println("{}ignore_suspended_dorm " + ignore_suspended_dorm + " ignore_blocked_dorm "
+						 + ignore_blocked_dorm + " nonDormfrozenInstruments " + nonDormfrozenInstruments);   
+ 						System.out.println("{} USER_LOAD_VCC " + USER_LOAD_VCC + " ignore_blocked_dorm "
+						 + ignore_blocked_dorm + " ignore_frozen_dorm " + ignore_frozen_dorm); 
+				]
+			}
+		}
+ 
+		Property breakage
+		{
+			States
+			{
+				Bad { unexpectedTX expiredBreak earlyBreak unexpectedBreak }
+				Normal { break }
+				Starting { nonbreak }
+			}
+
+			Transitions
+			{
+				nonbreak -> nonbreak
+				%%later on the condition should be extended to all financial transactions
+				%% currently it only considers transactions originating from the user 
+				[ all1
+					\ t.is("NormTX")
+					\ passStart = timestamp; 
+					bp.reset(timestamp);
+				]
+
+				nonbreak -> nonbreak
+				[ validTX
+					\ 
+					\ passStart = RunningClock.now; 
+					bp.reset(RunningClock.now);
+				]
+
+				%%note the condition on the timestamp to cater for the initialization period of the 
+				%% breakage process
+				nonbreak -> expiredBreak 
+				[ cATbp
+					\ !origin.equals("CALL_CENTRE")
+					&& (!suspended           || !ignore_suspended_break)
+					&& (!locked              || !ignore_blocked_break)
+					&& (nonDormfrozenInstruments ==0 || !ignore_frozen_break)
+					&& (USER_LOAD_VCC        || !ignore_blocked_break) 
+					&& (timestamp > SC.initialTime)
+					\ timeBreakageExpired = timestamp - leeway;
+					System.out.println("Expired Breakage! user " + s + " " + passStart + "->" + timestamp);
+				]
+
+				nonbreak -> break  
+				[ all1
+					\ t.is("BreakTX") && bp.current(timestamp) >= bp_limit
+					&& !origin.equals("CALL_CENTRE")
+					&& (!suspended           || !ignore_suspended_break) 
+					&& (!locked              || !ignore_blocked_break)
+					&& (nonDormfrozenInstruments ==0 || !ignore_frozen_break)
+					&& (USER_LOAD_VCC        || !ignore_blocked_break) 
+					\ %%System.out.println(s + " Closed at " + timestamp);   
+				]
+
+				nonbreak -> earlyBreak 
+				[ all1 
+					\ t.is("BreakTX") && bp.current(timestamp) < bp_limit
+					\ System.out.println("Early Breakage at " + timestamp + " user " + s);   
+				]
+
+				nonbreak -> unexpectedBreak 
+				[ all1 
+					\ t.is("BreakTX")
+					\ System.out.println("Unexpected Breakage at " + timestamp + " user " + s); 
+						System.out.println("{}origin " + origin + " suspended " + suspended + " locked " + locked);     
+						System.out.println("{}ignore_suspended_break " + ignore_suspended_break + " ignore_blocked_break "
+						 + ignore_blocked_break + " nonDormfrozenInstruments " + nonDormfrozenInstruments);   
+ 						System.out.println("{} USER_LOAD_VCC " + USER_LOAD_VCC + " ignore_blocked_break "
+						 + ignore_blocked_break + " ignore_frozen_break " + ignore_frozen_break); 
+				]
+
+				expiredBreak -> break  
+				[ all1
+					\ t.is("BreakTX") && bp.current(timestamp) >= bp_limit
+					\ System.out.println("Breakage done!! user " + s + " at " + ((timestamp - timeBreakageExpired)/(double)(1000*60*60)) + " hours late");   
+				]
+
+				%%BREAKAGE FEE
+				%% correct currency is assumed!!
+				break -> break
+				[ all1
+					\ t.is("ReclaimFeeTX")
+					\ %%System.out.println(s + " reclaim funds " + timestamp);
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+					if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+					{			
+						Double actual = (Double)((HashMap)list.get(i)).get("adjustment");
+						if (-amount != actual)
+							 System.out.println("Expected adjustment (" + amount + ") does NOT match actual (" + actual + ")! user " + s);
+						balUpdateCH.send(list.get(i));
+						balCheckCH.send(list.get(i));
+					}
+				]
+
+				break -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\
+				]
+			}
+		}
+
+		Property user_lc
+		{
+			States
+			{
+				Bad { unexpectedTX }
+				Normal { created active suspended locked }
+				Starting { start } 
+			}
+
+			Transitions
+			{
+				start -> created
+				[ all1
+					\ t.is("Creation")
+					\ origin = SC.getUserType(s);
+					scheme = SC.getUserScheme(s);
+				]
+
+				start -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\
+				]
+
+				created -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\
+				]
+
+				created -> active
+				[ all1
+					\ t.is("Activation")
+					\
+				]
+
+				active -> locked
+				[ all1
+					\ t.is("AcctLock")
+					\ locked = true;
+				]
+
+				locked -> active
+				[ all1
+					\ t.is("AcctUnSuspend") 
+					%%checked and yes unlock can only be done by an operator
+					%% in the same way that an unsuspend takes place
+					\ locked = false;
+				]
+
+				locked -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\
+				]
+
+				active -> suspended
+				[ all1
+					\ t.is("AcctSuspend")
+					\ suspended = true;
+				]
+
+				suspended -> active
+				[ all1
+					\ t.is("AcctUnSuspend")
+					\ suspended = false;
+				]
+
+				suspended -> unexpectedTX
+				[ all1
+					\ t.is("NormTX")
+					\
+				]
+			}
+		}
+
+		Property purchase
+		{ 
+			STATES
+			{
+				BAD { unexpected }
+				STARTING { start }
+			}
+
+			TRANSITIONS
+			{
+				%% a notification that a purchase has taken place (money has been spent)
+				%% no change in actual balance
+				start -> start 
+				[ all1
+					\ t.is("PurchaseTX")
+					\ 
+					validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Notification user " + s);
+					expectedSettlement += amount;
+				]
+
+				%% a notification that a purchase has been void
+				%% resulting in less expected settlement
+				start -> start 
+				[ all1
+					\ t.is("PurchaseVoidTX") && expectedSettlement >= amount
+					\ 
+					validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Void Notification user " + s);
+					expectedSettlement -= amount;
+				]
+
+				%% a notification that a purchase has been void
+				%% if the notification is larger than expected then raise alert
+				start -> unexpected 
+				[ all1
+					\ t.is("PurchaseVoidTX")
+					\ validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Void NOT EXPECTED!! user " + s 
+					%%+ " amount " + amount + " " + timestamp);
+				]
+
+				%% a notification that a purchase has been cancelled
+				%% resulting in less expected settlement
+				start -> start 
+				[ all1
+					\ t.is("PurchaseCancTX") && expectedSettlement >= amount
+					\ validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Cancellation Notification user " + s);
+					expectedSettlement -= amount;
+				]
+
+				%% a notification that a purchase has been void
+				%% if the notification is larger than expected then raise alert
+				start -> unexpected 
+				[ all1
+					\ t.is("PurchaseCancTX")
+					\ validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Cancellation NOT EXPECTED!! user " + s 
+					%%+ " amount " + t.params.get("transactionAmount") + " " + timestamp);
+				]
+
+				%% a notification that a purchase has been settled
+				%% less expected settlement
+				start -> start 
+				[ all1
+					\ t.is("PurchaseSettleTX") %%&& expectedSettlement >= amount
+					\ validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("Purchase Settlement Notification user " + s);
+					expectedSettlement -= amount;
+					%%obtain card and update its balance
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+						if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+						{				
+							balUpdateCH.send(list.get(i));
+							balCheckCH.send(list.get(i)); 
+						}
+				]
+
+				%%UNFORTUNATELY IT IS USELESS...this is already checked manually
+				%% a notification that a purchase has been settled
+				%% if the settlement is larger than expected then raise alert
+				%%start -> unexpected 
+				%%[ all1
+				%%	\ t.is("PurchaseSettleTX")
+				%%	\ %%System.out.println("Purchase Settlement NOT EXPECTED!! user " + s 
+				%%	+ " amount " + t.params.get("transactionAmount") + " " + timestamp);
+				%%]
+			}
+		}
+
+		Property fund_transfers
+		{ 
+			States
+			{  
+				Starting { start }
+			}
+
+			Transitions
+			{ 
+				start -> start 
+				[ all1
+					\ t.is("MoneyToUserTX")
+					\    validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("in");
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+						if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+						{				
+							balUpdateCH.send(list.get(i));
+							balCheckCH.send(list.get(i));
+							%%System.out.println("list.get(i) " + list.get(i) + " list.get(i+1): " + list.get(i+1));
+						}
+				]
+
+				start -> start 
+				[ all1
+					\ t.is("MoneyFromUserTX")
+					\    validTXCH.send(s);%%update dormancy and breakage
+					%%System.out.println("out");
+					ArrayList list = SC.balanceEntries(s,(String)t.params.get("transactionEntryId"));
+					for (int i = 0; i < list.size(); i++)
+						if (((HashMap)list.get(i)).get("type").equals("ACTUAL"))
+						{				
+							balUpdateCH.send(list.get(i));
+							balCheckCH.send(list.get(i));
+							%%System.out.println("list.get(i) " + list.get(i) + " list.get(i+1): " + list.get(i+1));
+						}
+				]
+			} 
+		}
+
+
+		Foreach (String i)
+		{
+			Initializeif (SC.init) { SC.initializeifInstrument }
+
+			Variables
+			{
+				double balance = 0;
+				String currency = null;
+				String type = null; %%vcc/bankcard/namedbalance
+				boolean defaultInstr = false;
+				boolean dormancy_freeze = false;
+			}
+ 
+			Events
+			{ 
+				%%for now assume that the higher level events will not be broadcast to the
+				%%lower levels... this creates some complexities to obtain the context...
+ 
+				all2(long timestamp,Template t) = {Template t.call(String name, long timestamp)}
+					filter {t.params.containsKey("user") && t.params.containsKey("instrument")}
+					where {	s = t.params.get("user").toString();
+									i = t.params.get("instrument").toString(); }
+ 
+				balCheck(long timestamp, String txId, double expBalance) = {balCheckCH.receive(Object inp)} 
+					where {	s = ((HashMap)inp).get("user").toString();
+									i = ((HashMap)inp).get("instrument").toString();
+									txId = ((HashMap)inp).get("txId").toString();
+									timestamp = (Long)((HashMap)inp).get("timestamp");
+									expBalance = (Double)((HashMap)inp).get("balance"); }
+                         	  
+				balUpdate(long timestamp, double adjustment) = {balUpdateCH.receive(Object inp)} 
+					where {	s = ((HashMap)inp).get("user").toString();
+									i = ((HashMap)inp).get("instrument").toString();
+									timestamp = (Long)((HashMap)inp).get("timestamp");
+									adjustment = (Double)((HashMap)inp).get("adjustment"); }
+			}
+
+
+			Property instrument_lc
+			{
+				STATES
+				{
+					BAD
+					{ noright
+						%%unexpected 
+					}
+					NORMAL
+					{
+						assigned restricted fallow_assigned
+						%%fallow_unassigned closed
+					}
+					STARTING { unassigned }
+				}
+
+				TRANSITIONS
+				{
+					unassigned -> assigned 
+					[ all2
+						\ t.is("Assign") && (USER_CREATE_VCC || !t.params.get("type").equals("VCC") || !origin.equals("WEB"))
+						\ type = t.params.get("type").toString();
+						if (t.params.get("currency") != null) 
+							currency = t.params.get("currency").toString();
+					]
+
+					unassigned -> noright
+					[ all2
+						\ t.is("Assign") 
+						\ System.out.println("Adding VCC without necessary rights!! user  " + s + " instrument: " + i + " " + timestamp);
+					]
+
+					assigned -> restricted %%freeze
+					[ all2
+						\ t.is("Restrict")
+						\ frozenInstruments++;
+							if (!t.params.get("freezeOrigin").equals("DORMANCY_FREEZE"))
+							{
+								nonDormfrozenInstruments++;
+								dormancy_freeze = true;
+							}
+					]
+					
+					assigned -> fallow_assigned
+					[ all2
+						\ t.is("Fallow") || (t.is("DelInstr") && (USER_DELETE_VCC || !t.params.get("type").equals("VCC")))
+						\
+					]
+
+					restricted -> assigned
+					[ all2
+						\ t.is("Unrestrict")  
+						\ frozenInstruments--;
+							if (!t.params.get("originalFreezeOrigin").equals("DORMANCY_FREEZE"))
+							{
+								nonDormfrozenInstruments--;
+								dormancy_freeze = false;
+							}
+					]
+
+					restricted -> fallow_assigned
+					[ all2
+						\ t.is("Fallow") || (t.is("DelInstr") && (USER_DELETE_VCC || !t.params.get("type").equals("VCC")))
+						\ frozenInstruments--;
+							if (dormancy_freeze)
+								nonDormfrozenInstruments--;
+					]
+					
+				}
+			}
+   
+			Property balance_check
+			{
+				States
+				{
+					Bad { unexpectedBalance } 		
+					Starting { start }
+				}
+				
+				Transitions
+				{
+					start -> start
+					[ balCheck
+						\ expBalance == balance
+						\ %%System.out.println("balance ok: " + balance);
+					]
+					
+					start -> unexpectedBalance
+					[ balCheck
+						\
+						\ System.out.println("Expected balance: " + expBalance + " found(at monitor): " + balance
+						+ "\r\n user: " + s + " allocation: " + i + " at " + timestamp + " TX ID: " + txId
+						+ "\r\n origin: " + origin + " scheme: " + scheme + " type: " + type
+					  + "\r\n dormancy_freeze: " + dormancy_freeze + " defaultInstr: " + defaultInstr);
+						%%+ "\r\n tx: " + t.params);
+					]
+				}
+			}
+
+			Property balance_update
+			{
+				States
+				{
+					%%BAD { unexpectedBalance }
+					Starting { start }
+				}
+				
+				Transitions
+				{
+					start -> start
+					[ balUpdate
+						\ 
+						\ balance += adjustment; 
+						%%System.out.println("balance adjusted: " + balance);
+					]
+				}
+			}
+   
+			Initially { SC.initiallyInstruments(); }
+			 
+		} %%Foreach Instrument
+ 
+		Initially { SC.initiallyUsers(); }
+		 
+	} %%Foreach User
+
+} %%Global
+
+
+Methods
+{
+  %%CHRIS - IXARIS:
+	import C:\Documents and Settings\ixaris\Desktop\projects3\Larva Scalable (Offline)\properties\sc.java;
+	
+	%%MARK - UNI:
+	%%import C:\Documents and Settings\Administrator\My Documents\Academic\University\MSc\Code\Larva Scalable (Offline)\properties\sc.java;
+	%%MARK - HOME:
+	%%import C:\Documents and Settings\Mark\My Documents\Academic\University\MSc\Code\Larva Scalable (Offline)\properties\sc.java;
+}

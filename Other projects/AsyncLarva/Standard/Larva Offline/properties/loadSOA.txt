@@ -1,0 +1,50 @@
+IMPORTS{
+import Events.Template;
+}
+
+GLOBAL {
+
+ FOREACH (String s) {
+
+ VARIABLES {
+
+  int period = 20;%%minutes
+  int limit = 6;%%events
+  
+  long[] timestamps = new long[limit];
+  int count = 0;
+  }
+  
+ EVENTS {
+   all(timestamp,t) = {Template t.call(String name, long timestamp)} 
+     where s = t.params.get("userId").toString();
+  
+ }
+ 
+ PROPERTY count {
+ 
+  STATES {
+   BAD { action {System.out.println(s + " Action Recommended: restrict_load_right");} }
+   STARTING {start} 
+  }
+  
+  TRANSITIONS {
+   start -> action 
+     [ all
+     \ t.is("LoadTX")
+      && (count+1) >= limit
+      && timestamp - timestamps[limit-1] < period*60*1000
+     \
+     ]
+   start -> start 
+     [ all
+     \ 
+     \ count++; 
+       for(int i=limit-2;i>=0;i--)
+         timestamps[i+1]=timestamps[i]; 
+       timestamps[0]=timestamp; 
+     ]
+   }
+ }
+ }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;lifts.lrv&apos; to &apos;LarvaTesting&apos;" description="Move &apos;lifts.lrv&apos; to &apos;LarvaTesting&apos;" destination="/LarvaTesting" element1="/Larva/lifts.lrv" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1523858827181" updateReferences="true"/>
+</session>

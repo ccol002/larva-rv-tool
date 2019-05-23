@@ -1,0 +1,37 @@
+GLOBAL {
+
+FOREACH (User u) {
+
+  VARIABLES {
+    Clock timer; 
+    int count = 0; 
+    Channel action;
+    Channel open;
+  }
+
+  EVENTS {
+    login(int sessionID) = {User u1.login(int sessionID)} where {u = u1;}
+    actionevent()        = {action.receive(sessionID)} where {u = getUser(sessionID);}
+    logout()             = {u1.logout()} where {u = u1;}
+    badpassword()        = {u1.badpassword()} where {u = u1;}
+    cAT30()              = {timer@30}
+  }
+
+  PROPERTY badlogins {
+    STATES {
+      BAD { bad }
+      NORMAL { loggedin }
+      STARTING { loggedout }
+    }
+    TRANSITIONS {
+      loggedout -> loggedin  [ login(sessionID) // count=0; timer.reset(); open(sessionID).send(); ]
+      loggedin  -> loggedin  [ actionevent // timer.reset(); ]
+      loggedin  -> loggedout [ logout ]
+      loggedout -> loggedout [ badpassword / count < 3 / count++; ]
+      loggedout -> bad       [ badpassword / count > 2 / ]
+      loggedin  -> loggedout [ cAT30 / / ]
+    }
+  }
+}
+
+}

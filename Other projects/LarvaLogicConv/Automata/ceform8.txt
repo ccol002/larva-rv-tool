@@ -1,0 +1,1 @@
+not (true;change(badlogin);[true] and len <= 1000;change(badlogin);true)

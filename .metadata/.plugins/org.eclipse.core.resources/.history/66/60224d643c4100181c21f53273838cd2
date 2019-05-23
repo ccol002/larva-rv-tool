@@ -1,0 +1,90 @@
+IMPORTS {
+import main.*;
+}
+
+
+GLOBAL {
+	FOREACH (Lift l) {
+		
+		VARIABLES {
+			
+			%%the lift's clock
+			Clock doorOpenClock = new Clock();
+			
+			%%maximum floor that lift can reach
+			int maximumFloors = 0;
+			
+			%%the current floor of the lift
+			int currentFloor = -1;
+			
+			%%the destination
+			int destinationFloor = -1;
+			
+		 	%%lift is called
+		 	boolean called = false;
+			
+		}
+		
+		EVENTS {
+			
+			setMaxFloors(Lift l1, int maxFloorsApp) = {l1.setMaximumFloors(maxFloorsApp)} where {l = l1;}
+			
+			move(Lift l1, boolean moving) = {l1.setMoving(moving)} where {l = l1;}
+			
+			setCurrentFloor(Lift l1, int floorApp) = {l1.setFloor(floorApp)} where {l = l1;}
+			
+			close(Lift l1) = {l1.closeDoors()} where {l = l1;}
+			
+			open(Lift l1) = {l1.openDoors()} where {l = l1;}
+			
+			called(Lift li1, int destFloorApp) = {l1.callTo(destFloorApp)} where {l = l1;}
+		}
+		
+		PROPERTY LiftControllerProperty {
+			STATES {
+				BAD {
+					bad
+				}
+				NORMAL {
+					moving
+					stationaryDoorsOpened
+					stationaryDoorsClosed
+				
+				}
+				STARTING {
+					maxFloorsNotSet
+				}
+			}
+	
+			TRANSITIONS {
+				
+				maxFloorsNotSet -> stationaryDoorsClosed [setMaxFloors\\maximumFloors = maxFloorsApp; System.out.println("Maximum floors set");]
+				
+				moving -> bad [move\moving == false && currentFloor != destinationFloor\System.out.println("Lift was stopped between floors");]
+				moving -> bad [setCurrentFloor\floorApp > maximumFloors || floorApp < 0\ System.out.println("Floor exceeded the floor limit or below 0");]
+				moving -> bad [open\\System.out.println("Cannot open doors while moving");]
+				moving -> bad [called\destFloorApp < 0 || destFloorApp > maximumFloors\System.out.println("Cannot be called to a floor greater than the limit or lower than 0");]
+				moving -> moving [setCurrentFloor\\currentFloor = floorApp;]
+				moving -> stationaryDoorsClosed [move\moving == false && currentFloor == destinationFloor\called = false; System.out.println("Lift is stationary");]
+				%%moving -> moving [called\\destinationFloor = destFloorApp; called = true;]
+				
+				stationaryDoorsClosed -> bad [close\\System.out.println("Elevator is already closed");]
+				stationaryDoorsClosed -> bad [called\destFloorApp < 0 || destFloorApp > maximumFloors\System.out.println("Cannot be called to a floor greater than the limit or lower than 0");]
+				stationaryDoorsClosed -> moving [move\moving == true && called\System.out.println("Lift is moving");]
+				stationaryDoorsClosed -> stationaryDoorsClosed [setCurrentFloor\\currentFloor = floorApp;]
+				%%stationaryDoorsClosed -> stationaryDoorsClosed [called\\destinationFloor = destFloorApp; called = true;]
+				stationaryDoorsClosed -> stationaryDoorsOpened [called\destFloorApp == currentFloor\called = true; destinationFloor = destFloorApp; System.out.println("Lift door is re-opened since it was re-summoned at the current floor or it reached the destination floor");]
+				%%stationaryDoorsClosed -> stationaryDoorsOpened [open\destinationFloor == currentFloor\System.out.println("Lift is stationary with doors closed");]
+				
+				stationaryDoorsOpened -> bad [open\\System.out.println("Elevator is already opened");]
+				stationaryDoorsOpened -> bad [close\doorOpenClock.compareTo(3)< 0\System.out.println("Door was closed before 3 seconds");]
+				stationaryDoorsOpened -> bad [move\moving == true\System.out.println("Elevator cannot move with doors open");]
+				stationaryDoorsOpened -> bad [called\destFloorApp < 0 || destFloorApp > maximumFloors\System.out.println("Cannot be called to a floor greater than the limit or lower than 0");]
+				stationaryDoorsOpened -> stationaryDoorsClosed [close\doorOpenClock.compareTo(3)>= 0\System.out.println("Door closed after three seconds");]
+				stationaryDoorsOpened -> stationaryDoorsOpened [setCurrentFloor\\currentFloor = floorApp;]
+				%%stationaryDoorsOpened -> stationaryDoorsOpened [called\destFloorApp == currentFloor\destinationFloor = destFloorApp; called = true;]				
+				
+			}
+		}
+	}
+}

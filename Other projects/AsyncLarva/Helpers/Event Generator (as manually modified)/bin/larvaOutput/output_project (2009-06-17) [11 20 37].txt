@@ -1,0 +1,274 @@
+[LARVA] Monitoring started at  2009-06-17 11:20:37
+[balance_check]Expected balance: -818.63 found(at monitor): -766.15
+ user: user168750 allocation: 200804206d3630895f685284 at 1230049713962 TX ID: 11e64ad1f2b020e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1230039314833, user=user183500, transactionAmount=4000.00, transactionCurrency=THB, transactionEntryId=11e640e71920b0e, instrument=11e3fd326ce0e0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[dormancy]Expired Dormancy! User: user160000 1214246885106->1229798885106
+[breakage]Expired Breakage! user user161750 1198762863843->1230126063843
+[dormancy]Expired Dormancy! User: user36750 1214315131330->1229867131330
+[balance_check]Expected balance: -7755.74 found(at monitor): -7860.69
+ user: user163000 allocation: 200805200620f414ad69a71e at 1230139077697 TX ID: 11e6a00b441070e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1230132900809, user=user172250, transactionAmount=500.00, transactionCurrency=USD, transactionEntryId=11e69a273c9060e, instrument=20081008ddd2aaefab7fbccb, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[dormancy]Expired Dormancy! User: user234750 1214330659288->1229882659288
+[breakage]Expired Breakage! user user116500 1198835431133->1230198631133
+[dormancy]Expired Dormancy! User: user47000 1214395627127->1229947627127
+[breakage]Expired Breakage! user user211750 1198844728697->1230207928697
+[dormancy]Dormancy done!! User user234750 at 1230221892100 94.23133666666666 hours late
+[dormancy]Expired Dormancy! User: user28750 1214422621167->1229974621167
+[dormancy]Expired Dormancy! User: user86500 1214493449557->1230045449557
+[dormancy]Dormancy done!! User user86500 at 1230309688641 73.39974555555555 hours late
+[dormancy]Expired Dormancy! User: user149000 1214539769016->1230091769016
+[breakage]Expired Breakage! user user110250 1199002231323->1230365431323
+[breakage]Breakage done!! user user161750 at 146.5041475 hours late
+[breakage]Expired Breakage! user user185750 1199063392732->1230426592732
+[dormancy]Expired Dormancy! User: user45250 1214637497528->1230189497528
+[breakage]Breakage done!! user user211750 at 147.59850305555557 hours late
+[breakage]Breakage done!! user user116500 at 150.34526666666667 hours late
+[dormancy]Dormancy done!! User user45250 at 1230567694311 105.05466194444445 hours late
+[dormancy]Expired Dormancy! User: user226250 1214788911956->1230340911956
+[dormancy]Expired Dormancy! User: user9750 1214810010221->1230362010221
+[breakage]Expired Breakage! user user186750 1199270126668->1230633326668
+[breakage]Breakage done!! user user110250 at 151.97901916666666 hours late
+[dormancy]Dormancy done!! User user9750 at 1230653938808 81.09127416666666 hours late
+[dormancy]Expired Dormancy! User: user148500 1214870530673->1230422530673
+[dormancy]Expired Dormancy! User: user140250 1214871093260->1230423093260
+[breakage]Breakage done!! user user185750 at 158.88048583333332 hours late
+[breakage]Expired Breakage! user user203500 1199386493295->1230749693295
+[dormancy]Dormancy done!! User user148500 at 1230826178676 112.12444527777778 hours late
+[breakage]Breakage done!! user user186750 at 149.44207972222222 hours late
+[dormancy]Expired Dormancy! User: user235750 1215105534400->1230657534400
+[dormancy]Expired Dormancy! User: user14250 1215124474605->1230676474605
+[breakage]Expired Breakage! user user236000 1199615894306->1230979094306
+[breakage]Expired Breakage! user user33000 1199640541421->1231003741421
+[breakage]Breakage done!! user user203500 at 165.1806552777778 hours late
+[breakage]Expired Breakage! user user116750 1199778367836->1231141567836
+[breakage]Expired Breakage! user user205250 1199846861178->1231210061178
+[breakage]Breakage done!! user user236000 at 149.50806333333333 hours late
+[breakage]Expired Breakage! user user215500 1199910301424->1231273501424
+[dormancy]Expired Dormancy! User: user214500 1215470955763->1231022955763
+[breakage]Expired Breakage! user user240750 1199931001840->1231294201840
+[dormancy]Expired Dormancy! User: user4250 1215500153123->1231052153123
+[breakage]Expired Breakage! user user219500 1199960933492->1231324133492
+[dormancy]Expired Dormancy! User: user131250 1215516075844->1231068075844
+[breakage]Breakage done!! user user33000 at 166.57798055555557 hours late
+[dormancy]Expired Dormancy! User: user13000 1215550465737->1231102465737
+[dormancy]Expired Dormancy! User: user27000 1215555395440->1231107395440
+[dormancy]Expired Dormancy! User: user127750 1215566057455->1231118057455
+[breakage]Expired Breakage! user user124750 1200033842437->1231397042437
+[breakage]Expired Breakage! user user21250 1200062413822->1231425613822
+[breakage]Breakage done!! user user116750 at 152.4213763888889 hours late
+[dormancy]Dormancy done!! User user131250 at 1231431835839 101.04444305555556 hours late
+[breakage]Expired Breakage! user user247500 1200069135679->1231432335679
+[breakage]Expired Breakage! user user38500 1200100514789->1231463714789
+[dormancy]Expired Dormancy! User: user101500 1215664661483->1231216661483
+[breakage]Expired Breakage! user user101750 1200132093645->1231495293645
+[breakage]Expired Breakage! user user215750 1200152579117->1231515779117
+[breakage]Breakage done!! user user205250 at 157.23292555555557 hours late
+[dormancy]Dormancy done!! User user13000 at 1231518818023 115.65341277777777 hours late
+[dormancy]Expired Dormancy! User: user100000 1215743996012->1231295996012
+[dormancy]Expired Dormancy! User: user169000 1215749447932->1231301447932
+[breakage]Expired Breakage! user user52750 1200215297307->1231578497307
+[breakage]Breakage done!! user user215500 at 163.66520222222223 hours late
+[breakage]Breakage done!! user user219500 at 149.6193147222222 hours late
+[breakage]Breakage done!! user user240750 at 157.94716194444445 hours late
+[dormancy]Early Dormancy at 1231604478004 user user228000
+[dormancy]Expired Dormancy! User: user91000 1215794200737->1231346200737
+[dormancy]Expired Dormancy! User: user155500 1215848689085->1231400689085
+[breakage]Expired Breakage! user user55500 1200312041836->1231675241836
+[breakage]Breakage done!! user user21250 at 145.36226638888888 hours late
+[breakage]Breakage done!! user user124750 at 153.5819375 hours late
+[dormancy]Dormancy done!! User user100000 at 1231691412486 109.83790944444445 hours late
+[dormancy]Dormancy done!! User user169000 at 1231691456723 108.33577527777778 hours late
+[dormancy]Expired Dormancy! User: user50500 1215907326097->1231459326097
+[breakage]Breakage done!! user user247500 at 167.59398444444443 hours late
+[breakage]Breakage done!! user user215750 at 144.49299861111112 hours late
+[breakage]Breakage done!! user user101750 at 150.19699555555556 hours late
+[breakage]Breakage done!! user user38500 at 159.01920194444443 hours late
+[dormancy]Dormancy done!! User user91000 at 1231777346139 119.76261166666667 hours late
+[dormancy]Expired Dormancy! User: user41750 1215966378644->1231518378644
+[dormancy]Dormancy done!! User user155500 at 1231777626946 104.70496138888889 hours late
+[dormancy]Expired Dormancy! User: user242000 1215977786631->1231529786631
+[dormancy]Expired Dormancy! User: user5500 1215981636089->1231533636089
+[breakage]Expired Breakage! user user24000 1200498988657->1231862188657
+[breakage]Breakage done!! user user52750 at 150.90740333333332 hours late
+[dormancy]Dormancy done!! User user50500 at 1231863651207 112.31253055555555 hours late
+[dormancy]Expired Dormancy! User: user137000 1216076211452->1231628211452
+[breakage]Breakage done!! user user55500 at 148.1120527777778 hours late
+[dormancy]Expired Dormancy! User: user49500 1216155687594->1231707687594
+[breakage]Expired Breakage! user user58750 1200612655045->1231975855045
+[breakage]Expired Breakage! user user66250 1200627633309->1231990833309
+[dormancy]Expired Dormancy! User: user193250 1216207384906->1231759384906
+[dormancy]Expired Dormancy! User: user202750 1216211316021->1231763316021
+[dormancy]Expired Dormancy! User: user120750 1216218068474->1231770068474
+[dormancy]Expired Dormancy! User: user240500 1216218552179->1231770552179
+[dormancy]Expired Dormancy! User: user46000 1216229716944->1231781716944
+[breakage]Expired Breakage! user user54500 1200684752742->1232047952742
+[balance_check]Expected balance: -440.79 found(at monitor): -419.8
+ user: user199250 allocation: 2008033000d271c1fd763710 at 1232065365628 TX ID: 11edcd1867c0c0e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1232044735851, user=user172250, transactionAmount=200.00, transactionCurrency=USD, transactionEntryId=11edb96bd6c0b0e, instrument=11ea820d58c0a0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[breakage]Expired Breakage! user user211500 1200744392004->1232107592004
+[breakage]Breakage done!! user user24000 at 144.22677194444444 hours late
+[dormancy]Dormancy done!! User user120750 at 1232122392851 97.8678825 hours late
+[dormancy]Dormancy done!! User user202750 at 1232123356181 100.01115555555556 hours late
+[dormancy]Dormancy done!! User user240500 at 1232123510641 98.04401722222222 hours late
+[breakage]Expired Breakage! user user158750 1200761128366->1232124328366
+[dormancy]Expired Dormancy! User: user196250 1216314273035->1231866273035
+[breakage]Expired Breakage! user user72250 1200769541041->1232132741041
+[breakage]Expired Breakage! user user208000 1200792125444->1232155325444
+[dormancy]Expired Dormancy! User: user94750 1216370749148->1231922749148
+[breakage]Expired Breakage! user user23250 1200825802921->1232189002921
+[dormancy]Expired Dormancy! User: user57750 1216384450034->1231936450034
+[dormancy]Expired Dormancy! User: user216750 1216408684077->1231960684077
+[breakage]Expired Breakage! user user40000 1200857347813->1232220547813
+[breakage]Expired Breakage! user user116000 1200860232902->1232223432902
+[dormancy]Expired Dormancy! User: user92250 1216437482123->1231989482123
+[dormancy]Expired Dormancy! User: user56000 1216474568582->1232026568582
+[breakage]Expired Breakage! user user155250 1200927383493->1232290583493
+[breakage]Breakage done!! user user66250 at 156.35393444444443 hours late
+[breakage]Breakage done!! user user58750 at 160.5146861111111 hours late
+[dormancy]Dormancy done!! User user57750 at 1232295217022 99.65749666666666 hours late
+[dormancy]Expired Dormancy! User: user198250 1216497746463->1232049746463
+[breakage]Breakage done!! user user211500 at 147.98852638888889 hours late
+[dormancy]Expired Dormancy! User: user10250 1216588381911->1232140381911
+[breakage]Expired Breakage! user user92000 1201089585211->1232452785211
+[dormancy]Expired Dormancy! User: user76500 1216651572935->1232203572935
+[breakage]Breakage done!! user user208000 at 158.74939833333335 hours late
+[breakage]Breakage done!! user user158750 at 167.3840575 hours late
+[breakage]Breakage done!! user user23250 at 149.68821694444443 hours late
+[breakage]Breakage done!! user user72250 at 165.33446527777778 hours late
+[dormancy]Dormancy done!! User user198250 at 1232469759177 116.67019833333333 hours late
+[breakage]Breakage done!! user user116000 at 163.92499805555556 hours late
+[breakage]Breakage done!! user user40000 at 164.9459011111111 hours late
+[dormancy]Dormancy done!! User user76500 at 1232561024453 99.29208833333334 hours late
+[dormancy]Expired Dormancy! User: user188500 1216776329077->1232328329077
+[breakage]Expired Breakage! user user229000 1201229440789->1232592640789
+[dormancy]Expired Dormancy! User: user245000 1216799757096->1232351757096
+[dormancy]Expired Dormancy! User: user104250 1216868294226->1232420294226
+[dormancy]Expired Dormancy! User: user74500 1216900602810->1232452602810
+[breakage]Breakage done!! user user92000 at 148.28082361111112 hours late
+[dormancy]Dormancy done!! User user245000 at 1232728600900 104.67883444444445 hours late
+[balance_check]Expected balance: -703.16 found(at monitor): -682.17
+ user: user48000 allocation: 200805303b823ebacf21642f at 1232752580059 TX ID: 11f05c795db060e
+ origin: WEB scheme: BASIC type: BANKCARD
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1232732537374, user=user183500, transactionAmount=10000.00, transactionCurrency=THB, transactionEntryId=11f0495c21e0c0e, instrument=11e3fd326ce0e0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: 4.95 found(at monitor): 104.95
+ user: user222000 allocation: 11f05a1dd9e0a0e at 1232758287311 TX ID: 11f061eabcf020e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1232758282231, user=user222000, instrument=11f05a1dd9e0a0e, freezeOrigin=OPS_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[breakage]Expired Breakage! user user65000 1201421545228->1232784745228
+[dormancy]Dormancy done!! User user74500 at 1232814944882 100.65057555555556 hours late
+[breakage]Expired Breakage! user user187250 1201458138868->1232821338868
+[dormancy]Expired Dormancy! User: user59250 1217068061118->1232620061118
+[breakage]Breakage done!! user user229000 at 157.2664472222222 hours late
+[breakage]Expired Breakage! user user37500 1201540125016->1232903325016
+[dormancy]Expired Dormancy! User: user500 1217117336410->1232669336410
+[dormancy]Expired Dormancy! User: user128000 1217158784281->1232710784281
+[breakage]Expired Breakage! user user155750 1201610176454->1232973376454
+[breakage]Expired Breakage! user user137250 1201672065052->1233035265052
+[balance_check]Expected balance: 0.0 found(at monitor): 9.99
+ user: user58000 allocation: 11ef3e67171000e at 1233055321004 TX ID: 11f17d30bac040e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233001611004, user=user61000, transactionAmount=50.00, transactionCurrency=USD, transactionEntryId=11f149f7efc0a0e, instrument=11ed59a93610c0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[breakage]Breakage done!! user user65000 at 151.96355194444445 hours late
+[dormancy]Dormancy done!! User user500 at 1233073996310 112.40552777777778 hours late
+[dormancy]Expired Dormancy! User: user43500 1217284061019->1232836061019
+[breakage]Expired Breakage! user user207250 1201746956755->1233110156755
+[breakage]Expired Breakage! user user39750 1201770371361->1233133571361
+[breakage]Breakage done!! user user187250 at 165.67830666666666 hours late
+[breakage]Expired Breakage! user user160500 1201799404687->1233162604687
+[dormancy]Expired Dormancy! User: user96500 1217394794952->1232946794952
+[balance_check]Expected balance: -83.96 found(at monitor): -41.98
+ user: user57500 allocation: 11f0f57d658030e at 1233230030043 TX ID: 11f223ce4db0e0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233218096908, user=user171500, transactionAmount=261.00, transactionCurrency=USD, transactionEntryId=11f2186cf0d0f0e, instrument=11ef8b90d77090e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[balance_check]Expected balance: -1128.1 found(at monitor): -1108.16
+ user: user105750 allocation: 11e78f415730c0e at 1233231553033 TX ID: 11f225422090d0e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233218096908, user=user171500, transactionAmount=261.00, transactionCurrency=USD, transactionEntryId=11f2186cf0d0f0e, instrument=11ef8b90d77090e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[dormancy]Expired Dormancy! User: user70000 1217424079608->1232976079608
+[breakage]Breakage done!! user user155750 at 147.43005083333333 hours late
+[breakage]Breakage done!! user user37500 at 167.05829 hours late
+[dormancy]Dormancy done!! User user43500 at 1233246549814 114.02466527777777 hours late
+[dormancy]Expired Dormancy! User: user79500 1217446458915->1232998458915
+[breakage]Expired Breakage! user user95000 1201960629006->1233323829006
+[breakage]Breakage done!! user user137250 at 154.34561805555555 hours late
+[dormancy]Expired Dormancy! User: user7000 1217545560011->1233097560011
+[dormancy]Expired Dormancy! User: user114500 1217559049634->1233111049634
+[breakage]Expired Breakage! user user219250 1202038952610->1233402152610
+[breakage]Expired Breakage! user user249000 1202054952786->1233418152786
+[breakage]Breakage done!! user user207250 at 157.63511444444444 hours late
+[breakage]Expired Breakage! user user112500 1202069510625->1233432710625
+[dormancy]Expired Dormancy! User: user146250 1217667091165->1233219091165
+[dormancy]Expired Dormancy! User: user232500 1217667810188->1233219810188
+[dormancy]Expired Dormancy! User: user4500 1217671088335->1233223088335
+[breakage]Breakage done!! user user160500 at 167.232755 hours late
+[dormancy]Dormancy done!! User user114500 at 1233506981208 109.98099277777777 hours late
+[balance_check]Expected balance: -522.5 found(at monitor): -418.0
+ user: user87250 allocation: 11f2b61071e0a0e at 1233548491157 TX ID: 11f35383995040e
+ origin: WEB scheme: BASIC type: null
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233532270995, user=user231000, instrument=11e5f30c9e40b0e, freezeOrigin=OPS_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[dormancy]Expired Dormancy! User: user104500 1217749273445->1233301273445
+[breakage]Expired Breakage! user user123000 1202199987309->1233563187309
+[dormancy]Expired Dormancy! User: user133750 1217764205387->1233316205387
+[balance_check]Expected balance: 112.33 found(at monitor): 117.21
+ user: user39500 allocation: 20080814c31e660645566a78 at 1233575698623 TX ID: 11f36d760c0050e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: false defaultInstr: false
+ tx: {creationTimestamp=1233564910882, user=user172250, transactionAmount=150.00, transactionCurrency=USD, transactionEntryId=11f3632c523030e, instrument=11ea820d58c0a0e, DTYPE=CallCentreLoadTXEntry, transactionEntryStatus=SUCCESSFUL}
+[breakage]Breakage done!! user user95000 at 146.43857111111112 hours late
+[dormancy]Dormancy done!! User user4500 at 1233592318450 102.56392083333333 hours late
+[dormancy]Dormancy done!! User user232500 at 1233593721620 103.86428666666667 hours late
+[breakage]Expired Breakage! user user122250 1202274461034->1233637661034
+[dormancy]Dormancy done!! User user133750 at 1233677458434 100.34806861111112 hours late
+[breakage]Breakage done!! user user219250 at 148.49247055555554 hours late
+[dormancy]Dormancy done!! User user104500 at 1233678238968 104.71264527777778 hours late
+[dormancy]Expired Dormancy! User: user1750 1217894489398->1233446489398
+[dormancy]Expired Dormancy! User: user216500 1217896679158->1233448679158
+[breakage]Expired Breakage! user user123500 1202362285028->1233725485028
+[balance_check]Expected balance: 0.95 found(at monitor): -10.0
+ user: user189000 allocation: 20080704ef14799de3336502 at 1233744216203 TX ID: 11f40e2c08b020e
+ origin: WEB scheme: BASIC type: VCC
+ dormancy_freeze: true defaultInstr: false
+ tx: {creationTimestamp=1233741921371, user=user241500, instrument=11f33131406020e, freezeOrigin=OPS_FREEZE, DTYPE=FreezeTXEntry, transactionEntryStatus=SUCCESSFUL}
+[breakage]Expired Breakage! user user126500 1202381247484->1233744447484
+[breakage]Breakage done!! user user112500 at 163.94265777777778 hours late
+[breakage]Breakage done!! user user249000 at 168.12591333333333 hours late
+[dormancy]Expired Dormancy! User: user137750 1217982929544->1233534929544
+[breakage]Expired Breakage! user user233000 1202434341521->1233797541521
+[breakage]Breakage done!! user user123000 at 151.73794944444444 hours late
+[dormancy]Dormancy done!! User user216500 at 1233850863298 111.71781666666666 hours late
+[breakage]Expired Breakage! user user85250 1202493796400->1233856996400
+[breakage]Expired Breakage! user user201000 1202498239595->1233861439595
+[breakage]Expired Breakage! user user102750 1202513901065->1233877101065
+[breakage]Expired Breakage! user user143250 1202516105187->1233879305187
+[dormancy]Expired Dormancy! User: user91500 1218069644691->1233621644691
+[dormancy]Expired Dormancy! User: user120250 1218078428160->1233630428160
+[breakage]Expired Breakage! user user9500 1202552540553->1233915740553
+[breakage]Breakage done!! user user122250 at 156.12285333333332 hours late
+[dormancy]Expired Dormancy! User: user69750 1218156011125->1233708011125
+[breakage]Breakage done!! user user123500 at 154.74932638888887 hours late
+[breakage]Breakage done!! user user126500 at 149.52315805555557 hours late
+[dormancy]Expired Dormancy! User: user204250 1218258940632->1233810940632
+[breakage]Expired Breakage! user user126250 1202715703122->1234078903122
+[breakage]Expired Breakage! user user112250 1202744734321->1234107934321
+[breakage]Breakage done!! user user233000 at 158.6764452777778 hours late
+[dormancy]Dormancy done!! User user69750 at 1234111258513 112.01316333333334 hours late
+[dormancy]Expired Dormancy! User: user199750 1218321653002->1233873653002
+[breakage]Breakage done!! user user143250 at 159.798795 hours late
+[breakage]Breakage done!! user user102750 at 160.4364786111111 hours late
+[breakage]Breakage done!! user user9500 at 149.71114305555557 hours late
+[breakage]Breakage done!! user user201000 at 164.98184 hours late
+[breakage]Breakage done!! user user85250 at 166.21689805555556 hours late
+[dormancy]Expired Dormancy! User: user136500 1218446504910->1233998504910
+[dormancy]Expired Dormancy! User: user41000 1218446854322->1233998854322

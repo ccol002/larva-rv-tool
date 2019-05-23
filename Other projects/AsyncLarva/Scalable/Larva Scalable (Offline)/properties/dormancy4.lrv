@@ -1,0 +1,325 @@
+
+%%%%%%%%%%%%%%%%%%%% Properties being monitored %%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% 1> Any user which should be dormant or closed and is not, is detected
+%% 2> Any user which is frozen by dormancy or broken by breakage prematurely, is detected
+%% 3> Any user transaction while the user is dormant or closed is detected 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+IMPORTS {
+import Events.Template;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+}
+
+GLOBAL {
+
+ INITIALIZEIF{SC.initializeifMain}
+
+ VARIABLES {   
+  int idp_limit = 180*24*60*60; %%seconds
+  int drp_limit = 30*24*60*60;
+  int bwp_limit = 330*24*60*60;
+  int bp_limit = 360*24*60*60;
+  
+  }
+
+
+ FOREACH (String s) {
+ 
+ INITIALIZEIF{SC.initializeif}
+ 
+ VARIABLES {
+  
+  long passStart = RunningClock.now;
+  long lastFreeze;
+  boolean feeExpected = false;
+  
+  boolean hasRights= true; %%how many different rights?
+ 
+  Clock idp;
+  Clock drp;
+  Clock bp;
+  
+  }
+  
+    
+ EVENTS {
+  cATidp(timestamp) = {idp @d 181} where {timestamp = RunningClock.now;}
+  cATdrp(timestamp) = {drp @d 31} where {timestamp = RunningClock.now;}
+  cATbp(timestamp) = {bp @d 361} where {timestamp = RunningClock.now;}
+  
+  all(timestamp,t) = {Template t.call(String name, long timestamp)}
+  					%%  filter {t.params.containsKey("userId")}
+                      where {s = t.params.get("user").toString();}
+
+ %% accStatusChange(timestamp) = {Template t.call(String name, long timestamp)}
+ %% 								filter {t.params.containsKey("targetUser")}
+ %%                               where {s = t.params.get("targetUser").toString();}
+  
+ }
+ 
+ %% User revoked the right USER_LOAD_VCC
+ 
+%% Set rights for user to [USER_LOGIN, USER_LOCK_ACCOUNT,
+ 
+ %%Failed to change 
+ 
+ 
+ 
+ 
+%% PROPERTY userStatus {
+%%  STATES {}
+   
+%%   TRANSITIONS {}
+  
+%%  }
+  
+  
+ PROPERTY user_lc {
+  STATES {
+   BAD { unexpectedTX expiredDorm expiredBreak earlyDorm earlyBreak }
+   NORMAL { created active suspended locked frozen closed }
+   STARTING {start} 
+  }
+  TRANSITIONS {
+   
+   start -> created
+     [ all
+     \ t.is("Creation")
+     \
+     ]
+     
+   start -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+     
+   created -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+     
+   created -> active
+     [ all
+     \ t.is("Activation")
+     \
+     ]
+     
+   active -> active    %%only when active??????
+     [ all
+     \ t.is("ChangeRights")
+     \
+     ]  
+     
+   active -> locked
+     [ all
+     \ t.is("AcctLock")
+     \
+     ]  
+    
+   locked -> active
+     [ all
+     \ t.is("AcctUnSuspend") %%???????
+     \
+     ]   
+     
+   active -> suspended
+     [ all
+     \ t.is("AcctSuspend")
+     \
+     ]    
+   
+   suspended -> active
+     [ all
+     \ t.is("AcctUnSuspend")
+     \
+     ]  
+   
+   active -> frozen 
+     [ all 
+     \ t.is("DormTX") && idp.current(timestamp) >= idp_limit
+     \ drp.reset(timestamp);
+       feeExpected = true; 
+       lastFreeze = timestamp; 
+       System.out.println(s + " Frozen at " + timestamp);
+     ]  
+   active -> earlyDorm 
+     [ all 
+     \ t.is("DormTX") 
+     \ System.out.println(s + " Frozen at " + timestamp);
+     ] 
+   active -> earlyBreak 
+     [ all 
+     \ t.is("BreakTX") 
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]     
+   active -> expiredDorm 
+     [ cATidp
+     \ %%passedDays(passStart,timestamp,idp)
+     \ System.out.println(s + " Expired Dormancy!1 " + passStart + "->" + timestamp);
+     ]   
+   active -> expiredBreak 
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]      
+   active -> active 
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+     ]   
+   frozen -> active
+     [ all
+     \ t.is("NormTX")
+     \ passStart = timestamp; 
+       idp.reset(timestamp);
+       bp.reset(timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+         feeExpected = false;
+       }
+     ]
+   frozen -> closed  
+     [ all
+     \ t.is("BreakTX") && bp.current(timestamp) >= bp_limit
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]      
+   frozen -> earlyBreak  
+     [ all
+     \ t.is("BreakTX")
+     \ System.out.println(s + " Closed at " + timestamp);   
+     ]        
+   frozen -> frozen
+     [ all 
+     \ t.is("DormFeeTX") 
+     \ feeExpected = false; 
+       System.out.println(s + " Fee taken at " + timestamp);
+     ]      
+   frozen -> frozen
+     [ all 
+     \ t.is("DormTX") && drp.current(timestamp) >= drp_limit
+     \ drp.reset(timestamp);
+       lastFreeze = timestamp;
+       %%System.out.println(s + " Frozen again at " + timestamp);
+       if (feeExpected) {
+         System.out.println(s + " Fee Expected!! Not Found! Check Credit!");
+       }
+       feeExpected = true;
+     ]  
+   frozen -> earlyDorm
+     [ all 
+     \ t.is("DormTX") 
+     \ %%System.out.println(s + " Frozen again at " + timestamp);
+     ]     
+   frozen -> expiredDorm
+     [ cATdrp
+     \ %%passedDays(lastFreeze,timestamp,drp)
+     \ System.out.println(s + " Expired Dormancy!2 " + lastFreeze + "->" + timestamp);
+     ]
+   frozen -> expiredBreak
+     [ cATbp
+     \ %%passedDays(passStart,timestamp,bp)
+     \ System.out.println(s + " Expired Breakage! " + passStart + "->" + timestamp);
+     ]   
+   frozen -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]
+   closed -> unexpectedTX
+     [ all
+     \ t.is("NormTX")
+     \
+     ]  
+   }  
+ }
+ 
+ FOREACH (String i)
+ {
+ INITIALIZEIF{SC.initializeifInstruments}
+
+ VARIABLES {
+ 
+ double balance = 0;
+ String currency = null;
+ String type = null; %%vcc/bankcard/namedbalance
+ }
+ 
+ EVENTS {
+ 
+ %%for now assume that the higher level events will not be broadcast to the
+ %%lower levels... this creates some complexities to obtain the context...
+ 
+   all(timestamp,t) = {Template t.call(String name, long timestamp)}
+  					  filter {t.params.containsKey("instrument")}
+                      where {s = t.params.get("user").toString();
+                     	     i = t.params.get("instrument").toString();}
+ 
+ }
+ 
+ PROPERTY instrument_lc {
+ 
+ STATES{
+   BAD { unexpected }
+   NORMAL {assigned restricted fallow_assigned fallow_unassigned closed}
+   STARTING {unassigned}
+ 
+ }
+ 
+ TRANSITIONS {
+ 
+ unassigned -> assigned 
+   [ all 
+   \ t.is("Assign")
+   \ type = t.params.get("type").toString();
+     currency = t.params.get("currency").toString();
+   ]
+   
+ assigned -> restricted
+   [ all
+   \ t.is("Restrict")
+   \
+   ]
+   
+ restricted -> assigned
+   [ all
+   \ t.is("Unrestrict")  
+   \
+   ]
+ 
+  assigned -> fallow_assigned
+   [ all
+   \ t.is("Fallow")
+   \
+   ] 
+   
+ 
+  }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ INITIALLY{SC.initiallyInstruments();} 
+ 
+ }
+ 
+ INITIALLY{SC.initiallyUsers();} 
+ 
+ }
+}
+
+METHODS {
+  import C:\Documents and Settings\ixaris\Desktop\projects3\Larva Scalable (Offline)\properties\sc.java;
+
+}

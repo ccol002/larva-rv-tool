@@ -1,0 +1,1 @@
+(not D) persist(1000) (Alarm)
