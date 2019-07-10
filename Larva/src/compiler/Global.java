@@ -447,6 +447,15 @@ public class Global extends Compiler{
 		//number of automata
 		cl.append("\r\nint no_automata;");
 		
+		//automaton methods
+		
+		cl.append("\r\n");
+		for (Property l:logics.values())
+			cl.append("\r\nint _state_id_"+l.name+";");
+		
+		
+		
+		
 		//clocks and other variable declarations		
 		for (Variable v:local.keySet())
 		{
@@ -571,12 +580,17 @@ public class Global extends Compiler{
 		
 		cl.append("\r\n\r\npublic void initialisation() {");
 		
-				//number of automata
-				cl.append("\r\nno_automata = "+logics.size()+";");
+		//number of automata
+		cl.append("\r\nno_automata = "+logics.size()+";");
 				
 		
+		cl.append("\r\n//initialise automata");
 		for (Property p : logics.values())
 		{
+
+			cl.append("\r\n_state_id_"+p.name+" = "+p.states.starting.get(0).id+";");
+			
+			
 			ArrayList<Token> code = p.states.starting.get(0).code;
 			if (code != null)
 				cl.append("\r\n\r\n" + Global.redirectOutput(Global.handleVariableReplacement(code,this)));

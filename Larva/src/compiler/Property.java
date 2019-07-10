@@ -30,7 +30,6 @@ public class Property extends Compiler {
 	
 	public void appendJava(StringBuilder sb, Global g, Global root)throws ParseException
 	{
-		sb.append("\r\nint _state_id_"+name+" = "+states.starting.get(0).id+";");
 		//translate logics
 		sb.append("\r\n\r\npublic void _performLogic_"+name+"(String _info, int... _event) {");
 		
