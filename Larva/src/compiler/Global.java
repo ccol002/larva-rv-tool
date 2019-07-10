@@ -410,38 +410,17 @@ public class Global extends Compiler{
 					"\r\npublic static _cls_" + this.name + this.id + " root;");
 		}
 		
+		//declare channels
 		for (Variable v:localVariables.values())
 			if (v.getVariableType().equals("Channel"))
-			{
-				cl.append("\r\npublic static " + v.getVariableType()+ " " + v.getVariableName()+" = new Channel();");
-			}
+				cl.append("\r\npublic static " + v.getVariableType()+ " " + v.getVariableName()+";");
 		
+		//declare hashmap
 		cl.append("\r\n\r\npublic static LinkedHashMap<_cls_"+name+id+",_cls_"+name+id+"> _cls_"+name+id
-				+ "_instances = new LinkedHashMap<_cls_"+name+id+",_cls_"+name+id+">();");
+				+ "_instances;");
 		
 		
-		//////////////////////////////////////////////////////////////////////////
-		// initialization of root
-		
-		if (this.id == 0)
-		{
-			cl.append("\r\nstatic{\r\ntry{");
 
-			if (!Compiler.console)//just output to console instead of file
-				cl.append("\r\npw = new PrintWriter(\""+Compiler.outputDir.replace("\\", "\\\\")
-					+"/output_"+name+".txt\");\r\n");
-
-			cl.append("\r\nroot = new _cls_" + this.name + this.id + "();" +
-					"\r\n_cls_" + this.name + this.id + "_instances.put(root, root);");
-
-			cl.append("\r\n  root.initialisation();");
-			
-//			for (Variable v:localVariables.values())
-//				if (v.getVariableType().equals("Clock"))
-//					cl.append("\r\nroot." + v.getVariableName() + ".reset();");
-			
-			cl.append("\r\n}catch(Exception ex)\r\n{ex.printStackTrace();}\r\n}");
-		}
 		
 		if (parent != null)
 			cl.append("\r\n\r\n_cls_"+name + parent.id + " parent;");
@@ -465,10 +444,10 @@ public class Global extends Compiler{
 		for (Variable v: variables)
 			cl.append("\r\npublic " + v.type + " " + v.name+ ";");
 		
+		//number of automata
+		cl.append("\r\nint no_automata;");
 		
-		cl.append("\r\nint no_automata = "+logics.size()+";");
-		
-				
+		//clocks and other variable declarations		
 		for (Variable v:local.keySet())
 		{
 			if (!v.getVariableType().equals("Clock") && !v.getVariableType().equals("Channel"))
@@ -476,24 +455,81 @@ public class Global extends Compiler{
 			else if (v.getVariableType().equals("Clock"))
 			{
 				cl.append("\r\npublic " + v.getVariableType() + " " + 
-						v.getVariableName() + " = new " + v.getVariableType() + "(this,\""+v.getVariableName()+"\");");
+						v.getVariableName() + ";");
 			}
 		}
 		
+		//invariants
 		for (Invariant inv: invariants.invariants.values())
 		{
 			if (!inv.initialization)
 			{
-				cl.append("\r\npublic boolean " + inv.name + "_enb = false;");
+				cl.append("\r\npublic boolean " + inv.name + "_enb;");
 				cl.append("\r\npublic " + inv.returnType + " " + inv.name + "_temp;" );
 			}
 			else {
-				cl.append("\r\npublic boolean " + inv.name + "_enb = true;");
+				cl.append("\r\npublic boolean " + inv.name + "_enb;");
 				cl.append("\r\npublic " + inv.returnType + " " + inv.name + "_temp = "+ Tokenizer.showStats(inv.call) +";" );
 			}
 		}
 		
-		cl.append("\r\n\r\npublic static void initialize(){}");
+		/////////////////////////////////////////////////////
+		//initialisation method
+		cl.append("\r\n\r\npublic static void initialize(){");
+		
+		cl.append("\r\n//note that this initialisation does not include user-defined declarations in the Variables section\r\n");
+		
+		//initialise channels
+		for (Variable v:localVariables.values())
+			if (v.getVariableType().equals("Channel"))
+				cl.append("\r\n" + v.getVariableName()+" = new Channel();");
+
+		//initialise hashmap
+		cl.append("\r\n\r\n_cls_"+name+id
+				+ "_instances = new LinkedHashMap<_cls_"+name+id+",_cls_"+name+id+">();");
+		
+		
+		//////////////////////////////////////////////////////////////////////////
+		// initialization of root
+		
+		if (this.id == 0)
+		{
+			cl.append("\r\ntry{");
+
+			if (!Compiler.console)//just output to console instead of file
+				cl.append("\r\npw = new PrintWriter(\""+Compiler.outputDir.replace("\\", "\\\\")
+					+"/output_"+name+".txt\");\r\n");
+
+			cl.append("\r\nroot = new _cls_" + this.name + this.id + "();" +
+					"\r\n_cls_" + this.name + this.id + "_instances.put(root, root);");
+
+			cl.append("\r\n  root.initialisation();");
+			
+//			for (Variable v:localVariables.values())
+//				if (v.getVariableType().equals("Clock"))
+//					cl.append("\r\nroot." + v.getVariableName() + ".reset();");
+			
+			cl.append("\r\n}catch(Exception ex)\r\n{ex.printStackTrace();}");
+		}
+
+		//clocks and other variable declarations		
+		for (Variable v:local.keySet())
+			if (v.getVariableType().equals("Clock"))
+				cl.append("\r\n" + 
+						v.getVariableName() + " = new " + v.getVariableType() + "(this,\""+v.getVariableName()+"\");");
+
+		//invariants
+		for (Invariant inv: invariants.invariants.values())
+		{
+			if (!inv.initialization)
+				cl.append("\r\n" + inv.name + "_enb = false;");
+			else {
+				cl.append("\r\n" + inv.name + "_enb = true;");
+				cl.append("\r\n" + inv.name + "_temp = "+ Tokenizer.showStats(inv.call) +";" );
+			}
+		}
+		
+		cl.append("\r\n}");
 		
 		
 		////////////////////////////////////////////////////////////////////////////
@@ -534,6 +570,10 @@ public class Global extends Compiler{
 		///////////////////////// initialisation
 		
 		cl.append("\r\n\r\npublic void initialisation() {");
+		
+				//number of automata
+				cl.append("\r\nno_automata = "+logics.size()+";");
+				
 		
 		for (Property p : logics.values())
 		{
