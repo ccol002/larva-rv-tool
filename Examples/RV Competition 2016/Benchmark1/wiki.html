@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Java Team2 Benchmark1 - CRV</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Java_Team2_Benchmark1","wgTitle":"Java Team2 Benchmark1","wgCurRevisionId":272,"wgRevisionId":272,"wgArticleId":17,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Team2_Benchmark1","wgRelevantArticleId":17,"wgIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="CRV (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://crv.liflab.ca/wiki/api.php?action=rsd" />
+<link rel="copyright" href="https://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="CRV Atom feed" href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Java_Team2_Benchmark1 skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Java Team2 Benchmark1</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From CRV</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>FiTS</b> (A Financial Transaction System) is a bare-bones system mocking the behaviour of a financial transaction system. It emulates a virtual banking system in which users may open accounts from which they may perform money transfers. For more information read the manual at <a rel="nofollow" class="external autonumber" href="https://drive.google.com/file/d/0B-0CQ8SP0TYjMFVkU244ZXpUOHc/view?usp=sharing">[1]</a> 
+</p><p><i>Categories: Financial</i>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Benchmark_Data"><span class="tocnumber">1</span> <span class="toctext">Benchmark Data</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#The_Trace_Part"><span class="tocnumber">1.1</span> <span class="toctext">The Trace Part</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#The_Property_Part"><span class="tocnumber">1.2</span> <span class="toctext">The Property Part</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Informal_Description"><span class="tocnumber">1.2.1</span> <span class="toctext">Informal Description</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Demonstration_Traces"><span class="tocnumber">1.2.2</span> <span class="toctext">Demonstration Traces</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Formal_Specification"><span class="tocnumber">1.2.3</span> <span class="toctext">Formal Specification</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#A_FO-LTL_Specification"><span class="tocnumber">1.2.4</span> <span class="toctext">A FO-LTL Specification</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Clarification_Requests"><span class="tocnumber">2</span> <span class="toctext">Clarification Requests</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Benchmark_Data">Benchmark Data</span></h2>
+<h3><span class="mw-headline" id="The_Trace_Part">The Trace Part</span></h3>
+<p>The relevant files can be found on the server at: <i>home/larva/Benchmark1</i>
+</p><p>The script will run a scenario that <b>violates</b> the property defined in the rest of this page.
+</p><p><i>Instrumentation Information</i>
+</p><p>We have defined the following pointcuts to capture the relevant events for this benchmark (see the next section for their use):
+</p>
+<pre>   pointcut greylistUser(Integer uid)&#160;: 
+       call(public void Interface.ADMIN_greylistUser(Integer)) &amp;&amp; args(uid);
+</pre>
+<pre>   pointcut whitelistUser(Integer uid)&#160;: 
+       call(public void Interface.ADMIN_whitelistUser(Integer)) &amp;&amp; args(uid);
+</pre>
+<pre>   pointcut depositTo(Integer uid, double amount, String to_account_number, Integer sid)&#160;: 
+       call(public void Interface.USER_depositFromExternal(..)) &amp;&amp; args(uid, sid, to_account_number, amount);
+</pre>
+<p><br />
+<i>Trace Statistics</i>
+</p>
+<table class="wikitable">
+
+<tr>
+<th> Event
+</th>
+<th> Occurrences
+</th></tr>
+<tr>
+<td> greylistUser
+</td>
+<td> 10001
+</td></tr>
+<tr>
+<td> whitelistUser
+</td>
+<td> 10001
+</td></tr>
+<tr>
+<td> depositTo
+</td>
+<td> 40002
+</td></tr></table>
+<h3><span class="mw-headline" id="The_Property_Part">The Property Part</span></h3>
+<h4><span class="mw-headline" id="Informal_Description">Informal Description</span></h4>
+<p>FiTS contains an object <i>UserInfo</i> that corresponds to a user. A user can be greylisted, blacklisted, or whitelisted.
+</p><p>Once greylisted, a user must perform at least three incoming transfers before being whitelisted.
+</p>
+<h4><span class="mw-headline" id="Demonstration_Traces">Demonstration Traces</span></h4>
+<p>Assume that <i>userInfo.uid = uid</i>, and <i>userInfo'.uid = uid'</i> in the following traces.
+</p><p><i>Satisfying Traces</i>
+</p>
+<ul><li> greylist(uid); depositTo(uid); depositTo(userInfo); depositTo(userInfo); whitelist(uid);</li></ul>
+<ul><li> greylist(uid'); depositTo(userInfo); depositTo(userInfo);</li></ul>
+<ul><li> depositTo(userInfo); depositTo(userInfo); greylist(uid)</li></ul>
+<p>Note how the satisfying traces either whitelist a greylisted user after three deposits (the first one), or do not attempt whitelisting at all (avoiding a possible violation of the property).
+</p><p><i>Violating Traces</i>
+</p>
+<ul><li> greylist(uid); depositTo(userInfo'); depositTo(userInfo'); depositTo(userInfo'); whitelist(uid)</li></ul>
+<ul><li> greylist(uid); depositTo(userInfo); depositTo(userInfo); depositTo(userInfo); greylist(uid'); whitelist(uid')</li></ul>
+<ul><li> depositTo(userInfo); depositTo(userInfo); greylist(uid); depositTo(userInfo); depositTo(userInfo); whitelist(uid)</li></ul>
+<p>On the other hand these violating traces all attempt to whitelist a greylisted user before three deposits to their account.
+</p>
+<h4><span class="mw-headline" id="Formal_Specification">Formal Specification</span></h4>
+<p>As a formal specification we use regular expressions over traces, defining both an expression for a satisfying and a violating trace. Each of these events are defined with respect to an object <i>u</i> of type <i>UserInfo</i> (e.g. such that the event <i>greylist</i> refers to <i>u</i> being greylisted).
+</p><p>Regular Expression for satisfying traces:
+</p>
+<pre>    property foreach target (UserInfo u) matching{
+       ((!greylist)*&#160;; greylist&#160;; ((!whitelist)*&#160;; depositTo&#160;; (!whitelist)*&#160;; depositTo&#160;;
+       (!whitelist)*&#160;; depositTo&#160;; (!whitelist)*)&#160;; whitelist )*
+    }
+</pre>
+<p><br />
+Regular Expression for violating traces:
+</p>
+<pre>    property foreach target (UserInfo u) not matching{
+        (?)*&#160;; greylist&#160;; ((!depositTo)* + (!depositTo)*&#160;; depositTo&#160;;
+        (!depositTo)* + (!depositTo)*&#160;; depositTo&#160;; (!depositTo)*; depositTo; 
+        (!depositTo)*)&#160;; whitelist
+    }
+</pre>
+<h4><span class="mw-headline" id="A_FO-LTL_Specification">A FO-LTL Specification</span></h4>
+<h2><span class="mw-headline" id="Clarification_Requests">Clarification Requests</span></h2>
+<p>This is a space where other teams can ask for clarifications and the submitting team can answer. When a team requests a clarification, the team should be mentioned in the request and the request timestamped. The team submitting the benchmark should ensure they watch this page so that they get notifications of questions.
+</p>
+<ul><li> The pointcut depositTo is never called with the provided definition. The args condition contains uid which is never declared. Furthermore, to match the given traces the pointcut should be parameterized with uid and not with account_number and amount. --Malte, Mufin, 2016-07-05T18
+<ul><li>Sorry missed these; see the corrected pointcut. You can get the relevant uid from the user parameter. -- Shaun, Larva, 2016-07-19</li></ul></li>
+<li> Is the lack of breaks in the switch in the Main.main intended? In case of the CLI argument "1" all three scenarios Scenarios.runViolatingScenarioForProperty(6), Scenarios.runNonViolatingScenarioForProperty(8), and Scenarios.runViolatingScenarioForProperty(10) are executed. --Malte, Mufin, 2016-07-05T18
+<ul><li> This was corrected. -- Shaun, Larva, 2016-07-19</li></ul></li>
+<li> The length of the benchmark means that performance monitoring will tell us very little. I suggest two solutions (i) we only score this benchmark for correctness, (ii) you loop some of the behaviour to give a non-trivial workload -- Giles, 2016-07-06</li>
+<li> The clarity of the benchmark would be improved by (i) explaining the demonstration traces and (ii) explaining the relation between the two regular expression properties and what matching means i.e. are the regular expressions 'prefix-closed'.</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20190130124201
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 31/1000000
+Preprocessor generated node count: 36/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key my_wiki:pcache:idhash:17-0!*!*!!en!*!* and timestamp 20190130124201 and revision id 272
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://crv.liflab.ca/wiki/index.php?title=Java_Team2_Benchmark1&amp;oldid=272">http://crv.liflab.ca/wiki/index.php?title=Java_Team2_Benchmark1&amp;oldid=272</a>"					</div>
+				<div id='catlinks' class='catlinks catlinks-allhidden'></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Java+Team2+Benchmark1" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/index.php/Java_Team2_Benchmark1"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/wiki/index.php?title=Talk:Java_Team2_Benchmark1&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/index.php/Java_Team2_Benchmark1" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/wiki/index.php?title=Java_Team2_Benchmark1&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/wiki/index.php?title=Java_Team2_Benchmark1&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/wiki/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search CRV [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/index.php/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/index.php/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/wiki/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/index.php/Special:WhatLinksHere/Java_Team2_Benchmark1" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/index.php/Special:RecentChangesLinked/Java_Team2_Benchmark1" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/wiki/index.php?title=Java_Team2_Benchmark1&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/wiki/index.php?title=Java_Team2_Benchmark1&amp;oldid=272" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/wiki/index.php?title=Java_Team2_Benchmark1&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 23 July 2016, at 06:12.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wiki/index.php/CRV:Privacy_policy" title="CRV:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/index.php/CRV:About" title="CRV:About">About CRV</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/index.php/CRV:General_disclaimer" title="CRV:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://www.gnu.org/copyleft/fdl.html"><img src="/wiki/resources/assets/licenses/gnu-fdl.png" alt="GNU Free Documentation License 1.3 or later" width="88" height="31" /></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":59});
+} );</script>
+	</body>
+</html>

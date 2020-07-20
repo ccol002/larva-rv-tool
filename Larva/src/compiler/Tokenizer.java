@@ -62,13 +62,17 @@ public class Tokenizer {
 	
 	public void initializeVariables()
 	{
-		stopChars = "()=;.{}*,|@\"<>";
-		starting = "@";//the possible starts of symbols with 2 characters
+		stopChars = "()=;.{}*,|@\"<>!";
+		starting = "@!<>=";//the possible starts of symbols with 2 characters
 		
 		if (!keyWords.containsKey(mode))
 		{
 		keyWords.put(mode, new Hashtable<String, Integer>());
-				
+
+		putKeyWord("!=");
+		putKeyWord("==");
+		putKeyWord("<=");
+		putKeyWord(">=");
 		putKeyWord(".");
 		putKeyWord("=");
 		putKeyWord(";");
@@ -105,13 +109,17 @@ public class Tokenizer {
 	
 	public void initializeEvents()
 	{
-		stopChars = "()=;.{}*,|@\"";
-		starting = "@";//the possible starts of symbols with 2 characters
+		stopChars = "()=;.{}*,|@\"!";
+		starting = "@!<>=";//the possible starts of symbols with 2 characters
 		
 		if (!keyWords.containsKey(mode))
 		{
 		keyWords.put(mode, new Hashtable<String, Integer>());
 				
+		putKeyWord("!=");
+		putKeyWord("==");
+		putKeyWord("<=");
+		putKeyWord(">=");
 		putKeyWord(".");
 		putKeyWord("=");
 		putKeyWord(";");

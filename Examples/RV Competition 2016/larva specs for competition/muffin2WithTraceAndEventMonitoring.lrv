@@ -1,0 +1,169 @@
+IMPORTS{
+import java.util.ArrayList;
+import de.uni_luebeck.isp.rvwithunionfind.benchmarks.benchmark4.*;
+import de.uni_luebeck.isp.rvwithunionfind.benchmarks.benchmark4.multiplexer.*;
+}%%IMPORTS
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int createCount = 0;
+int nextCount = 0;
+int renewCount = 0;
+int useCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(Client client)}
+executionFinished() = {execution *.main(*)uponReturning()|execution *.main(*)uponThrowing()}
+
+use(Client c) = {c.use()}
+nextGeneric(Multiplexer m) = {m.nextChannel()}
+renewGeneric(Multiplexer m) = {m.renewChannel()}
+createGeneric(Multiplexer m, Client c) = {m.client()uponReturning(c)}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+PROPERTY traceMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> start [createGeneric(mc)\\trace.add("use(" + m.toString() + "," + c.toString() + ")"); createCount++;]
+start -> start [use(c)\\trace.add("use(" + c.toString() + ")"); useCount++;]
+start -> start [nextGeneric(m)\\trace.add("next(" + m.toString() + ")"); nextCount++;]
+start -> start [renewGeneric(m)\\trace.add("renew(" + m.toString() + ")"); renewCount++;]
+start -> finished [executionFinished()\\if(showEvents){printCountVariables(createCount, nextCount, renewCount, useCount);}; if(showTrace){printTrace(trace);};]
+}
+
+}
+
+FOREACH(Multiplexer mG){
+EVENTS{
+next(Multiplexer m) = {m.nextChannel()}
+where {mG = m;}
+renew(Multiplexer m) = {m.renewChannel()}
+where {mG = m;}
+}%%EVENTS
+
+FOREACH(Client cG){
+
+EVENTS{
+create(Multiplexer m, Client c) = {m.client()uponReturning(c)}
+where {mG = m;cG = c;}
+}%%EVENTS
+
+PROPERTY mufinB2{
+
+STATES {
+
+BAD{
+channel_not_active_fail {}
+channel_invalid_fail {}
+}
+
+NORMAL{
+off0 {}
+off1 {}
+off2 {}
+off3 {}
+invalid {}
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> off0 [create(m,c)\\]
+off0 -> off1 [next(m)\\]
+off0 -> invalid [renew(m)\\]
+off1 -> off2 [next(m)\\]
+off1 -> channel_not_active_fail [use(c)\c == cG\channel.send(c);]
+off2 -> off3 [next(m)\\]
+off2 -> channel_not_active_fail [use(c)\c == cG\channel.send(c);]
+off3 -> off0 [next(m)\\]
+off3 -> channel_not_active_fail [use(c)\c == cG\channel.send(c);]
+invalid -> channel_invalid_fail [use(c)\c == cG\channel.send(c);]
+
+}%%TRANSITIONS
+}%%PROPERTY
+}
+}
+
+
+}%%GLOBAL
+
+METHODS{
+
+void printCountVariables(int createCount, int nextCount, int renewCount, int useCount){
+    System.out.println("create called: " + createCount + " times\n");
+    System.out.println("next called: " + nextCount + " times\n");
+    System.out.println("renew called: " + renewCount + " times\n");
+    System.out.println("use called: " + useCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+

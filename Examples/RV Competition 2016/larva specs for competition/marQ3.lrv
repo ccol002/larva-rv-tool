@@ -1,0 +1,137 @@
+IMPORTS{
+import java.util.ArrayList;
+import bench3.Command;
+import bench3.Resource;
+import bench3.Task;
+}
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int releaseCount = 0;
+int denyCount = 0;
+int grantCount = 0;
+int requestCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(String s)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+requestGeneric(Resource r, Task t, Command c) = {*.requestFor(r,t)within(Command c)}
+grantOrDenyGeneric(Boolean b, Resource r, Task t, Command c) = {*.getStatusFor(r,t)uponReturning(b)within(Command c)}
+releaseGeneric(Resource r, Task t, Command c) = {*.releaseFor(r,t)within(Command c)}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+FOREACH(Task taskG){
+FOREACH(Command commandG){
+FOREACH(Resource resourceG){
+EVENTS{
+request(Resource r, Task t, Command c) = {*.requestFor(r,t)within(Command c)}
+where {resourceG = r; taskG = t; commandG = c;}
+grantOrDeny(Boolean b, Resource r, Task t, Command c) = {*.getStatusFor(r,t)uponReturning(b)within(Command c)}
+where {resourceG = r; taskG = t; commandG = c;}
+release(Resource r, Task t, Command c) = {*.releaseFor(r,t)within(Command c)}
+where {resourceG = r; taskG = t; commandG = c;}
+}%%EVENTS
+
+PROPERTY mufinB1InnerNodes{
+
+STATES {
+
+BAD{
+actionOnFreeResource {}
+}
+
+NORMAL{
+granted {}
+requested {}
+}
+
+STARTING{
+free {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+free -> requested [request(r,t,c)\\]
+free -> actionOnFreeResource [grantOrDeny(b,r,t,c)\\channel.send("");]
+free -> actionOnFreeResource [release(r,t,c)\\channel.send("");]
+
+requested -> free [grantOrDeny(b,r,t,c)\!b\]
+requested -> granted [grantOrDeny(b,r,t,c)\b\]
+
+granted -> free [release(r,t,c)\\]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+}
+}
+}
+
+}%%GLOBAL
+
+
+METHODS{
+
+void printCountVariables(int releaseCount, int denyCount, int grantCount, int requestCount){
+    System.out.println("release called: " + releaseCount + " times\n");
+    System.out.println("deny called: " + denyCount + " times\n");
+    System.out.println("grant called: " + grantCount + " times\n");
+    System.out.println("request called: " + requestCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+
+

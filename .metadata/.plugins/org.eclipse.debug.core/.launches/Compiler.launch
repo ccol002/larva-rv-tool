@@ -9,6 +9,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="compiler.Compiler"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/Users/christiancolombo/Drive Uni/repositories/binrv/trace_parser/src/binrvff.lrv&quot; -o &quot;/Users/christiancolombo/Drive Uni/repositories/binrv/trace_parser/src&quot; -v"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/Users/christiancolombo/Drive Uni/repositories/binrv/trace_parser/src/binrvff_short.lrv&quot; -o &quot;/Users/christiancolombo/Drive Uni/repositories/binrv/trace_parser/src&quot; -v"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Larva"/>
 </launchConfiguration>

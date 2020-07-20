@@ -1,0 +1,139 @@
+%% Monitoring Property Team 3 (MarQ) Benchmark 2
+
+IMPORTS{
+	import java.util.*;
+	import bench2.*;
+}%%IMPORTS
+
+GLOBAL{
+	VARIABLES{	
+		%%Stats
+		ArrayList<String> trace = new ArrayList<String>();		
+		int sendMessageCount = 0;	
+		
+		boolean showEvents = true;
+		boolean showWitness = true;
+		boolean showTrace = true;
+		
+		%%Property Variables	
+		boolean violated = false;
+	
+		HashMap<String, Integer> countOfMessages = new HashMap<String, Integer>();
+		HashMap<String, HashMap<String, Boolean>> listOfSites = new HashMap<String, HashMap<String, Boolean>>();
+	
+	}%%VARIABLES
+		
+	EVENTS{	
+		
+		sendMessage(Person from, Person to, Site site) = {Site st.sendMessage(Person pTo, Message message)} where {from = message.sender; to = pTo; site = st; }	
+			
+		programExit() = {execution *.main()uponReturning(*)}
+	}%%EVENTS
+		
+	PROPERTY pubCheck{
+		
+		STATES{
+			BAD{}%%BAD
+			NORMAL{}%%NORMAL
+			STARTING{strt}%%STARTING
+		}
+		
+		TRANSITIONS{
+			strt -> strt[sendMessage(Person from, Person to, Site site)
+							\!countOfMessages.containsKey(from.toString()+to.toString()) && !violated
+								\countOfMessages.put(from.toString()+to.toString(),0);]
+								
+			strt -> strt[programExit()
+								\\printStatus(violated);]	
+																
+		}%%TRANSITIONS 
+	
+	}%%CHECK	
+    
+	PROPERTY PublisherSubscriber{
+			
+		STATES{				
+			BAD{
+				failure
+			}%%BAD
+			
+			NORMAL{
+			}%%NORMAL
+			
+			STARTING{
+				start
+			}%%STARTING				
+		}%%STATES
+		
+		TRANSITIONS{
+						
+			%%Property Violated			
+			start -> failure[sendMessage(Person from, Person to, Site site)
+								\ listOfSites.containsKey(from.toString()+to.toString()) 
+									&& (listOfSites.get(from.toString()+to.toString()).containsKey(site.toString()) 
+										&& !(countOfMessages.get(from.toString()+to.toString()) < 9))
+									\violated = true;]
+			
+			start -> failure[sendMessage(Person from, Person to, Site site)
+								\ listOfSites.containsKey(from.toString()+to.toString()) 
+								  && (!listOfSites.get(from.toString()+to.toString()).containsKey(site.toString()) 
+								  && !(listOfSites.get(from.toString()+to.toString()).size() <2)) 
+									\violated = true;]
+			
+			%%Property Satisfied
+			start -> start[sendMessage(Person from, Person to, Site site)
+								 \\if(listOfSites.containsKey(from.toString()+to.toString())){
+								   	if(listOfSites.get(from.toString()+to.toString()).containsKey(site.toString())){
+										if(countOfMessages.get(from.toString()+to.toString()) < 9){
+											countOfMessages.put(from.toString()+to.toString(), countOfMessages.get(from.toString()+to.toString())+1);
+										}
+									}else if (listOfSites.get(from.toString()+to.toString()).size() < 2){
+										listOfSites.get(from.toString()+to.toString()).put(site.toString(), true);
+										countOfMessages.put(from.toString()+to.toString(), countOfMessages.get(from.toString()+to.toString())+1);
+									}
+								 }else{
+									HashMap<String,Boolean> tempLst = new HashMap<String,Boolean>();
+									tempLst.put(site.toString(), true);
+									listOfSites.put(from.toString()+to.toString(), tempLst);
+								 }
+								 
+								 if(listOfSites.containsKey(to.toString()+from.toString())){
+								 	HashMap<String,Boolean> tempLst = new HashMap<String,Boolean>();
+								 	listOfSites.put(to.toString()+from.toString(), tempLst);
+								 	countOfMessages.put(to.toString()+from.toString(), 0);
+								 }]				
+			
+		%%	start -> start[programExit()
+		%%						\\]		
+	
+		}%%TRANSITIONS	
+	
+	}%% PROPERTY PUBLISHERSUBSCRIBER
+		
+}%%GLOBAL
+
+METHODS{
+
+void printStatus(boolean violated){
+	if(violated){
+		System.out.println("STATUS: Violated");
+	}else{
+		System.out.println("STATUS: Satisfied");
+	}
+}
+
+void printEventCount(int sendMessageCount){
+	System.out.println("sendMessage called: "+sendMessageCount+" times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+	System.out.println("Printing Trace: \n");
+	for(int i = 0; i<trace.size(); i++){
+		System.out.println(trace.get(i));
+	}
+}
+
+}%%METHODS
+
+
+

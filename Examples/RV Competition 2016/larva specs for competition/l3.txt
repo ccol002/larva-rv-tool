@@ -1,0 +1,127 @@
+IMPORTS{
+import java.util.ArrayList;
+import transactionsystem.*;
+}%%IMPORTS
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int openSessionCount = 0;
+int logCount = 0;
+int closeSessionCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(UserSession us)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+openSessionGeneric(UserSession us) = {us.openSession()}
+closeSessionGeneric(UserSession us) = {us.closeSession()}
+logGeneric(UserSession us) = {us.log()}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+FOREACH(UserSession usG){
+EVENTS{
+openSession(UserSession us) = {us.openSession()}
+where{usG = us;}
+closeSession(UserSession us) = {us.closeSession()}
+where{usG = us;}
+log(UserSession us) = {us.log()}
+where{usG = us;}
+}%%EVENTS
+
+PROPERTY larvaB2{
+
+STATES {
+
+BAD{
+violated {}
+}
+
+NORMAL{
+open {}
+}
+
+STARTING{
+closed {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+closed -> open [openSession(us)\\]
+open -> open [openSession(us)\\]
+open -> closed [closeSession(us)\\]
+
+closed -> closed [closeSession(us)\\]
+
+open -> open [log(us)\\]
+
+closed -> violated [log(us)\\channel.send(us);]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+}
+
+}%%GLOBAL
+
+METHODS{
+
+void printCountVariables(int openSessionCount, int logCount, int closeSessionCount){
+    System.out.println("openSession called: " + openSessionCount + " times\n");
+    System.out.println("log called: " + logCount + " times\n");
+    System.out.println("closeSession called: " + closeSessionCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+

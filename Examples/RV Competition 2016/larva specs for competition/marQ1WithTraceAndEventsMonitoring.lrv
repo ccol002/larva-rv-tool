@@ -1,0 +1,150 @@
+%% Monitoring Property Team 3 (MarQ) Benchmark 1
+
+IMPORTS{
+	import java.util.*;
+	import bench1.*;
+}%%IMPORTS
+
+GLOBAL{
+	VARIABLES{	
+		%%Stats
+		ArrayList<String> trace = new ArrayList<String>();		
+		int broadcastCount = 0;
+		int acknowledgeCount = 0;
+		
+		boolean showEvents = true;
+		boolean showWitness = true;
+		boolean showTrace = true;
+		
+		boolean violated = false;
+			
+		%%Property Variables	
+		HashMap<String, String> messagesSentWaitingForApproval = new HashMap<String,String>();
+	}%%VARIABLES
+		
+	EVENTS{	
+				
+		broadcast(Node publisher, MessageWrapper msgWrpr) = {*.broadcast(MessageWrapper wrapper) within(Node pub)} where {publisher = pub; msgWrpr = wrapper;}	
+		
+		acknowledge(Node subscriber, Message msg) = {Node *.acknowledge(Message rmsg) within(Node subs)} where {subscriber = subs; msg = rmsg;}	
+		
+		programExit() = {execution *.main()uponReturning(*)}
+			
+	}%%EVENTS
+    
+    
+    PROPERTY traceMonitor{
+
+    STATES{
+
+    ACCEPTING{
+        finished {}
+    }
+
+    NORMAL{
+    }
+
+    STARTING{
+        start {}
+    }
+    }
+
+    TRANSITIONS{
+        start -> start [broadcast(Node publisher, MessageWrapper msgWrpr)\\broadcastCount++;
+									 trace.add("broadcast: Publisher: "+publisher.toString()+", Message: "+msgWrpr.message.toString());]
+        start -> start [acknowledge(Node subscriber, Message msg)\\acknowledgeCount++;
+									 trace.add("acknowledge: Subscriber: "+subscriber.toString()+", Message: "+msg.toString());]
+        start -> finished [programExit()\\if(showEvents){printCountVariables(broadcastCount,acknowledgeCount);}; if(showTrace){printTrace(trace);};]
+    }
+
+    }
+			
+	PROPERTY PublisherSubscriber{
+			
+		STATES{				
+			BAD{
+				failure
+			}%%BAD
+			
+			NORMAL{
+			}%%NORMAL
+			
+			STARTING{
+				start
+			}%%STARTING				
+		}%%STATES
+		
+		TRANSITIONS{
+				
+			start -> start[broadcast(Node publisher, MessageWrapper msgWrpr)
+								\ !(messagesSentWaitingForApproval.containsKey(msgWrpr.message.toString()) && messagesSentWaitingForApproval.get(msgWrpr.message.toString()) == publisher.toString())
+									\messagesSentWaitingForApproval.put(msgWrpr.message.toString(), publisher.toString());]	
+									 			
+			start -> start[acknowledge(Node subscriber, Message msg)
+								\messagesSentWaitingForApproval.containsKey(msg.toString())
+									\messagesSentWaitingForApproval.remove(msg.toString());]
+	
+	%%		start -> start[programExit()
+		%%						\messagesSentWaitingForApproval.size() ==0
+			%%						\printStatus(violated);]
+	
+			%%Property Violation
+			start -> failure[broadcast(Node publisher, MessageWrapper msgWrpr)
+								\ messagesSentWaitingForApproval.containsKey(msgWrpr.message.toString()) && messagesSentWaitingForApproval.get(msgWrpr.message.toString()) == publisher.toString()
+									\violated = true;]
+	
+			start -> failure[acknowledge(Node subscriber, Message msg)
+								\!messagesSentWaitingForApproval.containsKey(msg.toString())
+									\violated = true;]
+	
+			start -> failure[programExit()
+								\messagesSentWaitingForApproval.size() !=0
+									\violated = true;]
+	
+		}%%TRANSITIONS	
+	
+	}%% PROPERTY PUBLISHERSUBSCRIBER
+		
+	PROPERTY MonPub{
+	
+		STATES{
+			BAD{}
+			NORMAL{}
+			STARTING{strt}%%STARTING
+		}%%STATES
+		
+		TRANSITIONS{
+			strt -> strt[programExit()
+								\\printStatus(violated);if(showEvents)printEventCount(broadcastCount, acknowledgeCount);
+								  if(showTrace)printTrace(trace);]
+		}%%TRANSITIONS
+	
+	}%% PROPERTY MonPub
+	
+		
+}%%GLOBAL
+
+
+METHODS{
+
+void printStatus(boolean violated){
+	if(violated){
+		System.out.println("STATUS: Violated");
+	}else{
+		System.out.println("STATUS: Satisfied");
+	}
+}
+
+void printEventCount(int broadcastCount, int acknowledgeCount){
+	System.out.println("broadcast called: "+broadcastCount+" times");
+	System.out.println("acknowledge called: "+acknowledgeCount+" times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+	System.out.println("Printing Trace: \n");
+	for(int i = 0; i<trace.size(); i++){
+		System.out.println(trace.get(i));
+	}
+}
+
+}%%METHODS

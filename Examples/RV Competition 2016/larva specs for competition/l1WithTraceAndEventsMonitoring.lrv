@@ -1,0 +1,148 @@
+IMPORTS{
+import java.util.ArrayList;
+import transactionsystem.*;
+}%%IMPORTS
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int greylistCount = 0;
+int whitelistCount = 0;
+int depositToCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(UserInfo user)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+greylist(UserInfo ui) = {ui.greylist()}
+whitelist(UserInfo ui) = {ui.whitelist()}
+depositFromExternal(Integer uid, Integer sid, String to_account_number, double amount) = {*.USER_depositFromExternal(uid, sid, to_account_number, amount)}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+PROPERTY traceMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> start [greylist(ui)\\trace.add("greylist("+ ui.getId() +")");greylistCount++;]
+start -> start [whitelist(ui)\\trace.add("whitelist("+ ui.getId() +")");whitelistCount++;]
+start -> start [depositFromExternal(uid,sid,to_account_number,amount)\\trace.add("depositFromExternal("+ uid +")");depositToCount++;]
+start -> finished [executionFinished()\\if(showEvents){printCountVariables(greylistCount, whitelistCount, depositToCount);}; if(showTrace){printTrace(trace);};]
+}
+
+}
+
+FOREACH(UserInfo uiG){
+
+VARIABLES{
+int noOfDeposits = 0;
+}%%VARIABLES
+
+EVENTS{
+greylist(UserInfo ui) = {ui.greylist()}
+where {uiG = ui;}
+whitelist(UserInfo ui) = {ui.whitelist()}
+where {uiG = ui;}
+}%%EVENTS
+
+PROPERTY larvaB1{
+
+STATES {
+
+BAD{
+whitelistedPrematurely {}
+}
+
+NORMAL{
+greylisted {}
+}
+
+STARTING{
+whitelisted {}
+}
+}%%STATES
+
+TRANSITIONS{
+whitelisted -> greylisted [greylist(ui)\\]
+
+greylisted -> greylisted [depositFromExternal(uid,sid,to_account_number,amount)\uid == uiG.getId()\noOfDeposits++;]
+greylisted -> whitelistedPrematurely [whitelist(ui)\noOfDeposits < 3\channel.send(uiG);]
+greylisted -> whitelisted [whitelist(ui)\noOfDeposits > 2\noOfDeposits = 0;]
+
+}%%TRANSITIONS
+}%%PROPERTY
+}
+}%%GLOBAL
+
+METHODS{
+
+void printCountVariables(int greylistCount, int whitelistCount, int depositToCount){
+    System.out.println("greylist called: " + greylistCount + " times\n");
+    System.out.println("whitelist called: " + whitelistCount + " times\n");
+    System.out.println("depositFromExternal called: " + depositToCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+

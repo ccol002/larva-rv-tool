@@ -1,0 +1,266 @@
+IMPORTS{
+import java.util.ArrayList;
+import de.uni_luebeck.isp.rvwithunionfind.benchmarks.benchmark3.*;
+}
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int addInnerNodeCount = 0;
+int addLeafNodeCount = 0;
+int sendCount = 0;
+int sendCriticalCount = 0;
+int resetCount = 0;
+int processCount = 0;
+int invalidateInnerCount = 0;
+int invalidateLeafCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(InnerNode node)|channel.receive(LeafNode leaf)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+invalidateInner(InnerNode child, int i) = {InnerNode mother.removeInnerNode(i)}
+where {child = mother.getInnerNode(i);}
+send(InnerNode node) = {node.send()}
+sendCritical(InnerNode node) = {node.sendCritical()}
+reset(InnerNode node) = {node.reset()}
+
+addInnerNodeGeneric(InnerNode node, InnerNode child) = {node.addInnerNode(*)uponReturning(child)}
+addLeafNodeGeneric(InnerNode node, LeafNode leaf) = {node.addLeafNode(*)uponReturning(leaf)}
+processGeneric(LeafNode leaf) = {leaf.process()}
+
+invalidateLeaf(InnerNode node, int i) = {node.removeLeafNode(i)}
+
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+PROPERTY traceMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> start [invalidateInner(child,i)\\trace.add("invalidateInner(" + child.toString() + "," + i + ")"); invalidateInnerCount++;]
+start -> start [invalidateLeaf(child,i)\\trace.add("invalidateLeaf(" + child.toString() + "," + i + ")"); invalidateLeafCount++;]
+start -> start [send(node)\\trace.add("send(" + node.toString() + ")"); sendCount++;]
+start -> start [sendCritical(node)\\trace.add("sendCritical(" + node.toString() + ")"); sendCriticalCount++;]
+start -> start [reset(node)\\trace.add("reset(" + node.toString() + ")"); resetCount++;]
+start -> start [addInnerNodeGeneric(node,child)\\trace.add("addInnerNode(" + node.toString() + "," + child.toString() + ")"); addInnerNodeCount++;]
+start -> start [addLeafNodeGeneric(node,leaf)\\trace.add("addLeafNode(" + node.toString() + "," + leaf.toString() + ")"); addLeafNodeCount++;]
+start -> start [processGeneric(leaf)\\trace.add("process(" + leaf.toString() + ")"); processCount++;]
+start -> finished [executionFinished()\\if(showEvents){printCountVariables(addInnerNodeCount, addLeafNodeCount, sendCount, sendCriticalCount, resetCount, processCount, invalidateInnerCount, invalidateLeafCount);}; if(showTrace){printTrace(trace);};]
+}
+
+}
+
+FOREACH(InnerNode nodeG){
+EVENTS{
+addInnerNode(InnerNode node, InnerNode child) = {node.addInnerNode(*)uponReturning(child)}
+where {nodeG = child;}
+sendToVariable(InnerNode node) = {node.send()}
+where {nodeG = node;}
+sendCriticalToVariable(InnerNode node) = {node.sendCritical()}
+where {nodeG = node;}
+resetThisVariable(InnerNode node) = {node.reset()}
+where {nodeG = node;}
+}%%EVENTS
+
+PROPERTY mufinB1InnerNodes{
+
+STATES {
+
+BAD{
+three {}
+}
+
+NORMAL{
+one {}
+two {}
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> one [addInnerNode(node,child)\\]
+
+one -> two [invalidateInner(node, i)\node == nodeG || isParentOf(node,nodeG)\]
+
+two -> three [sendToVariable(node)\\channel.send(node);]
+two -> three [sendCriticalToVariable(node)\\channel.send(node);]
+two -> three [resetThisVariable(node)\\channel.send(node);]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+}
+
+FOREACH(LeafNode leafG){
+EVENTS{
+addLeafNode(InnerNode node, LeafNode leaf) = {node.addLeafNode(*)uponReturning(leaf)}
+where {leafG = leaf;}
+process(LeafNode leaf) = {leaf.process()}
+where {leafG = leaf;}
+}%%EVENTS
+
+PROPERTY mufinB1LeafNodes{
+
+STATES {
+
+BAD{
+four {}
+}
+
+NORMAL{
+one {}
+two {}
+three {}
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> one [addLeafNode(node,leafG)\\]
+
+one -> two [send(node)\isParentOf(node, leafG)\]
+one -> two [sendCritical(node)\isParentOf(node, leafG)\]
+one -> one [reset(node)\isParentOf(node, leafG)\]
+
+one -> two [invalidateLeaf(node,i)\node.leafNodeCount() > i && node.getLeafNode(i) == leafG\]
+
+one -> three [invalidateInner(node, i)\isParentOf(node,leafG)\]
+
+one -> four [process(leafG)\\channel.send(leafG);]
+
+two -> four [send(node)\isParentOf(node, leafG)\channel.send(leafG);]
+two -> four [sendCritical(node)\isParentOf(node, leafG)\channel.send(leafG);]
+
+two -> one [reset(node)\isParentOf(node, leafG)\]
+
+two -> three [invalidateLeaf(node,i)\node.leafNodeCount() > i && node.getLeafNode(i) == leafG\]
+
+two -> three [invalidateInner(node, i)\isParentOf(node,leafG)\]
+
+two -> one [process(leafG)\\]
+
+three -> four [process(leafG)\\channel.send(leafG);]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+}
+
+}%%GLOBAL
+
+
+METHODS{
+
+boolean isParentOf(InnerNode possibleParent, InnerNode possibleChild){
+    if(possibleParent.innerNodeCount() == 0) return false;
+    for(int i = 0; i < possibleParent.innerNodeCount(); i++){
+        if(possibleParent.getInnerNode(i).equals(possibleChild)
+            || isParentOf(possibleParent.getInnerNode(i), possibleChild)){
+            return true;
+        }
+    }
+    return false;
+}
+
+boolean isParentOf(InnerNode possibleParent, LeafNode possibleChild){
+    if(possibleParent.leafNodeCount() == 0) return false;
+    for(int i = 0; i < possibleParent.leafNodeCount(); i++){
+        if(possibleParent.getLeafNode(i).equals(possibleChild)){
+            return true;
+        }
+        else{
+            for(int j = 0; j < possibleParent.innerNodeCount(); j++){
+                if(isParentOf(possibleParent.getInnerNode(j), possibleChild)){
+                    return true;
+                }
+            }
+        }
+    } 
+    return false;
+}
+
+void printCountVariables(int addInnerNodeCount, int addLeafNodeCount, int sendCount, int sendCriticalCount, int resetCount, int processCount, int invalidateInnerCount, int invalidateLeafCount){
+    System.out.println("addInnerNode called: " + addInnerNodeCount + " times\n");
+    System.out.println("addLeafNode called: " + addLeafNodeCount + " times\n");
+    System.out.println("send called: " + sendCount + " times\n");
+    System.out.println("sendCritical called: " + sendCriticalCount + " times\n");
+    System.out.println("reset called: " + resetCount + " times\n");
+    System.out.println("process called: " + processCount + " times\n");
+    System.out.println("invalidateInner called: " + invalidateInnerCount + " times\n");
+    System.out.println("invalidateLeaf called: " + invalidateLeafCount + " times");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+
+

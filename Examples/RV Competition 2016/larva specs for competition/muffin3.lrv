@@ -1,0 +1,131 @@
+IMPORTS{
+import java.util.ArrayList;
+import de.uni_luebeck.isp.rvwithunionfind.benchmarks.benchmark5.*;
+}%%IMPORTS
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int deviceModeToggleCount = 0;
+int createPieceCount = 0;
+int processCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(Piece p)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+processPiece(Piece p) = {p.process()}
+
+deviceModeToggleGeneric(Device d) = {d.toggleMode()}
+createPieceGeneric(Device d, Piece p) = {d.createPiece()uponReturning(p)}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+FOREACH(Device dG){
+
+EVENTS{
+deviceModeToggle(Device d) = {d.toggleMode()}
+where {dG = d;}
+}%%EVENTS
+
+FOREACH(Piece pG){
+
+EVENTS{
+createPiece(Device d, Piece p) = {d.createPiece()uponReturning(p)}
+where {dG = d;pG = p;}
+}%%EVENTS
+
+PROPERTY mufinB3{
+
+STATES {
+
+BAD{
+four {}
+}
+
+NORMAL{
+two {}
+three {}
+}
+
+STARTING{
+one {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+one -> two [createPiece(dG,pG)\\]
+two -> three [deviceModeToggle(dG)\\]
+three -> two [deviceModeToggle(dG)\\]
+three -> four [processPiece(pG)\\channel.send(pG);]
+
+}%%TRANSITIONS
+}%%PROPERTY
+}
+}
+
+}%%GLOBAL
+
+METHODS{
+
+void printCountVariables(int deviceModeToggleCount, int createCountCount, int processCount){
+    System.out.println("deviceModeToggle called: " + deviceModeToggleCount + " times\n");
+    System.out.println("createCount called: " + createCountCount + " times\n");
+    System.out.println("process called: " + processCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+
+void write(String s){
+System.out.println(s);
+}
+}%%METHODS

@@ -1,0 +1,115 @@
+IMPORTS{
+import java.util.ArrayList;
+import transactionsystem.*;
+}%%IMPORTS
+
+GLOBAL{
+
+VARIABLES {
+ArrayList<String> trace = new ArrayList<String>();
+Channel channel = new Channel();
+
+int depositCount = 0;
+int payCount = 0;
+int reconcileCount = 0;
+
+boolean showEvents = true;
+boolean showWitness = true;
+boolean showTrace = true;
+
+int deposits = 0;
+int pays = 0;
+int reconciles = 0;
+double amounts = 0;
+}%%VARIABLES
+
+EVENTS{
+violation() = {channel.receive(String s)}
+executionFinished() = {execution *.main(*)uponReturning()}
+
+deposit(double amount) = {*.USER_depositFromExternal(Integer uid, Integer sid, String to_account_number, double amount)}
+pay(double amount) = {*.USER_payToExternal(Integer uid, Integer sid, String from_account_number,amount)}
+reconcile() = {*.ADMIN_reconcile()}
+}%%EVENTS
+
+PROPERTY violationMonitor{
+
+STATES{
+
+ACCEPTING{
+finished {}
+}
+
+NORMAL{
+violated {}
+}
+
+STARTING{
+start {}
+}
+}
+
+TRANSITIONS{
+start -> violated [violation()\\]
+start -> finished [executionFinished()\\satisfied();]
+violated -> finished [executionFinished()\\violated();]
+}
+
+}
+
+PROPERTY larvaB2{
+
+STATES {
+
+BAD{
+}
+NORMAL{
+}
+
+STARTING{
+start {}
+}
+}%%STATES
+
+TRANSITIONS{
+
+start -> start [deposit(amount)\(deposits + pays) < 1000\deposits++; amounts += amount;]
+start -> start [pay(amount)\(deposits + pays) < 1000\payCount++; pays++; amounts += amount;]
+
+start -> start [reconcile()\(deposits + pays) > 1000 || amounts > 1000000\channel.send(""); deposits = 0; pays = 0;]
+start -> start [reconcile()\(deposits + pays) <= 1000 || amounts <= 1000000\deposits = 0; pays = 0; amounts = 0;]
+%%start -> start [reconcile()\(deposits + pays) == 1000\deposits = 0; pays = 0;]
+
+}%%TRANSITIONS
+}%%PROPERTY
+
+}%%GLOBAL
+
+METHODS{
+
+void printCountVariables(int depositCount, int payCount, int reconcileCount){
+    System.out.println("deposit called: " + depositCount + " times\n");
+    System.out.println("pay called: " + payCount + " times\n");
+    System.out.println("reconcile called: " + reconcileCount + " times\n");
+}
+
+void printTrace(ArrayList<String> trace){
+    String traceString = "";
+    
+    for(int i = 0; i < trace.size(); i++){
+        traceString += trace.get(i) + "\n";
+    }
+    
+    System.out.println(traceString);
+}
+
+
+void violated(){
+System.out.println("STATUS: Violated");
+}
+
+void satisfied(){
+System.out.println("STATUS: Satisfied");
+}
+}%%METHODS
+
