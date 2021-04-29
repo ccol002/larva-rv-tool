@@ -357,16 +357,17 @@ public class Global extends Compiler{
 					else
 						throw new ParseException("Identifier Expected: " + Tokenizer.debugShow(al, cnt2));
 				}
-				else 
-				{
-					for (int i = 0; i < al.size(); i++)
-						if (al.get(i).isIdentifier())//identifier//no colons...search automatically!
-						{
-							Token t = al.get(i);
-							al.set(i, new Token(searchVariable(t, g)));
-						}
-					
-				}
+//				else //29/4/21 This code handling references to local variables without the "::" (double colon) 
+//					//is dangerous and might substitute identifiers which have nothing to do with it.
+//				{
+//					for (int i = 0; i < al.size(); i++)
+//						if (al.get(i).isIdentifier())//identifier//no colons...search automatically!
+//						{
+//							Token t = al.get(i);
+//							al.set(i, new Token(searchVariable(t, g)));
+//						}
+//					
+//				}
 //				else 
 //				{
 //					//do nothing...we are trying to replace identifiers....
