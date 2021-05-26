@@ -117,6 +117,7 @@ public class Tokenizer {
 		keyWords.put(mode, new Hashtable<String, Integer>());
 				
 		putKeyWord("!=");
+		putKeyWord("!");
 		putKeyWord("==");
 		putKeyWord("<=");
 		putKeyWord(">=");
