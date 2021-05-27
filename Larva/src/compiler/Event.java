@@ -407,12 +407,18 @@ public class Event extends Trigger{
 		return list;
 	}
 	
-	public HashMap<String,Variable> recursiveOtherVariables(HashMap<String, Trigger> events, Trigger event, HashMap<String,Variable> list)
+	public HashMap<String,Variable> recursiveOtherVariables(HashMap<String, Trigger> events, Trigger event, HashMap<String,Variable> list) throws ParseException
 	{		
 		if (EventCollection.reverse.containsKey(event.name.text))
 			for (String s : EventCollection.reverse.get(event.name.text).keySet())
 			{
-				for (Variable v:events.get(s).otherVars.values())
+				//fix 27/5/21: 
+				//note that since the "reverse" structure in EventCollection is static, event names need to be unique across the whole script!
+				Trigger t = events.get(s);
+				if (t == null)
+					throw new ParseException("Something went wrong! Did you use duplicate event names across contexts? Sorry but these are not supported!");
+				
+				for (Variable v:t.otherVars.values())
 					list.put(v.name.text,v);
 					
 				recursiveOtherVariables(events, events.get(s), list);
