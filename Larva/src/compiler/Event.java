@@ -414,6 +414,7 @@ public class Event extends Trigger{
 			{
 				//fix 27/5/21: 
 				//note that since the "reverse" structure in EventCollection is static, event names need to be unique across the whole script!
+				//tried to make the structure non-static but the solution seems non trivial
 				Trigger t = events.get(s);
 				if (t == null)
 					throw new ParseException("Something went wrong! Did you use duplicate event names across contexts? Sorry but these are not supported!");
