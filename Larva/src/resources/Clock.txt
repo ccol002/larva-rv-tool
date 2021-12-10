@@ -67,6 +67,8 @@ return false;
 	
 public void pause()
 {
+if (paused == true)
+return;
 synchronized (this){
     paused = true;
 //		System.out.println("Paused>>" + System.currentTimeMillis());
@@ -76,6 +78,8 @@ synchronized (this){
 //continue
 public void resume()
 {			
+if (paused == false)
+return;
 		//avoids deadlock..."resume" may be waiting for the "register" to complete
 		//while holding "this object" as a lock while "verified" is also holding
 		//"this object" as a lock and its caller is holding "lock" which is required by "register"		

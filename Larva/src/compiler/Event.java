@@ -674,7 +674,8 @@ public class Event extends Trigger{
 		else if (type == EventType.channel)
 		{
 			
-			sb.append("Channel _c) : (call(* Channel.receive(..)) && target(_c) && (if (_c.equals(_cls_"+container.name+container.id+"."+ this.channelName +")))");
+			sb.append("Channel _c) : (call(* Channel.receive(..)) "
+					+ "&& target(_c) && (if (_c.equals(_cls_"+container.name+container.id+"."+ this.channelName +")))");
 
 			if (args.size()>0)
 			{
