@@ -522,22 +522,6 @@ public class Global extends Compiler{
 			cl.append("\r\n}catch(Exception ex)\r\n{ex.printStackTrace();}");
 		}
 
-		//clocks and other variable declarations		
-		for (Variable v:local.keySet())
-			if (v.getVariableType().equals("Clock"))
-				cl.append("\r\n" + 
-						v.getVariableName() + " = new " + v.getVariableType() + "(this,\""+v.getVariableName()+"\");");
-
-		//invariants
-		for (Invariant inv: invariants.invariants.values())
-		{
-			if (!inv.initialization)
-				cl.append("\r\n" + inv.name + "_enb = false;");
-			else {
-				cl.append("\r\n" + inv.name + "_enb = true;");
-				cl.append("\r\n" + inv.name + "_temp = "+ Tokenizer.showStats(inv.call) +";" );
-			}
-		}
 		
 		cl.append("\r\n}");
 		
@@ -560,6 +544,26 @@ public class Global extends Compiler{
 			cl.delete(cl.length()-1, cl.length());//remove last comma
 			cl.append(");");
 		}
+		
+		////////Fixed 18/2/22//////This was happening in the static section
+		//clocks and other variable declarations		
+		for (Variable v:local.keySet())
+			if (v.getVariableType().equals("Clock"))
+				cl.append("\r\n" + 
+						v.getVariableName() + " = new " + v.getVariableType() + "(this,\""+v.getVariableName()+"\");");
+
+		//invariants
+		for (Invariant inv: invariants.invariants.values())
+		{
+			if (!inv.initialization)
+				cl.append("\r\n" + inv.name + "_enb = false;");
+			else {
+				cl.append("\r\n" + inv.name + "_enb = true;");
+				cl.append("\r\n" + inv.name + "_temp = "+ Tokenizer.showStats(inv.call) +";" );
+			}
+		}
+		/////////////end of fix
+		
 		for (Variable v:localVariables.values())
 			if (v.getVariableType().equals("Clock"))
 				{
