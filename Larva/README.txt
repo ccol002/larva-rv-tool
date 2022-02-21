@@ -1,5 +1,9 @@
 Below are the features which have not yet been added to the official Larva documentation
 
+** -v directive **
+
+To get verbose output, i.e., not only information about reaching bad states, use the "-v" directive when using the Larva compiler.
+
 ** Dynamic Clocks ** 
 
 Dynamic Clocks allow the creation of timeouts dynamically, e.g. within a transition action. 
