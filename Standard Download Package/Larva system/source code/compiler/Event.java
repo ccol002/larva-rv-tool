@@ -641,15 +641,13 @@ public class Event extends Trigger{
 					" && args(millis) && target(_c) " +
 					" && (if (_c.name.equals(\""+this.clockName+"\")))"+
 					" && (if (millis == "+clockAmount+"))"+
-					" && !cflow(adviceexecution())"+
-					" && !cflow(within(larva.*))  && !(within(larva.*))");
+					" && !cflow(adviceexecution())");
 		}
 		else if (type == EventType.clockCycle)
 		{
 			sb.append("Clock _c, long millis) : (call(* Clock.event(long))" +
 					" && args(millis) && target(_c) && (if (millis % "+clockAmount+"==0))"+
-					" && !cflow(adviceexecution())"+
-					" && !cflow(within(larva.*))  && !(within(larva.*))");
+					" && !cflow(adviceexecution())");
 		}
 		else if (type == EventType.channel)
 		{
