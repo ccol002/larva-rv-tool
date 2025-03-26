@@ -820,6 +820,7 @@ public class Global extends Compiler{
 		//		+"\r\nsynchronized (RunningClock.lock){"
 		//		+"\r\nsynchronized (RunningClock.events){"
 				+"\r\nsynchronized (this){"
+				+"\r\nthison = true;"
 				+"\r\npaused = false;"
 				+"\r\ndurationPaused = 0;"
 				+"\r\nstarting = System.currentTimeMillis();"
