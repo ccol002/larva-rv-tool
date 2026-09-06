@@ -24,6 +24,15 @@
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Only needed to locate aspectjrt.jar's own file (for -cp when
+		     shelling out to ajc, and on the classpath at runtime) in Tier 3
+		     end-to-end tests - ajc itself must still be on PATH. -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.9.22.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
