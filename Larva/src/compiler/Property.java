@@ -136,14 +136,15 @@ public class Property extends Compiler {
 			PrintWriter pw1 = new PrintWriter(Compiler.outputDir+"_diag_"+name+".txt");
 			pw1.write(sb.toString());
 			pw1.close();
-			Runtime.getRuntime().exec("\""+Compiler.graphvizDir + "\" -Tgif -o\""+outputDir
-					+"_logic_"+name+"_diag.gif\" -Kdot \""+Compiler.outputDir+"_diag_"+name+".txt\"");
-			
+			new ProcessBuilder(Compiler.graphvizDir, "-Tgif",
+					"-o"+outputDir+"_logic_"+name+"_diag.gif",
+					"-Kdot", Compiler.outputDir+"_diag_"+name+".txt").start();
+
 		}
 		catch(Exception ex)
 		{
 			System.out.println("Diagram was not successfully generated! " +
-					"Make sure Graphviz is installed in the default location!" +
+					"Make sure Graphviz is installed and \"dot\" is on your PATH!" +
 					"...or else provide a \"-g\" commandline argument");
 		}
 	}

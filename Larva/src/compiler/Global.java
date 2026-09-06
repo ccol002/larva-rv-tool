@@ -1,9 +1,8 @@
 package compiler;
 
 import java.io.File;
+import java.io.InputStream;
 import java.io.PrintWriter;
-import java.net.URL;
-import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -247,16 +246,12 @@ public class Global extends Compiler{
 				if (t.text.equals(v.name.text))
 					found = true;
 		}
-//		if (!found)
-//		{//check if it is in the context
-//			ArrayList<Token> list = new ArrayList<Token>();
-//			list.add(t);
-//			current = current.searchContext(list);
-//			if (current != null)
-//				for (Variable v:current.variables)
-//					if (t.text.equals(v.name.text))
-//						found = true;
-//		}
+		if (!found)
+		{//the FOREACH's own loop variable(s), e.g. referencing "u" via "u::u"
+			for (Variable v:current.variables)
+				if (t.text.equals(v.name.text))
+					found = true;
+		}
 		return found;
 	}
 	
@@ -848,11 +843,7 @@ public class Global extends Compiler{
 		
 	public void createClass(String name)
 	{
-		try{			
-			URL url = this.getClass().getResource("/resources/"+ name+".txt");
-			String decoded = URLDecoder.decode(url.getPath(), "UTF-8");
-			
-			Path source = Paths.get(decoded);
+		try(InputStream source = this.getClass().getResourceAsStream("/resources/"+ name+".txt")){
 			Path destination = Paths.get(Compiler.outputDir+"/larva/"+name+".java");
 
 			Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);

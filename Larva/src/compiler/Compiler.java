@@ -7,14 +7,10 @@ import java.io.InputStreamReader;
 
 public class Compiler {
 
-	public static String inputDir = "C:\\Users\\University User\\Desktop\\Parser\\Parser\\src\\bank 2.txt";
-	//"C:\\Users\\University User\\Desktop\\Parser\\Parser\\bin\\parser\\bank 2.txt";
-	//bank 4.txt";//"D:\\Workspace\\ccbill projects\\Parser\\bin\\parser\\General Transaction NEW.txt";//properties2.txt";//
-	public static String outputDir = "C:\\Users\\University User\\Desktop\\aspectJ\\NestingTesting\\src\\larva\\";//ccbill projects\\TGS1.3\\src\\larva\\";
-		//"C:\\Users\\University User\\Desktop\\aspectJ\\NestingTesting\\src\\larva\\"; 
-	//\\larva\\";//"D:\\Workspace\\ccbill projects\\TGS try\\Workspace\\TGS1.3\\src\\larva\\";//"D:\\Workspace\\TGS1.3\\src\\larva\\";//"D:\\Workspace\\TargetSystem2\\larva\\";//"\\\\mtsrv-fs1\\Desktops$\\chrisco\\CHRIS_COLOMBO\\TGS1.3\\src\\larva\\";//
-	
-	public static String graphvizDir = "C:\\Program Files\\Graphviz2.16\\bin\\dot.exe";
+	public static String inputDir = null;
+	public static String outputDir = ".";
+
+	public static String graphvizDir = "dot"; //resolved via PATH; override with -g
 	
 	static Global global;
 	static Methods methods;

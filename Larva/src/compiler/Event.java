@@ -728,7 +728,7 @@ public class Event extends Trigger{
 			else if (type == EventType.uponThrowing)
 			{
 				sb.append(") throwing (");
-				if (exception != null && variables.containsKey(exception.text) && !returned.text.equals("*") && variables.get(exception.text).type != null)
+				if (exception != null && variables.containsKey(exception.text) && !exception.text.equals("*") && variables.get(exception.text).type != null)
 					sb.append(variables.get(exception.text).type.text + " " + variables.get(exception.text).getVariableName());
 				sb.append(") : (");
 			}

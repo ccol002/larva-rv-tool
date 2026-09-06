@@ -46,6 +46,7 @@ paused = false;
 durationPaused = 0;
 starting = System.currentTimeMillis();
 enabled = true;
+thison = true;
 for (int i = 0; i < registered.size(); i++)
 						registerGlobally(registered.get(i),starting);
 					//no need to un-register the existing events which belong to this clock
