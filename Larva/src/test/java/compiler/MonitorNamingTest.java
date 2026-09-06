@@ -15,7 +15,7 @@ class MonitorNamingTest extends CompilerTestBase {
 	void monitorNameIsFilenameWithoutPathOrExtension(@TempDir Path tempDir) throws Exception {
 		Path nested = Files.createDirectories(tempDir.resolve("deeply").resolve("nested").resolve("dir"));
 		Path script = nested.resolve("my-script.lrv");
-		Files.copy(fixture("minimal-valid.lrv"), script);
+		Files.copy(fixture("minimalvalid.lrv"), script);
 
 		Path outputDir = Files.createDirectory(tempDir.resolve("out"));
 		compile(script, outputDir);
@@ -26,7 +26,7 @@ class MonitorNamingTest extends CompilerTestBase {
 	@Test
 	void monitorNameIgnoresUnderscoresAndDigitsVerbatim(@TempDir Path tempDir) throws Exception {
 		Path script = tempDir.resolve("bank_v2.lrv");
-		Files.copy(fixture("minimal-valid.lrv"), script);
+		Files.copy(fixture("minimalvalid.lrv"), script);
 
 		Path outputDir = Files.createDirectory(tempDir.resolve("out"));
 		compile(script, outputDir);

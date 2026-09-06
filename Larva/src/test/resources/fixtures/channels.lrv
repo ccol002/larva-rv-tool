@@ -1,0 +1,62 @@
+IMPORTS{
+}
+
+GLOBAL{
+
+VARIABLES {
+Channel ch = new Channel();
+int count = 0;
+}%%VARIABLES
+
+EVENTS{
+
+increment() = {*.increment()}
+notified(String from) = {ch.receive(from)}
+
+}%%EVENTS
+
+PROPERTY counter{
+
+STATES {
+
+BAD{
+bad{}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> bad [increment\count > 2\ch.send("threshold");]
+
+start -> start [increment\\count++;]
+
+}
+}%%PROPERTY
+
+PROPERTY listener{
+
+STATES {
+
+NORMAL{
+gotit {}
+}
+
+STARTING{
+waiting {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+waiting -> gotit [notified\\System.out.println("Got: " + from);]
+
+}
+}%%PROPERTY
+
+}%%GLOBAL
