@@ -110,7 +110,7 @@ TRANSITIONS{
 
 start -> toomany [addAccount()\accountCnt > 5]
 
-start -> start [addAccount()\\accountCnt++;System.out.println("I have access to USER : " + u + " and to usercnt: " +userCnt);]
+start -> start [addAccount()\\accountCnt++;System.out.println("I have access to USER : " + u + " and to usercnt: " +::userCnt);]
 
 start -> start [deleteAccount()\\accountCnt--;]
 
@@ -150,7 +150,7 @@ PROPERTY transaction{
 STATES {
 
 BAD{
-toomany {System.out.println(u);}
+toomany {System.out.println(u::u);}
 }
 
 STARTING{
@@ -163,9 +163,9 @@ TRANSITIONS{
 
 start -> toomany [addTransaction()\transactionCnt > 5]
 
-start -> start [addTransaction()\\transactionCnt++; 
-System.out.println("I still have access to USER : " + u + " and to usercnt: " +userCnt 
-+ " and to accountcnt: " +accountCnt+ " and to transactioncnt: " +transactionCnt);]
+start -> start [addTransaction()\\transactionCnt++;
+System.out.println("I still have access to USER : " + u::u + " and to usercnt: " +::userCnt
++ " and to accountcnt: " +u::accountCnt+ " and to transactioncnt: " +transactionCnt);]
 
 start -> start [deleteTransaction()\\transactionCnt --;]
 
