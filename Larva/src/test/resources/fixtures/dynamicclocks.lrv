@@ -1,0 +1,41 @@
+IMPORTS{
+}
+
+GLOBAL{
+
+VARIABLES {
+Clock c = new Clock();
+int count = 0;
+}%%VARIABLES
+
+EVENTS{
+
+tick() = {c@@}
+event() = {*.event()}
+
+}%%EVENTS
+
+PROPERTY test{
+
+STATES {
+
+BAD{
+bad{}
+}
+
+STARTING{
+start {}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+start -> bad [tick\count > 3]
+
+start -> start [event\\count++;c.registerDynamically(500l);]
+
+}
+}%%PROPERTY
+
+}%%GLOBAL

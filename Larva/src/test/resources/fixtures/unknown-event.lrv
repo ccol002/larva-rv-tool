@@ -1,0 +1,36 @@
+IMPORTS{
+}
+
+GLOBAL{
+
+VARIABLES {
+}%%VARIABLES
+
+EVENTS{
+
+foo() = {*.foo()}
+
+}%%EVENTS
+
+PROPERTY test{
+
+STATES {
+
+BAD{
+bad{}
+}
+
+STARTING{
+ok{}
+}
+
+}%%STATES
+
+TRANSITIONS{
+
+ok -> bad [ghostEvent()]
+
+}
+}%%PROPERTY
+
+}%%GLOBAL

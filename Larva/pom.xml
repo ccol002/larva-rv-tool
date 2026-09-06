@@ -17,6 +17,24 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Only needed to locate aspectjrt.jar's own file (for -cp when
+		     shelling out to ajc, and on the classpath at runtime) in Tier 3
+		     end-to-end tests - ajc itself must still be on PATH. -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.9.22.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<!-- Kept as "src" (not the Maven-standard src/main/java) so the existing
 		     Eclipse project (.project/.classpath) and directory layout are untouched. -->
@@ -34,6 +52,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
+				<configuration>
+					<!-- sourceDirectory is "src" (flat layout, see above), which would
+					     otherwise recursively pick up src/test/java as main sources too. -->
+					<excludes>
+						<exclude>test/**</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -46,6 +71,27 @@
 						</manifest>
 					</archive>
 				</configuration>
+			</plugin>
+			<!-- Tier 1 + Tier 2 (fast, no AspectJ): runs under "mvn test". -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+			</plugin>
+			<!-- Tier 3 (needs ajc on PATH): *IT.java tests only, runs under
+			     "mvn verify" via the integration-test/verify goals, not "mvn test". -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.2.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

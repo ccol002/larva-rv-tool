@@ -67,7 +67,42 @@ public class Compiler {
 	{
 		return "";
 	}
-	
+
+	/**
+	 * Resets all of the compiler's cross-compile static state back to defaults.
+	 * Several classes (Global, Event, Events, State, Token, EventCollection) use
+	 * static counters/maps to generate unique names across a single compile; left
+	 * untouched, a second compile in the same JVM inherits the first one's counters
+	 * and accumulated data, producing non-deterministic/wrong output (e.g. Global's
+	 * "id==0 becomes root" check never firing again once a first Global exists).
+	 * Call this before every compile that isn't the first in a fresh JVM - a JUnit
+	 * {@code @BeforeEach} in a shared test base class is the intended caller.
+	 */
+	public static void resetState()
+	{
+		inputDir = null;
+		outputDir = ".";
+		graphvizDir = "dot";
+
+		global = null;
+		methods = null;
+		imports = null;
+		verbose = false;
+		console = false;
+		light = false;
+
+		Global.sid = -1;
+		Global.root = null;
+		Global.name = null;
+
+		Event.sid = -1;
+		Events.sid = -1;
+		State.sid = -1;
+		Token.guid = Token.GUID_START;
+
+		EventCollection.reverse.clear();
+	}
+
 	public static void main(String[] args) {
 		try{
 			if (args.length == 0)
@@ -96,19 +131,8 @@ public class Compiler {
 					if (args[i].equals("-l"))
 						light = true;
 				}
-				
-				BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(inputDir)));
-				StringBuilder text = new StringBuilder();
-				String temp;
-				while ((temp = br.readLine()) != null)   {
-					if (temp.indexOf("%%") != -1)//remove comments
-						temp=temp.substring(0,temp.indexOf("%%"));
-					text.append(temp.trim() + "\r\n");
-				}
-				Compiler p = new Compiler(new ParsingString(text));
-				p.parse();
-				p.outputFiles();
-				p.outputLogics();
+
+				compile();
 				System.out.println("Compiled Successfully!!!");
 			}
 		}catch(Exception ex)
@@ -116,7 +140,31 @@ public class Compiler {
 			ex.printStackTrace();
 		}
 	}
-	
+
+	/**
+	 * Runs a compile using whatever inputDir/outputDir/graphvizDir/verbose/
+	 * console/light are currently set to, letting exceptions (in particular
+	 * ParseException) propagate to the caller instead of being swallowed -
+	 * unlike main(), which prints and discards them. This is the entry point
+	 * tests should call directly.
+	 */
+	public static void compile() throws ParseException, java.io.IOException
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(inputDir)));
+		StringBuilder text = new StringBuilder();
+		String temp;
+		while ((temp = br.readLine()) != null)   {
+			if (temp.indexOf("%%") != -1)//remove comments
+				temp=temp.substring(0,temp.indexOf("%%"));
+			text.append(temp.trim() + "\r\n");
+		}
+		br.close();
+		Compiler p = new Compiler(new ParsingString(text));
+		p.parse();
+		p.outputFiles();
+		p.outputLogics();
+	}
+
 	private void outputLogics() {
 		global.outputLogicsDiagrams(outputDir);		
 	}
