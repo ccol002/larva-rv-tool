@@ -17,6 +17,15 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<!-- Kept as "src" (not the Maven-standard src/main/java) so the existing
 		     Eclipse project (.project/.classpath) and directory layout are untouched. -->
@@ -46,6 +55,27 @@
 						</manifest>
 					</archive>
 				</configuration>
+			</plugin>
+			<!-- Tier 1 + Tier 2 (fast, no AspectJ): runs under "mvn test". -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+			</plugin>
+			<!-- Tier 3 (needs ajc on PATH): *IT.java tests only, runs under
+			     "mvn verify" via the integration-test/verify goals, not "mvn test". -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.2.5</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
