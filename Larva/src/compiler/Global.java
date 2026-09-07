@@ -629,7 +629,7 @@ public class Global extends Compiler{
 			{
 				cl.append("\r\nif ( tmp." + inv + "_enb && !tmp."+inv+"_temp.equals(" + Tokenizer.showStats(inv.call) +")){");
 				
-				if (!Compiler.light)//no file output to keep it light
+				if (!Compiler.light && !Compiler.console)//no file output to keep it light, or when writing to console instead
 					cl.append("\r\n  _cls_"+name+"0.pw.println(\" Invariant Check: "+inv+" Failed: " + Tokenizer.showStats(inv.call) + "!!: \" + " +
 						"new _BadStateException"+name+"().toString());" +
 						"\r\n  _cls_" + name + "0.pw.flush();");
@@ -653,10 +653,14 @@ public class Global extends Compiler{
 		{
 			for (Invariant inv : invariants.invariants.values())
 			{
-				cl.append("\r\nif ( root." + inv + "_enb && !root."+inv+"_temp.equals(" + Tokenizer.showStats(inv.call) +")){"+ 
-								"\r\n  _cls_"+name+"0.pw.println(\" Invariant Check: "+inv+" Failed: " + Tokenizer.showStats(inv.call) + "!!: \" + " +
-								"new _BadStateException"+name+"().toString());" +
-								"\r\n  _cls_" + name + "0.pw.flush();");
+				cl.append("\r\nif ( root." + inv + "_enb && !root."+inv+"_temp.equals(" + Tokenizer.showStats(inv.call) +")){");
+
+				if (!Compiler.light && !Compiler.console)
+					cl.append("\r\n  _cls_"+name+"0.pw.println(\" Invariant Check: "+inv+" Failed: " + Tokenizer.showStats(inv.call) + "!!: \" + " +
+						"new _BadStateException"+name+"().toString());" +
+						"\r\n  _cls_" + name + "0.pw.flush();");
+				else
+					cl.append("\r\n  System.out.println(\" Invariant Check: "+inv+" Failed: " + Tokenizer.showStats(inv.call) + "!!: \");");
 				
 				cl.append("\r\nroot." + inv + "_temp = " + Tokenizer.showStats(inv.call) + ";\r\n}");
 			}
