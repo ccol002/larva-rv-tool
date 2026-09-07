@@ -77,8 +77,11 @@ your `PATH`, the compiler also emits a `.gif` diagram per automaton.
    java -jar Larva/target/larva-compiler-1.0.0.jar path/to/script.lrv -o path/to/output/dir
    ```
 
-   Useful flags: `-v` for verbose output, `-g <path-to-dot>` to point at a
-   Graphviz install that isn't on `PATH`.
+   Useful flags: `-o <dir>` for the output directory, `-g <path-to-dot>` to
+   point at a Graphviz install that isn't on `PATH`, `-v` for verbose
+   output, `-c` to send monitor output to `System.out` instead of a file,
+   `-l` for light/benchmark mode (halts on a bad state), and `-s` /
+   `--synchronous` to auto-flush the output file for live tailing.
 
 3. **Weave the generated monitor** into the target system and **run** it —
    for example, for the `bank system` demo:
@@ -94,9 +97,7 @@ your `PATH`, the compiler also emits a `.gif` diagram per automaton.
    `"run with monitor code.bat"` (Windows).
 
 See the [LARVA System Manual](Larva%20manuals/Larva%20System%20Manual.pdf)
-for the full scripting language reference, and `Larva/README.txt` for
-features added since the manual was last updated (the `-v` flag, dynamic
-clocks).
+for the full scripting language reference.
 
 ## License
 
