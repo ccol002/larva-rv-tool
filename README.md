@@ -17,9 +17,12 @@ Techniques" course, and for LARVA's continued development.
   templates it weaves into generated monitors (`src/resources`); also an
   Eclipse project and the Maven build (`pom.xml`) described below.
 - `Larva manuals/` — the LARVA System Manual and the Converter manual.
-- `Java demo systems/` — three canonical demos, each a target Java system
-  with `run.sh`/`run.bat` (compile and run unmonitored) and
-  `run with monitor code.sh`/`.bat` (compile, weave and run monitored):
+- `examples/` — worked demo systems, each with its own `README.md`, plus the
+  RV Competition 2016 benchmarks. Every demo (except the RV Competition
+  benchmarks, which bring their own scripts) has `run.sh`/`run.bat`
+  (compile and run unmonitored) and `run with monitor code.sh`/`.bat`
+  (compile, weave and run monitored — compiled with `-c`, so monitor
+  output prints straight to the console):
   - `bank system/` and `benchmark/` each carry a hand-written `.lrv` script
     (`bank.lrv`, `benchmark.lrv`) alongside the Java system it monitors.
     `benchmark/` also has `benchmark_invariants.lrv`, a variant additionally
@@ -30,14 +33,21 @@ Techniques" course, and for LARVA's continued development.
     to (re)generate `minepump.lrv`, then compiles, weaves and runs it as
     usual — the QDDC-to-LARVA pipeline is the point of this demo, not an
     implementation detail.
+  - `clocks/` is a standalone showcase of LARVA's clock and channel
+    constructs — `clocks.lrv` needs no real target system, so it's paired
+    with a `Main` that does nothing but sleep long enough for the
+    automaton to run its course.
+  - `badlogin/` demonstrates *dynamic clocks* (`badloginsDynamicClocks.lrv`,
+    distinct from `Tutorial/BadLogin/`'s bare starting skeleton — see
+    below): a clock re-registered with a moving deadline on every event,
+    rather than one declared once with a fixed timeout.
+  - `RV Competition 2016/` is a large, self-contained set of 2016 Runtime
+    Verification Competition benchmarks (14+ `.lrv` specs across three
+    separate systems, each with its own `traces/`, `compile.sh`, `run.sh`
+    and `wiki.html`) — see its own `README.md` for details.
 - `Larva converter/` — a compiled tool that converts counterexamples,
   Lustre, implementables and QDDC specifications into LARVA scripts (see
-  `minepump/` above for its one worked, end-to-end example).
-- `Examples/` — further worked examples: `clocks.lrv` (a standalone
-  clocks/channels language showcase with no target system of its own),
-  `Badlogin example with dynamic clocks/` (a fully-worked example distinct
-  from `Tutorial/BadLogin/`'s bare starting skeleton — see below), and the
-  RV Competition 2016 benchmarks.
+  `examples/minepump/` above for its one worked, end-to-end example).
 - `Tutorial/` — a guided introduction to writing LARVA scripts.
   `Tutorial/BadLogin/` is an intentionally bare starting skeleton (just
   `Main.java`) for the tutorial's own exercises, not a worked example.
@@ -74,7 +84,7 @@ your `PATH`, the compiler also emits a `.gif` diagram per automaton.
    for example, for the `bank system` demo:
 
    ```sh
-   cd "Java demo systems/bank system"
+   cd "examples/bank system"
    ajc -1.8 -cp aspectjrt.jar -sourceroots . -d bin
    java -cp bin:aspectjrt.jar nesting.Bank
    ```
