@@ -28,9 +28,14 @@ public String toString() {
   return name;
 }
 
+public void on(){
+synchronized (this){
+thison = true;
+}}
+
 public void off(){
 synchronized (this){
-thison = false;
+	thison = false;
 }}
 
 
@@ -41,6 +46,7 @@ paused = false;
 durationPaused = 0;
 starting = System.currentTimeMillis();
 enabled = true;
+thison = true;
 for (int i = 0; i < registered.size(); i++)
 						registerGlobally(registered.get(i),starting);
 					//no need to un-register the existing events which belong to this clock
@@ -62,6 +68,8 @@ return false;
 	
 public void pause()
 {
+if (paused == true)
+return;
 synchronized (this){
     paused = true;
 //		System.out.println("Paused>>" + System.currentTimeMillis());
@@ -71,6 +79,8 @@ synchronized (this){
 //continue
 public void resume()
 {			
+if (paused == false)
+return;
 		//avoids deadlock..."resume" may be waiting for the "register" to complete
 		//while holding "this object" as a lock while "verified" is also holding
 		//"this object" as a lock and its caller is holding "lock" which is required by "register"		
@@ -125,14 +135,21 @@ registered.add(millis);
 		RunningClock.register(millis,current, this);
 	}
 
-	//WARNING: THIS IS NOT COMPATIBLE WITH NON-DYNAMIC CLOCKS
-	//DO NOT USE WITH PAUSE AND RESUME
-	//DO NOT USE WITH FIXED TIMEOUTS
+	//WARNING: this CANCELS any timeouts already set in another "current" time
 	public void registerDynamically(Long millis, Long current)
 	{
 		starting = current;
+		
 		RunningClock.register(millis,current, this);
 	}
+	
+	//sets a timer without disrupting any which might already be there
+	public void registerDynamically(Long millis)
+	{
+		RunningClock.register(millis+(System.currentTimeMillis()-starting),starting, this);
+	}
+	
+	
 
 //	public void registerCycle(long millis) {
 //		cycles.add(millis);
