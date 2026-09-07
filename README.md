@@ -17,17 +17,30 @@ Techniques" course, and for LARVA's continued development.
   templates it weaves into generated monitors (`src/resources`); also an
   Eclipse project and the Maven build (`pom.xml`) described below.
 - `Larva manuals/` — the LARVA System Manual and the Converter manual.
-- `Larva example scripts/` — canonical `.lrv` scripts (`bank.lrv`,
-  `benchmark.lrv`, `clocks.lrv`).
-- `Java demo systems/` — target Java systems (`bank system`, `benchmark`,
-  `minepump`) to try those scripts against, each with `run.sh`/`run.bat`
-  (compile and run unmonitored) and `run with monitor code.sh`/`.bat`
-  (compile, weave and run monitored).
+- `Java demo systems/` — three canonical demos, each a target Java system
+  with `run.sh`/`run.bat` (compile and run unmonitored) and
+  `run with monitor code.sh`/`.bat` (compile, weave and run monitored):
+  - `bank system/` and `benchmark/` each carry a hand-written `.lrv` script
+    (`bank.lrv`, `benchmark.lrv`) alongside the Java system it monitors.
+    `benchmark/` also has `benchmark_invariants.lrv`, a variant additionally
+    demonstrating LARVA's `INVARIANTS` feature.
+  - `minepump/` has no hand-written script at all. It demonstrates the
+    *converter* instead: `qddc_minepump.txt` is a QDDC formula, and
+    `run with monitor code.sh`/`.bat` first runs it through the converter
+    to (re)generate `minepump.lrv`, then compiles, weaves and runs it as
+    usual — the QDDC-to-LARVA pipeline is the point of this demo, not an
+    implementation detail.
 - `Larva converter/` — a compiled tool that converts counterexamples,
-  Lustre, implementables and QDDC specifications into LARVA scripts.
-- `Examples/` — further worked examples, including the RV Competition 2016
-  benchmarks.
+  Lustre, implementables and QDDC specifications into LARVA scripts (see
+  `minepump/` above for its one worked, end-to-end example).
+- `Examples/` — further worked examples: `clocks.lrv` (a standalone
+  clocks/channels language showcase with no target system of its own),
+  `Badlogin example with dynamic clocks/` (a fully-worked example distinct
+  from `Tutorial/BadLogin/`'s bare starting skeleton — see below), and the
+  RV Competition 2016 benchmarks.
 - `Tutorial/` — a guided introduction to writing LARVA scripts.
+  `Tutorial/BadLogin/` is an intentionally bare starting skeleton (just
+  `Main.java`) for the tutorial's own exercises, not a worked example.
 - `Other projects/` — related research prototypes and experiments, kept for
   reference; not part of the maintained tool.
 

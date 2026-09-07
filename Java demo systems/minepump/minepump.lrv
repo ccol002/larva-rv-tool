@@ -1,0 +1,96 @@
+IMPORTS {import main.*;} 
+
+GLOBAL {
+
+VARIABLES {
+Clock _clock;
+boolean always_since_68;
+boolean never_p_29;
+boolean pre_1_64;
+boolean boolg_8_60;
+boolean pre_2_65;
+boolean pre_3_69;
+boolean then_16_30;
+boolean pre_16_33;
+boolean strict_after_85;
+boolean pre_10_84;
+boolean first_56;
+long pre_11_83;
+boolean p_11_46;
+boolean p_11_45;
+boolean pre_1_54;
+long pre_12_82;
+boolean pre_2_55;
+long pre_13_81;
+long since_48;
+boolean pre_0_41;
+boolean pre_8_58;
+boolean interval_2_61;
+boolean len_13_47;
+boolean pre_9_57;
+boolean age_18_18;
+boolean after_40;
+boolean pre_15_74;
+boolean interval_10_32;
+boolean strict_after_63;
+boolean always_since_38;
+boolean p_9_37;
+boolean pre_1_35;
+boolean pre_2_36;
+boolean never_p_59;
+boolean pre_3_39;
+boolean pre_14_62;
+boolean strict_after_53;
+boolean pre_10_52;
+boolean pre_0_25;
+boolean first_26;
+long pre_11_51;
+boolean pre_1_86;
+boolean p_3_78;
+long pre_12_50;
+boolean p_3_76;
+boolean pre_2_87;
+long since_80;
+boolean p_4_77;
+boolean after_24;
+boolean p_4_75;
+boolean boolg_14_42;
+boolean pre_4_23;
+boolean p_0_67;
+long pre_5_22;
+boolean p_17_19;
+boolean p_1_66;
+boolean boolg_7_72;
+boolean pre_8_28;
+long pre_13_49;
+boolean pre_0_71;
+boolean pre_9_27;
+boolean len_6_79;
+boolean begin_12_43;
+long _rt_clock;
+boolean after_70;
+boolean boolg_15_31;
+boolean strict_after_34;
+boolean begin_5_73;
+long temptime_21;
+boolean pre_17_44;
+boolean _p;
+long age_20;
+}
+
+ EVENTS {_b_event(boolean _b,boolean D,boolean Alarm) = {Main *.start()} where { _b = true; D = true; Alarm = false;} D_event(boolean _b,boolean D,boolean Alarm) = {DH2O *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} Alarm_event(boolean _b,boolean D,boolean Alarm) = {ALARM *.on()} where { _b = false; D = DH2O.status; Alarm = ALARM.status;} initializationEvent() = {Main *.initialize()} periodicEvent(boolean _b,boolean D,boolean Alarm) = {_b_event|D_event|Alarm_event} }
+
+PROPERTY then_19 {
+
+STATES { 
+ NORMAL { lustre }
+ STARTING { initialization }
+}
+
+TRANSITIONS { 
+ initialization -> lustre [initializationEvent\ \pre_4_23 = false;pre_5_22 = 0;pre_0_25 = false;pre_8_28 = false;pre_9_27 = false;pre_1_35 = false;pre_2_36 = false;pre_0_41 = false;pre_17_44 = false;pre_10_52 = false;pre_11_51 = 0;pre_12_50 = 0;pre_13_49 = 0;pre_1_54 = false;pre_2_55 = false;pre_8_58 = false;pre_9_57 = false;pre_1_64 = false;pre_2_65 = false;pre_0_71 = false;pre_15_74 = false;pre_10_84 = false;pre_11_83 = 0;pre_12_82 = 0;pre_13_81 = 0;pre_1_86 = false;pre_2_87 = false;]
+ lustre -> lustre [periodicEvent\ \_rt_clock = _clock.current_long();after_24 = (_b)?(true):(pre_0_25);p_11_45 = Alarm;p_11_46 = Alarm;p_3_76 = D;never_p_29 = (_b)?(true):((pre_8_28)?(false):(pre_9_27));p_9_37 = Alarm;p_3_78 = D;p_0_67 = D;p_17_19 = D;p_4_77 = !(p_3_78);p_4_75 = !(p_3_76);p_1_66 = !(p_0_67);temptime_21 = (!(after_24 && pre_4_23) || _b)?(_rt_clock):(pre_5_22);age_20 = _rt_clock - temptime_21;age_18_18 = age_20 < 1000.0;first_26 = !(age_18_18) && never_p_29;never_p_59 = (first_26)?(true):((pre_8_58)?(false):(pre_9_57));strict_after_53 = (first_26)?(false):((pre_1_54)?(true):(pre_2_55));begin_12_43 = (first_26 && !(p_11_45))?(false):((first_26 && p_11_46)?(true):(pre_17_44));after_40 = (first_26)?(true):(pre_0_41);strict_after_34 = (first_26)?(false):((pre_1_35)?(true):(pre_2_36));since_48 = (first_26)?(0):((strict_after_53 && pre_10_52)?(pre_11_51 + _rt_clock - pre_12_50):(pre_13_49));interval_10_32 = strict_after_34 && pre_16_33;always_since_38 = (first_26)?(p_9_37):((after_40)?(p_9_37 && pre_3_39):(true));len_13_47 = since_48 <= 0.0;boolg_14_42 = begin_12_43 && len_13_47;boolg_15_31 = interval_10_32 || boolg_14_42;first_56 = !(boolg_15_31) && never_p_59;strict_after_85 = (first_56)?(false):((pre_1_86)?(true):(pre_2_87));strict_after_63 = (first_56)?(false):((pre_1_64)?(true):(pre_2_65));begin_5_73 = (first_56 && !(p_4_75))?(false):((first_56 && p_4_77)?(true):(pre_15_74));after_70 = (first_56)?(true):(pre_0_71);always_since_68 = (first_56)?(p_1_66):((after_70)?(p_1_66 && pre_3_69):(true));interval_2_61 = strict_after_63 && pre_14_62;since_80 = (first_56)?(0):((strict_after_85 && pre_10_84)?(pre_11_83 + _rt_clock - pre_12_82):(pre_13_81));len_6_79 = since_80 <= 0.0;boolg_7_72 = begin_5_73 && len_6_79;boolg_8_60 = interval_2_61 || boolg_7_72;then_16_30 = boolg_8_60;_p = then_16_30;pre_4_23 = p_17_19;pre_5_22 = temptime_21;pre_0_25 = after_24;pre_8_28 = !(age_18_18);pre_9_27 = never_p_29;pre_16_33 = always_since_38;pre_1_35 = first_26;pre_2_36 = strict_after_34;pre_3_39 = always_since_38;pre_0_41 = after_40;pre_17_44 = begin_12_43;pre_10_52 = true;pre_11_51 = since_48;pre_12_50 = _rt_clock;pre_13_49 = since_48;pre_1_54 = first_26;pre_2_55 = strict_after_53;pre_8_58 = !(boolg_15_31);pre_9_57 = never_p_59;pre_14_62 = always_since_68;pre_1_64 = first_56;pre_2_65 = strict_after_63;pre_3_69 = always_since_68;pre_0_71 = after_70;pre_15_74 = begin_5_73;pre_10_84 = true;pre_11_83 = since_80;pre_12_82 = _rt_clock;pre_13_81 = since_80;pre_1_86 = first_56;pre_2_87 = strict_after_85;System.out.println(" _b: " + _b + " " + " _rt_clock: " + _rt_clock + " " + " D: " + D + " " + " Alarm: " + Alarm + " " + " output: " + _p + " ");]
+}
+}
+}
+
