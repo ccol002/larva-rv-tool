@@ -1,9 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-%% This script monitors users. It is checked that the number of 
+%% Variant of benchmark.lrv in this same folder, additionally
+%% demonstrating LARVA's INVARIANTS feature (see the settingAmount
+%% property below). Runs against the same target system as
+%% benchmark.lrv.
+%%
+%% This script monitors users. It is checked that the number of
 %% transactions per user does not exceed 5. Then for each transaction
-%% it is ensured that after a particular point in the automaton, the 
-%% amount does not change (see the invariants section). Finally, it 
+%% it is ensured that after a particular point in the automaton, the
+%% amount does not change (see the invariants section). Finally, it
 %% ensured that a failed transaction is retried the correct number
 %% of times and also that the retries are done within the expected
 %% time frame.
