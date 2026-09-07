@@ -17,7 +17,7 @@ Techniques" course, and for LARVA's continued development.
   templates it weaves into generated monitors (`src/resources`); also an
   Eclipse project and the Maven build (`pom.xml`) described below.
 - `Larva manuals/` — the LARVA System Manual and the Converter manual.
-- `examples/` — worked demo systems, each with its own `README.md`, plus the
+- `Larva examples/` — worked demo systems, each with its own `README.md`, plus the
   RV Competition 2016 benchmarks. Every demo (except the RV Competition
   benchmarks, which bring their own scripts) has `run.sh`/`run.bat`
   (compile and run unmonitored) and `run with monitor code.sh`/`.bat`
@@ -47,7 +47,7 @@ Techniques" course, and for LARVA's continued development.
     and `wiki.html`) — see its own `README.md` for details.
 - `Larva converter/` — a compiled tool that converts counterexamples,
   Lustre, implementables and QDDC specifications into LARVA scripts (see
-  `examples/minepump/` above for its one worked, end-to-end example).
+  `Larva examples/minepump/` above for its one worked, end-to-end example).
 - `Tutorial/` — a guided introduction to writing LARVA scripts.
   `Tutorial/BadLogin/` is an intentionally bare starting skeleton (just
   `Main.java`) for the tutorial's own exercises, not a worked example.
@@ -84,7 +84,7 @@ your `PATH`, the compiler also emits a `.gif` diagram per automaton.
    for example, for the `bank system` demo:
 
    ```sh
-   cd "examples/bank system"
+   cd "Larva examples/bank system"
    ajc -1.8 -cp aspectjrt.jar -sourceroots . -d bin
    java -cp bin:aspectjrt.jar nesting.Bank
    ```
