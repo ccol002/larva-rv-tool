@@ -13,23 +13,24 @@ public class _cls_benchmark0 implements _callable{
 public static PrintWriter pw; 
 public static _cls_benchmark0 root;
 
-public static LinkedHashMap<_cls_benchmark0,_cls_benchmark0> _cls_benchmark0_instances = new LinkedHashMap<_cls_benchmark0,_cls_benchmark0>();
-static{
-try{
-RunningClock.start();
-pw = new PrintWriter("output_benchmark.txt");
+public static LinkedHashMap<_cls_benchmark0,_cls_benchmark0> _cls_benchmark0_instances;
 
+_cls_benchmark0 parent; //to remain null - this class does not have a parent!
+int no_automata;
+
+
+public static void initialize(){
+//note that this initialisation does not include user-defined declarations in the Variables section
+
+
+_cls_benchmark0_instances = new LinkedHashMap<_cls_benchmark0,_cls_benchmark0>();
+try{
 root = new _cls_benchmark0();
 _cls_benchmark0_instances.put(root, root);
   root.initialisation();
 }catch(Exception ex)
 {ex.printStackTrace();}
 }
-
-_cls_benchmark0 parent; //to remain null - this class does not have a parent!
-int no_automata = 0;
-
-public static void initialize(){}
 //inheritance could not be used because of the automatic call to super()
 //when the constructor is called...we need to keep the SAME parent if this exists!
 
@@ -37,6 +38,8 @@ public _cls_benchmark0() {
 }
 
 public void initialisation() {
+no_automata = 0;
+//initialise automata
 }
 
 public static _cls_benchmark0 _get_cls_benchmark0_inst() { synchronized(_cls_benchmark0_instances){
@@ -52,7 +55,7 @@ else
 }
 
 public int hashCode() {
-return 0;
+return 1;
 }
 
 public void _call(String _info, int... _event){

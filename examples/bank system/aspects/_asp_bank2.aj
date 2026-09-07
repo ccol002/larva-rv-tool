@@ -15,7 +15,7 @@ if (!initialized){
 	_cls_bank2.initialize();
 }
 }
-before ( Account a1) : (call(* Account.deleteTransaction(..)) && target(a1) && !cflow(adviceexecution())) {
+before ( Account a1) : (call(* Account.deleteTransaction(..)) && target(a1) && !cflow(adviceexecution()) && !cflow(within(larva.*))  && !(within(larva.*))) {
 
 synchronized(_asp_bank0.lock){
 Account a;
@@ -29,7 +29,7 @@ _cls_inst._call(thisJoinPoint.getSignature().toString(), 12/*deleteTransaction*/
 _cls_inst._call_all_filtered(thisJoinPoint.getSignature().toString(), 12/*deleteTransaction*/, 14/*allTransactions*/);
 }
 }
-before ( Account a1) : (call(* Account.addTransaction(..)) && target(a1) && !cflow(adviceexecution())) {
+before ( Account a1) : (call(* Account.addTransaction(..)) && target(a1) && !cflow(adviceexecution()) && !cflow(within(larva.*))  && !(within(larva.*))) {
 
 synchronized(_asp_bank0.lock){
 Account a;

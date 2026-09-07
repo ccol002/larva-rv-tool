@@ -13,24 +13,26 @@ public class _cls_bank0 implements _callable{
 public static PrintWriter pw; 
 public static _cls_bank0 root;
 
-public static LinkedHashMap<_cls_bank0,_cls_bank0> _cls_bank0_instances = new LinkedHashMap<_cls_bank0,_cls_bank0>();
-static{
-try{
-RunningClock.start();
-pw = new PrintWriter("output_bank.txt");
+public static LinkedHashMap<_cls_bank0,_cls_bank0> _cls_bank0_instances;
 
+_cls_bank0 parent; //to remain null - this class does not have a parent!
+int no_automata;
+
+int _state_id_users;
+ public int userCnt =0 ;
+
+public static void initialize(){
+//note that this initialisation does not include user-defined declarations in the Variables section
+
+
+_cls_bank0_instances = new LinkedHashMap<_cls_bank0,_cls_bank0>();
+try{
 root = new _cls_bank0();
 _cls_bank0_instances.put(root, root);
   root.initialisation();
 }catch(Exception ex)
 {ex.printStackTrace();}
 }
-
-_cls_bank0 parent; //to remain null - this class does not have a parent!
-int no_automata = 1;
- public int userCnt =0 ;
-
-public static void initialize(){}
 //inheritance could not be used because of the automatic call to super()
 //when the constructor is called...we need to keep the SAME parent if this exists!
 
@@ -38,8 +40,11 @@ public _cls_bank0() {
 }
 
 public void initialisation() {
+no_automata = 1;
+//initialise automata
+_state_id_users = 3;
 
-_cls_bank0.pw .println ("Started!!!");
+System .out .println ("Started!!!");
 
 }
 
@@ -56,7 +61,7 @@ else
 }
 
 public int hashCode() {
-return 0;
+return 1;
 }
 
 public void _call(String _info, int... _event){
@@ -98,12 +103,8 @@ else if (no_automata < 0)
 }catch(Exception ex){ex.printStackTrace();}
 }
 
-int _state_id_users = 3;
 
 public void _performLogic_users(String _info, int... _event) {
-
-_cls_bank0.pw.println("[users]AUTOMATON::> users("+") STATE::>"+ _string_users(_state_id_users, 0));
-_cls_bank0.pw.flush();
 
 if (0==1){}
 else if (_state_id_users==3){
@@ -124,7 +125,7 @@ else if (_state_id_users==3){
 		else if ((_occurredEvent(_event,4/*allUsers*/))){
 		
 		_state_id_users = 3;//moving to state start
-_cls_bank0.pw .println ("Started!!!");
+System .out .println ("Started!!!");
 
 		_goto_users(_info);
 		}
@@ -148,7 +149,7 @@ else if (_state_id_users==2){
 		userCnt --;
 
 		_state_id_users = 3;//moving to state start
-_cls_bank0.pw .println ("Started!!!");
+System .out .println ("Started!!!");
 
 		_goto_users(_info);
 		}
@@ -169,16 +170,18 @@ _cls_bank0.pw .println ("Started!!!");
 }
 
 public void _goto_users(String _info){
-_cls_bank0.pw.println("[users]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + _string_users(_state_id_users, 1));
-_cls_bank0.pw.flush();
+ String state_format = _string_users(_state_id_users, 1);
+ if (state_format.startsWith("!!!SYSTEM REACHED BAD STATE!!!")) {
+   System.out.println("[users]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + state_format);
+}
 }
 
 public String _string_users(int _state_id, int _mode){
 switch(_state_id){
+case 0: if (_mode == 0) return "toomany"; else return "!!!SYSTEM REACHED BAD STATE!!! toomany "+new _BadStateExceptionbank().toString()+" ";
 case 3: if (_mode == 0) return "start"; else return "start";
 case 1: if (_mode == 0) return "baddelete"; else return "!!!SYSTEM REACHED BAD STATE!!! baddelete "+new _BadStateExceptionbank().toString()+" ";
 case 2: if (_mode == 0) return "ok"; else return "ok";
-case 0: if (_mode == 0) return "toomany"; else return "!!!SYSTEM REACHED BAD STATE!!! toomany "+new _BadStateExceptionbank().toString()+" ";
 default: return "!!!SYSTEM REACHED AN UNKNOWN STATE!!!";
 }
 }

@@ -7,16 +7,20 @@ public static boolean on = false;
 public static IterableList events;
 public static Object lock;
 
+static{start();}
+
 public static void start()
 {
  if (!on) {
-on = true;
+
+		
 events = new IterableList();
 lock = new Object();
  	Thread t = new Thread(new RunningClock());
 	t.setPriority(Thread.MAX_PRIORITY);
 	t.setDaemon(true);
 	t.start();
+	on = true;
 }
 }
 

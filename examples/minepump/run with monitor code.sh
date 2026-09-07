@@ -6,14 +6,16 @@
 # and recompiles it every run, so the pipeline is never a mystery step.
 #
 # -v (verbose) is used because this property never actually reaches a BAD
-# state during this short demo run, so without it the log would show
-# nothing at all; verbose output shows the automaton evaluating the
-# QDDC-derived formula on every event.
+# state during this short demo run, so without it there would be no
+# output at all; verbose output shows the automaton evaluating the
+# QDDC-derived formula on every event. -c (console) sends that output to
+# stdout directly instead of a log file that's only flushed on a BAD-state
+# transition (which, again, this demo never reaches).
 cd "$(dirname "$0")" || exit 1
 
 java -cp "../../Larva converter" main.Main -QDDC qddc_minepump.txt -o minepump.lrv
 
-java -jar "../../Larva/target/larva-compiler-1.0.0.jar" minepump.lrv -o . -v
+java -jar "../../Larva/target/larva-compiler-1.0.0.jar" minepump.lrv -o . -v -c
 
 ajc -1.8 -cp aspectjrt.jar -sourceroots . -d bin
 

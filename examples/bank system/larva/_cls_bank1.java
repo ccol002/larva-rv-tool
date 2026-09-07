@@ -10,16 +10,23 @@ import java.io.PrintWriter;
 
 public class _cls_bank1 implements _callable{
 
-public static LinkedHashMap<_cls_bank1,_cls_bank1> _cls_bank1_instances = new LinkedHashMap<_cls_bank1,_cls_bank1>();
+public static LinkedHashMap<_cls_bank1,_cls_bank1> _cls_bank1_instances;
 
 _cls_bank0 parent;
 public static int id;
 public static User u1;
 public User u;
-int no_automata = 1;
+int no_automata;
+
+int _state_id_account;
  public int accountCnt =0 ;
 
-public static void initialize(){}
+public static void initialize(){
+//note that this initialisation does not include user-defined declarations in the Variables section
+
+
+_cls_bank1_instances = new LinkedHashMap<_cls_bank1,_cls_bank1>();
+}
 //inheritance could not be used because of the automatic call to super()
 //when the constructor is called...we need to keep the SAME parent if this exists!
 
@@ -29,6 +36,9 @@ this.u = u;
 }
 
 public void initialisation() {
+no_automata = 1;
+//initialise automata
+_state_id_account = 5;
 
 
 }
@@ -59,7 +69,7 @@ else
 }
 
 public int hashCode() {
-return 0;
+return (u==null?1:u.hashCode()) *(parent==null?1:parent.hashCode()) *1;
 }
 
 public void _call(String _info, int... _event){
@@ -102,12 +112,8 @@ else if (no_automata < 0)
 }catch(Exception ex){ex.printStackTrace();}
 }
 
-int _state_id_account = 5;
 
 public void _performLogic_account(String _info, int... _event) {
-
-_cls_bank0.pw.println("[account]AUTOMATON::> account("+u + " " + ") STATE::>"+ _string_account(_state_id_account, 0));
-_cls_bank0.pw.flush();
 
 if (0==1){}
 else if (_state_id_account==5){
@@ -120,7 +126,7 @@ else if (_state_id_account==5){
 		}
 		else if ((_occurredEvent(_event,5/*addAccount*/))){
 		accountCnt ++;
-_cls_bank0.pw .println ("I have access to USER : "+u +" and to usercnt: "+parent.userCnt );
+System .out .println ("I have access to USER : "+u +" and to usercnt: "+parent.userCnt );
 
 		_state_id_account = 5;//moving to state start
 
@@ -143,14 +149,16 @@ _cls_bank0.pw .println ("I have access to USER : "+u +" and to usercnt: "+parent
 }
 
 public void _goto_account(String _info){
-_cls_bank0.pw.println("[account]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + _string_account(_state_id_account, 1));
-_cls_bank0.pw.flush();
+ String state_format = _string_account(_state_id_account, 1);
+ if (state_format.startsWith("!!!SYSTEM REACHED BAD STATE!!!")) {
+   System.out.println("[account]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + state_format);
+}
 }
 
 public String _string_account(int _state_id, int _mode){
 switch(_state_id){
-case 5: if (_mode == 0) return "start"; else return "start";
 case 4: if (_mode == 0) return "toomany"; else return "!!!SYSTEM REACHED BAD STATE!!! toomany "+new _BadStateExceptionbank().toString()+" ";
+case 5: if (_mode == 0) return "start"; else return "start";
 default: return "!!!SYSTEM REACHED AN UNKNOWN STATE!!!";
 }
 }

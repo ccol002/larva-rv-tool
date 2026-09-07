@@ -102,8 +102,6 @@ public static void initialize(){
 
 _cls_minepump0_instances = new LinkedHashMap<_cls_minepump0,_cls_minepump0>();
 try{
-pw = new PrintWriter(".//output_minepump.txt");
-
 root = new _cls_minepump0();
 _cls_minepump0_instances.put(root, root);
   root.initialisation();
@@ -177,8 +175,7 @@ else if (no_automata < 0)
 
 public void _performLogic_then_19(String _info, int... _event) {
 
-_cls_minepump0.pw.println("[then_19]AUTOMATON::> then_19("+") STATE::>"+ _string_then_19(_state_id_then_19, 0));
-_cls_minepump0.pw.flush();
+System.out.println("[then_19]AUTOMATON::> then_19("+") STATE::>"+ _string_then_19(_state_id_then_19, 0));
 
 if (0==1){}
 else if (_state_id_then_19==1){
@@ -291,7 +288,7 @@ pre_12_82 =_rt_clock ;
 pre_13_81 =since_80 ;
 pre_1_86 =first_56 ;
 pre_2_87 =strict_after_85 ;
-_cls_minepump0.pw .println (" _b: "+_b +" "+" _rt_clock: "+_rt_clock +" "+" D: "+D +" "+" Alarm: "+Alarm +" "+" output: "+_p +" ");
+System .out .println (" _b: "+_b +" "+" _rt_clock: "+_rt_clock +" "+" D: "+D +" "+" Alarm: "+Alarm +" "+" output: "+_p +" ");
 
 		_state_id_then_19 = 0;//moving to state lustre
 		_goto_then_19(_info);
@@ -301,8 +298,7 @@ _cls_minepump0.pw .println (" _b: "+_b +" "+" _rt_clock: "+_rt_clock +" "+" D: "
 
 public void _goto_then_19(String _info){
  String state_format = _string_then_19(_state_id_then_19, 1);
-_cls_minepump0.pw.println("[then_19]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + state_format);
-_cls_minepump0.pw.flush();
+   System.out.println("[then_19]MOVED ON METHODCALL: "+ _info +" TO STATE::> " + state_format);
 }
 
 public String _string_then_19(int _state_id, int _mode){

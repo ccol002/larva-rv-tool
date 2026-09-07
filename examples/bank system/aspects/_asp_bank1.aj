@@ -15,7 +15,7 @@ if (!initialized){
 	_cls_bank1.initialize();
 }
 }
-before ( User u1) : (call(* User.deleteAccount(..)) && target(u1) && !cflow(adviceexecution())) {
+before ( User u1) : (call(* User.deleteAccount(..)) && target(u1) && !cflow(adviceexecution()) && !cflow(within(larva.*))  && !(within(larva.*))) {
 
 synchronized(_asp_bank0.lock){
 User u;
@@ -27,7 +27,7 @@ _cls_inst._call(thisJoinPoint.getSignature().toString(), 7/*deleteAccount*/, 9/*
 _cls_inst._call_all_filtered(thisJoinPoint.getSignature().toString(), 7/*deleteAccount*/, 9/*allAccounts*/);
 }
 }
-before ( User u1) : (call(* User.addAccount(..)) && target(u1) && !cflow(adviceexecution())) {
+before ( User u1) : (call(* User.addAccount(..)) && target(u1) && !cflow(adviceexecution()) && !cflow(within(larva.*))  && !(within(larva.*))) {
 
 synchronized(_asp_bank0.lock){
 User u;
