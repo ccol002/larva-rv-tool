@@ -1,8 +1,0 @@
-[badlogins]AUTOMATON::> badlogins() STATE::>starting
-[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
-[badlogins]AUTOMATON::> badlogins() STATE::>starting
-[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
-[badlogins]AUTOMATON::> badlogins() STATE::>starting
-[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting
-[badlogins]AUTOMATON::> badlogins() STATE::>starting
-[badlogins]MOVED ON METHODCALL: void main.User.badlogin() TO STATE::> starting

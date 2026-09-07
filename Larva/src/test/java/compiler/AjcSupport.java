@@ -67,13 +67,13 @@ final class AjcSupport {
 	}
 
 	/**
-	 * Copies a "Java demo systems/&lt;demoSystemDir&gt;/&lt;packageDir&gt;" Java
+	 * Copies an "examples/&lt;demoSystemDir&gt;/&lt;packageDir&gt;" Java
 	 * package directory (sources only, not .class/.jar/generated output) into
 	 * destRoot/packageDir, so it can be compiled together with a compiled
 	 * .lrv script's own output via a single ajc -sourceroots.
 	 */
 	static void copyDemoSystemSources(String demoSystemDir, String packageDir, Path destRoot) throws IOException {
-		Path source = Paths.get(System.getProperty("basedir"), "..", "Java demo systems", demoSystemDir, packageDir);
+		Path source = Paths.get(System.getProperty("basedir"), "..", "examples", demoSystemDir, packageDir);
 		Path destination = destRoot.resolve(packageDir);
 		Files.createDirectories(destination);
 		try (Stream<Path> files = Files.list(source).filter(p -> p.toString().endsWith(".java"))) {
