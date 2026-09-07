@@ -17,9 +17,10 @@ public class Compiler {
 	ParsingString ps;
 	static StringBuilder imports;
 	
-	static boolean verbose = false;  //-v (adds more verbose output)
-	static boolean console = false;  //-c (leave output to system.out)
-	static boolean light = false;    //-l (for competition)
+	static boolean verbose = false;     //-v (adds more verbose output)
+	static boolean console = false;     //-c (leave output to system.out)
+	static boolean light = false;       //-l (for competition)
+	static boolean synchronous = false; //-s or --synchronous (auto-flush the output file after every write, so "tail -f" shows it live)
 	
 	public Compiler(){}
 	
@@ -90,6 +91,7 @@ public class Compiler {
 		verbose = false;
 		console = false;
 		light = false;
+		synchronous = false;
 
 		Global.sid = -1;
 		Global.root = null;
@@ -110,6 +112,7 @@ public class Compiler {
 				System.out.println("You should specify a script file!! ");
 				System.out.println("-o [] to specify output directory");
 				System.out.println("-g [] to specify Graphviz directory");
+				System.out.println("-s or --synchronous to auto-flush the output file after every write, so \"tail -f\" shows it live");
 			}
 			else
 			{
@@ -130,6 +133,9 @@ public class Compiler {
 					
 					if (args[i].equals("-l"))
 						light = true;
+
+					if (args[i].equals("-s") || args[i].equals("--synchronous"))
+						synchronous = true;
 				}
 
 				compile();

@@ -1,6 +1,7 @@
 package compiler;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.nio.file.Files;
@@ -398,6 +399,8 @@ public class Global extends Compiler{
 		//***********************************************Creating the class
 		
 		StringBuilder cl = new StringBuilder("package larva;\r\n\r\n"+imports+"\r\nimport java.util.LinkedHashMap;\r\nimport java.io.PrintWriter;");
+		if (Compiler.synchronous && !Compiler.console)//only needed for the auto-flushing PrintWriter below
+			cl.append("\r\nimport java.io.FileOutputStream;");
 		cl.append("\r\n\r\npublic class _cls_"+name+id+" implements _callable{");
 		
 		if (this == root)
@@ -502,8 +505,14 @@ public class Global extends Compiler{
 			cl.append("\r\ntry{");
 
 			if (!Compiler.console)//just output to console instead of file
-				cl.append("\r\npw = new PrintWriter(\""+Compiler.outputDir.replace("\\", "\\\\")
-					+"/output_"+name+".txt\");\r\n");
+			{
+				if (Compiler.synchronous)//-s/--synchronous: auto-flush so "tail -f" shows it live
+					cl.append("\r\npw = new PrintWriter(new FileOutputStream(\""+Compiler.outputDir.replace("\\", "\\\\")
+						+"/output_"+name+".txt\"), true);\r\n");
+				else
+					cl.append("\r\npw = new PrintWriter(\""+Compiler.outputDir.replace("\\", "\\\\")
+						+"/output_"+name+".txt\");\r\n");
+			}
 
 			cl.append("\r\nroot = new _cls_" + this.name + this.id + "();" +
 					"\r\n_cls_" + this.name + this.id + "_instances.put(root, root);");
